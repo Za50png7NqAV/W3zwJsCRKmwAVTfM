@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="\css\list-posts.css">
+
+<div class="random">
+    {{ range first 10 (shuffle .Pages) }}
+    <div class="random-post" style="background-color: {{ with .Params.bgcolor }}{{ . }}{{ else }}gray{{ end }};">
+        <a href="{{ .Permalink }}" class="post-link">
+            {{ .Title }}<br>{{ with .Params.subtitle }}{{ . }}{{ else }}check now{{ end }}
+        </a>
+    </div>
+    {{ end }}
+</div>

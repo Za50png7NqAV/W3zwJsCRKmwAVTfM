@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\css\lastdate.css">
+    <title>Last Date Reminder</title>
+</head>
+<body>
+    <h1>Last Date Reminders</h1>
+    
+    <table id="last-date-table">
+        <thead>
+            <tr>
+                <th>Post Title</th>
+                <th>Last Date</th>
+                <th>Category</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{ range where .Site.RegularPages ".Params.lastdate" "!=" nil }}
+            <tr>
+                <td>{{ .Title }}</td>
+                <td>{{ .Params.lastdate | dateFormat "02-01-2006" }}</td>
+                <td>{{ .Params.categories | default "Uncategorized" }}</td>
+                <td><a href="{{ .Permalink }}">Check Here</a></td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</body>
+</html>

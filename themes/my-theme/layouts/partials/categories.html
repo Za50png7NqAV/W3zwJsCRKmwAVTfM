@@ -1,0 +1,10 @@
+<ul class="categories-list">
+    {{ $admitcardPages := where .Site.RegularPages "Type" "admitcard" }}
+    {{ range $category, $pages := .Site.Taxonomies.categories }}
+        {{ if (where $pages "Type" "admitcard") }}
+        <li>
+            <a href="{{ "/categories/" | relLangURL }}{{ $category | urlize }}">{{ $category | title }}</a> ({{ len $pages }})
+        </li>
+        {{ end }}
+    {{ end }}
+</ul>

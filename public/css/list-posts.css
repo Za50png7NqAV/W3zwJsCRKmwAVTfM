@@ -1,0 +1,29 @@
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 posts per row */
+    gap: 10px;
+    margin: 20px auto;
+    max-width:900px;
+    min-width:300px;
+}
+
+.post {
+    
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    height:40px;
+    font-size:13px;
+    overflow: hidden;
+  
+}
+
+.post-link {
+    color: white;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}

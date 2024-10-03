@@ -1,0 +1,73 @@
+<head>
+<link rel="stylesheet" href="\css\list-home.css">
+<style>
+  
+</style>
+</head>
+
+   <!-- Column Container -->
+<div class="col-container">
+
+  <div class="col">
+    <div class="colHead"> Latest Schemes</div>
+    <div class="list-Content"> 
+      {{ partial "Update-Schemes.html" . }}
+ 
+     </div>
+   
+    <div class="colBottom"><a href=""> more... </a> </div>
+  </div>
+
+  <div class="col">
+    <div class="colHead">Important Links</div>
+    <div class="list-Content"> 
+      {{ partial "Update-impLinks.html" . }}
+
+    </div>
+    <div class="colBottom"><a href=""> more... </a></div>
+  </div>
+
+
+  <div class="col">
+    <div class="colHead">Students</div>
+    <div class="list-Content"> 
+      {{ partial "Update-Students.html" . }}
+ 
+     </div>
+    <div class="colBottom"> <a href=""> more... </a> </div>
+  </div>
+</div>
+<!-- Column Container -->
+<!-- Column Container -->
+<div class="col-container">
+  <div class="col">
+    <div class="colHead">Results</div>
+    <div class="list-Content"> 
+      {{ partial "Update-Results.html" . }}
+
+    </div>
+    <div class="colBottom"><a href=""> more... </a></div>
+  </div>
+
+  <div class="col">
+    <div class="colHead">Admit Card</div>
+    <div class="list-Content"> 
+      {{ partial "Update-AdmitCard.html" . }}
+ 
+     </div>
+   
+    <div class="colBottom"><a href=""> more... </a> </div>
+  </div>
+
+  <div class="col">
+    <div class="colHead">Latest Job</div>
+    <div class="list-Content"> 
+      {{ partial "Update-Jobs.html" . }}
+ 
+     </div>
+    <div class="colBottom"> <a href=""> more... </a> </div>
+  </div>
+</div>
+
+<!-- Column Container -->
+{{ partial "Update-Jobs.html" . }}

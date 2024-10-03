@@ -1,0 +1,56 @@
+header {
+   
+    max-width: 1380px;
+    min-width:300px;
+    text-align: center;
+     margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+    background: linear-gradient(to right, #886600, #ffff99, #886600);
+}
+
+
+
+.logo {
+    margin-top: 8px;
+    z-index: 999;
+    margin: auto;
+
+}
+#logoimg{  max-width: 100px;
+  height: auto; 
+}
+
+.portal-name {
+   
+    margin:auto;
+     font-weight:900;
+     color: rgb(243, 236, 236);
+     marging:auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+.portal-name {
+    
+    margin:auto;
+     font-weight:100%;
+ 
+}
+
+}

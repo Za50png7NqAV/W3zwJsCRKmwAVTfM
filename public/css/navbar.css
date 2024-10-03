@@ -1,0 +1,39 @@
+.top-nav {
+    top: 60px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    z-index: 999;
+}
+
+
+.scrollmenu {
+    background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.scrollmenu a:hover {
+    background-color: #f4b400;
+    color: #333;
+}
+
+.scrollmenu a.active {
+    background-color: #f4b400;
+    color: #333;
+}
+
+
+

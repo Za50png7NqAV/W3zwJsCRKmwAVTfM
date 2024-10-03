@@ -1,0 +1,29 @@
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns in each row */
+    gap: 10px; /* space between the items */
+    margin: 20px 0;
+    max-width:1100px;
+}
+
+.post {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+   font-size:10px;
+    max-height: 20px; /* Ensure posts have consistent height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post:hover { background-color: red;}
+.post-link {
+    color: white;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}

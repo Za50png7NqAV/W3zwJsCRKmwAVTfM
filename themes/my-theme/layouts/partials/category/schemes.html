@@ -1,0 +1,18 @@
+<table>
+    <thead>
+      <tr>
+        <th>Schemes</th>
+        <th>States</th>
+        <th>Know More</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range first 20 (where .Pages ".Params.post-type" "schemes") }}
+        <tr>
+          <td>{{ .Title }}</td>
+          <td>{{ .Params.state }}</td>
+          <td><a href="{{ .Permalink }}">Know More</a></td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>

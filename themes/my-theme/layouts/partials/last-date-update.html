@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay informed about upcoming deadlines, exam dates, and government schemes.">
+    <title>Last Date Reminder</title>
+    <link rel="stylesheet" href="\css\lastdate.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<main>
+    <h2 id="reminder" style="color: rgb(255, 78, 57);">Last Date Reminder</h2>
+
+    <div class="lastDateContainer">
+        <!-- Today's Posts -->
+        <div id="datezoon">Last Date Today</div>
+        <table id="today-table">
+            <thead>
+                <tr>
+                    <th>Post Title</th>
+                    <th>Category</th>
+                    <th>Last Date</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ $currentDate := now }}
+                {{ range where .Site.RegularPages.ByDate.Reverse ".Params.lastdate" "eq" $currentDate.Format "2006-01-02" }}
+                <tr>
+                    <td>{{ .Title }}</td>
+                    <td>{{ index .Params.categories 0 }}</td>
+                    <td>{{ .Params.lastdate }}</td>
+                    <td><a href="{{ .Permalink }}"><button>Click Here</button></a></td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+
+        <!-- Tomorrow's Posts -->
+        <div id="datezoon">Last Date Tomorrow</div>
+        <table id="tomorrow-table">
+            <thead>
+                <tr>
+                    <th>Post Title</th>
+                    <th>Category</th>
+                    <th>Last Date</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ $tomorrow := (now.AddDate 0 0 1) }}
+                {{ range where .Site.RegularPages.ByDate.Reverse ".Params.lastdate" "eq" $tomorrow.Format "2006-01-02" }}
+                <tr>
+                    <td>{{ .Title }}</td>
+                    <td>{{ index .Params.categories 0 }}</td>
+                    <td>{{ .Params.lastdate }}</td>
+                    <td><a href="{{ .Permalink }}"><button>Click Here</button></a></td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+
+        <!-- Upcoming Posts -->
+        <div id="datezoon">Upcoming</div>
+        <table id="upcoming-table">
+            <thead>
+                <tr>
+                    <th>Post Title</th>
+                    <th>Category</th>
+                    <th>Last Date</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range where .Site.RegularPages.ByDate.Reverse ".Params.lastdate" "gt" $tomorrow.Format "2006-01-02" }}
+                <tr>
+                    <td>{{ .Title }}</td>
+                    <td>{{ index .Params.categories 0 }}</td>
+                    <td>{{ .Params.lastdate }}</td>
+                    <td><a href="{{ .Permalink }}"><button>Click Here</button></a></td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+
+        <!-- Expired Posts -->
+        <div id="datezoon">Expired</div>
+        <table id="expired-table">
+            <thead>
+                <tr>
+                    <th>Post Title</th>
+                    <th>Category</th>
+                    <th>Last Date</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range where .Site.RegularPages.ByDate.Reverse ".Params.lastdate" "lt" $currentDate.Format "2006-01-02" }}
+                <tr>
+                    <td>{{ .Title }}</td>
+                    <td>{{ index .Params.categories 0 }}</td>
+                    <td>{{ .Params.lastdate }}</td>
+                    <td><a href="{{ .Permalink }}"><button>Click Here</button></a></td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+ /* Container for the columns */
+ .col-container {
+    display: flex;
+    max-width: 800px;
+   
+    margin: 10px auto; /* Adds margin at the top */
+    gap: 10px; /* Adds gap between columns */
+  }
+  
+  /* Column style */
+  .col {
+    flex: 1;
+    display: flex;
+    line-height:1;
+   
+    
+     min-width: 100px;
+    flex-direction: column;
+    padding: 1px;
+    vertical-align: top;
+  }
+  
+  .col:nth-child(odd) {
+    background-color: rgb(231, 231, 231);
+  }
+  
+  .col:nth-child(even) {
+    background-color: var(--bgSoft);
+  }
+  
+  /* Column header stays at the top */
+  .colHead {
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align:center;
+    padding:5px;
+    color:var(--txtLight);
+    background-color: var(--bgDark);
+  }
+  
+  /* Column bottom stays at the bottom */
+  .colBottom {
+    margin-top: auto; /* Pushes this div to the bottom */
+    background-color: lightgray;
+    text-align: right;
+    padding: 5px;
+     padding:5px;
+  }
+  .list-Content {
+    color: var(-txtDark);
+    background-color: var(-bgDark);
+    padding: 20px;
+    font-size:13px;
+   }

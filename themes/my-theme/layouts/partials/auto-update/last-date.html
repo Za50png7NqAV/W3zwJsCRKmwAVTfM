@@ -1,0 +1,131 @@
+<div class="lastDateContainer">
+  <!-- Today Section -->
+  <div id="datezoon">Last Date Today</div>
+  <table id="today-table">
+      <thead>
+          <tr>
+              <th style="background-color: #f4b400; color:black;">Post Title</th>
+              <th style="background-color: #f4b400; color:black;">Category</th>
+              <th style="background-color: #f4b400; color:black;">Last Date</th>
+              <th style="background-color: #f4b400; color:black;">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          {{ range .Site.RegularPages }}
+          {{ $today := now.Format "2006-01-02" }}
+          {{ if eq .Params.lastDate $today }}
+          <tr class="post">
+              <td>{{ .Title }}</td>
+              <td>{{ .Params.category }}</td>
+              <td>{{ .Params.lastDate }}</td>
+              <td><a href="{{ .Permalink }}" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
+          {{ end }}
+          {{ end }}
+      </tbody>
+  </table>
+
+  <!-- Tomorrow Section -->
+  <div id="datezoon">Last Date Tomorrow</div>
+  <table id="tomorrow-table">
+      <thead>
+          <tr>
+              <th style="background-color: #f4b400; color:black;">Post Title</th>
+              <th style="background-color: #f4b400; color:black;">Category</th>
+              <th style="background-color: #f4b400; color:black;">Last Date</th>
+              <th style="background-color: #f4b400; color:black;">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          {{ range .Site.RegularPages }}
+          {{ $tomorrow := (now.AddDate 0 0 1).Format "2006-01-02" }}
+          {{ if eq .Params.lastDate $tomorrow }}
+          <tr class="post">
+              <td>{{ .Title }}</td>
+              <td>{{ .Params.category }}</td>
+              <td>{{ .Params.lastDate }}</td>
+              <td><a href="{{ .Permalink }}" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
+          {{ end }}
+          {{ end }}
+      </tbody>
+  </table>
+
+  <!-- Yesterday Section -->
+  <div id="datezoon">Was Yesterday</div>
+  <table id="yesterday-table">
+      <thead>
+          <tr>
+              <th style="background-color: rgb(255, 115, 68);">Post Title</th>
+              <th style="background-color: rgb(255, 115, 68);">Category</th>
+              <th style="background-color: rgb(255, 115, 68);">Last Date</th>
+              <th style="background-color: rgb(255, 115, 68);">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          {{ range .Site.RegularPages }}
+          {{ $yesterday := (now.AddDate 0 0 -1).Format "2006-01-02" }}
+          {{ if eq .Params.lastDate $yesterday }}
+          <tr class="post">
+              <td>{{ .Title }}</td>
+              <td>{{ .Params.category }}</td>
+              <td>{{ .Params.lastDate }}</td>
+              <td><a href="{{ .Permalink }}" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
+          {{ end }}
+          {{ end }}
+      </tbody>
+  </table>
+
+  <!-- Upcoming Section -->
+  <div id="datezoon">Upcoming</div>
+  <table id="upcoming-table">
+      <thead>
+          <tr>
+              <th style="background-color: #f4b400; color:black;">Post Title</th>
+              <th style="background-color: #f4b400; color:black;">Category</th>
+              <th style="background-color: #f4b400; color:black;">Last Date</th>
+              <th style="background-color: #f4b400; color:black;">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          {{ range .Site.RegularPages }}
+          {{ $today := now.Format "2006-01-02" }}
+          {{ if gt .Params.lastDate $today }}
+          <tr class="post">
+              <td>{{ .Title }}</td>
+              <td>{{ .Params.category }}</td>
+              <td>{{ .Params.lastDate }}</td>
+              <td><a href="{{ .Permalink }}" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
+          {{ end }}
+          {{ end }}
+      </tbody>
+  </table>
+
+  <!-- Expired Section -->
+  <div id="datezoon">Expired</div>
+  <table id="expired-table">
+      <thead>
+          <tr>
+              <th style="background-color: rgb(255, 78, 57);">Post Title</th>
+              <th style="background-color: rgb(255, 78, 57);">Category</th>
+              <th style="background-color: rgb(255, 78, 57);">Last Date</th>
+              <th style="background-color: rgb(255, 78, 57);">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          {{ range .Site.RegularPages }}
+          {{ $today := now.Format "2006-01-02" }}
+          {{ if lt .Params.lastDate $today }}
+          <tr class="post">
+              <td>{{ .Title }}</td>
+              <td>{{ .Params.category }}</td>
+              <td>{{ .Params.lastDate }}</td>
+              <td><a href="{{ .Permalink }}" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
+          {{ end }}
+          {{ end }}
+      </tbody>
+  </table>
+</div>

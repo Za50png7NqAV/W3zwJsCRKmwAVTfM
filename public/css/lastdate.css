@@ -1,0 +1,105 @@
+
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+  th, td {
+    border: 1px solid ;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+#datezoon1 { background: linear-gradient(to right, #886600, #ffff99, #886600);
+width: 200px;
+ 
+  background-image: linear-gradient(to right, #ff0000, #ffff00); /* Yellow gradient */
+  background-size: 200px 100%; /* Adjust size to match container */
+}
+
+#datezoon  {
+          position: relative;
+          width: 180px; /* Adjust width as needed */
+       /* Adjust height as needed */
+      color: black;
+      font-weight: 700;
+      text-shadow: 1px 5px 7px black;
+      left:12%;
+        
+      }
+      #datezoon:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 220px; /* Adjust width as needed */
+        height: 30px; /* Same height as the shape */
+          background: linear-gradient(to right, #886600, #ffff99, #886600);
+          transform: skewX(-45deg);
+          transform-origin: top right;
+             z-index:-3;
+            
+             color: black;
+
+
+      }
+
+
+
+  .past-exam, .expired {
+    background-color: #f8d7da;
+  }
+
+  .current-exam, .upcoming {
+    background-color: #d4edda;
+  }
+
+   .upcoming-exam, .today {
+    background-color: #fff3cd;
+  }
+
+  .yesterday {
+    background-color: #f5c6cb;
+  }
+
+  .tomorrow {
+    background-color: #c3e6cb;
+  }
+
+  button {
+    padding: 10px;
+  background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+
+  .lastDateContainer { color:black;}
+
+button:hover {
+ 
+   background: linear-gradient(to right,  rgb(255, 78, 57), #f4b400);
+  color:black;
+
+}
+
+
+

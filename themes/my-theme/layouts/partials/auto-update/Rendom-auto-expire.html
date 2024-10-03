@@ -1,0 +1,10 @@
+<div class="post-grid">
+    {{ $currentDate := now }}
+    {{ range first 10 (shuffle (where (where .Site.Pages "Section" "schemes") ".Params.expiryDate" "ge" $currentDate)) }}
+    <div class="post" style="background-color: {{ with .Params.bgcolor }}{{ . }}{{ else }}gray{{ end }};">
+        <a href="{{ .Permalink }}" class="post-link">
+            {{ .Title }}<br>{{ with .Params.subtitle }}{{ . }}{{ else }}check now{{ end }}
+        </a>
+    </div>
+    {{ end }}
+</div>

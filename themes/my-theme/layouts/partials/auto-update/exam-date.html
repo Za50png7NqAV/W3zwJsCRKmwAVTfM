@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="\css\exam-date.css">
+
+<div class="examcontainer">
+    <h1 id="reminder" style="color: rgb(255, 78, 57);">Exams Date Reminder</h1>
+
+    <!-- Current Exams -->
+    <h2>Current Exams</h2>
+    <table id="current-exams">
+        <thead>
+            <tr>
+                <th style="background-color: #4CAF50;">Exam Name</th>
+                <th style="background-color: #4CAF50;">From Date</th>
+                <th style="background-color: #4CAF50;">To Date</th>
+                <th style="background-color: #4CAF50;">More Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range where .Site.RegularPages.ByDate.Reverse "Params.to_date" ">=" (now.Format "2006-01-02") }}
+            <tr>
+                <td>{{ .Title }}</td>
+                <td>{{ .Params.from_date }}</td>
+                <td>{{ .Params.to_date }}</td>
+                <td><a href="{{ .Params.details_url }}"><button>Click here</button></a></td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+
+    <!-- Upcoming Exams -->
+    <h2>Upcoming Exams</h2>
+    <table id="upcoming-exams">
+        <thead>
+            <tr>
+                <th style="background-color: #f4b400;">Exam Name</th>
+                <th style="background-color: #f4b400;">From Date</th>
+                <th style="background-color: #f4b400;">To Date</th>
+                <th style="background-color: #f4b400;">More Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range where .Site.RegularPages.ByDate "Params.from_date" ">" (now.Format "2006-01-02") }}
+            <tr>
+                <td>{{ .Title }}</td>
+                <td>{{ .Params.from_date }}</td>
+                <td>{{ .Params.to_date }}</td>
+                <td><a href="{{ .Params.details_url }}"><button>Click here</button></a></td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+
+    <!-- Past Exams -->
+    <h2>Past Exams</h2>
+    <table id="past-exams">
+        <thead>
+            <tr>
+                <th style="background-color: rgb(255, 115, 68);">Exam Name</th>
+                <th style="background-color: rgb(255, 115, 68);">From Date</th>
+                <th style="background-color: rgb(255, 115, 68);">To Date</th>
+                <th style="background-color: rgb(255, 115, 68);">More Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range where .Site.RegularPages.ByDate "Params.to_date" "<" (now.Format "2006-01-02") }}
+            <tr>
+                <td>{{ .Title }}</td>
+                <td>{{ .Params.from_date }}</td>
+                <td>{{ .Params.to_date }}</td>
+                <td><a href="{{ .Params.details_url }}"><button>Click here</button></a></td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+    
+</div>
+
+</body>
+</html>

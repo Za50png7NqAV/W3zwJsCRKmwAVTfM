@@ -1,0 +1,8 @@
+
+{{ range first 8 .Pages }}
+<div class="post">
+    <a href="{{ .Permalink }}" class="post-link">
+        {{ .Title }}{{ . }}
+    </a>
+</div>
+{{ end }}

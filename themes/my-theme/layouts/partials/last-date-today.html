@@ -1,0 +1,25 @@
+<div class="lastDateContainer">
+    <table id="today-table">
+        <thead>
+            <tr>
+                <th style="background-color: #f4b400; color:black;">Post Title</th>
+                <th style="background-color: #f4b400; color:black;">Category</th>
+                <th style="background-color: #f4b400; color:black;">Last Date</th>
+                <th style="background-color: #f4b400; color:black;">Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Site.RegularPages }}
+            {{ $today := now.Format "2006-01-02" }}
+            {{ if (eq .Params.lastDate $today) }}
+            <tr class="post">
+                <td>{{ .Title }}</td>
+                <td>{{ .Params.category }}</td>
+                <td>{{ .Params.lastDate }}</td>
+                <td><a href="{{ .Permalink }}" target="_blank"><button id="applybtn">Click Here</button></a></td>
+            </tr>
+            {{ end }}
+            {{ end }}
+        </tbody>
+    </table>
+</div>

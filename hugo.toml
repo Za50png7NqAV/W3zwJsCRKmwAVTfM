@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'YOJNA PORTAL'
+theme = 'my-theme'
+
+# Add taxonomies
+[taxonomies]
+  category = "categories"
