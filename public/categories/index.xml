@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on YOJNA PORTAL</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>http://localhost:1313/yojnaportalweb/categories/</link>
     <description>Recent content in Categories on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Oct 2024 20:11:38 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Oct 2024 19:44:30 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/yojnaportalweb/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Admitcard</title>
-      <link>http://localhost:1313/categories/admitcard/</link>
-      <pubDate>Wed, 02 Oct 2024 20:11:38 +0530</pubDate>
-      <guid>http://localhost:1313/categories/admitcard/</guid>
+      <link>http://localhost:1313/yojnaportalweb/categories/admitcard/</link>
+      <pubDate>Wed, 02 Oct 2024 19:44:30 +0530</pubDate>
+      <guid>http://localhost:1313/yojnaportalweb/categories/admitcard/</guid>
       <description></description>
     </item>
     <item>
       <title>Jobs</title>
-      <link>http://localhost:1313/categories/jobs/</link>
-      <pubDate>Wed, 02 Oct 2024 20:11:38 +0530</pubDate>
-      <guid>http://localhost:1313/categories/jobs/</guid>
+      <link>http://localhost:1313/yojnaportalweb/categories/jobs/</link>
+      <pubDate>Wed, 02 Oct 2024 19:44:30 +0530</pubDate>
+      <guid>http://localhost:1313/yojnaportalweb/categories/jobs/</guid>
       <description></description>
     </item>
   </channel>

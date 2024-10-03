@@ -2,49 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/admitcard/</loc>
-    <lastmod>2024-10-02T20:11:38+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-10-02T20:11:38+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/jobs/</loc>
-    <lastmod>2024-10-02T20:11:38+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/student/</loc>
-    <lastmod>2024-10-02T20:11:38+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/important-link/</loc>
-    <lastmod>2024-10-02T19:52:39+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/8th-post-testing/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/8th-post-testing/</loc>
     <lastmod>2024-10-02T19:44:30+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/text/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/categories/admitcard/</loc>
+    <lastmod>2024-10-02T19:44:30+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/yojnaportalweb/categories/</loc>
+    <lastmod>2024-10-02T19:44:30+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/yojnaportalweb/categories/jobs/</loc>
+    <lastmod>2024-10-02T19:44:30+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/yojnaportalweb/text/</loc>
     <lastmod>2024-10-02T19:27:58+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/textpost/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/textpost/</loc>
     <lastmod>2024-10-02T18:58:03+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/admitcard/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/admitcard/</loc>
     <lastmod>2024-10-02T16:04:47+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/first-yojn/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/first-yojn/</loc>
     <lastmod>2024-10-02T16:04:47+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-3/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/posts/post-3/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-2/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/posts/post-2/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-1/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/posts/post-1/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/yojnaportalweb/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url>
 </urlset>
