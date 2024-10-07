@@ -1,11 +1,105 @@
-{{ define "main" }}
-    {{ partial "auto-update/list-posts.html" . }}
-    {{ partial "auto-update/list-home.html" . }}
-    {{ partial "auto-update/last-date.html" . }}
-   
-    {{ partial "auto-update/exam-date.html" . }}
-    {{ partial "auto-update/schemes.html" . }}
-    
-    
-{{ end }}
 
+
+
+
+{{ define "main" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yojna Portal</title>
+    <style>
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+           
+            padding:10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #FF5722;
+            color: white;
+
+        }
+        .bottom-nav div a {
+            padding: 8px 40px 8px;
+            color: white;
+            text-decoration: none;
+        }
+        .bottom-nav div a:hover,
+        .bottom-nav div a.active {
+
+            background-color: #f4b400;
+        }
+        .content {
+            padding: 10px;
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    {{ partial "sidenav" . }}
+
+    <div id="home" class="content active">
+        <h1>home</h1>
+        {{ partial "auto-update/list-posts.html" . }}
+    {{ partial "auto-update/list-home.html" . }}
+    </div>
+    
+    <div id="schemes" class="content">
+        <h1>Yojna</h1>
+        
+            {{ partial "auto-update/last-date.html" . }}
+    </div>
+    
+    <div id="jobs" class="content">
+        <h1>Jobs</h1>
+        {{ partial "auto-update/exam-date.html" . }}
+    </div>
+    
+    <div id="alert" class="content">
+        <h1>Alert</h1>
+        {{ partial "auto-update/schemes.html" . }}
+    </div>
+    
+    <div id="more" class="content">
+        <h1>More dfdfdfd</h1>
+        {{ partial "auto-update/upcoming-event.html" . }}
+    </div>
+    <div class="bottom-nav"> 
+        <div><a href="#home" onclick="showCategory('home', this)">Home</a></div>
+        <div><a href="#schemes" onclick="showCategory('schemes', this)">Yojna</a></div>
+        <div><a href="#jobs" onclick="showCategory('jobs', this)">Jobs</a></div>
+        <div><a href="#alert" onclick="showCategory('alert', this)">Alert</a></div>
+        <div><a href="#more" onclick="showCategory('more', this)">More</a></div>
+    </div>
+    <script>
+        function showCategory(category, element) {
+            // Hide all content divs
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all nav links
+            var navLinks = document.querySelectorAll('.bottom-nav div a');
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            // Show the selected content div
+            var activeContent = document.getElementById(category);
+            activeContent.classList.add('active');
+
+            // Add active class to the clicked nav link
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+{{ end }}

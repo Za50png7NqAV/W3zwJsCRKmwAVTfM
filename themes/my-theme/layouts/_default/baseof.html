@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 
-    <title>Document</title>
+    <title>Yojna Portal</title>
 </head>
 <body>
     <div class="main-container">
+      
         {{ partial "header" . }} 
-
+        
         <!-- Include the sidenav partial -->
-        {{ partial "sidenav" . }}
-
+    
+       
         <!-- Navbar section -->
         {{ partial "navbar" . }}
-
+        <div id="sidenav-main">
         <!-- Main content block -->
         {{ block "main" . }} {{ end }}
-
+    
         {{ partial "footer" . }}
+    </div>
+        {{ partial "sidenav" . }}
+       
     </div>
 </body>
 </html>

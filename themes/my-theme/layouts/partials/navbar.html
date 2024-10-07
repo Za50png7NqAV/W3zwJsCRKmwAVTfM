@@ -1,12 +1,167 @@
-<link rel="stylesheet" href="\css\navbar.css">
-<div class="scrollmenu">
-    <a href="/" class="active">Home</a>
-    <a href="/yojna-search/">All Yojna</a>
-    <a href="/last-date-reminder/">Last Date</a>
-    <a href="/exam-date/">Exams</a>
-    <a href="more.html">More</a>
-     <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html">PDF Form</a>
-     <a href="https://tools.v2kcomputers.com/p/home.html"> Advance Tools </a>
-       <a href="#">Admit Card</a>
-        <a href="#">Result</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Menu</title>
+    <style>
+        .menu-container {
+            position: relative;
+            background-color: #f3f4f6;
+            padding: 0;
+        }
+
+        .scroll-menu {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding: 0 rem;
+            background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+            align-items: center;
+            scroll-behavior: smooth;
+        }
+
+        .scroll-menu::-webkit-scrollbar {
+            display: none;
+        }
+
+        .menu-item {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-right: 0.1rem;
+        }
+
+        .menu-item:hover {
+            background-color: #f4b400;
+            color: #333;
+        }
+
+        .menu-item.active {
+            background-color: #f4b400;
+            color: #333;
+        }
+
+        .scroll-button {
+            position: absolute;
+            top: 42%;
+            transform: translateY(-50%);
+            background-color: #f4b400;
+            border: none;
+            padding: 14px;
+            display: flex;
+          
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+.scroll-menu a {color:white;}
+        .scroll-button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-button:hover {
+          color:black;
+            background-color: #f3f4f6;
+        }
+
+        .scroll-left {
+            left: 0;
+        }
+
+        .scroll-right {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
+        <div class="scroll-menu" id="scrollMenu">
+            <a href="/" class="menu-item active">Home</a>
+            <a href="/yojna-search/" class="menu-item">All Yojna</a>
+            <a href="/last-date-reminder/" class="menu-item">Last Date</a>
+            <a href="/exam-date/" class="menu-item">Exams</a>
+            <a href="more.html" class="menu-item">More</a>
+            <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
+            <a href="https://tools.v2kcomputers.com/p/home.html" class="menu-item">Advance Tools</a>
+            <a href="#" class="menu-item">Admit Card</a>
+            <a href="#" class="menu-item">Result</a>
+        </div>
+        <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollMenu = document.getElementById('scrollMenu');
+            const scrollLeftBtn = document.querySelector('.scroll-left');
+            const scrollRightBtn = document.querySelector('.scroll-right');
+
+            function updateScrollButtons() {
+                // Show or hide the left button
+                if (scrollMenu.scrollLeft > 0) {
+                    scrollLeftBtn.classList.add('show');
+                } else {
+                    scrollLeftBtn.classList.remove('show');
+                }
+
+                // Show or hide the right button
+                if (scrollMenu.scrollLeft + scrollMenu.clientWidth < scrollMenu.scrollWidth) {
+                    scrollRightBtn.classList.add('show');
+                } else {
+                    scrollRightBtn.classList.remove('show');
+                }
+            }
+
+            function scroll(direction) {
+                const scrollAmount = scrollMenu.clientWidth / 2;
+                scrollMenu.scrollBy({
+                    left: direction === 'left' ? -scrollAmount : scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+
+            scrollLeftBtn.addEventListener('click', () => scroll('left'));
+            scrollRightBtn.addEventListener('click', () => scroll('right'));
+
+            // Check buttons on scroll and load
+            scrollMenu.addEventListener('scroll', updateScrollButtons);
+            window.addEventListener('resize', updateScrollButtons);
+            updateScrollButtons(); // Initial check when page loads
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.menu-item');
+            const currentUrl = window.location.pathname;
+            let isMatched = false;
+
+            links.forEach(link => {
+                const linkPath = new URL(link.href).pathname;
+
+                if (linkPath === currentUrl) {
+                    links.forEach(l => l.classList.remove('active')); // Remove 'active' from all links
+                    link.classList.add('active'); // Add 'active' to the current link
+                    isMatched = true; // Set flag if a match is found
+                }
+            });
+
+            // If no match is found, default to "Home"
+            if (!isMatched) {
+                links[0].classList.add('active'); // "Home" link is the first one
+            }
+        });
+    </script>
+</body>
+</html>

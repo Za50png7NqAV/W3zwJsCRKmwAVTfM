@@ -1,6 +1,8 @@
 
-<link rel="stylesheet" href="\css\list-posts.css">
+<head>
 
+<link rel="stylesheet" href="css\list-posts.css">
+</head>
 <div class="post-grid">
     {{ range first 8 .Pages }}
     <div class="post" style="background-color: {{ with .Params.bgcolor }}{{ . }}{{ else }}gray{{ end }};">

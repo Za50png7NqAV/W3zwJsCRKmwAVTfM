@@ -2,20 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/yojnaportalweb/8th-post-testing/</loc>
-    <lastmod>2024-10-02T19:44:30+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/yojnaportalweb/categories/admitcard/</loc>
-    <lastmod>2024-10-02T19:44:30+05:30</lastmod>
+    <lastmod>2024-10-07T15:27:39+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/yojnaportalweb/categories/</loc>
-    <lastmod>2024-10-02T19:44:30+05:30</lastmod>
+    <lastmod>2024-10-07T15:27:39+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/yojnaportalweb/job-post-tem/</loc>
+    <lastmod>2024-10-07T15:27:39+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/yojnaportalweb/categories/jobs/</loc>
-    <lastmod>2024-10-02T19:44:30+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/yojnaportalweb/text/</loc>
-    <lastmod>2024-10-02T19:27:58+05:30</lastmod>
+    <lastmod>2024-10-07T15:27:39+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/yojnaportalweb/textpost/</loc>
     <lastmod>2024-10-02T18:58:03+05:30</lastmod>

@@ -8,19 +8,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.1rem;
-    background: linear-gradient(to right, #886600, #ffff99, #886600);
+  
 }
 
 
 
 .logo {
     margin-top: 8px;
+    width:30%;
     z-index: 999;
     margin: auto;
-
+    max-width: 300px;
+    z-index: 9;
 }
-#logoimg{  max-width: 100px;
+#logoimg{  max-width: 300px;
   height: auto; 
+  z-index: 9;
 }
 
 .portal-name {

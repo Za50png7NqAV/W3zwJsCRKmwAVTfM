@@ -4,109 +4,278 @@
 	<meta name="generator" content="Hugo 0.128.2"><script src="/yojnaportalweb/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=yojnaportalweb/livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/yojnaportalweb/css/style.css">
 
-    <title>Document</title>
+    <title>Yojna Portal</title>
 </head>
 <body>
     <div class="main-container">
-        <link rel="stylesheet" href="\css\header.css">
+      
+        <link rel="stylesheet" href="css\header.css">
 <header>
     <div class="logo">
-       <a href="/"> <img  id="logoimg"  alt="YojnaPortal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxBpuAARrYVHhssVEkmeThsEnmkkVOe4qxket9BKKS3CjF3-d_kbaqYRi1IdbEWS3zDnd-fbjGoMf_VneGCDNWuU5UJWurTBE4qT_txrgYggezCaINJj5QSAwES8K54nlrrTjjAJVD7visVIUQOgmU3u_PSsXDq8MiD_9JXte9FvDv6O3TsmhJ7m9J/s1600/Yojna%20Portal%20Logo%2002.png"/></a>
+       <a href="/"> <img  id="logoimg"  alt="Yojna Portal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/></a>
 
     </div>
      <div class="portal-name">YOJNA PORTAL</div>
+     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 </header>
  
-
         
-        <link rel="stylesheet" href="\css\sidenav.css">
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
     
+       
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Menu</title>
+    <style>
+        .menu-container {
+            position: relative;
+            background-color: #f3f4f6;
+            padding: 0;
+        }
 
-<div class="post">
-    <a href="http://localhost:1313/yojnaportalweb/8th-post-testing/" class="post-link">
-        8th Post TestingPage(/8th-post-testing)
-    </a>
-</div>
+        .scroll-menu {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding: 0 rem;
+            background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+            align-items: center;
+            scroll-behavior: smooth;
+        }
 
-<div class="post">
-    <a href="http://localhost:1313/yojnaportalweb/text/" class="post-link">
-        TextPage(/text)
-    </a>
-</div>
+        .scroll-menu::-webkit-scrollbar {
+            display: none;
+        }
 
-<div class="post">
-    <a href="http://localhost:1313/yojnaportalweb/textpost/" class="post-link">
-        TextpostPage(/textpost)
-    </a>
-</div>
+        .menu-item {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-right: 0.1rem;
+        }
 
-<div class="post">
-    <a href="http://localhost:1313/yojnaportalweb/admitcard/" class="post-link">
-        admit cardPage(/admitcard)
-    </a>
-</div>
+        .menu-item:hover {
+            background-color: #f4b400;
+            color: #333;
+        }
 
-<div class="post">
-    <a href="http://localhost:1313/yojnaportalweb/first-yojn/" class="post-link">
-        First YojnPage(/first-yojn)
-    </a>
-</div>
+        .menu-item.active {
+            background-color: #f4b400;
+            color: #333;
+        }
 
-<div class="post">
-    <a href="http://localhost:1313/yojnaportalweb/posts/" class="post-link">
-        PostsPage(/posts)
-    </a>
-</div>
+        .scroll-button {
+            position: absolute;
+            top: 42%;
+            transform: translateY(-50%);
+            background-color: #f4b400;
+            border: none;
+            padding: 14px;
+            display: flex;
+          
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+.scroll-menu a {color:white;}
+        .scroll-button.show {
+            opacity: 1;
+            visibility: visible;
+        }
 
-  </div>
-  
-  
-  <span class="SidenavBtn"  onclick="openNav()">&#9776;</span>
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
+        .scroll-button:hover {
+          color:black;
+            background-color: #f3f4f6;
+        }
+
+        .scroll-left {
+            left: 0;
+        }
+
+        .scroll-right {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
+        <div class="scroll-menu" id="scrollMenu">
+            <a href="/" class="menu-item active">Home</a>
+            <a href="/yojna-search/" class="menu-item">All Yojna</a>
+            <a href="/last-date-reminder/" class="menu-item">Last Date</a>
+            <a href="/exam-date/" class="menu-item">Exams</a>
+            <a href="more.html" class="menu-item">More</a>
+            <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
+            <a href="https://tools.v2kcomputers.com/p/home.html" class="menu-item">Advance Tools</a>
+            <a href="#" class="menu-item">Admit Card</a>
+            <a href="#" class="menu-item">Result</a>
+        </div>
+        <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollMenu = document.getElementById('scrollMenu');
+            const scrollLeftBtn = document.querySelector('.scroll-left');
+            const scrollRightBtn = document.querySelector('.scroll-right');
+
+            function updateScrollButtons() {
+                
+                if (scrollMenu.scrollLeft > 0) {
+                    scrollLeftBtn.classList.add('show');
+                } else {
+                    scrollLeftBtn.classList.remove('show');
+                }
+
+                
+                if (scrollMenu.scrollLeft + scrollMenu.clientWidth < scrollMenu.scrollWidth) {
+                    scrollRightBtn.classList.add('show');
+                } else {
+                    scrollRightBtn.classList.remove('show');
+                }
+            }
+
+            function scroll(direction) {
+                const scrollAmount = scrollMenu.clientWidth / 2;
+                scrollMenu.scrollBy({
+                    left: direction === 'left' ? -scrollAmount : scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+
+            scrollLeftBtn.addEventListener('click', () => scroll('left'));
+            scrollRightBtn.addEventListener('click', () => scroll('right'));
+
+            
+            scrollMenu.addEventListener('scroll', updateScrollButtons);
+            window.addEventListener('resize', updateScrollButtons);
+            updateScrollButtons(); 
+        });
     </script>
 
-        
-        <link rel="stylesheet" href="\css\navbar.css">
-<div class="scrollmenu">
-    <a href="/" class="active">Home</a>
-    <a href="/yojna-search/">All Yojna</a>
-    <a href="/last-date-reminder/">Last Date</a>
-    <a href="/exam-date/">Exams</a>
-    <a href="more.html">More</a>
-     <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html">PDF Form</a>
-     <a href="https://tools.v2kcomputers.com/p/home.html"> Advance Tools </a>
-       <a href="#">Admit Card</a>
-        <a href="#">Result</a>
-</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.menu-item');
+            const currentUrl = window.location.pathname;
+            let isMatched = false;
 
+            links.forEach(link => {
+                const linkPath = new URL(link.href).pathname;
+
+                if (linkPath === currentUrl) {
+                    links.forEach(l => l.classList.remove('active')); 
+                    link.classList.add('active'); 
+                    isMatched = true; 
+                }
+            });
+
+            
+            if (!isMatched) {
+                links[0].classList.add('active'); 
+            }
+        });
+    </script>
+</body>
+</html>
+
+        <div id="sidenav-main">
         
         
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yojna Portal</title>
+    <style>
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+           
+            padding:10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #FF5722;
+            color: white;
+
+        }
+        .bottom-nav div a {
+            padding: 8px 40px 8px;
+            color: white;
+            text-decoration: none;
+        }
+        .bottom-nav div a:hover,
+        .bottom-nav div a.active {
+
+            background-color: #f4b400;
+        }
+        .content {
+            padding: 10px;
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
     
-<link rel="stylesheet" href="\css\list-posts.css">
+<head>
+ 
+  <link rel="stylesheet" href=" css\sidenav.css">
+</head>
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+</div>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("sidenav-main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sidenav-main").style.marginLeft= "0";
+  }
+  </script>
+
+    <div id="home" class="content active">
+        <h1>home</h1>
+        
+<head>
+
+<link rel="stylesheet" href="css\list-posts.css">
+</head>
 <div class="post-grid">
     
     <div class="post" style="background-color: olive;">
-        <a href="http://localhost:1313/yojnaportalweb/8th-post-testing/" class="post-link">
-            8th Post Testing<br>check now
-        </a>
-    </div>
-    
-    <div class="post" style="background-color: olive;">
-        <a href="http://localhost:1313/yojnaportalweb/text/" class="post-link">
-            Text<br>check now
+        <a href="http://localhost:1313/yojnaportalweb/job-post-tem/" class="post-link">
+            Job Post Tem<br>check now
         </a>
     </div>
     
@@ -176,10 +345,6 @@
     <div class="list-Content"> 
       <ul>
     
-      <li>
-        <a href="http://localhost:1313/yojnaportalweb/8th-post-testing/">8th Post Testing</a>
-      </li>
-    
   </ul>
  
      </div>
@@ -206,6 +371,10 @@
       
 <ul>
     
+      <li>
+        <a href="http://localhost:1313/yojnaportalweb/job-post-tem/">Job Post Tem</a>
+      </li>
+    
   </ul>
  
      </div>
@@ -231,7 +400,12 @@
 <ul>
     
   </ul>
-    <div class="lastDateContainer">
+    </div>
+    
+    <div id="schemes" class="content">
+        <h1>Yojna</h1>
+        
+            <div class="lastDateContainer">
   
   <div id="datezoon">Last Date Today</div>
   <table id="today-table">
@@ -244,9 +418,6 @@
           </tr>
       </thead>
       <tbody>
-          
-          
-          
           
           
           
@@ -287,8 +458,12 @@
           
           
           
-          
-          
+          <tr class="post">
+              <td>Job Post Tem</td>
+              <td>Exams</td>
+              <td>2024-10-08</td>
+              <td><a href="http://localhost:1313/yojnaportalweb/job-post-tem/" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
           
           
           
@@ -324,16 +499,6 @@
           </tr>
       </thead>
       <tbody>
-          
-          
-          
-          <tr class="post">
-              <td>8th Post Testing</td>
-              <td>student</td>
-              <td>2024-10-02</td>
-              <td><a href="http://localhost:1313/yojnaportalweb/8th-post-testing/" target="_blank"><button id="applybtn">Click Here</button></a></td>
-          </tr>
-          
           
           
           
@@ -374,14 +539,11 @@
           
           
           
-          
-          
-          
           <tr class="post">
-              <td>Text</td>
+              <td>Job Post Tem</td>
               <td>Exams</td>
-              <td>2024-10-07</td>
-              <td><a href="http://localhost:1313/yojnaportalweb/text/" target="_blank"><button id="applybtn">Click Here</button></a></td>
+              <td>2024-10-08</td>
+              <td><a href="http://localhost:1313/yojnaportalweb/job-post-tem/" target="_blank"><button id="applybtn">Click Here</button></a></td>
           </tr>
           
           
@@ -421,16 +583,6 @@
           
           
           
-          <tr class="post">
-              <td>8th Post Testing</td>
-              <td>student</td>
-              <td>2024-10-02</td>
-              <td><a href="http://localhost:1313/yojnaportalweb/8th-post-testing/" target="_blank"><button id="applybtn">Click Here</button></a></td>
-          </tr>
-          
-          
-          
-          
           
           
           
@@ -454,8 +606,11 @@
   </table>
 </div>
 
-   
-    <link rel="stylesheet" href="\css\exam-date.css">
+    </div>
+    
+    <div id="jobs" class="content">
+        <h1>Jobs</h1>
+        <link rel="stylesheet" href="css\exam-date.css">
 
 <div class="examcontainer">
     <h1 id="reminder" style="color: rgb(255, 78, 57);">Exams Date Reminder</h1>
@@ -474,8 +629,8 @@
         <tbody>
             
             <tr>
-                <td>Text</td>
-                <td>2024-08-01</td>
+                <td>Job Post Tem</td>
+                <td>2024-10-20</td>
                 <td>2024-10-10</td>
                 <td><a href="#"><button>Click here</button></a></td>
             </tr>
@@ -496,6 +651,13 @@
         </thead>
         <tbody>
             
+            <tr>
+                <td>Job Post Tem</td>
+                <td>2024-10-20</td>
+                <td>2024-10-10</td>
+                <td><a href="#"><button>Click here</button></a></td>
+            </tr>
+            
         </tbody>
     </table>
 
@@ -512,13 +674,6 @@
         </thead>
         <tbody>
             
-            <tr>
-                <td>8th Post Testing</td>
-                <td>2024-08-01</td>
-                <td>2024-08-10</td>
-                <td><a href="#"><button>Click here</button></a></td>
-            </tr>
-            
         </tbody>
     </table>
     
@@ -527,7 +682,11 @@
 </body>
 </html>
 
-    <table>
+    </div>
+    
+    <div id="alert" class="content">
+        <h1>Alert</h1>
+        <table>
     <thead>
       <tr>
         <th>Schemes</th>
@@ -539,23 +698,70 @@
       
     </tbody>
   </table>
+    </div>
     
+    <div id="more" class="content">
+        <h1>More dfdfdfd</h1>
+        <table></table>
+    <thead>
+      <tr>
+        <th>Upcoming</th>
+        <th>States</th>
+        <th>Know More</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+    </div>
+    <div class="bottom-nav"> 
+        <div><a href="#home" onclick="showCategory('home', this)">Home</a></div>
+        <div><a href="#schemes" onclick="showCategory('schemes', this)">Yojna</a></div>
+        <div><a href="#jobs" onclick="showCategory('jobs', this)">Jobs</a></div>
+        <div><a href="#alert" onclick="showCategory('alert', this)">Alert</a></div>
+        <div><a href="#more" onclick="showCategory('more', this)">More</a></div>
+    </div>
+    <script>
+        function showCategory(category, element) {
+            
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+
+            
+            var navLinks = document.querySelectorAll('.bottom-nav div a');
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            
+            var activeContent = document.getElementById(category);
+            activeContent.classList.add('active');
+
+            
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
     
+        <head>
 
+<link rel="stylesheet" href="css\footer.css">
 
-        <link rel="stylesheet" href="\css\footer.css">
-<div class="bottom-nav" id="bottomNav">
-    <ul class="bottomNavUl">
-        <li><a href="/" class="active">Home</a></li>
-        <li><a href="/yojna-search/">Yojna</a></li>
-        <li><a href="/last-date-reminder/">Last Date</a></li>
-        <li><a href="/exam-date/">Exams</a></li>
-        <li><a href="more.html">More</a></li>
-
-    </ul>
+</head>
+<div class="bottom-nav"> 
+    <div><a href="/yojnaportalweb/#home" onclick="showCategory('home', this)">Home</a></div>
+    <div><a href="/yojnaportalweb/#schemes" onclick="showCategory('schemes', this)">Yojna</a></div>
+    <div><a href="/yojnaportalweb/#jobs" onclick="showCategory('jobs', this)">Jobs</a></div>
+    <div><a href="/yojnaportalweb/#alert/" onclick="showCategory('alert', this)">Alert</a></div>
+    <div><a href="/yojnaportalweb/#more" onclick="showCategory('more', this)">More</a></div>
 </div>
 <footer id="footer">
-
+    
 <div class="footer-content">
    
     
@@ -574,6 +780,33 @@
 </footer> 
 
 
+    </div>
+        
+<head>
+ 
+  <link rel="stylesheet" href=" css\sidenav.css">
+</head>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+</div>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("sidenav-main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sidenav-main").style.marginLeft= "0";
+  }
+  </script>
+       
     </div>
 </body>
 </html>
