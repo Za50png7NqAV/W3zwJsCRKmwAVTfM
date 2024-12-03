@@ -195,6 +195,10 @@ border-bottom-left-radius: 6px; }
                 margin-bottom: 10px;
             }
              .toolbar-content {margin:auto;}
+             .toolbar {
+                transition: opacity 0.3s ease-in-out;
+            }
+            button {padding: 0px 5px;}
 
 input[type="color"] {
   /* Basic styling */
@@ -235,10 +239,10 @@ select {max-width: 80px;}
 
 <div class="post-container" data-post-id="{{ .File.UniqueID }}">
 
-        <div id="editToolbar" class="toolbar" style="display: none;">
+        <div id="editToolbar" class="toolbar" style="display: none;" data-post-id="{{ .File.UniqueID }}">
  
     
-        <div class="toolbar-section">
+        <div class="toolbar-section" data-post-id="{{ .File.UniqueID }}">
 
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
@@ -376,7 +380,7 @@ select {max-width: 80px;}
 
 
 
-
+ 
             <div class="button-container">
                 <a href="{{ .Permalink }}" target="_blank">
                 <button class="button info-btn" onclick="showMoreInfo('{{ .File.UniqueID }}')">
@@ -528,27 +532,35 @@ select {max-width: 80px;}
 }
 
             // Share post on WhatsApp
-          function shareOnWhatsApp() {
-  // Gather content dynamically
-  const title = document.querySelector('.title').textContent.trim();
-  const portalLogo = document.querySelector('.portal-logo').textContent.trim();
-  const cardTitle = document.querySelector('.card-title').textContent.trim();
-  const infoText = document.querySelector('.info-text').textContent.trim();
-  const schemeText = document.querySelector('.editable:not(.documents)').textContent.trim();
-  const documents = document.querySelector('.editable.documents').textContent.trim();
-  
-  // Get permalink from Hugo
-  const permalink = "{{ .Permalink }}"; // Hugo dynamically replaces this with the page's permalink
-
-  // Construct WhatsApp message
-  const message = `*${title}*\n\n${portalLogo}\n\n${cardTitle}\n${infoText}\n${schemeText}\n${documents}\n\nRead more: ${permalink}`;
-
-  // Encode message for URL
-  const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
-
-  // Open WhatsApp share URL
-  window.open(whatsappUrl, '_blank');
-}
+            function shareOnWhatsApp(postId) {
+                // Identify the post container using the postId
+                const postContainer = document.querySelector(`.post-container[data-post-id="${postId}"]`);
+                
+                if (!postContainer) {
+                  console.error(`Post with ID ${postId} not found.`);
+                  return;
+                }
+              
+                // Gather content dynamically from the post container
+                const title = postContainer.querySelector('.title')?.textContent.trim() || '';
+                const portalLogo = postContainer.querySelector('.portal-logo')?.textContent.trim() || '';
+                const cardTitle = postContainer.querySelector('.card-title')?.textContent.trim() || '';
+                const infoText = postContainer.querySelector('.info-text')?.textContent.trim() || '';
+                const schemeText = postContainer.querySelector('.editable:not(.documents)')?.textContent.trim() || '';
+                const documents = postContainer.querySelector('.editable.documents')?.textContent.trim() || '';
+                
+                // Get permalink dynamically passed via Hugo
+                const permalink = postContainer.querySelector('a')?.href || '';
+              
+                // Construct WhatsApp message
+                const message = `*${title}*\n\n${portalLogo}\n\n${cardTitle}\n${infoText}\n${schemeText}\n${documents}\n\nRead more: ${permalink}`;
+              
+                // Encode message for URL
+                const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+              
+                // Open WhatsApp share URL
+                window.open(whatsappUrl, '_blank');
+              }
 
             document.querySelectorAll('.editable').forEach(element => {
                 element.addEventListener('click', () => {
@@ -720,6 +732,24 @@ select {max-width: 80px;}
         // Select the .down-degine element and set a random gradient
         const downDegineElement = document.querySelector('.down-degine');
         setRandomGradient(downDegineElement);
+    </script>
+    <script>
+    
+            function toggleEditToolbar(postId) {
+                const toolbar = document.querySelector(`#editToolbar[data-post-id="${postId}"]`);
+            
+                if (toolbar) {
+                    // Toggle visibility
+                    if (toolbar.style.display === "none" || toolbar.style.display === "") {
+                        toolbar.style.display = "block";
+                    } else {
+                        toolbar.style.display = "none";
+                    }
+                } else {
+                    console.error(`Toolbar not found for post ID: ${postId}`);
+                }
+            }
+        
     </script>
 
     </body>
