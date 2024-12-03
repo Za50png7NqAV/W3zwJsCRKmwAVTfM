@@ -6,3 +6,14 @@ theme = 'my-theme'
 # Add taxonomies
 [taxonomies]
   category = "categories"
+[params]
+  defaultContentType = "page"
+  
+# config.toml
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+[outputs]
+home = ["HTML", "JSON"]

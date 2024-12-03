@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/yojnaportalweb/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=yojnaportalweb/livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/yojnaportalweb/css/style.css">
+
+    <title>Yojna Portal</title>
+    <style>
+        .main-container {
+            max-width: 100%;    
+            margin: 0 auto;       
+            padding: 20px;        
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+            background-color: #fff;  
+          }
+        
+          #sidenav-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+        
+           
+          body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+          }
+        
+          footer {
+            margin-top: auto;
+          }
+        
+           
+          @media (max-width: 768px) {
+            .main-container {
+              padding: 10px;     
+            }
+          }
+        
+           
+          nav {
+            background-color: #333;   
+            color: #fff;              
+            padding: 10px;
+          }
+        
+          footer {
+            background-color: #f8f9fa;  
+            text-align: center;         
+            padding: 20px;
+          }
+    </style>
+</head> 
+<body>
+    <div class="main-container">
+      
+        <header>
+   <div class="header-container">
+       <div class="logo">
+           <a href="/">
+               <img id="logo" alt="Yojna Portal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/>
+           </a>
+       </div>
+       <div class="portal-name">
+           
+       </div>
+   </div>
+</header>
+
+<style>
+   body {
+       margin: 0;
+       font-family: Arial, sans-serif;
+   }
+
+   header {
+       background-color: #f8f9fa;  
+       padding: 10px 0;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+       border-bottom: 3px solid #fff;  
+   }
+
+   .header-container {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       max-width: 1200px;
+       margin: 0 auto;
+       padding: 0 20px;
+   }
+
+   .logo img {
+       height: 70px;  
+       max-width: 100%;
+   }
+
+   .portal-name h1 {
+       font-size: 28px;
+       color: #007bff;  
+       margin: 0;
+       text-transform: uppercase;
+       font-weight: bold;
+       letter-spacing: 2px;
+   }
+
+   @media (max-width: 768px) {
+       .header-container {
+           flex-direction: column;
+           text-align: center;
+       }
+       
+       .logo img {
+           height: 60px;
+       }
+       
+       .portal-name h1 {
+           font-size: 24px;
+       }
+   }
+</style>
+ 
+        
+        
+    
+       
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Menu</title>
+    <style>
+        .menu-container {
+            width: 100%;
+            position: relative;
+            background-color: #f3f4f6;
+            padding:  0;
+        }
+        .scroll-menu {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding: 0 rem;
+        }
+        .scroll-menu::-webkit-scrollbar {
+            display: none;
+        }
+        .menu-item {
+         
+            margin-right: 0.1rem;
+            color: #4b5563;
+            text-decoration: none;
+            border-radius: 0.1;
+        }
+        .menu-item:hover {
+            background-color: #e5e7eb;
+        }
+        .menu-item.active {
+            color: #2563eb;
+        }
+        .scroll-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #f4b400;
+            border: none;
+           
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+            opacity: 0;  
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .scroll-button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .scroll-button:hover {
+            background-color: #f3f4f6;
+        }
+        .scroll-left {
+            left: 0;
+        }
+        .scroll-right {
+            right: 0;
+        }
+
+
+.scroll-menu {
+      background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+      overflow-x: auto;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      scroll-behavior: smooth;
+    }
+
+    .scroll-menu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+ .scroll-menu a:hover {
+      background-color: #f4b400;
+      color: #333;
+    }
+
+    .scroll-menu a.active {
+      background-color: #f4b400;
+      color: #333;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
+        <div class="scroll-menu" id="scrollMenu">
+            <a href="/" class="menu-item active">Home</a>
+          <a href="/yojnaportalweb/#schemes" class="menu-item" onclick="showCategory('schemes', this)">Yojna</a>
+            <a href="/yojnaportalweb/#jobs" class="menu-item" onclick="showCategory('jobs', this)">Jobs</a>
+            <a href="/yojnaportalweb/#alert" class="menu-item" onclick="showCategory('alert', this)">Alert</a>
+            <a href="/yojnaportalweb/#more" class="menu-item" onclick="showCategory('more', this)">More</a>
+            <a href="/yojna-search/" class="menu-item">All Yojna</a>
+            <a href="/last-date-reminder/" class="menu-item">Last Date</a>
+            <a href="/exam-date/" class="menu-item">Exams</a>
+            <a href="more.html" class="menu-item">More</a>
+            <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
+            <a href="https://tools.v2kcomputers.com/p/home.html" class="menu-item">Advance Tools</a>
+            <a href="#" class="menu-item">Admit Card</a>
+            <a href="#" class="menu-item">Result</a>
+        </div>
+        <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollMenu = document.getElementById('scrollMenu');
+            const scrollLeftBtn = document.querySelector('.scroll-left');
+            const scrollRightBtn = document.querySelector('.scroll-right');
+
+            function updateScrollButtons() {
+                
+                if (scrollMenu.scrollLeft > 0) {
+                    scrollLeftBtn.classList.add('show');
+                } else {
+                    scrollLeftBtn.classList.remove('show');
+                }
+
+                
+                if (scrollMenu.scrollLeft + scrollMenu.clientWidth < scrollMenu.scrollWidth) {
+                    scrollRightBtn.classList.add('show');
+                } else {
+                    scrollRightBtn.classList.remove('show');
+                }
+            }
+
+            function scroll(direction) {
+                const scrollAmount = scrollMenu.clientWidth / 2;
+                scrollMenu.scrollBy({
+                    left: direction === 'left' ? -scrollAmount : scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+
+            scrollLeftBtn.addEventListener('click', () => scroll('left'));
+            scrollRightBtn.addEventListener('click', () => scroll('right'));
+
+            
+            scrollMenu.addEventListener('scroll', updateScrollButtons);
+            window.addEventListener('resize', updateScrollButtons);
+            updateScrollButtons(); 
+        });
+    </script>
+</body>
+</html>
+
+        <div id="sidenav-main">
+        
+        
+
+<head>
+  <link rel="stylesheet" href="css/header/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .single-post-wrapper {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .single-post-header {
+     
+      margin-bottom: 20px;
+    }
+
+    .single-post-header h1 {
+ 
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .post-meta {
+      color: #0e0101;
+      font-size: 0.9rem;
+      text-align:left;
+    }
+
+    .single-post-content {
+      margin-top: 20px;
+      
+    }
+
+
+   
+
+    @media (max-width: 768px) {
+      .single-post-wrapper {
+        width:100%;
+        padding: 15px;
+      }
+
+      .single-post-header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="single-post-wrapper">
+
+    <div class="single-post-header">
+      <div  class="post-meta">Name of Post:<strong>  Landing</strong></div> 
+      <div class="post-meta"> Post Date / Update: <strong>22-Oct-2024 15:55:35</strong></div> 
+      <div class="post-meta">Short Information: <strong> </strong></div> 
+    </div>
+
+  
+
+    <div class="single-post-content">
+      
+    </div>
+
+    
+    
+
+
+  </div>
+
+</body>
+
+
+    
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer at Bottom Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        #footer {
+            flex-shrink: 0;
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .social-media a {
+            color: #333;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://telegram.me/yojnaportal"><i class="fab fa-telegram"></i></a>
+                <a href="https://bit.ly/SarkariJankari"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    </div>
+     
+       
+    </div>
+</body>
+
+</html>

@@ -8,19 +8,109 @@
     <link rel="stylesheet" href="/yojnaportalweb/css/style.css">
 
     <title>Yojna Portal</title>
-</head>
+    <script src="/js/search.js"></script>
+
+
+    <script src="/js/fuse.min.js"></script>
+<script src="/js/search.js"></script>
+
+    
+    <style>
+        body {
+    height: 100%;
+    margin: auto;
+    padding: 0;
+}
+       body {
+            height: 100%;
+            margin: auto;
+            padding: 0; }
+        
+    .main-container {
+        max-width: 1200px;
+        width: 100%;
+        
+        padding: 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    
+
+   
+ 
+     
+   
+    </style>
+</head> 
 <body>
     <div class="main-container">
       
-        <link rel="stylesheet" href="css\header.css">
-<header>
-    <div class="logo">
-       <a href="/"> <img  id="logoimg"  alt="Yojna Portal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/></a>
-
-    </div>
-     <div class="portal-name">YOJNA PORTAL</div>
-     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <header>
+   <div class="header-container">
+       <div class="logo">
+           <a href="/">
+               <img id="logo" alt="Yojna Portal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/>
+           </a>
+       </div>
+       <div class="portal-name">
+           
+       </div>
+   </div>
 </header>
+
+<style>
+  
+
+   header {
+       background-color: #f8f9fa;  
+       padding: 10px 0;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+       border-bottom: 3px solid #fff;  
+   }
+
+   .header-container {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       max-width: 1200px;
+       margin: 0 auto;
+       padding: 0 20px;
+   }
+
+   .logo img {
+       height: 70px;  
+       max-width: 100%;
+   }
+
+   .portal-name h1 {
+       font-size: 28px;
+       color: #007bff;  
+       margin: 0;
+       text-transform: uppercase;
+       font-weight: bold;
+       letter-spacing: 2px;
+   }
+
+   @media (max-width: 768px) {
+       .header-container {
+           flex-direction: column;
+           text-align: center;
+       }
+       
+       .logo img {
+           height: 60px;
+       }
+       
+       .portal-name h1 {
+           font-size: 24px;
+       }
+   }
+</style>
  
         
         
@@ -35,11 +125,11 @@
     <title>Scrollable Menu</title>
     <style>
         .menu-container {
+            width: 100%;
             position: relative;
             background-color: #f3f4f6;
-            padding: 0;
+            padding:  0;
         }
-
         .scroll-menu {
             display: flex;
             overflow-x: auto;
@@ -47,70 +137,87 @@
             scrollbar-width: none;
             -ms-overflow-style: none;
             padding: 0 rem;
-            background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
-            align-items: center;
-            scroll-behavior: smooth;
         }
-
         .scroll-menu::-webkit-scrollbar {
             display: none;
         }
-
         .menu-item {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
+         
             margin-right: 0.1rem;
+            color: #4b5563;
+            text-decoration: none;
+            border-radius: 0.1;
         }
-
         .menu-item:hover {
-            background-color: #f4b400;
-            color: #333;
+            background-color: #e5e7eb;
         }
-
         .menu-item.active {
-            background-color: #f4b400;
-            color: #333;
+            color: #2563eb;
         }
-
         .scroll-button {
             position: absolute;
-            top: 42%;
+            top: 50%;
             transform: translateY(-50%);
             background-color: #f4b400;
             border: none;
+           
             padding: 14px;
             display: flex;
-          
             align-items: center;
             justify-content: center;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
             cursor: pointer;
-            opacity: 0;
+            opacity: 0;  
             visibility: hidden;
             transition: opacity 0.3s ease, visibility 0.3s ease;
         }
-.scroll-menu a {color:white;}
         .scroll-button.show {
             opacity: 1;
             visibility: visible;
         }
-
         .scroll-button:hover {
-          color:black;
             background-color: #f3f4f6;
         }
-
         .scroll-left {
             left: 0;
         }
-
         .scroll-right {
             right: 0;
+           
         }
+
+
+.scroll-menu {
+      background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+      overflow-x: auto;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      scroll-behavior: smooth;
+    }
+
+    .scroll-menu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+ .scroll-menu a:hover {
+      background-color: #f4b400;
+      color: #333;
+    }
+
+    .scroll-menu a.active {
+      background-color: #f4b400;
+      color: #333;
+    }
+
+
+
+
     </style>
 </head>
 <body>
@@ -118,6 +225,10 @@
         <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
         <div class="scroll-menu" id="scrollMenu">
             <a href="/" class="menu-item active">Home</a>
+          <a href="/yojnaportalweb/#schemes" class="menu-item" onclick="showCategory('schemes', this)">Yojna</a>
+            <a href="/yojnaportalweb/#jobs" class="menu-item" onclick="showCategory('jobs', this)">Jobs</a>
+            <a href="/yojnaportalweb/#alert" class="menu-item" onclick="showCategory('alert', this)">Alert</a>
+            <a href="/yojnaportalweb/#more" class="menu-item" onclick="showCategory('more', this)">More</a>
             <a href="/yojna-search/" class="menu-item">All Yojna</a>
             <a href="/last-date-reminder/" class="menu-item">Last Date</a>
             <a href="/exam-date/" class="menu-item">Exams</a>
@@ -131,7 +242,7 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const scrollMenu = document.getElementById('scrollMenu');
             const scrollLeftBtn = document.querySelector('.scroll-left');
             const scrollRightBtn = document.querySelector('.scroll-right');
@@ -169,32 +280,137 @@
             updateScrollButtons(); 
         });
     </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const links = document.querySelectorAll('.menu-item');
-            const currentUrl = window.location.pathname;
-            let isMatched = false;
-
-            links.forEach(link => {
-                const linkPath = new URL(link.href).pathname;
-
-                if (linkPath === currentUrl) {
-                    links.forEach(l => l.classList.remove('active')); 
-                    link.classList.add('active'); 
-                    isMatched = true; 
-                }
-            });
-
-            
-            if (!isMatched) {
-                links[0].classList.add('active'); 
-            }
-        });
-    </script>
 </body>
 </html>
 
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagonal Slice Banner</title>
+    <style>
+        
+        .banner {
+            width: 100%;
+            height: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .diagonal-slice {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(45deg, #4CAF50, #2E7D32);
+            clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        }
+
+        .banner-text {
+            color: white;
+            font-size: 3.5em;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
+            letter-spacing: 2px;
+            margin: 0;
+            padding: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+         
+     
+
+         
+        @media (max-width: 1200px) {
+            .banner-text {
+                font-size: 3em;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .banner-text {
+                font-size: 2.5em;
+            }
+            .diagonal-slice {
+                width: 75%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 2em;
+            }
+            .diagonal-slice {
+                width: 80%;
+                clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .banner-text {
+                font-size: 1.5em;
+            }
+            .diagonal-slice {
+                width: 85%;
+                clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+         
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .diagonal-slice {
+            animation: slideIn 1s ease-out;
+        }
+
+         
+        .banner-button {
+            position: absolute;
+          margin:auto;
+width: 230px;
+            padding: 5px 20px;
+font-size:13px;
+text-align:center;
+            background-color: white;
+            color: #4CAF50;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .banner-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="diagonal-slice">
+        <a href="https://www.whatsapp.com/channel/0029VaCwEclFy72HhgQzJB0I" class="banner-button" target="_blank">Join WhatsApp Channel</a>
+        </div>
+    </div>
+
+</body>
+</html>
         <div id="sidenav-main">
         
         
@@ -205,478 +421,306 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yojna Portal</title>
     <style>
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-           
-            padding:10px;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            background-color: #FF5722;
-            color: white;
-
-        }
-        .bottom-nav div a {
-            padding: 8px 40px 8px;
-            color: white;
-            text-decoration: none;
-        }
-        .bottom-nav div a:hover,
-        .bottom-nav div a.active {
-
-            background-color: #f4b400;
-        }
-        .content {
-            padding: 10px;
-            display: none;
-        }
-        .content.active {
-            display: block;
-        }
+       
     </style>
 </head>
 <body>
 
     
-<head>
- 
-  <link rel="stylesheet" href=" css\sidenav.css">
-</head>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-</div>
-<script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("sidenav-main").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("sidenav-main").style.marginLeft= "0";
-  }
-  </script>
 
     <div id="home" class="content active">
-        <h1>home</h1>
+
         
 <head>
 
-<link rel="stylesheet" href="css\list-posts.css">
+<link rel="stylesheet" href="css\list-posts1.css">
+<style>
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 8px;
+    margin: 20px auto;
+    max-width:900px;
+    min-width:300px;
+}
+
+.post {
+    
+    text-align: center;
+ 
+    padding: 5px;
+    border-radius: 5px;
+    height:40px;
+    font-size:9px;
+    overflow: hidden;
+  
+}
+.post-link {
+    color: white;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+
+</style>
+
 </head>
 <div class="post-grid">
     
     <div class="post" style="background-color: olive;">
-        <a href="http://localhost:1313/yojnaportalweb/job-post-tem/" class="post-link">
-            Job Post Tem<br>check now
+        <a href="http://localhost:1313/yojnaportalweb/banner/" class="post-link">
+            Banner    
         </a>
     </div>
     
-    <div class="post" style="background-color: gray;">
-        <a href="http://localhost:1313/yojnaportalweb/textpost/" class="post-link">
-            Textpost<br>check now
+    <div class="post" style="background-color: olive;">
+        <a href="http://localhost:1313/yojnaportalweb/job-new-post/" class="post-link">
+            Job New Post    
+        </a>
+    </div>
+    
+    <div class="post" style="background-color: olive;">
+        <a href="http://localhost:1313/yojnaportalweb/page/" class="post-link">
+            Latest Jobs    
+        </a>
+    </div>
+    
+    <div class="post" style="background-color: olive;">
+        <a href="http://localhost:1313/yojnaportalweb/ifram/" class="post-link">
+            Ifram    
         </a>
     </div>
     
     <div class="post" style="background-color: gray;">
         <a href="http://localhost:1313/yojnaportalweb/admitcard/" class="post-link">
-            admit card<br>check now
+            Latest Admitcard    
         </a>
     </div>
     
     <div class="post" style="background-color: gray;">
-        <a href="http://localhost:1313/yojnaportalweb/first-yojn/" class="post-link">
-            First Yojn<br>check now
+        <a href="http://localhost:1313/yojnaportalweb/latest-jobs/" class="post-link">
+            Latest Jobs    
         </a>
     </div>
     
     <div class="post" style="background-color: gray;">
-        <a href="http://localhost:1313/yojnaportalweb/posts/" class="post-link">
-            Posts<br>check now
+        <a href="http://localhost:1313/yojnaportalweb/pdf-forms/" class="post-link">
+            Latest Pdf Forms    
+        </a>
+    </div>
+    
+    <div class="post" style="background-color: gray;">
+        <a href="http://localhost:1313/yojnaportalweb/latest-results/" class="post-link">
+            Latest Result    
         </a>
     </div>
     
 </div>
 
 
-    <head>
-<link rel="stylesheet" href="\css\list-home.css">
+        <!DOCTYPE html>
+<html>
+<head>
 <style>
-  
-</style>
-</head>
+  :root {
+    --primary: #f06508;
+    --primary-dark: #926400;
+    --secondary: #f3f4f6;
+    --text-light: #ffffff;
+    --text-dark: #1f2937;
+    --border-radius: 8px;
+    --shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --font-size: 1rem;
+    --mfont-size: 1rem;
+    --card-width: 350px;
+    --mcard-width: 200px;
+  }
+
+  .grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 10px;  
+    padding: 20px;
+  }
+
+  .card {
+    background: white;
+    max-width: var(--card-width);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .card-header {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 3px;
+    font-weight: 600;
+    text-align: center;
+    font-size: calc(var(--font-size) + 0.1rem);
+    letter-spacing: 0.5px;
+    font-size:10px;
+  }
+
+  .card-content {
+    padding: 20px;
+    min-height: 200px;
+    background: var(--secondary);
+    font-size: var(--font-size);
+    line-height: 1.5;
+  }
+
+  .card-footer {
+    background: white;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .more-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: var(--font-size);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+  }
+
+  .more-link:hover {
+    color: var(--primary-dark);
+  }
+
+  .more-link::after {
+    content: '→';
+    font-size: 1.1rem;
+  }
 
    
-<div class="col-container">
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);  
+  
+    }
+    :root {
+      --font-size: 0.8rem;
+      --card-width: 180px;  
+    }
+  }
 
-  <div class="col">
-    <div class="colHead"> Latest Schemes</div>
-    <div class="list-Content"> 
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  
+  <div class="card">
+    <div class="card-header">Latest Schemes</div>
+    <div class="card-content">
       <ul>
     
   </ul>   
- 
-     </div>
-   
-    <div class="colBottom"><a href=""> more... </a> </div>
-  </div>
-
-  <div class="col">
-    <div class="colHead">Important Links</div>
-    <div class="list-Content"> 
-      <ul>
-    
-  </ul>
-
     </div>
-    <div class="colBottom"><a href=""> more... </a></div>
-  </div>
-
-
-  <div class="col">
-    <div class="colHead">Students</div>
-    <div class="list-Content"> 
-      <ul>
-    
-  </ul>
- 
-     </div>
-    <div class="colBottom"> <a href=""> more... </a> </div>
-  </div>
-</div>
-
-
-<div class="col-container">
-  <div class="col">
-    <div class="colHead">Results</div>
-    <div class="list-Content"> 
-      <ul>
-    
-  </ul>
-
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
     </div>
-    <div class="colBottom"><a href=""> more... </a></div>
   </div>
 
-  <div class="col">
-    <div class="colHead">Admit Card</div>
-    <div class="list-Content"> 
+  <div class="card">
+    <div class="card-header">Important Links</div>
+    <div class="card-content">
+      <ul>
+    
+  </ul>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Students</div>
+    <div class="card-content">
+      <ul>
+    
+  </ul>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <div class="card-header">Results</div>
+    <div class="card-content">
+      <ul>
+    
+  </ul>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Admit Card</div>
+    <div class="card-content">
       
 <ul>
     
       <li>
-        <a href="http://localhost:1313/yojnaportalweb/job-post-tem/">Job Post Tem</a>
+        <a href="http://localhost:1313/yojnaportalweb/banner/">Banner</a>
+      </li>
+    
+      <li>
+        <a href="http://localhost:1313/yojnaportalweb/ifram/">Ifram</a>
+      </li>
+    
+      <li>
+        <a href="http://localhost:1313/yojnaportalweb/pm-internship-yojna/">PM Internship Yojna</a>
       </li>
     
   </ul>
- 
-     </div>
-   
-    <div class="colBottom"><a href=""> more... </a> </div>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
   </div>
 
-  <div class="col">
-    <div class="colHead">Latest Job</div>
-    <div class="list-Content"> 
+  <div class="card">
+    <div class="card-header">Latest Job</div>
+    <div class="card-content">
+      <ul>
+  <ul>
       
-<ul>
-    
+        <li>
+          <a href="http://localhost:1313/yojnaportalweb/job-new-post/">Job New Post</a>
+        </li>
+      
+        <li>
+          <a href="http://localhost:1313/yojnaportalweb/page/">Latest Jobs</a>
+        </li>
+      
   </ul>
- 
-     </div>
-    <div class="colBottom"> <a href=""> more... </a> </div>
+  
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
   </div>
-</div>
-
-
-
-<ul>
-    
-  </ul>
-    </div>
-    
-    <div id="schemes" class="content">
-        <h1>Yojna</h1>
-        
-            <div class="lastDateContainer">
-  
-  <div id="datezoon">Last Date Today</div>
-  <table id="today-table">
-      <thead>
-          <tr>
-              <th style="background-color: #f4b400; color:black;">Post Title</th>
-              <th style="background-color: #f4b400; color:black;">Category</th>
-              <th style="background-color: #f4b400; color:black;">Last Date</th>
-              <th style="background-color: #f4b400; color:black;">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-
-  
-  <div id="datezoon">Last Date Tomorrow</div>
-  <table id="tomorrow-table">
-      <thead>
-          <tr>
-              <th style="background-color: #f4b400; color:black;">Post Title</th>
-              <th style="background-color: #f4b400; color:black;">Category</th>
-              <th style="background-color: #f4b400; color:black;">Last Date</th>
-              <th style="background-color: #f4b400; color:black;">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          <tr class="post">
-              <td>Job Post Tem</td>
-              <td>Exams</td>
-              <td>2024-10-08</td>
-              <td><a href="http://localhost:1313/yojnaportalweb/job-post-tem/" target="_blank"><button id="applybtn">Click Here</button></a></td>
-          </tr>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-
-  
-  <div id="datezoon">Was Yesterday</div>
-  <table id="yesterday-table">
-      <thead>
-          <tr>
-              <th style="background-color: rgb(255, 115, 68);">Post Title</th>
-              <th style="background-color: rgb(255, 115, 68);">Category</th>
-              <th style="background-color: rgb(255, 115, 68);">Last Date</th>
-              <th style="background-color: rgb(255, 115, 68);">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-
-  
-  <div id="datezoon">Upcoming</div>
-  <table id="upcoming-table">
-      <thead>
-          <tr>
-              <th style="background-color: #f4b400; color:black;">Post Title</th>
-              <th style="background-color: #f4b400; color:black;">Category</th>
-              <th style="background-color: #f4b400; color:black;">Last Date</th>
-              <th style="background-color: #f4b400; color:black;">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          <tr class="post">
-              <td>Job Post Tem</td>
-              <td>Exams</td>
-              <td>2024-10-08</td>
-              <td><a href="http://localhost:1313/yojnaportalweb/job-post-tem/" target="_blank"><button id="applybtn">Click Here</button></a></td>
-          </tr>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-
-  
-  <div id="datezoon">Expired</div>
-  <table id="expired-table">
-      <thead>
-          <tr>
-              <th style="background-color: rgb(255, 78, 57);">Post Title</th>
-              <th style="background-color: rgb(255, 78, 57);">Category</th>
-              <th style="background-color: rgb(255, 78, 57);">Last Date</th>
-              <th style="background-color: rgb(255, 78, 57);">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-</div>
-
-    </div>
-    
-    <div id="jobs" class="content">
-        <h1>Jobs</h1>
-        <link rel="stylesheet" href="css\exam-date.css">
-
-<div class="examcontainer">
-    <h1 id="reminder" style="color: rgb(255, 78, 57);">Exams Date Reminder</h1>
-
-    
-    <h2>Current Exams</h2>
-    <table id="current-exams">
-        <thead>
-            <tr>
-                <th style="background-color: #4CAF50;">Exam Name</th>
-                <th style="background-color: #4CAF50;">From Date</th>
-                <th style="background-color: #4CAF50;">To Date</th>
-                <th style="background-color: #4CAF50;">More Detail</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-            <tr>
-                <td>Job Post Tem</td>
-                <td>2024-10-20</td>
-                <td>2024-10-10</td>
-                <td><a href="#"><button>Click here</button></a></td>
-            </tr>
-            
-        </tbody>
-    </table>
-
-    
-    <h2>Upcoming Exams</h2>
-    <table id="upcoming-exams">
-        <thead>
-            <tr>
-                <th style="background-color: #f4b400;">Exam Name</th>
-                <th style="background-color: #f4b400;">From Date</th>
-                <th style="background-color: #f4b400;">To Date</th>
-                <th style="background-color: #f4b400;">More Detail</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-            <tr>
-                <td>Job Post Tem</td>
-                <td>2024-10-20</td>
-                <td>2024-10-10</td>
-                <td><a href="#"><button>Click here</button></a></td>
-            </tr>
-            
-        </tbody>
-    </table>
-
-    
-    <h2>Past Exams</h2>
-    <table id="past-exams">
-        <thead>
-            <tr>
-                <th style="background-color: rgb(255, 115, 68);">Exam Name</th>
-                <th style="background-color: rgb(255, 115, 68);">From Date</th>
-                <th style="background-color: rgb(255, 115, 68);">To Date</th>
-                <th style="background-color: rgb(255, 115, 68);">More Detail</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
-    
 </div>
 
 </body>
@@ -684,129 +728,206 @@
 
     </div>
     
-    <div id="alert" class="content">
-        <h1>Alert</h1>
-        <table>
-    <thead>
-      <tr>
-        <th>Schemes</th>
-        <th>States</th>
-        <th>Know More</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-    </tbody>
-  </table>
-    </div>
-    
-    <div id="more" class="content">
-        <h1>More dfdfdfd</h1>
-        <table></table>
-    <thead>
-      <tr>
-        <th>Upcoming</th>
-        <th>States</th>
-        <th>Know More</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-    </tbody>
-  </table>
-    </div>
-    <div class="bottom-nav"> 
-        <div><a href="#home" onclick="showCategory('home', this)">Home</a></div>
-        <div><a href="#schemes" onclick="showCategory('schemes', this)">Yojna</a></div>
-        <div><a href="#jobs" onclick="showCategory('jobs', this)">Jobs</a></div>
-        <div><a href="#alert" onclick="showCategory('alert', this)">Alert</a></div>
-        <div><a href="#more" onclick="showCategory('more', this)">More</a></div>
-    </div>
-    <script>
-        function showCategory(category, element) {
-            
-            var contents = document.querySelectorAll('.content');
-            contents.forEach(function(content) {
-                content.classList.remove('active');
-            });
+</body>
+</html>
 
-            
-            var navLinks = document.querySelectorAll('.bottom-nav div a');
-            navLinks.forEach(function(link) {
-                link.classList.remove('active');
-            });
-
-            
-            var activeContent = document.getElementById(category);
-            activeContent.classList.add('active');
-
-            
-            element.classList.add('active');
+        <!DOCTYPE html>
+<head>
+    <style>
+        .bottom-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
         }
+        
+        .bottom-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0.1rem 0;
+            margin: 0;
+        }
+        
+        .bottom-nav ul li {
+            text-align: center;
+        }
+        
+        .bottom-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+            padding: 0.6rem 2.4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .bottom-nav ul li a i {
+            font-size: 1.2rem;
+        }
+        
+        .bottom-nav ul li a:hover,
+        .bottom-nav ul li a.active {
+            background-color: #f4b400;
+            color: #333;
+        }
+        
+       @media (max-width: 600px) {
+    .bottom-nav {
+        display: block;
+    }
+    .bottom-nav ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .bottom-nav ul li a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .bottom-nav ul li a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .bottom-nav {
+        display: none;
+    }
+}
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bottom-nav">
+        <ul>
+            <li>
+                <a href="/yojnaportalweb/" class="active">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/yojnaportalweb/quick/last-date/">
+                    <i class="fas fa-calendar-alt"></i>
+                    LastDate
+                </a>
+            </li>
+            <li>
+                <a href="/yojnaportalweb/search/">
+                    <i class="fas fa-search"></i>
+                    Search
+                </a>
+            </li>
+            <li>
+                <a href="/yojnaportalweb/quick/exam-date/">
+                    <i class="fas fa-book"></i>
+                    Exams
+                </a>
+            </li>
+            <li>
+                <a href="/yojnaportalweb/manu/">
+                    <i class="fas fa-bars"></i>
+                    Menu
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentLocation = location.href;
+            const menuItems = document.querySelectorAll('.bottom-nav ul li a');
+            
+            menuItems.forEach(item => {
+                if (item.href === currentLocation) {
+                    item.classList.add('active');
+                }
+            });
+            
+            menuItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    menuItems.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
     </script>
 </body>
-</html>
-
-    
-        <head>
-
-<link rel="stylesheet" href="css\footer.css">
-
-</head>
-<div class="bottom-nav"> 
-    <div><a href="/yojnaportalweb/#home" onclick="showCategory('home', this)">Home</a></div>
-    <div><a href="/yojnaportalweb/#schemes" onclick="showCategory('schemes', this)">Yojna</a></div>
-    <div><a href="/yojnaportalweb/#jobs" onclick="showCategory('jobs', this)">Jobs</a></div>
-    <div><a href="/yojnaportalweb/#alert/" onclick="showCategory('alert', this)">Alert</a></div>
-    <div><a href="/yojnaportalweb/#more" onclick="showCategory('more', this)">More</a></div>
-</div>
-<footer id="footer">
-    
-<div class="footer-content">
-   
-    
-    <div class="social-media">
-        <a href="https://telegram.me/yojnaportal"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://bit.ly/SarkariJankari"><i class="fab fa-telegram"></i></a>
-          
-
-    </div>
-</div>
-
- <a href="https://www.yojnaportal.com" title="Yojna Portal Visits">
-        <img src="https://counter8.optistats.ovh/private/freecounterstat.php?c=efdehcwl1gbxxhu1fl8pukejtjynh677" border="0" title="Yojna Portal" alt="Yojna Portal Hits">
-    </a>
-     <p>&copy; Copyright Yojna Portal, 2024</p>
-</footer> 
-
-
-    </div>
-        
+<!DOCTYPE html>
+<html lang="en">
 <head>
- 
-  <link rel="stylesheet" href=" css\sidenav.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer at Bottom Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const links = document.querySelectorAll('a');
+          links.forEach(link => {
+            link.addEventListener('click', (event) => {
+              const href = event.target.getAttribute('href');
+              logEvent('link_click', { link: href });
+            });
+          });
+        });
+      </script>
+      
+    
+    <style>
+        
+     
+        main {
+            flex: 1 0 auto;
+        }
+        #footer {
+            flex-shrink: 0;
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .social-media a {
+            color: #333;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
 </head>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-</div>
-<script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("sidenav-main").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("sidenav-main").style.marginLeft= "0";
-  }
-  </script>
+<body>
+    <main>
+        
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://telegram.me/yojnaportal"><i class="fab fa-telegram"></i></a>
+                <a href="https://bit.ly/SarkariJankari"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    </div>
+     
        
     </div>
 </body>
+
 </html>

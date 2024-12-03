@@ -1,9 +1,61 @@
-<link rel="stylesheet" href="css\header.css">
 <header>
-    <div class="logo">
-       <a href="/"> <img  id="logoimg"  alt="Yojna Portal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/></a>
-
-    </div>
-     <div class="portal-name">YOJNA PORTAL</div>
-     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+   <div class="header-container">
+       <div class="logo">
+           <a href="/">
+               <img id="logo" alt="Yojna Portal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/>
+           </a>
+       </div>
+       <div class="portal-name">
+           
+       </div>
+   </div>
 </header>
+
+<style>
+  
+
+   header {
+       background-color: #f8f9fa; /* Light grey background */
+       padding: 10px 0;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+       border-bottom: 3px solid #fff; /* Optional border for contrast */
+   }
+
+   .header-container {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       max-width: 1200px;
+       margin: 0 auto;
+       padding: 0 20px;
+   }
+
+   .logo img {
+       height: 70px; /* Adjust size as needed */
+       max-width: 100%;
+   }
+
+   .portal-name h1 {
+       font-size: 28px;
+       color: #007bff; /* Same as border color for consistency */
+       margin: 0;
+       text-transform: uppercase;
+       font-weight: bold;
+       letter-spacing: 2px;
+   }
+
+   @media (max-width: 768px) {
+       .header-container {
+           flex-direction: column;
+           text-align: center;
+       }
+       
+       .logo img {
+           height: 60px;
+       }
+       
+       .portal-name h1 {
+           font-size: 24px;
+       }
+   }
+</style>

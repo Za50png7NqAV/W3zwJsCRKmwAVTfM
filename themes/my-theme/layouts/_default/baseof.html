@@ -7,7 +7,45 @@
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 
     <title>Yojna Portal</title>
-</head>
+    <script src="/js/search.js"></script>
+
+
+    <script src="/js/fuse.min.js"></script>
+<script src="/js/search.js"></script>
+
+    
+    <style>
+        body {
+    height: 100%;
+    margin: auto;
+    padding: 0;
+}
+       body {
+            height: 100%;
+            margin: auto;
+            padding: 0; }
+        
+    .main-container {
+        max-width: 1200px;
+        width: 100%;
+       /* Center the container and add margin */
+        padding: 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    
+
+   
+ 
+    /* Responsive Design: Makes it look good on mobile */
+   
+    </style>
+</head> 
 <body>
     <div class="main-container">
       
@@ -18,14 +56,16 @@
        
         <!-- Navbar section -->
         {{ partial "navbar" . }}
+
+        {{ partial "baseof-part/social-link.html" . }}
         <div id="sidenav-main">
         <!-- Main content block -->
         {{ block "main" . }} {{ end }}
-    
-        {{ partial "footer" . }}
+        {{ partial "baseof-part/footer" . }}
     </div>
-        {{ partial "sidenav" . }}
+     
        
     </div>
 </body>
+
 </html>

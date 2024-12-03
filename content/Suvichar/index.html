@@ -1,0 +1,129 @@
+
++++
+title = 'Motivation Thoughts'
+date = 2024-11-08T19:23:23+05:30
+subtitle = ""
+
++++
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sacred Sadvakyas</title>
+    <style>
+        .root-container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            margin: 0;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .main-container1 {
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header-div {
+            background: linear-gradient(45deg, #ff9800, #f57c00);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .content-div {
+            padding: 30px;
+        }
+
+        .sadvakya-container {
+            display: none; /* Hide all containers initially */
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff8e1;
+            border-left: 4px solid #ffa000;
+        }
+
+        .hindi-div {
+            font-size: 22px;
+            color: #5d4037;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .english-div {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .source-div {
+            font-size: 14px;
+            color: #795548;
+            font-style: italic;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="root-container1">
+        <div class="main-container1">
+            <div class="header-div">
+                सुविचार / Thoughts
+            </div>
+            <div class="content-div">
+                <div class="sadvakya-container">
+                    <div class="hindi-div">अहं ब्रह्मास्मि</div>
+                    <div class="english-div">I am Brahman (The Ultimate Reality)</div>
+                    <div class="source-div">- Brihadaranyaka Upanishad 1.4.10</div>
+                </div>
+
+                <div class="sadvakya-container">
+                    <div class="hindi-div">तत्त्वमसि</div>
+                    <div class="english-div">That Thou Art (You are That)</div>
+                    <div class="source-div">- Chandogya Upanishad 6.8.7</div>
+                </div>
+
+                <div class="sadvakya-container">
+                    <div class="hindi-div">प्रज्ञानं ब्रह्म</div>
+                    <div class="english-div">Consciousness is Brahman</div>
+                    <div class="source-div">- Aitareya Upanishad 3.3</div>
+                </div>
+
+                <div class="sadvakya-container">
+                    <div class="hindi-div">अयं आत्मा ब्रह्म</div>
+                    <div class="english-div">This Self is Brahman</div>
+                    <div class="source-div">- Mandukya Upanishad 1.2</div>
+                </div>
+
+                <div class="sadvakya-container">
+                    <div class="hindi-div">सोऽहम्</div>
+                    <div class="english-div">I am That (He)</div>
+                    <div class="source-div">- Vedantic Teaching</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get all the Mahāvākya containers
+        const containers = document.querySelectorAll('.sadvakya-container');
+
+        // Select a random container to display
+        const randomIndex = Math.floor(Math.random() * containers.length);
+        containers[randomIndex].style.display = 'block';
+    </script>
+</body>
+</html>

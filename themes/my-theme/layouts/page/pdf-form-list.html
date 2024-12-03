@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+{{ .Title }}
+
+
+    <!-- Header Partial -->
+    {{ partial "list-update/pdf-forms-list.html" . }}
+
+    <!-- Content Section -->
+    <div class="content">
+        {{ .Content }}
+    </div>
+{{ end }}

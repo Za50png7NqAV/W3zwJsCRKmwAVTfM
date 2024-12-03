@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  :root {
+    --primary: #f06508;
+    --primary-dark: #926400;
+    --secondary: #f3f4f6;
+    --text-light: #ffffff;
+    --text-dark: #1f2937;
+    --border-radius: 8px;
+    --shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --font-size: 1rem;
+    --mfont-size: 1rem;
+    --card-width: 350px;
+    --mcard-width: 200px;
+  }
+
+  .grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 10px;  
+    padding: 20px;
+  }
+
+  .card {
+    background: white;
+    max-width: var(--card-width);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .card-header {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 3px;
+    font-weight: 600;
+    text-align: center;
+    font-size: calc(var(--font-size) + 0.1rem);
+    letter-spacing: 0.5px;
+    font-size:10px;
+  }
+
+  .card-content {
+    padding: 20px;
+    min-height: 200px;
+    background: var(--secondary);
+    font-size: var(--font-size);
+    line-height: 1.5;
+  }
+
+  .card-footer {
+    background: white;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .more-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: var(--font-size);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+  }
+
+  .more-link:hover {
+    color: var(--primary-dark);
+  }
+
+  .more-link::after {
+    content: '→';
+    font-size: 1.1rem;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* Keep 3 columns on smaller screens */
+  
+    }
+    :root {
+      --font-size: 0.8rem;
+      --card-width: 180px; /* Slightly smaller card width */
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <!-- First Row -->
+  <div class="card">
+    <div class="card-header">Latest Schemes</div>
+    <div class="card-content">
+      {{ partial "Update-Schemes.html" . }}
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Important Links</div>
+    <div class="card-content">
+      {{ partial "Update-impLinks.html" . }}
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Students</div>
+    <div class="card-content">
+      {{ partial "Update-Students.html" . }}
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="card">
+    <div class="card-header">Results</div>
+    <div class="card-content">
+      {{ partial "Update-Results.html" . }}
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Admit Card</div>
+    <div class="card-content">
+      {{ partial "Update-AdmitCard.html" . }}
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Latest Job</div>
+    <div class="card-content">
+      {{ partial "Update-Jobs.html" . }}
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

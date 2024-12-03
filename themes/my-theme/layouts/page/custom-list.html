@@ -1,0 +1,14 @@
+
+
+
+
+
+{{ define "main" }}
+    <!-- Header Partial -->
+    {{ partial "list-update/latest-job-list.html" . }}
+
+    <!-- Content Section -->
+    <div class="content">
+        {{ .Content }}
+    </div>
+{{ end }}

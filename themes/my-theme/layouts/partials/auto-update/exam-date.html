@@ -1,4 +1,42 @@
 <link rel="stylesheet" href="css\exam-date.css">
+<style>
+
+
+       
+      
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+       
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+  
+     h2 {text-align: left;
+        font-size: 14px;}
+        
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
 
 <div class="examcontainer">
     <h1 id="reminder" style="color: rgb(255, 78, 57);">Exams Date Reminder</h1>
@@ -66,7 +104,7 @@
                 <td>{{ .Title }}</td>
                 <td>{{ .Params.from_date }}</td>
                 <td>{{ .Params.to_date }}</td>
-                <td><a href="{{ .Params.details_url }}"><button>Click here</button></a></td>
+                <td><a href="{{ .Permalink }}" target="_blank"><button>Click here</button></a></td>
             </tr>
             {{ end }}
         </tbody>

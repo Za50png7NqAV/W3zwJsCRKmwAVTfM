@@ -1,73 +1,91 @@
 <head>
-<link rel="stylesheet" href="\css\list-home.css">
+<link rel="stylesheet" href="css\list-home1.css">
 <style>
+  .col-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col {
+    flex: 0 1 calc(50% - 10px); /* Minimum 2 columns per row with some spacing */
+    margin: 5px;
+    box-sizing: border-box;
+  }
+  
+  .colHead {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .list-Content {
+    padding: 10px;
+  }
+  
+  .colBottom {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .col {
+      flex: 0 1 calc(100% - 10px); /* Make columns stack on smaller screens */
+    }
+  }
   
 </style>
 </head>
 
-   <!-- Column Container -->
+  <!-- Column Container -->
 <div class="col-container">
-
   <div class="col">
-    <div class="colHead"> Latest Schemes</div>
-    <div class="list-Content"> 
+    <div class="colHead">Latest Schemes</div>
+    <div class="list-Content">
       {{ partial "Update-Schemes.html" . }}
- 
-     </div>
-   
-    <div class="colBottom"><a href=""> more... </a> </div>
-  </div>
-
-  <div class="col">
-    <div class="colHead">Important Links</div>
-    <div class="list-Content"> 
-      {{ partial "Update-impLinks.html" . }}
-
     </div>
     <div class="colBottom"><a href=""> more... </a></div>
   </div>
 
+  <div class="col">
+    <div class="colHead">Important Links</div>
+    <div class="list-Content">
+      {{ partial "Update-impLinks.html" . }}
+    </div>
+    <div class="colBottom"><a href=""> more... </a></div>
+  </div>
 
   <div class="col">
     <div class="colHead">Students</div>
-    <div class="list-Content"> 
+    <div class="list-Content">
       {{ partial "Update-Students.html" . }}
- 
-     </div>
-    <div class="colBottom"> <a href=""> more... </a> </div>
+    </div>
+    <div class="colBottom"><a href=""> more... </a></div>
   </div>
-</div>
-<!-- Column Container -->
-<!-- Column Container -->
-<div class="col-container">
+
   <div class="col">
     <div class="colHead">Results</div>
-    <div class="list-Content"> 
+    <div class="list-Content">
       {{ partial "Update-Results.html" . }}
-
     </div>
     <div class="colBottom"><a href=""> more... </a></div>
   </div>
 
   <div class="col">
     <div class="colHead">Admit Card</div>
-    <div class="list-Content"> 
+    <div class="list-Content">
       {{ partial "Update-AdmitCard.html" . }}
- 
-     </div>
-   
-    <div class="colBottom"><a href=""> more... </a> </div>
+    </div>
+    <div class="colBottom"><a href=""> more... </a></div>
   </div>
 
   <div class="col">
     <div class="colHead">Latest Job</div>
-    <div class="list-Content"> 
+    <div class="list-Content">
       {{ partial "Update-Jobs.html" . }}
- 
-     </div>
-    <div class="colBottom"> <a href=""> more... </a> </div>
+    </div>
+    <div class="colBottom"><a href=""> more... </a></div>
   </div>
 </div>
 
-<!-- Column Container -->
 {{ partial "Update-Jobs.html" . }}

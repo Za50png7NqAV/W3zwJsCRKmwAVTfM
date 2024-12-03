@@ -1,5 +1,33 @@
+<head>
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
+
+<script>
+  // Your Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCFdtQ3v7X165Jiy5mjvHkFTnJVyfZQW7E",
+    authDomain: "yojnaportal-23a02.firebaseapp.com",
+    projectId: "yojnaportal-23a02",
+    storageBucket: "yojnaportal-23a02.appspot.com",
+    messagingSenderId: "1049080821108",
+    appId: "1:1049080821108:web:553decbed0c0c944dde821",
+    measurementId: "G-R4MDKB0YZD"
+  };
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  const analytics = firebase.analytics();
+</script>
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
+</head>

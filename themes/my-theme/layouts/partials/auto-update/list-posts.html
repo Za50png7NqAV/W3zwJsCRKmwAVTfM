@@ -1,13 +1,46 @@
 
 <head>
 
-<link rel="stylesheet" href="css\list-posts.css">
+<link rel="stylesheet" href="css\list-posts1.css">
+<style>
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 posts per row */
+    gap: 8px;
+    margin: 20px auto;
+    max-width:900px;
+    min-width:300px;
+}
+
+.post {
+    
+    text-align: center;
+ 
+    padding: 5px;
+    border-radius: 5px;
+    height:40px;
+    font-size:9px;
+    overflow: hidden;
+  
+}
+.post-link {
+    color: white;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+
+</style>
+
 </head>
 <div class="post-grid">
     {{ range first 8 .Pages }}
     <div class="post" style="background-color: {{ with .Params.bgcolor }}{{ . }}{{ else }}gray{{ end }};">
         <a href="{{ .Permalink }}" class="post-link">
-            {{ .Title }}<br>{{ with .Params.subtitle }}{{ . }}{{ else }}check now{{ end }}
+            {{ .Title }}  {{ with .Params.subtitle }}{{ . }}{{ else }}  {{ end }}
         </a>
     </div>
     {{ end }}

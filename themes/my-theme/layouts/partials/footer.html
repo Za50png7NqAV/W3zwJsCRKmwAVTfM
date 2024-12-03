@@ -1,31 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<link rel="stylesheet" href="css\footer.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer at Bottom Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const links = document.querySelectorAll('a');
+          links.forEach(link => {
+            link.addEventListener('click', (event) => {
+              const href = event.target.getAttribute('href');
+              logEvent('link_click', { link: href });
+            });
+          });
+        });
+      </script>
+      
+    
+    <style>
+        
+     
+        main {
+            flex: 1 0 auto;
+        }
+        #footer {
+            flex-shrink: 0;
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .social-media a {
+            color: #333;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<div class="bottom-nav"> 
-    <div><a href="/yojnaportalweb/#home" onclick="showCategory('home', this)">Home</a></div>
-    <div><a href="/yojnaportalweb/#schemes" onclick="showCategory('schemes', this)">Yojna</a></div>
-    <div><a href="/yojnaportalweb/#jobs" onclick="showCategory('jobs', this)">Jobs</a></div>
-    <div><a href="/yojnaportalweb/#alert/" onclick="showCategory('alert', this)">Alert</a></div>
-    <div><a href="/yojnaportalweb/#more" onclick="showCategory('more', this)">More</a></div>
-</div>
-<footer id="footer">
-    
-<div class="footer-content">
-   
-    
-    <div class="social-media">
-        <a href="https://telegram.me/yojnaportal"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://bit.ly/SarkariJankari"><i class="fab fa-telegram"></i></a>
-          
-
-    </div>
-</div>
-
- <a href="https://www.yojnaportal.com" title="Yojna Portal Visits">
-        <img src="https://counter8.optistats.ovh/private/freecounterstat.php?c=efdehcwl1gbxxhu1fl8pukejtjynh677" border="0" title="Yojna Portal" alt="Yojna Portal Hits">
-    </a>
-     <p>&copy; Copyright Yojna Portal, 2024</p>
-</footer> 
-
+<body>
+    <main>
+        <!-- Your main content goes here -->
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://telegram.me/yojnaportal"><i class="fab fa-telegram"></i></a>
+                <a href="https://bit.ly/SarkariJankari"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<!-- Search Section -->
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Search..." oninput="performSearch()" />
+    <ul id="search-results"></ul>
+</div>
+
+<!-- Header Partial -->
+{{ partial "list-update/all-content-list.html" . }}
+
+<!-- Content Section -->
+<div class="content">
+    {{ .Content }}
+</div>
+{{ end }}
+

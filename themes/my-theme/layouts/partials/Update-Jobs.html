@@ -1,8 +1,9 @@
-
 <ul>
-    {{ range first 20 (where  .Pages ".Params.post-type" "latest-jobs") }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
+  <ul>
+      {{ range first 20 (where .Site.RegularPages ".Params.post-type" "latest-jobs") }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
   </ul>
+  

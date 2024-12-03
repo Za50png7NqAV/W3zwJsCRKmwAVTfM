@@ -15,15 +15,16 @@
 /* :root colors */ 
 
 * { 
-    margin: 0;
+   
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
   body {
       font-family: Arial, sans-serif;
-      margin: 0;
+      margin: auto;
       padding: 0;
+      max-width: 1100px;
      background-color: #f1f1f1;
       color: var(--text);
             
@@ -55,7 +56,7 @@ a:hover { color: green;}
 .single {padding:10px;}
       
     
-button {
+#button {
     background-color:var(--bgBtn); /* Green background */
     border: none;               /* Remove borders */
     color: white;               /* White text */
@@ -76,184 +77,12 @@ button:hover {
 
 /* bottomnav.css style start */
 
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-   
-    padding:10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color: #FF5722;
-    color: white;
-
-}
-.bottom-nav div a {
-    padding: 8px 40px 8px;
-    color: white;
-    text-decoration: none;
-}
-.bottom-nav div a:hover,
-.bottom-nav div a.active {
-
-    background-color: #f4b400;
-}
-.content {
-    padding: 10px;
-    display: none;
-}
-.content.active {
-    display: block;
-}
-/* bottomnav.css style start */
-
 
 
 
 
 /* header.css style start */
 
-header {
-   
-    max-width: 1380px;
-    min-width:300px;
-    text-align: center;
-     margin:auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.1rem;
-    background-color: white;
-}
-
-
-
-.logo {
-    margin-top: 8px;
-    z-index: 999;
-    margin: auto;
-    z-index: 1;
-
-}
-#logoimg{  max-width: 00px;
-  height: auto; 
-  z-index: 1;
-}
-
-.portal-name {
-   
-    margin:auto;
-     font-weight:900;
-     color: rgb(233, 18, 18);
-     marging:auto;
-
-}
-
 
 /* navbar.css style start */
-.top-nav {
-    top: 60px;
-    width: 100%;
-    background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-    z-index: 999;
-}
 
-
-.scrollmenu {
-    background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
-    overflow: auto;
-    white-space: nowrap;
-}
-
-.scrollmenu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.scrollmenu a:hover {
-    background-color: #f4b400;
-    color: #333;
-}
-
-.scrollmenu a.active {
-    background-color: #f4b400;
-    color: #333;
-}
-
-
-
-
-
-/* navbar.css style end */
-/* sidenav.css style start */
-body {
-    font-family: "Lato", sans-serif;
-  }
-  
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  #sidenav-main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
-/* sidenav.css style start */
-
-
-@media (max-width: 600px) {
-
-
-.portal-name {
-    color: black;
-    margin:auto;
-     font-weight:100%;
- 
-}
-
-}
-/* header.css style end */
