@@ -14,6 +14,60 @@
                 background-color: #f0f0f0;
                 
             }
+
+ .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .profile-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      border:1px solid black;
+
+    }
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+    }
+    .profile-info {
+      font-size: 18px;
+    }
+    .profile-info .name {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .profile-info .name .verified {
+      color: #1DA1F2; /* Twitter blue */
+      font-size: 16px;
+    }
+    .profile-info .time {
+        font-size: xx-small;
+      color: gray;
+    }
+    .icons {
+      display: flex;
+      gap: 10px;
+      margin-left: auto;
+    }
+    .icons .icon {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+    .icons .icon img {
+      width: 100%;
+      height: 100%;
+    }
+
+
+
+
+
            .post-container {
     width: 400px;
 
@@ -24,16 +78,16 @@
     word-wrap: break-word; /* Breaks long words to the next line */
     white-space: normal; /* Ensures the text wraps to the next line */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 1px dotted #000;
+    
     margin-bottom: 10px;
 }
             .main-post {
                 border: 1px double #000;
-                padding: 10px;
+                padding:10px 1px;
                 min-height: 300px;
                 border-radius: 8px;
                 position: relative;
-                box-shadow: 2px 3px 8px black;
+                
 
             }
 
@@ -130,11 +184,11 @@ border-bottom-left-radius: 6px; }
                 justify-content: space-around;
                 flex-wrap: wrap;
                 gap: 5px;
-                margin-top: 10px;
-                border: 1px solid black;
+                margin-top: 2px;
+                border-bottom: 1px solid black;
                 padding: 5px;
                 border-radius: 10px;
-                box-shadow: 2px 3px 8px black;
+                
 
             }
             .button {
@@ -145,8 +199,7 @@ border-bottom-left-radius: 6px; }
                 cursor: pointer;
                 font-size: 14px;
                 color: white;
-                pading: px;
-                padding: 0 15px;
+                padding: 0 5px;
                 transition: transform 0.2s;
             }
             .button:hover {
@@ -231,6 +284,13 @@ input[type="number"] {
   }
 }
 select {max-width: 80px;}
+.summary {margin: -10px -10px -10px 0px;
+font-size: small;}
+ .summary a {text-decoration: none;
+ }
+ .profile-container a  {text-decoration: none;
+ color: black;
+}
 
 @media (max-width: 768px) { /* टैबलेट और छोटे स्क्रीन के लिए */
     .post-container {
@@ -250,6 +310,68 @@ select {max-width: 80px;}
         {{ range .Site.RegularPages }}
 
 <div class="post-container" data-post-id="{{ .File.UniqueID }}">
+
+
+<div class="profile-container">
+    <a href="/about/"><div class="profile-image">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJ_eV9opBbEP0TwP-5auzkLDO26dIQbg5gEZmslbmOVcpzcFc0TmD3SlWiT-E3iXUZljg1dqDuwQvqlIpaMkA2ofpRwggZqlqDSN-h6bvi3oDgybcG7CAqcvBeUxakoIGJoTxog0meJT4MQF38awNQGn5vrMXQX1Kc24UReadTLuj_sSUPHXjxKFnwyw/s1600/Yojna%20Portal%20Logo%20%281%29.png" alt="Profile Image">
+  </div></a>
+  <div class="profile-info">
+    <a href="/about/">
+    <div class="name">
+      Yojna Portal
+      <span class="verified"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/>
+</svg>
+</span>
+    </div></a>
+    <div class="time">
+        
+        {{- $now := now -}}
+        {{- $postDate := .Date -}}
+        {{- $diff := $now.Sub $postDate -}}
+        
+        {{- if lt $diff (mul 60 1e9) -}} <!-- 1 second in nanoseconds -->
+            Just Now
+        {{- else if lt $diff (mul 60 60 1e9) -}} <!-- 1 minute in nanoseconds -->
+            {{ $minutes := div $diff.Seconds 60 }} <!-- Convert seconds to minutes -->
+            {{ $roundedMinutes := printf "%.0f" $minutes }} <!-- Round to the nearest integer -->
+            {{ $roundedMinutes }} minutes ago
+        {{- else if lt $diff (mul 24 60 60 1e9) -}} <!-- 1 hour in nanoseconds -->
+            {{ $hours := div $diff.Hours 1 }} <!-- Convert seconds to hours -->
+            {{ $roundedHours := printf "%.0f" $hours }} <!-- Round to the nearest integer -->
+            {{ $roundedHours }} hours ago
+        {{- else if lt $diff (mul 48 60 60 1e9) -}} <!-- 48 hours in nanoseconds -->
+            Yesterday
+        {{- else -}} 
+            {{ $postDate.Format "02 Jan, 2006" }}
+        {{- end -}}
+        <span>•</span> <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M8.64 4.737A7.97 7.97 0 0 1 12 4a7.997 7.997 0 0 1 6.933 4.006h-.738c-.65 0-1.177.25-1.177.9 0 .33 0 2.04-2.026 2.008-1.972 0-1.972-1.732-1.972-2.008 0-1.429-.787-1.65-1.752-1.923-.374-.105-.774-.218-1.166-.411-1.004-.497-1.347-1.183-1.461-1.835ZM6 4a10.06 10.06 0 0 0-2.812 3.27A9.956 9.956 0 0 0 2 12c0 5.289 4.106 9.619 9.304 9.976l.054.004a10.12 10.12 0 0 0 1.155.007h.002a10.024 10.024 0 0 0 1.5-.19 9.925 9.925 0 0 0 2.259-.754 10.041 10.041 0 0 0 4.987-5.263A9.917 9.917 0 0 0 22 12a10.025 10.025 0 0 0-.315-2.5A10.001 10.001 0 0 0 12 2a9.964 9.964 0 0 0-6 2Zm13.372 11.113a2.575 2.575 0 0 0-.75-.112h-.217A3.405 3.405 0 0 0 15 18.405v1.014a8.027 8.027 0 0 0 4.372-4.307ZM12.114 20H12A8 8 0 0 1 5.1 7.95c.95.541 1.421 1.537 1.835 2.415.209.441.403.853.637 1.162.54.712 1.063 1.019 1.591 1.328.52.305 1.047.613 1.6 1.316 1.44 1.825 1.419 4.366 1.35 5.828Z" clip-rule="evenodd"/>
+          </svg>
+          </span></div>
+  </div>
+
+  <div class="icons">
+    <div class="icon">
+   
+<svg id="whatsapp-share" onclick="shareOnWhatsApp('{{ .File.UniqueID }}')"  class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+    <path fill="currentColor" fill-rule="evenodd" d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z" clip-rule="evenodd"/>
+    <path fill="currentColor" d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"/>
+  </svg>
+  
+
+    </div>
+    <div class="icon">
+      <svg class="" onclick="toggleEditToolbar('{{ .File.UniqueID }}')" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+</svg>
+
+    </div>
+  </div>
+</div>
+<div class="summary"> <p>{{ .Summary }} <a href="{{ .Permalink }}">Read More...</a></p></div>
+
 
         <div id="editToolbar" class="toolbar" style="display: none;" data-post-id="{{ .File.UniqueID }}">
  
@@ -290,9 +412,18 @@ select {max-width: 80px;}
             <button class="tool-button" onclick="toggleBold()" title="Bold">𝗕</button>
             <button class="tool-button" onclick="toggleItalic()" title="Italic">𝘐</button>
             <button class="tool-button" onclick="toggleUnderline()" title="Underline">U̲</button>
-              <button class="tool-button" onclick="changeTextAlignment('left')" title="Align Left">🡸</button>
-            <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center">🞇</button>
-            <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right">🡺</button>
+              <button class="tool-button" onclick="changeTextAlignment('left')" title="Align Left"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="12" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6h8m-8 4h12M6 14h8m-8 4h12"/>
+</svg>
+</button>
+            <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="12" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h8M6 10h12M8 14h8M6 18h12"/>
+</svg>
+</button>
+            <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="12" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6h-8m8 4H6m12 4h-8m8 4H6"/>
+</svg>
+</button>
              
         </div>
             <label for="color-picker">
@@ -354,7 +485,51 @@ select {max-width: 80px;}
                     
                     <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
            
+                    <select onchange="changePadding(this.value)" title="Font Family">
+                        <option value="1">Padding</option> 
+                    <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="8">8</option>
+                         <option value="10">10</option>
+                         <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                         <option value="18">18</option>
+                        <option value="20">20</option>
+                        <option value="24">24</option>
+                        <option value="28">28</option>
+                        <option value="32">32</option>
+                        <option value="36">36</option>
+                        <option value="40">40</option>
+                        <option value="44">44</option>
+                        <option value="48">48</option>
+                        <option value="60">50</option>
+                    </select>
 
+
+  <select onchange="changeMargin(this.value)" title="Font Family">
+    <option value="1">Margin</option> 
+<option value="3">3</option>
+    <option value="5">5</option>
+    <option value="8">8</option>
+     <option value="10">10</option>
+     <option value="12">12</option>
+    <option value="14">14</option>
+    <option value="16">16</option>
+     <option value="18">18</option>
+    <option value="20">20</option>
+    <option value="24">24</option>
+    <option value="28">28</option>
+    <option value="32">32</option>
+    <option value="36">36</option>
+    <option value="40">40</option>
+    <option value="44">44</option>
+    <option value="48">48</option>
+    <option value="60">50</option>
+</select>
+
+
+                    
 
     </div>
 
@@ -700,6 +875,15 @@ select {max-width: 80px;}
             function changeBorderWidth(width) {
                 if (activeElement) activeElement.style.borderWidth = `${width}px`;
             }
+
+            function changePadding(padding) {
+                if (activeElement) activeElement.style.padding = `${padding}px`;
+            }
+            
+            function changeMargin(margin) {
+                if (activeElement) activeElement.style.margin = `${margin}px`;
+            }
+            
 
             function changeBorderRadius(radius) {
                 if (activeElement) activeElement.style.borderRadius = `${radius}px`;

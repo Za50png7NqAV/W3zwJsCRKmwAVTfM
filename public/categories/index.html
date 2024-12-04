@@ -419,14 +419,46 @@ text-align:center;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yojna Portal</title>
+    <title>Yojna Portal:HomePage</title>
+    <script>
+        var searchIndex = "{}";
+      </script>
+   
     <style>
-       
+        #searchInput {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          
+          #searchResults {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          #searchResults li {
+            padding: 5px;
+          }
+          
+          #searchResults li a {
+            text-decoration: none;
+            color: #007BFF;
+          }
+          
+          #searchResults li a:hover {
+            text-decoration: underline;
+          }
+          
     </style>
 </head>
 <body>
 
-    
+    <div>
+        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchContent()">
+        <ul id="searchResults"></ul>
+      </div>
 
     <div id="home" class="content active">
 
@@ -788,7 +820,7 @@ text-align:center;
     <nav class="bottom-nav">
         <ul>
             <li>
-                <a href="/" class="active">
+                <a href="/" class="active1">
                     <i class="fas fa-home"></i>
                     Home
                 </a>
@@ -806,9 +838,9 @@ text-align:center;
                 </a>
             </li>
             <li>
-                <a href="/quick/exam-date/">
+                <a href="/latest-posts/">
                     <i class="fas fa-book"></i>
-                    Exams
+                    Update
                 </a>
             </li>
             <li>

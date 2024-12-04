@@ -1,10 +1,6 @@
-{{- $pages := .Site.Pages -}}
-{{- $result := slice -}}
-{{- range $pages -}}
-  {{- $result = $result | append (dict 
-    "title" .Title 
-    "content" .Plain 
-    "permalink" .Permalink
-  ) -}}
-{{- end -}}
-{{- jsonify $result -}}
+fetch('/search.json')
+  .then(response => response.json())
+  .then(data => {
+    window.searchIndex = data;
+  })
+  .catch(err => console.error('Failed to load search index:', err));

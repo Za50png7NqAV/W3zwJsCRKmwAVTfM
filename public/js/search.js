@@ -1,44 +1,30 @@
-let searchIndex = [];
-
-// Load the search index JSON
-fetch('/search.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
+// Assuming you have a `searchIndex` generated and accessible
+function searchContent() {
+  var query = document.getElementById("searchInput").value.toLowerCase();
+  var results = [];
+  
+  // Loop through the search index to find matching content
+  searchIndex.pages.forEach(function(page) {
+    if (page.title.toLowerCase().includes(query) || page.content.toLowerCase().includes(query)) {
+      results.push(page);
     }
-    return response.json();
-  })
-  .then(data => {
-    searchIndex = data;
-  })
-  .catch(error => {
-    console.error("Error loading search index:", error);
   });
 
-// Perform search
-function searchPosts() {
-  const query = document.getElementById('searchBar').value.toLowerCase();
-  const resultsContainer = document.getElementById('searchResults');
-  resultsContainer.innerHTML = ''; // Clear previous results
+  displayResults(results);
+}
 
-  if (query.trim() === '') return;
+function displayResults(results) {
+  var resultList = document.getElementById("searchResults");
+  resultList.innerHTML = ""; // Clear previous results
 
-  const filteredResults = searchIndex.filter(post => {
-    return post.title.toLowerCase().includes(query) || post.content.toLowerCase().includes(query);
-  });
-
-  if (filteredResults.length === 0) {
-    resultsContainer.innerHTML = '<p>No results found</p>';
+  if (results.length === 0) {
+    resultList.innerHTML = "<li>No results found</li>";
     return;
   }
 
-  // Render search results
-  filteredResults.forEach(post => {
-    const resultItem = document.createElement('div');
-    resultItem.innerHTML = `
-      <h3><a href="${post.permalink}">${post.title}</a></h3>
-      <p>${post.content.substring(0, 150)}...</p>
-    `;
-    resultsContainer.appendChild(resultItem);
+  results.forEach(function(result) {
+    var li = document.createElement("li");
+    li.innerHTML = `<a href="${result.url}">${result.title}</a>`;
+    resultList.appendChild(li);
   });
 }
