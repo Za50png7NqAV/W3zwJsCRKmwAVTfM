@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jobs on YOJNA PORTAL</title>
-    <link>https://wwww.yojnaportal.com/categories/jobs/</link>
+    <link>http://localhost:1313/categories/jobs/</link>
     <description>Recent content in Jobs on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Nov 2024 19:02:26 +0530</lastBuildDate>
-    <atom:link href="https://wwww.yojnaportal.com/categories/jobs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/jobs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Banner</title>
-      <link>https://wwww.yojnaportal.com/banner/</link>
+      <link>http://localhost:1313/banner/</link>
       <pubDate>Sun, 24 Nov 2024 19:02:26 +0530</pubDate>
-      <guid>https://wwww.yojnaportal.com/banner/</guid>
+      <guid>http://localhost:1313/banner/</guid>
       <description>post html</description>
     </item>
     <item>
       <title>Job New Post</title>
-      <link>https://wwww.yojnaportal.com/job-new-post/</link>
+      <link>http://localhost:1313/job-new-post/</link>
       <pubDate>Sat, 16 Nov 2024 14:23:50 +0530</pubDate>
-      <guid>https://wwww.yojnaportal.com/job-new-post/</guid>
+      <guid>http://localhost:1313/job-new-post/</guid>
       <description></description>
     </item>
     <item>
       <title>Latest Jobs</title>
-      <link>https://wwww.yojnaportal.com/page/</link>
+      <link>http://localhost:1313/page/</link>
       <pubDate>Sat, 16 Nov 2024 14:12:57 +0530</pubDate>
-      <guid>https://wwww.yojnaportal.com/page/</guid>
+      <guid>http://localhost:1313/page/</guid>
       <description>dfddf</description>
     </item>
     <item>
       <title>Ifram</title>
-      <link>https://wwww.yojnaportal.com/ifram/</link>
+      <link>http://localhost:1313/ifram/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
-      <guid>https://wwww.yojnaportal.com/ifram/</guid>
+      <guid>http://localhost:1313/ifram/</guid>
       <description></description>
     </item>
     <item>
       <title>PM Internship Yojna</title>
-      <link>https://wwww.yojnaportal.com/pm-internship-yojna/</link>
+      <link>http://localhost:1313/pm-internship-yojna/</link>
       <pubDate>Fri, 08 Nov 2024 14:58:05 +0530</pubDate>
-      <guid>https://wwww.yojnaportal.com/pm-internship-yojna/</guid>
+      <guid>http://localhost:1313/pm-internship-yojna/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xD;पीएम इंटर्नशिप योजना&#xD;पीएम इंटर्नशिप योजना&#xD;योजना का अवलोकन&#xD;पीएम इंटर्नशिप योजना भारत सरकार की एक महत्वाकांक्षी पहल है, जिसका उद्देश्य युवाओं को देश की शीर्ष कंपनियों में इंटर्नशिप करने का अवसर प्रदान करना है। इस योजना के माध्यम से लाखों युवाओं को रोजगार के बेहतर अवसर प्राप्त होंगे।&#xA;योजना का नाम: प्रधानमंत्री इंटर्नशिप योजना 1 करोड़ युवा 2024&#xD;अभ्यर्थियों को Rs. 5000/- का मासिक वजीफा मिलेगा।&#xD;चयनित युवाओं को Rs.</description>
     </item>
   </channel>

@@ -10,6 +10,10 @@ theme = 'my-theme'
   defaultContentType = "page"
   
 # config.toml
+
+googleAnalytics = "G-GWSRPE5DVE"
+
+
 [[menu.main]]
   identifier = "home"
   name = "Home"
