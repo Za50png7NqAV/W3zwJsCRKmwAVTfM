@@ -15,16 +15,15 @@
 .post {
     
     text-align: center;
- 
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     padding: 5px;
     border-radius: 5px;
-    height:40px;
-    font-size:9px;
+    height:40px; 
+    font-weight: bold;  
     overflow: hidden;
-  
 }
 .post-link {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -38,11 +37,29 @@
 </head>
 <div class="post-grid">
     {{ range first 8 .Pages }}
-    <div class="post" style="background-color: {{ with .Params.bgcolor }}{{ . }}{{ else }}gray{{ end }};">
+    <div 
+        class="post" 
+        style="background-color: {{ with .Params.bgcolor }}{{ . }}{{ else }}gray{{ end }};" 
+        data-random-bg
+    >
         <a href="{{ .Permalink }}" class="post-link">
-            {{ .Title }}  {{ with .Params.subtitle }}{{ . }}{{ else }}  {{ end }}
+            {{ .Title }} {{ with .Params.subtitle }}{{ . }}{{ else }}{{ end }}
         </a>
     </div>
     {{ end }}
 </div>
 
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const posts = document.querySelectorAll('.post[data-random-bg]');
+
+        // Array of random colors
+        const colors = ['#FF5733', '#33FF57', '#3357FF', '#F1C40F', '#8E44AD', '#E74C3C', '#16A085', '#3498DB', '#F1A1B6', '#f4b400' , '#f06508' , '#2E7D32' , '#4CAF50' ];
+
+        posts.forEach(post => {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            post.style.backgroundColor = randomColor;
+        });
+    });
+</script>

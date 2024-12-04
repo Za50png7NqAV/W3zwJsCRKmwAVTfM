@@ -1,4 +1,4 @@
-baseURL = 'https://yojnaportal.github.io/yojnaportalweb/'
+baseURL = 'https://wwww.yojnaportal.com'
 languageCode = 'en-us'
 title = 'YOJNA PORTAL'
 theme = 'my-theme'
@@ -17,3 +17,5 @@ theme = 'my-theme'
   weight = 1
 [outputs]
 home = ["HTML", "JSON"]
+
+

@@ -1,8 +1,85 @@
-<ul>
-    {{ range .Site.RegularPages }}
-        <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a> 
-            <span>({{ .Date.Format "Jan 02, 2006" }})</span>
-        </li>
-    {{ end }}
-</ul>
+<!-- layouts/partials/list-update/all-content-list.html -->
+<head>
+    <script src="/js/search.js"></script>
+    <style>
+        .post-table {
+            width: 600px;
+            border-collapse: collapse;
+            margin:  auto;
+            font-size: 16px;
+            text-align: left;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .post-table th,
+        .post-table td {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .post-table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .post-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .post-table a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        
+        .post-table a:hover {
+            text-decoration: underline;
+        }
+        
+        #searchResults {
+            margin-top: 10px;
+        }
+        
+        #searchResults div {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        #searchResults h3 {
+            margin: 0 0 5px;
+        }
+    </style>
+</head>
+<input type="text" id="searchBar" placeholder="Search posts..." oninput="searchPosts()" />
+<div id="searchResults"></div>
+
+<table class="post-table">
+    <thead>
+        <tr>
+            <th>Latest</th>
+            <th>Post Date</th>
+            <th>Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range .Site.RegularPages }}
+        <tr>
+            <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+            <td>{{ .Date.Format "02/01/2006" }}</td>
+            <td><a href="{{ .RelPermalink }}">Click here</a></td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
+<script>
+fetch('/yojnaportalweb/search.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);  // Check if the data is coming correctly
+    searchIndex = data;
+  })
+  .catch(error => {
+    console.error("Error loading search index:", error);
+  });
+</script>

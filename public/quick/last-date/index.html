@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/yojnaportalweb/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=yojnaportalweb/livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/yojnaportalweb/css/style.css">
-
+   
     <title>Yojna Portal</title>
-    <script src="/js/search.js"></script>
-
-
-    <script src="/js/fuse.min.js"></script>
-<script src="/js/search.js"></script>
-
+    
     
     <style>
         body {
     height: 100%;
-    margin: auto;
+    
     padding: 0;
 }
-       body {
-            height: 100%;
-            margin: auto;
-            padding: 0; }
-        
+  
     .main-container {
         max-width: 1200px;
         width: 100%;
+        margin: auto;
         
         padding: 0px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -38,7 +28,12 @@
        
     }
 
-    
+    @media (max-width: 768px) {
+        .main-container {
+          width: 100%;
+        }
+          
+        }
 
    
  
@@ -99,6 +94,7 @@
        .header-container {
            flex-direction: column;
            text-align: center;
+         
        }
        
        .logo img {
@@ -620,6 +616,12 @@ button:hover {
           
           
           
+          
+          
+          
+          
+          
+          
       </tbody>
   </table>
 
@@ -635,6 +637,12 @@ button:hover {
           </tr>
       </thead>
       <tbody>
+          
+          
+          
+          
+          
+          
           
           
           
@@ -808,6 +816,12 @@ button:hover {
           
           
           
+          
+          
+          
+          
+          
+          
       </tbody>
   </table>
 
@@ -823,6 +837,12 @@ button:hover {
           </tr>
       </thead>
       <tbody>
+          
+          
+          
+          
+          
+          
           
           
           
@@ -924,7 +944,7 @@ button:hover {
               <td>Banner</td>
               <td>Exams</td>
               <td>2024-10-03</td>
-              <td><a href="http://localhost:1313/yojnaportalweb/banner/" target="_blank"><button id="applybtn">Click Here</button></a></td>
+              <td><a href="http://localhost:1313/banner/" target="_blank"><button id="applybtn">Click Here</button></a></td>
           </tr>
           
           
@@ -934,7 +954,7 @@ button:hover {
               <td>Job New Post</td>
               <td>Exams</td>
               <td>2024-10-03</td>
-              <td><a href="http://localhost:1313/yojnaportalweb/job-new-post/" target="_blank"><button id="applybtn">Click Here</button></a></td>
+              <td><a href="http://localhost:1313/job-new-post/" target="_blank"><button id="applybtn">Click Here</button></a></td>
           </tr>
           
           
@@ -992,8 +1012,14 @@ button:hover {
               <td>PM Internship Yojna</td>
               <td>Exams</td>
               <td>2024-11-10</td>
-              <td><a href="http://localhost:1313/yojnaportalweb/pm-internship-yojna/" target="_blank"><button id="applybtn">Click Here</button></a></td>
+              <td><a href="http://localhost:1313/pm-internship-yojna/" target="_blank"><button id="applybtn">Click Here</button></a></td>
           </tr>
+          
+          
+          
+          
+          
+          
           
           
           
@@ -1111,31 +1137,37 @@ button:hover {
     <nav class="bottom-nav">
         <ul>
             <li>
-                <a href="/yojnaportalweb/" class="active">
+                <a href="/" class="active">
                     <i class="fas fa-home"></i>
                     Home
                 </a>
             </li>
             <li>
-                <a href="/yojnaportalweb/quick/last-date/">
+                <a href="/quick/last-date/">
                     <i class="fas fa-calendar-alt"></i>
                     LastDate
                 </a>
             </li>
             <li>
-                <a href="/yojnaportalweb/search/">
+                <a href="/search/">
                     <i class="fas fa-search"></i>
                     Search
                 </a>
             </li>
             <li>
-                <a href="/yojnaportalweb/quick/exam-date/">
+                <a href="/quick/exam-date/">
                     <i class="fas fa-book"></i>
                     Exams
                 </a>
             </li>
             <li>
-                <a href="/yojnaportalweb/manu/">
+                <a href="/quick/">
+                    <i class="fas fa-dise"></i>
+                    Quick
+                </a>
+            </li>
+            <li>
+                <a href="/manu/">
                     <i class="fas fa-bars"></i>
                     Menu
                 </a>

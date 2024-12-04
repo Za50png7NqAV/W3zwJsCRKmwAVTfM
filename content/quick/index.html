@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Link Opener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            overflow: hidden;
+        }
+        .loader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dice {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2c/Animated-dice.gif');
+            background-size: cover;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loading-text {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="dice"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <script>
+        // Array of random links
+        const links = [
+            "https://www.yojnaportal.com/manu/",
+            "https://www.yojnaportal.com/quick/last-date/",
+            "https://www.yojnaportal.com/quick/exam-date/",
+            "https://www.yojnaportal.com/schemes/",
+            "https://www.yojnaportal.com/suvichar/",
+            "https://www.yojnaportal.com/baner/",
+            "https://www.yojnaportal.com/jobs/",
+            "https://www.yojnaportal.com/pdf-forms/",
+            "https://www.yojnaportal.com/quick/search/",
+            "https://www.yojnaportal.com/latest-results/",
+            "https://www.yojnaportal.com/latest-posts/",
+            "https://www.yojnaportal.com/latest-update/",
+            "https://www.yojnaportal.com/upcoming/"
+        ];
+
+        // Function to open a random link
+        function openRandomLink() {
+            const randomIndex = Math.floor(Math.random() * links.length);
+            window.location.href = links[randomIndex];
+        }
+
+        // Set timeout to simulate loading and then open a random link
+        setTimeout(openRandomLink, 3000); // 3 seconds delay
+    </script>
+</body>
+</html>

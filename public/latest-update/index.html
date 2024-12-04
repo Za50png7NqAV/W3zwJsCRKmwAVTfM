@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/yojnaportalweb/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=yojnaportalweb/livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/yojnaportalweb/css/style.css">
-
+   
     <title>Yojna Portal</title>
-    <script src="/js/search.js"></script>
-
-
-    <script src="/js/fuse.min.js"></script>
-<script src="/js/search.js"></script>
-
+    
     
     <style>
         body {
     height: 100%;
-    margin: auto;
+    
     padding: 0;
 }
-       body {
-            height: 100%;
-            margin: auto;
-            padding: 0; }
-        
+  
     .main-container {
         max-width: 1200px;
         width: 100%;
+        margin: auto;
         
         padding: 0px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -38,7 +28,12 @@
        
     }
 
-    
+    @media (max-width: 768px) {
+        .main-container {
+          width: 100%;
+        }
+          
+        }
 
    
  
@@ -99,6 +94,7 @@
        .header-container {
            flex-direction: column;
            text-align: center;
+         
        }
        
        .logo img {
@@ -416,145 +412,239 @@ text-align:center;
 <h1>Latest Update</h1>
 
 
-<div class="search-container">
-    <input type="text" id="search-input" placeholder="Search..." oninput="performSearch()" />
-    <ul id="search-results"></ul>
-</div>
 
 
-<ul>
-    
-        <li>
-            <a href="/yojnaportalweb/banner/">Banner</a> 
-            <span>(Nov 24, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/job-new-post/">Job New Post</a> 
-            <span>(Nov 16, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/page/">Latest Jobs</a> 
-            <span>(Nov 16, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/quick/exam-date/"></a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/quick/last-date/"></a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/quick/search/"></a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/ifram/">Ifram</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/admitcard/">Latest Admitcard</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/latest-jobs/">Latest Jobs</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/pdf-forms/">Latest Pdf Forms</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/latest-results/">Latest Result</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/schemes/">Latest Schemes</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/latest-posts/">Latest Update</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/latest-update/">Latest Update</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/suvichar/">Motivation Thoughts</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/student/">Student Portal</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/upcoming/">Upcoming Information</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/imp-links/">Useful Importent Links</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/pm-internship-yojna/">PM Internship Yojna</a> 
-            <span>(Nov 08, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/textpost/">Textpost</a> 
-            <span>(Oct 02, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/first-yojn/">First Yojn</a> 
-            <span>(Oct 02, 2024)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/posts/post-3/">Post 3</a> 
-            <span>(Mar 15, 2023)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/posts/post-2/">Post 2</a> 
-            <span>(Feb 15, 2023)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/posts/post-1/">Post 1</a> 
-            <span>(Jan 15, 2023)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/manu/"></a> 
-            <span>(Jan 01, 0001)</span>
-        </li>
-    
-        <li>
-            <a href="/yojnaportalweb/search/"></a> 
-            <span>(Jan 01, 0001)</span>
-        </li>
-    
-</ul>
+
+
+<head>
+    <script src="/js/search.js"></script>
+    <style>
+        .post-table {
+            width: 600px;
+            border-collapse: collapse;
+            margin:  auto;
+            font-size: 16px;
+            text-align: left;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .post-table th,
+        .post-table td {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .post-table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .post-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .post-table a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        
+        .post-table a:hover {
+            text-decoration: underline;
+        }
+        
+        #searchResults {
+            margin-top: 10px;
+        }
+        
+        #searchResults div {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        #searchResults h3 {
+            margin: 0 0 5px;
+        }
+    </style>
+</head>
+<input type="text" id="searchBar" placeholder="Search posts..." oninput="searchPosts()" />
+<div id="searchResults"></div>
+
+<table class="post-table">
+    <thead>
+        <tr>
+            <th>Latest</th>
+            <th>Post Date</th>
+            <th>Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td><a href="/banner/">Banner</a></td>
+            <td>24/11/2024</td>
+            <td><a href="/banner/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/job-new-post/">Job New Post</a></td>
+            <td>16/11/2024</td>
+            <td><a href="/job-new-post/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/page/">Latest Jobs</a></td>
+            <td>16/11/2024</td>
+            <td><a href="/page/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/ifram/">Ifram</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/ifram/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/admitcard/">Latest Admitcard</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/admitcard/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/latest-jobs/">Latest Jobs</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/latest-jobs/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/pdf-forms/">Latest Pdf Forms</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/pdf-forms/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/latest-results/">Latest Result</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/latest-results/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/schemes/">Latest Schemes</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/schemes/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/latest-posts/">Latest Update</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/latest-posts/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/latest-update/">Latest Update</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/latest-update/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/suvichar/">Motivation Thoughts</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/suvichar/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/student/">Student Portal</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/student/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/upcoming/">Upcoming Information</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/upcoming/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/imp-links/">Useful Importent Links</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/imp-links/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/pm-internship-yojna/">PM Internship Yojna</a></td>
+            <td>08/11/2024</td>
+            <td><a href="/pm-internship-yojna/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/textpost/">Textpost</a></td>
+            <td>02/10/2024</td>
+            <td><a href="/textpost/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/first-yojn/">First Yojn</a></td>
+            <td>02/10/2024</td>
+            <td><a href="/first-yojn/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/posts/post-3/">Post 3</a></td>
+            <td>15/03/2023</td>
+            <td><a href="/posts/post-3/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/posts/post-2/">Post 2</a></td>
+            <td>15/02/2023</td>
+            <td><a href="/posts/post-2/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/posts/post-1/">Post 1</a></td>
+            <td>15/01/2023</td>
+            <td><a href="/posts/post-1/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/manu/"></a></td>
+            <td>01/01/0001</td>
+            <td><a href="/manu/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/quick/"></a></td>
+            <td>01/01/0001</td>
+            <td><a href="/quick/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/search/"></a></td>
+            <td>01/01/0001</td>
+            <td><a href="/search/">Click here</a></td>
+        </tr>
+        
+        <tr>
+            <td><a href="/ypsearch/"></a></td>
+            <td>01/01/0001</td>
+            <td><a href="/ypsearch/">Click here</a></td>
+        </tr>
+        
+    </tbody>
+</table>
+<script>
+fetch('/yojnaportalweb/search.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);  
+    searchIndex = data;
+  })
+  .catch(error => {
+    console.error("Error loading search index:", error);
+  });
+</script>
+
 
 
 <div class="content">
@@ -645,31 +735,37 @@ text-align:center;
     <nav class="bottom-nav">
         <ul>
             <li>
-                <a href="/yojnaportalweb/" class="active">
+                <a href="/" class="active">
                     <i class="fas fa-home"></i>
                     Home
                 </a>
             </li>
             <li>
-                <a href="/yojnaportalweb/quick/last-date/">
+                <a href="/quick/last-date/">
                     <i class="fas fa-calendar-alt"></i>
                     LastDate
                 </a>
             </li>
             <li>
-                <a href="/yojnaportalweb/search/">
+                <a href="/search/">
                     <i class="fas fa-search"></i>
                     Search
                 </a>
             </li>
             <li>
-                <a href="/yojnaportalweb/quick/exam-date/">
+                <a href="/quick/exam-date/">
                     <i class="fas fa-book"></i>
                     Exams
                 </a>
             </li>
             <li>
-                <a href="/yojnaportalweb/manu/">
+                <a href="/quick/">
+                    <i class="fas fa-dise"></i>
+                    Quick
+                </a>
+            </li>
+            <li>
+                <a href="/manu/">
                     <i class="fas fa-bars"></i>
                     Menu
                 </a>

@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/yojnaportalweb/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=yojnaportalweb/livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/yojnaportalweb/css/style.css">
-
+   
     <title>Yojna Portal</title>
-    <script src="/js/search.js"></script>
-
-
-    <script src="/js/fuse.min.js"></script>
-<script src="/js/search.js"></script>
-
+    
     
     <style>
         body {
     height: 100%;
-    margin: auto;
+    
     padding: 0;
 }
-       body {
-            height: 100%;
-            margin: auto;
-            padding: 0; }
-        
+  
     .main-container {
         max-width: 1200px;
         width: 100%;
+        margin: auto;
         
         padding: 0px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -38,7 +28,12 @@
        
     }
 
-    
+    @media (max-width: 768px) {
+        .main-container {
+          width: 100%;
+        }
+          
+        }
 
    
  
@@ -99,6 +94,7 @@
        .header-container {
            flex-direction: column;
            text-align: center;
+         
        }
        
        .logo img {
@@ -415,7 +411,7 @@ text-align:center;
         
 
 <head>
-  <link rel="stylesheet" href="css/header/style.css">
+ 
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -532,12 +528,7 @@ background-color: white;
           
             
               
-              <li><a href="/yojnaportalweb">Yojnaportalweb</a> >> </li>
-            
-          
-            
-              
-              <li><a href="/yojnaportalweb/quick">Quick</a> >> </li>
+              <li><a href="/quick">Quick</a> >> </li>
             
           
             

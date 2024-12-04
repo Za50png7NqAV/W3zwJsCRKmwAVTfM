@@ -1,30 +1,44 @@
-let fuse;
-let searchData = [];
+let searchIndex = [];
 
-fetch("/index.json")
-    .then((response) => response.json())
-    .then((data) => {
-        searchData = data;
-        console.log("Search data loaded:", searchData);
-        fuse = new Fuse(searchData, {
-            keys: ["title", "content", "tags", "categories"],
-            threshold: 0.3,
-        });
-    })
-    .catch((error) => console.error("Error loading search data:", error));
+// Load the search index JSON
+fetch('/search.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    searchIndex = data;
+  })
+  .catch(error => {
+    console.error("Error loading search index:", error);
+  });
 
-function performSearch() {
-    const query = document.getElementById("search-input").value;
-    console.log("Search query:", query);
-    const results = query ? fuse.search(query) : [];
-    console.log("Search results:", results);
+// Perform search
+function searchPosts() {
+  const query = document.getElementById('searchBar').value.toLowerCase();
+  const resultsContainer = document.getElementById('searchResults');
+  resultsContainer.innerHTML = ''; // Clear previous results
 
-    const resultsList = document.getElementById("search-results");
-    resultsList.innerHTML = "";
+  if (query.trim() === '') return;
 
-    results.forEach(({ item }) => {
-        const li = document.createElement("li");
-        li.innerHTML = `<a href="${item.link}">${item.title}</a>`;
-        resultsList.appendChild(li);
-    });
+  const filteredResults = searchIndex.filter(post => {
+    return post.title.toLowerCase().includes(query) || post.content.toLowerCase().includes(query);
+  });
+
+  if (filteredResults.length === 0) {
+    resultsContainer.innerHTML = '<p>No results found</p>';
+    return;
+  }
+
+  // Render search results
+  filteredResults.forEach(post => {
+    const resultItem = document.createElement('div');
+    resultItem.innerHTML = `
+      <h3><a href="${post.permalink}">${post.title}</a></h3>
+      <p>${post.content.substring(0, 150)}...</p>
+    `;
+    resultsContainer.appendChild(resultItem);
+  });
 }
