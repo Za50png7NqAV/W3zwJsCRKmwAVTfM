@@ -414,152 +414,641 @@ text-align:center;
         <div id="sidenav-main">
         
         
-
-<head>
- 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-     
-    }
     
-    .single-post-wrapper {
-      width: 80%;
-      margin: 20px auto;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
+    
+<head>
+    <style>
+        
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-    .single-post-header {
-     
-      margin-bottom: 20px;
-    }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
 
-    .single-post-header h1 {
+  th, td {
+    border: 1px solid ;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+#datezoon1 { background: linear-gradient(to right, #886600, #ffff99, #886600);
+width: 200px;
  
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .post-meta {
-      color: #0e0101;
-      font-size: 0.9rem;
-      text-align:left;
-    }
-     .Post-Date {
-    font-size:8px;
-    }
-    .single-post-content {
-      margin-top: 20px;
-      
-    }
- 
-
-
-.breadcrumbNav {
-padding:0;
-background-color: white;
-}
-.breadcrumb {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 09px;
-  color: #f30909;
-
+  background-image: linear-gradient(to right, #ff0000, #ffff00);  
+  background-size: 200px 100%;  
 }
 
-.breadcrumb li {
-  display: inline-flex;
-  align-items: center;
-}
-
-.breadcrumb li + li::before {
-  
-  margin: 0 8px;
-  color: #f36a0f;  
-  font-weight: bold;
-}
-
-.breadcrumb li a {
-  color: #07011a;  
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.breadcrumb li a:hover {
-  text-decoration: underline;
-  color: #f7560b;  
-}
-
-.breadcrumb li:last-child {
-  color: #f5900d;  
-  font-weight: bold;
-}
+#datezoon  {
+          position: relative;
+          width: 180px;  
+        
+      color: black;
+      font-weight: 700;
+      text-shadow: 1px 5px 7px black;
+      left:12%;
+        
+      }
+      #datezoon:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 220px;  
+        height: 30px;  
+          background: linear-gradient(to right, #886600, #ffff99, #886600);
+          transform: skewX(-45deg);
+          transform-origin: top right;
+             z-index:-3;
+            
+             color: black;
 
 
-   
-
-    @media (max-width: 768px) {
-      .single-post-wrapper {
-        width:100%;
-        padding: 15px;
       }
 
-      .single-post-header h1 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+
+
+  .past-exam, .expired {
+    background-color: #f8d7da;
+  }
+
+  .current-exam, .upcoming {
+    background-color: #d4edda;
+  }
+
+   .upcoming-exam, .today {
+    background-color: #fff3cd;
+  }
+
+  .yesterday {
+    background-color: #f5c6cb;
+  }
+
+  .tomorrow {
+    background-color: #c3e6cb;
+  }
+
+  button {
+    padding: 10px;
+  background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+
+  .lastDateContainer { color:black;}
+
+button:hover {
+ 
+   background: linear-gradient(to right,  rgb(255, 78, 57), #f4b400);
+  color:black;
+
+}
+
+
+
+
+    </style>
 </head>
 
-<body>
 
-  <div class="single-post-wrapper">
 
-    <div class="single-post-header">
-   
-      <nav aria-label="breadcrumb" class="breadcrumbNav">
-        <ul class="breadcrumb">
-          <li><a href="http://localhost:1313/">Home</a> >> </li>
-          
-          
-          
-            
-          
-            
-              
-              <li><a href="/posts">Posts</a> >> </li>
-            
-          
-            
-          
-            
-          
-          <li>Post 1</li>
-        </ul>
-      </nav>
-      
-  </div>
-    <div class="single-post-content">
-      <p>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.</p>
-<p>Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.</p>
 
-    </div>
-
-    
-    
-
-    <div class="Post-Date"> Post Date / Update: <strong>15-Jan-2023 09:00:00</strong></div> 
-  </div>
+<div class="lastDateContainer">
   
-        
-</body>
+  <div id="datezoon">Last Date Today</div>
+  <table id="today-table">
+      <thead>
+          <tr>
+              <th style="background-color: #f4b400; color:black;">Post Title</th>
+              <th style="background-color: #f4b400; color:black;">Category</th>
+              <th style="background-color: #f4b400; color:black;">Last Date</th>
+              <th style="background-color: #f4b400; color:black;">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      </tbody>
+  </table>
 
+  
+  <div id="datezoon">Last Date Tomorrow</div>
+  <table id="tomorrow-table">
+      <thead>
+          <tr>
+              <th style="background-color: #f4b400; color:black;">Post Title</th>
+              <th style="background-color: #f4b400; color:black;">Category</th>
+              <th style="background-color: #f4b400; color:black;">Last Date</th>
+              <th style="background-color: #f4b400; color:black;">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      </tbody>
+  </table>
+
+  
+  <div id="datezoon">Was Yesterday</div>
+  <table id="yesterday-table">
+      <thead>
+          <tr>
+              <th style="background-color: rgb(255, 115, 68);">Post Title</th>
+              <th style="background-color: rgb(255, 115, 68);">Category</th>
+              <th style="background-color: rgb(255, 115, 68);">Last Date</th>
+              <th style="background-color: rgb(255, 115, 68);">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      </tbody>
+  </table>
+
+  
+  <div id="datezoon">Upcoming</div>
+  <table id="upcoming-table">
+      <thead>
+          <tr>
+              <th style="background-color: #f4b400; color:black;">Post Title</th>
+              <th style="background-color: #f4b400; color:black;">Category</th>
+              <th style="background-color: #f4b400; color:black;">Last Date</th>
+              <th style="background-color: #f4b400; color:black;">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      </tbody>
+  </table>
+
+  
+  <div id="datezoon">Expired</div>
+  <table id="expired-table">
+      <thead>
+          <tr>
+              <th style="background-color: rgb(255, 78, 57);">Post Title</th>
+              <th style="background-color: rgb(255, 78, 57);">Category</th>
+              <th style="background-color: rgb(255, 78, 57);">Last Date</th>
+              <th style="background-color: rgb(255, 78, 57);">Link</th>
+          </tr>
+      </thead>
+      <tbody>
+          
+          
+          
+          <tr class="post">
+              <td>Texting Baner</td>
+              <td>Exams</td>
+              <td>2024-10-03</td>
+              <td><a href="http://localhost:1313/texting-baner/" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
+          
+          
+          
+          
+          <tr class="post">
+              <td>Banner</td>
+              <td>Exams</td>
+              <td>2024-10-03</td>
+              <td><a href="http://localhost:1313/banner/" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
+          
+          
+          
+          
+          <tr class="post">
+              <td>Job New Post</td>
+              <td>Exams</td>
+              <td>2024-10-03</td>
+              <td><a href="http://localhost:1313/job-new-post/" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <tr class="post">
+              <td>PM Internship Yojna</td>
+              <td>Exams</td>
+              <td>2024-11-10</td>
+              <td><a href="http://localhost:1313/pm-internship-yojna/" target="_blank"><button id="applybtn">Click Here</button></a></td>
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      </tbody>
+  </table>
+</div>
+
+
+    
+    <div class="content">
+        
+    </div>
 
         <!DOCTYPE html>
 <head>
