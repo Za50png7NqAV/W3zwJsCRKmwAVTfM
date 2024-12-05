@@ -414,267 +414,307 @@ text-align:center;
         <div id="sidenav-main">
         
         
-
-<head>
- 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-     
-    }
-    
-    .single-post-wrapper {
-      width: 80%;
-      margin: 20px auto;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
-
-    .single-post-header {
-     
-      margin-bottom: 20px;
-    }
-
-    .single-post-header h1 {
- 
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .post-meta {
-      color: #0e0101;
-      font-size: 0.9rem;
-      text-align:left;
-    }
-     .Post-Date {
-    font-size:8px;
-    }
-    .single-post-content {
-      margin-top: 20px;
-      
-    }
- 
-
-
-.breadcrumbNav {
-padding:0;
-background-color: white;
-}
-.breadcrumb {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 09px;
-  color: #f30909;
-
-}
-
-.breadcrumb li {
-  display: inline-flex;
-  align-items: center;
-}
-
-.breadcrumb li + li::before {
-  
-  margin: 0 8px;
-  color: #f36a0f;  
-  font-weight: bold;
-}
-
-.breadcrumb li a {
-  color: #07011a;  
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.breadcrumb li a:hover {
-  text-decoration: underline;
-  color: #f7560b;  
-}
-
-.breadcrumb li:last-child {
-  color: #f5900d;  
-  font-weight: bold;
-}
-
-
-   
-
-    @media (max-width: 768px) {
-      .single-post-wrapper {
-        width:100%;
-        padding: 15px;
-      }
-
-      .single-post-header h1 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="single-post-wrapper">
-
-    <div class="single-post-header">
-   
-      <nav aria-label="breadcrumb" class="breadcrumbNav">
-        <ul class="breadcrumb">
-          <li><a href="http://localhost:1313/">Home</a> >> </li>
-          
-          
-          
-            
-          
-            
-          
-            
-          
-          <li>Motivation Thoughts</li>
-        </ul>
-      </nav>
-      
-  </div>
-    <div class="single-post-content">
-      
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sacred Sadvakyas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yojna Portal:HomePage</title>
+    <script>
+        var searchIndex = "{}";
+      </script>
+   
     <style>
-        .root-container1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-            margin: 0;
-            padding: 20px;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .main-container1 {
-            width: 90%;
-            max-width: 800px;
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-
-        .header-div {
-            background: linear-gradient(45deg, #ff9800, #f57c00);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 28px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-        }
-
-        .content-div {
-            padding: 30px;
-        }
-
-        .sadvakya-container {
-            display: none; /* Hide all containers initially */
-            margin-bottom: 30px;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: #fff8e1;
-            border-left: 4px solid #ffa000;
-        }
-
-        .hindi-div {
-            font-size: 22px;
-            color: #5d4037;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
-        .english-div {
-            font-size: 16px;
-            color: #666;
+        #searchInput {
+            width: 100%;
+            padding: 8px;
             margin-bottom: 10px;
-            line-height: 1.5;
-        }
-
-        .source-div {
-            font-size: 14px;
-            color: #795548;
-            font-style: italic;
-            text-align: right;
-        }
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          
+          #searchResults {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          #searchResults li {
+            padding: 5px;
+          }
+          
+          #searchResults li a {
+            text-decoration: none;
+            color: #007BFF;
+          }
+          
+          #searchResults li a:hover {
+            text-decoration: underline;
+          }
+          
     </style>
 </head>
 <body>
-    <div class="root-container1">
-        <div class="main-container1">
-            <div class="header-div">
-                सुविचार / Thoughts
-            </div>
-            <div class="content-div">
-                <div class="sadvakya-container">
-                    <div class="hindi-div">अहं ब्रह्मास्मि</div>
-                    <div class="english-div">I am Brahman (The Ultimate Reality)</div>
-                    <div class="source-div">- Brihadaranyaka Upanishad 1.4.10</div>
-                </div>
 
-                <div class="sadvakya-container">
-                    <div class="hindi-div">तत्त्वमसि</div>
-                    <div class="english-div">That Thou Art (You are That)</div>
-                    <div class="source-div">- Chandogya Upanishad 6.8.7</div>
-                </div>
+    <div>
+        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchContent()">
+        <ul id="searchResults"></ul>
+      </div>
 
-                <div class="sadvakya-container">
-                    <div class="hindi-div">प्रज्ञानं ब्रह्म</div>
-                    <div class="english-div">Consciousness is Brahman</div>
-                    <div class="source-div">- Aitareya Upanishad 3.3</div>
-                </div>
+    <div id="home" class="content active">
 
-                <div class="sadvakya-container">
-                    <div class="hindi-div">अयं आत्मा ब्रह्म</div>
-                    <div class="english-div">This Self is Brahman</div>
-                    <div class="source-div">- Mandukya Upanishad 1.2</div>
-                </div>
+        
+<head>
 
-                <div class="sadvakya-container">
-                    <div class="hindi-div">सोऽहम्</div>
-                    <div class="english-div">I am That (He)</div>
-                    <div class="source-div">- Vedantic Teaching</div>
-                </div>
-            </div>
-        </div>
+<link rel="stylesheet" href="css\list-posts1.css">
+<style>
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 8px;
+    margin: 20px auto;
+    max-width:900px;
+    min-width:300px;
+}
+
+.post {
+    
+    text-align: center;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    padding: 5px;
+    border-radius: 5px;
+    height:40px; 
+    font-weight: bold;  
+    overflow: hidden;
+}
+.post-link {
+    color: black;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+
+</style>
+
+</head>
+<div class="post-grid">
+    
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const posts = document.querySelectorAll('.post[data-random-bg]');
+
+        
+        const colors = ['#FF5733', '#33FF57', '#3357FF', '#F1C40F', '#8E44AD', '#E74C3C', '#16A085', '#3498DB', '#F1A1B6', '#f4b400' , '#f06508' , '#2E7D32' , '#4CAF50' ];
+
+        posts.forEach(post => {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            post.style.backgroundColor = randomColor;
+        });
+    });
+</script>
+
+        <!DOCTYPE html>
+<html>
+<head>
+<style>
+  :root {
+    --primary: #f06508;
+    --primary-dark: #926400;
+    --secondary: #f3f4f6;
+    --text-light: #ffffff;
+    --text-dark: #1f2937;
+    --border-radius: 8px;
+    --shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --font-size: 1rem;
+    --mfont-size: 1rem;
+    --card-width: 350px;
+    --mcard-width: 200px;
+  }
+
+  .grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 10px;  
+    padding: 20px;
+  }
+
+  .card {
+    background: white;
+    max-width: var(--card-width);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .card-header {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 3px;
+    font-weight: 600;
+    text-align: center;
+    font-size: calc(var(--font-size) + 0.1rem);
+    letter-spacing: 0.5px;
+    font-size:10px;
+  }
+
+  .card-content {
+    padding: 20px;
+    min-height: 200px;
+    background: var(--secondary);
+    font-size: var(--font-size);
+    line-height: 1.5;
+  }
+
+  .card-footer {
+    background: white;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .more-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: var(--font-size);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+  }
+
+  .more-link:hover {
+    color: var(--primary-dark);
+  }
+
+  .more-link::after {
+    content: '→';
+    font-size: 1.1rem;
+  }
+
+   
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);  
+  
+    }
+    :root {
+      --font-size: 0.8rem;
+      --card-width: 180px;  
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  
+  <div class="card">
+    <div class="card-header">Latest Schemes</div>
+    <div class="card-content">
+      <ul>
+    
+  </ul>   
     </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
 
-    <script>
-        // Get all the Mahāvākya containers
-        const containers = document.querySelectorAll('.sadvakya-container');
+  <div class="card">
+    <div class="card-header">Important Links</div>
+    <div class="card-content">
+      <ul>
+    
+  </ul>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
 
-        // Select a random container to display
-        const randomIndex = Math.floor(Math.random() * containers.length);
-        containers[randomIndex].style.display = 'block';
-    </script>
+  <div class="card">
+    <div class="card-header">Students</div>
+    <div class="card-content">
+      <ul>
+    
+  </ul>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <div class="card-header">Results</div>
+    <div class="card-content">
+      <ul>
+    
+  </ul>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Admit Card</div>
+    <div class="card-content">
+      
+<ul>
+    
+  </ul>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Latest Job</div>
+    <div class="card-content">
+      <ul>
+  <ul>
+      
+        <li>
+          <a href="http://localhost:1313/job-new-post/">Job New Post</a>
+        </li>
+      
+        <li>
+          <a href="http://localhost:1313/page/">Latest Jobs</a>
+        </li>
+      
+  </ul>
+  
+    </div>
+    <div class="card-footer">
+      <a href="#" class="more-link">more</a>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
 
     </div>
-
     
-    
-
-    <div class="Post-Date"> Post Date / Update: <strong>08-Nov-2024 19:23:23</strong></div> 
-  </div>
-  
-        
 </body>
-
+</html>
 
         <!DOCTYPE html>
 <head>
@@ -790,7 +830,7 @@ background-color: white;
                 </a>
             </li>
             <li>
-                <a href="/manu/">
+                <a href="/menu/">
                     <i class="fas fa-bars"></i>
                     Menu
                 </a>

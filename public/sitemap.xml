@@ -23,6 +23,9 @@
     <loc>http://localhost:1313/page/</loc>
     <lastmod>2024-11-16T14:12:57+05:30</lastmod>
   </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/quick/exam-date/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
   </url><url>
@@ -74,6 +77,9 @@
     <loc>http://localhost:1313/imp-links/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
   </url><url>
+    <loc>http://localhost:1313/menu/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/pm-internship-yojna/</loc>
     <lastmod>2024-11-08T14:58:05+05:30</lastmod>
   </url><url>
@@ -97,9 +103,5 @@
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/manu/</loc>
   </url>
 </urlset>
