@@ -48,9 +48,10 @@
 </head> 
 <body>
     <div class="main-container">
-      
-        {{ partial "header" . }} 
+       
         
+        {{ partial "header" . }} 
+       
         <!-- Include the sidenav partial -->
     
        
@@ -62,6 +63,7 @@
         <!-- Main content block -->
         {{ block "main" . }} {{ end }}
         {{ partial "baseof-part/footer" . }}
+       
     </div>
      
        

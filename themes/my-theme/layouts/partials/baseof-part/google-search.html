@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar with Permalink</title>
+    <style>
+        /* General container styling */
+        .search-container {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 500px;
+            width: 100%;
+            margin: auto;
+            transition: all 0.3s ease;
+        }
+
+        .search-container:hover {
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .search-icon {
+            padding: 0 15px;
+            color: #7e8299;
+            font-size: 18px;
+        }
+
+        #search-input {
+            flex-grow: 1;
+            border: none;
+            padding: 15px 10px 15px 0;
+            font-size: 16px;
+            background: transparent;
+            color: #3f4254;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        #search-input::placeholder {
+            color: #a1a5b7;
+        }
+
+        #search-button {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 0 50px 50px 0;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        #search-button:hover {
+            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+            transform: scale(1.05);
+        }
+
+.btn-container {max-width:800px;
+margin: 20px auto;}
+
+        .dynamic-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 8px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 3px;
+        }
+
+        .dynamic-button i {
+            font-size: 12px;
+        }
+
+        .dynamic-button:hover {
+            background-color: #0056b3;
+        }
+
+        .suggestions-container {
+            margin: auto;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+        }
+        
+        .suggestion {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .suggestion:last-child {
+            border-bottom: none;
+        }
+        
+        .suggestion:hover {
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width: 600px) {
+            .search-container {
+                max-width: 95%;
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-icon">
+            <i class="fas fa-search"></i>
+        </div>
+        <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search for anything..."
+        >
+        <button id="search-button"><i class="fas fa-search"></i>
+          
+        </button>
+    </div>
+    <div id="suggestions-container" class="suggestions-container">     
+        <button class="dynamic-button" data-search="pdf form"><i class="fas fa-search"></i>pdf forms</button>
+        <button class="dynamic-button" data-search="Latest Yojna"><i class="fas fa-search"></i>Latest Yojna</button>
+    </div>
+
+    <!-- Dynamic Buttons -->
+<div class="btn-container">
+    <button class="dynamic-button" data-search="exam dates"><i class="fas fa-search"></i>exam date</button>
+    <button class="dynamic-button" data-search="Shok Sandesh"><i class="fas fa-search"></i> Shok Sandesh </button>
+   
+    <button class="dynamic-button" data-search="Last date"><i class="fas fa-search"></i>Last Date Apply</button>
+    <button class="dynamic-button" data-search="Yojna Portal"><i class="fas fa-search"></i> Yojna Portal</button>
+    <button class="dynamic-button" data-search="Advance Tools"><i class="fas fa-search"></i> Advance Tools</button>
+    <button class="dynamic-button" data-search="Government Schemes"><i class="fas fa-search"></i> Government Schemes</button>
+    <button class="dynamic-button" data-search="Latest update"><i class="fas fa-search"></i> latest update</button>
+    <button class="dynamic-button" data-search="Latest Baner"><i class="fas fa-search"></i> Latest Banner</button>
+</div>
+     <!-- Google CSE Script -->
+    <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a"></script>
+    <script>
+        // Trigger search using the input field
+        document.getElementById('search-button').addEventListener('click', function() {
+            const query = document.getElementById('search-input').value;
+            if (query) {
+                const searchBox = document.querySelector('input.gsc-input');
+                if (searchBox) {
+                    searchBox.value = query;
+                    const searchButton = document.querySelector('button.gsc-search-button');
+                    searchButton.click();
+                }
+            } else {
+                alert('Please enter a search query!');
+            }
+        });
+
+        // Make all dynamic buttons trigger search
+        document.querySelectorAll('.dynamic-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const searchText = this.getAttribute('data-search');
+                const inputField = document.getElementById('search-input');
+                inputField.value = searchText;
+                document.getElementById('search-button').click();
+            });
+        });
+
+        // Pre-fill the search bar if a query is in the URL hash
+        function readQuery() {
+            const hash = window.location.hash;
+            const params = new URLSearchParams(hash.substring(1));
+            const query = params.get('gsc.q');
+            if (query) {
+                const inputField = document.getElementById('search-input');
+                inputField.value = query;
+                document.getElementById('search-button').click();
+            }
+        }
+
+        window.onload = readQuery;
+    </script>
+    <script>
+        const searchInput = document.getElementById('search-input');
+const suggestionsContainer = document.getElementById('suggestions-container');
+
+// Sample suggestions with links
+const suggestions = [
+    { text: 'v2k computers', link: 'https://www.v2kcomputes.com' },
+    { text: 'YouTube', link: 'https://www.youtube.com' },
+    { text: 'Facebook', link: 'https://www.facebook.com' },
+    { text: 'yojna Portal', link: 'https://www.yojnaportal.com' },
+];
+
+searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    suggestionsContainer.innerHTML = '';
+
+    if (query) {
+        const filteredSuggestions = suggestions.filter(suggestion =>
+            suggestion.text.toLowerCase().includes(query)
+        );
+
+        filteredSuggestions.forEach(suggestion => {
+            const suggestionElement = document.createElement('div');
+            suggestionElement.className = 'suggestion';
+            suggestionElement.textContent = suggestion.text;
+            suggestionElement.addEventListener('click', () => {
+                window.open(suggestion.link, '_blank');
+            });
+            suggestionsContainer.appendChild(suggestionElement);
+        });
+    }
+});
+
+    </script>
+</body>
+</html>

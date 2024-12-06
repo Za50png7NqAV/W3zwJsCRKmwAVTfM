@@ -417,327 +417,247 @@ text-align:center;
         <div id="sidenav-main">
         
         
-<!DOCTYPE html>
+    
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yojna Portal:HomePage</title>
-    <script>
-        var searchIndex = "{}";
-      </script>
-   
+    <title>Search Bar with Permalink</title>
     <style>
-        #searchInput {
+         
+        .search-container {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 500px;
             width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
+            margin: auto;
+            transition: all 0.3s ease;
+        }
+
+        .search-container:hover {
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .search-icon {
+            padding: 0 15px;
+            color: #7e8299;
+            font-size: 18px;
+        }
+
+        #search-input {
+            flex-grow: 1;
+            border: none;
+            padding: 15px 10px 15px 0;
+            font-size: 16px;
+            background: transparent;
+            color: #3f4254;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        #search-input::placeholder {
+            color: #a1a5b7;
+        }
+
+        #search-button {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 0 50px 50px 0;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        #search-button:hover {
+            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+            transform: scale(1.05);
+        }
+
+.btn-container {max-width:800px;
+margin: 20px auto;}
+
+        .dynamic-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 8px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 3px;
+        }
+
+        .dynamic-button i {
+            font-size: 12px;
+        }
+
+        .dynamic-button:hover {
+            background-color: #0056b3;
+        }
+
+        .suggestions-container {
+            margin: auto;
+            margin-top: 10px;
             border: 1px solid #ccc;
-            border-radius: 4px;
-          }
-          
-          #searchResults {
-            list-style-type: none;
-            padding: 0;
-          }
-          
-          #searchResults li {
+            max-width: 800px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 5px;
-          }
-          
-          #searchResults li a {
-            text-decoration: none;
-            color: #007BFF;
-          }
-          
-          #searchResults li a:hover {
-            text-decoration: underline;
-          }
-          
+        }
+        
+        .suggestion {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .suggestion:last-child {
+            border-bottom: none;
+        }
+        
+        .suggestion:hover {
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width: 600px) {
+            .search-container {
+                max-width: 95%;
+                margin: 0 10px;
+            }
+        }
     </style>
 </head>
 <body>
-
-    <div>
-        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchContent()">
-        <ul id="searchResults"></ul>
-      </div>
-
-    <div id="home" class="content active">
-
-        
-<head>
-
-<link rel="stylesheet" href="css\list-posts1.css">
-<style>
-.post-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);  
-    gap: 8px;
-    margin: 20px auto;
-    max-width:900px;
-    min-width:300px;
-}
-
-.post {
-    
-    text-align: center;
-    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
-    padding: 5px;
-    border-radius: 5px;
-    height:40px; 
-    font-weight: bold;  
-    overflow: hidden;
-}
-.post-link {
-    color: black;
-    text-decoration: none;
-}
-
-.post-link:hover {
-    text-decoration: underline;
-}
-
-
-</style>
-
-</head>
-<div class="post-grid">
-    
-    <div 
-        class="post" 
-        style="background-color: gray;" 
-        data-random-bg
-    >
-        <a href="http://localhost:1313/categories/admitcard/" class="post-link">
-            Admitcard 
-        </a>
+    <div class="search-container">
+        <div class="search-icon">
+            <i class="fas fa-search"></i>
+        </div>
+        <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search for anything..."
+        >
+        <button id="search-button"><i class="fas fa-search"></i>
+          
+        </button>
     </div>
-    
-    <div 
-        class="post" 
-        style="background-color: gray;" 
-        data-random-bg
-    >
-        <a href="http://localhost:1313/categories/jobs/" class="post-link">
-            Jobs 
-        </a>
+    <div id="suggestions-container" class="suggestions-container">     
+        <button class="dynamic-button" data-search="pdf form"><i class="fas fa-search"></i>pdf forms</button>
+        <button class="dynamic-button" data-search="Latest Yojna"><i class="fas fa-search"></i>Latest Yojna</button>
     </div>
+
     
-</div>
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const posts = document.querySelectorAll('.post[data-random-bg]');
-
-        
-        const colors = ['#FF5733', '#33FF57', '#3357FF', '#F1C40F', '#8E44AD', '#E74C3C', '#16A085', '#3498DB', '#F1A1B6', '#f4b400' , '#f06508' , '#2E7D32' , '#4CAF50' ];
-
-        posts.forEach(post => {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            post.style.backgroundColor = randomColor;
-        });
-    });
-</script>
-
-        <!DOCTYPE html>
-<html>
-<head>
-<style>
-  :root {
-    --primary: #f06508;
-    --primary-dark: #926400;
-    --secondary: #f3f4f6;
-    --text-light: #ffffff;
-    --text-dark: #1f2937;
-    --border-radius: 8px;
-    --shadow: 0 2px 4px rgba(0,0,0,0.1);
-    --font-size: 1rem;
-    --mfont-size: 1rem;
-    --card-width: 350px;
-    --mcard-width: 200px;
-  }
-
-  .grid-container {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    gap: 10px;  
-    padding: 20px;
-  }
-
-  .card {
-    background: white;
-    max-width: var(--card-width);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    transition: transform 0.2s, box-shadow 0.2s;
-    overflow: hidden;
-  }
-
-  .card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  }
-
-  .card-header {
-    background: var(--primary);
-    color: var(--text-light);
-    padding: 3px;
-    font-weight: 600;
-    text-align: center;
-    font-size: calc(var(--font-size) + 0.1rem);
-    letter-spacing: 0.5px;
-    font-size:10px;
-  }
-
-  .card-content {
-    padding: 20px;
-    min-height: 200px;
-    background: var(--secondary);
-    font-size: var(--font-size);
-    line-height: 1.5;
-  }
-
-  .card-footer {
-    background: white;
-    padding: 2px;
-    display: flex;
-    justify-content: flex-end;
-    border-top: 1px solid #e5e7eb;
-  }
-
-  .more-link {
-    color: var(--primary);
-    text-decoration: none;
-    font-size: var(--font-size);
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    transition: color 0.2s;
-  }
-
-  .more-link:hover {
-    color: var(--primary-dark);
-  }
-
-  .more-link::after {
-    content: '→';
-    font-size: 1.1rem;
-  }
-
+<div class="btn-container">
+    <button class="dynamic-button" data-search="exam dates"><i class="fas fa-search"></i>exam date</button>
+    <button class="dynamic-button" data-search="Shok Sandesh"><i class="fas fa-search"></i> Shok Sandesh </button>
    
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: repeat(3, 1fr);  
-  
-    }
-    :root {
-      --font-size: 0.8rem;
-      --card-width: 180px;  
-    }
-  }
-
-</style>
-</head>
-<body>
-
-<div class="grid-container">
-  
-  <div class="card">
-    <div class="card-header">Latest Schemes</div>
-    <div class="card-content">
-      <ul>
-    
-  </ul>   
-    </div>
-    <div class="card-footer">
-      <a href="#" class="more-link">more</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">Important Links</div>
-    <div class="card-content">
-      <ul>
-    
-  </ul>
-    </div>
-    <div class="card-footer">
-      <a href="#" class="more-link">more</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">Students</div>
-    <div class="card-content">
-      <ul>
-    
-  </ul>
-    </div>
-    <div class="card-footer">
-      <a href="#" class="more-link">more</a>
-    </div>
-  </div>
-
-  
-  <div class="card">
-    <div class="card-header">Results</div>
-    <div class="card-content">
-      <ul>
-    
-  </ul>
-    </div>
-    <div class="card-footer">
-      <a href="#" class="more-link">more</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">Admit Card</div>
-    <div class="card-content">
-      
-<ul>
-    
-  </ul>
-    </div>
-    <div class="card-footer">
-      <a href="#" class="more-link">more</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">Latest Job</div>
-    <div class="card-content">
-      <ul>
-  <ul>
-      
-        <li>
-          <a href="http://localhost:1313/job-new-post/">Job New Post</a>
-        </li>
-      
-        <li>
-          <a href="http://localhost:1313/page/">Latest Jobs</a>
-        </li>
-      
-  </ul>
-  
-    </div>
-    <div class="card-footer">
-      <a href="#" class="more-link">more</a>
-    </div>
-  </div>
+    <button class="dynamic-button" data-search="Last date"><i class="fas fa-search"></i>Last Date Apply</button>
+    <button class="dynamic-button" data-search="Yojna Portal"><i class="fas fa-search"></i> Yojna Portal</button>
+    <button class="dynamic-button" data-search="Advance Tools"><i class="fas fa-search"></i> Advance Tools</button>
+    <button class="dynamic-button" data-search="Government Schemes"><i class="fas fa-search"></i> Government Schemes</button>
+    <button class="dynamic-button" data-search="Latest update"><i class="fas fa-search"></i> latest update</button>
+    <button class="dynamic-button" data-search="Latest Baner"><i class="fas fa-search"></i> Latest Banner</button>
 </div>
+     
+    <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a"></script>
+    <script>
+        
+        document.getElementById('search-button').addEventListener('click', function() {
+            const query = document.getElementById('search-input').value;
+            if (query) {
+                const searchBox = document.querySelector('input.gsc-input');
+                if (searchBox) {
+                    searchBox.value = query;
+                    const searchButton = document.querySelector('button.gsc-search-button');
+                    searchButton.click();
+                }
+            } else {
+                alert('Please enter a search query!');
+            }
+        });
 
+        
+        document.querySelectorAll('.dynamic-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const searchText = this.getAttribute('data-search');
+                const inputField = document.getElementById('search-input');
+                inputField.value = searchText;
+                document.getElementById('search-button').click();
+            });
+        });
+
+        
+        function readQuery() {
+            const hash = window.location.hash;
+            const params = new URLSearchParams(hash.substring(1));
+            const query = params.get('gsc.q');
+            if (query) {
+                const inputField = document.getElementById('search-input');
+                inputField.value = query;
+                document.getElementById('search-button').click();
+            }
+        }
+
+        window.onload = readQuery;
+    </script>
+    <script>
+        const searchInput = document.getElementById('search-input');
+const suggestionsContainer = document.getElementById('suggestions-container');
+
+
+const suggestions = [
+    { text: 'v2k computers', link: 'https://www.v2kcomputes.com' },
+    { text: 'YouTube', link: 'https://www.youtube.com' },
+    { text: 'Facebook', link: 'https://www.facebook.com' },
+    { text: 'yojna Portal', link: 'https://www.yojnaportal.com' },
+];
+
+searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    suggestionsContainer.innerHTML = '';
+
+    if (query) {
+        const filteredSuggestions = suggestions.filter(suggestion =>
+            suggestion.text.toLowerCase().includes(query)
+        );
+
+        filteredSuggestions.forEach(suggestion => {
+            const suggestionElement = document.createElement('div');
+            suggestionElement.className = 'suggestion';
+            suggestionElement.textContent = suggestion.text;
+            suggestionElement.addEventListener('click', () => {
+                window.open(suggestion.link, '_blank');
+            });
+            suggestionsContainer.appendChild(suggestionElement);
+        });
+    }
+});
+
+    </script>
 </body>
 </html>
 
-    </div>
+
     
-</body>
-</html>
+    <div class="content">
+        
+    </div>
 
         <!DOCTYPE html>
 <head>

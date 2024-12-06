@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar with Permalink</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+
+      .gcse-search {width: 10px; }
+     #pse {width: 1px;}
+      
+       .gcse-search {
+    width: 100%;
+     
+     
+    }
+   
+      .gsc-input-box {
+        width: 1px;
+      }
+
+      
+      .gsc-search-button {
+        width: 1px;
+        margin-top: 0px;
+        font-size: 1px;
+        padding: 0px;
+      
+    }
+  
+      .gsc-search-button-v2, .gsib_a {display: none; }
+      
+      .gsc-control-cse {padding: 0; }
+    
+    </style>
+  
+</head>
+<body>
+  
+    <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+    </script>
+<div id="pse">
+  <div class="gcse-search"></div> </div>
+
+    <script>
+        document.getElementById('search-button').addEventListener('click', function() {
+            const query = document.getElementById('search-input').value;
+            if (query) {
+                updateURL(query);
+                search(query);
+            }
+        });
+
+        function updateURL(query) {
+            const hash = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+            window.location.hash = hash;
+        }
+
+
+        function readQuery() {
+            const hash = window.location.hash;
+            const params = new URLSearchParams(hash.substring(1)); // Remove the '#' character
+            const query = params.get('gsc.q');
+            if (query) {
+                document.getElementById('search-input').value = query;
+                search(query);
+            }
+        }
+
+        window.onload = readQuery;
+    </script>
+</body>
+</html>
