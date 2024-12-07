@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Bar with Permalink</title>
+    <title>YP Search</title>
     <style>
         /* General container styling */
         .search-container {
@@ -114,6 +114,36 @@ margin: 20px auto;}
         .suggestion:hover {
             background-color: #f0f0f0;
         }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+
+      .gcse-search {width: 10px; }
+     #pse {width: 1px;}
+      
+       .gcse-search {
+    width: 100%;
+     
+     
+    }
+   
+      .gsc-input-box {
+        width: 1px;
+      }
+
+      
+      .gsc-search-button {
+        width: 1px;
+        margin-top: 0px;
+        font-size: 1px;
+        padding: 0px;
+      
+    }
+ 
+      .gsc-search-button-v2, .gsib_a {display: none; }
+      
+      .gsc-control-cse {padding: 0; }
 
         @media (max-width: 600px) {
             .search-container {
@@ -124,111 +154,83 @@ margin: 20px auto;}
     </style>
 </head>
 <body>
+    <form method="post" action="" name="search-form">
     <div class="search-container">
-        <div class="search-icon">
+        
+            <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
+          <div class="search-icon">
             <i class="fas fa-search"></i>
+          </div>
+        
+          <input type="text" name="Search" class="Advance" id="search-input" placeholder="Search for anything...">
+          <button value="submit" id="search-button"><i class="fas fa-search"></i> Search</button>
         </div>
-        <input 
-            type="text" 
-            id="search-input" 
-            placeholder="Search for anything..."
-        >
-        <button id="search-button"><i class="fas fa-search"></i>
-          
-        </button>
-    </div>
-    <div id="suggestions-container" class="suggestions-container">     
-        <button class="dynamic-button" data-search="pdf form"><i class="fas fa-search"></i>pdf forms</button>
-        <button class="dynamic-button" data-search="Latest Yojna"><i class="fas fa-search"></i>Latest Yojna</button>
-    </div>
-
+        </form>
+       
+  
+    {{ partial "manual-update/suggestions.html" . }}
     <!-- Dynamic Buttons -->
 <div class="btn-container">
-    <button class="dynamic-button" data-search="exam dates"><i class="fas fa-search"></i>exam date</button>
-    <button class="dynamic-button" data-search="Shok Sandesh"><i class="fas fa-search"></i> Shok Sandesh </button>
-   
-    <button class="dynamic-button" data-search="Last date"><i class="fas fa-search"></i>Last Date Apply</button>
-    <button class="dynamic-button" data-search="Yojna Portal"><i class="fas fa-search"></i> Yojna Portal</button>
-    <button class="dynamic-button" data-search="Advance Tools"><i class="fas fa-search"></i> Advance Tools</button>
-    <button class="dynamic-button" data-search="Government Schemes"><i class="fas fa-search"></i> Government Schemes</button>
-    <button class="dynamic-button" data-search="Latest update"><i class="fas fa-search"></i> latest update</button>
-    <button class="dynamic-button" data-search="Latest Baner"><i class="fas fa-search"></i> Latest Banner</button>
+    {{ partial "manual-update/dynamic-button.html" . }}
 </div>
      <!-- Google CSE Script -->
     <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a"></script>
+  
+
+
     <script>
-        // Trigger search using the input field
         document.getElementById('search-button').addEventListener('click', function() {
             const query = document.getElementById('search-input').value;
             if (query) {
-                const searchBox = document.querySelector('input.gsc-input');
-                if (searchBox) {
-                    searchBox.value = query;
-                    const searchButton = document.querySelector('button.gsc-search-button');
-                    searchButton.click();
-                }
-            } else {
-                alert('Please enter a search query!');
+                updateURL(query);
+                search(query);
             }
         });
 
-        // Make all dynamic buttons trigger search
-        document.querySelectorAll('.dynamic-button').forEach(button => {
-            button.addEventListener('click', function() {
-                const searchText = this.getAttribute('data-search');
-                const inputField = document.getElementById('search-input');
-                inputField.value = searchText;
-                document.getElementById('search-button').click();
-            });
-        });
+        function updateURL(query) {
+            const hash = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+            window.location.hash = hash;
+        }
 
-        // Pre-fill the search bar if a query is in the URL hash
+
         function readQuery() {
             const hash = window.location.hash;
-            const params = new URLSearchParams(hash.substring(1));
+            const params = new URLSearchParams(hash.substring(1)); // Remove the '#' character
             const query = params.get('gsc.q');
             if (query) {
-                const inputField = document.getElementById('search-input');
-                inputField.value = query;
-                document.getElementById('search-button').click();
+                document.getElementById('search-input').value = query;
+                search(query);
             }
         }
 
         window.onload = readQuery;
     </script>
-    <script>
-        const searchInput = document.getElementById('search-input');
-const suggestionsContainer = document.getElementById('suggestions-container');
-
-// Sample suggestions with links
-const suggestions = [
-    { text: 'v2k computers', link: 'https://www.v2kcomputes.com' },
-    { text: 'YouTube', link: 'https://www.youtube.com' },
-    { text: 'Facebook', link: 'https://www.facebook.com' },
-    { text: 'yojna Portal', link: 'https://www.yojnaportal.com' },
-];
-
-searchInput.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase();
-    suggestionsContainer.innerHTML = '';
-
-    if (query) {
-        const filteredSuggestions = suggestions.filter(suggestion =>
-            suggestion.text.toLowerCase().includes(query)
-        );
-
-        filteredSuggestions.forEach(suggestion => {
-            const suggestionElement = document.createElement('div');
-            suggestionElement.className = 'suggestion';
-            suggestionElement.textContent = suggestion.text;
-            suggestionElement.addEventListener('click', () => {
-                window.open(suggestion.link, '_blank');
-            });
-            suggestionsContainer.appendChild(suggestionElement);
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzA_zNbxIRDyx8hjYvfoRm97aM9SM1oKceu8ZYnmFIleTXvO5iULYRaBXn_ecGwN3pJ/exec';
+        const form = document.forms['search-form'];
+        
+        // Set the timestamp automatically
+        const timestampField = document.getElementById('timestamp-field');
+        const now = new Date();
+        const formattedDate = now.toLocaleString('en-GB', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        }).replace(',', '');
+        timestampField.value = formattedDate;
+      
+        // Handle form submission
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(() => alert("Thank you! Your form is submitted successfully."))
+            .then(() => { window.location.reload(); })
+            .catch(error => console.error('Error!', error.message));
         });
-    }
-});
-
-    </script>
+      </script>
 </body>
 </html>
+

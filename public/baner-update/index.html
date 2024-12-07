@@ -50,7 +50,73 @@
     <div class="main-container">
        
         
-        <header>
+        <head>
+    
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
+
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <style>
+  
+
+        header {
+            background-color: #f8f9fa;  
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+            border-bottom: 3px solid #fff;  
+        }
+     
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+     
+        .logo img {
+            height: 70px;  
+            max-width: 100%;
+        }
+     
+        .portal-name h1 {
+            font-size: 28px;
+            color: #007bff;  
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+     
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+              
+            }
+            
+            .logo img {
+                height: 60px;
+            }
+            
+            .portal-name h1 {
+                font-size: 24px;
+            }
+        }
+     </style>
+</head>
+
+
+
+
+
+
+<header>
    <div class="header-container">
        <div class="logo">
            <a href="/">
@@ -65,67 +131,17 @@
 
 
 
-<style>
-  
 
-   header {
-       background-color: #f8f9fa;  
-       padding: 10px 0;
-       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-       border-bottom: 3px solid #fff;  
-   }
-
-   .header-container {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       max-width: 1200px;
-       margin: 0 auto;
-       padding: 0 20px;
-   }
-
-   .logo img {
-       height: 70px;  
-       max-width: 100%;
-   }
-
-   .portal-name h1 {
-       font-size: 28px;
-       color: #007bff;  
-       margin: 0;
-       text-transform: uppercase;
-       font-weight: bold;
-       letter-spacing: 2px;
-   }
-
-   @media (max-width: 768px) {
-       .header-container {
-           flex-direction: column;
-           text-align: center;
-         
-       }
-       
-       .logo img {
-           height: 60px;
-       }
-       
-       .portal-name h1 {
-           font-size: 24px;
-       }
-   }
-</style>
  
        
         
-    
+        <button class="dynamic-button" data-search="pdf form"><i class="fas fa-search"></i>pdf forms</button>
+        <button class="dynamic-button" data-search="Latest Yojna"><i class="fas fa-search"></i>Latest Yojna</button>
+        <button class="dynamic-button" data-search="New Schemes"><i class="fas fa-search"></i>New Schemes</button>
        
         
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrollable Menu</title>
+        
+   
     <style>
         .menu-container {
             width: 100%;
@@ -228,18 +244,19 @@
         <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
         <div class="scroll-menu" id="scrollMenu">
             <a href="/" class="menu-item active">Home</a>
-          <a href="/yojnaportalweb/#schemes" class="menu-item" onclick="showCategory('schemes', this)">Yojna</a>
-            <a href="/yojnaportalweb/#jobs" class="menu-item" onclick="showCategory('jobs', this)">Jobs</a>
-            <a href="/yojnaportalweb/#alert" class="menu-item" onclick="showCategory('alert', this)">Alert</a>
-            <a href="/yojnaportalweb/#more" class="menu-item" onclick="showCategory('more', this)">More</a>
-            <a href="/yojna-search/" class="menu-item">All Yojna</a>
-            <a href="/last-date-reminder/" class="menu-item">Last Date</a>
-            <a href="/exam-date/" class="menu-item">Exams</a>
-            <a href="more.html" class="menu-item">More</a>
+            <a href="/menu/" class="menu-item">Menu</a>
+          <a href="/search/" class="menu-item" > Search </a>
+            <a href="/update/" class="menu-item" >Update </a>
+            <a href="/quick/last-date/" class="menu-item">Last Dates</a>
+            <a href="/quick/exam-date/" class="menu-item" >Exam Date</a>
+            <a href="/latest-schemes/" class="menu-item">Latest Schemes</a>
+            <a href="/upcoming/" class="menu-item">Upcoming</a>
+            <a href="/suvichar/" class="menu-item">Suvichar</a>
+           
             <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
-            <a href="https://tools.v2kcomputers.com/p/home.html" class="menu-item">Advance Tools</a>
-            <a href="#" class="menu-item">Admit Card</a>
-            <a href="#" class="menu-item">Result</a>
+            <a href="https://tools.v2kcomputers.com/" class="menu-item">Advance Tools</a>
+            <a href="/admitcard/" class="menu-item">Admit Card</a>
+            <a href="/results/" class="menu-item">Results</a>
         </div>
         <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
     </div>
@@ -284,8 +301,11 @@
         });
     </script>
 </body>
-</html>
 
+
+
+      
+        
 
         <!DOCTYPE html>
 <html lang="en">
@@ -745,8 +765,7 @@ font-size: small;}
 </svg>
 </span>
     </div></a>
-    <div class="time">
-            Yesterday<span>•</span> <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" viewBox="0 0 24 24">
+    <div class="time">04 Dec, 2024<span>•</span> <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M8.64 4.737A7.97 7.97 0 0 1 12 4a7.997 7.997 0 0 1 6.933 4.006h-.738c-.65 0-1.177.25-1.177.9 0 .33 0 2.04-2.026 2.008-1.972 0-1.972-1.732-1.972-2.008 0-1.429-.787-1.65-1.752-1.923-.374-.105-.774-.218-1.166-.411-1.004-.497-1.347-1.183-1.461-1.835ZM6 4a10.06 10.06 0 0 0-2.812 3.27A9.956 9.956 0 0 0 2 12c0 5.289 4.106 9.619 9.304 9.976l.054.004a10.12 10.12 0 0 0 1.155.007h.002a10.024 10.024 0 0 0 1.5-.19 9.925 9.925 0 0 0 2.259-.754 10.041 10.041 0 0 0 4.987-5.263A9.917 9.917 0 0 0 22 12a10.025 10.025 0 0 0-.315-2.5A10.001 10.001 0 0 0 12 2a9.964 9.964 0 0 0-6 2Zm13.372 11.113a2.575 2.575 0 0 0-.75-.112h-.217A3.405 3.405 0 0 0 15 18.405v1.014a8.027 8.027 0 0 0 4.372-4.307ZM12.114 20H12A8 8 0 0 1 5.1 7.95c.95.541 1.421 1.537 1.835 2.415.209.441.403.853.637 1.162.54.712 1.063 1.019 1.591 1.328.52.305 1.047.613 1.6 1.316 1.44 1.825 1.419 4.366 1.35 5.828Z" clip-rule="evenodd"/>
           </svg>
           </span></div>
@@ -8465,17 +8484,8 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
         });
     </script>
 </body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer </title>
-   
-  
-      
-    
-    <style>
+
+    <style> 
         
     
         main {
@@ -8515,92 +8525,49 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
         </div>
     </footer>
 </body>
-</html>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Bar with Permalink</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-
-      .gcse-search {width: 10px; }
-     #pse {width: 1px;}
-      
-       .gcse-search {
-    width: 100%;
-     
-     
-    }
-   
-      .gsc-input-box {
-        width: 1px;
-      }
-
-      
-      .gsc-search-button {
-        width: 1px;
-        margin-top: 0px;
-        font-size: 1px;
-        padding: 0px;
-      
-    }
-  
-      .gsc-search-button-v2, .gsib_a {display: none; }
-      
-      .gsc-control-cse {padding: 0; }
-    
-    </style>
-  
-</head>
-<body>
-  
-    <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
-    </script>
+<script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+</script>
 <div id="pse">
-  <div class="gcse-search"></div> </div>
-
-    <script>
-        document.getElementById('search-button').addEventListener('click', function() {
-            const query = document.getElementById('search-input').value;
-            if (query) {
-                updateURL(query);
-                search(query);
-            }
-        });
-
-        function updateURL(query) {
-            const hash = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
-            window.location.hash = hash;
-        }
-
-
-        function readQuery() {
-            const hash = window.location.hash;
-            const params = new URLSearchParams(hash.substring(1)); 
-            const query = params.get('gsc.q');
-            if (query) {
-                document.getElementById('search-input').value = query;
-                search(query);
-            }
-        }
-
-        window.onload = readQuery;
-    </script>
-</body>
-</html>
+<div class="gcse-search"></div> </div>
 
        
     </div>
      
        
     </div>
+    <div>
+        <a href="#gsc.tab=0" class="dynamic-link" data-param="&gsc.q=Latest%20Update">Latest Update</a>
+        <a href="#gsc.tab=0" class="dynamic-link" data-param="&gsc.q=News">News</a>
+        <a href="#gsc.tab=0" class="dynamic-link" data-param="&gsc.q=Features">Features</a>
+      </div>
+      
+<script>
+    
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+  
+        
+        const baseHref = this.getAttribute('href');
+        
+        const queryParam = this.getAttribute('data-search');
+   
+        
+        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
+        window.history.pushState({}, '', newUrl);
+  
+        
+        window.location.reload();
+      });
+    });
+  </script>
+     
 </body>
+
+
+     
+
+
 
 </html>

@@ -50,7 +50,73 @@
     <div class="main-container">
        
         
-        <header>
+        <head>
+    
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
+
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <style>
+  
+
+        header {
+            background-color: #f8f9fa;  
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+            border-bottom: 3px solid #fff;  
+        }
+     
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+     
+        .logo img {
+            height: 70px;  
+            max-width: 100%;
+        }
+     
+        .portal-name h1 {
+            font-size: 28px;
+            color: #007bff;  
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+     
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+              
+            }
+            
+            .logo img {
+                height: 60px;
+            }
+            
+            .portal-name h1 {
+                font-size: 24px;
+            }
+        }
+     </style>
+</head>
+
+
+
+
+
+
+<header>
    <div class="header-container">
        <div class="logo">
            <a href="/">
@@ -65,67 +131,14 @@
 
 
 
-<style>
-  
 
-   header {
-       background-color: #f8f9fa;  
-       padding: 10px 0;
-       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-       border-bottom: 3px solid #fff;  
-   }
-
-   .header-container {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       max-width: 1200px;
-       margin: 0 auto;
-       padding: 0 20px;
-   }
-
-   .logo img {
-       height: 70px;  
-       max-width: 100%;
-   }
-
-   .portal-name h1 {
-       font-size: 28px;
-       color: #007bff;  
-       margin: 0;
-       text-transform: uppercase;
-       font-weight: bold;
-       letter-spacing: 2px;
-   }
-
-   @media (max-width: 768px) {
-       .header-container {
-           flex-direction: column;
-           text-align: center;
-         
-       }
-       
-       .logo img {
-           height: 60px;
-       }
-       
-       .portal-name h1 {
-           font-size: 24px;
-       }
-   }
-</style>
  
        
         
-    
-       
+     
         
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrollable Menu</title>
+        
+   
     <style>
         .menu-container {
             width: 100%;
@@ -228,18 +241,19 @@
         <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
         <div class="scroll-menu" id="scrollMenu">
             <a href="/" class="menu-item active">Home</a>
-          <a href="/yojnaportalweb/#schemes" class="menu-item" onclick="showCategory('schemes', this)">Yojna</a>
-            <a href="/yojnaportalweb/#jobs" class="menu-item" onclick="showCategory('jobs', this)">Jobs</a>
-            <a href="/yojnaportalweb/#alert" class="menu-item" onclick="showCategory('alert', this)">Alert</a>
-            <a href="/yojnaportalweb/#more" class="menu-item" onclick="showCategory('more', this)">More</a>
-            <a href="/yojna-search/" class="menu-item">All Yojna</a>
-            <a href="/last-date-reminder/" class="menu-item">Last Date</a>
-            <a href="/exam-date/" class="menu-item">Exams</a>
-            <a href="more.html" class="menu-item">More</a>
+            <a href="/menu/" class="menu-item">Menu</a>
+          <a href="/search/" class="menu-item" > Search </a>
+            <a href="/update/" class="menu-item" >Update </a>
+            <a href="/quick/last-date/" class="menu-item">Last Dates</a>
+            <a href="/quick/exam-date/" class="menu-item" >Exam Date</a>
+            <a href="/latest-schemes/" class="menu-item">Latest Schemes</a>
+            <a href="/upcoming/" class="menu-item">Upcoming</a>
+            <a href="/suvichar/" class="menu-item">Suvichar</a>
+           
             <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
-            <a href="https://tools.v2kcomputers.com/p/home.html" class="menu-item">Advance Tools</a>
-            <a href="#" class="menu-item">Admit Card</a>
-            <a href="#" class="menu-item">Result</a>
+            <a href="https://tools.v2kcomputers.com/" class="menu-item">Advance Tools</a>
+            <a href="/admitcard/" class="menu-item">Admit Card</a>
+            <a href="/results/" class="menu-item">Results</a>
         </div>
         <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
     </div>
@@ -284,15 +298,18 @@
         });
     </script>
 </body>
-</html>
 
+
+
+      
+        
 
         <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagonal Slice Banner</title>
+
     <style>
         
         .banner {
@@ -427,17 +444,10 @@ text-align:center;
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>सीनियर सिटीजन के लिए आयुष्मान कार्ड आवेदन</title>
+        <title>  Update Baner : Yojna Portal  </title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: #f0f0f0;
-                
-            }
+         
 
  .profile-container {
       display: flex;
@@ -493,7 +503,7 @@ text-align:center;
 
 
            .post-container {
-    width: 400px;
+    max-width: 400px;
 
     background: white;
     padding: 10px;
@@ -716,17 +726,6 @@ font-size: small;}
  color: black;
 }
 
-@media (max-width: 768px) {  
-    .post-container {
-        width: 90%;  
-    }
-}
-
-@media (max-width: 480px) {  
-    .post-container {
-        width: 100%;  
-    }
-}
 
         </style>
     </head>
@@ -749,8 +748,7 @@ font-size: small;}
 </svg>
 </span>
     </div></a>
-    <div class="time">
-            Yesterday<span>•</span> <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" viewBox="0 0 24 24">
+    <div class="time">04 Dec, 2024<span>•</span> <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M8.64 4.737A7.97 7.97 0 0 1 12 4a7.997 7.997 0 0 1 6.933 4.006h-.738c-.65 0-1.177.25-1.177.9 0 .33 0 2.04-2.026 2.008-1.972 0-1.972-1.732-1.972-2.008 0-1.429-.787-1.65-1.752-1.923-.374-.105-.774-.218-1.166-.411-1.004-.497-1.347-1.183-1.461-1.835ZM6 4a10.06 10.06 0 0 0-2.812 3.27A9.956 9.956 0 0 0 2 12c0 5.289 4.106 9.619 9.304 9.976l.054.004a10.12 10.12 0 0 0 1.155.007h.002a10.024 10.024 0 0 0 1.5-.19 9.925 9.925 0 0 0 2.259-.754 10.041 10.041 0 0 0 4.987-5.263A9.917 9.917 0 0 0 22 12a10.025 10.025 0 0 0-.315-2.5A10.001 10.001 0 0 0 12 2a9.964 9.964 0 0 0-6 2Zm13.372 11.113a2.575 2.575 0 0 0-.75-.112h-.217A3.405 3.405 0 0 0 15 18.405v1.014a8.027 8.027 0 0 0 4.372-4.307ZM12.114 20H12A8 8 0 0 1 5.1 7.95c.95.541 1.421 1.537 1.835 2.415.209.441.403.853.637 1.162.54.712 1.063 1.019 1.591 1.328.52.305 1.047.613 1.6 1.316 1.44 1.825 1.419 4.366 1.35 5.828Z" clip-rule="evenodd"/>
           </svg>
           </span></div>
@@ -1018,8 +1016,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('b14dabc7c97f845b598facab057d3022')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -1321,8 +1318,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('bb445d3455eb99bc8e94334c18f5d594')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -1624,8 +1620,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('14a0e929e72e60989a9336411b940106')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -1927,8 +1922,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('1d7dc8f78873fc859050d0b95547bbd2')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -2230,8 +2224,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('a7224db13f3a49096aa27c1876d1a947')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -2533,8 +2526,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('7e5e7aa6bfb858adf7855d96272fedcc')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -2836,8 +2828,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('70e07bc10719b2fc0d654c767698df76')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -3139,8 +3130,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('841a3e0a694e0cf3a14efc24b19ef98f')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -3442,8 +3432,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('cfcc1e0e162afda31fb303ee9ee7b86b')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -3745,8 +3734,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('b1d9e3838ddbbf78dc981ff3f8334a63')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -4048,8 +4036,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('393cf4dde35cfa1c41637849b8b83ca6')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -4351,8 +4338,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('b121719778d26495809c4836e93031bf')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -4654,8 +4640,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('a7667c913c0b1964fcca8063aa21e5b4')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -4957,8 +4942,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('71c91bc6c27c9b4383736cb735c3a5c8')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -5260,8 +5244,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('6481f413dae724a0b9eba47fe524090b')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -5563,8 +5546,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('1f489d46fdc54c98f503dfb45fd047a7')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -5866,8 +5848,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('0f6f9ba1555e3621da98d7f5841a2f98')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -6169,8 +6150,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('37171a7cda3317f13a679d97a9d1fd6d')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -6473,8 +6453,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('8474013f7f04b38ff8009b3a5d1359c8')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -6776,8 +6755,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('89f28d6645488047b76c2b0904173416')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -7079,8 +7057,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('06ccddfb57acd04e6cdcadecd482683c')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -7382,8 +7359,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('aea747827063b66ac46435a18492d1df')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -7686,8 +7662,7 @@ Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. <a
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('57a2004cad20b2bab81ee1e7415f991d')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -7990,8 +7965,7 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('11100be4dc48b9153759ce466b02d6ed')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -8036,36 +8010,45 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
                 }
             }
 
-   function addNewText() {
-    
-    const newElement = document.createElement('div');
-    newElement.textContent = 'Website: www.yojnaportal.com'; 
-    newElement.classList.add('editable');
-    newElement.setAttribute('contenteditable', 'true');
-    newElement.style.padding = '10px';
-    newElement.style.margin = '2px 0';
-    newElement.style.border = '1px solid #ccc';
-    newElement.style.cursor = 'pointer';
-
-    
-    activeElement = newElement;
-    document.querySelectorAll('.editable').forEach(el => {
-        el.classList.remove('editable-active');
-    });
-    newElement.classList.add('editable-active');
-
-    
-    document.querySelector('.main-post').appendChild(newElement);
-
-    
-    newElement.addEventListener('click', () => {
-        activeElement = newElement;
-        document.querySelectorAll('.editable').forEach(el => {
-            el.classList.remove('editable-active');
-        });
-        newElement.classList.add('editable-active');
-    });
-}
+            function addNewText(postId) {
+                
+                const postContainer = document.querySelector(`[data-post-id="${postId}"] .main-post`);
+                
+                if (!postContainer) {
+                    console.error(`Main post container not found for post ID: ${postId}`);
+                    return;
+                }
+            
+                
+                const newElement = document.createElement('div');
+                newElement.textContent = 'Website: www.yojnaportal.com'; 
+                newElement.classList.add('editable');
+                newElement.setAttribute('contenteditable', 'true');
+                newElement.style.padding = '10px';
+                newElement.style.margin = '2px 0';
+                newElement.style.border = '1px solid #ccc';
+                newElement.style.cursor = 'pointer';
+            
+                
+                activeElement = newElement;
+                document.querySelectorAll('.editable').forEach(el => {
+                    el.classList.remove('editable-active');
+                });
+                newElement.classList.add('editable-active');
+            
+                
+                postContainer.appendChild(newElement);
+            
+                
+                newElement.addEventListener('click', () => {
+                    activeElement = newElement;
+                    document.querySelectorAll('.editable').forEach(el => {
+                        el.classList.remove('editable-active');
+                    });
+                    newElement.classList.add('editable-active');
+                });
+            }
+            
 
 
 
@@ -8469,17 +8452,8 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
         });
     </script>
 </body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer </title>
-   
-  
-      
-    
-    <style>
+
+    <style> 
         
     
         main {
@@ -8519,92 +8493,45 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
         </div>
     </footer>
 </body>
-</html>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Bar with Permalink</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-
-      .gcse-search {width: 10px; }
-     #pse {width: 1px;}
-      
-       .gcse-search {
-    width: 100%;
-     
-     
-    }
-   
-      .gsc-input-box {
-        width: 1px;
-      }
-
-      
-      .gsc-search-button {
-        width: 1px;
-        margin-top: 0px;
-        font-size: 1px;
-        padding: 0px;
-      
-    }
-  
-      .gsc-search-button-v2, .gsib_a {display: none; }
-      
-      .gsc-control-cse {padding: 0; }
-    
-    </style>
-  
-</head>
-<body>
-  
-    <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
-    </script>
+<script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+</script>
 <div id="pse">
-  <div class="gcse-search"></div> </div>
-
-    <script>
-        document.getElementById('search-button').addEventListener('click', function() {
-            const query = document.getElementById('search-input').value;
-            if (query) {
-                updateURL(query);
-                search(query);
-            }
-        });
-
-        function updateURL(query) {
-            const hash = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
-            window.location.hash = hash;
-        }
-
-
-        function readQuery() {
-            const hash = window.location.hash;
-            const params = new URLSearchParams(hash.substring(1)); 
-            const query = params.get('gsc.q');
-            if (query) {
-                document.getElementById('search-input').value = query;
-                search(query);
-            }
-        }
-
-        window.onload = readQuery;
-    </script>
-</body>
-</html>
+<div class="gcse-search"></div> </div>
 
        
     </div>
      
        
     </div>
+    
+      
+<script>
+    
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+  
+        
+        const baseHref = this.getAttribute('href');
+        
+        const queryParam = this.getAttribute('data-search');
+   
+        
+        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
+        window.history.pushState({}, '', newUrl);
+  
+        
+        window.location.reload();
+      });
+    });
+  </script>
+     
 </body>
+
+
+     
+
+
 
 </html>

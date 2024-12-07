@@ -1,5 +1,8 @@
 
 <head>
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Last Date Reminder: Yojna Portal</title>
     <style>
         
 h2 {
@@ -37,35 +40,44 @@ width: 200px;
 
 #datezoon  {
           position: relative;
-          width: 180px; /* Adjust width as needed */
+          max-width: 150px; /* Adjust width as needed */
        /* Adjust height as needed */
-      color: black;
-      font-weight: 700;
-      text-shadow: 1px 5px 7px black;
-      left:12%;
-        
+
+      left:11px;
+      top:-10px
+    
       }
       #datezoon:before {
           content: '';
           position: absolute;
           top: 0;
           right: 0;
-          width: 220px; /* Adjust width as needed */
-        height: 30px; /* Same height as the shape */
+         width: 150px; /* Adjust width as needed */
+        height: 20px; /* Same height as the shape */
           background: linear-gradient(to right, #886600, #ffff99, #886600);
           transform: skewX(-45deg);
           transform-origin: top right;
-             z-index:-3;
+             z-index:;
             
-             color: black;
+       
 
 
       }
+      #today  {
+     position:absolute;
+     font-size:13px;
+     padding: 3px;
+     font-weight: 700;
+     color:#333;
+     z-index:1;  
+     text-align: center;
+    }
+ 
 
 
 
   .past-exam, .expired {
-    background-color: #f8d7da;
+    background-color: #e6c7ca;
   }
 
   .current-exam, .upcoming {
@@ -114,7 +126,8 @@ button:hover {
 
 <div class="lastDateContainer">
   <!-- Today Section -->
-  <div id="datezoon">Last Date Today</div>
+  <div id="datezoon"> 
+  <div id="today">Last Date Today </div></div>
   <table id="today-table">
       <thead>
           <tr>
@@ -140,7 +153,7 @@ button:hover {
   </table>
 
   <!-- Tomorrow Section -->
-  <div id="datezoon">Last Date Tomorrow</div>
+  <div id="datezoon"> <div id="today">Last Date Tomorrow  </div></div>
   <table id="tomorrow-table">
       <thead>
           <tr>
@@ -166,7 +179,7 @@ button:hover {
   </table>
 
   <!-- Yesterday Section -->
-  <div id="datezoon">Was Yesterday</div>
+  <div id="datezoon"><div id="today">Expired Yesterday </div> </div>
   <table id="yesterday-table">
       <thead>
           <tr>
@@ -192,7 +205,7 @@ button:hover {
   </table>
 
   <!-- Upcoming Section -->
-  <div id="datezoon">Upcoming</div>
+  <div id="datezoon">  <div id="today"> Upcoming Last Date </div>  </div>
   <table id="upcoming-table">
       <thead>
           <tr>
@@ -218,7 +231,7 @@ button:hover {
   </table>
 
   <!-- Expired Section -->
-  <div id="datezoon">Expired</div>
+  <div id="datezoon"> <div id="today"> Expired </div>   </div>
   <table id="expired-table">
       <thead>
           <tr>

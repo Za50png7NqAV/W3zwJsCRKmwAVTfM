@@ -53,10 +53,12 @@
         {{ partial "header" . }} 
        
         <!-- Include the sidenav partial -->
-    
-       
+     
         <!-- Navbar section -->
         {{ partial "navbar" . }}
+
+      
+        
 
         {{ partial "baseof-part/social-link.html" . }}
         <div id="sidenav-main">
@@ -68,6 +70,14 @@
      
        
     </div>
+    
+      {{ partial "baseof-part/dynamic-link.html" . }}
+     
 </body>
+
+
+     <!-- dynamic-button -->
+
+
 
 </html>

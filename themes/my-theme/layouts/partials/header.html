@@ -1,3 +1,69 @@
+<head>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
+
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <style>
+  
+
+        header {
+            background-color: #f8f9fa; /* Light grey background */
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            border-bottom: 3px solid #fff; /* Optional border for contrast */
+        }
+     
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+     
+        .logo img {
+            height: 70px; /* Adjust size as needed */
+            max-width: 100%;
+        }
+     
+        .portal-name h1 {
+            font-size: 28px;
+            color: #007bff; /* Same as border color for consistency */
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+     
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+              
+            }
+            
+            .logo img {
+                height: 60px;
+            }
+            
+            .portal-name h1 {
+                font-size: 24px;
+            }
+        }
+     </style>
+</head>
+
+
+
+
+
+
 <header>
    <div class="header-container">
        <div class="logo">
@@ -13,52 +79,4 @@
 
 
 
-<style>
-  
 
-   header {
-       background-color: #f8f9fa; /* Light grey background */
-       padding: 10px 0;
-       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-       border-bottom: 3px solid #fff; /* Optional border for contrast */
-   }
-
-   .header-container {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       max-width: 1200px;
-       margin: 0 auto;
-       padding: 0 20px;
-   }
-
-   .logo img {
-       height: 70px; /* Adjust size as needed */
-       max-width: 100%;
-   }
-
-   .portal-name h1 {
-       font-size: 28px;
-       color: #007bff; /* Same as border color for consistency */
-       margin: 0;
-       text-transform: uppercase;
-       font-weight: bold;
-       letter-spacing: 2px;
-   }
-
-   @media (max-width: 768px) {
-       .header-container {
-           flex-direction: column;
-           text-align: center;
-         
-       }
-       
-       .logo img {
-           height: 60px;
-       }
-       
-       .portal-name h1 {
-           font-size: 24px;
-       }
-   }
-</style>

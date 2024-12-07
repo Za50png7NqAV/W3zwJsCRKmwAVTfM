@@ -1,0 +1,40 @@
+<div id="suggestions-container" class="suggestions-container">     
+    <a href="#" class="dynamic-link" data-search="Sarkari Yojana"> <button class="dynamic-button"><i class="fas fa-search"></i>Sarkari Yojna </button></a> 
+         <a href="#" class="dynamic-link" data-search="Sarkari Recruitments"> <button class="dynamic-button"><i class="fas fa-search"></i>Sarkari Recruitments </button></a>  
+         <a href="#" class="dynamic-link" data-search="Latest Jobs"> <button class="dynamic-button"><i class="fas fa-search"></i>Latest Jobs </button></a>   
+</div>
+
+
+<script>
+    const searchInput = document.getElementById('search-input');
+const suggestionsContainer = document.getElementById('suggestions-container');
+
+// Sample suggestions with links 
+const suggestions = [
+{ text: 'v2k computers', link: 'https://www.v2kcomputes.com' },
+{ text: 'YouTube', link: 'https://www.youtube.com' },
+{ text: 'Facebook', link: 'https://www.facebook.com' },
+{ text: 'yojna Portal', link: 'https://www.yojnaportal.com' },
+];
+
+searchInput.addEventListener('input', () => {
+const query = searchInput.value.toLowerCase();
+suggestionsContainer.innerHTML = '';
+
+if (query) {
+    const filteredSuggestions = suggestions.filter(suggestion =>
+        suggestion.text.toLowerCase().includes(query)
+    );
+
+    filteredSuggestions.forEach(suggestion => {
+        const suggestionElement = document.createElement('div');
+        suggestionElement.className = 'suggestion';
+        suggestionElement.textContent = suggestion.text;
+        suggestionElement.addEventListener('click', () => {
+            window.open(suggestion.link, '_blank');
+        });
+        suggestionsContainer.appendChild(suggestionElement);
+    });
+}
+});
+</script>

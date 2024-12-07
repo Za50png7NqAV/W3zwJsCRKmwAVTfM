@@ -1,0 +1,21 @@
+
+<script>
+    // Attach event listeners to links with the class 'dynamic-link'
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+  
+        // Get the base href from the clicked link
+        const baseHref = this.getAttribute('href');
+        // Get the query parameter from the 'data-param' attribute
+        const queryParam = this.getAttribute('data-search');
+   
+        // Update the URL
+        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
+        window.history.pushState({}, '', newUrl);
+  
+        // Reload the page to reflect changes
+        window.location.reload();
+      });
+    });
+  </script>

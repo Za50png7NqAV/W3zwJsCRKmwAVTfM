@@ -614,8 +614,7 @@ font-size: small;}
 </g>
 </svg>  </button>
 
-
-<button class="button  tool-button" onclick="addNewText()" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<button class="button tool-button" onclick="addNewText('{{ .File.UniqueID }}')" title="Add New Text"> <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 10V18C3 19.1046 3.89543 20 5 20H11M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <path d="M17 14V17M17 20V17M17 17H14M17 17H20" stroke="#00570e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style=""></path>
 <circle cx="6" cy="7" r="1" fill="#00570e" style=""></circle>
@@ -660,36 +659,45 @@ font-size: small;}
                 }
             }
 
-   function addNewText() {
-    // Create a new element with pre-filled content
-    const newElement = document.createElement('div');
-    newElement.textContent = 'Website: www.yojnaportal.com'; // Pre-filled text
-    newElement.classList.add('editable');
-    newElement.setAttribute('contenteditable', 'true');
-    newElement.style.padding = '10px';
-    newElement.style.margin = '2px 0';
-    newElement.style.border = '1px solid #ccc';
-    newElement.style.cursor = 'pointer';
-
-    // Automatically set the new element as active
-    activeElement = newElement;
-    document.querySelectorAll('.editable').forEach(el => {
-        el.classList.remove('editable-active');
-    });
-    newElement.classList.add('editable-active');
-
-    // Append to the main post container
-    document.querySelector('.main-post').appendChild(newElement);
-
-    // Set click behavior for future edits
-    newElement.addEventListener('click', () => {
-        activeElement = newElement;
-        document.querySelectorAll('.editable').forEach(el => {
-            el.classList.remove('editable-active');
-        });
-        newElement.classList.add('editable-active');
-    });
-}
+            function addNewText(postId) {
+                // Find the specific main post container based on postId
+                const postContainer = document.querySelector(`[data-post-id="${postId}"] .main-post`);
+                
+                if (!postContainer) {
+                    console.error(`Main post container not found for post ID: ${postId}`);
+                    return;
+                }
+            
+                // Create a new editable text element
+                const newElement = document.createElement('div');
+                newElement.textContent = 'Website: www.yojnaportal.com'; // Pre-filled text
+                newElement.classList.add('editable');
+                newElement.setAttribute('contenteditable', 'true');
+                newElement.style.padding = '10px';
+                newElement.style.margin = '2px 0';
+                newElement.style.border = '1px solid #ccc';
+                newElement.style.cursor = 'pointer';
+            
+                // Automatically set the new element as active
+                activeElement = newElement;
+                document.querySelectorAll('.editable').forEach(el => {
+                    el.classList.remove('editable-active');
+                });
+                newElement.classList.add('editable-active');
+            
+                // Append the new element to the correct main post container
+                postContainer.appendChild(newElement);
+            
+                // Set click behavior for future edits
+                newElement.addEventListener('click', () => {
+                    activeElement = newElement;
+                    document.querySelectorAll('.editable').forEach(el => {
+                        el.classList.remove('editable-active');
+                    });
+                    newElement.classList.add('editable-active');
+                });
+            }
+            
 
 
 
