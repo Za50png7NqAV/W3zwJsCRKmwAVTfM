@@ -240,9 +240,9 @@
     <div class="menu-container">
         <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
         <div class="scroll-menu" id="scrollMenu">
-            <a href="/" class="menu-item active">Home</a>
-            <a href="/menu/" class="menu-item">Menu</a>
-          <a href="/search/" class="menu-item" > Search </a>
+ <a href="/search/" class="menu-item active" > <i class="fas fa-search"> </i> Search </a>
+ <a href="/" class="menu-item "> <i class="fas fa-home"> </i> Home</a>
+ <a href="/menu/" class="menu-item"> <i class="fas fa-menu"></i> Menu</a>
             <a href="/update/" class="menu-item" >Update </a>
             <a href="/quick/last-date/" class="menu-item">Last Dates</a>
             <a href="/quick/exam-date/" class="menu-item" >Exam Date</a>
@@ -832,6 +832,14 @@ Yojna Portal Menu
     </div>
     
       
+
+<head>
+<style>
+  
+  
+  
+  table.gsc-search-box td, .gsc-clear-button {display:none;}
+</style></head>
 <script>
     
     document.querySelectorAll('.dynamic-link').forEach(link => {
