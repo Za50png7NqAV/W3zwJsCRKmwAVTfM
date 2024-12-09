@@ -700,7 +700,11 @@ text-align:center;
         --card-width: 500px;  
       }
     }
-  
+    @media (max-width: 500px) {
+        .card-content {
+        font-size:6px
+        }
+    }
   </style>
 </head>
 <body>
@@ -725,17 +729,17 @@ text-align:center;
         <li>
             <a href="/posts/post-3/">Post 3</a>
         </li>
-        <hr>
+    <hr>
     
         <li>
             <a href="/posts/post-2/">Post 2</a>
         </li>
-        <hr>
+    <hr>
     
         <li>
             <a href="/posts/post-1/">Post 1</a>
         </li>
-        <hr>
+    <hr>
     
 
     </div>
@@ -781,11 +785,11 @@ text-align:center;
       
 <li>
   <a href="http://localhost:1313/job-new-post/">Job New Post</a>
-</li>
+</li><hr>
 
 <li>
   <a href="http://localhost:1313/page/">Latest Jobs</a>
-</li>
+</li><hr>
 
     </div>
     <div class="card-footer">
