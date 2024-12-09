@@ -436,609 +436,96 @@ text-align:center;
         <div id="sidenav-main">
         
         
-    
-    
+<h1>Latest Update</h1>
+
+
+
+
+
+
 <head>
-  <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Last Date Reminder: Yojna Portal</title>
-    <style>
-        
-h2 {
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: white;
-  }
-
-  th, td {
-    border: 1px solid ;
-    padding: 10px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #4CAF50;
-    color: white;
-  }
-
-#datezoon1 { background: linear-gradient(to right, #886600, #ffff99, #886600);
-width: 200px;
- 
-  background-image: linear-gradient(to right, #ff0000, #ffff00);  
-  background-size: 200px 100%;  
-}
-
-#datezoon  {
-          position: relative;
-          max-width: 150px;  
-        
-
-      left:11px;
-      top:-10px
-    
-      }
-      #datezoon:before {
-          content: '';
-          position: absolute;
-          top: 0;
-          right: 0;
-         width: 150px;  
-        height: 20px;  
-          background: linear-gradient(to right, #886600, #ffff99, #886600);
-          transform: skewX(-45deg);
-          transform-origin: top right;
-             z-index:;
-            
-       
-
-
-      }
-      #today  {
-     position:absolute;
-     font-size:13px;
-     padding: 3px;
-     font-weight: 700;
-     color:#333;
-     z-index:1;  
-     text-align: center;
-    }
- 
-
-
-
-  .past-exam, .expired {
-    background-color: #e6c7ca;
-  }
-
-  .current-exam, .upcoming {
-    background-color: #d4edda;
-  }
-
-   .upcoming-exam, .today {
-    background-color: #fff3cd;
-  }
-
-  .yesterday {
-    background-color: #f5c6cb;
-  }
-
-  .tomorrow {
-    background-color: #c3e6cb;
-  }
-
-  button {
-    padding: 10px;
-  background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
-
-  .lastDateContainer { color:black;}
-
-button:hover {
- 
-   background: linear-gradient(to right,  rgb(255, 78, 57), #f4b400);
-  color:black;
-
-}
-
-
-
-
+    <script src="/js/search.js"></script>
+    <link rel="stylesheet" href=" \css\list-table.css">
+  <style>
     </style>
 </head>
 
 
-
-
-<div class="lastDateContainer">
-  
-  <div id="datezoon"> 
-  <div id="today">Last Date Today </div></div>
-  <table id="today-table">
-      <thead>
-          <tr>
-              <th style="background-color: #f4b400; color:black;">Post Title</th>
-              <th style="background-color: #f4b400; color:black;">Category</th>
-              <th style="background-color: #f4b400; color:black;">Last Date</th>
-              <th style="background-color: #f4b400; color:black;">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-
-  
-  <div id="datezoon"> <div id="today">Last Date Tomorrow  </div></div>
-  <table id="tomorrow-table">
-      <thead>
-          <tr>
-              <th style="background-color: #f4b400; color:black;">Post Title</th>
-              <th style="background-color: #f4b400; color:black;">Category</th>
-              <th style="background-color: #f4b400; color:black;">Last Date</th>
-              <th style="background-color: #f4b400; color:black;">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-
-  
-  <div id="datezoon"><div id="today">Expired Yesterday </div> </div>
-  <table id="yesterday-table">
-      <thead>
-          <tr>
-              <th style="background-color: rgb(255, 115, 68);">Post Title</th>
-              <th style="background-color: rgb(255, 115, 68);">Category</th>
-              <th style="background-color: rgb(255, 115, 68);">Last Date</th>
-              <th style="background-color: rgb(255, 115, 68);">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-
-  
-  <div id="datezoon">  <div id="today"> Upcoming Last Date </div>  </div>
-  <table id="upcoming-table">
-      <thead>
-          <tr>
-              <th style="background-color: #f4b400; color:black;">Post Title</th>
-              <th style="background-color: #f4b400; color:black;">Category</th>
-              <th style="background-color: #f4b400; color:black;">Last Date</th>
-              <th style="background-color: #f4b400; color:black;">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-
-  
-  <div id="datezoon"> <div id="today"> Expired </div>   </div>
-  <table id="expired-table">
-      <thead>
-          <tr>
-              <th style="background-color: rgb(255, 78, 57);">Post Title</th>
-              <th style="background-color: rgb(255, 78, 57);">Category</th>
-              <th style="background-color: rgb(255, 78, 57);">Last Date</th>
-              <th style="background-color: rgb(255, 78, 57);">Link</th>
-          </tr>
-      </thead>
-      <tbody>
-          
-          
-          
-          <tr class="post">
-              <td>Texting Baner</td>
-              <td>Exams</td>
-              <td>2024-10-03</td>
-              <td><a href="http://localhost:1313/texting-baner/" target="_blank"><button id="applybtn">Click Here</button></a></td>
-          </tr>
-          
-          
-          
-          
-          <tr class="post">
-              <td>Banner</td>
-              <td>Exams</td>
-              <td>2024-10-03</td>
-              <td><a href="http://localhost:1313/banner/" target="_blank"><button id="applybtn">Click Here</button></a></td>
-          </tr>
-          
-          
-          
-          
-          <tr class="post">
-              <td>Job New Post</td>
-              <td>Exams</td>
-              <td>2024-10-03</td>
-              <td><a href="http://localhost:1313/job-new-post/" target="_blank"><button id="applybtn">Click Here</button></a></td>
-          </tr>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <tr class="post">
-              <td>PM Internship Yojna</td>
-              <td>Exams</td>
-              <td>2024-11-10</td>
-              <td><a href="http://localhost:1313/pm-internship-yojna/" target="_blank"><button id="applybtn">Click Here</button></a></td>
-          </tr>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-      </tbody>
-  </table>
-</div>
-
+<table class="post-table">
+    <thead>
+        <tr>
+            <th>Latest</th>
+            <th>Post Date</th>
+            <th>Detail</th>
+        </tr>
+    </thead>
+    
 
     
-    <div class="content">
-        
-    </div>
+    <tr>
+        <td><a href="/first-yojn/">First Yojn</a></td>
+        <td>02/10/2024</td>
+        <td><a href="/first-yojn/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/posts/post-3/">Post 3</a></td>
+        <td>15/03/2023</td>
+        <td><a href="/posts/post-3/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/posts/post-2/">Post 2</a></td>
+        <td>15/02/2023</td>
+        <td><a href="/posts/post-2/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/posts/post-1/">Post 1</a></td>
+        <td>15/01/2023</td>
+        <td><a href="/posts/post-1/">Click here</a></td>
+    </tr>
+    
+</table>
+
+<div class="pagination">
+    
+    <a href="/latest-update/page/2/">Previous</a>
+    
+
+    
+    
+    <a href="/latest-update/">1</a>
+    
+    
+    
+    <a href="/latest-update/page/2/">2</a>
+    
+    
+    
+    <strong>3</strong>
+    
+    
+
+    
+</div>
+<script>
+fetch('/search.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);  
+    searchIndex = data;
+  })
+  .catch(error => {
+    console.error("Error loading search index:", error);
+  });
+</script>
+
+
+
+<div class="content">
+    
+</div>
 
         <!DOCTYPE html>
 <head>

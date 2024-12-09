@@ -240,16 +240,18 @@
     <div class="menu-container">
         <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
         <div class="scroll-menu" id="scrollMenu">
-            <a href="/" class="menu-item active">Home</a>
-            <a href="/menu/" class="menu-item">Menu</a>
-          <a href="/search/" class="menu-item" > Search </a>
-            <a href="/update/" class="menu-item" >Update </a>
+ 
+ <a href="/" class="menu-item active"> <i class="fas fa-home"> </i> Home</a>
+ <a href="/search/" class="menu-item" > <i class="fas fa-search"> </i> Search </a>
+ <a href="/menu/" class="menu-item"> <i class="fas fa-menu"></i> Menu</a>
+ <a href="/latest-update/" class="menu-item"> Latest Update</a>
+           
+            <a href="/update/" class="menu-item" >Update</a>
             <a href="/quick/last-date/" class="menu-item">Last Dates</a>
             <a href="/quick/exam-date/" class="menu-item" >Exam Date</a>
             <a href="/latest-schemes/" class="menu-item">Latest Schemes</a>
             <a href="/upcoming/" class="menu-item">Upcoming</a>
-            <a href="/suvichar/" class="menu-item">Suvichar</a>
-           
+            
             <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
             <a href="https://tools.v2kcomputers.com/" class="menu-item">Advance Tools</a>
             <a href="/admitcard/" class="menu-item">Admit Card</a>
@@ -443,58 +445,11 @@ text-align:center;
 
 <head>
     <script src="/js/search.js"></script>
-    <style>
-        .post-table {
-            width: 600px;
-            border-collapse: collapse;
-            margin:  auto;
-            font-size: 16px;
-            text-align: left;
-            background-color: #f9f9f9;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .post-table th,
-        .post-table td {
-            padding: 10px 15px;
-            border: 1px solid #ddd;
-        }
-        
-        .post-table th {
-            background-color: #4CAF50;
-            color: white;
-            font-weight: bold;
-        }
-        
-        .post-table tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        
-        .post-table a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        
-        .post-table a:hover {
-            text-decoration: underline;
-        }
-        
-        #searchResults {
-            margin-top: 10px;
-        }
-        
-        #searchResults div {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        #searchResults h3 {
-            margin: 0 0 5px;
-        }
+    <link rel="stylesheet" href=" \css\list-table.css">
+  <style>
     </style>
 </head>
-<input type="text" id="searchBar" placeholder="Search posts..." oninput="searchPosts()" />
-<div id="searchResults"></div>
+
 
 <table class="post-table">
     <thead>
@@ -504,154 +459,92 @@ text-align:center;
             <th>Detail</th>
         </tr>
     </thead>
-    <tbody>
-        
-        <tr>
-            <td><a href="/texting-baner/">Texting Baner</a></td>
-            <td>04/12/2024</td>
-            <td><a href="/texting-baner/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/banner/">Banner</a></td>
-            <td>24/11/2024</td>
-            <td><a href="/banner/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/job-new-post/">Job New Post</a></td>
-            <td>16/11/2024</td>
-            <td><a href="/job-new-post/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/page/">Latest Jobs</a></td>
-            <td>16/11/2024</td>
-            <td><a href="/page/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/about/"></a></td>
-            <td>08/11/2024</td>
-            <td><a href="/about/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/quick/exam-date/"></a></td>
-            <td>08/11/2024</td>
-            <td><a href="/quick/exam-date/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/quick/last-date/"></a></td>
-            <td>08/11/2024</td>
-            <td><a href="/quick/last-date/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/quick/search/"></a></td>
-            <td>08/11/2024</td>
-            <td><a href="/quick/search/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/ifram/">Ifram</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/ifram/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/admitcard/">Latest Admitcard</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/admitcard/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/latest-jobs/">Latest Jobs</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/latest-jobs/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/pdf-forms/">Latest Pdf Forms</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/pdf-forms/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/schemes/">Latest Schemes</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/schemes/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/baner-update/">Latest Update</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/baner-update/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/latest-posts/">Latest Update</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/latest-posts/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/student/">Student Portal</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/student/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/upcoming/">Upcoming Information</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/upcoming/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/imp-links/">Useful Importent Links</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/imp-links/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/pm-internship-yojna/">PM Internship Yojna</a></td>
-            <td>08/11/2024</td>
-            <td><a href="/pm-internship-yojna/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/textpost/">Textpost</a></td>
-            <td>02/10/2024</td>
-            <td><a href="/textpost/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/first-yojn/">First Yojn</a></td>
-            <td>02/10/2024</td>
-            <td><a href="/first-yojn/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/posts/post-3/">Post 3</a></td>
-            <td>15/03/2023</td>
-            <td><a href="/posts/post-3/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/posts/post-2/">Post 2</a></td>
-            <td>15/02/2023</td>
-            <td><a href="/posts/post-2/">Click here</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="/posts/post-1/">Post 1</a></td>
-            <td>15/01/2023</td>
-            <td><a href="/posts/post-1/">Click here</a></td>
-        </tr>
-        
-    </tbody>
+    
+
+    
+    <tr>
+        <td><a href="/texting-baner/">Texting Baner</a></td>
+        <td>04/12/2024</td>
+        <td><a href="/texting-baner/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/banner/">Banner</a></td>
+        <td>24/11/2024</td>
+        <td><a href="/banner/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/job-new-post/">Job New Post</a></td>
+        <td>16/11/2024</td>
+        <td><a href="/job-new-post/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/page/">Latest Jobs</a></td>
+        <td>16/11/2024</td>
+        <td><a href="/page/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/about/"></a></td>
+        <td>08/11/2024</td>
+        <td><a href="/about/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/quick/exam-date/"></a></td>
+        <td>08/11/2024</td>
+        <td><a href="/quick/exam-date/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/quick/last-date/"></a></td>
+        <td>08/11/2024</td>
+        <td><a href="/quick/last-date/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/quick/search/"></a></td>
+        <td>08/11/2024</td>
+        <td><a href="/quick/search/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/ifram/">Ifram</a></td>
+        <td>08/11/2024</td>
+        <td><a href="/ifram/">Click here</a></td>
+    </tr>
+    
+    <tr>
+        <td><a href="/admitcard/">Latest Admitcard</a></td>
+        <td>08/11/2024</td>
+        <td><a href="/admitcard/">Click here</a></td>
+    </tr>
+    
 </table>
+
+<div class="pagination">
+    
+
+    
+    
+    <strong>1</strong>
+    
+    
+    
+    <a href="/latest-update/page/2/">2</a>
+    
+    
+    
+    <a href="/latest-update/page/3/">3</a>
+    
+    
+
+    
+    <a href="/latest-update/page/2/">Next</a>
+    
+</div>
 <script>
 fetch('/search.json')
   .then(response => response.json())

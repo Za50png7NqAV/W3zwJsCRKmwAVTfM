@@ -1,58 +1,11 @@
 <!-- layouts/partials/list-update/all-content-list.html -->
 <head>
     <script src="/js/search.js"></script>
-    <style>
-        .post-table {
-            width: 600px;
-            border-collapse: collapse;
-            margin:  auto;
-            font-size: 16px;
-            text-align: left;
-            background-color: #f9f9f9;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .post-table th,
-        .post-table td {
-            padding: 10px 15px;
-            border: 1px solid #ddd;
-        }
-        
-        .post-table th {
-            background-color: #4CAF50;
-            color: white;
-            font-weight: bold;
-        }
-        
-        .post-table tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        
-        .post-table a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        
-        .post-table a:hover {
-            text-decoration: underline;
-        }
-        
-        #searchResults {
-            margin-top: 10px;
-        }
-        
-        #searchResults div {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        #searchResults h3 {
-            margin: 0 0 5px;
-        }
+    <link rel="stylesheet" href=" \css\list-table.css">
+  <style>
     </style>
 </head>
-<input type="text" id="searchBar" placeholder="Search posts..." oninput="searchPosts()" />
-<div id="searchResults"></div>
+
 
 <table class="post-table">
     <thead>
@@ -62,16 +15,34 @@
             <th>Detail</th>
         </tr>
     </thead>
-    <tbody>
-        {{ range .Site.RegularPages }}
-        <tr>
-            <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-            <td>{{ .Date.Format "02/01/2006" }}</td>
-            <td><a href="{{ .RelPermalink }}">Click here</a></td>
-        </tr>
-        {{ end }}
-    </tbody>
+    {{ $paginator := .paginator }}
+
+    {{ range $paginator.Pages }}
+    <tr>
+        <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+        <td>{{ .Date.Format "02/01/2006" }}</td>
+        <td><a href="{{ .RelPermalink }}">Click here</a></td>
+    </tr>
+    {{ end }}
 </table>
+
+<div class="pagination">
+    {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}">Previous</a>
+    {{ end }}
+
+    {{ range $paginator.Pagers }}
+    {{ if eq $paginator.PageNumber .PageNumber }}
+    <strong>{{ .PageNumber }}</strong>
+    {{ else }}
+    <a href="{{ .URL }}">{{ .PageNumber }}</a>
+    {{ end }}
+    {{ end }}
+
+    {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}">Next</a>
+    {{ end }}
+</div>
 <script>
 fetch('/search.json')
   .then(response => response.json())

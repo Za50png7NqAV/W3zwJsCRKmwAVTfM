@@ -3,9 +3,9 @@
 
 
 
-
 <!-- Header Partial -->
-{{ partial "list-update/all-content-list.html" . }}
+{{ $paginator := .Paginate .Site.RegularPages }}
+{{ partial "list-update/all-content-list.html" (dict "context" . "paginator" $paginator) }}
 
 <!-- Content Section -->
 <div class="content">

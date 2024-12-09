@@ -1,0 +1,6 @@
+
+    {{ range first 20 .Pages }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+    {{ end }}

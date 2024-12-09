@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-US'
-title = 'My New Hugo Site'
+title = 'YOJNA PORTAL'
 
 [[menus.main]]
 name = 'Home'
@@ -21,3 +21,6 @@ weight = 30
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+
+[params]
+paginate = 20
