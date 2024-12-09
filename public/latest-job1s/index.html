@@ -436,132 +436,145 @@ text-align:center;
         <div id="sidenav-main">
         
         
-<h1>Latest Update</h1>
-
-
-
-
-
 
 <head>
-    <script src="/js/search.js"></script>
-    <link rel="stylesheet" href=" \css\list-table.css">
+ 
   <style>
-    </style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+     
+    }
+    
+    .single-post-wrapper {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .single-post-header {
+     
+      margin-bottom: 20px;
+    }
+
+    .single-post-header h1 {
+ 
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .post-meta {
+      color: #0e0101;
+      font-size: 0.9rem;
+      text-align:left;
+    }
+     .Post-Date {
+    font-size:8px;
+    }
+    .single-post-content {
+      margin-top: 20px;
+      
+    }
+ 
+
+
+.breadcrumbNav {
+padding:0;
+background-color: white;
+}
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 09px;
+  color: #f30909;
+
+}
+
+.breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb li + li::before {
+  
+  margin: 0 8px;
+  color: #f36a0f;  
+  font-weight: bold;
+}
+
+.breadcrumb li a {
+  color: #07011a;  
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+  color: #f7560b;  
+}
+
+.breadcrumb li:last-child {
+  color: #f5900d;  
+  font-weight: bold;
+}
+
+
+   
+
+    @media (max-width: 768px) {
+      .single-post-wrapper {
+        width:100%;
+        padding: 15px;
+      }
+
+      .single-post-header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 
+<body>
 
-<table class="post-table">
-    <thead>
-        <tr>
-            <th>Latest</th>
-            <th>Post Date</th>
-            <th>Detail</th>
-        </tr>
-    </thead>
-    
+  <div class="single-post-wrapper">
 
-    
-    <tr>
-        <td><a href="/texting-baner/">Texting Baner</a></td>
-        <td>04/12/2024</td>
-        <td><a href="/texting-baner/">Click here</a></td>
-    </tr>
-    
-    <tr>
-        <td><a href="/banner/">Banner</a></td>
-        <td>24/11/2024</td>
-        <td><a href="/banner/">Click here</a></td>
-    </tr>
-    
-    <tr>
-        <td><a href="/job-new-post/">Job New Post</a></td>
-        <td>16/11/2024</td>
-        <td><a href="/job-new-post/">Click here</a></td>
-    </tr>
-    
-    <tr>
-        <td><a href="/page/">Latest Jobs</a></td>
-        <td>16/11/2024</td>
-        <td><a href="/page/">Click here</a></td>
-    </tr>
-    
-    <tr>
-        <td><a href="/latest-job1s/">Latest Jobs test</a></td>
-        <td>16/11/2024</td>
-        <td><a href="/latest-job1s/">Click here</a></td>
-    </tr>
-    
-    <tr>
-        <td><a href="/about/"></a></td>
-        <td>08/11/2024</td>
-        <td><a href="/about/">Click here</a></td>
-    </tr>
-    
-    <tr>
-        <td><a href="/quick/exam-date/"></a></td>
-        <td>08/11/2024</td>
-        <td><a href="/quick/exam-date/">Click here</a></td>
-    </tr>
-    
-    <tr>
-        <td><a href="/quick/last-date/"></a></td>
-        <td>08/11/2024</td>
-        <td><a href="/quick/last-date/">Click here</a></td>
-    </tr>
-    
-    <tr>
-        <td><a href="/quick/search/"></a></td>
-        <td>08/11/2024</td>
-        <td><a href="/quick/search/">Click here</a></td>
-    </tr>
-    
-    <tr>
-        <td><a href="/ifram/">Ifram</a></td>
-        <td>08/11/2024</td>
-        <td><a href="/ifram/">Click here</a></td>
-    </tr>
-    
-</table>
-
-<div class="pagination">
-    
+    <div class="single-post-header">
+   
+      <nav aria-label="breadcrumb" class="breadcrumbNav">
+        <ul class="breadcrumb">
+          <li><a href="http://localhost:1313/">Home</a> >> </li>
+          
+          
+          
+            
+          
+            
+          
+            
+          
+          <li>Latest Jobs test</li>
+        </ul>
+      </nav>
+      
+  </div>
+    <div class="single-post-content">
+      
+    </div>
 
     
     
-    <strong>1</strong>
-    
-    
-    
-    <a href="/latest-update/page/2/">2</a>
-    
-    
-    
-    <a href="/latest-update/page/3/">3</a>
-    
-    
 
-    
-    <a href="/latest-update/page/2/">Next</a>
-    
-</div>
-<script>
-fetch('/search.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);  
-    searchIndex = data;
-  })
-  .catch(error => {
-    console.error("Error loading search index:", error);
-  });
-</script>
+    <div class="Post-Date"> Post Date / Update: <strong>16-Nov-2024 14:12:57</strong></div> 
+  </div>
+  
+        
+</body>
 
-
-
-<div class="content">
-    
-</div>
 
         <!DOCTYPE html>
 <head>

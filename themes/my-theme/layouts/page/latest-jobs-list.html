@@ -1,6 +1,9 @@
 {{ define "main" }}
     <!-- Header Partial -->
-    {{ partial "list-update/latest-job-list.html" . }}
+    {{ $jobsPages := where .Site.RegularPages ".Params.post-type" "latest-jobs" }}
+{{ $paginator := .Paginate $jobsPages }}
+{{ partial "list-update/latest-job-list.html" $paginator }}
+
 
     <!-- Content Section -->
     <div class="content">

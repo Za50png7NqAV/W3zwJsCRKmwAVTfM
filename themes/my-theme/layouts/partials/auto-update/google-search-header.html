@@ -1,3 +1,45 @@
+<head>
+    <title> search  </title>
+    <style> 
+/* Basic header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+/* Search container - right aligned */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Make sure the search icon and button align properly */
+.search-icon, #search-button {
+    margin-left: 10px;
+}
+
+/* Hide search bar on mobile screens */
+@media (max-width: 768px) {
+    .search-container {
+        display: none; /* Hide the search bar */
+    }
+}
+
+/* For larger screens, show the search bar */
+@media (min-width: 769px) {
+    .search-container {
+        display: flex; /* Show search bar */
+    }
+}
+
+
+    </style>
+</head>
+
+
 <div class="header">
     <div class="search-container">
         <div class="search-icon">
