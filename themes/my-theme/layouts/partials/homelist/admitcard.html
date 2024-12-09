@@ -1,5 +1,5 @@
 {{ range first 20 (where  .Pages ".Params.post-type" "admitcard") }}
 <li>
   <a href="{{ .Permalink }}">{{ .Title }}</a>
-</li>
+</li><hr>
 {{ end }}

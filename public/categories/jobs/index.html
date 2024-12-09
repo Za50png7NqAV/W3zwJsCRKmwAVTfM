@@ -600,103 +600,138 @@ text-align:center;
         <!DOCTYPE html>
 <html>
 <head>
-<style>
-  :root {
-    --primary: #f06508;
-    --primary-dark: #926400;
-    --secondary: #f3f4f6;
-    --text-light: #ffffff;
-    --text-dark: #1f2937;
-    --border-radius: 8px;
-    --shadow: 0 2px 4px rgba(0,0,0,0.1);
-    --font-size: 1rem;
-    --mfont-size: 1rem;
-    --card-width: 350px;
-    --mcard-width: 200px;
+  <style>
+    :root {
+      --primary: #f06508;
+      --primary-dark: #926400;
+      --secondary: #f3f4f6;
+      --text-light: #ffffff;
+      --text-dark: #1f2937;
+      --border-radius: 5px;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --font-size: 11px;
+      --mfont-size: 1rem;
+      --card-width: 350px;
+      --mcard-width: 200px;
+    }
+  
+    .grid-container {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);  
+      gap: 10px;  
+      max-width:600px;
+      padding: 8px;
+    }
+  
+    .card {
+      background: white;
+      max-width: var(--card-width);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+      overflow: hidden;
+    }
+  
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+  
+    .card-header {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 3px;
+      font-weight: 600;
+      text-align: center;
+      font-size: calc(var(--font-size) + 0.1rem);
+      letter-spacing: 0.5px;
+      font-size:10px;
+    }
+  
+    .card-content {
+      padding: 8px;  
+      border: 1px dashed #fff;
+      max-height: 200px;
+      background: var(--secondary);
+      font-size: var(--font-size);
+      line-height: 1.5;
+      text-align: left;  
+      overflow-y: auto;  
+      overflow-x: hidden;  
+      border-radius: 2px;  
   }
+  
 
-  .grid-container {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    gap: 10px;  
-    padding: 20px;
+  li::marker {
+    color: red;
   }
-
-  .card {
-    background: white;
-    max-width: var(--card-width);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    transition: transform 0.2s, box-shadow 0.2s;
-    overflow: hidden;
-  }
-
-  .card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  }
-
-  .card-header {
-    background: var(--primary);
-    color: var(--text-light);
-    padding: 3px;
-    font-weight: 600;
-    text-align: center;
-    font-size: calc(var(--font-size) + 0.1rem);
-    letter-spacing: 0.5px;
-    font-size:10px;
-  }
-
-  .card-content {
-    padding: 20px;
-    min-height: 200px;
-    background: var(--secondary);
-    font-size: var(--font-size);
-    line-height: 1.5;
-  }
-
-  .card-footer {
-    background: white;
-    padding: 2px;
-    display: flex;
-    justify-content: flex-end;
-    border-top: 1px solid #e5e7eb;
-  }
-
-  .more-link {
-    color: var(--primary);
-    text-decoration: none;
-    font-size: var(--font-size);
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    transition: color 0.2s;
-  }
-
-  .more-link:hover {
-    color: var(--primary-dark);
-  }
-
-  .more-link::after {
-    content: '→';
-    font-size: 1.1rem;
+     
+  ::-webkit-scrollbar {
+    width: 0px;
   }
 
    
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: repeat(3, 1fr);  
-  
-    }
-    :root {
-      --font-size: 0.8rem;
-      --card-width: 180px;  
-    }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 20px;
   }
 
-</style>
+   
+  ::-webkit-scrollbar-thumb {
+    background: golden en;
+    border-radius: 20px;
+  }
+
+   
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
+
+    .card-footer {
+      
+      background: white;
+      padding: 2px;
+      display: flex;
+      bottom:0;
+      justify-content: flex-end;
+      border-top: 1px solid #e5e7eb;
+    }
+  
+    .more-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: var(--font-size);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.2s;
+    }
+  
+    .more-link:hover {
+      color: var(--primary-dark);
+    }
+  
+    .more-link::after {
+      content: '→';
+      font-size: 1.1rem;
+    }
+  
+     
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);  
+    max-width: var(--card-width);
+  
+      }
+      :root {
+        --font-size: 0.8rem;
+        --card-width: 500px;  
+      }
+    }
+  
+  </style>
 </head>
 <body>
 
@@ -705,36 +740,62 @@ text-align:center;
   <div class="card">
     <div class="card-header">Latest Schemes</div>
     <div class="card-content">
-      <ul>
-    
-  </ul>   
+      
     </div>
     <div class="card-footer">
-      <a href="#" class="more-link">more</a>
+      <a href="/latest-schemes/" class="more-link">more</a>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-header">Important Links</div>
+    <div class="card-header">Latest Update</div>
     <div class="card-content">
-      <ul>
+      
     
-  </ul>
+        <li>
+            <a href="/texting-baner/">Texting Baner</a>
+        </li>
+        <hr>
+    
+        <li>
+            <a href="/banner/">Banner</a>
+        </li>
+        <hr>
+    
+        <li>
+            <a href="/job-new-post/">Job New Post</a>
+        </li>
+        <hr>
+    
+        <li>
+            <a href="/page/">Latest Jobs</a>
+        </li>
+        <hr>
+    
+        <li>
+            <a href="/ifram/">Ifram</a>
+        </li>
+        <hr>
+    
+        <li>
+            <a href="/pm-internship-yojna/">PM Internship Yojna</a>
+        </li>
+        <hr>
+    
+
     </div>
     <div class="card-footer">
-      <a href="#" class="more-link">more</a>
+      <a href="/latest-update/" class="more-link">more</a>
     </div>
   </div>
 
   <div class="card">
     <div class="card-header">Students</div>
     <div class="card-content">
-      <ul>
-    
-  </ul>
+      
     </div>
     <div class="card-footer">
-      <a href="#" class="more-link">more</a>
+      <a href="/student-help/" class="more-link">more</a>
     </div>
   </div>
 
@@ -742,12 +803,10 @@ text-align:center;
   <div class="card">
     <div class="card-header">Results</div>
     <div class="card-content">
-      <ul>
-    
-  </ul>
+      
     </div>
     <div class="card-footer">
-      <a href="#" class="more-link">more</a>
+      <a href="/resutls/" class="more-link">more</a>
     </div>
   </div>
 
@@ -755,47 +814,40 @@ text-align:center;
     <div class="card-header">Admit Card</div>
     <div class="card-content">
       
-<ul>
-    
-      <li>
-        <a href="http://localhost:1313/texting-baner/">Texting Baner</a>
-      </li>
-    
-      <li>
-        <a href="http://localhost:1313/banner/">Banner</a>
-      </li>
-    
-      <li>
-        <a href="http://localhost:1313/ifram/">Ifram</a>
-      </li>
-    
-      <li>
-        <a href="http://localhost:1313/pm-internship-yojna/">PM Internship Yojna</a>
-      </li>
-    
-  </ul>
+<li>
+  <a href="http://localhost:1313/texting-baner/">Texting Baner</a>
+</li>
+
+<li>
+  <a href="http://localhost:1313/banner/">Banner</a>
+</li>
+
+<li>
+  <a href="http://localhost:1313/ifram/">Ifram</a>
+</li>
+
+<li>
+  <a href="http://localhost:1313/pm-internship-yojna/">PM Internship Yojna</a>
+</li>
+
     </div>
     <div class="card-footer">
-      <a href="#" class="more-link">more</a>
+      <a href="/admitcard/" class="more-link">more</a>
     </div>
   </div>
 
   <div class="card">
     <div class="card-header">Latest Job</div>
     <div class="card-content">
-      <ul>
-  <ul>
       
-        <li>
-          <a href="http://localhost:1313/job-new-post/">Job New Post</a>
-        </li>
-      
-        <li>
-          <a href="http://localhost:1313/page/">Latest Jobs</a>
-        </li>
-      
-  </ul>
-  
+<li>
+  <a href="http://localhost:1313/job-new-post/">Job New Post</a>
+</li>
+
+<li>
+  <a href="http://localhost:1313/page/">Latest Jobs</a>
+</li>
+
     </div>
     <div class="card-footer">
       <a href="#" class="more-link">more</a>
