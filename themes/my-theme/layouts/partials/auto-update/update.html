@@ -289,7 +289,7 @@ font-size: small;}
         </style>
     </head>
     <body>
-        {{ range .Site.RegularPages }}
+        {{ range first 50 .Site.RegularPages }}
 
 <div class="post-container" data-post-id="{{ .File.UniqueID }}">
 
@@ -614,7 +614,7 @@ font-size: small;}
         </div>
         {{ end }}
 
-   
+       
 
 
 

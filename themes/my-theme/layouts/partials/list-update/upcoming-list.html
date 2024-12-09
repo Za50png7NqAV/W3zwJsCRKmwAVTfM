@@ -1,7 +1,30 @@
-<ul>
-    {{ range first 20 (where  .Pages ".Params.post-type" "upcoming") }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>   
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href=" \css\list-table.css">
+  <title>Student Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student help, Education help, School news Update, Colege Update, Scholarship Portal, student portal, Education Portal, विद्यार्थी सहायता, छात्रवृत्ति फार्म, eDistrict, MPTAAS etc Update">
+</head>
+<h2 class="list-tittle" style="text-align:center;"> Upcoming Jobs & Schemes</h2>
+<table class="post-table">
+  <thead>
+      <tr>
+        <th>Post/Update</th>
+          <th>Upcoming</th>
+          <th>Detail</th>
+      </tr>
+  </thead>
+  <tbody>
+      {{ range .Pages }}
+      <tr>
+        <td>{{ .Date.Format "02/01/2006" }}</td>
+          <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+         
+          <td><a href="{{ .RelPermalink }}">Click here</a></td>
+      </tr>
+      {{ end }}
+  </tbody>
+</table>
+<div class="pagination">
+  {{ partial "imp-codes/paginator.html" . }}
+  </div>
