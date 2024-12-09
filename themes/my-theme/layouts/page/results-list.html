@@ -4,8 +4,10 @@
 
 
     <!-- Header Partial -->
-    {{ partial "list-update/results-list.html" . }}
-
+    {{ $Pages := where .Site.RegularPages ".Params.post-type" "results" }}
+{{ $paginator := .Paginate $Pages }}
+{{ partial "list-update/results-list.html" $paginator }}
+    
     <!-- Content Section -->
     <div class="content">
         {{ .Content }}

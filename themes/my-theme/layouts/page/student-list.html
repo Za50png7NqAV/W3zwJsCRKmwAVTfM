@@ -4,8 +4,11 @@
 
 
     <!-- Header Partial -->
-    {{ partial "list-update/student-list.html" . }}
+{{ $Pages := where .Site.RegularPages ".Params.post-type" "student" }}
+    {{ $paginator := .Paginate $Pages }}
+    {{ partial "list-update/student-list.html" $paginator }}
 
+    
     <!-- Content Section -->
     <div class="content">
         {{ .Content }}
