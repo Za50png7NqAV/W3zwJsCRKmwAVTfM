@@ -38,9 +38,6 @@
     <loc>http://localhost:1313/latest-job1s/</loc>
     <lastmod>2024-11-16T14:12:57+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/quick/exam-date/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
   </url><url>
@@ -51,6 +48,15 @@
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/update/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/disclaimer/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/ifram/</loc>
@@ -81,6 +87,9 @@
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/suvichar/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/privacy-policy/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/quick/</loc>

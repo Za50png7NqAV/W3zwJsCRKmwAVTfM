@@ -132,6 +132,18 @@
 
 
 
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(function(error) {
+        console.error('Service Worker registration failed:', error);
+      });
+  }
+</script>
  
        
         
@@ -585,48 +597,81 @@ Useful Importent Links
         });
     </script>
 </body>
-
-    <style> 
-        
-    
-        main {
-            flex: 1 0 auto;
-        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      
+      
         #footer {
             flex-shrink: 0;
             background-color: #f8f9fa;
             padding: 20px 0;
-            position: fixed;
             bottom: 0px;
         }
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
         }
+
         .social-media a {
             color: #333;
             font-size: 24px;
             margin: 0 10px;
             text-decoration: none;
         }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
-    <main>
-        
-    </main>
+   
+
     <footer id="footer">
         <div class="footer-content">
             <div class="social-media">
-                <a href="https://telegram.me/yojnaportal"><i class="fab fa-telegram"></i></a>
-                <a href="https://bit.ly/SarkariJankari"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://telegram.me/yojnaportal" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://bit.ly/SarkariJankari" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
-            
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/contact/">Contact Us</a></li>
+                    <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="/disclaimer/">Disclaimer</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 </body>
-
+</html>
 <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
 </script>
 <div id="pse">
