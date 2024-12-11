@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quicks on YOJNA PORTAL</title>
-    <link>http://localhost:1313/quick/</link>
+    <link>https://www.yojnaportal.com/quick/</link>
     <description>Recent content in Quicks on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 08 Nov 2024 19:23:23 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/quick/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.yojnaportal.com/quick/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/quick/exam-date/</link>
+      <link>https://www.yojnaportal.com/quick/exam-date/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
-      <guid>http://localhost:1313/quick/exam-date/</guid>
+      <guid>https://www.yojnaportal.com/quick/exam-date/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/quick/last-date/</link>
+      <link>https://www.yojnaportal.com/quick/last-date/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
-      <guid>http://localhost:1313/quick/last-date/</guid>
+      <guid>https://www.yojnaportal.com/quick/last-date/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/quick/search/</link>
+      <link>https://www.yojnaportal.com/quick/search/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
-      <guid>http://localhost:1313/quick/search/</guid>
+      <guid>https://www.yojnaportal.com/quick/search/</guid>
       <description>&#xD;&lt;!DOCTYPE html&gt;&#xD;Yojna Portal: All Schemes&#xD;हिन्दी&#xD;Show All&#xD;Central&#xD;Madhya Pradesh&#xD;Uttar Pradesh&#xD;Maharashtra&#xD;Hariyana&#xD;Punjab&#xD;Rajasthan&#xD;Bihar&#xD;Scheme Title&#xD;Division&#xD;Link&#xD;10th And 12th Supplementary Results 2024&#xD;🔹31/07/2024&#xD;Click Here Mukhya Mantri Sambal Yojna&#xD;Madhya Pradesh&#xD;Click Here Scheme Title&#xD;Division&#xD;Link&#xD;10वीं और 12वीं पूरक परिणाम 2024&#xD;🔹31/07/2024&#xD;Click Here मुख्यमंत्री संबल योजना&#xD;मध्य प्रदेश&#xD;Click Here </description>
     </item>
   </channel>

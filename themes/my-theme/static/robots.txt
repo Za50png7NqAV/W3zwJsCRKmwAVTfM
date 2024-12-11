@@ -1,8 +1,22 @@
-User-agent: Mediapartners-Google
-Disallow: 
-
-User-agent: *
-Disallow: /search
+User-Agent: Googlebot
 Allow: /
 
-Sitemap: https://yojnaportal.com/sitemap.xml
+User-Agent: Googlebot-Mobile
+Allow: /
+
+User-Agent: Googlebot-Image
+Allow: /
+
+User-Agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://www.yojnaportal.com/sitemap.xml
+Sitemap: https://www.yojnaportal.com/sitemap_images.xml
+Sitemap: https://www.yojnaportal.com/feed_rss.xml
+
+Disallow: /404.shtml
+Disallow: /error-page/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /checkout
