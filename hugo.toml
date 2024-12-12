@@ -23,3 +23,7 @@ googleAnalytics = "G-GWSRPE5DVE"
 home = ["HTML", "JSON"]
 
 
+[sitemap]
+  filename = "sitemap.xml"
+  changefreq = "daily"
+  priority = 0.5
