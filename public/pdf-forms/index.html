@@ -55,23 +55,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yojna Portal</title>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  
+     
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
-
-        .header {
+        .main-header {
             background: #fff;
             color: white;
             padding: 15px 20px;
@@ -131,7 +122,7 @@
 
         .mobile-search-icon {
             display: none;
-            color: black;
+            color: rgb(236, 31, 31);
             font-size: 24px;
             cursor: pointer;
         }
@@ -176,7 +167,7 @@
 
         .mobile-search-button {
             padding: 12px 15px;
-            background: linear-gradient(to right, #667eea, #764ba2);
+            background: #2f0135;
             color: black;
             border: none;
             border-radius: 0 8px 8px 0;
@@ -192,23 +183,36 @@
             position: absolute;
             top: 20px;
             right: 20px;
-            color: white;
+            color: rgb(236, 7, 7);
             font-size: 24px;
             cursor: pointer;
         }
 
          
 
+         .mobile-submit {
+            background: #2f0135;
+            border-radius: 5px;
+            color:#fff;
+            padding: 10px 50px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        .mobile-submit:hover {
+            color:#2f0135;
+            background: rgba(39, 2, 39, 0.133);
+        
+        }
          .suggestions-list a {color: black;
             text-decoration: none;
          }
 
-        .suggestions-list {
+          .suggestions-list {
             background: white;
             border-radius: 8px;
             margin-top: 15px;
         }
-
+        
         .suggestion-item {
             padding: 12px 15px;
             border-bottom: 1px solid #f0f0f0;
@@ -240,7 +244,7 @@
     </style>
 </head>
 <body>
-    <header class="header">
+    <header class="main-header">
         <div class="logo">
             <img id="logo" alt="Yojna Portal logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/>
         </div>
@@ -286,12 +290,14 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
-                
-               <div id="suggestionsList" class="suggestions-list">
-    <div class="suggestion-item"><a href="#">Latest Jobs</a></div>
-    <div class="suggestion-item"><a href="#">Latest Schemes</a></div>
-    <div class="suggestion-item"><a href="#">Government Policies</a></div>
-    <div class="suggestion-item"><a href="#">Upcoming Exams</a></div>
+            
+    <div id="suggestionsList" class="suggestions-list">
+    <div class="suggestion-item"><a href="https://yojnaportal.com/latest-update/" target="_blank"> Banner / Update</a></div>
+    <div class="suggestion-item"><a href="https://tools. v2kcomputers.com/" target="_blank">Advance tools</a></div>
+    <div class="suggestion-item"><a href="https://yojnaportal.com/quick/examdate/" target="_blank">Exam Date : Time Tables</a></div>
+    
+    <div class="suggestion-item"><a href="https://yojnaportal.com/quick/last-date/" target="_blank"> Last Date for Apply</a></div>
+    <input type="submit" class="mobile-submit" value="Submit to Search...">
 </div>
             </form>
         </div>
