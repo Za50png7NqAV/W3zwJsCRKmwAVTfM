@@ -50,101 +50,302 @@
     <div class="main-container">
        
         
-        <head>
-    
-<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
-
-
-
-
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yojna Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-  
-
-        header {
-            background-color: #f8f9fa;  
-            padding: 10px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-            border-bottom: 3px solid #fff;  
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-     
-        .header-container {
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: #fff;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
         }
-     
+
         .logo img {
-            height: 70px;  
-            max-width: 100%;
+            height: 40px;
+            margin-right: 10px;
         }
-     
-        .portal-name h1 {
-            font-size: 28px;
-            color: #007bff;  
-            margin: 0;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 2px;
+
+         
+        .desktop-search {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            max-width: 300px;
+            margin-left: auto;
         }
-     
+
+        .desktop-search-input {
+            width: 100%;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 25px 0 0 25px;
+            font-size: 16px;
+        }
+
+        .desktop-search-button {
+            padding: 10px 15px;
+            background: white;
+            border: none;
+            border-radius: 0 25px 25px 0;
+            cursor: pointer;
+            color: #667eea;
+            transition: background 0.3s ease;
+        }
+
+        .desktop-search-button:hover {
+            background: #f0f0f0;
+        }
+
+        .mobile-search-icon {
+            display: none;
+            color: black;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+         
+        .mobile-search-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+
+        .mobile-search-container {
+            width: 90%;
+            max-width: 500px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .mobile-search-input-container {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .mobile-search-input {
+            flex-grow: 1;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px 0 0 8px;
+            font-size: 16px;
+        }
+
+        .mobile-search-button {
+            padding: 12px 15px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: black;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-search-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .close-mobile-search {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+         
+
+         .suggestions-list a {color: black;
+            text-decoration: none;
+         }
+
+        .suggestions-list {
+            background: white;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .suggestion-item {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .suggestion-item:last-child {
+            border-bottom: none;
+        }
+
+        .suggestion-item:hover {
+            background-color: #f4f4f4;
+        }
+          .hidden {
+            display: none;
+        }
+
+         
         @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                text-align: center;
-              
+            .desktop-search {
+                display: none;
             }
-            
-            .logo img {
-                height: 60px;
-            }
-            
-            .portal-name h1 {
-                font-size: 24px;
+
+            .mobile-search-icon {
+                display: block;
             }
         }
-     </style>
+    </style>
 </head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img id="logo" alt="Yojna Portal logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/>
+        </div>
 
+        
+        <div class="desktop-search">
+            <form id="desktopSearchForm" style="display: flex; width: 100%;">
+                <input 
+                    type="text" 
+                    id="desktopQuery" 
+                    class="desktop-search-input" 
+                    placeholder="Search Yojna Portal"
+                    required
+                >
+                <button type="submit" class="desktop-search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
 
+        
+        <div class="mobile-search-icon" onclick="toggleMobileSearch()">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
 
+    
+    <div id="mobileSearchOverlay" class="mobile-search-overlay">
+        <span class="close-mobile-search" onclick="toggleMobileSearch()">
+            <i class="fas fa-times"></i>
+        </span>
+        <div class="mobile-search-container">
+            <form id="mobileSearchForm">
+                <div class="mobile-search-input-container">
+                    <input 
+                        type="text" 
+                        id="mobileQuery" onkeyup="filterSuggestions()"
+                        class="mobile-search-input" 
+                        placeholder="Search Yojna Portal"
+                        required 
+                    >
+                    <button type="submit" class="mobile-search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+               <div id="suggestionsList" class="suggestions-list">
+    <div class="suggestion-item"><a href="#">Latest Jobs</a></div>
+    <div class="suggestion-item"><a href="#">Latest Schemes</a></div>
+    <div class="suggestion-item"><a href="#">Government Policies</a></div>
+    <div class="suggestion-item"><a href="#">Upcoming Exams</a></div>
+</div>
+            </form>
+        </div>
+    </div>
 
+    <script>
+        function performSearch(query) {
+            const url = `https://www.yojnaportal.com/search/#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+            window.open(url, '_blank');
+        }
 
+        function selectSuggestion(suggestion) {
+            document.getElementById('mobileQuery').value = suggestion;
+            performSearch(suggestion);
+            toggleMobileSearch();
+        }
 
-<header>
-   <div class="header-container">
-       <div class="logo">
-           <a href="/">
-               <img id="logo" alt="Yojna Portal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/>
-           </a>
-       </div>
-       <div class="portal-name">
-           
-       </div>
-   </div>
-</header>
+        
+        document.getElementById('desktopSearchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = document.getElementById('desktopQuery').value;
+            performSearch(query);
+        });
 
+        
+        document.getElementById('mobileSearchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = document.getElementById('mobileQuery').value;
+            performSearch(query);
+            toggleMobileSearch();
+        });
 
+        function toggleMobileSearch() {
+            const overlay = document.getElementById('mobileSearchOverlay');
+            overlay.style.display = overlay.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+    <script>
+    function filterSuggestions() {
+        const input = document.getElementById("mobileQuery");
+        const filter = input.value.toUpperCase();
+        const suggestions = document.getElementsByClassName("suggestion-item");
 
-
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-      .then(function(registration) {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch(function(error) {
-        console.error('Service Worker registration failed:', error);
-      });
-  }
+        for (let i = 0; i < suggestions.length; i++) {
+            const item = suggestions[i];
+            const text = item.textContent || item.innerText;
+            if (text.toUpperCase().includes(filter)) {
+                item.classList.remove("hidden");
+            } else {
+                item.classList.add("hidden");
+            }
+        }
+    }
 </script>
- 
+</body>
+</html> 
        
         
      
