@@ -165,6 +165,7 @@
             .portal-name h1 {
                 font-size: 24px;
             }
+            #main-btn {display:none;}
         }
      </style>
 </head>
@@ -182,13 +183,34 @@
            </a>
        </div>
        <div class="portal-name">
-           
+        
        </div>
+       <div id="main-btn">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+         </div>
    </div>
 </header>
 
 
 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <iframe src="https://v2kcomputers.github.io/codeaworld/website/sidenav/searchbar.html" width="100%" height="750" style="border:none;"></iframe>
+  </div>
+  
+ 
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "380px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
 
 
 <script>
@@ -310,8 +332,9 @@
     <div class="menu-container">
         <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
         <div class="scroll-menu" id="scrollMenu">
- 
+           
  <a href="/" class="menu-item active"> <i class="fas fa-home"> </i> Home</a>
+ <span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()">&#9776;</span>
  <a href="/search/" class="menu-item" > <i class="fas fa-search"> </i> Search </a>
  <a href="/menu/" class="menu-item"> <i class="fas fa-menu"></i> Menu</a>
  <a href="/latest-update/" class="menu-item"> Latest Update</a>
@@ -730,8 +753,8 @@ fetch('/search.json')
                 </a>
             </li>
             <li>
-                <a href="/search/">
-                    <i class="fas fa-search"></i>
+                <a href="#">  <span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"> <i class="fas fa-search"></i> </span>
+                   
                     Search
                 </a>
             </li>
