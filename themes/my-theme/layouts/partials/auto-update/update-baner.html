@@ -322,7 +322,69 @@ font-size: small;}
  .profile-container a  {text-decoration: none;
  color: black;
 }
+.tools-container1 {
+    display: flex; /* Create a flex container */
+    justify-content: space-between; /* Push items to left and right */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Optional: Adjust spacing between sections */
+  }
+.font-container {
+   
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    gap: 2px;
+    border-right: 1px solid black;
+    
+  }
+  
 
+.border-style-options {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    gap: 2px;
+    border-right: 1px solid black;
+    
+  }
+  
+    .border-style-options div {
+        cursor: pointer;
+        margin: 5px 0;
+        padding: 5px 20px;
+        text-align: center;
+      
+        background-color: #f9f9f9;
+        height: 5px;
+      }
+      .border-style-options div:hover {
+        background-color: #e0e0e0;
+      }
+   .solid {
+    border: 2px solid black; 
+  }
+   .dashed {
+    border: 2px dashed black; 
+  }
+   .dotted {
+    border: 2px dotted black; 
+  }
+   .double {
+    border: 3px double black; 
+  }
+  .groove {
+    border: 3px groove; 
+  }
+  .ridge {
+    border: 3px ridge; 
+  }
+  .inset {
+    border: 3px  inset; 
+  }
+  .outset {
+    border: 3px  outset; 
+  }
+  
 @media (max-width: 768px) { /* टैबलेट और छोटे स्क्रीन के लिए */
     .post-container {
         width: 90%; /* स्क्रीन की चौड़ाई का 90% */
@@ -397,13 +459,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="{{ .File.UniqueID }}">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -416,26 +480,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 

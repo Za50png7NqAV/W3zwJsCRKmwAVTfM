@@ -856,7 +856,69 @@ font-size: small;}
  .profile-container a  {text-decoration: none;
  color: black;
 }
+.tools-container1 {
+    display: flex;  
+    justify-content: space-between;  
+    align-items: flex-start;  
+    gap: 20px;  
+  }
+.font-container {
+   
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 2px;
+    border-right: 1px solid black;
+    
+  }
+  
 
+.border-style-options {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 2px;
+    border-right: 1px solid black;
+    
+  }
+  
+    .border-style-options div {
+        cursor: pointer;
+        margin: 5px 0;
+        padding: 5px 20px;
+        text-align: center;
+      
+        background-color: #f9f9f9;
+        height: 5px;
+      }
+      .border-style-options div:hover {
+        background-color: #e0e0e0;
+      }
+   .solid {
+    border: 2px solid black; 
+  }
+   .dashed {
+    border: 2px dashed black; 
+  }
+   .dotted {
+    border: 2px dotted black; 
+  }
+   .double {
+    border: 3px double black; 
+  }
+  .groove {
+    border: 3px groove; 
+  }
+  .ridge {
+    border: 3px ridge; 
+  }
+  .inset {
+    border: 3px  inset; 
+  }
+  .outset {
+    border: 3px  outset; 
+  }
+  
 @media (max-width: 768px) {  
     .post-container {
         width: 90%;  
@@ -910,13 +972,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="91eee29d06d30ee37f42d987af1217df">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -929,26 +993,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -1045,13 +1120,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="7a4b1ee57773d2b32462ef3d5f4eaf4b">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -1064,26 +1141,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -1180,13 +1268,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="ef08f0c76a5f6b6b4c316367ff6ccf10">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -1199,26 +1289,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -1315,13 +1416,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="67b4b6d267ca9eb06450974bfda9b653">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -1334,26 +1437,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -1450,13 +1564,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="b14dabc7c97f845b598facab057d3022">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -1469,26 +1585,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -1585,13 +1712,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="bb445d3455eb99bc8e94334c18f5d594">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -1604,26 +1733,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -1720,13 +1860,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="14a0e929e72e60989a9336411b940106">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -1739,26 +1881,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -1855,13 +2008,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="1d7dc8f78873fc859050d0b95547bbd2">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -1874,26 +2029,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -1990,13 +2156,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="d0e1bbba43036f28183376a24ee1c226">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -2009,26 +2177,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -2125,13 +2304,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="7e5e7aa6bfb858adf7855d96272fedcc">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -2144,26 +2325,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -2260,13 +2452,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="70e07bc10719b2fc0d654c767698df76">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -2279,26 +2473,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -2395,13 +2600,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="841a3e0a694e0cf3a14efc24b19ef98f">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -2414,26 +2621,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -2530,13 +2748,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="cfcc1e0e162afda31fb303ee9ee7b86b">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -2549,26 +2769,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -2665,13 +2896,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="b121719778d26495809c4836e93031bf">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -2684,26 +2917,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -2800,13 +3044,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="71c91bc6c27c9b4383736cb735c3a5c8">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -2819,26 +3065,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -2935,13 +3192,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="6481f413dae724a0b9eba47fe524090b">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -2954,26 +3213,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -3070,13 +3340,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="37171a7cda3317f13a679d97a9d1fd6d">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -3089,26 +3361,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -3206,13 +3489,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="8474013f7f04b38ff8009b3a5d1359c8">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -3225,26 +3510,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -3341,13 +3637,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="89f28d6645488047b76c2b0904173416">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -3360,26 +3658,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -3476,13 +3785,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="06ccddfb57acd04e6cdcadecd482683c">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -3495,26 +3806,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -3611,13 +3933,15 @@ font-size: small;}
  
     
         <div class="toolbar-section" data-post-id="aea747827063b66ac46435a18492d1df">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -3630,26 +3954,37 @@ font-size: small;}
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -3747,13 +4082,15 @@ Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. <a
  
     
         <div class="toolbar-section" data-post-id="57a2004cad20b2bab81ee1e7415f991d">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -3766,26 +4103,37 @@ Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. <a
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
@@ -3883,13 +4231,15 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
  
     
         <div class="toolbar-section" data-post-id="11100be4dc48b9153759ce466b02d6ed">
+            <div class="tools-container">
+            <div class="font-container">
             <lable><i class='fas fa-font'></i></lable>
              <select onchange="changeFontFamily(this.value)" title="Font Family">
                 <option value="Arial">Arial</option>
                 <option value="Verdana">Verdana</option>
                 <option value="Times New Roman">Times New Roman</option>
 
-                 <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+                 
                  <label for="color-picker">
     <i style="color:red;">A</i>
   </label>
@@ -3902,26 +4252,37 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
             <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
             <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
         </div>
-            <label for="color-picker">
-    <i style="color:red;">BG</i>
-  </label>
-            <input type="color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            
+            
+        </div>
             <lable><i class='fas fa-border-style'></i></lable> 
-            <select class="border-style-selector" onchange="changeBorderStyle(this.value)">
-                <option value="double">--Border--</option>
-                        <option value="solid">______</option>
-                        <option value="dashed">----------</option>
-                        <option value="dotted">............</option>
-                        <option value="double">double</option>
-                        <option >none</option>
-
-                    </select>
-                    <i style="color:red;">---</i>
-                    <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
-                    <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
-                   <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
                   <lable><i class='fas fa-vector-square'></i></lable> 
                    <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
                   <lable><i class='fas fa-vector-square'></i></lable> 
