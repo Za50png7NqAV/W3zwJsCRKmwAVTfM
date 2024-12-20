@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+
+
+<!-- Header Partial -->
+
+
+{{ partial "list-update/latest-update-list.html" . }}
+<!-- Content Section -->
+<div class="content">
+    {{ .Content }}
+</div>
+{{ end }}
+

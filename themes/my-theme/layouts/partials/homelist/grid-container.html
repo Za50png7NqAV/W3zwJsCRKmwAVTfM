@@ -10,7 +10,7 @@
       --text-dark: #1f2937;
       --border-radius: 5px;
       --shadow: 0 2px 4px rgba(0,0,0,0.1);
-      --font-size: 11px;
+      --font-size: 16px;
       --mfont-size: 1rem;
       --card-width: 350px;
       --mcard-width: 200px;
@@ -21,7 +21,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
       gap: 10px;  
-      max-width:600px;
+      max-width:800px;
       padding: 8px;
     }
   
@@ -62,7 +62,7 @@
       overflow-x: hidden; /* Prevent horizontal scrollbar */
       border-radius: 2px; /* Optional: adds rounded corners */
   }
-  
+  .card-content a { text-decoration: none;}
 
   li::marker {
     color: red;
@@ -127,13 +127,13 @@
   
       }
       :root {
-        --font-size: 0.8rem;
+        --font-size: 13px;
         --card-width: 500px; /* Slightly smaller card width */
       }
     }
     @media (max-width: 600px) {
         .card-content {
-        font-size:6px
+        font-size:3vw;
         }
     }
   </style>

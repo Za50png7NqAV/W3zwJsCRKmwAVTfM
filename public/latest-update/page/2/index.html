@@ -15,8 +15,8 @@
     <style>
         body {
     height: 100%;
-    
     padding: 0;
+    margin:0;
 }
   
     .main-container {
@@ -188,7 +188,7 @@
         
        </div>
        <div id="main-btn">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>
          </div>
    </div>
 </header>
@@ -545,13 +545,14 @@ text-align:center;
     <style>
     </style>
 </head>
+<input type="text" id="searchInput" placeholder="Search here..." onkeyup="filterTable()" />
 
-
-<table class="post-table">
+<table class="post-table" id="dataTable">
     <thead>
         <tr>
+          <th>Post Date</th>
             <th>Latest</th>
-            <th>Post Date</th>
+            <th>category</th>
             <th>Detail</th>
         </tr>
     </thead>
@@ -559,101 +560,115 @@ text-align:center;
 
     
     <tr>
+      <td>08/11/2024</td>
         <td><a href="/quick/last-date/"></a></td>
-        <td>08/11/2024</td>
+        <td>N/A</td>
+        
         <td><a href="/quick/last-date/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>08/11/2024</td>
         <td><a href="/quick/search/"></a></td>
-        <td>08/11/2024</td>
+        <td>N/A</td>
+        
         <td><a href="/quick/search/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>08/11/2024</td>
         <td><a href="/ifram/">Ifram</a></td>
-        <td>08/11/2024</td>
+        <td>Exams</td>
+        
         <td><a href="/ifram/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>08/11/2024</td>
         <td><a href="/pdf-forms/">Latest Pdf Forms</a></td>
-        <td>08/11/2024</td>
+        <td>N/A</td>
+        
         <td><a href="/pdf-forms/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>08/11/2024</td>
         <td><a href="/baner-update/">Latest Update</a></td>
-        <td>08/11/2024</td>
+        <td>N/A</td>
+        
         <td><a href="/baner-update/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>08/11/2024</td>
         <td><a href="/latest-posts/">Latest Update</a></td>
-        <td>08/11/2024</td>
+        <td>N/A</td>
+        
         <td><a href="/latest-posts/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>08/11/2024</td>
         <td><a href="/imp-links/">Useful Importent Links</a></td>
-        <td>08/11/2024</td>
+        <td>N/A</td>
+        
         <td><a href="/imp-links/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>08/11/2024</td>
         <td><a href="/pm-internship-yojna/">PM Internship Yojna</a></td>
-        <td>08/11/2024</td>
+        <td>Exams</td>
+        
         <td><a href="/pm-internship-yojna/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>02/10/2024</td>
         <td><a href="/textpost/">Textpost</a></td>
-        <td>02/10/2024</td>
+        <td>N/A</td>
+        
         <td><a href="/textpost/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>02/10/2024</td>
         <td><a href="/first-yojn/">First Yojn</a></td>
-        <td>02/10/2024</td>
+        <td>N/A</td>
+        
         <td><a href="/first-yojn/">Click here</a></td>
     </tr>
     
 </table>
 
-<div class="pagination">
-    
-    <a href="/latest-update/">Previous</a>
-    
 
-    
-    
-    <a href="/latest-update/">1</a>
-    
-    
-    
-    <strong>2</strong>
-    
-    
-    
-    <a href="/latest-update/page/3/">3</a>
-    
-    
-
-    
-    <a href="/latest-update/page/3/">Next</a>
-    
-</div>
 <script>
-fetch('/search.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);  
-    searchIndex = data;
-  })
-  .catch(error => {
-    console.error("Error loading search index:", error);
-  });
-</script>
+  
+    function filterTable() {
+        const input = document.getElementById("searchInput");
+        const filter = input.value.toLowerCase();
+        const table = document.getElementById("dataTable");
+        const rows = table.getElementsByTagName("tr");
+    
+        for (let i = 1; i < rows.length; i++) { 
+            const cells = rows[i].getElementsByTagName("td");
+            let match = false;
+    
+            
+            for (let j = 0; j < cells.length; j++) {
+                if (cells[j] && cells[j].textContent.toLowerCase().indexOf(filter) > -1) {
+                    match = true;
+                    break;
+                }
+            }
+    
+            
+            rows[i].style.display = match ? "" : "none";
+        }
+    }
+    </script>
+    
+
 
 
 
@@ -809,7 +824,7 @@ fetch('/search.json')
       
         #footer {
             flex-shrink: 0;
-            background-color: #f8f9fa;
+            background-color: rgb(255, 78, 57);
             padding: 20px 0;
             bottom: 0px;
         }
@@ -825,7 +840,7 @@ fetch('/search.json')
             margin: 0 10px;
             text-decoration: none;
         }
-
+        .social-media a:hover { color:rgb(244, 180, 0);}
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -835,7 +850,8 @@ fetch('/search.json')
         }
 
         nav ul li a {
-            color: #333;
+            color: #fff;
+            font-size: 13px;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -850,20 +866,33 @@ fetch('/search.json')
 
     <footer id="footer">
         <div class="footer-content">
+            <div> Follow us on Social Media</div>
             <div class="social-media">
+                <a href="https://bit.ly/SarkariJankari" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
                 <a href="https://telegram.me/yojnaportal" target="_blank" aria-label="Telegram">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <a href="https://bit.ly/SarkariJankari" target="_blank" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
+                <a href="https://youtube.com/@yojnaportal" target="_blank" aria-label="Youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/yojnaportalofficial" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/yojnaportal" target="_blank" aria-label="facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://x.com/yojnaportal" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-twitter"></i>
                 </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about/">About Us</a></li>
-                    <li><a href="/contact/">Contact Us</a></li>
-                    <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://www.yojnaportal.com/">Home</a></li> |
+                    <li><a href="/about/">About Us</a></li> |
+                    <li><a href="/contact/">Contact Us</a></li> |
+                    <li><a href="/privacy-policy/">Privacy Policy</a></li> |
                     <li><a href="/disclaimer/">Disclaimer</a></li>
                 </ul>
             </nav>

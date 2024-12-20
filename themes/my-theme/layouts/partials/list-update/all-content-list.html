@@ -6,13 +6,14 @@
     <style>
     </style>
 </head>
+<input type="text" id="searchInput" placeholder="Search here..." onkeyup="filterTable()" />
 
-
-<table class="post-table">
+<table class="post-table" id="dataTable">
     <thead>
         <tr>
+          <th>Post Date</th>
             <th>Latest</th>
-            <th>Post Date</th>
+            <th>category</th>
             <th>Detail</th>
         </tr>
     </thead>
@@ -20,8 +21,10 @@
 
     {{ range $paginator.Pages }}
     <tr>
+      <td>{{ .Date.Format "02/01/2006" }}</td>
         <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-        <td>{{ .Date.Format "02/01/2006" }}</td>
+        <td>{{ with .Params.category }}{{ . }}{{ else }}N/A{{ end }}</td>
+        
         <td><a href="{{ .RelPermalink }}">Click here</a></td>
     </tr>
     {{ end }}
@@ -45,13 +48,29 @@
     {{ end }}
 </div>
 <script>
-fetch('/search.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);  // Check if the data is coming correctly
-    searchIndex = data;
-  })
-  .catch(error => {
-    console.error("Error loading search index:", error);
-  });
-</script>
+  
+    function filterTable() {
+        const input = document.getElementById("searchInput");
+        const filter = input.value.toLowerCase();
+        const table = document.getElementById("dataTable");
+        const rows = table.getElementsByTagName("tr");
+    
+        for (let i = 1; i < rows.length; i++) { // Skip header row
+            const cells = rows[i].getElementsByTagName("td");
+            let match = false;
+    
+            // Check all cells in a row
+            for (let j = 0; j < cells.length; j++) {
+                if (cells[j] && cells[j].textContent.toLowerCase().indexOf(filter) > -1) {
+                    match = true;
+                    break;
+                }
+            }
+    
+            // Show or hide row based on match
+            rows[i].style.display = match ? "" : "none";
+        }
+    }
+    </script>
+    
+

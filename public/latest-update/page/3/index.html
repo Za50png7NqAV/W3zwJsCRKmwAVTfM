@@ -15,8 +15,8 @@
     <style>
         body {
     height: 100%;
-    
     padding: 0;
+    margin:0;
 }
   
     .main-container {
@@ -188,7 +188,7 @@
         
        </div>
        <div id="main-btn">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>
          </div>
    </div>
 </header>
@@ -545,13 +545,14 @@ text-align:center;
     <style>
     </style>
 </head>
+<input type="text" id="searchInput" placeholder="Search here..." onkeyup="filterTable()" />
 
-
-<table class="post-table">
+<table class="post-table" id="dataTable">
     <thead>
         <tr>
+          <th>Post Date</th>
             <th>Latest</th>
-            <th>Post Date</th>
+            <th>category</th>
             <th>Detail</th>
         </tr>
     </thead>
@@ -559,57 +560,59 @@ text-align:center;
 
     
     <tr>
+      <td>15/03/2023</td>
         <td><a href="/posts/post-3/">Post 3</a></td>
-        <td>15/03/2023</td>
+        <td>N/A</td>
+        
         <td><a href="/posts/post-3/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>15/02/2023</td>
         <td><a href="/posts/post-2/">Post 2</a></td>
-        <td>15/02/2023</td>
+        <td>N/A</td>
+        
         <td><a href="/posts/post-2/">Click here</a></td>
     </tr>
     
     <tr>
+      <td>15/01/2023</td>
         <td><a href="/posts/post-1/">Post 1</a></td>
-        <td>15/01/2023</td>
+        <td>N/A</td>
+        
         <td><a href="/posts/post-1/">Click here</a></td>
     </tr>
     
 </table>
 
-<div class="pagination">
-    
-    <a href="/latest-update/page/2/">Previous</a>
-    
 
-    
-    
-    <a href="/latest-update/">1</a>
-    
-    
-    
-    <a href="/latest-update/page/2/">2</a>
-    
-    
-    
-    <strong>3</strong>
-    
-    
-
-    
-</div>
 <script>
-fetch('/search.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);  
-    searchIndex = data;
-  })
-  .catch(error => {
-    console.error("Error loading search index:", error);
-  });
-</script>
+  
+    function filterTable() {
+        const input = document.getElementById("searchInput");
+        const filter = input.value.toLowerCase();
+        const table = document.getElementById("dataTable");
+        const rows = table.getElementsByTagName("tr");
+    
+        for (let i = 1; i < rows.length; i++) { 
+            const cells = rows[i].getElementsByTagName("td");
+            let match = false;
+    
+            
+            for (let j = 0; j < cells.length; j++) {
+                if (cells[j] && cells[j].textContent.toLowerCase().indexOf(filter) > -1) {
+                    match = true;
+                    break;
+                }
+            }
+    
+            
+            rows[i].style.display = match ? "" : "none";
+        }
+    }
+    </script>
+    
+
 
 
 
@@ -765,7 +768,7 @@ fetch('/search.json')
       
         #footer {
             flex-shrink: 0;
-            background-color: #f8f9fa;
+            background-color: rgb(255, 78, 57);
             padding: 20px 0;
             bottom: 0px;
         }
@@ -781,7 +784,7 @@ fetch('/search.json')
             margin: 0 10px;
             text-decoration: none;
         }
-
+        .social-media a:hover { color:rgb(244, 180, 0);}
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -791,7 +794,8 @@ fetch('/search.json')
         }
 
         nav ul li a {
-            color: #333;
+            color: #fff;
+            font-size: 13px;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -806,20 +810,33 @@ fetch('/search.json')
 
     <footer id="footer">
         <div class="footer-content">
+            <div> Follow us on Social Media</div>
             <div class="social-media">
+                <a href="https://bit.ly/SarkariJankari" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
                 <a href="https://telegram.me/yojnaportal" target="_blank" aria-label="Telegram">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <a href="https://bit.ly/SarkariJankari" target="_blank" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
+                <a href="https://youtube.com/@yojnaportal" target="_blank" aria-label="Youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/yojnaportalofficial" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/yojnaportal" target="_blank" aria-label="facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://x.com/yojnaportal" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-twitter"></i>
                 </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about/">About Us</a></li>
-                    <li><a href="/contact/">Contact Us</a></li>
-                    <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://www.yojnaportal.com/">Home</a></li> |
+                    <li><a href="/about/">About Us</a></li> |
+                    <li><a href="/contact/">Contact Us</a></li> |
+                    <li><a href="/privacy-policy/">Privacy Policy</a></li> |
                     <li><a href="/disclaimer/">Disclaimer</a></li>
                 </ul>
             </nav>
