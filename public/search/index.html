@@ -11,7 +11,40 @@
     
       gtag('config', 'G-GWSRPE5DVE');
     </script>
-    
+    <script>
+        
+        document.addEventListener('keydown', function (e) {
+            
+            if (e.key === "F12") {
+                e.preventDefault();
+                alert("F12 (DevTools) is disabled.");
+            }
+
+            
+            if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+                e.preventDefault();
+                alert("Ctrl+Shift+I (Inspect) is disabled.");
+            }
+
+            
+            if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+                e.preventDefault();
+                alert("Ctrl+U (View Source) is disabled.");
+            }
+
+            
+            if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+                e.preventDefault();
+                alert("Ctrl+Shift+J (Console) is disabled.");
+            }
+        });
+
+        
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert("Right-click is disabled.");
+        });
+    </script>
     <style>
         body {
     height: 100%;
@@ -1085,6 +1118,8 @@ if (query) {
     });
   </script>
      
+
+      
 </body>
 
 
