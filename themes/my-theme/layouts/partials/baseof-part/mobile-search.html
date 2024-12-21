@@ -1,0 +1,8 @@
+{{ range .Site.Pages }}
+<tr>
+    <td>{{ .Date.Format "02/01/2006" }}</td>
+    <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+    <td>{{ with .Params.category }}{{ . }}{{ else }}---{{ end }}</td>
+   
+</tr>
+{{ end }}

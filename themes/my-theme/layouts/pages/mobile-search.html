@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+           font-family: 'Roboto', sans-serif;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mobile-search-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            min-height: 100px;
+        }
+
+        .mobile-search-input-container {
+            display: flex;
+            position: relative;
+        }
+
+        .mobile-search-input {
+            flex-grow: 1;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px 0 0 8px;
+            font-size: 16px;
+            padding-left: 40px;
+        }
+
+        .reset-btn {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 20px;
+            padding:0 3px;
+            color: #000;
+        }
+        .reset-btn:hover { border-radius: 50%;
+      background-color: red;
+       color: white;
+    }
+        .mobile-search-button {
+            padding: 12px 15px;
+            background: #f06508;
+            color: #fff;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+        }
+        .mobile-search-button:hover {
+        background-color: #f4b400;
+        color:black;
+    }
+        .suggestions-list {
+            background: white;
+            border-radius: 8px;
+            margin-top: 15px;
+          
+            overflow-y: auto;
+        }
+
+        .content, .suggestion-item {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            font-size: 16px;
+            max-height: 20px;
+            overflow: hidden ;
+
+            color: black;
+            transition: background-color 0.3s ease;
+        }
+
+        .suggestion-item:hover {
+            background-color: #f4f4f4;
+            color: green;
+        }
+
+        .suggestion-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .hidden {display: none;
+        font-size: 3px;}
+        .mobile-submit {
+            background: #fff;
+            border-radius: 5px;
+            width: 100%;
+            color: #080303;
+            padding: 10px 50px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            
+        }
+        .mobile-submit:hover {
+            background-color: #f4b400;
+            color:black;
+            
+        }
+  
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="mobile-search-container">
+            <form id="mobileSearchForm" method="post" action="" name="search-form">
+                <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
+                <input type="hidden" name="use-in" class="Advance" value="Desktop">
+                <div class="mobile-search-input-container">
+                    <input 
+                        type="text" 
+                        name="Search" 
+                        id="mobileQuery" 
+                        onkeyup="filterSuggestions()" 
+                        class="mobile-search-input" 
+                        placeholder="Search Yojna Portal"
+                        required 
+                    >
+                    <span class="reset-btn" onclick="resetSearch()">&times;</span>
+                    <button type="submit" class="mobile-search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div id="suggestionsList" class="suggestions-list">
+                    {{ range .Site.Pages }}
+                    <div class="suggestion-item" data-href="{{ .RelPermalink }}">{{ .Title }}  <div class="hidden"> 🔗 • {{ with .Params.descripiton }}{{ . }}{{ else }} {{ end }}</div>
+
+ </div> 
+ {{ end }}          </div>
+               
+                <input type="submit" class="mobile-submit" value="🔍 Search...">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function filterSuggestions() {
+            const input = document.getElementById("mobileQuery").value.toLowerCase();
+            const suggestions = document.querySelectorAll(".suggestion-item");
+        
+            suggestions.forEach(item => {
+                const title = item.textContent.trim();
+                const href = item.dataset.href; // Get the link from the data-href attribute
+                const matches = title.toLowerCase().includes(input);
+        
+                if (matches) {
+                    item.style.display = "block";
+        
+                    const highlightedText = title.replace(
+                        new RegExp(input, "gi"),
+                        match => `<span style="color: red; font-weight: bold;">${match}</span>`
+                    );
+        
+                    // Update only the visible text, keeping the link functional
+                    if (href) {
+                        item.innerHTML = `<a href="${href}" target="_blank" style="text-decoration: none; color: inherit;">${highlightedText}</a>`;
+                    } else {
+                        item.innerHTML = highlightedText; // Plain text for items without links
+                    }
+                } else {
+                    item.style.display = "none"; // Hide non-matching items
+                }
+            });
+        }
+        
+        
+        function resetSearch() {
+            document.getElementById("mobileQuery").value = "";
+            filterSuggestions();
+        }
+
+        document.getElementById('mobileSearchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = document.getElementById('mobileQuery').value;
+            const url = `https://www.yojnaportal.com/search/#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+</html>
