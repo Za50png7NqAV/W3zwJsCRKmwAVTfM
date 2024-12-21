@@ -3,6 +3,7 @@ title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 subtitle = ""
 post-type = "admitcard" #hint>> imp-link , student, schemes, results, admitcard, latest-jobs
+State ="Madhya Pradesh"
 bgcolor = "olive"
 expiryDate = "9024-10-03" # date must be in YYYY-MM-DD format more and equl today
 lastdate = "2024-10-03" # date must be in YYYY-MM-DD format more and equl today

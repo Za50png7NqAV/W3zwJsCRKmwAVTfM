@@ -9,9 +9,9 @@
 <table class="post-table">
   <thead>
       <tr>
-        <th>Post/Update</th>
-          <th>Latest</th>
-          <th>Detail</th>
+          <th>Post/Update</th>
+          <th>Yojna/Schemes</th>
+          <th>State/Central</th>
       </tr>
   </thead>
   <tbody>
@@ -19,9 +19,8 @@
       <tr>
         <td>{{ .Date.Format "02/01/2006" }}</td>
           <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-         
-          <td><a href="{{ .RelPermalink }}">Click here</a></td>
-      </tr>
+          <td>{{ with .Params.state }}{{ . }}{{ else }}---{{ end }}</td>
+        </tr>
       {{ end }}
   </tbody>
 </table>
