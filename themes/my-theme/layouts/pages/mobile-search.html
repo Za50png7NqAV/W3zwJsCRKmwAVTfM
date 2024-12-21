@@ -175,7 +175,7 @@
                 
                 <div id="suggestionsList" class="suggestions-list">
                     {{ range .Site.Pages }}
-                   <a href="{{ .RelPermalink }}"> <div class="suggestion-item" data-href="{{ .RelPermalink }}">{{ .Title }}  <div class="hidden"> 🔗 • {{ with .Params.descripiton }}{{ . }}{{ else }} {{ end }}</div></a>
+                   <a href="{{ .RelPermalink }}" target="_blank"> <div class="suggestion-item" data-href="{{ .RelPermalink }}">{{ .Title }}  <div class="hidden"> 🔗 • {{ with .Params.descripiton }}{{ . }}{{ else }} {{ end }}</div></a>
 
  </div> 
  {{ end }}          </div>
