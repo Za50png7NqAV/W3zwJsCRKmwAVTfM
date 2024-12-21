@@ -20,7 +20,7 @@
             padding: 20px;
             background-color: #f7f7f7;
             border-radius: 8px;
-            min-height: 100px;
+            
         }
 
         .mobile-search-input-container {
@@ -67,8 +67,8 @@
             background: white;
             border-radius: 8px;
             margin-top: 15px;
-          
-            overflow-y: auto;
+            max-height: 420px;
+            overflow-y: scroll;
         }
 
         .content, .suggestion-item {
@@ -76,7 +76,7 @@
             border-bottom: 1px solid #f0f0f0;
             cursor: pointer;
             font-size: 16px;
-            max-height: 20px;
+            max-height: 50px;
             overflow: hidden ;
 
             color: black;
@@ -115,9 +115,43 @@
         ::-webkit-scrollbar {
             width: 0px;
         }
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        #loader div {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+         
+        #content {
+            display: none;
+        }
     </style>
 </head>
 <body>
+    <div id="loader">
+        <div></div>
+    </div>
     <div class="center">
         <div class="mobile-search-container">
             <form id="mobileSearchForm" method="post" action="" name="search-form">
@@ -141,179 +175,179 @@
                 
                 <div id="suggestionsList" class="suggestions-list">
                     
-                    <div class="suggestion-item" data-href="/categories/admitcard/">Admitcard  <div class="hidden"> 🔗 •  </div>
+                   <a href="/categories/admitcard/"> <div class="suggestion-item" data-href="/categories/admitcard/">Admitcard  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/categories/">Categories  <div class="hidden"> 🔗 •  </div>
+                   <a href="/categories/"> <div class="suggestion-item" data-href="/categories/">Categories  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/categories/jobs/">Jobs  <div class="hidden"> 🔗 •  </div>
+                   <a href="/categories/jobs/"> <div class="suggestion-item" data-href="/categories/jobs/">Jobs  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/upcoming-tyayal/">Upcoming Tyayal  <div class="hidden"> 🔗 •  </div>
+                   <a href="/upcoming-tyayal/"> <div class="suggestion-item" data-href="/upcoming-tyayal/">Upcoming Tyayal  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/result-tryal/">Result Tryal  <div class="hidden"> 🔗 •  </div>
+                   <a href="/result-tryal/"> <div class="suggestion-item" data-href="/result-tryal/">Result Tryal  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/student-tryals/">Student Tryals  <div class="hidden"> 🔗 •  </div>
+                   <a href="/student-tryals/"> <div class="suggestion-item" data-href="/student-tryals/">Student Tryals  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/schecmes-trayal/">Schecmes Trayal  <div class="hidden"> 🔗 •  </div>
+                   <a href="/schecmes-trayal/"> <div class="suggestion-item" data-href="/schecmes-trayal/">Schecmes Trayal  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/texting-baner/">Texting Baner  <div class="hidden"> 🔗 •  </div>
+                   <a href="/texting-baner/"> <div class="suggestion-item" data-href="/texting-baner/">Texting Baner  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/banner/">Banner  <div class="hidden"> 🔗 •  </div>
+                   <a href="/banner/"> <div class="suggestion-item" data-href="/banner/">Banner  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/job-new-post/">Job New Post  <div class="hidden"> 🔗 •  </div>
+                   <a href="/job-new-post/"> <div class="suggestion-item" data-href="/job-new-post/">Job New Post  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/page/">Latest Jobs  <div class="hidden"> 🔗 •  </div>
+                   <a href="/page/"> <div class="suggestion-item" data-href="/page/">Latest Jobs  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/latest-job1s/">Latest Jobs test  <div class="hidden"> 🔗 •  </div>
+                   <a href="/latest-job1s/"> <div class="suggestion-item" data-href="/latest-job1s/">Latest Jobs test  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/quick/exam-date/">  <div class="hidden"> 🔗 •  </div>
+                   <a href="/quick/exam-date/"> <div class="suggestion-item" data-href="/quick/exam-date/">  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/quick/last-date/">  <div class="hidden"> 🔗 •  </div>
+                   <a href="/quick/last-date/"> <div class="suggestion-item" data-href="/quick/last-date/">  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/quick/search/">  <div class="hidden"> 🔗 •  </div>
+                   <a href="/quick/search/"> <div class="suggestion-item" data-href="/quick/search/">  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/update/">  <div class="hidden"> 🔗 •  </div>
+                   <a href="/update/"> <div class="suggestion-item" data-href="/update/">  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/about/">About Us  <div class="hidden"> 🔗 •  </div>
+                   <a href="/about/"> <div class="suggestion-item" data-href="/about/">About Us  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/contact/">Contact Us  <div class="hidden"> 🔗 •  </div>
+                   <a href="/contact/"> <div class="suggestion-item" data-href="/contact/">Contact Us  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/disclaimer/">Disclaimer - Yojna Portal  <div class="hidden"> 🔗 •  </div>
+                   <a href="/disclaimer/"> <div class="suggestion-item" data-href="/disclaimer/">Disclaimer - Yojna Portal  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/ifram/">Ifram  <div class="hidden"> 🔗 •  </div>
+                   <a href="/ifram/"> <div class="suggestion-item" data-href="/ifram/">Ifram  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/admitcard/">Latest Admitcard  <div class="hidden"> 🔗 •  </div>
+                   <a href="/admitcard/"> <div class="suggestion-item" data-href="/admitcard/">Latest Admitcard  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/latest-jobs/">Latest Jobs  <div class="hidden"> 🔗 •  </div>
+                   <a href="/latest-jobs/"> <div class="suggestion-item" data-href="/latest-jobs/">Latest Jobs  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/pdf-forms/">Latest Pdf Forms  <div class="hidden"> 🔗 •  </div>
+                   <a href="/pdf-forms/"> <div class="suggestion-item" data-href="/pdf-forms/">Latest Pdf Forms  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/results/">Latest Result  <div class="hidden"> 🔗 •  </div>
+                   <a href="/results/"> <div class="suggestion-item" data-href="/results/">Latest Result  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/latest-schemes/">Latest Schemes  <div class="hidden"> 🔗 •  </div>
+                   <a href="/latest-schemes/"> <div class="suggestion-item" data-href="/latest-schemes/">Latest Schemes  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/baner-update/">Latest Update  <div class="hidden"> 🔗 •  </div>
+                   <a href="/baner-update/"> <div class="suggestion-item" data-href="/baner-update/">Latest Update  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/latest-posts/">Latest Update  <div class="hidden"> 🔗 •  </div>
+                   <a href="/latest-posts/"> <div class="suggestion-item" data-href="/latest-posts/">Latest Update  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/latest-update/">Latest Update  <div class="hidden"> 🔗 •  </div>
+                   <a href="/latest-update/"> <div class="suggestion-item" data-href="/latest-update/">Latest Update  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/suvichar/">Motivation Thoughts  <div class="hidden"> 🔗 •  </div>
+                   <a href="/suvichar/"> <div class="suggestion-item" data-href="/suvichar/">Motivation Thoughts  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/privacy-policy/">Privacy Policy: Yojna Portal  <div class="hidden"> 🔗 •  </div>
+                   <a href="/privacy-policy/"> <div class="suggestion-item" data-href="/privacy-policy/">Privacy Policy: Yojna Portal  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/quick/">Quicks  <div class="hidden"> 🔗 •  </div>
+                   <a href="/quick/"> <div class="suggestion-item" data-href="/quick/">Quicks  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/search/">Student Portal  <div class="hidden"> 🔗 •  </div>
+                   <a href="/search/"> <div class="suggestion-item" data-href="/search/">Student Portal  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/student-help/">Student Portal  <div class="hidden"> 🔗 •  </div>
+                   <a href="/student-help/"> <div class="suggestion-item" data-href="/student-help/">Student Portal  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/upcoming/">Upcoming Information  <div class="hidden"> 🔗 •  </div>
+                   <a href="/upcoming/"> <div class="suggestion-item" data-href="/upcoming/">Upcoming Information  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/imp-links/">Useful Importent Links  <div class="hidden"> 🔗 •  </div>
+                   <a href="/imp-links/"> <div class="suggestion-item" data-href="/imp-links/">Useful Importent Links  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/menu/">Yojna Portal Menu  <div class="hidden"> 🔗 •  </div>
+                   <a href="/menu/"> <div class="suggestion-item" data-href="/menu/">Yojna Portal Menu  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/pm-internship-yojna/">PM Internship Yojna  <div class="hidden"> 🔗 •  </div>
+                   <a href="/pm-internship-yojna/"> <div class="suggestion-item" data-href="/pm-internship-yojna/">PM Internship Yojna  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/textpost/">Textpost  <div class="hidden"> 🔗 •  </div>
+                   <a href="/textpost/"> <div class="suggestion-item" data-href="/textpost/">Textpost  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/first-yojn/">First Yojn  <div class="hidden"> 🔗 •  </div>
+                   <a href="/first-yojn/"> <div class="suggestion-item" data-href="/first-yojn/">First Yojn  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/posts/post-3/">Post 3  <div class="hidden"> 🔗 •  </div>
+                   <a href="/posts/post-3/"> <div class="suggestion-item" data-href="/posts/post-3/">Post 3  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/posts/post-2/">Post 2  <div class="hidden"> 🔗 •  </div>
+                   <a href="/posts/post-2/"> <div class="suggestion-item" data-href="/posts/post-2/">Post 2  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/posts/post-1/">Post 1  <div class="hidden"> 🔗 •  </div>
+                   <a href="/posts/post-1/"> <div class="suggestion-item" data-href="/posts/post-1/">Post 1  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/posts/">Posts  <div class="hidden"> 🔗 •  </div>
+                   <a href="/posts/"> <div class="suggestion-item" data-href="/posts/">Posts  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
  
-                    <div class="suggestion-item" data-href="/">Home  <div class="hidden"> 🔗 •  </div>
+                   <a href="/"> <div class="suggestion-item" data-href="/">Home  <div class="hidden"> 🔗 •  </div></a>
 
  </div> 
            </div>
@@ -390,6 +424,16 @@
                 .then(() => alert("Thank you! Your form is submitted successfully."))
                 .then(() => { window.location.reload(); })
                 .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+    <script>
+        
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+            
+            loader.style.display = 'none';  
+            content.style.display = 'block';  
         });
     </script>
 </body>
