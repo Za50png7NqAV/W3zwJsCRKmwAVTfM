@@ -35,7 +35,7 @@ portalName= "YOJNA PORTAL"
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Application Information</title>
+  <title>jobs-farmate</title>
   <style>
  
 
@@ -50,15 +50,15 @@ portalName= "YOJNA PORTAL"
 
      .job-header {
       background: linear-gradient(180deg, #FFD700 0%, #FFA500 100%);
-      border-top: 8px solid #FF0000;
-      border-bottom: 8px solid #FF0000;
-      padding: 20px;
+      border-top: 5px solid #FF0000;
+      border-bottom: 5px solid #FF0000;
+      padding: 5px;
       text-align: center;
       border-radius: 10px;
     }
 
     .job-main-title {
-      font-size: 48px;
+      font-size: 16px;
       color: #B22222;
       text-shadow: 2px 2px 0 #FFF;
       margin: 0;
@@ -67,9 +67,9 @@ portalName= "YOJNA PORTAL"
     }
 
     .job-sub-title {
-      font-size: 36px;
+      font-size: 12px;
       color: #8B4513;
-      margin: 15px 0;
+      margin: 5px 0;
     }
     .job-content {
       padding: 20px;
@@ -97,10 +97,9 @@ portalName= "YOJNA PORTAL"
     }
 
     .job-card h3 {
-      margin: 0 0 10px;
-      color: #333;
-      font-size: 18px;
-      border-bottom: 2px solid #007bff;
+      margin: 0 0 5px;
+      font-size: 13px;
+      border-bottom: 2px solid #FFD700;
       display: inline-block;
       padding-bottom: 5px;
     }
@@ -113,11 +112,11 @@ portalName= "YOJNA PORTAL"
 
     .job-card ul li {
       margin-bottom: 10px;
-      color: #555;
+   
     }
 
     .job-card p {
-      color: #555;
+     
       margin: 0;
       line-height: 1.6;
     }
@@ -147,16 +146,47 @@ portalName= "YOJNA PORTAL"
 
     th, td {
       border: 1px solid #ddd;
-      padding: 15px;
+      padding: 8px;
       text-align: left;
+      font-size: smaller;
       vertical-align: top;
     }
 
     th {
-      background-color: #f4f4f4;
-      font-size: 16px;
+      background-color: #FFD700;
+      font-size: small;
       color: #333;
     }
+    .job-table-container a {text-decoration: none;}
+
+    .job-table-container a:hover {
+      color:red;
+    }
+     @media (max-width: 768px) {
+
+         .job-content {
+      padding: 20px;
+    }
+
+    .job-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    .job-card {
+      font-size:11px;
+      padding: 5px;
+     border-bottom: 2px solid #FF0000;
+    }
+
+ .job-card {
+      
+      line-height: 0.8;
+    }
+
+     }
   </style>
 </head>
 <body>
@@ -212,13 +242,14 @@ portalName= "YOJNA PORTAL"
     </div>
 <div class="job-table-container">
   <table>
+
 <tr>
-        <td>
+        <th>
           <span class="highlight-blue">Important Links</span>
-        </td>
-        <td>
-          <a href="#">Click here</a>
-        </td>
+        </th>
+        <th>
+          link
+        </th>
       </tr>
 
       <tr>
