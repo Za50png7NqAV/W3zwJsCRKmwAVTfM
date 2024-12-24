@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    
+  }
+  .schemes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .card-header {
+     padding: .5rem 1rem;
+     margin-bottom: 0;
+     background-color: rgba(0, 0, 0, .03);
+     border-bottom: 1px solid rgba(0, 0, 0, .125);
+  }
+  .card-content {
+    color: #333;
+  }
+  .important-links a {
+    display: block;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  .important-links a:hover {
+    background-color: #e9ecef;
+  }
+  .document-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  .document-list ul li {
+    margin-bottom: 10px;
+  }
+  .license-type {
+    margin-bottom: 20px;
+  }
+  .license-type h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .license-type p {
+    color: #555;
+  }

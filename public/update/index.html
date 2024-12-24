@@ -232,104 +232,10 @@
         
      
         
-        
-   
-    <style>
-        .menu-container {
-            width: 100%;
-            position: relative;
-            background-color: #f3f4f6;
-            padding:  0;
-        }
-        .scroll-menu {
-            display: flex;
-            overflow-x: auto;
-            white-space: nowrap;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            padding: 0 rem;
-        }
-        .scroll-menu::-webkit-scrollbar {
-            display: none;
-        }
-        .menu-item {
-         
-            margin-right: 0.1rem;
-            color: #4b5563;
-            text-decoration: none;
-            border-radius: 0.1;
-        }
-        .menu-item:hover {
-            background-color: #e5e7eb;
-        }
-        .menu-item.active {
-            color: #2563eb;
-        }
-        .scroll-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #f4b400;
-            border: none;
-           
-            padding: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-            cursor: pointer;
-            opacity: 0;  
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        .scroll-button.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        .scroll-button:hover {
-            background-color: #f3f4f6;
-        }
-        .scroll-left {
-            left: 0;
-        }
-        .scroll-right {
-            right: 0;
-           
-        }
-
-
-.scroll-menu {
-      background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
-      overflow-x: auto;
-      white-space: nowrap;
-      display: flex;
-      align-items: center;
-      scroll-behavior: smooth;
-    }
-
-    .scroll-menu a {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px;
-      text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
- .scroll-menu a:hover {
-      background-color: #f4b400;
-      color: #333;
-    }
-
-    .scroll-menu a.active {
-      background-color: #f4b400;
-      color: #333;
-    }
-
-
-
-
-    </style>
+        <head>
+    <link rel="stylesheet" href=" \css\navbar.css">
+    <script src="\js\navbar.js"></script>
+    <style> </style>
 </head>
 <body>
     <div class="menu-container">
@@ -359,45 +265,7 @@
         <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const scrollMenu = document.getElementById('scrollMenu');
-            const scrollLeftBtn = document.querySelector('.scroll-left');
-            const scrollRightBtn = document.querySelector('.scroll-right');
 
-            function updateScrollButtons() {
-                
-                if (scrollMenu.scrollLeft > 0) {
-                    scrollLeftBtn.classList.add('show');
-                } else {
-                    scrollLeftBtn.classList.remove('show');
-                }
-
-                
-                if (scrollMenu.scrollLeft + scrollMenu.clientWidth < scrollMenu.scrollWidth) {
-                    scrollRightBtn.classList.add('show');
-                } else {
-                    scrollRightBtn.classList.remove('show');
-                }
-            }
-
-            function scroll(direction) {
-                const scrollAmount = scrollMenu.clientWidth / 2;
-                scrollMenu.scrollBy({
-                    left: direction === 'left' ? -scrollAmount : scrollAmount,
-                    behavior: 'smooth'
-                });
-            }
-
-            scrollLeftBtn.addEventListener('click', () => scroll('left'));
-            scrollRightBtn.addEventListener('click', () => scroll('right'));
-
-            
-            scrollMenu.addEventListener('scroll', updateScrollButtons);
-            window.addEventListener('resize', updateScrollButtons);
-            updateScrollButtons(); 
-        });
-    </script>
 </body>
 
 
@@ -940,6 +808,158 @@ font-size: small;}
     <body>
         
 
+<div class="post-container" data-post-id="25af4edddcb0307a52fb52cb6af1e8b8">
+
+
+<div class="profile-container">
+    <div class="profile-image">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJ_eV9opBbEP0TwP-5auzkLDO26dIQbg5gEZmslbmOVcpzcFc0TmD3SlWiT-E3iXUZljg1dqDuwQvqlIpaMkA2ofpRwggZqlqDSN-h6bvi3oDgybcG7CAqcvBeUxakoIGJoTxog0meJT4MQF38awNQGn5vrMXQX1Kc24UReadTLuj_sSUPHXjxKFnwyw/s1600/Yojna%20Portal%20Logo%20%281%29.png" alt="Profile Image">
+  </div>
+  <div class="profile-info">
+    
+    <div class="name">
+      Yojna Portal
+      <span class="verified"><div class="verified">
+        
+        <div class="upper"><i class="fa fa-check"></i></div>
+        <div class="bihind"> <i class='fas fa-certificate'></i></div>
+    </div>
+</span>
+    </div>
+    <div class="time">
+             
+             
+            21 minutes ago<span>•</span> <span><i class="fas fa-globe-americas"> </i>
+          </span></div>
+  </div>
+
+  <div class="icons">
+    <div class="icon" id="whatsapp-share" onclick="shareOnWhatsApp('25af4edddcb0307a52fb52cb6af1e8b8')" >
+        <i class='fas fa-share-square' style='font-size:24px'></i>
+    </div>
+    <div class="icon"  onclick="toggleEditToolbar('25af4edddcb0307a52fb52cb6af1e8b8')" > <i class='fas fa-edit' style='font-size:24px'></i></div>
+  </div>
+</div>
+<div class="summary"> <p><!DOCTYPE html>Scheme farmate🚗 ड्राइविंग लाइसेंस जानकारीड्राइविंग लाइसेंस एक आधिकारिक दस्तावेज है जो किसी व्यक्ति को किसी विशेष प्रकार के वाहन को चलाने की अनुमति देता है। भारत में, ड्राइविंग लाइसेंस जारी करने की जिम्मेदारी राज्य सरकारों के पास है।
+📄 आवश्यक दस्तावेजआवेदन पत्रपासपोर्ट आकार की तस्वीरेंपहचान पत्र (आधार कार्ड, वोटर आईडी, पासपोर्ट आदि)आवास प्रमाण पत्रप्रशिक्षण प्रमाण पत्र (यदि लागू हो)🚗 कार्ड प्रिंट/डाउनलोड करने के लिएपरिवहन की अधिकारित वेवसाइट पर जाये फिर सबसे पहले ऑप्सन Drivers/ Learners License पर क्लिक करेअपना प्रदेश चुने और आगें बढेफिर ऊपर मेन्यु पर " <a href="http://localhost:1313/scheme-farmate/">Read More...</a></p></div>
+
+
+        <div id="editToolbar" class="toolbar" style="display: none;" data-post-id="25af4edddcb0307a52fb52cb6af1e8b8">
+ 
+    
+        <div class="toolbar-section" data-post-id="25af4edddcb0307a52fb52cb6af1e8b8">
+            <div class="tools-container">
+            <div class="font-container">
+            <lable><i class='fas fa-font'></i></lable>
+             <select onchange="changeFontFamily(this.value)" title="Font Family">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Times New Roman">Times New Roman</option>
+
+                 
+                 <label for="color-picker">
+    <i style="color:red;">A</i>
+  </label>
+  <input type="color" id="color-picker" onchange="changeTextColor(this.value)" title="Choose a color">
+
+            <button class="tool-button" onclick="toggleBold()" title="Bold">𝗕</button>
+            <button class="tool-button" onclick="toggleItalic()" title="Italic">𝘐</button>
+            <button class="tool-button" onclick="toggleUnderline()" title="Underline">U̲</button>
+              <button class="tool-button" onclick="changeTextAlignment('left')" title="Align Left"><i class='fas fa-align-left'></i></button>
+            <button class="tool-button" onclick="changeTextAlignment('center')" title="Align Center"><i class='fas fa-align-center'></i></button>
+            <button class="tool-button" onclick="changeTextAlignment('right')" title="Align Right"><i class='fas fa-align-right'></i></button>
+            <button class="tool-button" onclick="changeTextAlignment('justify')" title="Align Right"><i class='fas fa-align-justify'></i></button>
+            <label for="bg-color">
+                <i style="color:red;">BG</i>
+              </label>
+              <input type="color" id="bg-color" onchange="changeBackgroundColor(this.value)" title="Background Color">
+            <input type="range" value="16" onchange="changeFontSize(this.value)" title="Font Size">
+        </div>
+            
+            
+        </div>
+            <lable><i class='fas fa-border-style'></i></lable> 
+          
+                <div class="border-style-options">
+            
+                   <option> <div class="solid" onclick="changeBorderStyle('solid')"> </div></option>
+                     <div class="dashed" onclick="changeBorderStyle('dashed')"> </div>
+                     <div  class="dotted" onclick="changeBorderStyle('dotted')"> </div>
+                     <div class="double" onclick="changeBorderStyle('double')"> </div>
+                      <div class="groove" onclick="changeBorderStyle('groove')"> </div>
+                      <div class="ridge" onclick="changeBorderStyle('ridge')"> </div>
+                      <div class="inset" onclick="changeBorderStyle('inset')"> </div>
+                      <div class="outset" onclick="changeBorderStyle('outset')"></div>
+                     <div class="none"  onclick="changeBorderStyle('none')"><i class='fas fa-ban'></i> none</div>
+                     <input type="color" class="color-picker" onchange="changeBorderColor(this.value)" title="Border Color">
+                     <input type="range" min="0" max="50" value="0" onchange="changeBorderWidth(this.value)" title="Border Weight">
+                    <input type="range" min="0" max="50" value="0" onchange="changeBorderRadius(this.value)" title="Border Radius">
+                    
+                    </div>
+                </div>
+                 
+                  
+                    
+                  <lable><i class='fas fa-vector-square'></i></lable> 
+                   <input type="range" min="0" max="50" value="0" onchange="changePadding(this.value)" title="Padding">
+                  <lable><i class='fas fa-vector-square'></i></lable> 
+                   <input type="range" min="0" max="50" value="0" onchange="changeMargin(this.value)" title="Margin">
+                  
+  
+
+                    
+
+    </div>
+
+        
+            <div class="main-post">
+                <div ><svg class="top-degine" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" preserveAspectRatio="none">
+        <defs>
+            <linearGradient id="curveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop id="gradientStop1" offset="0%" />
+                <stop id="gradientStop2" offset="100%" />
+            </linearGradient>
+        </defs>
+        <path 
+            d="M0,150 
+               C400,50 800,200 1200,150 
+               L1200,0 
+               L0,0 
+               Z" 
+            fill="url(#curveGradient)"
+        />
+    </svg></div> 
+                <div class="title editable" contenteditable="true">Scheme Farmate</div>
+                <div class="portal-logo editable" contenteditable="true"></div>
+                <div class="card-title editable" contenteditable="true">योजना नाम</div>
+                <div class="info-text editable" contenteditable="true">सूचना जानकारी</div>
+                <div class="editable" contenteditable="true">भारत सरकार की मुख्य योजना</div>
+                <div class="editable documents" contenteditable="true">आवश्यक दस्तावेज</div>
+                <div > 
+
+<div class="down-degine"> </div>
+
+            </div></div>
+
+
+
+
+
+ 
+            <div class="button-container">
+                <a href="http://localhost:1313/scheme-farmate/" target="_blank">
+                <button class="button info-btn" onclick="showMoreInfo('25af4edddcb0307a52fb52cb6af1e8b8')"> <i class="fas fa-link"></i> <br> Details </button>
+</a>
+                <button class="button edit-btn" onclick="toggleEditToolbar('25af4edddcb0307a52fb52cb6af1e8b8')"> <i class="fas fa-edit"></i> <br> edit </button>
+
+<button class="button tool-button" onclick="addNewText('25af4edddcb0307a52fb52cb6af1e8b8')" title="Add New Text"> <i class="fas fa-plus"></i> <br> add text </button>
+
+                <button class="button download-btn" onclick="downloadAsPNG('25af4edddcb0307a52fb52cb6af1e8b8')"> <i class="fas fa-download"></i> <br> Download </button> 
+                <button class="button share-btn" id="whatsapp-share" onclick="shareOnWhatsApp('25af4edddcb0307a52fb52cb6af1e8b8')"> <i class="fas fa-share"></i> <br> Share </button>
+            </div>
+        </div>
+        
+
 <div class="post-container" data-post-id="5f97591b49198403d97551177ea0625f">
 
 
@@ -961,7 +981,7 @@ font-size: small;}
     <div class="time">
              
              
-            2 hours ago<span>•</span> <span><i class="fas fa-globe-americas"> </i>
+            4 hours ago<span>•</span> <span><i class="fas fa-globe-americas"> </i>
           </span></div>
   </div>
 

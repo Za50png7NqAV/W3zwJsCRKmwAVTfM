@@ -232,104 +232,10 @@
         
      
         
-        
-   
-    <style>
-        .menu-container {
-            width: 100%;
-            position: relative;
-            background-color: #f3f4f6;
-            padding:  0;
-        }
-        .scroll-menu {
-            display: flex;
-            overflow-x: auto;
-            white-space: nowrap;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            padding: 0 rem;
-        }
-        .scroll-menu::-webkit-scrollbar {
-            display: none;
-        }
-        .menu-item {
-         
-            margin-right: 0.1rem;
-            color: #4b5563;
-            text-decoration: none;
-            border-radius: 0.1;
-        }
-        .menu-item:hover {
-            background-color: #e5e7eb;
-        }
-        .menu-item.active {
-            color: #2563eb;
-        }
-        .scroll-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #f4b400;
-            border: none;
-           
-            padding: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-            cursor: pointer;
-            opacity: 0;  
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        .scroll-button.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        .scroll-button:hover {
-            background-color: #f3f4f6;
-        }
-        .scroll-left {
-            left: 0;
-        }
-        .scroll-right {
-            right: 0;
-           
-        }
-
-
-.scroll-menu {
-      background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
-      overflow-x: auto;
-      white-space: nowrap;
-      display: flex;
-      align-items: center;
-      scroll-behavior: smooth;
-    }
-
-    .scroll-menu a {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px;
-      text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
- .scroll-menu a:hover {
-      background-color: #f4b400;
-      color: #333;
-    }
-
-    .scroll-menu a.active {
-      background-color: #f4b400;
-      color: #333;
-    }
-
-
-
-
-    </style>
+        <head>
+    <link rel="stylesheet" href=" \css\navbar.css">
+    <script src="\js\navbar.js"></script>
+    <style> </style>
 </head>
 <body>
     <div class="menu-container">
@@ -359,45 +265,7 @@
         <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const scrollMenu = document.getElementById('scrollMenu');
-            const scrollLeftBtn = document.querySelector('.scroll-left');
-            const scrollRightBtn = document.querySelector('.scroll-right');
 
-            function updateScrollButtons() {
-                
-                if (scrollMenu.scrollLeft > 0) {
-                    scrollLeftBtn.classList.add('show');
-                } else {
-                    scrollLeftBtn.classList.remove('show');
-                }
-
-                
-                if (scrollMenu.scrollLeft + scrollMenu.clientWidth < scrollMenu.scrollWidth) {
-                    scrollRightBtn.classList.add('show');
-                } else {
-                    scrollRightBtn.classList.remove('show');
-                }
-            }
-
-            function scroll(direction) {
-                const scrollAmount = scrollMenu.clientWidth / 2;
-                scrollMenu.scrollBy({
-                    left: direction === 'left' ? -scrollAmount : scrollAmount,
-                    behavior: 'smooth'
-                });
-            }
-
-            scrollLeftBtn.addEventListener('click', () => scroll('left'));
-            scrollRightBtn.addEventListener('click', () => scroll('right'));
-
-            
-            scrollMenu.addEventListener('scroll', updateScrollButtons);
-            window.addEventListener('resize', updateScrollButtons);
-            updateScrollButtons(); 
-        });
-    </script>
 </body>
 
 
@@ -540,115 +408,19 @@ text-align:center;
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.yojnaportal.com/">
   <link rel="shortcut icon" href="/favicon.ico">
-
+  <link rel="stylesheet" href=" \css\single-post.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-     
-    }
-    
-    .single-post-wrapper {
-      max-width: 900px;
-      margin: 20px auto;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
-
-    .single-post-header {
-     
-      margin-bottom: 20px;
-    }
-
-    .single-post-header h1 {
- 
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .post-meta {
-      color: #0e0101;
-      font-size: 0.9rem;
-      text-align:left;
-    }
-     .Post-Date {
-    font-size:8px;
-    }
-    .single-post-content {
-      margin-top: 20px;
-      
-    }
- 
-
-
-.breadcrumbNav {
-padding:0;
-background-color: white;
-}
-.breadcrumb {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 09px;
-  color: #f30909;
-
-}
-
-.breadcrumb li {
-  display: inline-flex;
-  align-items: center;
-}
-
-.breadcrumb li + li::before {
-  
-  margin: 0 8px;
-  color: #f36a0f;  
-  font-weight: bold;
-}
-
-.breadcrumb li a {
-  color: #07011a;  
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.breadcrumb li a:hover {
-  text-decoration: underline;
-  color: #f7560b;  
-}
-
-.breadcrumb li:last-child {
-  color: #f5900d;  
-  font-weight: bold;
-}
-
-
-   
-
-    @media (max-width: 768px) {
-      .single-post-wrapper {
-        max-width:900px;
-        padding: 5px;
-      }
-
-      .single-post-header h1 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+ </style>
 </head>
 
 <body>
 
-  <div class="single-post-wrapper">
+  
 
-    <div class="single-post-header">
-   
+  <div class="single-post-header">
+      <div class="Post-Date"> Post Date / Update: <strong>09-Dec-2024 14:53:09</strong></div> 
       <nav aria-label="breadcrumb" class="breadcrumbNav">
-        <ul class="breadcrumb">
+        <div class="breadcrumb">
           <li><a href="http://localhost:1313/">Home</a> >> </li>
           
           
@@ -660,20 +432,21 @@ background-color: white;
             
           
           <li>Schecmes Trayal</li>
-        </ul>
+        </div>
       </nav>
-      
+     
   </div>
+  <div class="single-post-wrapper">
     <div class="single-post-content">
       
-    </div>
+    
 
     
     
 
-    <div class="Post-Date"> Post Date / Update: <strong>09-Dec-2024 14:53:09</strong></div> 
+   
   </div>
-  
+</div>
         
 </body>
 

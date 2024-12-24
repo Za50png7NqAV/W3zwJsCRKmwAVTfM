@@ -4,115 +4,19 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.yojnaportal.com/">
   <link rel="shortcut icon" href="/favicon.ico">
-
+  <link rel="stylesheet" href=" \css\single-post.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-     
-    }
-    
-    .single-post-wrapper {
-      max-width: 900px;
-      margin: 20px auto;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
-
-    .single-post-header {
-     
-      margin-bottom: 20px;
-    }
-
-    .single-post-header h1 {
- 
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .post-meta {
-      color: #0e0101;
-      font-size: 0.9rem;
-      text-align:left;
-    }
-     .Post-Date {
-    font-size:8px;
-    }
-    .single-post-content {
-      margin-top: 20px;
-      
-    }
-/* Custom breadcrumb styling */
-
-
-.breadcrumbNav {
-padding:0;
-background-color: white;
-}
-.breadcrumb {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 09px;
-  color: #f30909;
-
-}
-
-.breadcrumb li {
-  display: inline-flex;
-  align-items: center;
-}
-
-.breadcrumb li + li::before {
-  
-  margin: 0 8px;
-  color: #f36a0f; /* Separator color */
-  font-weight: bold;
-}
-
-.breadcrumb li a {
-  color: #07011a; /* Link color */
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.breadcrumb li a:hover {
-  text-decoration: underline;
-  color: #f7560b; /* Link hover color */
-}
-
-.breadcrumb li:last-child {
-  color: #f5900d; /* Last item color (current page) */
-  font-weight: bold;
-}
-
-
-   
-
-    @media (max-width: 768px) {
-      .single-post-wrapper {
-        max-width:900px;
-        padding: 5px;
-      }
-
-      .single-post-header h1 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+ </style>
 </head>
 
 <body>
 
-  <div class="single-post-wrapper">
+  
 
-    <div class="single-post-header">
-   
+  <div class="single-post-header">
+      <div class="Post-Date"> Post Date / Update: <strong>{{ .Date | time.Format "02-Jan-2006 15:04:05" }}</strong></div> 
       <nav aria-label="breadcrumb" class="breadcrumbNav">
-        <ul class="breadcrumb">
+        <div class="breadcrumb">
           <li><a href="{{ "/" | absURL }}">Home</a> >> </li>
           {{ $urlParts := split .RelPermalink "/" }}
           {{ $currentPath := "" }}
@@ -123,19 +27,20 @@ background-color: white;
             {{ end }}
           {{ end }}
           <li>{{ .Title }}</li>
-        </ul>
+        </div>
       </nav>
-      
+     
   </div>
+  <div class="single-post-wrapper">
     <div class="single-post-content">
       {{ .Content }}
-    </div>
+    
 
     <!-- Include partial for tags/terms -->
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-    <div class="Post-Date"> Post Date / Update: <strong>{{ .Date | time.Format "02-Jan-2006 15:04:05" }}</strong></div> 
+   
   </div>
-  
+</div>
         
 </body>
 
