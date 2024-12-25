@@ -654,6 +654,8 @@ text-align:center;
         nav ul li a:hover {
             color: #007bff;
         }
+        .goog-te-gadget-simple {
+            background-color: #FFD700; }
     </style>
 </head>
 <body>
@@ -681,6 +683,7 @@ text-align:center;
                 <a href="https://x.com/yojnaportal" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-twitter"></i>
                 </a>
+               
             </div>
             <nav>
                 <ul>
@@ -691,6 +694,7 @@ text-align:center;
                     <li><a href="/disclaimer/">Disclaimer</a></li>
                 </ul>
             </nav>
+            <div id="google_translate_element"></div>
         </div>
     </footer>
 </body>
@@ -703,6 +707,16 @@ text-align:center;
       }
       
 </script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'en,hi,mr,gu', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </html>
 <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
 </script>
