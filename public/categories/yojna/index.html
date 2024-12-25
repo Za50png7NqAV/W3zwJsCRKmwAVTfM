@@ -403,533 +403,342 @@ text-align:center;
         <div id="sidenav-main">
         
         
-<h1>Latest Update</h1>
-
-
-
-
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script src="/js/search.js"></script>
-    <link rel="stylesheet" href="/css/list-table.css">
-    <title>Latest Update</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yojna Portal - Latest Government Schemes, Yojna News, and Updates</title>
+    <script>
+        var searchIndex = "{}";
+      </script>
+
 </head>
-<style>
-    .search-container {
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        flex-wrap: nowrap;
-    }
-    
-    .search-container > * {
-        height: 40px;
-        padding: 0 12px;
-        border: 1px solid #e0e0e0;
-        border-radius: 6px;
-        font-size: 14px;
-        transition: all 0.2s ease;
-        background: #fff;
-    }
-    
-    #textSearch {
-        flex: 2;
-        min-width: 100px;
-        background: #fff url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat;
-        background-position: 12px center;
-        padding-left: 40px;
-    }
-    
-    select {
-        flex: 1;
-        min-width: 40px;
-        cursor: pointer;
-        appearance: none;
-        -webkit-appearance: none;
-        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
-        background-repeat: no-repeat;
-        background-position: right 12px center;
-        padding-right: 35px;
-    }
-    
-    input:focus, select:focus {
-        outline: none;
-        border-color: #2196f3;
-        box-shadow: 0 0 0 3px rgba(33,150,243,0.1);
-    }
-    
-    ::placeholder {
-        color: #999;
-    }
-    
-    input:hover, select:hover {
-        border-color: #2196f3;
-    }
-    
- 
-    </style>
-<div class="search-container">
-    
-    <input type="text" id="textSearch" placeholder="Search Update..." onkeyup="filterTable()" />
+<body>
 
-    
-    <select id="monthFilter" onchange="filterTable()">
-        <option value="">Month</option>
-        <option value="01">Jan</option>
-        <option value="02">Feb</option>
-        <option value="03">Mar</option>
-        <option value="04">Apr</option>
-        <option value="05">May</option>
-        <option value="06">Jun</option>
-        <option value="07">Jul</option>
-        <option value="08">Aug</option>
-        <option value="09">Sept</option>
-        <option value="10">Oct</option>
-        <option value="11">Nov</option>
-        <option value="12">Dec</option>
-    </select>
+  
 
-    
-    <select id="yearFilter" onchange="filterTable()">
+    <div id="home" class="content active">
+
         
-    </select>
+<head>
 
+<link rel="stylesheet" href="css\list-posts1.css">
+<style>
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 2px;
+    margin: 20px auto;
+    max-width:900px;
+    min-width:300px;
+}
+
+.post {
+
+
+    text-align: center;
     
-    <select id="categoryFilter" onchange="filterTable()"> 
-        <option value="">Categories</option>
-        <option value="Exams">Exams</option>
-        <option value="Jobs">Jobs</option>
-        <option value="Schemes">Schemes</option>
-        <option value="---">None</option>
-    </select>
+    padding: 5px;
+    color:#fff;
+    border-radius: 3px;
+    max-height:40px; 
+    height: 20px;
+    font-size:0.6rem;
+    font-weight: bold;  
+    overflow: hidden;
+}
+.post:hover { font-size:0.7rem;
+border-left:5px solid #f4b400;
+border-right:5px solid #f06508;
+
+}   
+.post-link {
+    color: black;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    color: blanchedalmond;
+}
+
+
+</style>
+
+</head>
+<div class="post-grid">
+    
+    <a href="http://localhost:1313/cm-kisan-khadya-beej-anudan/" class="post-link">
+    <div 
+        class="post" 
+        style="background-color: olive;" 
+        data-random-bg
+    >
+       
+            CM Kisan Khadya Beej Anudan 
+        
+    </div></a>
+    
 </div>
 
-<table class="post-table" id="dataTable">
-    <thead>
-        <tr>
-            <th>Post Date</th>
-            <th>Latest</th>
-            <th>Category</th>
-           
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td>25/12/2024</td>
-            <td><a href="/categories/">Categories</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>25/12/2024</td>
-            <td><a href="/cm-kisan-khadya-beej-anudan/">CM Kisan Khadya Beej Anudan</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>25/12/2024</td>
-            <td><a href="/categories/schemes/">Schemes</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>25/12/2024</td>
-            <td><a href="/categories/yojna/">Yojna</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>24/12/2024</td>
-            <td><a href="/categories/admitcard/">Admitcard</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>24/12/2024</td>
-            <td><a href="/categories/jobs/">Jobs</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>24/12/2024</td>
-            <td><a href="/scheme-farmate/">Scheme Farmate</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>24/12/2024</td>
-            <td><a href="/jobs-farmet/">Jobs Farmet</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>09/12/2024</td>
-            <td><a href="/upcoming-tyayal/">Upcoming Tyayal</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>09/12/2024</td>
-            <td><a href="/result-tryal/">Result Tryal</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>09/12/2024</td>
-            <td><a href="/student-tryals/">Student Tryals</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>09/12/2024</td>
-            <td><a href="/schecmes-trayal/">Schecmes Trayal</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>04/12/2024</td>
-            <td><a href="/texting-baner/">Texting Baner</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>24/11/2024</td>
-            <td><a href="/banner/">Banner</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>16/11/2024</td>
-            <td><a href="/job-new-post/">Job New Post</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>16/11/2024</td>
-            <td><a href="/page/">Latest Jobs</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>16/11/2024</td>
-            <td><a href="/latest-job1s/">Latest Jobs test</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/quick/exam-date/"></a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/quick/last-date/"></a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/quick/search/"></a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/update/"></a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/about/">About Us</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/contact/">Contact Us</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/disclaimer/">Disclaimer - Yojna Portal</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/ifram/">Ifram</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/admitcard/">Latest Admitcard</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/latest-jobs/">Latest Jobs</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/pdf-forms/">Latest Pdf Forms</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/results/">Latest Result</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/latest-schemes/">Latest Schemes</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/baner-update/">Latest Update</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/latest-posts/">Latest Update</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/latest-update/">Latest Update</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/suvichar/">Motivation Thoughts</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/privacy-policy/">Privacy Policy: Yojna Portal</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/quick/">Quicks</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/search/">Student Portal</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/student-help/">Student Portal</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/upcoming/">Upcoming Information</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/imp-links/">Useful Importent Links</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/menu/">Yojna Portal Menu</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>08/11/2024</td>
-            <td><a href="/pm-internship-yojna/">PM Internship Yojna</a></td>
-            <td>Exams</td>
-           
-        </tr>
-        
-        <tr>
-            <td>02/10/2024</td>
-            <td><a href="/textpost/">Textpost</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>02/10/2024</td>
-            <td><a href="/first-yojn/">First Yojn</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>15/03/2023</td>
-            <td><a href="/posts/post-3/">Post 3</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>15/02/2023</td>
-            <td><a href="/posts/post-2/">Post 2</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>15/01/2023</td>
-            <td><a href="/posts/post-1/">Post 1</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>01/01/2023</td>
-            <td><a href="/posts/">Posts</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-        <tr>
-            <td>01/01/2023</td>
-            <td><a href="/">Home</a></td>
-            <td>---</td>
-           
-        </tr>
-        
-    </tbody>
-</table>
 
 <script>
-
-document.addEventListener("DOMContentLoaded", function() {
-    const yearFilter = document.getElementById("yearFilter");
-    const currentYear = new Date().getFullYear();
-
-    yearFilter.innerHTML = "<option value=''>Year</option>";
-    for (let year = currentYear; year >= currentYear - 5; year--) {
-        const option = document.createElement("option");
-        option.value = year;
-        option.textContent = year;
-        yearFilter.appendChild(option);
-    }
-});
-
-function filterTable() {
-    const textSearch = document.getElementById("textSearch").value.toLowerCase();
-    const monthFilter = document.getElementById("monthFilter").value;
-    const yearFilter = document.getElementById("yearFilter").value;
-    const categoryFilter = document.getElementById("categoryFilter").value.toLowerCase();
-    const table = document.getElementById("dataTable");
-    const rows = table.getElementsByTagName("tr");
-
-    for (let i = 1; i < rows.length; i++) { 
-        const cells = rows[i].getElementsByTagName("td");
-        let dateMatch = true, categoryMatch = true, textMatch = true;
+    document.addEventListener('DOMContentLoaded', () => {
+        const posts = document.querySelectorAll('.post[data-random-bg]');
 
         
-        if (textSearch) {
-            textMatch = Array.from(cells).some(cell => 
-                cell.textContent.toLowerCase().includes(textSearch)
-            );
-        }
+        const colors = [  '#2E7D32' , '#990000' , '##000080' , '#b36b00' , '#663d00' , '#330000' , '#001a00' , '#f06508' , '#926400' , '#1f2937' , '#000033' ];
 
-        
-        if (categoryFilter) {
-            const categoryCell = cells[2]; 
-            if (categoryCell) {
-                categoryMatch = categoryCell.textContent.toLowerCase().includes(categoryFilter);
-            }
-        }
-
-        
-        if (monthFilter || yearFilter) {
-            const dateCell = cells[0]; 
-            if (dateCell) {
-                const [day, month, year] = dateCell.textContent.split("/"); 
-                if (monthFilter && month !== monthFilter) dateMatch = false;
-                if (yearFilter && year !== yearFilter) dateMatch = false;
-            }
-        }
-
-        
-        rows[i].style.display = (textMatch && categoryMatch && dateMatch) ? "" : "none";
-    }
-}
+        posts.forEach(post => {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            post.style.backgroundColor = randomColor;
+        });
+    });
 </script>
 
+        <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --primary: #f06508;
+      --primary-dark: #926400;
+      --secondary: #f3f4f6;
+      --text-light: #ffffff;
+      --text-dark: #1f2937;
+      --border-radius: 5px;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --font-size: 16px;
+      --mfont-size: 1rem;
+      --card-width: 350px;
+      --mcard-width: 200px;
+    }
+  
+    .grid-container {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);  
+      gap: 10px;  
+      max-width:800px;
+      padding: 8px;
+    }
+  
+    .card {
+      background: white;
+      max-width: var(--card-width);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+      overflow: hidden;
+    }
+  
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+  
+    .card-header {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 3px;
+      font-weight: 600;
+      text-align: center;
+      font-size: calc(var(--font-size) + 0.1rem);
+      letter-spacing: 0.5px;
+      font-size:10px;
+    }
+  
+    .card-content {
+      padding: 8px;  
+      border: 1px dashed #fff;
+      max-height: 200px;
+      background: var(--secondary);
+      font-size: var(--font-size);
+      line-height: 1.5;
+      text-align: left;  
+      overflow-y: auto;  
+      overflow-x: hidden;  
+      border-radius: 2px;  
+  }
+  .card-content a { text-decoration: none;}
 
-<div class="content">
+  li::marker {
+    color: red;
+  }
+     
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+   
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 20px;
+  }
+
+   
+  ::-webkit-scrollbar-thumb {
+    background: golden en;
+    border-radius: 20px;
+  }
+
+   
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
+
+    .card-footer {
+      
+      background: white;
+      padding: 2px;
+      display: flex;
+      bottom:0;
+      justify-content: flex-end;
+      border-top: 1px solid #e5e7eb;
+    }
+  
+    .more-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: var(--font-size);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.2s;
+    }
+  
+    .more-link:hover {
+      color: var(--primary-dark);
+    }
+  
+    .more-link::after {
+      content: '→';
+      font-size: 1.1rem;
+    }
+  .card-content a:hover {color:red;}
+     
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);  
+    max-width: var(--card-width);
+  
+      }
+      :root {
+        --font-size: 13px;
+        --card-width: 500px;  
+      }
+    }
+    @media (max-width: 600px) {
+        .card-content {
+        font-size:3vw;
+        }
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid-container">
+  
+  <div class="card">
+    <div class="card-header">Latest Schemes</div>
+    <div class="card-content">
+      
+<li>
+  <a href="http://localhost:1313/cm-kisan-khadya-beej-anudan/">CM Kisan Khadya Beej Anudan</a>
+</li><hr>
+
+    </div>
+    <div class="card-footer">
+      <a href="/latest-schemes/" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Latest Update</div>
+    <div class="card-content">
+      
     
+        <li>
+            <a href="/cm-kisan-khadya-beej-anudan/">CM Kisan Khadya Beej Anudan</a>
+        </li>
+    <hr>
+    
+
+    </div>
+    <div class="card-footer">
+      <a href="/latest-update/" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Students</div>
+    <div class="card-content">
+      
+    </div>
+    <div class="card-footer">
+      <a href="/student-help/" class="more-link">more</a>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <div class="card-header">Results</div>
+    <div class="card-content">
+      
+    </div>
+    <div class="card-footer">
+      <a href="/results/" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Admit Card</div>
+    <div class="card-content">
+      
+
+
+
+
+
+
+
+    </div>
+    <div class="card-footer">
+      <a href="/admitcard/" class="more-link">more</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Latest Job</div>
+    <div class="card-content">
+      
+<li>
+  <a href="http://localhost:1313/job-new-post/">Job New Post</a>
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/page/">Latest Jobs</a>
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/latest-job1s/">Latest Jobs test</a>
+</li><hr>
+
+    </div>
+    <div class="card-footer">
+      <a href="/latest-jobs/" class="more-link">more</a>
+    </div>
+  </div>
 </div>
+
+</body>
+</html>
+
+    </div>
+    
+</body>
+</html>
 
         <!DOCTYPE html>
 <head>
