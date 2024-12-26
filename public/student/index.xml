@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Students on YOJNA PORTAL</title>
+    <link>http://localhost:1313/student/</link>
+    <description>Recent content in Students on YOJNA PORTAL</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 09:38:54 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/student/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nta Aissee 2025</title>
+      <link>http://localhost:1313/student/nta-aissee-2025/</link>
+      <pubDate>Thu, 26 Dec 2024 09:38:54 +0530</pubDate>
+      <guid>http://localhost:1313/student/nta-aissee-2025/</guid>
+      <description>एनटीए अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (AISSEE 2025)</description>
+    </item>
+  </channel>
+</rss>
