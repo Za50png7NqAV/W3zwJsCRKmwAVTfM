@@ -121,6 +121,31 @@ font-weight: bold;
   color:red;
 }
 .total-posts {min-width: 25px;}
+.imp-notice {
+  background-color: #fff3e0;
+  border: 1px solid #ffcc80;
+  padding: 5px;
+  color: #ef6c00;
+  font-weight: bold;
+}
+
+.notice-header {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #007BFF;
+    }
+    .step {
+        margin: 15px 0;
+        padding-left: 20px;
+    }
+    .step-title {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .note {
+        color: red;
+        font-weight: bold;
+    }
 
  @media (max-width: 768px) {
 
