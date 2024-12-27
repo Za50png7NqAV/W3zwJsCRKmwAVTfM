@@ -120,10 +120,8 @@ font-weight: bold;
 .jobs-table a:hover {
   color:red;
 }
-table {
-  word-wrap: break-word !important;
-    word-break: break-word !important;
-}
+.total-posts {min-width: 25px;}
+
  @media (max-width: 768px) {
 
      .job-content {
