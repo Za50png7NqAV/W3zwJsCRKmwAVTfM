@@ -95,7 +95,9 @@ font-weight: bold;
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
-}
+   
+   }
+ 
 
 .jobs-table th,
 .jobs-table td {
@@ -117,6 +119,10 @@ font-weight: bold;
 
 .jobs-table a:hover {
   color:red;
+}
+table {
+  word-wrap: break-word !important;
+    word-break: break-word !important;
 }
  @media (max-width: 768px) {
 
