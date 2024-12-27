@@ -142,10 +142,15 @@ font-weight: bold;
         font-weight: bold;
         margin-top: 10px;
     }
+   
     .note {
-        color: red;
-        font-weight: bold;
-    }
+      background: #fff3cd;
+      border: 1px solid #ffeeba;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+      color: #856404;
+  }
 
  @media (max-width: 768px) {
 
