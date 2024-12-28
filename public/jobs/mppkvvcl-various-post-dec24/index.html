@@ -733,7 +733,42 @@ text-align:center;
 </body>
 
 
-        <!DOCTYPE html>
+        
+
+<head>
+<style>
+  
+  
+  
+  table.gsc-search-box td, .gsc-clear-button {display:none;}
+</style></head>
+<script>
+    
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+  
+        
+        const baseHref = this.getAttribute('href');
+        
+        const queryParam = this.getAttribute('data-search');
+   
+        
+        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
+        window.history.pushState({}, '', newUrl);
+  
+        
+        window.location.reload();
+      });
+    });
+  </script>
+      </div> 
+      <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+</script>
+<div id="pse">
+<div class="gcse-search"></div> </div>
+
+<!DOCTYPE html>
 <head>
     <style>
         .bottom-nav {
@@ -881,9 +916,11 @@ text-align:center;
       
         #footer {
             flex-shrink: 0;
-            background-color: rgb(255, 78, 57);
-            padding: 20px 0;
+            background-color: rgb(36, 35, 35);
+            padding:20px 0 0 0;
             bottom: 0px;
+           
+           
         }
 
         .footer-content {
@@ -892,12 +929,13 @@ text-align:center;
         }
 
         .social-media a {
-            color: #310202;
+            color: #f7630e;
             font-size: 24px;
             margin: 0 10px;
             text-decoration: none;
         }
         .social-media a:hover { color:rgb(244, 180, 0);}
+        nav {color:#f4b400;}
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -920,12 +958,13 @@ text-align:center;
             background-color: #FFD700; }
     </style>
 </head>
-<body>
+
    
 
     <footer id="footer">
+        
         <div class="footer-content">
-            <div> Follow us on Social Media</div>
+            <div style="color:#f4b400;">|| Follow us on Social Media ||</div>
             <div class="social-media">
                 <a href="https://bit.ly/SarkariJankari" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
@@ -957,9 +996,19 @@ text-align:center;
                 </ul>
             </nav>
             <div id="google_translate_element"></div>
+
+           <div id="copyright" style="color:#f7630e"> ©️ All Copyright <a href="https://yojnaportal.com" style="text-decoration:none; color:white;"> www.yojnaportal.com </a> | Yojna Portal </div>
+            
+          
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+            <path fill="#f4b400" fill-opacity="1" d="M0,224L60,240C120,256,240,288,360,288C480,288,600,256,720,224C840,192,960,160,1080,144C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        
+          </svg>
     </footer>
-</body>
+  
+
 <script> 
     if (someCondition) {
         
@@ -980,46 +1029,14 @@ text-align:center;
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </html>
-<script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
-</script>
-<div id="pse">
-<div class="gcse-search"></div> </div>
 
-       
-    </div>
-     
-       
     </div>
     
-      
-
-<head>
-<style>
-  
-  
-  
-  table.gsc-search-box td, .gsc-clear-button {display:none;}
-</style></head>
-<script>
-    
-    document.querySelectorAll('.dynamic-link').forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault(); 
-  
         
-        const baseHref = this.getAttribute('href');
+       
+       
         
-        const queryParam = this.getAttribute('data-search');
    
-        
-        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
-        window.history.pushState({}, '', newUrl);
-  
-        
-        window.location.reload();
-      });
-    });
-  </script>
      
 
       

@@ -619,7 +619,11 @@ border-right:5px solid #f06508;
       .grid-container {
         grid-template-columns: repeat(3, 1fr);  
     max-width: var(--card-width);
-  
+    gap: 2px;  
+    
+      }
+      .card-header {
+        font-size: small;
       }
       :root {
         --font-size: medium;
@@ -924,7 +928,42 @@ border-right:5px solid #f06508;
 </body>
 </html>
 
-        <!DOCTYPE html>
+        
+
+<head>
+<style>
+  
+  
+  
+  table.gsc-search-box td, .gsc-clear-button {display:none;}
+</style></head>
+<script>
+    
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+  
+        
+        const baseHref = this.getAttribute('href');
+        
+        const queryParam = this.getAttribute('data-search');
+   
+        
+        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
+        window.history.pushState({}, '', newUrl);
+  
+        
+        window.location.reload();
+      });
+    });
+  </script>
+      </div> 
+      <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+</script>
+<div id="pse">
+<div class="gcse-search"></div> </div>
+
+<!DOCTYPE html>
 <head>
     <style>
         .bottom-nav {
@@ -1072,9 +1111,11 @@ border-right:5px solid #f06508;
       
         #footer {
             flex-shrink: 0;
-            background-color: rgb(255, 78, 57);
-            padding: 20px 0;
+            background-color: rgb(36, 35, 35);
+            padding:20px 0 0 0;
             bottom: 0px;
+           
+           
         }
 
         .footer-content {
@@ -1083,12 +1124,13 @@ border-right:5px solid #f06508;
         }
 
         .social-media a {
-            color: #310202;
+            color: #f7630e;
             font-size: 24px;
             margin: 0 10px;
             text-decoration: none;
         }
         .social-media a:hover { color:rgb(244, 180, 0);}
+        nav {color:#f4b400;}
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -1111,12 +1153,13 @@ border-right:5px solid #f06508;
             background-color: #FFD700; }
     </style>
 </head>
-<body>
+
    
 
     <footer id="footer">
+        
         <div class="footer-content">
-            <div> Follow us on Social Media</div>
+            <div style="color:#f4b400;">|| Follow us on Social Media ||</div>
             <div class="social-media">
                 <a href="https://bit.ly/SarkariJankari" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
@@ -1148,9 +1191,19 @@ border-right:5px solid #f06508;
                 </ul>
             </nav>
             <div id="google_translate_element"></div>
+
+           <div id="copyright" style="color:#f7630e"> ©️ All Copyright <a href="https://yojnaportal.com" style="text-decoration:none; color:white;"> www.yojnaportal.com </a> | Yojna Portal </div>
+            
+          
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+            <path fill="#f4b400" fill-opacity="1" d="M0,224L60,240C120,256,240,288,360,288C480,288,600,256,720,224C840,192,960,160,1080,144C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        
+          </svg>
     </footer>
-</body>
+  
+
 <script> 
     if (someCondition) {
         
@@ -1171,46 +1224,14 @@ border-right:5px solid #f06508;
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </html>
-<script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
-</script>
-<div id="pse">
-<div class="gcse-search"></div> </div>
 
-       
-    </div>
-     
-       
     </div>
     
-      
-
-<head>
-<style>
-  
-  
-  
-  table.gsc-search-box td, .gsc-clear-button {display:none;}
-</style></head>
-<script>
-    
-    document.querySelectorAll('.dynamic-link').forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault(); 
-  
         
-        const baseHref = this.getAttribute('href');
+       
+       
         
-        const queryParam = this.getAttribute('data-search');
    
-        
-        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
-        window.history.pushState({}, '', newUrl);
-  
-        
-        window.location.reload();
-      });
-    });
-  </script>
      
 
       
