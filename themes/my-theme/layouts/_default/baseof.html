@@ -65,14 +65,16 @@
         <div id="sidenav-main">
         <!-- Main content block -->
         {{ block "main" . }} {{ end }}
-        {{ partial "baseof-part/footer" . }}
-       
-    </div>
-     
+        {{ partial "baseof-part/dynamic-link.html" . }}
+      </div> 
        
     </div>
     
-      {{ partial "baseof-part/dynamic-link.html" . }}
+        {{ partial "baseof-part/footer" . }}
+       
+       
+        
+   
      
 
       
