@@ -32,8 +32,6 @@
         align-items: center;
         justify-content: center;
         word-wrap: break-word !important;
-          word-break: break-word !important;
-       
     }
     
     @media (max-width: 768px) {
@@ -407,11 +405,189 @@ text-align:center;
         
 
 
-Useful Importent Links
+<h2>Useful Importent Links </h2>
     
-    <ul>
-  
-</ul>   
+    <head>
+    <script src="/js/search.js"></script>
+    <link rel="stylesheet" href="/css/list-table.css">
+    <title> Important Links </title>
+</head>
+<style>
+    .search-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+    
+    .search-container > * {
+        height: 40px;
+        padding: 0 12px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: all 0.2s ease;
+        background: #fff;
+    }
+    
+    #textSearch {
+        flex: 2;
+        min-width: 100px;
+        background: #fff url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat;
+        background-position: 12px center;
+        padding-left: 40px;
+    }
+    
+    select {
+        flex: 1;
+        min-width: 40px;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 35px;
+    }
+    
+    input:focus, select:focus {
+        outline: none;
+        border-color: #2196f3;
+        box-shadow: 0 0 0 3px rgba(33,150,243,0.1);
+    }
+    
+    ::placeholder {
+        color: #999;
+    }
+    
+    input:hover, select:hover {
+        border-color: #2196f3;
+    }
+    
+ 
+    </style>
+<div class="search-container">
+    
+    <input type="text" id="textSearch" placeholder="Search Update..." onkeyup="filterTable()" />
+
+    
+    <select id="monthFilter" onchange="filterTable()">
+        <option value="">Month</option>
+        <option value="01">Jan</option>
+        <option value="02">Feb</option>
+        <option value="03">Mar</option>
+        <option value="04">Apr</option>
+        <option value="05">May</option>
+        <option value="06">Jun</option>
+        <option value="07">Jul</option>
+        <option value="08">Aug</option>
+        <option value="09">Sept</option>
+        <option value="10">Oct</option>
+        <option value="11">Nov</option>
+        <option value="12">Dec</option>
+    </select>
+
+    
+    <select id="yearFilter" onchange="filterTable()">
+        
+    </select>
+
+    
+    <select id="categoryFilter" onchange="filterTable()"> 
+        <option value="">Categories</option>
+        <option value="Recruitment">Recruitment</option>
+        <option value="Exams">Exams</option>
+        <option value="Jobs">Jobs</option>
+        <option value="Schemes">Schemes</option>
+        <option value="---">None</option>
+    </select>
+</div>
+
+<table class="post-table" id="dataTable">
+    <thead>
+        <tr>
+            <th>Post Date</th>
+            <th> Important Links </th>
+            <th>Category</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>28/12/2024</td>
+            <td><a href="/railway/rrb-isolated-07-2024/">Railway RRB Ministerial and Isolated Post CEN 07/2024 Apply Online for 1036 Post</a></td>
+            <td>Exams</td>
+           
+        </tr>
+        
+    </tbody>
+</table>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const yearFilter = document.getElementById("yearFilter");
+    const currentYear = new Date().getFullYear();
+
+    yearFilter.innerHTML = "<option value=''>Year</option>";
+    for (let year = currentYear; year >= currentYear - 5; year--) {
+        const option = document.createElement("option");
+        option.value = year;
+        option.textContent = year;
+        yearFilter.appendChild(option);
+    }
+});
+
+function filterTable() {
+    const textSearch = document.getElementById("textSearch").value.toLowerCase();
+    const monthFilter = document.getElementById("monthFilter").value;
+    const yearFilter = document.getElementById("yearFilter").value;
+    const categoryFilter = document.getElementById("categoryFilter").value.toLowerCase();
+    const table = document.getElementById("dataTable");
+    const rows = table.getElementsByTagName("tr");
+
+    for (let i = 1; i < rows.length; i++) { 
+        const cells = rows[i].getElementsByTagName("td");
+        let dateMatch = true, categoryMatch = true, textMatch = true;
+
+        
+        if (textSearch) {
+            textMatch = Array.from(cells).some(cell => 
+                cell.textContent.toLowerCase().includes(textSearch)
+            );
+        }
+
+        
+        if (categoryFilter) {
+            const categoryCell = cells[2]; 
+            if (categoryCell) {
+                categoryMatch = categoryCell.textContent.toLowerCase().includes(categoryFilter);
+            }
+        }
+
+        
+        if (monthFilter || yearFilter) {
+            const dateCell = cells[0]; 
+            if (dateCell) {
+                const [day, month, year] = dateCell.textContent.split("/"); 
+                if (monthFilter && month !== monthFilter) dateMatch = false;
+                if (yearFilter && year !== yearFilter) dateMatch = false;
+            }
+        }
+
+        
+        rows[i].style.display = (textMatch && categoryMatch && dateMatch) ? "" : "none";
+    }
+}
+</script>
+
 
     
     <div class="content">

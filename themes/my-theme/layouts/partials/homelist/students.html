@@ -1,5 +1,6 @@
-{{ range first 20 (where  .Pages ".Params.post-type" "student") }}
+{{ range first 20 (where .Site.RegularPages "Params.post-type" "student") }}
 <li>
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
-</li><hr>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</li>
+<hr>
 {{ end }}

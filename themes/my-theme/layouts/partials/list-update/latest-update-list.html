@@ -92,6 +92,7 @@
     <!-- Category Dropdown -->
     <select id="categoryFilter" onchange="filterTable()"> 
         <option value="">Categories</option>
+        <option value="Exams">Recruitment</option>
         <option value="Exams">Exams</option>
         <option value="Jobs">Jobs</option>
         <option value="Schemes">Schemes</option>
@@ -109,7 +110,7 @@
         </tr>
     </thead>
     <tbody>
-        {{ range .Site.Pages }}
+        {{ range .Site.RegularPages }}
         <tr>
             <td>{{ .Date.Format "02/01/2006" }}</td>
             <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>

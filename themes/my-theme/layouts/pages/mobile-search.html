@@ -68,6 +68,7 @@
             border-radius: 8px;
             margin-top: 15px;
             max-height: 420px;
+          max-width: 300px;
             overflow-y: scroll;
         }
 
@@ -174,12 +175,14 @@
                 </div>
                 
                 <div id="suggestionsList" class="suggestions-list">
-                    {{ range .Site.Pages }}
-                   <a href="{{ .RelPermalink }}" target="_blank"> <div class="suggestion-item" data-href="{{ .RelPermalink }}">{{ .Title }}  <div class="hidden"> 🔗 • {{ with .Params.descripiton }}{{ . }}{{ else }} {{ end }}</div></a>
-
- </div> 
- {{ end }}          </div>
+                    {{ range .Site.RegularPages }}
+                   <a href="{{ .RelPermalink }}" target="_blank"> <div class="suggestion-item" data-href="{{ .RelPermalink }}">   {{ .Title }}  <div class="hidden"> 🔗 • {{ with .Params.summary}}{{ . }}{{ else }} {{ end }}</div></a>
+                </div>  
                
+                
+
+ {{ end }}          </div>
+                  
                 <input type="submit" class="mobile-submit" value="🔍 Search...">
             </form>
         </div>
@@ -205,7 +208,7 @@
         
                     // Update only the visible text, keeping the link functional
                     if (href) {
-                        item.innerHTML = `<a href="${href}" target="_blank" style="text-decoration: none; color: inherit;">${highlightedText}</a>`;
+                        item.innerHTML = `<a href="${href}" target="_blank" style="font-weight: 500; text-decoration: none; color: inherit;">${highlightedText}</a>`;
                     } else {
                         item.innerHTML = highlightedText; // Plain text for items without links
                     }

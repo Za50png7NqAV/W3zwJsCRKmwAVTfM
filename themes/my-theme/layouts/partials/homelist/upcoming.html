@@ -1,0 +1,6 @@
+{{ range first 20 (where .Site.RegularPages "Params.post-type" "upcoming") }}
+<li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</li>
+<hr>
+{{ end }}

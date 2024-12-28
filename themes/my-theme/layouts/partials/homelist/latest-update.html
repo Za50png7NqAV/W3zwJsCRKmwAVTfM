@@ -1,7 +1,8 @@
 
-    {{ range first 20 .Pages }}
-        <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </li>
-    <hr>
-    {{ end }}
+    {{ range first 20  .Site.RegularPages }}
+    <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+<hr>
+  {{ end }}
+ 

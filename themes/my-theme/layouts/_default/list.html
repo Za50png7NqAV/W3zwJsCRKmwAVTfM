@@ -9,9 +9,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yojna Portal - Latest Government Schemes, Yojna News, and Updates</title>
-    <script>
-        var searchIndex = {{ .Site | jsonify }};
-      </script>
 
 </head>
 <body>
@@ -22,8 +19,7 @@
 
         {{ partial "auto-update/list-posts.html" . }}
         {{ partial "homelist/grid-container.html" . }}
-    </div>
-    
+        
 </body>
 </html>
 {{ end }}

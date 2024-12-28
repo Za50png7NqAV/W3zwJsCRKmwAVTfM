@@ -400,7 +400,7 @@ font-size: small;}
         </style>
     </head>
     <body>
-        {{ range .Site.RegularPages }}
+        {{ range first 50 (where .Site.RegularPages ".Params.baner" "yes") }}
 
 <div class="post-container" data-post-id="{{ .File.UniqueID }}">
 

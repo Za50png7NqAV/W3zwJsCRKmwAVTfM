@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+
+<h2>{{ .Title }} </h2>
+    <!-- Header Partial -->
+    {{ partial "list-update/certificate-list.html" . }}
+
+    <!-- Content Section -->
+    <div class="content">
+        {{ .Content }}
+    </div>
+{{ end }}

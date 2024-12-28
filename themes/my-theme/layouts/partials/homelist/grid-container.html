@@ -45,9 +45,9 @@
       padding: 3px;
       font-weight: 600;
       text-align: center;
-      font-size: calc(var(--font-size) + 0.1rem);
       letter-spacing: 0.5px;
-      font-size:10px;
+      font-size:large;
+      text-shadow: 2px 2px 5px black;
     }
   
     .card-content {
@@ -127,13 +127,13 @@
   
       }
       :root {
-        --font-size: 13px;
+        --font-size: medium;
         --card-width: 500px; /* Slightly smaller card width */
       }
     }
     @media (max-width: 600px) {
         .card-content {
-        font-size:3vw;
+        font-size:small;
         }
     }
   </style>
@@ -202,6 +202,39 @@
       <a href="/latest-jobs/" class="more-link">more</a>
     </div>
   </div>
+<!-- 3rd Row -->
+<div class="card">
+  <div class="card-header"> Upcoming </div>
+  <div class="card-content">
+    {{ partial "homelist/upcoming.html" . }}
+  </div>
+  <div class="card-footer">
+    <a href="/latest-schemes/" class="more-link">more</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header"> Cerficate verification</div>
+  <div class="card-content">
+    {{ partial "homelist/certificate.html" . }}
+  </div>
+  <div class="card-footer">
+    <a href="/certificate/" class="more-link">more</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">Important Links</div>
+  <div class="card-content">
+    {{ partial "homelist/important.html" . }}
+  </div>
+  <div class="card-footer">
+    <a href="/imp-links/" class="more-link">more</a>
+  </div>
+</div>
+
+<!-- third Row -->
+
 </div>
 
 </body>

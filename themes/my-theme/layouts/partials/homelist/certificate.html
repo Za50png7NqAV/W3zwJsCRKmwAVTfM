@@ -1,0 +1,5 @@
+{{ range first 20 (where .Site.RegularPages ".Params.post-type" "cerficate") }}
+<li>
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+</li><hr>
+{{ end }}
