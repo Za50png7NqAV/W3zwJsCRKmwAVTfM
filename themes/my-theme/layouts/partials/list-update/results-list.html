@@ -5,26 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Latest Results, Vacancy Resutls, Answerkey, Yojna Portal, MPBoard Results, College Results, School Results, State Board Resutls, परीक्षा परिणाम">
 </head>
-<h2 class="list-tittle" style="text-align:center;"> Latest Results Update</h2>
 <table class="post-table">
   <thead>
       <tr>
         <th>Post/Update</th>
-          <th>Latest</th>
-          <th>Detail</th>
-      </tr>
+          <th>Latest Result</th>
+    </tr>
   </thead>
   <tbody>
-      {{ range .Pages }}
-      <tr>
-        <td>{{ .Date.Format "02/01/2006" }}</td>
-          <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-         
-          <td><a href="{{ .RelPermalink }}">Click here</a></td>
-      </tr>
-      {{ end }}
+    {{ range first 20 (where .Site.RegularPages ".Params.result" "yes") }}
+  <tr>
+    <td>{{ .Date.Format "02/01/2006" }}</td>
+    <td><a href="{{ .RelPermalink }}">{{ .Params.ResultName }}</a></td>
+  </tr>
+{{ end }}
   </tbody>
 </table>
-<div class="pagination">
-  {{ partial "imp-codes/paginator.html" . }}
   </div>

@@ -1,5 +1,5 @@
-{{ range first 20 (where .Site.RegularPages ".Params.post-type" "results") }}
+{{ range first 20 (where  .Site.RegularPages ".Params.result" "yes") }}
 <li>
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  <a href="{{ .Permalink }}">{{ .Params.ResultName }}</a>
 </li><hr>
 {{ end }}

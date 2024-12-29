@@ -3,21 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/admitcard/</loc>
-    <lastmod>2024-12-28T19:49:51+05:30</lastmod>
+    <lastmod>2024-12-29T10:09:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/bank/</loc>
+    <lastmod>2024-12-29T10:09:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-12-28T19:49:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2024-12-28T19:49:51+05:30</lastmod>
+    <lastmod>2024-12-29T10:09:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/jobs/</loc>
+    <lastmod>2024-12-29T10:09:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/bank/sbi-po-dec24/</loc>
+    <lastmod>2024-12-29T10:09:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/</loc>
     <lastmod>2024-12-28T19:49:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

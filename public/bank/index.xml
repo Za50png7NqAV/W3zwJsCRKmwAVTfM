@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Banks on YOJNA PORTAL</title>
+    <link>http://localhost:1313/bank/</link>
+    <description>Recent content in Banks on YOJNA PORTAL</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Dec 2024 10:09:15 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/bank/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SBI Probationary Officers PO Recruitment 2024</title>
+      <link>http://localhost:1313/bank/sbi-po-dec24/</link>
+      <pubDate>Sun, 29 Dec 2024 10:09:15 +0530</pubDate>
+      <guid>http://localhost:1313/bank/sbi-po-dec24/</guid>
+      <description>SBI has relased Probationary Officers PO Recruitment 2024. Those candidates Are Interested to the Following SBI PO Recruitment 2024</description>
+    </item>
+  </channel>
+</rss>

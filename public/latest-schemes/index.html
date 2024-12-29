@@ -414,47 +414,134 @@ Latest Schemes
   <title>Latest Schemes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Latest Yojna, Latest Schemes, Lates Post, New Schemes, New Yojna, Govt. Yojna, Sarkari Yojana, Sarkari Yojna, सरकारी योजना, नई योजना, PM Yojana, PM Yojna, State Yojna, State yojna portal my schemes, india Schemes .">
-</head>
-
-<table class="post-table">
-  <thead>
-      <tr>
-          <th>Post/Update</th>
-          <th>Yojna/Schemes</th>
-          <th>State/Central</th>
-      </tr>
-  </thead>
-  <tbody>
+  <style>
+    .search-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+    
+    .search-container > * {
+        height: 40px;
+        padding: 0 12px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: all 0.2s ease;
+        background: #fff;
+    }
+    
+    #textSearch {
+        flex: 2;
+        min-width: 100px;
+        background: #fff url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat;
+        background-position: 12px center;
+        padding-left: 40px;
+    }
+    
+    select {
+        flex: 1;
+        min-width: 40px;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 35px;
+    }
+    
+    input:focus, select:focus {
+        outline: none;
+        border-color: #2196f3;
+        box-shadow: 0 0 0 3px rgba(33,150,243,0.1);
+    }
+    
+    ::placeholder {
+        color: #999;
+    }
+    
+    input:hover, select:hover {
+        border-color: #2196f3;
+    }
+    
+ 
+    </style>
+    </head>
+    <div class="search-container">
       
-      <tr>
-        <td>25/12/2024</td>
-          <td><a href="/cm-kisan-khadya-beej-anudan/">CM Kisan Khadya Beej Anudan</a></td>
-          <td>Madhya Pradesh</td>
+      <input type="text" id="textSearch" placeholder="Search Update..." onkeyup="filterTable()" />
+    <button class="dynamic-button" onclick="searchFromCell(this)"><i class="fas fa-close"></i></button>
+    </div>
+ 
+  <table class="post-table">
+    <thead>
+        <tr>
+           <th>Yojna/Schemes</th>
+           <th>State/Central</th>
         </tr>
-      
-      <tr>
-        <td>09/12/2024</td>
-          <td><a href="/schecmes-trayal/">Schecmes Trayal</a></td>
-          <td>Madhya Pradesh</td>
+    </thead>
+    <tbody id="tableBody">
+        
+        <tr>
+            <td><a href="/cm-kisan-khadya-beej-anudan/">CM Kisan Khadya Beej Anudan</a></td>
+            <td>Madhya Pradesh</td>
         </tr>
+        
+        <tr>
+            <td><a href="/schecmes-trayal/">Schecmes Trayal</a></td>
+            <td>Madhya Pradesh</td>
+        </tr>
+        
+  
+    </tbody>
+  </table>
+  
+  <script>
+  function filterTable() {
       
-  </tbody>
-</table>
-<div class="pagination">
-  <div class="pagination">
-    
+      const searchInput = document.getElementById("textSearch").value.toLowerCase();
+      const tableBody = document.getElementById("tableBody");
+      const rows = tableBody.getElementsByTagName("tr");
   
-    
-    
-    <strong>1</strong>
-    
-    
+      
+      for (let i = 0; i < rows.length; i++) {
+          const cells = rows[i].getElementsByTagName("td");
+          let match = false;
   
-    
-  </div>
+          
+          for (let j = 0; j < cells.length; j++) {
+              if (cells[j].textContent.toLowerCase().includes(searchInput)) {
+                  match = true;
+                  break;
+              }
+          }
   
-  </div>
-
+          
+          rows[i].style.display = match ? "" : "none";
+      }
+  }
+  
+  function searchFromCell(cell) {
+      
+      const cellText = cell.textContent.trim();
+      const searchInput = document.getElementById("textSearch");
+  
+      
+      searchInput.value = cellText;
+  
+      
+      filterTable();
+  }
+  </script>
+  
     
 
 

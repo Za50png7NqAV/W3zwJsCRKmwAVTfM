@@ -13,22 +13,21 @@
 <table class="post-table">
   <thead>
       <tr>
-          <th>Latest</th>
-          <th>Post Date</th>
-          <th>Detail</th>
+         
+          <th>Download Latest Admitcard</th>
+        
       </tr>
   </thead>
-  <tbody>
-      {{ range .Pages }}
+  <tbody> 
+
+
+
+      {{ range (where  .Site.RegularPages ".Params.admitcard" "yes") }}
       <tr>
-          <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-          <td>{{ .Date.Format "02/01/2006" }}</td>
-          <td><a href="{{ .RelPermalink }}">Click here</a></td>
-      </tr>
+          <td><a href="{{ .RelPermalink }}">{{ .Params.admitcardName }}</a></td>
+        
+  </tr>
       {{ end }}
   </tbody>
 </table>
-
-<div class="pagination">
-  {{ partial "imp-codes/paginator.html" . }}
   </div>

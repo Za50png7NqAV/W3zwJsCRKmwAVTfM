@@ -1,15 +1,11 @@
+
 {{ define "main" }}
+<h2 style="text-align:center;" > {{ .Title }} </h2>
+    <!-- Header Partial -->
+    {{ partial "list-update/admitcard-list.html" . }}
 
-<h1>{{ .Title }}</h1>
-
-<!-- Header Partial -->
-{{ $admitcardPages := where .Site.RegularPages ".Params.post-type" "admitcard" }}
-{{ $paginator := .Paginate $admitcardPages }}
-{{ partial "list-update/admitcard-list.html" $paginator }}
-
-<!-- Content Section -->
-<div class="content">
-    {{ .Content }}
-</div>
-
+    <!-- Content Section -->
+    <div class="content">
+        {{ .Content }}
+    </div>
 {{ end }}
