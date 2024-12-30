@@ -124,20 +124,20 @@
       .grid-container {
         grid-template-columns: repeat(3, 1fr); /* Keep 3 columns on smaller screens */
     max-width: var(--card-width);
-    gap: 2px;  
+    gap: 10px 2px;  
     
       }
       .card-header {
         font-size: small;
       }
       :root {
-        --font-size: medium;
+        --font-size: smaller;
         --card-width: 500px; /* Slightly smaller card width */
       }
     }
     @media (max-width: 600px) {
         .card-content {
-        font-size:small;
+        font-size:smaller;
         }
     }
   </style>
@@ -218,7 +218,7 @@
 </div>
 
 <div class="card">
-  <div class="card-header"> Cerficate verification</div>
+  <div class="card-header"> Certificates </div>
   <div class="card-content">
     {{ partial "homelist/certificate.html" . }}
   </div>

@@ -13,7 +13,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                background-color: #f0f0f0;
+                
                 
             }
 
@@ -96,16 +96,14 @@
 
 
            .post-container {
-    max-width: 400px;
-
-    background: white;
+    max-width: 600px;
+  background: white;
     padding: 10px;
     margin: auto;
     overflow: hidden; /* Prevents text from overflowing the container */
     word-wrap: break-word; /* Breaks long words to the next line */
     white-space: normal; /* Ensures the text wraps to the next line */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     margin-bottom: 10px;
 }
             .main-post {
@@ -115,6 +113,7 @@
                 max-width: 400px;
                 border-radius: 8px;
                 position: relative;
+                margin: auto;
                 
 
             }
@@ -166,9 +165,6 @@ border-bottom-left-radius: 6px; }
                 opacity: 1;
             }
             .title {
-
-     
-
                 text-align: center;
                 font-size: 1.4em;
                 font-weight: bold;
@@ -226,7 +222,6 @@ border-bottom-left-radius: 6px; }
                 border: none;
                 cursor: pointer;
                 font-size: 11px;
-              
                 padding: 0 5px;
                 transition: transform 0.2s;
             }
@@ -329,7 +324,6 @@ font-size: small;}
     gap: 20px; /* Optional: Adjust spacing between sections */
   }
 .font-container {
-   
     max-width: 400px;
     display: flex;
     flex-wrap: wrap; /* Enable wrapping */
@@ -387,20 +381,20 @@ font-size: small;}
   
 @media (max-width: 768px) { /* टैबलेट और छोटे स्क्रीन के लिए */
     .post-container {
-        width: 90%; /* स्क्रीन की चौड़ाई का 90% */
+        max-width: 500px; /* स्क्रीन की चौड़ाई का 90% */
     }
 }
 
 @media (max-width: 480px) { /* मोबाइल स्क्रीन के लिए */
     .post-container {
-        width: 100%; /* पूरी स्क्रीन की चौड़ाई */
+        max-width: 400px; /* पूरी स्क्रीन की चौड़ाई */
     }
 }
 
         </style>
     </head>
     <body>
-        {{ range first 50 (where .Site.RegularPages ".Params.baner" "yes") }}
+        {{ range first 20 (where .Site.RegularPages ".Params.baner" "yes") }}
 
 <div class="post-container" data-post-id="{{ .File.UniqueID }}">
 
