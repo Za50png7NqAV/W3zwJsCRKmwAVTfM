@@ -1,0 +1,60 @@
+{{ $allPages := .Site.RegularPages.ByDate.Reverse }} <!-- सभी पेज लोड करें -->
+{{ $filteredPages := slice }} <!-- फ़िल्टर किए गए पेजों की सूची -->
+
+<!-- पेजेस फ़िल्टर करें -->
+{{ range $allPages }}
+    {{ $toDate := .Params.to_date | default "" }}
+    {{ $fromDate := .Params.from_date | default "" }}
+
+    {{ if and (ne $toDate "") (ne $fromDate "") }} <!-- केवल वैध डेटा -->
+        {{ $filteredPages = $filteredPages | append . }}
+    {{ end }}
+{{ end }}
+
+{{ $currentDate := now }} <!-- वर्तमान दिनांक -->
+{{ $currentExams := slice }} <!-- वर्तमान परीक्षाओं की सूची -->
+
+<!-- वर्तमान परीक्षाओं को फ़िल्टर करें -->
+{{ range $filteredPages }}
+    {{ $toDate := .Params.to_date | default "" }}
+    {{ $fromDate := .Params.from_date | default "" }}
+
+    {{ if and (ne $toDate "") (ne $fromDate "") }}
+        {{ $toDateParsed := time $toDate | default nil }}
+        {{ $fromDateParsed := time $fromDate | default nil }}
+
+        {{ if and (not (eq $toDateParsed nil)) (not (eq $fromDateParsed nil)) }}
+            {{ if and (ge $toDateParsed $currentDate) (le $fromDateParsed $currentDate) }}
+                {{ $currentExams = $currentExams | append . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+<!-- तालिका बनाएं -->
+<h2>Current Exams</h2>
+<table id="current-exams">
+    <thead>
+        <tr>
+            <th style="background-color: #4CAF50;">Exam Name</th>
+            <th style="background-color: #4CAF50;">From Date</th>
+            <th style="background-color: #4CAF50;">To Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ if gt (len $currentExams) 0 }}
+            {{ range $currentExams }}
+            <tr>
+                <td><a href="{{ .Permalink }}" class="post-link">{{ .Title }}</a></td>
+                <td>{{ .Params.from_date }}</td>
+                <td>{{ .Params.to_date }}</td>
+            </tr>
+            {{ end }}
+        {{ else }}
+        <tr>
+            <td colspan="3" style="text-align: center; color: red;">No Current Exams Available</td>
+        </tr>
+        {{ end }}
+        
+    </tbody>
+</table>

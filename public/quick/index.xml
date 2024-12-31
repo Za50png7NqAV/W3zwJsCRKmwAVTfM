@@ -13,21 +13,21 @@
       <link>http://localhost:1313/quick/exam-date/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
       <guid>http://localhost:1313/quick/exam-date/</guid>
-      <description></description>
+      <description>&#xD;Exam Date Reminder : Yojna Portal&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>Last Date Reminder</title>
       <link>http://localhost:1313/quick/last-date/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
       <guid>http://localhost:1313/quick/last-date/</guid>
       <description></description>
     </item>
     <item>
-      <title></title>
+      <title>search anything</title>
       <link>http://localhost:1313/quick/search/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
       <guid>http://localhost:1313/quick/search/</guid>
-      <description></description>
+      <description>&#xD;Search : Yojna Portal&#xD;</description>
     </item>
   </channel>
 </rss>
