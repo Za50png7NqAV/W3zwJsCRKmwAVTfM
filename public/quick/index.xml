@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 08 Nov 2024 19:23:23 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/quick/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>Exam Date Reminder</title>
       <link>http://localhost:1313/quick/exam-date/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
       <guid>http://localhost:1313/quick/exam-date/</guid>
-      <description>&#xD;Exam Date Reminder : Yojna Portal&#xD;</description>
+      <description></description>
     </item>
     <item>
       <title>Last Date Reminder</title>
@@ -23,7 +23,7 @@
       <description></description>
     </item>
     <item>
-      <title>search anything</title>
+      <title>Search Anything</title>
       <link>http://localhost:1313/quick/search/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
       <guid>http://localhost:1313/quick/search/</guid>
