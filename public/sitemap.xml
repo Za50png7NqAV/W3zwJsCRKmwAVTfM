@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/student/mp/gaon-ki-beti-schorlarship/</loc>
-    <lastmod>2025-01-02T10:05:37+05:30</lastmod>
+    <loc>http://localhost:1313/student/2025/nvs-class-6th/</loc>
+    <lastmod>2025-01-02T14:02:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/student/</loc>
-    <lastmod>2025-01-02T10:05:37+05:30</lastmod>
+    <lastmod>2025-01-02T14:02:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-02T14:02:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/student/mp/gaon-ki-beti-schorlarship/</loc>
     <lastmod>2025-01-02T10:05:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
