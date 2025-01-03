@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf Form , Notification, Pdf Form Download</title>
+</head>
+<body>
+    <script>
+        // Get the current URL
+        const currentURL = window.location.href;
+
+        // Base URL for redirection
+        const redirectionBaseURL = "https://pdf.v2kcomputers.com";
+
+        // Check if the URL contains a query parameter
+        if (currentURL.includes('?url=')) {
+            // Extract the query parameter and append it to the redirection base URL
+            const queryString = window.location.search;
+            window.location.href = `${redirectionBaseURL}${queryString}`;
+        } else {
+            // Redirect to the base iframe URL without any parameters
+            window.location.href = redirectionBaseURL;
+        }
+    </script>
+</body>
+</html>
