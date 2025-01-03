@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/</loc>
+    <lastmod>2025-01-03T19:42:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc/ssc-gd-constable-2024/</loc>
+    <lastmod>2025-01-03T19:42:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-03T19:42:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/card/</loc>
     <lastmod>2025-01-02T18:59:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/card/sambal-card-apply-download/</loc>
-    <lastmod>2025-01-02T18:59:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-02T18:59:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -84,11 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/card/voter-card-download/</loc>
     <lastmod>2024-12-30T18:17:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2024-12-29T10:09:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
