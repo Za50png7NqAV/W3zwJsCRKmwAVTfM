@@ -3,16 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2025-01-03T19:42:15+05:30</lastmod>
+    <lastmod>2025-01-04T19:40:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc/ssc-gd-constable-2024/</loc>
-    <lastmod>2025-01-03T19:42:15+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mp/mahila_parvekshak_2024/</loc>
+    <lastmod>2025-01-04T19:40:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-04T19:40:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc/ssc-gd-constable-2024/</loc>
     <lastmod>2025-01-03T19:42:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
