@@ -2,7 +2,7 @@ name: Auto Update Hugo Site
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # Run every 10 minutes
+    - cron: '0 0 * * *' # Run every midnight
   workflow_dispatch: # Allow manual trigger as well
 
 jobs:
