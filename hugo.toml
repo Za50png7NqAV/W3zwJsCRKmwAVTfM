@@ -1,8 +1,0 @@
-baseURL = 'https://yojnaportal.github.io/yojnaportalweb/'
-languageCode = 'en-us'
-title = 'YOJNA PORTAL'
-theme = 'my-theme'
-
-# Add taxonomies
-[taxonomies]
-  category = "categories"

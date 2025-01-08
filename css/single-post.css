@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+
+  }
+  
+  .single-post-wrapper {
+    max-width: 900px;
+    margin: 20px auto;
+   
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .single-post-header {
+   
+    margin-bottom: 20px;
+    margin-left:10%;
+  }
+
+  .single-post-header h1 {
+
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .post-meta {
+    color: #0e0101;
+    font-size: 0.9rem;
+    
+  }
+   .Post-Date {
+  font-size:small;
+  }
+  .single-post-content {
+    margin-top: 10px;
+    
+  }
+/* Custom breadcrumb styling */
+
+
+.breadcrumbNav {
+padding:0;
+
+}
+.breadcrumb {
+list-style: none;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+
+font-size: small;
+color: #f30909;
+
+}
+
+.breadcrumb li {
+display: inline-flex;
+align-items: left;
+
+}
+  
+.breadcrumb li + li::before {
+
+margin: 0 8px;
+color: #f36a0f; /* Separator color */
+font-weight: bold;
+}
+
+.breadcrumb li a {
+color: #07011a; /* Link color */
+text-decoration: none;
+transition: color 0.2s;
+}
+
+.breadcrumb li a:hover {
+text-decoration: underline;
+color: #f7560b; /* Link hover color */
+}
+
+.breadcrumb li:last-child {
+color: #f5900d; /* Last item color (current page) */
+font-weight: bold;
+}
+
+
+ 
+
+  @media (max-width: 768px) {
+    .single-post-wrapper {
+      max-width:900px;
+      padding: 5px;
+    }
+
+    .single-post-header h1 {
+      font-size: 1.5rem;
+    }
+  }

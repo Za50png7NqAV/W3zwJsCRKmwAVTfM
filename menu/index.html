@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js\baseof.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-GWSRPE5DVE');
+    </script>
+   
+    <style>
+        body {
+    height: 100%;
+    padding: 0;
+    margin:0;
+}
+  
+    .main-container {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        
+        padding: 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      
+        align-items: center;
+        justify-content: center;
+        word-wrap: break-word !important;
+    }
+    
+    @media (max-width: 768px) {
+        .main-container {
+          width: 100%;
+        }
+          
+        }
+
+   
+ 
+     
+   
+    </style>
+</head> 
+<body>
+    <div class="main-container">
+       
+        
+        <head>
+    
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
+
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="Yojna, Government Schemes, Yojna News, Sarkari Yojna, Yojna Updates, Latest Yojna 2024">
+<link rel="canonical" href="https://www.yojnaportal.com/">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="rating" content="general" />
+<meta http-equiv="content-language" content="en-hi" />
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yojnaportal.com/">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+    <style>
+  
+
+        header {
+            background-color: #f8f9fa;  
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+            border-bottom: 3px solid #fff;  
+        }
+     
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+     
+        .logo img {
+            height: 70px;  
+            max-width: 100%;
+        }
+     
+        .portal-name h1 {
+            font-size: 28px;
+            color: #007bff;  
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .sidenav {
+   
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 9;
+            top: 0;
+            left: 0;
+            background-color: #f7f7f7;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 5px;
+            box-shadow: 1px 5px 8px;
+          }
+          
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+          
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+          
+          .sidenav a:hover {
+            color: red;
+          }
+          
+          .sidenav .closebtn {
+            position: absolute;
+            top: 35px;
+           left: 10px;
+            font-size: 20px;
+
+            
+          }
+          
+          #main-btn {
+            transition: margin-left .5s;
+            padding: 16px;
+          }
+          
+          @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+          }
+
+     
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+              
+            }
+            
+            .logo img {
+                height: 60px;
+            }
+            
+            .portal-name h1 {
+                font-size: 24px;
+            }
+            #main-btn {display:none;}
+        }
+     </style>
+</head>
+
+
+
+
+
+
+<header>
+   <div class="header-container">
+       <div class="logo">
+           <a href="/">
+               <img id="logo" alt="Yojna Portal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/>
+           </a>
+       </div>
+       <div class="portal-name">
+        
+       </div>
+       <div id="main-btn">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>
+         </div>
+   </div>
+</header>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fas fa-arrow-left'></i></a>
+    <iframe src="https://www.yojnaportal.com//quick/search/" width="100%" height="750" style="border:none;"></iframe>
+  </div>
+  
+ 
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "380px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(function(error) {
+        console.error('Service Worker registration failed:', error);
+      });
+  }
+</script>
+ 
+       
+        
+     
+        
+        <head>
+    <link rel="stylesheet" href=" \css\navbar.css">
+    <script src="\js\navbar.js"></script>
+    <style> </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
+        <div class="scroll-menu" id="scrollMenu">
+           
+ <a href="/" class="menu-item active"> <i class="fas fa-home"> </i> Home</a>
+ 
+ <a href="/search/" class="menu-item" > <i class="fas fa-search"> </i> Search </a>
+ <a href="/menu/" class="menu-item"> <i class="fas fa-menu"></i> Menu</a>
+ <a href="https://www.yojnaportal.com/latest-update/" class="menu-item"> Latest Update</a>
+           
+            <a href="/update/" class="menu-item" >Update</a>
+            <a href="/quick/last-date/" class="menu-item">Last Dates</a>
+            <a href="/quick/exam-date/" class="menu-item" >Exam Date</a>
+            <a href="/latest-schemes/" class="menu-item">Latest Schemes</a>
+            <a href="/upcoming/" class="menu-item">Upcoming</a>
+            
+            <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
+            <a href="https://tools.v2kcomputers.com/" class="menu-item">Advance Tools</a>
+            <a href="/admitcard/" class="menu-item">Admit Card</a>
+            <a href="/results/" class="menu-item">Results</a>
+            <span  style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i> Search</span>
+            <a href="https://www.yojnaportal.com/menu/" class="menu-item"> &#9776; Menu</a>
+           
+        </div>
+        <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
+    </div>
+
+
+</body>
+
+
+
+      
+        
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        
+        .banner {
+            width: 100%;
+            height: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .diagonal-slice {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(45deg, #4CAF50, #2E7D32);
+            clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        }
+
+        .banner-text {
+            color: white;
+            font-size: 3.5em;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
+            letter-spacing: 2px;
+            margin: 0;
+            padding: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+         
+     
+
+         
+        @media (max-width: 1200px) {
+            .banner-text {
+                font-size: 3em;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .banner-text {
+                font-size: 2.5em;
+            }
+            .diagonal-slice {
+                width: 75%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 2em;
+            }
+            .diagonal-slice {
+                width: 80%;
+                clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .banner-text {
+                font-size: 1.5em;
+            }
+            .diagonal-slice {
+                width: 85%;
+                clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+         
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .diagonal-slice {
+            animation: slideIn 1s ease-out;
+        }
+
+         
+        .banner-button {
+            position: absolute;
+          margin:auto;
+width: 230px;
+            padding: 5px 20px;
+font-size:13px;
+text-align:center;
+            background-color: white;
+            color: #4CAF50;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .banner-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="diagonal-slice">
+        <a href="https://yojnaportal.com/whatsapp/" class="banner-button" target="_blank">Join WhatsApp Channel</a>
+        </div>
+    </div>
+
+</body>
+</html>
+        <div id="sidenav-main">
+        
+        
+
+Yojna Portal Menu
+
+
+    
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yojna Portal : Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .link-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .upcoming-box {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 10%;
+            text-align: center;
+            position: relative;
+            aspect-ratio: 1.2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .upcoming-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .star-container {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .star {
+            width: 50%;
+            height: auto;
+        }
+
+        .title {
+            font-family: serif;
+            font-size: 1em;
+            font-weight: bold;
+            color: #333;
+            margin-top: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .upcoming-box {
+                font-size: 0.9rem;
+                padding: 8%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .upcoming-box {
+                font-size: 0.8rem;
+                padding: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <a href="/search/" class="upcoming-box">
+            <div class="star-container">
+                <svg class="star" viewBox="0 0 24 24" fill="green">
+                    <path fill-rule="evenodd" d="M9 7V2.221a2 2 0 0 0-.5.365L4.586 6.5a2 2 0 0 0-.365.5H9Zm2 0V2h7a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9h5a2 2 0 0 0 2-2Zm.5 5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm0 5c.47 0 .917-.092 1.326-.26l1.967 1.967a1 1 0 0 0 1.414-1.414l-1.817-1.818A3.5 3.5 0 1 0 11.5 17Z" clip-rule="evenodd"/>
+                </svg>
+            </div>
+            <div class="title">Search</div>
+        </a>
+        
+        <a href="/latest-update/" class="upcoming-box">
+            <div class="star-container">
+                <svg class="star" viewBox="0 0 24 24" fill="blue">
+                    <path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/>
+                </svg>
+            </div>
+            <div class="title">Latest Update</div>
+        </a>
+
+
+        <a href="/upcoming/" class="upcoming-box">
+            <div class="star-container">
+                <svg class="star" viewBox="0 0 24 24" fill="red">
+  <path d="M17.133 12.632v-1.8a5.407 5.407 0 0 0-4.154-5.262.955.955 0 0 0 .021-.106V3.1a1 1 0 0 0-2 0v2.364a.933.933 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C6.867 15.018 5 15.614 5 16.807 5 17.4 5 18 5.538 18h12.924C19 18 19 17.4 19 16.807c0-1.193-1.867-1.789-1.867-4.175Zm-13.267-.8a1 1 0 0 1-1-1 9.424 9.424 0 0 1 2.517-6.391A1.001 1.001 0 1 1 6.854 5.8a7.43 7.43 0 0 0-1.988 5.037 1 1 0 0 1-1 .995Zm16.268 0a1 1 0 0 1-1-1A7.431 7.431 0 0 0 17.146 5.8a1 1 0 0 1 1.471-1.354 9.424 9.424 0 0 1 2.517 6.391 1 1 0 0 1-1 .995ZM8.823 19a3.453 3.453 0 0 0 6.354 0H8.823Z"/>
+</svg>
+
+            </div>
+            <div class="title">Upcoming</div>
+        </a>
+
+        <a href="/latest-schemes/" class="upcoming-box">
+            <div class="star-container">
+             <svg class="star" viewBox="0 0 24 24" fill="red">
+  <path fill-rule="evenodd" d="M11.644 3.066a1 1 0 0 1 .712 0l7 2.666A1 1 0 0 1 20 6.68a17.694 17.694 0 0 1-2.023 7.98 17.406 17.406 0 0 1-5.402 6.158 1 1 0 0 1-1.15 0 17.405 17.405 0 0 1-5.403-6.157A17.695 17.695 0 0 1 4 6.68a1 1 0 0 1 .644-.949l7-2.666Zm4.014 7.187a1 1 0 0 0-1.316-1.506l-3.296 2.884-.839-.838a1 1 0 0 0-1.414 1.414l1.5 1.5a1 1 0 0 0 1.366.046l4-3.5Z" clip-rule="evenodd"/>
+</svg>
+
+            </div>
+            <div class="title">All Schemes</div>
+        </a>
+      
+ <a href="#" class="upcoming-box">
+            <div class="star-container">
+               <svg class="star" viewBox="0 0 24 24" fill="darkblue" >
+  <path fill-rule="evenodd" d="M6 6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3H5a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2H6Zm9 0a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3h-1a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3Z" clip-rule="evenodd"/>
+</svg>
+
+            </div>
+            <div class="title">Quote</div>
+        </a>
+     
+       <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="upcoming-box">
+            <div class="star-container">
+    
+<svg class="star" viewBox="0 0 24 24" fill="darkblue">
+  <path fill-rule="evenodd" d="M8 3a2 2 0 0 0-2 2v3h12V5a2 2 0 0 0-2-2H8Zm-3 7a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h1v-4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v4h1a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2H5Zm4 11a1 1 0 0 1-1-1v-4h8v4a1 1 0 0 1-1 1H9Z" clip-rule="evenodd"/>
+</svg>
+    </div>
+            <div class="title">pdf-forms</div>
+        </a>
+
+  <a href="https://tools.v2kcomputers.com/p/home.html" class="upcoming-box">
+            <div class="star-container">
+    
+<svg class="star" viewBox="0 0 24 24" fill="orange">
+  <path fill-rule="evenodd" d="M11.32 6.176H5c-1.105 0-2 .949-2 2.118v10.588C3 20.052 3.895 21 5 21h11c1.105 0 2-.948 2-2.118v-7.75l-3.914 4.144A2.46 2.46 0 0 1 12.81 16l-2.681.568c-1.75.37-3.292-1.263-2.942-3.115l.536-2.839c.097-.512.335-.983.684-1.352l2.914-3.086Z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M19.846 4.318a2.148 2.148 0 0 0-.437-.692 2.014 2.014 0 0 0-.654-.463 1.92 1.92 0 0 0-1.544 0 2.014 2.014 0 0 0-.654.463l-.546.578 2.852 3.02.546-.579a2.14 2.14 0 0 0 .437-.692 2.244 2.244 0 0 0 0-1.635ZM17.45 8.721 14.597 5.7 9.82 10.76a.54.54 0 0 0-.137.27l-.536 2.84c-.07.37.239.696.588.622l2.682-.567a.492.492 0 0 0 .255-.145l4.778-5.06Z" clip-rule="evenodd"/>
+</svg>
+
+
+    </div>
+            <div class="title">Advance Tools</div>
+        </a>
+
+  <a href="/latest-jobs/" class="upcoming-box">
+            <div class="star-container">
+    
+<svg class="star" viewBox="0 0 24 24" fill="red">
+
+  <path d="M21.718 12c0-1.429-1.339-2.681-3.467-3.5.029-.18.077-.37.1-.545.217-2.058-.273-3.543-1.379-4.182-1.235-.714-2.983-.186-4.751 1.239C10.45 3.589 8.7 3.061 7.468 3.773c-1.107.639-1.6 2.124-1.379 4.182.018.175.067.365.095.545-2.127.819-3.466 2.071-3.466 3.5 0 1.429 1.339 2.681 3.466 3.5-.028.18-.077.37-.095.545-.218 2.058.272 3.543 1.379 4.182.376.213.803.322 1.235.316a5.987 5.987 0 0 0 3.514-1.56 5.992 5.992 0 0 0 3.515 1.56 2.44 2.44 0 0 0 1.236-.316c1.106-.639 1.6-2.124 1.379-4.182-.019-.175-.067-.365-.1-.545 2.132-.819 3.471-2.071 3.471-3.5Zm-6.01-7.548a1.5 1.5 0 0 1 .76.187c.733.424 1.055 1.593.884 3.212-.012.106-.043.222-.058.33-.841-.243-1.7-.418-2.57-.523a16.165 16.165 0 0 0-1.747-1.972 4.9 4.9 0 0 1 2.731-1.234Zm-7.917 8.781c.172.34.335.68.529 1.017.194.337.395.656.6.969a14.09 14.09 0 0 1-1.607-.376 14.38 14.38 0 0 1 .478-1.61Zm-.479-4.076a14.085 14.085 0 0 1 1.607-.376c-.205.313-.405.634-.6.969-.195.335-.357.677-.529 1.017-.19-.527-.35-1.064-.478-1.61ZM8.3 12a19.32 19.32 0 0 1 .888-1.75c.33-.568.69-1.118 1.076-1.65.619-.061 1.27-.1 1.954-.1.684 0 1.333.035 1.952.1a19.63 19.63 0 0 1 1.079 1.654c.325.567.621 1.15.887 1.746a18.869 18.869 0 0 1-1.953 3.403 19.218 19.218 0 0 1-3.931 0 20.169 20.169 0 0 1-1.066-1.653A19.324 19.324 0 0 1 8.3 12Zm7.816 2.25c.2-.337.358-.677.53-1.017.191.527.35 1.065.478 1.611a14.48 14.48 0 0 1-1.607.376c.202-.314.404-.635.597-.97h.002Zm.53-3.483c-.172-.34-.335-.68-.53-1.017a20.214 20.214 0 0 0-.6-.97c.542.095 1.078.22 1.606.376a14.111 14.111 0 0 1-.478 1.611h.002ZM12.217 6.34c.4.375.777.773 1.13 1.193-.37-.02-.746-.033-1.129-.033s-.76.013-1.131.033c.353-.42.73-.817 1.13-1.193Zm-4.249-1.7a1.5 1.5 0 0 1 .76-.187 4.9 4.9 0 0 1 2.729 1.233A16.253 16.253 0 0 0 9.71 7.658c-.87.105-1.728.28-2.569.524-.015-.109-.047-.225-.058-.331-.171-1.619.151-2.787.885-3.211ZM3.718 12c0-.9.974-1.83 2.645-2.506.218.857.504 1.695.856 2.506-.352.811-.638 1.65-.856 2.506C4.692 13.83 3.718 12.9 3.718 12Zm4.25 7.361c-.734-.423-1.056-1.593-.885-3.212.011-.106.043-.222.058-.331.84.243 1.697.418 2.564.524a16.37 16.37 0 0 0 1.757 1.982c-1.421 1.109-2.714 1.488-3.494 1.037Zm3.11-2.895c.374.021.753.034 1.14.034.387 0 .765-.013 1.139-.034a14.4 14.4 0 0 1-1.14 1.215 14.248 14.248 0 0 1-1.139-1.215Zm5.39 2.895c-.782.451-2.075.072-3.5-1.038a16.248 16.248 0 0 0 1.757-1.981 16.41 16.41 0 0 0 2.565-.523c.015.108.046.224.058.33.175 1.619-.148 2.789-.88 3.212Zm1.6-4.854A16.563 16.563 0 0 0 17.216 12c.352-.812.638-1.65.856-2.507 1.671.677 2.646 1.607 2.646 2.507 0 .9-.975 1.83-2.646 2.507h-.004Z"/>
+  <path d="M12.215 13.773a1.792 1.792 0 1 0-1.786-1.8v.006a1.787 1.787 0 0 0 1.786 1.794Z"/>
+</svg>
+
+    </div>
+            <div class="title">Latest Jobs</div>
+        </a>
+
+  <a href="/quick/exam-date/" class="upcoming-box">
+            <div class="star-container">
+    
+<svg class="star" viewBox="0 0 24 24" fill="lightblue">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M3 15v3c0 .5523.44772 1 1 1h9.5M3 15v-4m0 4h9m-9-4V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v5H3Zm5 0v8m4-8v8m7.0999-1.0999L21 16m0 0-1.9001-1.9001M21 16h-5"/>
+</svg>
+
+    </div>
+            <div class="title">Exam Date</div>
+        </a>
+
+      </div>
+</body>
+</html>
+
+
+    
+    <div class="content">
+        
+    </div>
+
+        
+
+<head>
+<style>
+  
+  
+  
+  table.gsc-search-box td, .gsc-clear-button {display:none;}
+</style></head>
+<script>
+    
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+  
+        
+        const baseHref = this.getAttribute('href');
+        
+        const queryParam = this.getAttribute('data-search');
+   
+        
+        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
+        window.history.pushState({}, '', newUrl);
+  
+        
+        window.location.reload();
+      });
+    });
+  </script>
+      </div> 
+      <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+</script>
+<div id="pse">
+<div class="gcse-search"></div> </div>
+
+<!DOCTYPE html>
+<head>
+    <style>
+        .bottom-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .bottom-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0.1rem 0;
+            margin: 0;
+        }
+        
+        .bottom-nav ul li {
+            text-align: center;
+        }
+        
+        .bottom-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+            padding: 0.6rem 2.4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .bottom-nav ul li a i {
+            font-size: 1.2rem;
+        }
+        
+        .bottom-nav ul li a:hover,
+        .bottom-nav ul li a.active {
+            background-color: #f4b400;
+            color: #333;
+        }
+        
+       @media (max-width: 600px) {
+    .bottom-nav {
+        display: block;
+    }
+    .bottom-nav ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .bottom-nav ul li a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .bottom-nav ul li a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .bottom-nav {
+        display: none;
+    }
+}
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bottom-nav">
+        <ul>
+            <li>
+                <a href="/" class="active1">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/quick/last-date/">
+                    <i class="fas fa-calendar-alt"></i>
+                    LastDate
+                </a>
+            </li>
+            <li>
+                <a href="#">  <span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"> <i class="fas fa-search"></i> </span>
+                   
+                    Search
+                </a>
+            </li>
+            <li>
+                <a href="/update/">
+                    <i class="fas fa-book"></i>
+                    Update
+                </a>
+            </li>
+
+            <li>
+                <a href="/menu/">
+                    <i class="fas fa-bars"></i>
+                    Menu
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentLocation = location.href;
+            const menuItems = document.querySelectorAll('.bottom-nav ul li a');
+            
+            menuItems.forEach(item => {
+                if (item.href === currentLocation) {
+                    item.classList.add('active');
+                }
+            });
+            
+            menuItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    menuItems.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/g/f9063374b04d/api.js?onload=fjGVd3&render=explicit"></script>
+    <style>
+      
+      
+        #footer {
+            flex-shrink: 0;
+            background-color: rgb(36, 35, 35);
+            padding:20px 0 0 0;
+            bottom: 0px;
+           
+           
+        }
+
+        .footer-content {
+             margin: 0 auto;
+            text-align: center;
+        }
+
+        .social-media a {
+            color: #f7630e;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-media a:hover { color:rgb(244, 180, 0);}
+        nav {color:#f4b400;}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 13px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+        .goog-te-gadget-simple {
+            background-color: #FFD700; }
+    </style>
+</head>
+
+   
+
+    <footer id="footer">
+        
+        <div class="footer-content">
+            <div style="color:#f4b400;">|| Follow us on Social Media ||</div>
+            <div class="social-media">
+                <a href="https://bit.ly/SarkariJankari" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://telegram.me/yojnaportal" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://youtube.com/@yojnaportal" target="_blank" aria-label="Youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/yojnaportalofficial" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/yojnaportal" target="_blank" aria-label="facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://x.com/yojnaportal" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-twitter"></i>
+                </a>
+               
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.yojnaportal.com/">Home</a></li> |
+                    <li><a href="/about/">About Us</a></li> |
+                    <li><a href="/contact/">Contact Us</a></li> |
+                    <li><a href="/privacy-policy/">Privacy Policy</a></li> |
+                    <li><a href="/disclaimer/">Disclaimer</a></li>
+                </ul>
+            </nav>
+            <div id="google_translate_element"></div>
+
+           <div id="copyright" style="color:#f7630e"> ©️ All Copyright <a href="https://yojnaportal.com" style="text-decoration:none; color:white;"> www.yojnaportal.com </a> | Yojna Portal </div>
+         
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+            <path fill="#f4b400" fill-opacity="1" d="M0,224L60,240C120,256,240,288,360,288C480,288,600,256,720,224C840,192,960,160,1080,144C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        
+          </svg>
+    </footer>
+  
+
+<script> 
+    if (someCondition) {
+        
+        var script = document.createElement('script');
+        script.src = 'https://challenges.cloudflare.com/turnstile/v0/g/f9063374b04d/api.js?onload=fjGVd3&render=explicit';
+        document.body.appendChild(script);
+      }
+      
+</script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'en,hi,mr,gu', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</html>
+
+    </div>
+    
+        
+       
+       
+        
+   
+     
+
+      
+</body>
+
+
+     
+
+
+
+</html>

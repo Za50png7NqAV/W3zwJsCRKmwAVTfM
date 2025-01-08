@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+           font-family: 'Roboto', sans-serif;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mobile-search-container {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            
+        }
+
+        .mobile-search-input-container {
+            display: flex;
+            position: relative;
+        }
+
+        .mobile-search-input {
+            flex-grow: 1;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px 0 0 8px;
+            font-size: 16px;
+            padding-left: 40px;
+        }
+
+        .reset-btn {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 20px;
+            padding:0 3px;
+            color: #000;
+        }
+        .reset-btn:hover { border-radius: 50%;
+      background-color: red;
+       color: white;
+    }
+        .mobile-search-button {
+            padding: 12px 15px;
+            background: #f06508;
+            color: #fff;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+        }
+        .mobile-search-button:hover {
+        background-color: #f4b400;
+        color:black;
+    }
+        .suggestions-list {
+            background: white;
+            border-radius: 8px;
+            margin-top: 15px;
+            max-height: 420px;
+          max-width: 300px;
+            overflow-y: scroll;
+        }
+
+        .content, .suggestion-item {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            font-size: 16px;
+            max-height: 50px;
+            overflow: hidden ;
+
+            color: black;
+            transition: background-color 0.3s ease;
+        }
+
+        .suggestion-item:hover {
+            background-color: #f4f4f4;
+            color: green;
+        }
+
+        .suggestion-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .hidden {display: none;
+        font-size: 3px;}
+        .mobile-submit {
+            background: #fff;
+            border-radius: 5px;
+            width: 100%;
+            color: #080303;
+            padding: 10px 50px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            
+        }
+        .mobile-submit:hover {
+            background-color: #f4b400;
+            color:black;
+            
+        }
+  
+         
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        #loader div {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+         
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="loader">
+        <div></div>
+    </div>
+    <div class="center">
+        <div class="mobile-search-container">
+            <form id="mobileSearchForm" method="post" action="" name="search-form">
+                <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
+                <input type="hidden" name="use-in" class="Advance" value="Sidebar">
+                <div class="mobile-search-input-container">
+                    <input 
+                        type="text" 
+                        name="Search" 
+                        id="mobileQuery" 
+                        onkeyup="filterSuggestions()" 
+                        class="mobile-search-input" 
+                        placeholder="Search Yojna Portal"
+                        required 
+                    >
+                    <span class="reset-btn" onclick="resetSearch()">&times;</span>
+                    <button type="submit" class="mobile-search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div id="suggestionsList" class="suggestions-list">
+                    
+                   <a href="/scheme/mp/rojgar-panjiyan/" target="_blank"> <div class="suggestion-item" data-href="/scheme/mp/rojgar-panjiyan/">   MP Rojgar Panjiyan  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/railway/railway-scr-apprentice-jan25/" target="_blank"> <div class="suggestion-item" data-href="/jobs/railway/railway-scr-apprentice-jan25/">   RRC West Central Railway SCR Act Apprentices 2025  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/2025/cbse-jr-assistant-jan25/" target="_blank"> <div class="suggestion-item" data-href="/jobs/2025/cbse-jr-assistant-jan25/">   CBSE Board Superintendent &amp; Junior Assistant Recruitment 2025  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/mp/mppsc-pre-2025/" target="_blank"> <div class="suggestion-item" data-href="/jobs/mp/mppsc-pre-2025/">   MPPSC State Services Examination 2025  <div class="hidden"> 🔗 • Madhya Pradesh Public Service Commission MPPSC Released Notification for State Service Exam Recruitment Exam 2025. Those candidates who are interested in this MPPSC Pre Exam can Apply Online</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/student/mp/mptaas-scholarship-profile/" target="_blank"> <div class="suggestion-item" data-href="/student/mp/mptaas-scholarship-profile/">   Mptaas Scholarship Profile Panjiayan  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/mp/mahila_parvekshak_2024/" target="_blank"> <div class="suggestion-item" data-href="/jobs/mp/mahila_parvekshak_2024/">   Mahila Parvekshak 2024  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/ssc/ssc-gd-constable-2024/" target="_blank"> <div class="suggestion-item" data-href="/jobs/ssc/ssc-gd-constable-2024/">   SSC GD Constable Recruitment Exam Dates  <div class="hidden"> 🔗 • Staff Selection Commission (SSC) has relased General Duty GD Constable Notification 2024. Those candidates who are interested in this SSC GD Constable CAPFs, NIA, SSF and Rifleman (GD) in Assam Rifles Examination,2025 can apply online from Dates 05/09/2024 to 14/10/2024. Read the SSC GD Constable 2024</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/card/sambal-card-apply-download/" target="_blank"> <div class="suggestion-item" data-href="/card/sambal-card-apply-download/">   Sambal Card Yojana , Apply/  Status / Download  <div class="hidden"> 🔗 • Sambal Card Download, Sambal Card Apply, Sambal pdf Form, Sambal Download, </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/student/2025/nvs-class-6th/" target="_blank"> <div class="suggestion-item" data-href="/student/2025/nvs-class-6th/">   Navoday JNV Selection Test for Class VI Online Form 2025  <div class="hidden"> 🔗 • Navodaya Vidyalaya Samiti has released the online application for admission 2025 will start from 16th July 2024 and the last date to apply will be 07 October 2024. Pan India NVS Schools are participating in Class VI Admissions 2025,</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/student/mp/gaon-ki-beti-schorlarship/" target="_blank"> <div class="suggestion-item" data-href="/student/mp/gaon-ki-beti-schorlarship/">   Gaon ki Beti form  2024-25 Apply Online / Download PDF  <div class="hidden"> 🔗 • The Gaon Ki Beti Scholarship Scheme is a government initiative aimed at encouraging girls from rural areas to pursue higher education. Under this scheme, financial assistance is provided to eligible girl students so that they can continue their studies.</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/card/driving-learner-licence/" target="_blank"> <div class="suggestion-item" data-href="/card/driving-learner-licence/">   Driving Licence  / Learning Apply / Status / Download  <div class="hidden"> 🔗 • Driving Licence / learner licence Download / Apply / Status</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/card/udid-card/" target="_blank"> <div class="suggestion-item" data-href="/card/udid-card/">   UDID Card Download / Apply  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/card/abha-health-card/" target="_blank"> <div class="suggestion-item" data-href="/card/abha-health-card/">   Abha Health Card Apply/Download  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/2024/nta-csir-ugc-dec24/" target="_blank"> <div class="suggestion-item" data-href="/2024/nta-csir-ugc-dec24/">   NTA CSIR UGC NET / JRF Exam Dec 2024  <div class="hidden"> 🔗 • NTA CSIR UGC NET / JRF Exam December 2024 Apply Online Form for February 2025</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/card/voter-card-download/" target="_blank"> <div class="suggestion-item" data-href="/card/voter-card-download/">   Voter Card Download/Apply  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/bank/sbi-po-dec24/" target="_blank"> <div class="suggestion-item" data-href="/jobs/bank/sbi-po-dec24/">   SBI Probationary Officers PO Recruitment 2024  <div class="hidden"> 🔗 • SBI has relased Probationary Officers PO Recruitment 2024. Those candidates Are Interested to the Following SBI PO Recruitment 2024</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/mp/mpesb-iti-training-officer-aug24/" target="_blank"> <div class="suggestion-item" data-href="/jobs/mp/mpesb-iti-training-officer-aug24/">   MPESB ITI Training Officer Recruitment 2024  <div class="hidden"> 🔗 • MPESB ITI Training Officer TO Recruitment Test 2024</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/railway/rrb-isolated-07-2024/" target="_blank"> <div class="suggestion-item" data-href="/jobs/railway/rrb-isolated-07-2024/">   Railway RRB Ministerial and Isolated Post CEN 07/2024 Apply Online for 1036 Post  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/mp/mpesb-paramedical-group5-2024/" target="_blank"> <div class="suggestion-item" data-href="/jobs/mp/mpesb-paramedical-group5-2024/">   MPESB Paramedical Group 5 Recruitment 2024  <div class="hidden"> 🔗 • MPESB Paramedical Group 5 Recruitment 2024</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/jobs/mp/mppkvvcl-various-post-dec24/" target="_blank"> <div class="suggestion-item" data-href="/jobs/mp/mppkvvcl-various-post-dec24/">   MPPKVVCL Various Post Dec24  <div class="hidden"> 🔗 • MPEZ MPPKVVCL Various Post Recruitment 2024</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/2025/nta-aissee-2025/" target="_blank"> <div class="suggestion-item" data-href="/2025/nta-aissee-2025/">   NTA All India Sainik Schools Entrance Exam AISSEE 2025  <div class="hidden"> 🔗 • एनटीए अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (AISSEE 2025)</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/scheme/mp/cm-kisan-reg-for-schemes/" target="_blank"> <div class="suggestion-item" data-href="/scheme/mp/cm-kisan-reg-for-schemes/">   CM Kisan Khadya Beej Anudan  <div class="hidden"> 🔗 • मुख्यमंत्री किसान खाद्य-बीज योजना में किसानों को अनुदान पर  बुआई के लिए अनुदान पर दिया उपलब्ध कराया जाता हैं</div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/quick/exam-date/" target="_blank"> <div class="suggestion-item" data-href="/quick/exam-date/">   Exam Date Reminder  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/quick/last-date/" target="_blank"> <div class="suggestion-item" data-href="/quick/last-date/">   Last Date Reminder  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+ 
+                   <a href="/quick/search/" target="_blank"> <div class="suggestion-item" data-href="/quick/search/">   Search Anything  <div class="hidden"> 🔗 •  </div></a>
+                </div>  
+               
+                
+
+           </div>
+                  
+                <input type="submit" class="mobile-submit" value="🔍 Search...">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function filterSuggestions() {
+            const input = document.getElementById("mobileQuery").value.toLowerCase();
+            const suggestions = document.querySelectorAll(".suggestion-item");
+        
+            suggestions.forEach(item => {
+                const title = item.textContent.trim();
+                const href = item.dataset.href; 
+                const matches = title.toLowerCase().includes(input);
+        
+                if (matches) {
+                    item.style.display = "block";
+        
+                    const highlightedText = title.replace(
+                        new RegExp(input, "gi"),
+                        match => `<span style="color: red; font-weight: bold;">${match}</span>`
+                    );
+        
+                    
+                    if (href) {
+                        item.innerHTML = `<a href="${href}" target="_blank" style="font-weight: 500; text-decoration: none; color: inherit;">${highlightedText}</a>`;
+                    } else {
+                        item.innerHTML = highlightedText; 
+                    }
+                } else {
+                    item.style.display = "none"; 
+                }
+            });
+        }
+        
+        
+        function resetSearch() {
+            document.getElementById("mobileQuery").value = "";
+            filterSuggestions();
+        }
+
+        document.getElementById('mobileSearchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = document.getElementById('mobileQuery').value;
+            const url = `https://www.yojnaportal.com/search/#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+            window.open(url, '_blank');
+        });
+    </script>
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzA_zNbxIRDyx8hjYvfoRm97aM9SM1oKceu8ZYnmFIleTXvO5iULYRaBXn_ecGwN3pJ/exec';
+        const form = document.forms['search-form'];
+    
+        
+        const timestampField = document.getElementById('timestamp-field');
+        const now = new Date();
+        const formattedDate = now.toLocaleString('en-GB', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        }).replace(',', '');
+        timestampField.value = formattedDate;
+    
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(() => alert("Thank you! Your form is submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+    <script>
+        
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+            
+            loader.style.display = 'none';  
+            content.style.display = 'block';  
+        });
+    </script>
+</body>
+</html>
