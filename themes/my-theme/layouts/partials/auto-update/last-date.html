@@ -143,7 +143,7 @@ button:hover {
           <tr class="post">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
               <td>{{ .Params.category }}</td>
-              <td>{{ .Params.lastDate }}</td>
+              <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
           </tr>
           {{ end }}
           {{ end }}
@@ -167,7 +167,7 @@ button:hover {
           <tr class="post">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
               <td>{{ .Params.category }}</td>
-              <td>{{ .Params.lastDate }}</td>
+              <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
               
           </tr>
           {{ end }}
@@ -192,7 +192,7 @@ button:hover {
           <tr class="post">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
               <td>{{ .Params.category }}</td>
-              <td>{{ .Params.lastDate }}</td>
+              <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
              
           </tr>
           {{ end }}
@@ -218,7 +218,7 @@ button:hover {
           <tr class="post">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
               <td>{{ .Params.category }}</td>
-              <td>{{ .Params.lastDate }}</td>
+              <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
              
           </tr>
           {{ end }}
@@ -244,7 +244,7 @@ button:hover {
           <tr class="post">
               <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
               <td>{{ .Params.category }}</td>
-              <td>{{ .Params.lastDate }}</td>
+              <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
               
           </tr>
           {{ end }}

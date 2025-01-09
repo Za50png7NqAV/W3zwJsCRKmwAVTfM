@@ -1,7 +1,9 @@
 
 .post-table {
-    max-width: 800px;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
     border-collapse: collapse;
+    margin-top: 15px;
     margin: auto;
     font-size: 21px;
     text-align: left;
@@ -16,7 +18,7 @@
 }
 
 .post-table th {
-    background-color: #e79314;
+    background-color: #6d4103;
     color: white;
     font-weight: bold;
 }
@@ -67,6 +69,6 @@
 }
 @media (max-width: 600px) {
     .post-table {
-    font-size:16px;
+    font-size:smaller;
     }
 }

@@ -11,7 +11,7 @@
     <thead>
       <tr>
         <th>Begin Date</th>
-        <th>Upcoming Jobs & Schemes</th>
+        <th>Upcoming Jobs  Schemes</th>
       </tr>
     </thead>
     <tbody>
@@ -21,7 +21,7 @@
       {{ if $filteredPages }}
         {{ range $filteredPages }}
           <tr>
-            <td>{{ .Params.BeginDate }}</td>
+            <td>{{ (time .Params.BeginDate).Format "02-01-2006" }}</td>
             <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
           
           </tr>
