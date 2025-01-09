@@ -147,11 +147,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/railway/</loc>
-    <lastmod>2024-12-28T16:02:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/railway/rrb-isolated-07-2024/</loc>
     <lastmod>2024-12-28T16:02:46+05:30</lastmod>
     <changefreq>daily</changefreq>
