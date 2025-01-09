@@ -20,14 +20,13 @@
     color:#fff;
     border-radius: 3px;
     max-height:40px; 
-    height: 40px;
-    font-size:medium;
+    height: 20px;
+    
     font-weight: bold;  
     overflow: hidden;
 }
 .post:hover { font-size:small;
-border-left:5px solid #f4b400;
-border-right:5px solid #f06508;
+border-bottom:2px solid #f4b400;
 
 }   
 .post-link {
@@ -38,7 +37,11 @@ border-right:5px solid #f06508;
 .post-link:hover {
     color: blanchedalmond;
 }
-
+@media (max-width: 768px) { /* मोबाइल स्क्रीन के लिए */
+    .post{
+        font-size:small; /* पूरी स्क्रीन की चौड़ाई */
+    }
+}
 
 </style>
 
