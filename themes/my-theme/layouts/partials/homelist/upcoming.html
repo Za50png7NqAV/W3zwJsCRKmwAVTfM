@@ -1,6 +1,16 @@
-{{ range first 20 (where .Site.RegularPages "Params.post-type" "upcoming") }}
-<li>
+
+{{ $today := now.Format "2006-01-02" }}
+{{ $filteredPages := where .Site.RegularPages "Params.BeginDate" "ge" $today }}
+
+{{ if $filteredPages }}
+  {{ range $filteredPages }}
+  <li>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 </li>
 <hr>
+  {{ end }}
+{{ else }}
+
+    <a href="/latest-update/" style="text-align: center;">No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update</a>
+    
 {{ end }}

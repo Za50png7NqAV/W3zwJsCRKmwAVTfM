@@ -1,14 +1,8 @@
+
 {{ define "main" }}
-
-{{ .Title }}
-
-
+<h2 style="text-align:center;" > {{ .Title }} </h2>
     <!-- Header Partial -->
-{{ $Pages := where .Site.RegularPages ".Params.post-type" "upcoming" }}
-    {{ $paginator := .Paginate $Pages }}
-    {{ partial "list-update/upcoming-list.html" $paginator }}
-
-    
+    {{ partial "list-update/upcoming-list.html" . }}
     <!-- Content Section -->
     <div class="content">
         {{ .Content }}
