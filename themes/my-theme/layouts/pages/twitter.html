@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter (X) Account : Yojna Portal</title>
-    <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
+<script>
+    // Google Analytics Setup
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-GWSRPE5DVE'); // Replace with your Google Analytics ID
+
+    // Track Redirect Event
+    gtag('event', 'redirect', {
+        'event_category': 'SocialMedia',
+        'event_label': 'Twitter',
+        'value': 1
+    });
+
+    // Redirect after tracking with a shorter delay
+    setTimeout(function () {
         window.location.href = "https://x.com/yojnaportal";
-    </script>
+    }, 200); // 200 milliseconds delay
+</script>
 </head>
 <body>
-    <p>Opening Twitter (X) Account : Yojna Portal...</p>
+    <p>Follow Yojna Portal on Twitter (X) for Latest Schemes Update...</p>
 </body>
 </html>
