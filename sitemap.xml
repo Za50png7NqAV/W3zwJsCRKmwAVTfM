@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.yojnaportal.com/scheme/mp/rojgar-panjiyan/</loc>
-    <lastmod>2025-01-07T19:21:52+05:30</lastmod>
+    <loc>https://www.yojnaportal.com/scheme/pmjay-ayushman-card/</loc>
+    <lastmod>2025-01-09T18:23:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/scheme/</loc>
-    <lastmod>2025-01-07T19:21:52+05:30</lastmod>
+    <lastmod>2025-01-09T18:23:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/</loc>
+    <lastmod>2025-01-09T18:23:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/scheme/mp/agristack-farmer-registry/</loc>
+    <lastmod>2025-01-09T16:35:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/scheme/mp/rojgar-panjiyan/</loc>
     <lastmod>2025-01-07T19:21:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -47,7 +57,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/jobs/mp/mahila_parvekshak_2024/</loc>
+    <loc>https://www.yojnaportal.com/jobs/mp/mpesb_parvekshak_2024/</loc>
     <lastmod>2025-01-04T19:40:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -144,11 +154,6 @@
   </url><url>
     <loc>https://www.yojnaportal.com/jobs/mp/mpesb-iti-training-officer-aug24/</loc>
     <lastmod>2024-12-28T19:49:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/categories/railway/</loc>
-    <lastmod>2024-12-28T16:02:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

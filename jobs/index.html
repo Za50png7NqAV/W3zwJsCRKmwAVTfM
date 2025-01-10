@@ -439,14 +439,13 @@ text-align:center;
     color:#fff;
     border-radius: 3px;
     max-height:40px; 
-    height: 40px;
-    font-size:medium;
+    height: 20px;
+    
     font-weight: bold;  
     overflow: hidden;
 }
 .post:hover { font-size:small;
-border-left:5px solid #f4b400;
-border-right:5px solid #f06508;
+border-bottom:2px solid #f4b400;
 
 }   
 .post-link {
@@ -457,7 +456,11 @@ border-right:5px solid #f06508;
 .post-link:hover {
     color: blanchedalmond;
 }
-
+@media (max-width: 768px) {  
+    .post{
+        font-size:small;  
+    }
+}
 
 </style>
 
@@ -497,14 +500,14 @@ border-right:5px solid #f06508;
         
     </div></a>
     
-    <a href="https://www.yojnaportal.com/jobs/mp/mahila_parvekshak_2024/" class="post-link">
+    <a href="https://www.yojnaportal.com/jobs/mp/mpesb_parvekshak_2024/" class="post-link">
     <div 
         class="post" 
         style="background-color: olive;" 
         data-random-bg
     >
        
-            Mahila Parvekshak 2024 
+            MPESB Parvekshak Recruitment Test 2024 
         
     </div></a>
     
@@ -598,7 +601,7 @@ border-right:5px solid #f06508;
   
     .card {
       background: white;
-      max-width: var(--card-width);
+      max-width: 350px;
       border-radius: var(--border-radius);
       box-shadow: var(--shadow);
       transition: transform 0.2s, box-shadow 0.2s;
@@ -617,16 +620,15 @@ border-right:5px solid #f06508;
       font-weight: 600;
       text-align: center;
       letter-spacing: 0.5px;
-      font-size:large;
+      font-size:medium;
       text-shadow: 2px 2px 5px black;
     }
   
     .card-content {
       padding: 8px;  
       border: 1px dashed #fff;
-      max-height: 200px;
+      max-height: 300px;
       background: var(--secondary);
-      font-size: var(--font-size);
       line-height: 1.5;
       text-align: left;  
       overflow-y: auto;  
@@ -694,21 +696,17 @@ border-right:5px solid #f06508;
     @media (max-width: 768px) {
       .grid-container {
         grid-template-columns: repeat(3, 1fr);  
-    max-width: var(--card-width);
     gap: 10px 2px;  
     
       }
       .card-header {
-        font-size: small;
-      }
-      :root {
-        --font-size: smaller;
-        --card-width: 500px;  
+        font-size: smaller;
+      
       }
     }
     @media (max-width: 600px) {
         .card-content {
-        font-size:smaller;
+        font-size:7px;
         }
     }
   </style>
@@ -718,9 +716,17 @@ border-right:5px solid #f06508;
 <div class="grid-container">
   
   <div class="card">
-    <div class="card-header">Latest Schemes</div>
+    <div class="card-header">Schemes</div>
     <div class="card-content">
       
+<li>
+  <a href="https://www.yojnaportal.com/scheme/pmjay-ayushman-card/">PMJAY Ayushman Bharat Card</a>
+</li><hr>
+
+<li>
+  <a href="https://www.yojnaportal.com/scheme/mp/agristack-farmer-registry/">Agristack Farmer Registry |Farmer Id | Farmer Registry</a>
+</li><hr>
+
 <li>
   <a href="https://www.yojnaportal.com/scheme/mp/rojgar-panjiyan/">MP Rojgar Panjiyan</a>
 </li><hr>
@@ -744,6 +750,16 @@ border-right:5px solid #f06508;
     <div class="card-content">
       
     
+    <li>
+        <a href="/scheme/pmjay-ayushman-card/">PMJAY Ayushman Bharat Card</a>
+    </li>
+<hr>
+  
+    <li>
+        <a href="/scheme/mp/agristack-farmer-registry/">Agristack Farmer Registry |Farmer Id | Farmer Registry</a>
+    </li>
+<hr>
+  
     <li>
         <a href="/scheme/mp/rojgar-panjiyan/">MP Rojgar Panjiyan</a>
     </li>
@@ -770,7 +786,7 @@ border-right:5px solid #f06508;
 <hr>
   
     <li>
-        <a href="/jobs/mp/mahila_parvekshak_2024/">Mahila Parvekshak 2024</a>
+        <a href="/jobs/mp/mpesb_parvekshak_2024/">MPESB Parvekshak Recruitment Test 2024</a>
     </li>
 <hr>
   
@@ -831,16 +847,6 @@ border-right:5px solid #f06508;
   
     <li>
         <a href="/jobs/railway/rrb-isolated-07-2024/">Railway RRB Ministerial and Isolated Post CEN 07/2024 Apply Online for 1036 Post</a>
-    </li>
-<hr>
-  
-    <li>
-        <a href="/jobs/mp/mpesb-paramedical-group5-2024/">MPESB Paramedical Group 5 Recruitment 2024</a>
-    </li>
-<hr>
-  
-    <li>
-        <a href="/jobs/mp/mppkvvcl-various-post-dec24/">MPPKVVCL Various Post Dec24</a>
     </li>
 <hr>
   
@@ -938,11 +944,19 @@ border-right:5px solid #f06508;
 </li><hr>
 
 <li>
+  <a href="https://www.yojnaportal.com/jobs/mp/mpesb_parvekshak_2024/">MPESB Parvekshak Recruitment Test 2024</a>
+</li><hr>
+
+<li>
   <a href="https://www.yojnaportal.com/jobs/bank/sbi-po-dec24/">SBI Probationary Officers PO Recruitment 2024</a>
 </li><hr>
 
 <li>
   <a href="https://www.yojnaportal.com/jobs/mp/mpesb-iti-training-officer-aug24/">MPESB ITI Training Officer Recruitment 2024</a>
+</li><hr>
+
+<li>
+  <a href="https://www.yojnaportal.com/jobs/railway/rrb-isolated-07-2024/">Railway RRB Ministerial and Isolated Post CEN 07/2024 Apply Online for 1036 Post</a>
 </li><hr>
 
 <li>
@@ -963,15 +977,13 @@ border-right:5px solid #f06508;
   <div class="card-header"> Upcoming </div>
   <div class="card-content">
     
-<li>
-    <a href="/jobs/mp/mahila_parvekshak_2024/">Mahila Parvekshak 2024</a>
-</li>
-<hr>
 
-<li>
-    <a href="/jobs/railway/rrb-isolated-07-2024/">Railway RRB Ministerial and Isolated Post CEN 07/2024 Apply Online for 1036 Post</a>
-</li>
-<hr>
+
+
+
+
+    <a href="/latest-update/" style="text-align: center;">No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update</a>
+    
 
   </div>
   <div class="card-footer">
@@ -1006,9 +1018,17 @@ border-right:5px solid #f06508;
 </div>
 
 <div class="card">
-  <div class="card-header">Important Links</div>
+  <div class="card-header">Quick Links</div>
   <div class="card-content">
     
+<li>
+  <a href="https://www.yojnaportal.com/scheme/pmjay-ayushman-card/">PMJAY Ayushman Bharat Card</a>
+</li><hr>
+
+<li>
+  <a href="https://www.yojnaportal.com/scheme/mp/agristack-farmer-registry/">Agristack Farmer Registry |Farmer Id | Farmer Registry</a>
+</li><hr>
+
 <li>
   <a href="https://www.yojnaportal.com/scheme/mp/rojgar-panjiyan/">MP Rojgar Panjiyan</a>
 </li><hr>
