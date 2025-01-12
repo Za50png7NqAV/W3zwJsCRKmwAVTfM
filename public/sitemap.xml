@@ -167,6 +167,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/jobs/mp/mppsc-pre-2023/</loc>
+    <lastmod>2024-12-30T15:12:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/jobs/</loc>
     <lastmod>2024-12-29T10:09:15+05:30</lastmod>
     <changefreq>daily</changefreq>
