@@ -2,27 +2,39 @@ name: Auto Update Hugo Site
 
 on:
   schedule:
-    - cron: '0 2 * * *' # Run every night at 2 AM
-  workflow_dispatch: # Allow manual trigger as well
+    - cron: '0 2 * * *' # Har raat 2 baje chale
+  workflow_dispatch: # Manual trigger ke liye
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      # 1. Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
+      # 2. Fetch external content (optional)
+      # Replace with the actual content source if needed.
+      - name: Fetch content
+        run: |
+          # Example: Download content from external source
+          curl -o content.json https://example.com/api/content
+          # Process the content as needed, e.g., convert JSON to markdown
 
-    - name: Build Hugo site
-      run: hugo
+      # 3. Setup Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+      # 4. Build Hugo site
+      - name: Build Hugo site
+        run: hugo
+
+      # 5. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
