@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/card/</loc>
+    <lastmod>2025-01-13T19:24:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/card/eshram-card-apply/</loc>
+    <lastmod>2025-01-13T19:24:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-13T19:24:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/scheme/pm-sbm-bls-toilet/</loc>
     <lastmod>2025-01-13T16:32:27+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -12,17 +27,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-13T16:32:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/card/aadhar-card-uidai/</loc>
-    <lastmod>2025-01-13T15:10:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/card/</loc>
     <lastmod>2025-01-13T15:10:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
