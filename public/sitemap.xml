@@ -2,17 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/</loc>
+    <lastmod>2025-01-14T11:14:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb-paramedical-group5/</loc>
+    <lastmod>2025-01-14T11:14:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-14T11:14:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2025/</loc>
+    <lastmod>2025-01-14T09:38:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/admission/</loc>
+    <lastmod>2025-01-14T09:38:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-01-14T09:38:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2025/nta-aissee-2025/</loc>
+    <lastmod>2025-01-14T09:38:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/student/</loc>
+    <lastmod>2025-01-14T09:38:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/card/</loc>
     <lastmod>2025-01-13T19:24:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/card/eshram-card-apply/</loc>
-    <lastmod>2025-01-13T19:24:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-13T19:24:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -34,11 +69,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mp/mp-labour-card/</loc>
     <lastmod>2025-01-13T12:12:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2025-01-11T17:12:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -152,17 +182,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-12-31T10:26:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/2024/nta-csir-ugc-dec24/</loc>
-    <lastmod>2024-12-31T10:26:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/student/</loc>
     <lastmod>2024-12-31T10:26:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -212,33 +232,13 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-paramedical-group5-2024/</loc>
-    <lastmod>2024-12-27T19:09:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/recruitment/</loc>
-    <lastmod>2024-12-27T19:09:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mp/mppkvvcl-various-post-dec24/</loc>
     <lastmod>2024-12-26T19:15:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2025/</loc>
-    <lastmod>2024-12-26T09:38:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/admission/</loc>
-    <lastmod>2024-12-26T09:38:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/nta-aissee-2025/</loc>
-    <lastmod>2024-12-26T09:38:54+05:30</lastmod>
+    <loc>http://localhost:1313/categories/recruitment/</loc>
+    <lastmod>2024-12-26T19:15:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
