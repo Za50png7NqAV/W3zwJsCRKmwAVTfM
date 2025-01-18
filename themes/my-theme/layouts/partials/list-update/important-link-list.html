@@ -92,7 +92,6 @@
     <!-- Category Dropdown -->
     <select id="categoryFilter" onchange="filterTable()"> 
         <option value="">Categories</option>
-        <option value="Recruitment">Recruitment</option>
         <option value="Exams">Exams</option>
         <option value="Jobs">Jobs</option>
         <option value="Schemes">Schemes</option>
@@ -110,7 +109,7 @@
         </tr>
     </thead>
     <tbody>
-        {{ range first 20 (where .Site.RegularPages ".Params.important" "yes") }}
+        {{ range  (where .Site.RegularPages ".Params.important" "yes") }}
         <tr>
             <td>{{ .Date.Format "02/01/2006" }}</td>
             <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
