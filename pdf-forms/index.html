@@ -408,9 +408,122 @@ Latest Pdf Forms
 
 
     
-    <ul>
     
-  </ul>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href=" \css\list-table.css">
+  <title>Latest Pdf Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Latest Yojna, Latest Schemes, Lates Post, New Schemes, New Yojna, Govt. Yojna, Sarkari Yojana, Sarkari Yojna, सरकारी योजना, नई योजना, PM Yojana, PM Yojna, State Yojna, State yojna portal my schemes, india Schemes .">
+ 
+    </head>
+    <div class="search-container">
+      
+      <input type="text" id="textSearch" placeholder="Search Update..." onkeyup="filterTable()" />
+    <button class="dynamic-button" onclick="searchFromCell(this)"><i class="fas fa-close"></i></button>
+    </div>
+ 
+    <table class="post-table" id="dataTable">
+    <thead>
+        <tr>
+            <th>Post Date</th>
+            <th> Download PDF / Form </th>
+            <th>Category</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>18/01/2025</td>
+            <td><a href="/reg/mpesb-profile/">MPESB Profile Registration/ Vyapam Panjiyan</a></td>
+            <td>Profile</td>
+           
+        </tr>
+        
+        <tr>
+            <td>14/01/2025</td>
+            <td><a href="/scheme/mp/cmlly-ladli-laxmi-yojna/">Ladli Laxmi Yojna Apply Online- Download pdf form</a></td>
+            <td>Schemes</td>
+           
+        </tr>
+        
+        <tr>
+            <td>13/01/2025</td>
+            <td><a href="/scheme/pm-sbm-bls-toilet/">PM SBM Shouchalaya/Toilet Apply Online</a></td>
+            <td>scheme</td>
+           
+        </tr>
+        
+        <tr>
+            <td>13/01/2025</td>
+            <td><a href="/card/aadhar-card-uidai/">Aadhar Card Download, Address Update, Find Aadhar Number</a></td>
+            <td>card</td>
+           
+        </tr>
+        
+        <tr>
+            <td>09/01/2025</td>
+            <td><a href="/scheme/pmfby-pm-fasal-bima-yojna/">PMFBY-PM Fasal Bima Yojana</a></td>
+            <td>Insurance</td>
+           
+        </tr>
+        
+        <tr>
+            <td>02/01/2025</td>
+            <td><a href="/card/sambal-card-apply-download/">Sambal Card Yojana , Apply/  Status / Download</a></td>
+            <td>Scheme</td>
+           
+        </tr>
+        
+        <tr>
+            <td>02/01/2025</td>
+            <td><a href="/student/mp/gaon-ki-beti-schorlarship/">Gaon ki Beti form  2024-25 Apply Online / Download PDF</a></td>
+            <td>Scholarship</td>
+           
+        </tr>
+        
+    </tbody>
+</table>
+  
+  <script>
+  function filterTable() {
+      
+      const searchInput = document.getElementById("textSearch").value.toLowerCase();
+      const tableBody = document.getElementById("tableBody");
+      const rows = tableBody.getElementsByTagName("tr");
+  
+      
+      for (let i = 0; i < rows.length; i++) {
+          const cells = rows[i].getElementsByTagName("td");
+          let match = false;
+  
+          
+          for (let j = 0; j < cells.length; j++) {
+              if (cells[j].textContent.toLowerCase().includes(searchInput)) {
+                  match = true;
+                  break;
+              }
+          }
+  
+          
+          rows[i].style.display = match ? "" : "none";
+      }
+  }
+  
+  function searchFromCell(cell) {
+      
+      const cellText = cell.textContent.trim();
+      const searchInput = document.getElementById("textSearch");
+  
+      
+      searchInput.value = cellText;
+  
+      
+      filterTable();
+  }
+  </script>
+  
 
     
     <div class="content">
