@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/br/bihar-gram-ktchahary-sachiv-jan25/</loc>
+    <lastmod>2025-01-19T10:24:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/</loc>
+    <lastmod>2025-01-19T10:24:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-19T10:24:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/reg/mpesb-profile/</loc>
     <lastmod>2025-01-18T18:51:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/reg/</loc>
-    <lastmod>2025-01-18T18:51:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-18T18:51:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -24,11 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/student/</loc>
     <lastmod>2025-01-17T10:30:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2025-01-15T10:28:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
