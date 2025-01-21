@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/scheme/pm-awas-yojna-2/</loc>
+    <lastmod>2025-01-21T19:29:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/</loc>
+    <lastmod>2025-01-21T19:29:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-21T19:29:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/2025/</loc>
     <lastmod>2025-01-19T11:59:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/2025/jeemain-session-1/</loc>
-    <lastmod>2025-01-19T11:59:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-19T11:59:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -53,11 +63,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scheme/mp/cmlly-ladli-laxmi-yojna/</loc>
-    <lastmod>2025-01-14T17:46:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/</loc>
     <lastmod>2025-01-14T17:46:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
