@@ -5,15 +5,104 @@
   <title>Latest Pdf Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Latest Yojna, Latest Schemes, Lates Post, New Schemes, New Yojna, Govt. Yojna, Sarkari Yojana, Sarkari Yojna, सरकारी योजना, नई योजना, PM Yojana, PM Yojna, State Yojna, State yojna portal my schemes, india Schemes .">
- 
+ <style>
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .search-bar {
+        flex: 1;
+        padding: 12px 16px;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+        outline: none;
+    }
+    
+    .search-bar:focus {
+        border-color: #4a90e2;
+        box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    }
+    
+    .search-bar::placeholder {
+        color: #999;
+    }
+    
+    .close-button {
+        padding: 8px 12px;
+        font-size: 20px;
+        color: #666;
+        background: transparent;
+        border: 1px solid #666;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    
+    .close-button:hover {
+        color: #ff4444;
+    }
+    
+    #categoryFilter {
+        padding: 12px;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 16px;
+        background-color: white;
+        color: #333;
+        cursor: pointer;
+        min-width: 180px;
+        transition: border-color 0.3s ease;
+    }
+    
+    #categoryFilter:focus {
+        border-color: #4a90e2;
+        outline: none;
+    }
+    
+    /* Responsive design */
+    @media screen and (max-width: 600px) {
+        .search-container {
+            flex-direction: column;
+            padding: 10px;
+        }
+    
+        .search-bar, 
+        #categoryFilter {
+            width: 90%;
+        }
+    
+        .close-button , #categoryFilter {
+           display:none;
+        }
+        
+    }
+ </style>
     </head>
-    <div class="search-container">
-      <!-- Text Search -->
-      <input type="text" id="textSearch" placeholder="Search Update..." onkeyup="filterTable()" />
-    <button class="dynamic-button" onclick="searchFromCell(this)"><i class="fas fa-close"></i></button>
+	<div class="search-container">
+        <input type="text" id="searchBar" class="search-bar" onkeyup="searchTable()" placeholder="Search for forms...">
+        <button class="close-button" onclick="location.reload();">×</button>
+
+        <select id="categoryFilter" onchange="populateInputAndSearch()">
+            <option value="">Search</option>
+            <option value="pension">Pension Form</option>
+            <option value="Ladli Laxmi">Ladli Laxmi Yojna Form</option>
+          <option value="Aadhar">Adhar Update Form</option>
+            <option value="PMFBY"> Fasal Bima Yojna Form</option>
+            <option value="Sambal"> Sambal Card Form</option>
+        </select>
     </div>
  
-    <table class="post-table" id="dataTable">
+    <table class="post-table" id="formsTable">
     <thead>
         <tr>
             <th>Post Date</th>
@@ -34,41 +123,39 @@
     </tbody>
 </table>
   
+<script>
+	function populateInputAndSearch() {
+		var dropdown = document.getElementById("categoryFilter");
+		var input = document.getElementById("searchBar");
+
+		// Populate the input field with the selected dropdown value
+		input.value = dropdown.value;
+
+		// Trigger the search functionality
+		searchTable();
+	}
+</script>
   <script>
-  function filterTable() {
-      // Get the value of the search input
-      const searchInput = document.getElementById("textSearch").value.toLowerCase();
-      const tableBody = document.getElementById("tableBody");
-      const rows = tableBody.getElementsByTagName("tr");
-  
-      // Loop through all rows in the table body
-      for (let i = 0; i < rows.length; i++) {
-          const cells = rows[i].getElementsByTagName("td");
-          let match = false;
-  
-          // Check all cells in the row
-          for (let j = 0; j < cells.length; j++) {
-              if (cells[j].textContent.toLowerCase().includes(searchInput)) {
-                  match = true;
-                  break;
-              }
-          }
-  
-          // Show or hide the row based on match
-          rows[i].style.display = match ? "" : "none";
-      }
-  }
-  
-  function searchFromCell(cell) {
-      // Get the text content of the clicked cell
-      const cellText = cell.textContent.trim();
-      const searchInput = document.getElementById("textSearch");
-  
-      // Set the input box value to the clicked cell's text
-      searchInput.value = cellText;
-  
-      // Trigger the filter function
-      filterTable();
-  }
-  </script>
+		function searchTable() {
+			var input, filter, table, tr, td, i, j, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toLowerCase();
+			table = document.getElementById("formsTable");
+			tr = table.getElementsByTagName("tr");
+
+			for (i = 1; i < tr.length; i++) {
+				tr[i].style.display = "none";
+				td = tr[i].getElementsByTagName("td");
+				for (j = 0; j < td.length; j++) {
+					if (td[j]) {
+						txtValue = td[j].textContent || td[j].innerText;
+						if (txtValue.toLowerCase().indexOf(filter) > -1) {
+							tr[i].style.display = "";
+							break;
+						}
+					}
+				}
+			}
+		}
+	</script>
   
