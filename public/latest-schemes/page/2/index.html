@@ -491,6 +491,11 @@ Latest Schemes
     <tbody id="tableBody">
         
         <tr>
+            <td><a href="/scheme/mp/rojgar-panjiyan/">MP Rojgar Panjiyan</a></td>
+            <td>Madhya Pradesh</td>
+        </tr>
+        
+        <tr>
             <td><a href="/card/sambal-card-apply-download/">Sambal Card Yojana , Apply/  Status / Download</a></td>
             <td>Madhya Pradesh</td>
         </tr>
@@ -876,7 +881,22 @@ Latest Schemes
 
 
      
-
+     <script>
+        
+        window.addEventListener('hashchange', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      
+        
+        window.addEventListener('DOMContentLoaded', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      </script>
 
 
 </html>

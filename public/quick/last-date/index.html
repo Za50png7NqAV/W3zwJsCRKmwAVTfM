@@ -576,6 +576,9 @@ button:hover {
           
           
           
+          
+          
+          
           <tr class="post">
             <td><a href="http://localhost:1313/2025/nta-aissee-2025/" target="_blank">NTA All India Sainik Schools Entrance Exam AISSEE 2025 </a></td>
               <td>Admission</td>
@@ -714,6 +717,9 @@ button:hover {
          </tr>
       </thead>
       <tbody>
+          
+          
+          
           
           
           
@@ -1006,6 +1012,9 @@ button:hover {
           
           
           
+          
+          
+          
       </tbody>
   </table>
 
@@ -1021,6 +1030,9 @@ button:hover {
           </tr>
       </thead>
       <tbody>
+          
+          
+          
           
           
           
@@ -1252,6 +1264,9 @@ button:hover {
           </tr>
       </thead>
       <tbody>
+          
+          
+          
           
           
           
@@ -1821,7 +1836,22 @@ button:hover {
 
 
      
-
+     <script>
+        
+        window.addEventListener('hashchange', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      
+        
+        window.addEventListener('DOMContentLoaded', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      </script>
 
 
 </html>

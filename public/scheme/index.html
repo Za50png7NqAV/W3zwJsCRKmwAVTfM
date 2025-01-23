@@ -467,6 +467,17 @@ border-bottom:2px solid #f4b400;
 </head>
 <div class="post-grid">
     
+    <a href="http://localhost:1313/scheme/mp/fms-profile/" class="post-link">
+    <div 
+        class="post" 
+        style="background-color: olive;" 
+        data-random-bg
+    >
+       
+            FMS Profile Update, Karmchari Profile ekyc 
+        
+    </div></a>
+    
     <a href="http://localhost:1313/scheme/mp/pension-apply/" class="post-link">
     <div 
         class="post" 
@@ -541,17 +552,6 @@ border-bottom:2px solid #f4b400;
     >
        
             PMJAY Ayushman Bharat Card 
-        
-    </div></a>
-    
-    <a href="http://localhost:1313/scheme/mp/agristack-farmer-registry/" class="post-link">
-    <div 
-        class="post" 
-        style="background-color: olive;" 
-        data-random-bg
-    >
-       
-            Agristack Farmer Registry | Farmer Id | Farmer Card 
         
     </div></a>
     
@@ -721,6 +721,10 @@ border-bottom:2px solid #f4b400;
     <div class="card-content">
       
 <li>
+  <a href="http://localhost:1313/scheme/mp/fms-profile/">FMS Profile Update, Karmchari Profile ekyc</a>
+</li><hr>
+
+<li>
   <a href="http://localhost:1313/scheme/mp/pension-apply/">Social Security Pension Apply /Stutus/ Download Pdf Form</a>
 </li><hr>
 
@@ -779,6 +783,11 @@ border-bottom:2px solid #f4b400;
     <div class="card-content">
       
     
+    <li>
+        <a href="/scheme/mp/fms-profile/">FMS Profile Update, Karmchari Profile ekyc</a>
+    </li>
+<hr>
+  
     <li>
         <a href="/scheme/mp/pension-apply/">Social Security Pension Apply /Stutus/ Download Pdf Form</a>
     </li>
@@ -871,11 +880,6 @@ border-bottom:2px solid #f4b400;
   
     <li>
         <a href="/scheme/pmfby-pm-fasal-bima-yojna/">PMFBY-PM Fasal Bima Yojana</a>
-    </li>
-<hr>
-  
-    <li>
-        <a href="/student/mp/sharmodaya-admission-2025/">Sharmodaya Enterance Exam 2025-26</a>
     </li>
 <hr>
   
@@ -1514,7 +1518,22 @@ border-bottom:2px solid #f4b400;
 
 
      
-
+     <script>
+        
+        window.addEventListener('hashchange', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      
+        
+        window.addEventListener('DOMContentLoaded', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      </script>
 
 
 </html>

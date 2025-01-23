@@ -688,6 +688,10 @@ border-bottom:2px solid #f4b400;
     <div class="card-content">
       
 <li>
+  <a href="http://localhost:1313/scheme/mp/fms-profile/">FMS Profile Update, Karmchari Profile ekyc</a>
+</li><hr>
+
+<li>
   <a href="http://localhost:1313/scheme/mp/pension-apply/">Social Security Pension Apply /Stutus/ Download Pdf Form</a>
 </li><hr>
 
@@ -746,6 +750,11 @@ border-bottom:2px solid #f4b400;
     <div class="card-content">
       
     
+    <li>
+        <a href="/scheme/mp/fms-profile/">FMS Profile Update, Karmchari Profile ekyc</a>
+    </li>
+<hr>
+  
     <li>
         <a href="/scheme/mp/pension-apply/">Social Security Pension Apply /Stutus/ Download Pdf Form</a>
     </li>
@@ -838,11 +847,6 @@ border-bottom:2px solid #f4b400;
   
     <li>
         <a href="/scheme/pmfby-pm-fasal-bima-yojna/">PMFBY-PM Fasal Bima Yojana</a>
-    </li>
-<hr>
-  
-    <li>
-        <a href="/student/mp/sharmodaya-admission-2025/">Sharmodaya Enterance Exam 2025-26</a>
     </li>
 <hr>
   
@@ -1481,7 +1485,22 @@ border-bottom:2px solid #f4b400;
 
 
      
-
+     <script>
+        
+        window.addEventListener('hashchange', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      
+        
+        window.addEventListener('DOMContentLoaded', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      </script>
 
 
 </html>
