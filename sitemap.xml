@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.yojnaportal.com/profile/mp-ifms-profile/</loc>
+    <lastmod>2025-01-23T11:07:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/profile/</loc>
+    <lastmod>2025-01-23T11:07:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/</loc>
+    <lastmod>2025-01-23T11:07:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.yojnaportal.com/scheme/</loc>
     <lastmod>2025-01-22T18:58:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/scheme/mp/pension-apply/</loc>
-    <lastmod>2025-01-22T18:58:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/</loc>
     <lastmod>2025-01-22T18:58:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

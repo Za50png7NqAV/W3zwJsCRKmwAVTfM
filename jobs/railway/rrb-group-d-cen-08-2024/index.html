@@ -112,7 +112,7 @@
             position: fixed;
             z-index: 9;
             top: 0;
-            left: 0;
+            right: 0;
             background-color: #f7f7f7;
             overflow-x: hidden;
             transition: 0.5s;
@@ -906,6 +906,22 @@ text-align:center;
     }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+    
+    window.addEventListener('hashchange', function () {
+      if (window.location.hash === '#gsc.tab=0') {
+        
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+      }
+    });
+  
+    
+    window.addEventListener('DOMContentLoaded', function () {
+      if (window.location.hash === '#gsc.tab=0') {
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+      }
+    });
+  </script>
 </html>
 
     </div>
@@ -922,7 +938,22 @@ text-align:center;
 
 
      
-
+     <script>
+        
+        window.addEventListener('hashchange', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      
+        
+        window.addEventListener('DOMContentLoaded', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      </script>
 
 
 </html>
