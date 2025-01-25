@@ -152,6 +152,21 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/rpsc/rsmssb-cho-11-2022/</loc>
+    <lastmod>2025-01-10T12:58:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rpsc/</loc>
+    <lastmod>2025-01-10T12:58:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rpsc/rsmssb-jr-accountant-02-23/</loc>
+    <lastmod>2025-01-10T12:44:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/scheme/pmfby-pm-fasal-bima-yojna/</loc>
     <lastmod>2025-01-09T22:04:11+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -169,6 +184,16 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mp/agristack-farmer-registry/</loc>
     <lastmod>2025-01-09T16:35:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2024/</loc>
+    <lastmod>2025-01-09T12:18:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2024/ctet-december-2024/</loc>
+    <lastmod>2025-01-09T12:18:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -234,11 +259,6 @@
   </url><url>
     <loc>http://localhost:1313/card/abha-health-card/</loc>
     <lastmod>2024-12-31T11:16:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2024/</loc>
-    <lastmod>2024-12-31T10:26:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
