@@ -112,7 +112,7 @@
             position: fixed;
             z-index: 9;
             top: 0;
-            left: 0;
+            right: 0;
             background-color: #f7f7f7;
             overflow-x: hidden;
             transition: 0.5s;
@@ -394,7 +394,7 @@ text-align:center;
 <body>
     <div class="banner">
         <div class="diagonal-slice">
-        <a href="https://www.whatsapp.com/channel/0029VaCwEclFy72HhgQzJB0I" class="banner-button" target="_blank">Join WhatsApp Channel</a>
+        <a href="https://yojnaportal.com/whatsapp/" class="banner-button" target="_blank">Join WhatsApp Channel</a>
         </div>
     </div>
 
@@ -1029,8 +1029,7 @@ text-align:center;
             <div id="google_translate_element"></div>
 
            <div id="copyright" style="color:#f7630e"> ©️ All Copyright <a href="https://yojnaportal.com" style="text-decoration:none; color:white;"> www.yojnaportal.com </a> | Yojna Portal </div>
-            
-          
+         
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 
@@ -1059,6 +1058,22 @@ text-align:center;
     }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+    
+    window.addEventListener('hashchange', function () {
+      if (window.location.hash === '#gsc.tab=0') {
+        
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+      }
+    });
+  
+    
+    window.addEventListener('DOMContentLoaded', function () {
+      if (window.location.hash === '#gsc.tab=0') {
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+      }
+    });
+  </script>
 </html>
 
     </div>
@@ -1075,7 +1090,22 @@ text-align:center;
 
 
      
-
+     <script>
+        
+        window.addEventListener('hashchange', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      
+        
+        window.addEventListener('DOMContentLoaded', function () {
+          if (window.location.hash === '#gsc.tab=0') {
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+          }
+        });
+      </script>
 
 
 </html>

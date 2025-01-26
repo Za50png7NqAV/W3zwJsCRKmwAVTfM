@@ -13,16 +13,12 @@
 }
 
 .post {
-
-
-    text-align: center;
+ text-align: center;
     padding: 5px;
     color:#fff;
     border-radius: 3px;
-    max-height:40px; 
-    height: 20px;
-    
-    font-weight: bold;  
+    height:30px; 
+   font-weight: bold;  
     overflow: hidden;
 }
 .post:hover { font-size:small;
@@ -47,18 +43,23 @@ border-bottom:2px solid #f4b400;
 
 </head>
 <div class="post-grid">
-    {{ range first 8 .Pages }}
-    <a href="{{ .Permalink }}" class="post-link">
+    {{ range first 8 (where  .Site.RegularPages ".Params.recommend" "yes") }}
+    <a href="{{ .Permalink }}" class="post-link" target="_blank">
     <div 
         class="post" 
         style="background-color: {{ with .Params.bgcolor }}{{ . }}{{ else }}gray{{ end }};" 
         data-random-bg
     >
        
-            {{ .Title }} {{ with .Params.subtitle }}{{ . }}{{ else }}{{ end }}
+    {{ .Params.RecommendName }}
         
     </div></a>
     {{ end }}
+
+
+  
+
+
 </div>
 
 
