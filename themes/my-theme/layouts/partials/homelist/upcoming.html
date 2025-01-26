@@ -5,12 +5,12 @@
 {{ if $filteredPages }}
   {{ range $filteredPages }}
   <li>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
 </li>
 <hr>
   {{ end }}
 {{ else }}
 
-    <a href="/latest-update/" style="text-align: center;">No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update</a>
+    <a href="/latest-update/" style="text-align: center;" target="_blank">No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update</a>
     
 {{ end }}

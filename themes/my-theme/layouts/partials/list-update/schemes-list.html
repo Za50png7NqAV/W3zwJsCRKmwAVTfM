@@ -81,7 +81,7 @@
     <tbody id="tableBody">
         {{ range .Pages }}
         <tr>
-            <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+            <td><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></td>
             <td>{{ with .Params.state }}{{ . }}{{ else }}---{{ end }}</td>
         </tr>
         {{ end }}

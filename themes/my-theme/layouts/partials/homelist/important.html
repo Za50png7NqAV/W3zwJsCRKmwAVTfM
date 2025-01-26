@@ -1,5 +1,5 @@
 {{ range first 20 (where .Site.RegularPages ".Params.important" "yes") }}
 <li>
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  <a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a>
 </li><hr>
 {{ end }}

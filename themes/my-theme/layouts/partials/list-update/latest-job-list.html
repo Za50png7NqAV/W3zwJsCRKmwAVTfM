@@ -22,9 +22,9 @@
       <tbody>
           {{ range .Pages }}
           <tr>
-              <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+              <td><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></td>
               <td>{{ .Date.Format "02/01/2006" }}</td>
-              <td><a href="{{ .RelPermalink }}">Click here</a></td>
+              <td><a href="{{ .RelPermalink }}" target="_blank">Click here</a></td>
           </tr>
           {{ end }}
       </tbody>

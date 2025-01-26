@@ -22,7 +22,7 @@
         {{ range $filteredPages }}
           <tr>
             <td>{{ (time .Params.BeginDate).Format "02-01-2006" }}</td>
-            <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+            <td><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></td>
           
           </tr>
         {{ end }}

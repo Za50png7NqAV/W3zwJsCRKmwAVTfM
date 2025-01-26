@@ -1,6 +1,6 @@
 {{ range first 20 (where .Site.RegularPages "Params.post-type" "student") }}
 <li>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
 </li>
 <hr>
 {{ end }}

@@ -81,7 +81,7 @@
         {{ range (where  .Site.RegularPages ".Params.post-type" "certificate") }}
        
         <tr>
-     <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+     <td><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></td>
             <td>{{ with .Params.category }}{{ . }}{{ else }}---{{ end }}</td>
            
         </tr>

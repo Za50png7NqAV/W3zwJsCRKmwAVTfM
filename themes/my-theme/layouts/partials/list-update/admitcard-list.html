@@ -24,7 +24,7 @@
 
       {{ range (where  .Site.RegularPages ".Params.admitcard" "yes") }}
       <tr>
-          <td><a href="{{ .RelPermalink }}">{{ .Params.admitcardName }}</a></td>
+          <td><a href="{{ .RelPermalink }}" target="_blank">{{ .Params.admitcardName }}</a></td>
         
   </tr>
       {{ end }}
