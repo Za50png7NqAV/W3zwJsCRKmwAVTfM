@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/card/</loc>
+    <lastmod>2025-01-27T11:29:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/card/nrega-jobs-card-muster-roll/</loc>
+    <lastmod>2025-01-27T11:29:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-27T11:29:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/coast-guard-navik-02-2025/</loc>
+    <lastmod>2025-01-27T10:47:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/</loc>
+    <lastmod>2025-01-27T10:47:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/bihar/bpsc-70th-exam-2024/</loc>
     <lastmod>2025-01-26T17:28:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2025-01-26T17:28:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-26T17:28:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -177,11 +197,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/card/</loc>
-    <lastmod>2025-01-13T19:24:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/card/eshram-card-apply/</loc>
     <lastmod>2025-01-13T19:24:16+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -204,6 +219,11 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp/mpsedc-internship_2/</loc>
     <lastmod>2025-01-11T17:12:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/airforce-intake-01-2026/</loc>
+    <lastmod>2025-01-10T19:42:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
