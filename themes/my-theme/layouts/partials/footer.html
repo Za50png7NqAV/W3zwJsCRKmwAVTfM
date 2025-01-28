@@ -4,52 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=" \css\footer.css">
+    <script src="\js\translate.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/g/f9063374b04d/api.js?onload=fjGVd3&render=explicit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', // डिफॉल्ट भाषा
+                includedLanguages: 'en,hi', // जोड़ी गई भाषाएँ
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
     <style>
       
       
-        #footer {
-            flex-shrink: 0;
-            background-color: rgb(36, 35, 35);
-            padding:20px 0 0 0;
-            bottom: 0px;
-           
-           
-        }
-
-        .footer-content {
-             margin: 0 auto;
-            text-align: center;
-        }
-
-        .social-media a {
-            color: #f7630e;
-            font-size: 24px;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-media a:hover { color:rgb(244, 180, 0);}
-        nav {color:#f4b400;}
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 5px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            font-size: 13px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #007bff;
-        }
-        .goog-te-gadget-simple {
-            background-color: #FFD700; }
     </style>
 </head>
 
@@ -111,30 +80,7 @@
       }
       
 </script>
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en', // डिफॉल्ट भाषा
-            includedLanguages: 'en,hi,mr,gu', // जोड़ी गई भाषाएँ
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-    }
-</script>
+
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script>
-    // Function to remove the hash from the URL
-    window.addEventListener('hashchange', function () {
-      if (window.location.hash === '#gsc.tab=0') {
-        // Use history.replaceState to remove the hash without reloading the page
-        history.replaceState(null, null, window.location.pathname + window.location.search);
-      }
-    });
-  
-    // Check on page load as well
-    window.addEventListener('DOMContentLoaded', function () {
-      if (window.location.hash === '#gsc.tab=0') {
-        history.replaceState(null, null, window.location.pathname + window.location.search);
-      }
-    });
-  </script>
+
 </html>

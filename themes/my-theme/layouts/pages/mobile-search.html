@@ -6,147 +6,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/quick-search.css">
     <style>
-        body {
-           font-family: 'Roboto', sans-serif;
-        }
-
-        .center {
-            display: flex;
-            justify-content: center;
-        }
-
-        .mobile-search-container {
-            padding: 20px;
-            background-color: #f7f7f7;
-            border-radius: 8px;
-            
-        }
-
-        .mobile-search-input-container {
-            display: flex;
-            position: relative;
-        }
-
-        .mobile-search-input {
-            flex-grow: 1;
-            padding: 12px 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px 0 0 8px;
-            font-size: 16px;
-            padding-left: 40px;
-        }
-
-        .reset-btn {
-            position: absolute;
-            right: 50px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            font-size: 20px;
-            padding:0 3px;
-            color: #000;
-        }
-        .reset-btn:hover { border-radius: 50%;
-      background-color: red;
-       color: white;
-    }
-        .mobile-search-button {
-            padding: 12px 15px;
-            background: #f06508;
-            color: #fff;
-            border: none;
-            border-radius: 0 8px 8px 0;
-            cursor: pointer;
-        }
-        .mobile-search-button:hover {
-        background-color: #f4b400;
-        color:black;
-    }
-        .suggestions-list {
-            background: white;
-            border-radius: 8px;
-            margin-top: 15px;
-            max-height: 420px;
-          max-width: 300px;
-            overflow-y: scroll;
-        }
-
-        .content, .suggestion-item {
-            padding: 12px 15px;
-            border-bottom: 1px solid #f0f0f0;
-            cursor: pointer;
-            font-size: 16px;
-            max-height: 50px;
-            overflow: hidden ;
-
-            color: black;
-            transition: background-color 0.3s ease;
-        }
-
-        .suggestion-item:hover {
-            background-color: #f4f4f4;
-            color: green;
-        }
-
-        .suggestion-item a {
-            text-decoration: none;
-            color: inherit;
-        }
-        .hidden {display: none;
-        font-size: 3px;}
-        .mobile-submit {
-            background: #fff;
-            border-radius: 5px;
-            width: 100%;
-            color: #080303;
-            padding: 10px 50px;
-            margin-top: 15px;
-            cursor: pointer;
-            font-size: 16px;
-            
-        }
-        .mobile-submit:hover {
-            background-color: #f4b400;
-            color:black;
-            
-        }
-  
-        /* Scrollbar Styling */
-        ::-webkit-scrollbar {
-            width: 0px;
-        }
-        #loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-
-        #loader div {
-            border: 8px solid #f3f3f3;
-            border-top: 8px solid #3498db;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Hide content until loaded */
-        #content {
-            display: none;
-        }
+       
     </style>
 </head>
 <body>
@@ -265,6 +127,35 @@
             
             loader.style.display = 'none';  // Hide the loader
             content.style.display = 'block';  // Show the content
+        });
+    </script>
+    <script>
+        // Disable specific key combinations
+        document.addEventListener('keydown', function (e) {
+            // Block F12
+            if (e.key === "F12") {
+                e.preventDefault();
+            }
+    
+            // Block Ctrl+Shift+I (Inspect)
+            if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+                e.preventDefault();
+            }
+    
+            // Block Ctrl+U (View Source)
+            if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+                e.preventDefault();
+            }
+    
+            // Block Ctrl+Shift+J (Console)
+            if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+                e.preventDefault();
+            }
+        });
+    
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
         });
     </script>
 </body>
