@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js\baseof.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
+    <link rel="stylesheet" href="\css\yp-main.css">
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -14,33 +15,7 @@
     </script>
    
     <style>
-        body {
-    height: 100%;
-    padding: 0;
-    margin:0;
-}
-  
-    .main-container {
-        max-width: 1200px;
-        width: 100%;
-        margin: auto;
-        
-        padding: 0px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
       
-        align-items: center;
-        justify-content: center;
-        word-wrap: break-word !important;
-    }
-    
-    @media (max-width: 768px) {
-        .main-container {
-          width: 100%;
-        }
-          
-        }
-
    
  
      
@@ -59,6 +34,7 @@
 <meta name="robots" content="index, follow">
 <meta name="keywords" content="Yojna, Government Schemes, Yojna News, Sarkari Yojna, Yojna Updates, Latest Yojna 2024">
 <link rel="canonical" href="https://www.yojnaportal.com/">
+
 <link rel="shortcut icon" href="/favicon.ico">
 <meta name="rating" content="general" />
 <meta http-equiv="content-language" content="en-hi" />
@@ -69,108 +45,107 @@
     <meta name="rating" content="general" />
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.yojnaportal.com/">
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-    <style>
+<link rel="stylesheet" href="\css\header.css">
+<style>
   
+header {
+  background-color: #f8f9fa;  
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  border-bottom: 3px solid #fff;  
+}
 
-        header {
-            background-color: #f8f9fa;  
-            padding: 10px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-            border-bottom: 3px solid #fff;  
-        }
-     
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-     
-        .logo img {
-            height: 70px;  
-            max-width: 100%;
-        }
-     
-        .portal-name h1 {
-            font-size: 28px;
-            color: #007bff;  
-            margin: 0;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-        .sidenav {
-   
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 9;
-            top: 0;
-            right: 0;
-            background-color: #f7f7f7;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 5px;
-            box-shadow: 1px 5px 8px;
-          }
-          
-          .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-          
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-          }
-          
-          .sidenav a:hover {
-            color: red;
-          }
-          
-          .sidenav .closebtn {
-            position: absolute;
-            top: 35px;
-           left: 10px;
-            font-size: 20px;
+.logo img {
+  height: 70px;  
+  max-width: 100%;
+}
 
-            
-          }
-          
-          #main-btn {
-            transition: margin-left .5s;
-            padding: 16px;
-          }
-          
-          @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-          }
+.portal-name h1 {
+  font-size: 28px;
+  color: #007bff;  
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
-     
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                text-align: center;
-              
-            }
-            
-            .logo img {
-                height: 60px;
-            }
-            
-            .portal-name h1 {
-                font-size: 24px;
-            }
-            #main-btn {display:none;}
-        }
-     </style>
+.sidenav {
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 5px;
+  box-shadow: 1px 5px 8px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 35px;
+ left: 10px;
+  font-size: 20px;
+
+  
+}
+
+#main-btn {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      text-align: center;
+    
+  }
+  
+  .logo img {
+      height: 60px;
+  }
+  
+  .portal-name h1 {
+      font-size: 24px;
+  }
+  #main-btn {display:none;}
+}
+  </style>
 </head>
 
 
@@ -198,7 +173,7 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fas fa-arrow-left'></i></a>
-    <iframe src="https://www.yojnaportal.com//quick/search/" width="100%" height="750" style="border:none;"></iframe>
+    <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
   </div>
   
  
@@ -408,121 +383,10 @@ text-align:center;
 <head>
   <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="\css\last-date.css">
         <title>Last Date Reminder: Yojna Portal</title>
     <style>
         
-h2 {
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: white;
-  }
-
-  th, td {
-    border: 1px solid ;
-    padding: 10px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #4CAF50;
-    color: white;
-  }
-
-#datezoon1 { background: linear-gradient(to right, #886600, #ffff99, #886600);
-width: 200px;
- 
-  background-image: linear-gradient(to right, #ff0000, #ffff00);  
-  background-size: 200px 100%;  
-}
-
-#datezoon  {
-          position: relative;
-          max-width: 150px;  
-        
-
-      left:11px;
-      top:-10px
-    
-      }
-      #datezoon:before {
-          content: '';
-          position: absolute;
-          top: 0;
-          right: 0;
-         width: 150px;  
-        height: 20px;  
-          background: linear-gradient(to right, #886600, #ffff99, #886600);
-          transform: skewX(-45deg);
-          transform-origin: top right;
-             z-index:;
-            
-       
-
-
-      }
-      #today  {
-     position:absolute;
-     font-size:13px;
-     padding: 3px;
-     font-weight: 700;
-     color:#333;
-     z-index:1;  
-     text-align: center;
-    }
- 
-
-
-
-  .past-exam, .expired {
-    background-color: #e6c7ca;
-  }
-
-  .current-exam, .upcoming {
-    background-color: #d4edda;
-  }
-
-   .upcoming-exam, .today {
-    background-color: #fff3cd;
-  }
-
-  .yesterday {
-    background-color: #f5c6cb;
-  }
-
-  .tomorrow {
-    background-color: #c3e6cb;
-  }
-
-  button {
-    padding: 10px;
-  background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
-
-  .lastDateContainer { color:black;}
-
-button:hover {
- 
-   background: linear-gradient(to right,  rgb(255, 78, 57), #f4b400);
-  color:black;
-
-}
-.lastDateContainer a {text-decoration: none;}
-
-.lastDateContainer a:hover {color:red;}
 
     </style>
 </head>
@@ -585,8 +449,11 @@ button:hover {
           
           
           
-          
-          
+          <tr class="post">
+            <td><a href="https://www.yojnaportal.com/jobs/bihar/bihar-gram-ktchahary-sachiv-jan25/" target="_blank">Bihar Gram Ktchahary Sachiv Jan25 </a></td>
+              <td>jobs</td>
+              <td>29-01-2025</td>
+          </tr>
           
           
           
@@ -789,81 +656,78 @@ button:hover {
           
           
           
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           <tr class="post">
-            <td><a href="https://www.yojnaportal.com/jobs/bihar/bihar-gram-ktchahary-sachiv-jan25/" target="_blank">Bihar Gram Ktchahary Sachiv Jan25 </a></td>
-              <td>jobs</td>
-              <td>29-01-2025</td>
+            <td><a href="https://www.yojnaportal.com/student/mp/sharmodaya-admission-2025/" target="_blank">Sharmodaya Enterance Exam 2025-26 </a></td>
+              <td>admission</td>
+              <td>30-01-2025</td>
               
           </tr>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
           
           
           
@@ -1051,22 +915,6 @@ button:hover {
           
           
           
-          <tr class="post">
-            <td><a href="https://www.yojnaportal.com/force/airforce-intake-01-2026/" target="_blank">Airforce Agniveer Intake 01/2026 Online Form </a></td>
-              <td></td>
-              <td>27-01-2025</td>
-             
-          </tr>
-          
-          
-          
-          
-          <tr class="post">
-            <td><a href="https://www.yojnaportal.com/jobs/force/airforce-intake-01-2026/" target="_blank">Airforce Agniveer Intake 01/2026 Online Form </a></td>
-              <td></td>
-              <td>27-01-2025</td>
-             
-          </tr>
           
           
           
@@ -1096,14 +944,6 @@ button:hover {
           
           
           
-          
-          
-          <tr class="post">
-            <td><a href="https://www.yojnaportal.com/railway/railway-scr-apprentice-jan25/" target="_blank">RRC West Central Railway SCR Act Apprentices 2025 </a></td>
-              <td>Apprentices</td>
-              <td>27-01-2025</td>
-             
-          </tr>
           
           
           
@@ -1254,13 +1094,6 @@ button:hover {
           
           
           
-          <tr class="post">
-            <td><a href="https://www.yojnaportal.com/jobs/bihar/bihar-gram-ktchahary-sachiv-jan25/" target="_blank">Bihar Gram Ktchahary Sachiv Jan25 </a></td>
-              <td>jobs</td>
-              <td>29-01-2025</td>
-             
-          </tr>
-          
           
           
           
@@ -1319,8 +1152,12 @@ button:hover {
           
           
           
-          
-          
+          <tr class="post">
+            <td><a href="https://www.yojnaportal.com/force/airforce-intake-01-2026/" target="_blank">Airforce Agniveer Intake 01/2026 Online Form </a></td>
+              <td></td>
+              <td>02-02-2025</td>
+             
+          </tr>
           
           
           
@@ -1656,23 +1493,6 @@ button:hover {
           
           
           
-          
-          <tr class="post">
-              <td><a href="https://www.yojnaportal.com/force/airforce-intake-01-2026/" target="_blank">Airforce Agniveer Intake 01/2026 Online Form </a></td>
-              <td></td>
-              <td>27-01-2025</td>
-              
-          </tr>
-          
-          
-          
-          
-          <tr class="post">
-              <td><a href="https://www.yojnaportal.com/jobs/force/airforce-intake-01-2026/" target="_blank">Airforce Agniveer Intake 01/2026 Online Form </a></td>
-              <td></td>
-              <td>27-01-2025</td>
-              
-          </tr>
           
           
           
@@ -2063,52 +1883,21 @@ button:hover {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=" \css\footer.css">
+    <script src="\js\translate.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/g/f9063374b04d/api.js?onload=fjGVd3&render=explicit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', 
+                includedLanguages: 'en,hi', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
     <style>
       
       
-        #footer {
-            flex-shrink: 0;
-            background-color: rgb(36, 35, 35);
-            padding:20px 0 0 0;
-            bottom: 0px;
-           
-           
-        }
-
-        .footer-content {
-             margin: 0 auto;
-            text-align: center;
-        }
-
-        .social-media a {
-            color: #f7630e;
-            font-size: 24px;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-media a:hover { color:rgb(244, 180, 0);}
-        nav {color:#f4b400;}
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 5px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            font-size: 13px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #007bff;
-        }
-        .goog-te-gadget-simple {
-            background-color: #FFD700; }
     </style>
 </head>
 
@@ -2170,32 +1959,9 @@ button:hover {
       }
       
 </script>
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en', 
-            includedLanguages: 'en,hi,mr,gu', 
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-    }
-</script>
+
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script>
-    
-    window.addEventListener('hashchange', function () {
-      if (window.location.hash === '#gsc.tab=0') {
-        
-        history.replaceState(null, null, window.location.pathname + window.location.search);
-      }
-    });
-  
-    
-    window.addEventListener('DOMContentLoaded', function () {
-      if (window.location.hash === '#gsc.tab=0') {
-        history.replaceState(null, null, window.location.pathname + window.location.search);
-      }
-    });
-  </script>
+
 </html>
 
     </div>
