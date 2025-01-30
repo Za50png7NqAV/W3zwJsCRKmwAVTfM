@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/railway/</loc>
+    <lastmod>2025-01-30T12:08:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/railway/rrc-gorakhpur-apprentices-jan25/</loc>
+    <lastmod>2025-01-30T12:08:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-30T12:08:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2025/</loc>
+    <lastmod>2025-01-30T10:35:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2025/uppsc-exam-calender/</loc>
+    <lastmod>2025-01-30T10:35:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/mp/farmer-mpdage-ekrishi-yantra/</loc>
     <lastmod>2025-01-29T16:40:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/mp/</loc>
-    <lastmod>2025-01-29T16:40:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-29T16:40:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -107,11 +127,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/railway/</loc>
-    <lastmod>2025-01-22T10:35:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/railway/rrb-group-d-cen-08-2024/</loc>
     <lastmod>2025-01-22T10:35:25+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -119,11 +134,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pm-awas-yojna-2/</loc>
     <lastmod>2025-01-21T19:29:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/</loc>
-    <lastmod>2025-01-19T11:59:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
