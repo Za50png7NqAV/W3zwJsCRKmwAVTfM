@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.yojnaportal.com/mp/farmer-mpdage-ekrishi-yantra/</loc>
+    <lastmod>2025-01-29T16:40:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/mp/</loc>
+    <lastmod>2025-01-29T16:40:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/</loc>
+    <lastmod>2025-01-29T16:40:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/student/2025/mpbse-10th-12th-main-exam-2024-25/</loc>
+    <lastmod>2025-01-28T20:43:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/student/</loc>
+    <lastmod>2025-01-28T20:43:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.yojnaportal.com/jobs/</loc>
     <lastmod>2025-01-27T18:49:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
-    <lastmod>2025-01-27T18:49:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/</loc>
     <lastmod>2025-01-27T18:49:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -128,11 +148,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/student/mp/mpsos-excellent-model-schools/</loc>
-    <lastmod>2025-01-17T10:30:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/student/</loc>
     <lastmod>2025-01-17T10:30:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -508,6 +523,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/quick/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/yp/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
