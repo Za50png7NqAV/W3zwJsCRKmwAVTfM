@@ -5,7 +5,7 @@
         <tr>
             <th style="background-color: rgb(255, 78, 57);">Post Title (Expired Post)</th>
             <th style="background-color: rgb(255, 78, 57);">Category</th>
-            <th style="background-color: rgb(255, 78, 57);">Last Date</th>
+            <th style="background-color: rgb(255, 78, 57);" width="90">Last Date</th>
         </tr>
     </thead>
     <tbody>
@@ -19,8 +19,8 @@
             {{ if and (lt $lastDate $today) (gt $lastDate $sevenDaysAgo) }}
             <tr class="post" style="background-color:rgb(255, 216, 216);">
                 <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
-                <td>{{ .Params.category }}</td>
-                <td>{{ $lastDate.Format "02-01-2006" }}</td>
+                <td><a href="#" class="dynamic-link" data-search="{{ .Params.category }}"> {{ .Params.category }} </a></td>
+                <td style="font-weight:bold;">{{ $lastDate.Format "02-01-2006" }}</td>
             </tr>
             {{ end }}
         {{ end }}

@@ -5,7 +5,7 @@
         <tr style="background-color: rgb(57, 153, 255);">
             <th >Active Post for This Week</th>
             <th >Category</th>
-            <th >Last Date</th>
+            <th width="90">Last Date</th>
         </tr>
     </thead>
     <tbody>
@@ -19,8 +19,8 @@
             {{ if and (gt $lastDate $today) (lt $lastDate $sevenDaysLater) }}
             <tr class="post" style="background-color: #c1fdc4;">
                 <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
-                <td>{{ .Params.category }}</td>
-                <td>{{ $lastDate.Format "02-01-2006" }}</td>
+                <td><a href="#" class="dynamic-link" data-search="{{ .Params.category }}"> {{ .Params.category }} </a></td>
+                <td style="font-weight:bold;">{{ $lastDate.Format "02-01-2006" }}</td>
             </tr>
             {{ end }}
         {{ end }}

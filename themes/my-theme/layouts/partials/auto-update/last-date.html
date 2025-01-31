@@ -59,12 +59,12 @@
 <div class="lastDateContainer">
   <!-- Today Section -->
   <div id="table-head">"Last Date Today for Apply"</div>
-<table id="today-table">
+<table id="today-table" width="900" >
       <thead>
           <tr>
               <th style="background-color: #f4b400; color:black;">Expiring Today Posts</th>
               <th style="background-color: #f4b400; color:black;">Category</th>
-              <th style="background-color: #f4b400; color:black;">Last Date</th>
+              <th style="background-color: #f4b400; color:black;" width="90">Last Date</th>
  </tr>
       </thead>
       <tbody>
@@ -73,8 +73,8 @@
           {{ if eq .Params.lastDate $today }}
           <tr class="post" style="background-color: #f0f7b1;">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
-              <td>{{ .Params.category }}</td>
-              <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
+              <td>  <a href="#" class="dynamic-link" data-search="{{ .Params.category }}"> {{ .Params.category }} </a>   </td>
+              <td style="font-weight:bold">{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
           </tr>
           {{ end }}
           {{ end }}
@@ -84,12 +84,12 @@
 {{ partial "auto-update/last-date/nextweek.html" . }}
   <!-- Yesterday Section -->
   <div id="table-head">Closed Yesterday – Check for Extension Update </div>
-  <table id="yesterday-table">
+  <table id="yesterday-table" >
       <thead>
           <tr>
-              <th style="background-color: rgb(255, 115, 68);">Post Title</th>
+              <th style="background-color: rgb(255, 115, 68);" >Post Title</th>
               <th style="background-color: rgb(255, 115, 68);">Category</th>
-              <th style="background-color: rgb(255, 115, 68);">Last Date</th>
+              <th style="background-color: rgb(255, 115, 68);" width="90">Last Date</th>
           </tr>
       </thead>
       <tbody>
@@ -98,7 +98,7 @@
           {{ if eq .Params.lastDate $yesterday }}
           <tr class="post" style="background-color: #f8d4b2;">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
-              <td>{{ .Params.category }}</td>
+              <td><a href="#" class="dynamic-link" data-search="{{ .Params.category }}"> {{ .Params.category }} </a></td>
               <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
              
           </tr>
@@ -114,7 +114,7 @@
           <tr >
               <th>Currently Active Posts</th>
               <th>Category</th>
-              <th>Last Date</th>
+              <th width="90">Last Date</th>
               
           </tr>
       </thead>
@@ -124,8 +124,8 @@
           {{ if gt .Params.lastDate $today }}
           <tr class="post" style="background-color: #d7fcd6;">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
-              <td>{{ .Params.category }}</td>
-              <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
+              <td><a href="#" class="dynamic-link" data-search="{{ .Params.category }}"> {{ .Params.category }} </a></td>
+              <td style="font-weight:bold;">{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
              
           </tr>
           {{ end }}

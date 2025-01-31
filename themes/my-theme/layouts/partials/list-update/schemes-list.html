@@ -81,8 +81,8 @@
     <tbody id="tableBody">
         {{ range .Pages }}
         <tr>
-            <td><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></td>
-            <td>{{ with .Params.state }}{{ . }}{{ else }}---{{ end }}</td>
+            <td style="background-color:rgb(255, 232, 201);"><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></td>
+            <td style="background-color:rgb(255, 161, 37);"> <a href="#" class="dynamic-link" data-search="{{ with .Params.state }}{{ . }}{{ else }}Central {{ end }}"> {{ with .Params.state }}{{ . }}{{ else }}Central Scheme{{ end }}  </a></td>
         </tr>
         {{ end }}
   
