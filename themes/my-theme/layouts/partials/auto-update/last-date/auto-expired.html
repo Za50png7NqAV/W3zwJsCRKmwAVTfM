@@ -1,0 +1,13 @@
+<tbody>
+    {{ range .Site.RegularPages }}
+    {{ $today := now.Format "2006-01-02" }}
+    {{ if lt .Params.lastDate $today }}
+    <tr class="post">
+        <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
+        <td>{{ .Params.category }}</td>
+        <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
+        
+    </tr>
+    {{ end }}
+    {{ end }}
+</tbody>

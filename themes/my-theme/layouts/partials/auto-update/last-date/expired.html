@@ -1,0 +1,29 @@
+<!-- Expired Section -->
+<div id="table-head" > "Closed in the Past Week"</div>
+<table id="expired-table">
+    <thead>
+        <tr>
+            <th style="background-color: rgb(255, 78, 57);">Post Title (Expired Post)</th>
+            <th style="background-color: rgb(255, 78, 57);">Category</th>
+            <th style="background-color: rgb(255, 78, 57);">Last Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ $today := now }}
+        {{ $sevenDaysAgo := $today.AddDate 0 0 -7 }} <!-- 7 दिन पहले की तारीख -->
+
+        {{ range .Site.RegularPages }}
+        {{ if .Params.lastDate }} <!-- पहले जाँच करें कि lastDate मौजूद है -->
+            {{ $lastDate := time .Params.lastDate }}
+            
+            {{ if and (lt $lastDate $today) (gt $lastDate $sevenDaysAgo) }}
+            <tr class="post" style="background-color:rgb(255, 216, 216);">
+                <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
+                <td>{{ .Params.category }}</td>
+                <td>{{ $lastDate.Format "02-01-2006" }}</td>
+            </tr>
+            {{ end }}
+        {{ end }}
+        {{ end }}
+    </tbody>
+</table>

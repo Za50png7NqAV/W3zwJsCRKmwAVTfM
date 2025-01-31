@@ -1,0 +1,29 @@
+<!-- Upcoming Expiry Section -->
+<div id="table-head" >Expiring This Week  </div>
+<table id="upcoming-table">
+    <thead>
+        <tr style="background-color: rgb(57, 153, 255);">
+            <th >Active Post for This Week</th>
+            <th >Category</th>
+            <th >Last Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ $today := now }}
+        {{ $sevenDaysLater := $today.AddDate 0 0 7 }} <!-- 7 दिन बाद की तारीख -->
+
+        {{ range .Site.RegularPages }}
+        {{ if .Params.lastDate }} <!-- पहले जाँच करें कि lastDate मौजूद है -->
+            {{ $lastDate := time .Params.lastDate }}
+            
+            {{ if and (gt $lastDate $today) (lt $lastDate $sevenDaysLater) }}
+            <tr class="post" style="background-color: #c1fdc4;">
+                <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
+                <td>{{ .Params.category }}</td>
+                <td>{{ $lastDate.Format "02-01-2006" }}</td>
+            </tr>
+            {{ end }}
+        {{ end }}
+        {{ end }}
+    </tbody>
+</table>

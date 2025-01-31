@@ -5,8 +5,51 @@
         <link rel="stylesheet" href="\css\last-date.css">
         <title>Last Date Reminder: Yojna Portal</title>
     <style>
-        
-
+        #table-head {
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 10px;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #d13100, #630026, #0b2e00, #000000, #0c0244);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            
+            }
+            @keyframes gradientBG {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+            }
+            .lastDateContainer {
+            background: linear-gradient(-45deg, #4CAF50, #f4b400, rgb(255, 115, 68), #021e3d94);
+            background-size: 400% 400%;
+            animation: gradientBG 5s ease infinite;
+            
+            }
+            @keyframes gradientBG {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+            }
     </style>
 </head>
 
@@ -15,12 +58,11 @@
 
 <div class="lastDateContainer">
   <!-- Today Section -->
-  <div id="datezoon"> 
-  <div id="today">Last Date Today </div></div>
-  <table id="today-table">
+  <div id="table-head">"Last Date Today for Apply"</div>
+<table id="today-table">
       <thead>
           <tr>
-              <th style="background-color: #f4b400; color:black;">Post Title</th>
+              <th style="background-color: #f4b400; color:black;">Expiring Today Posts</th>
               <th style="background-color: #f4b400; color:black;">Category</th>
               <th style="background-color: #f4b400; color:black;">Last Date</th>
  </tr>
@@ -29,7 +71,7 @@
           {{ range .Site.RegularPages }}
           {{ $today := now.Format "2006-01-02" }}
           {{ if eq .Params.lastDate $today }}
-          <tr class="post">
+          <tr class="post" style="background-color: #f0f7b1;">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
               <td>{{ .Params.category }}</td>
               <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
@@ -38,34 +80,10 @@
           {{ end }}
       </tbody>
   </table>
-
-  <!-- Tomorrow Section -->
-  <div id="datezoon"> <div id="today">Last Date Tomorrow  </div></div>
-  <table id="tomorrow-table">
-      <thead>
-          <tr>
-              <th style="background-color: #f4b400; color:black;">Post Title</th>
-              <th style="background-color: #f4b400; color:black;">Category</th>
-              <th style="background-color: #f4b400; color:black;">Last Date</th>
-         </tr>
-      </thead>
-      <tbody>
-          {{ range .Site.RegularPages }}
-          {{ $tomorrow := (now.AddDate 0 0 1).Format "2006-01-02" }}
-          {{ if eq .Params.lastDate $tomorrow }}
-          <tr class="post">
-            <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
-              <td>{{ .Params.category }}</td>
-              <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
-              
-          </tr>
-          {{ end }}
-          {{ end }}
-      </tbody>
-  </table>
-
+<!-- Expiring in the Next 7 Days -->
+{{ partial "auto-update/last-date/nextweek.html" . }}
   <!-- Yesterday Section -->
-  <div id="datezoon"><div id="today">Expired Yesterday </div> </div>
+  <div id="table-head">Closed Yesterday – Check for Extension Update </div>
   <table id="yesterday-table">
       <thead>
           <tr>
@@ -78,7 +96,7 @@
           {{ range .Site.RegularPages }}
           {{ $yesterday := (now.AddDate 0 0 -1).Format "2006-01-02" }}
           {{ if eq .Params.lastDate $yesterday }}
-          <tr class="post">
+          <tr class="post" style="background-color: #f8d4b2;">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
               <td>{{ .Params.category }}</td>
               <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
@@ -90,13 +108,13 @@
   </table>
 
   <!-- Upcoming Section -->
-  <div id="datezoon">  <div id="today">  Last Date Soon</div>  </div>
+  <div id="table-head"> "Open for Applications"</div>
   <table id="upcoming-table">
       <thead>
-          <tr>
-              <th style="background-color: #f4b400; color:black;">Post Title</th>
-              <th style="background-color: #f4b400; color:black;">Category</th>
-              <th style="background-color: #f4b400; color:black;">Last Date</th>
+          <tr >
+              <th>Currently Active Posts</th>
+              <th>Category</th>
+              <th>Last Date</th>
               
           </tr>
       </thead>
@@ -104,7 +122,7 @@
           {{ range .Site.RegularPages }}
           {{ $today := now.Format "2006-01-02" }}
           {{ if gt .Params.lastDate $today }}
-          <tr class="post">
+          <tr class="post" style="background-color: #d7fcd6;">
             <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
               <td>{{ .Params.category }}</td>
               <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
@@ -116,30 +134,9 @@
   </table>
 
   <!-- Expired Section -->
-  <div id="datezoon"> <div id="today"> Expired </div>   </div>
-  <table id="expired-table">
-      <thead>
-          <tr>
-              <th style="background-color: rgb(255, 78, 57);">Post Title</th>
-              <th style="background-color: rgb(255, 78, 57);">Category</th>
-              <th style="background-color: rgb(255, 78, 57);">Last Date</th>
-             
-          </tr>
-      </thead>
-      <tbody>
-          {{ range .Site.RegularPages }}
-          {{ $today := now.Format "2006-01-02" }}
-          {{ if lt .Params.lastDate $today }}
-          <tr class="post">
-              <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
-              <td>{{ .Params.category }}</td>
-              <td>{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
-              
-          </tr>
-          {{ end }}
-          {{ end }}
-      </tbody>
-  </table>
+
+        {{ partial "auto-update/last-date/expired.html" . }}
+   
 </div>
 <div class="disclaimer" style="border: 1px solid #f2f2f2; padding: 15px; margin-top: 20px; background-color: #fffbea; font-size: 14px; color: #333; border-radius: 5px;">
   <h3 style="color: #d9534f; font-size: 16px; margin-bottom: 10px;">Disclaimer</h3>
