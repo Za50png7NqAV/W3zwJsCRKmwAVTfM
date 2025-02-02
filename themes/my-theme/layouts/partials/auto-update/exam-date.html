@@ -29,7 +29,7 @@
         <tbody>
             {{ range where .Site.RegularPages.ByDate "Params.from_date" ">" (now.Format "2006-01-02") }}
             <tr>
-                <td><a href="{{ .Permalink }}" class="post-link"> {{ .Title }} </a></td>
+                <td><a href="{{ .Permalink }}" class="post-link"> {{ .Title }} Exam Date</a></td>
                 <td>{{(time .Params.from_date).Format "02-01-2006" }} </td>
                 <td>{{(time .Params.to_date).Format "02-01-2006" }} </td>
             </tr>
@@ -50,7 +50,7 @@
         <tbody>
             {{ range where .Site.RegularPages.ByDate "Params.to_date" "<" (now.Format "2006-01-02") }}
             <tr>
-                <td><a href="{{ .Permalink }}" class="post-link" target="_blank"> {{ .Title }} </a></td>
+                <td><a href="{{ .Permalink }}" class="post-link" target="_blank"> {{ .Title }} Exam date </a></td>
                 <td>{{(time .Params.from_date).Format "02-01-2006" }} </td>
                 <td>{{(time .Params.to_date).Format "02-01-2006" }} </td>
             </tr>

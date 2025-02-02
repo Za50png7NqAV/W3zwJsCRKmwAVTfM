@@ -74,7 +74,7 @@
         {{ if eq .Params.lastDate $today }}
           {{ $count = add $count 1 }}
           <tr class="post" style="background-color: #f0f7b1;">
-            <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a></td>
+            <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} is Lastdate Today for Apply</a></td>
             <td><a href="#" class="dynamic-link" data-search="{{ .Params.category }}">{{ .Params.category }}</a></td>
             <td style="font-weight:bold">{{ (time .Params.lastDate).Format "02-01-2006" }}</td>
           </tr>

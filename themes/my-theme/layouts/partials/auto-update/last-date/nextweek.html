@@ -18,7 +18,7 @@
             
             {{ if and (gt $lastDate $today) (lt $lastDate $sevenDaysLater) }}
             <tr class="post" style="background-color: #c1fdc4;">
-                <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} </a></td>
+                <td><a href="{{ .Permalink }}" target="_blank">{{ .Title }} is lastdate soon Apply</a></td>
                 <td><a href="#" class="dynamic-link" data-search="{{ .Params.category }}"> {{ .Params.category }} </a></td>
                 <td style="font-weight:bold;">{{ $lastDate.Format "02-01-2006" }}</td>
             </tr>
