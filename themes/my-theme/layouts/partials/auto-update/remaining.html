@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Latest Updates</title>
+    <link rel="stylesheet" href="\css\remaining.css">
+    <script src="\js\remaining.js"></script>
+
+</head>
+<body>
+    <div class="link-container">
+ {{ range .Site.RegularPages }}
+    
+        <div class="link-update">
+            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a> <em style="font-size:small;">{{ .Date.Format "02/01/2006" }}</em>
+        </div>
+    {{ end }}
+
+       
+</div>
+</body>
+</html>
