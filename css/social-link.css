@@ -1,0 +1,109 @@
+  
+        .banner {
+            width: 100%;
+            height: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .diagonal-slice {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(45deg, #4CAF50, #2E7D32);
+            clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        }
+
+        .banner-text {
+            color: white;
+            font-size: 3.5em;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
+            letter-spacing: 2px;
+            margin: 0;
+            padding: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Your custom styling here */
+     
+
+        /* Responsive design */
+        @media (max-width: 1200px) {
+            .banner-text {
+                font-size: 3em;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .banner-text {
+                font-size: 2.5em;
+            }
+            .diagonal-slice {
+                width: 75%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 2em;
+            }
+            .diagonal-slice {
+                width: 80%;
+                clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .banner-text {
+                font-size: 1.5em;
+            }
+            .diagonal-slice {
+                width: 85%;
+                clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        /* Optional: Add animation */
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .diagonal-slice {
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Optional: Add a button */
+        .banner-button {
+            position: absolute;
+          margin:auto;
+width: 230px;
+            padding: 5px 20px;
+font-size:13px;
+text-align:center;
+            background-color: white;
+            color: #4CAF50;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .banner-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }

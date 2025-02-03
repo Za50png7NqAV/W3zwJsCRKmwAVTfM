@@ -22,9 +22,7 @@
 </head> 
 <body>
     <div class="main-container">
-       
-        
-        <head>
+   <head>
     
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
@@ -46,111 +44,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="\css\header.css">
-<style>
-  
-header {
-  background-color: #f8f9fa;  
-  padding: 10px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-  border-bottom: 3px solid #fff;  
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo img {
-  height: 70px;  
-  max-width: 100%;
-}
-
-.portal-name h1 {
-  font-size: 28px;
-  color: #007bff;  
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.sidenav {
-
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 9;
-  top: 0;
-  right: 0;
-  background-color: #f7f7f7;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 5px;
-  box-shadow: 1px 5px 8px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: red;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 35px;
- left: 10px;
-  font-size: 20px;
-
-  
-}
-
-#main-btn {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-@media (max-width: 768px) {
-  .header-container {
-      flex-direction: column;
-      text-align: center;
-    
-  }
-  
-  .logo img {
-      height: 60px;
-  }
-  
-  .portal-name h1 {
-      font-size: 24px;
-  }
-  #main-btn {display:none;}
-}
-  </style>
+<script src="\js\header.js"></script>
 </head>
-
-
-
-
-
-
 <header>
    <div class="header-container">
        <div class="logo">
@@ -162,47 +57,21 @@ header {
         
        </div>
        <div id="main-btn">
+        <a style="font-size:30px;cursor:pointer" href="/notification"><i class='fas fa-bell'></i> </a>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>
-         </div>
+        
+      </div>
    </div>
 </header>
 
-
-
 <div id="mySidenav" class="sidenav">
+
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fas fa-arrow-left'></i></a>
     <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
   </div>
-  
+
  
   
-  <script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "380px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
-  </script>
-
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-      .then(function(registration) {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch(function(error) {
-        console.error('Service Worker registration failed:', error);
-      });
-  }
-</script>
- 
-       
-        
      
         
         <head>
@@ -246,123 +115,10 @@ header {
 </body>
 
 
-        <!DOCTYPE html>
-<html lang="en">
-<head>
+        <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        
-        .banner {
-            width: 100%;
-            height: 50px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .diagonal-slice {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(45deg, #4CAF50, #2E7D32);
-            clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-        }
-
-        .banner-text {
-            color: white;
-            font-size: 3.5em;
-            font-weight: bold;
-            text-align: center;
-            text-transform: uppercase;
-            font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
-            letter-spacing: 2px;
-            margin: 0;
-            padding: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-         
-     
-
-         
-        @media (max-width: 1200px) {
-            .banner-text {
-                font-size: 3em;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .banner-text {
-                font-size: 2.5em;
-            }
-            .diagonal-slice {
-                width: 75%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .banner-text {
-                font-size: 2em;
-            }
-            .diagonal-slice {
-                width: 80%;
-                clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%);
-            }
-        }
-
-        @media (max-width: 576px) {
-            .banner-text {
-                font-size: 1.5em;
-            }
-            .diagonal-slice {
-                width: 85%;
-                clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%);
-            }
-        }
-
-         
-        @keyframes slideIn {
-            from {
-                transform: translateX(100%);
-            }
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        .diagonal-slice {
-            animation: slideIn 1s ease-out;
-        }
-
-         
-        .banner-button {
-            position: absolute;
-          margin:auto;
-width: 230px;
-            padding: 5px 20px;
-font-size:13px;
-text-align:center;
-            background-color: white;
-            color: #4CAF50;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .banner-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-    </style>
+    <link rel="stylesheet" href=" \css\social-link.css">
 </head>
 <body>
     <div class="banner">
@@ -370,9 +126,8 @@ text-align:center;
         <a href="https://yojnaportal.com/whatsapp/" class="banner-button" target="_blank">Join WhatsApp Channel</a>
         </div>
     </div>
-
 </body>
-</html>
+
         <div id="sidenav-main">
         
         
@@ -450,6 +205,18 @@ text-align:center;
     
     
 
+    
+
+    
+    
+
+     
+        
+    
+
+    
+    
+
      
         
     
@@ -813,6 +580,18 @@ text-align:center;
  
 
 
+
+    
+    
+
+    
+        
+        
+
+        
+            
+        
+    
 
     
     
@@ -1215,7 +994,7 @@ text-align:center;
         
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/student/2025/nvs-class-6th/" class="post-link">Navoday JNV Selection Test for Class VI Online Form 2025</a></td>
+                <td><a href="https://www.yojnaportal.com/student/2025/nvs-class-6th/" class="post-link">Navoday JNV Selection Test for Class VI Online Form 2025 Exam Date</a></td>
                 <td>18-01-2025 </td>
                 <td>12-04-2025 </td>
             </tr>
@@ -1238,105 +1017,111 @@ text-align:center;
         <tbody>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/bank/sbi-po-dec24/" class="post-link"> SBI Probationary Officers PO Recruitment 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/bank/sbi-po-dec24/" class="post-link"> SBI Probationary Officers PO Recruitment 2024 Exam Date</a></td>
                 <td>08-03-2025 </td>
                 <td>15-03-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/2024/nta-csir-ugc-dec24/" class="post-link"> NTA CSIR UGC NET / JRF Exam Dec 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/2024/nta-csir-ugc-dec24/" class="post-link"> NTA CSIR UGC NET / JRF Exam Dec 2024 Exam Date</a></td>
                 <td>16-02-2025 </td>
                 <td>28-02-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/mp/mpesb_parvekshak_2024/" class="post-link"> MPESB Parvekshak Recruitment Test 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/mp/mpesb_parvekshak_2024/" class="post-link"> MPESB Parvekshak Recruitment Test 2024 Exam Date</a></td>
                 <td>28-02-2025 </td>
                 <td>28-02-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/mp/mppsc-pre-2025/" class="post-link"> MPPSC State Services Examination 2025 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/mp/mppsc-pre-2025/" class="post-link"> MPPSC State Services Examination 2025 Exam Date</a></td>
                 <td>16-02-2025 </td>
                 <td>16-02-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/student/mp/sharmodaya-admission-2025/" class="post-link"> Sharmodaya Enterance Exam 2025-26 </a></td>
+                <td><a href="https://www.yojnaportal.com/student/mp/sharmodaya-admission-2025/" class="post-link"> Sharmodaya Enterance Exam 2025-26 Exam Date</a></td>
                 <td>09-02-2025 </td>
                 <td>09-02-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/2024/aiims-group-b-c-cre/" class="post-link"> AIIMS Group B &amp; C CRE Recruitment 2025 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/2024/aiims-group-b-c-cre/" class="post-link"> AIIMS Group B &amp; C CRE Recruitment 2025 Exam Date</a></td>
                 <td>26-02-2025 </td>
                 <td>28-02-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/force/airforce-intake-01-2026/" class="post-link"> Airforce Agniveer Intake 01/2026 Online Form </a></td>
+                <td><a href="https://www.yojnaportal.com/force/airforce-intake-01-2026/" class="post-link"> Airforce Agniveer Intake 01/2026 Online Form Exam Date</a></td>
                 <td>22-03-2025 </td>
                 <td>22-03-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/mp/mpsedc-internship_2/" class="post-link"> MPSEDC Internship 2.0 Program Apply Online </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/mp/mpsedc-internship_2/" class="post-link"> MPSEDC Internship 2.0 Program Apply Online Exam Date</a></td>
                 <td>14-02-2025 </td>
                 <td>14-02-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/mp/mpesb-paramedical-group5/" class="post-link"> MPESB Paramedical Group 5 Recruitment 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/mp/mpesb-paramedical-group5/" class="post-link"> MPESB Paramedical Group 5 Recruitment 2024 Exam Date</a></td>
                 <td>15-02-2025 </td>
                 <td>15-02-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/student/mp/mpsos-excellent-model-schools/" class="post-link"> MPSOS Excellent &amp; Model Schools Exam 2025-26 </a></td>
+                <td><a href="https://www.yojnaportal.com/student/mp/mpsos-excellent-model-schools/" class="post-link"> MPSOS Excellent &amp; Model Schools Exam 2025-26 Exam Date</a></td>
                 <td>08-03-2025 </td>
                 <td>08-03-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/ssc/ssc-gd-constable-2024/" class="post-link"> SSC GD Constable Recruitment Exam Dates </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/ssc/ssc-gd-constable-2024/" class="post-link"> SSC GD Constable Recruitment Exam Dates Exam Date</a></td>
                 <td>04-02-2025 </td>
                 <td>25-02-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/force/coast-guard-navik-02-2025/" class="post-link"> Coast Guard Navik GD, DB CGEPT 02/2025 Online Form 2025 </a></td>
+                <td><a href="https://www.yojnaportal.com/force/coast-guard-navik-02-2025/" class="post-link"> Coast Guard Navik GD, DB CGEPT 02/2025 Online Form 2025 Exam Date</a></td>
                 <td>01-04-2025 </td>
                 <td>30-04-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/mp/mpesb-ms-ps-tst-2024/" class="post-link"> MPESB MS-PS Teacher Exam 2025 Apply Online </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/mp/mpesb-ms-ps-tst-2024/" class="post-link"> MPESB MS-PS Teacher Exam 2025 Apply Online Exam Date</a></td>
                 <td>20-03-2025 </td>
                 <td>20-03-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/student/2025/mpbse-10th-12th-main-exam-2024-25/" class="post-link"> MPBSE 10th &amp; 12th Main Exam 2024-25 Admit Card </a></td>
+                <td><a href="https://www.yojnaportal.com/student/2025/mpbse-10th-12th-main-exam-2024-25/" class="post-link"> MPBSE 10th &amp; 12th Main Exam 2024-25 Admit Card Exam Date</a></td>
                 <td>25-02-2025 </td>
                 <td>25-03-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/2025/uppsc-exam-calender/" class="post-link"> UPPSC Exam Calender 2025 </a></td>
+                <td><a href="https://www.yojnaportal.com/2025/uppsc-exam-calender/" class="post-link"> UPPSC Exam Calender 2025 Exam Date</a></td>
                 <td>16-02-2025 </td>
                 <td>21-12-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/upsc/upsc-ias-ifs-2025/" class="post-link"> UPSC Civil Services IAS / IFS Pre Online Form 2025 </a></td>
+                <td><a href="https://www.yojnaportal.com/upsc/upsc-ias-ifs-2025/" class="post-link"> UPSC Civil Services IAS / IFS Pre Online Form 2025 Exam Date</a></td>
                 <td>25-05-2025 </td>
                 <td>25-05-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/ssc/ssc-gd-constable-2024/" class="post-link"> SSC GD Constable Recruitment Exam Dates </a></td>
+                <td><a href="https://www.yojnaportal.com/ssc/ssc-gd-constable-2024/" class="post-link"> SSC GD Constable Recruitment Exam Dates Exam Date</a></td>
                 <td>04-02-2025 </td>
                 <td>25-02-2025 </td>
+            </tr>
+            
+            <tr>
+                <td><a href="https://www.yojnaportal.com/nta/nta-cuet-pg-2025/" class="post-link"> NTA CUET PG 2025 Online Form Exam Date</a></td>
+                <td>13-03-2025 </td>
+                <td>31-03-2025 </td>
             </tr>
             
         </tbody>
@@ -1355,85 +1140,85 @@ text-align:center;
         <tbody>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/mp/mppsc-pre-2023/" class="post-link" target="_blank"> MPPSC State Services Examination 2023 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/mp/mppsc-pre-2023/" class="post-link" target="_blank"> MPPSC State Services Examination 2023 Exam date </a></td>
                 <td>17-12-2023 </td>
                 <td>17-12-2023 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/2024/ctet-december-2024/" class="post-link" target="_blank"> Ctet December 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/2024/ctet-december-2024/" class="post-link" target="_blank"> Ctet December 2024 Exam date </a></td>
                 <td>14-12-2024 </td>
                 <td>15-12-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/rpsc/rsmssb-jr-accountant-02-23/" class="post-link" target="_blank"> Rsmssb Jr Accountant 02 23 </a></td>
+                <td><a href="https://www.yojnaportal.com/rpsc/rsmssb-jr-accountant-02-23/" class="post-link" target="_blank"> Rsmssb Jr Accountant 02 23 Exam date </a></td>
                 <td>11-02-2024 </td>
                 <td>11-02-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/rpsc/rsmssb-cho-11-2022/" class="post-link" target="_blank"> Rajasthan Community Health Officer CHO  Recruitment 2022 </a></td>
+                <td><a href="https://www.yojnaportal.com/rpsc/rsmssb-cho-11-2022/" class="post-link" target="_blank"> Rajasthan Community Health Officer CHO  Recruitment 2022 Exam date </a></td>
                 <td>03-03-2024 </td>
                 <td>03-03-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/upsc/upsc-cds-first-2024/" class="post-link" target="_blank"> Upsc Cds First 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/upsc/upsc-cds-first-2024/" class="post-link" target="_blank"> Upsc Cds First 2024 Exam date </a></td>
                 <td>21-04-2024 </td>
                 <td>21-04-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/ssc/ssc-cgl-2024/" class="post-link" target="_blank"> SSC CGL 2024 Tier II Admit Card </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/ssc/ssc-cgl-2024/" class="post-link" target="_blank"> SSC CGL 2024 Tier II Admit Card Exam date </a></td>
                 <td>09-09-2024 </td>
                 <td>26-09-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/ssc/ssc-cgl-2024/" class="post-link" target="_blank"> SSC CGL 2024 Tier II Admit Card </a></td>
+                <td><a href="https://www.yojnaportal.com/ssc/ssc-cgl-2024/" class="post-link" target="_blank"> SSC CGL 2024 Tier II Admit Card Exam date </a></td>
                 <td>09-09-2024 </td>
                 <td>26-09-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/upsc/upsc-ias-ifs-2024/" class="post-link" target="_blank"> UPSC IAS IFS 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/upsc/upsc-ias-ifs-2024/" class="post-link" target="_blank"> UPSC IAS IFS 2024 Exam date </a></td>
                 <td>16-07-2024 </td>
                 <td>29-09-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/bihar/bihar-vidhan-02-2024/" class="post-link" target="_blank"> Bihar Vidhan 02 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/bihar/bihar-vidhan-02-2024/" class="post-link" target="_blank"> Bihar Vidhan 02 2024 Exam date </a></td>
                 <td>20-10-2024 </td>
                 <td>27-10-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/delhi/dda-various-post-02-2023/" class="post-link" target="_blank"> DDA Various Post 02 2023 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/delhi/dda-various-post-02-2023/" class="post-link" target="_blank"> DDA Various Post 02 2023 Exam date </a></td>
                 <td>19-08-2023 </td>
                 <td>28-08-2023 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/2025/jeemain-session-1/" class="post-link" target="_blank"> JEE Main Session 1 admit card </a></td>
+                <td><a href="https://www.yojnaportal.com/2025/jeemain-session-1/" class="post-link" target="_blank"> JEE Main Session 1 admit card Exam date </a></td>
                 <td>22-01-2025 </td>
                 <td>31-01-2025 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/bihar/bpsc-school-teacher-tre3-feb24/" class="post-link" target="_blank"> Bpsc School Teacher Tre3 Feb24 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/bihar/bpsc-school-teacher-tre3-feb24/" class="post-link" target="_blank"> Bpsc School Teacher Tre3 Feb24 Exam date </a></td>
                 <td>19-07-2024 </td>
                 <td>22-07-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/ssc/ssc-mts-2024/" class="post-link" target="_blank"> SSC Mts 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/ssc/ssc-mts-2024/" class="post-link" target="_blank"> SSC Mts 2024 Exam date </a></td>
                 <td>30-09-2024 </td>
                 <td>14-11-2024 </td>
             </tr>
             
             <tr>
-                <td><a href="https://www.yojnaportal.com/jobs/bihar/bpsc-70th-exam-2024/" class="post-link" target="_blank"> BPSC 70th Exam 2024 </a></td>
+                <td><a href="https://www.yojnaportal.com/jobs/bihar/bpsc-70th-exam-2024/" class="post-link" target="_blank"> BPSC 70th Exam 2024 Exam date </a></td>
                 <td>13-12-2024 </td>
                 <td>13-12-2024 </td>
             </tr>
@@ -1508,83 +1293,9 @@ text-align:center;
 
 <!DOCTYPE html>
 <head>
-    <style>
-        .bottom-nav {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
-            z-index: 1000;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .bottom-nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0.1rem 0;
-            margin: 0;
-        }
-        
-        .bottom-nav ul li {
-            text-align: center;
-        }
-        
-        .bottom-nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 0.8rem;
-            transition: all 0.3s ease;
-            padding: 0.6rem 2.4rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.3rem;
-        }
-        
-        .bottom-nav ul li a i {
-            font-size: 1.2rem;
-        }
-        
-        .bottom-nav ul li a:hover,
-        .bottom-nav ul li a.active {
-            background-color: #f4b400;
-            color: #333;
-        }
-        
-       @media (max-width: 600px) {
-    .bottom-nav {
-        display: block;
-    }
-    .bottom-nav ul li a {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .bottom-nav ul li a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.75rem;
-    }
-}
-
-@media (max-width: 300px) {
-    .bottom-nav ul li a {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 250px) {
-    .bottom-nav {
-        display: none;
-    }
-}
-    </style>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="\css\bottam-nav.css">
+<script src="\js\bottam-nav.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="bottom-nav">
@@ -1608,8 +1319,8 @@ text-align:center;
                 </a>
             </li>
             <li>
-                <a href="/update/">
-                    <i class="fas fa-book"></i>
+                <a href="/notification/">
+                    <i class="fas fa-bell"></i>
                     Update
                 </a>
             </li>
@@ -1622,25 +1333,7 @@ text-align:center;
             </li>
         </ul>
     </nav>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const currentLocation = location.href;
-            const menuItems = document.querySelectorAll('.bottom-nav ul li a');
-            
-            menuItems.forEach(item => {
-                if (item.href === currentLocation) {
-                    item.classList.add('active');
-                }
-            });
-            
-            menuItems.forEach(item => {
-                item.addEventListener('click', function () {
-                    menuItems.forEach(link => link.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-        });
-    </script>
+   
 </body>
 <!DOCTYPE html>
 <html lang="en">

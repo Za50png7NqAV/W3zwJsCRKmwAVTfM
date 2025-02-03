@@ -1,0 +1,78 @@
+a {
+    text-decoration: none;
+}
+
+.link-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px dashed red;
+    font-family: Arial, sans-serif;
+}
+
+.link-update {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.link-update:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.link-update a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    line-height: 1.5;
+}
+
+.link-update a:hover {
+    color: #3498db;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-updates {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 30px;
+}
+
+.link-count {
+       padding: .3rem;
+       text-align: center;
+       border-radius: 5px;
+       width: 120px;
+     margin:auto;
+      font-style: italic;
+      color:green;
+margin-bottom: 0;
+background-color: rgba(0, 0, 0, .03);
+border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+@media (max-width: 600px) {
+    .link-container {
+        padding: 10px;
+    }
+
+    .link-update {
+        padding: 12px;
+    }
+
+    .link-update a {
+        font-size: 14px;
+    }
+}

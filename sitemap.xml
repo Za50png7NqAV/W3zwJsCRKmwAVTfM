@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.yojnaportal.com/railway/</loc>
+    <lastmod>2025-02-02T19:53:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/railway/rrc-ecr-apprentices-feb25/</loc>
+    <lastmod>2025-02-02T19:53:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/</loc>
+    <lastmod>2025-02-02T19:53:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/nta/nta-cuet-pg-2025/</loc>
+    <lastmod>2025-02-02T10:05:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/nta/</loc>
+    <lastmod>2025-02-02T10:05:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.yojnaportal.com/scheme/pmmvy-pdf-form-apply/</loc>
     <lastmod>2025-02-01T18:49:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/scheme/</loc>
-    <lastmod>2025-02-01T18:49:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/</loc>
     <lastmod>2025-02-01T18:49:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -44,11 +64,6 @@
   </url><url>
     <loc>https://www.yojnaportal.com/upsc/</loc>
     <lastmod>2025-01-30T13:01:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/railway/</loc>
-    <lastmod>2025-01-30T12:08:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -543,6 +558,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/suvichar/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/notification/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

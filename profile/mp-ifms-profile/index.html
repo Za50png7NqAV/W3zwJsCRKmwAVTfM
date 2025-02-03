@@ -22,9 +22,7 @@
 </head> 
 <body>
     <div class="main-container">
-       
-        
-        <head>
+   <head>
     
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
@@ -46,111 +44,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="\css\header.css">
-<style>
-  
-header {
-  background-color: #f8f9fa;  
-  padding: 10px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-  border-bottom: 3px solid #fff;  
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo img {
-  height: 70px;  
-  max-width: 100%;
-}
-
-.portal-name h1 {
-  font-size: 28px;
-  color: #007bff;  
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.sidenav {
-
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 9;
-  top: 0;
-  right: 0;
-  background-color: #f7f7f7;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 5px;
-  box-shadow: 1px 5px 8px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: red;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 35px;
- left: 10px;
-  font-size: 20px;
-
-  
-}
-
-#main-btn {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-@media (max-width: 768px) {
-  .header-container {
-      flex-direction: column;
-      text-align: center;
-    
-  }
-  
-  .logo img {
-      height: 60px;
-  }
-  
-  .portal-name h1 {
-      font-size: 24px;
-  }
-  #main-btn {display:none;}
-}
-  </style>
+<script src="\js\header.js"></script>
 </head>
-
-
-
-
-
-
 <header>
    <div class="header-container">
        <div class="logo">
@@ -162,47 +57,21 @@ header {
         
        </div>
        <div id="main-btn">
+        <a style="font-size:30px;cursor:pointer" href="/notification"><i class='fas fa-bell'></i> </a>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>
-         </div>
+        
+      </div>
    </div>
 </header>
 
-
-
 <div id="mySidenav" class="sidenav">
+
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fas fa-arrow-left'></i></a>
     <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
   </div>
-  
+
  
   
-  <script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "380px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
-  </script>
-
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-      .then(function(registration) {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch(function(error) {
-        console.error('Service Worker registration failed:', error);
-      });
-  }
-</script>
- 
-       
-        
      
         
         <head>
@@ -246,123 +115,10 @@ header {
 </body>
 
 
-        <!DOCTYPE html>
-<html lang="en">
-<head>
+        <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        
-        .banner {
-            width: 100%;
-            height: 50px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .diagonal-slice {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(45deg, #4CAF50, #2E7D32);
-            clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-        }
-
-        .banner-text {
-            color: white;
-            font-size: 3.5em;
-            font-weight: bold;
-            text-align: center;
-            text-transform: uppercase;
-            font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
-            letter-spacing: 2px;
-            margin: 0;
-            padding: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-         
-     
-
-         
-        @media (max-width: 1200px) {
-            .banner-text {
-                font-size: 3em;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .banner-text {
-                font-size: 2.5em;
-            }
-            .diagonal-slice {
-                width: 75%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .banner-text {
-                font-size: 2em;
-            }
-            .diagonal-slice {
-                width: 80%;
-                clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%);
-            }
-        }
-
-        @media (max-width: 576px) {
-            .banner-text {
-                font-size: 1.5em;
-            }
-            .diagonal-slice {
-                width: 85%;
-                clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%);
-            }
-        }
-
-         
-        @keyframes slideIn {
-            from {
-                transform: translateX(100%);
-            }
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        .diagonal-slice {
-            animation: slideIn 1s ease-out;
-        }
-
-         
-        .banner-button {
-            position: absolute;
-          margin:auto;
-width: 230px;
-            padding: 5px 20px;
-font-size:13px;
-text-align:center;
-            background-color: white;
-            color: #4CAF50;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .banner-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-    </style>
+    <link rel="stylesheet" href=" \css\social-link.css">
 </head>
 <body>
     <div class="banner">
@@ -370,9 +126,8 @@ text-align:center;
         <a href="https://yojnaportal.com/whatsapp/" class="banner-button" target="_blank">Join WhatsApp Channel</a>
         </div>
     </div>
-
 </body>
-</html>
+
         <div id="sidenav-main">
         
         
@@ -604,83 +359,9 @@ text-align:center;
 
 <!DOCTYPE html>
 <head>
-    <style>
-        .bottom-nav {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
-            z-index: 1000;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .bottom-nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0.1rem 0;
-            margin: 0;
-        }
-        
-        .bottom-nav ul li {
-            text-align: center;
-        }
-        
-        .bottom-nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 0.8rem;
-            transition: all 0.3s ease;
-            padding: 0.6rem 2.4rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.3rem;
-        }
-        
-        .bottom-nav ul li a i {
-            font-size: 1.2rem;
-        }
-        
-        .bottom-nav ul li a:hover,
-        .bottom-nav ul li a.active {
-            background-color: #f4b400;
-            color: #333;
-        }
-        
-       @media (max-width: 600px) {
-    .bottom-nav {
-        display: block;
-    }
-    .bottom-nav ul li a {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .bottom-nav ul li a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.75rem;
-    }
-}
-
-@media (max-width: 300px) {
-    .bottom-nav ul li a {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 250px) {
-    .bottom-nav {
-        display: none;
-    }
-}
-    </style>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="\css\bottam-nav.css">
+<script src="\js\bottam-nav.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="bottom-nav">
@@ -704,8 +385,8 @@ text-align:center;
                 </a>
             </li>
             <li>
-                <a href="/update/">
-                    <i class="fas fa-book"></i>
+                <a href="/notification/">
+                    <i class="fas fa-bell"></i>
                     Update
                 </a>
             </li>
@@ -718,25 +399,7 @@ text-align:center;
             </li>
         </ul>
     </nav>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const currentLocation = location.href;
-            const menuItems = document.querySelectorAll('.bottom-nav ul li a');
-            
-            menuItems.forEach(item => {
-                if (item.href === currentLocation) {
-                    item.classList.add('active');
-                }
-            });
-            
-            menuItems.forEach(item => {
-                item.addEventListener('click', function () {
-                    menuItems.forEach(link => link.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-        });
-    </script>
+   
 </body>
 <!DOCTYPE html>
 <html lang="en">
