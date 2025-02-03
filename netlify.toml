@@ -1,6 +1,6 @@
 [build]
-  publish = "public"
   command = "hugo"
+  publish = "public"
 
 [context.production.environment]
-  HUGO_VERSION = "0.92.0"  # अपना Hugo Version डालें
+  HUGO_VERSION = "0.92.0"  # अपने प्रोजेक्ट के अनुसार Hugo वर्शन अपडेट करें

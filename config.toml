@@ -27,3 +27,4 @@ home = ["HTML", "JSON"]
   filename = "sitemap.xml"
   changefreq = "daily"
   priority = 0.5
+ 
