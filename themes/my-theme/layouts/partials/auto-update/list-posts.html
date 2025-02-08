@@ -43,7 +43,7 @@ border-bottom:2px solid #f4b400;
 
 </head>
 <div class="post-grid">
-    {{ range first 8 (where  .Site.RegularPages ".Params.recommend" "yes") }}
+    {{ range first 12 (where  .Site.RegularPages ".Params.recommend" "yes") }}
     <a href="{{ .Permalink }}" class="post-link" target="_blank">
     <div 
         class="post" 
