@@ -17,6 +17,16 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/student/mp/mpsos-excellent-model-schools/</loc>
+    <lastmod>2025-02-11T10:30:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/student/</loc>
+    <lastmod>2025-02-11T10:30:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/ssc/ssc-jht-2024/</loc>
     <lastmod>2025-02-11T10:29:11+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -137,11 +147,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/student/</loc>
-    <lastmod>2025-01-28T20:43:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
     <lastmod>2025-01-27T18:49:07+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -229,11 +234,6 @@
   </url><url>
     <loc>http://localhost:1313/reg/</loc>
     <lastmod>2025-01-18T18:51:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/student/mp/mpsos-excellent-model-schools/</loc>
-    <lastmod>2025-01-17T10:30:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
