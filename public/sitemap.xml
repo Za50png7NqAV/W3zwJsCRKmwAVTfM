@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2025-02-12T11:14:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-paramedical-group5/</loc>
-    <lastmod>2025-02-12T11:14:02+05:30</lastmod>
+    <lastmod>2025-02-12T18:49:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-12T18:49:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb-paramedical-group5/</loc>
     <lastmod>2025-02-12T11:14:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -154,11 +154,6 @@
   </url><url>
     <loc>http://localhost:1313/student/2025/mpbse-10th-12th-main-exam-2024-25/</loc>
     <lastmod>2025-01-28T20:43:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
-    <lastmod>2025-01-27T18:49:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
