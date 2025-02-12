@@ -8,6 +8,9 @@ theme = 'my-theme'
   category = "categories"
 [params]
   defaultContentType = "page"
+description = "Stay updated with the latest government schemes, Sarkari Yojna news, and policy updates on Yojna Portal."
+
+
   
 # config.toml
 
