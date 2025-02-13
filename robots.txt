@@ -10,9 +10,9 @@ Allow: /
 User-Agent: Mediapartners-Google
 Allow: /
 
-Sitemap: https://www.yojnaportals.com/sitemap.xml
-Sitemap: https://www.yojnaportals.com/sitemap_images.xml
-Sitemap: https://www.yojnaportals.com/feed_rss.xml
+Sitemap: https://www.yojnaportal.com/sitemap.xml
+Sitemap: https://www.yojnaportal.com/sitemap_images.xml
+Sitemap: https://www.yojnaportal.com/feed_rss.xml
 
 Disallow: /404.shtml
 Disallow: /error-page/
