@@ -27,12 +27,14 @@
     </style>
 </head> 
 <body>
+  {{ partial "header" . }} 
+  {{ partial "baseof-part/navbar" . }}
     <div class="main-container">
-   {{ partial "header" . }} 
+  
   <!-- Include the sidenav partial -->
  
         <!-- Navbar section -->
-        {{ partial "baseof-part/navbar" . }}
+        
         {{ partial "baseof-part/social-link.html" . }}
         <div id="sidenav-main">
         <!-- Main content block -->

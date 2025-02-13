@@ -2,25 +2,26 @@
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
-<meta name="keywords" content="Yojna, Government Schemes, Yojna News, Sarkari Yojna, Yojna Updates, Latest Yojna 2024">
-<link rel="shortcut icon" href="/favicon.ico">
-<meta name="rating" content="general" />
-<meta http-equiv="content-language" content="en-hi" />
-<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="canonical" href="{{ .Permalink }}">
-    <meta property="og:title" content="{{ .Title }}">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
 <meta name="twitter:card" content="summary_large_image">
-    <meta name="robots" content="index, follow">
-    <meta name="distribution" content="global" />
-    <meta name="rating" content="general" />
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.yojnaportal.com/">
-    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<meta name="robots" content="index, follow">
+<meta name="distribution" content="global">
+<meta http-equiv="content-language" content="en-hi">
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+<title>{{ .Title }}</title>
     <link rel="stylesheet" href="\css\header.css">
     <script src="\js\header.js"></script>
 </head>
