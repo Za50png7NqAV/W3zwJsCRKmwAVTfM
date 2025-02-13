@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2025-02-13T10:05:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mp/mpesb-abkari-constable-feb2025/</loc>
     <lastmod>2025-02-13T10:05:39+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -374,11 +369,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mp/agristack-farmer-registry/</loc>
     <lastmod>2025-01-09T16:35:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2024/</loc>
-    <lastmod>2025-01-09T12:18:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
