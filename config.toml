@@ -7,7 +7,7 @@ theme = 'my-theme'
 [taxonomies]
   category = "categories"
 [params]
-  defaultContentType = "page"
+ 
 description = "Stay updated with the latest government schemes, Sarkari Yojna news, and policy updates on Yojna Portal."
 
 
@@ -30,4 +30,4 @@ home = ["HTML", "JSON"]
   filename = "sitemap.xml"
   changefreq = "daily"
   priority = 0.5
- 
+   
