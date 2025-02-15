@@ -342,7 +342,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/2024/aiims-group-b-c-cre/</loc>
+    <loc>http://localhost:1313/2024/aiims-group-b-c-cre/</loc>
     <lastmod>2025-01-10T18:43:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
