@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/mp/mpesb-excise-constable-feb25/</loc>
+    <lastmod>2025-02-15T18:41:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/</loc>
+    <lastmod>2025-02-15T18:41:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-15T18:41:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/force/</loc>
     <lastmod>2025-02-15T18:24:42+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -12,8 +27,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-15T18:24:42+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mp/mpesb-abkari-constable-feb2025/</loc>
+    <lastmod>2025-02-15T10:05:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -24,11 +39,6 @@
   </url><url>
     <loc>http://localhost:1313/upsc/</loc>
     <lastmod>2025-02-14T13:09:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-abkari-constable-feb2025/</loc>
-    <lastmod>2025-02-14T10:05:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -168,11 +178,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/mp/farmer-mpdage-ekrishi-yantra/</loc>
-    <lastmod>2025-01-29T16:40:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/</loc>
     <lastmod>2025-01-29T16:40:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
