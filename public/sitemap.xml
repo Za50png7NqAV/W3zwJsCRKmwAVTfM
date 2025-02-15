@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/force/</loc>
+    <lastmod>2025-02-15T18:24:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/navy-ssc-officer-st-jan2026/</loc>
+    <lastmod>2025-02-15T18:24:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-15T18:24:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/upsc/upsc-ies-iss-2025/</loc>
     <lastmod>2025-02-14T13:09:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/upsc/</loc>
-    <lastmod>2025-02-14T13:09:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-14T13:09:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -183,11 +193,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/force/coast-guard-navik-02-2025/</loc>
-    <lastmod>2025-01-27T10:47:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/force/</loc>
     <lastmod>2025-01-27T10:47:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
