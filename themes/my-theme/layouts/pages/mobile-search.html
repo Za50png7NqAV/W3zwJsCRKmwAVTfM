@@ -39,11 +39,9 @@
                 
                 <div id="suggestionsList" class="suggestions-list">
                     {{ range .Site.RegularPages }}
-                   <a href="{{ .RelPermalink }}" target="_blank"> <div class="suggestion-item" data-href="{{ .RelPermalink }}">   {{ .Title }}  <div class="hidden"> 🔗 • {{ with .Params.summary}}{{ . }}{{ else }} {{ end }}</div></a>
+                   <a href="{{ .RelPermalink }}" target="_blank"> <div class="suggestion-item" data-href="{{ .RelPermalink }}">   {{ .Title }}  <div class="hidden"> 🔗 • {{ .Summary }}</div></a>
                 </div>  
                
-                
-
  {{ end }}          </div>
                   
                 <input type="submit" class="mobile-submit" value="🔍 Search...">

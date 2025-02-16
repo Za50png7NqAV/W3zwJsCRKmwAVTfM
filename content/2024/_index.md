@@ -1,4 +1,3 @@
 +++
-tittle="hugo"
-draft= true
+tittle="2024"
 +++
