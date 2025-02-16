@@ -2,18 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.yojnaportal.com/jobs/</loc>
-    <lastmod>2025-02-13T10:05:39+05:30</lastmod>
+    <loc>https://www.yojnaportal.com/mp/mpesb-excise-constable-feb25/</loc>
+    <lastmod>2025-02-15T18:41:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/jobs/mp/mpesb-abkari-constable-feb2025/</loc>
-    <lastmod>2025-02-13T10:05:39+05:30</lastmod>
+    <loc>https://www.yojnaportal.com/mp/</loc>
+    <lastmod>2025-02-15T18:41:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/</loc>
-    <lastmod>2025-02-13T10:05:39+05:30</lastmod>
+    <lastmod>2025-02-15T18:41:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/force/</loc>
+    <lastmod>2025-02-15T18:24:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/force/navy-ssc-officer-st-jan2026/</loc>
+    <lastmod>2025-02-15T18:24:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/jobs/mp/mpesb-abkari-constable-feb2025/</loc>
+    <lastmod>2025-02-15T10:05:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/upsc/upsc-ies-iss-2025/</loc>
+    <lastmod>2025-02-14T13:09:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/upsc/</loc>
+    <lastmod>2025-02-14T13:09:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/jobs/mp/mpesb-excise-constable-feb25/</loc>
+    <lastmod>2025-02-14T10:05:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -137,11 +167,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/upsc/</loc>
-    <lastmod>2025-01-30T13:01:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.yojnaportal.com/railway/rrc-gorakhpur-apprentices-jan25/</loc>
     <lastmod>2025-01-30T12:08:59+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -153,11 +178,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/mp/farmer-mpdage-ekrishi-yantra/</loc>
-    <lastmod>2025-01-29T16:40:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/mp/</loc>
     <lastmod>2025-01-29T16:40:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -178,11 +198,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/force/coast-guard-navik-02-2025/</loc>
-    <lastmod>2025-01-27T10:47:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/force/</loc>
     <lastmod>2025-01-27T10:47:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -337,7 +352,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/jobs/2024/aiims-group-b-c-cre/</loc>
+    <loc>https://www.yojnaportal.com/2024/aiims-group-b-c-cre/</loc>
     <lastmod>2025-01-10T18:43:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -374,11 +389,6 @@
   </url><url>
     <loc>https://www.yojnaportal.com/scheme/mp/agristack-farmer-registry/</loc>
     <lastmod>2025-01-09T16:35:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/2024/</loc>
-    <lastmod>2025-01-09T12:18:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
