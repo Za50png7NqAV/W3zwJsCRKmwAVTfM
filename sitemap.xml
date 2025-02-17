@@ -27,11 +27,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/jobs/mp/mpesb-abkari-constable-feb2025/</loc>
-    <lastmod>2025-02-15T10:05:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.yojnaportal.com/upsc/upsc-ies-iss-2025/</loc>
     <lastmod>2025-02-14T13:09:38+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -42,8 +37,23 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.yojnaportal.com/jobs/</loc>
+    <lastmod>2025-02-14T10:05:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.yojnaportal.com/jobs/mp/mpesb-excise-constable-feb25/</loc>
     <lastmod>2025-02-14T10:05:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/2023/</loc>
+    <lastmod>2025-02-13T09:53:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/2023/uppsc-staff-nurse-unani/</loc>
+    <lastmod>2025-02-13T09:53:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -349,6 +359,11 @@
   </url><url>
     <loc>https://www.yojnaportal.com/force/airforce-intake-01-2026/</loc>
     <lastmod>2025-01-10T19:42:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/2024/</loc>
+    <lastmod>2025-01-10T18:43:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
