@@ -17,6 +17,16 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/student/mp/mpsos-excellent-model-schools/</loc>
+    <lastmod>2025-02-16T10:30:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/student/</loc>
+    <lastmod>2025-02-16T10:30:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/mp/mpesb-excise-constable-feb25/</loc>
     <lastmod>2025-02-15T18:41:58+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -79,16 +89,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/2025/india-post-gds-jan25/</loc>
     <lastmod>2025-02-11T15:27:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/student/mp/mpsos-excellent-model-schools/</loc>
-    <lastmod>2025-02-11T10:30:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/student/</loc>
-    <lastmod>2025-02-11T10:30:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
