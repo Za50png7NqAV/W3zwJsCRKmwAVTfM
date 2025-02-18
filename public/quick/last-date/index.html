@@ -443,6 +443,12 @@
             
             
             
+            <tr class="post" style="background-color: #c1fdc4;">
+                <td><a href="http://localhost:1313/force/navy-ssc-officer-st-jan2026/" target="_blank">Indian Navy SSC Officer January 2026 Online Form is lastdate soon Apply</a></td>
+                <td><a href="#" class="dynamic-link" data-search="force"> force </a></td>
+                <td style="font-weight:bold;">25-02-2025</td>
+            </tr>
+            
         
         
          
@@ -592,6 +598,12 @@
          
             
             
+            
+            <tr class="post" style="background-color: #c1fdc4;">
+                <td><a href="http://localhost:1313/force/coast-guard-navik-02-2025/" target="_blank">Coast Guard Navik GD, DB CGEPT 02/2025 Online Form 2025 is lastdate soon Apply</a></td>
+                <td><a href="#" class="dynamic-link" data-search="Force"> Force </a></td>
+                <td style="font-weight:bold;">25-02-2025</td>
+            </tr>
             
         
         
@@ -1102,13 +1114,6 @@
           
           
           
-          
-          <tr class="post" style="background-color: #f8d4b2;">
-            <td><a href="http://localhost:1313/railway/rrb-isolated-07-2024/" target="_blank">Railway RRB Ministerial and Isolated Post CEN 07/2024 Apply Online for 1036 Post </a></td>
-              <td><a href="#" class="dynamic-link" data-search="Recruitment"> Recruitment </a></td>
-              <td>16-02-2025</td>
-             
-          </tr>
           
           
           
@@ -1677,12 +1682,6 @@
             
             
             
-            <tr class="post" style="background-color:rgb(255, 216, 216);">
-                <td><a href="http://localhost:1313/upsc/upsc-ias-ifs-2025/" target="_blank">UPSC Civil Services IAS / IFS Pre Online Form 2025 </a></td>
-                <td><a href="#" class="dynamic-link" data-search="UPSC"> UPSC </a></td>
-                <td style="font-weight:bold;">11-02-2025</td>
-            </tr>
-            
         
         
          
@@ -1999,32 +1998,29 @@
         
 
 <head>
-<style>
-  
-  
-  
-  table.gsc-search-box td, .gsc-clear-button {display:none;}
-</style></head>
-<script>
+  <style>
     
+    
+    
+    table.gsc-search-box td, .gsc-clear-button {display:none;}
+  </style></head>
+  <script>
     document.querySelectorAll('.dynamic-link').forEach(link => {
       link.addEventListener('click', function(event) {
         event.preventDefault(); 
-  
-        
-        const baseHref = this.getAttribute('href');
-        
         const queryParam = this.getAttribute('data-search');
-   
-        
-        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
-        window.history.pushState({}, '', newUrl);
   
-        
-        window.location.reload();
+        const newUrl = `?gsc.q=${encodeURIComponent(queryParam)}`;
+    
+        window.history.pushState({}, '', newUrl);
+    
+        document.querySelector("input.gsc-input").value = queryParam;
+        document.querySelector("button.gsc-search-button").click();
       });
     });
-  </script>
+    </script>
+  
+    
       </div> 
       <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
 </script>

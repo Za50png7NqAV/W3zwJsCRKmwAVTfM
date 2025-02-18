@@ -323,32 +323,29 @@
         
 
 <head>
-<style>
-  
-  
-  
-  table.gsc-search-box td, .gsc-clear-button {display:none;}
-</style></head>
-<script>
+  <style>
     
+    
+    
+    table.gsc-search-box td, .gsc-clear-button {display:none;}
+  </style></head>
+  <script>
     document.querySelectorAll('.dynamic-link').forEach(link => {
       link.addEventListener('click', function(event) {
         event.preventDefault(); 
-  
-        
-        const baseHref = this.getAttribute('href');
-        
         const queryParam = this.getAttribute('data-search');
-   
-        
-        const newUrl = `#gsc.tab=0?&gsc.q=${queryParam}`;
-        window.history.pushState({}, '', newUrl);
   
-        
-        window.location.reload();
+        const newUrl = `?gsc.q=${encodeURIComponent(queryParam)}`;
+    
+        window.history.pushState({}, '', newUrl);
+    
+        document.querySelector("input.gsc-input").value = queryParam;
+        document.querySelector("button.gsc-search-button").click();
       });
     });
-  </script>
+    </script>
+  
+    
       </div> 
       <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
 </script>
