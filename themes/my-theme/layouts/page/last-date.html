@@ -1,8 +1,7 @@
 {{ define "main" }}
     <!-- Header Partial -->
     {{ partial "auto-update/last-date.html" . }}
-
-    <!-- Content Section -->
+    {{ partial "baseof-part/dynamic-link.html" . }}
     <div class="content">
         {{ .Content }}
     </div>

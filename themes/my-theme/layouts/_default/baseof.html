@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Params.lang | default .Site.Language.Lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
       </div> 
       {{ partial "baseof-part/footer" . }}
     </div>
-    {{ partial "baseof-part/dynamic-link.html" . }}
+   
        
         
     
@@ -53,22 +53,5 @@
 
       
 </body>
-
-
-
-     <!-- dynamic-button -->
-     <script>
-     window.addEventListener('hashchange', function () {
-        if (window.location.hash === '#gsc.tab=0') {
-      
-          history.replaceState(null, null, window.location.pathname + window.location.search);
-        }
-      });
-      window.addEventListener('DOMContentLoaded', function () {
-        if (window.location.hash === '#gsc.tab=0') {
-          history.replaceState(null, null, window.location.pathname + window.location.search);
-        }
-      });
-    </script>
 
 </html>

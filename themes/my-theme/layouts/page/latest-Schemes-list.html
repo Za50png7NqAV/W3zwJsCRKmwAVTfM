@@ -5,10 +5,7 @@
 {{ $Pages := where .Site.RegularPages ".Params.post-type" "schemes" }}
 {{ $paginator := .Paginate $Pages }}
 {{ partial "list-update/schemes-list.html" $paginator }}
-    <!-- Header Partial -->
-
-
-    <!-- Content Section -->
+{{ partial "baseof-part/dynamic-link.html" . }}
     <div class="content">
         {{ .Content }}
     </div>

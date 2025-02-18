@@ -4,8 +4,7 @@
 <h2>{{ .Title }} </h2>
     <!-- Header Partial -->
     {{ partial "list-update/important-link-list.html" . }}
-
-    <!-- Content Section -->
+    {{ partial "baseof-part/dynamic-link.html" . }}
     <div class="content">
         {{ .Content }}
     </div>
