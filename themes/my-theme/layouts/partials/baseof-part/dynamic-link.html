@@ -12,13 +12,10 @@
       link.addEventListener('click', function(event) {
         event.preventDefault(); 
         const queryParam = this.getAttribute('data-search');
-  
         const newUrl = `?gsc.q=${encodeURIComponent(queryParam)}`;
-    
-        window.history.pushState({}, '', newUrl);
-    
-        document.querySelector("input.gsc-input").value = queryParam;
-        document.querySelector("button.gsc-search-button").click();
+         window.history.pushState({}, '', newUrl);
+         document.querySelector("input.gsc-input").value = queryParam;
+         document.querySelector("button.gsc-search-button").click();
       });
     });
     </script>
