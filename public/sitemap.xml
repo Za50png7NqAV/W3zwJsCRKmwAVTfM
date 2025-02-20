@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/railway/</loc>
+    <lastmod>2025-02-19T19:35:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/railway/rrb-group-d-cen-08-2024/</loc>
+    <lastmod>2025-02-19T19:35:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-19T19:35:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/student/apaar-id-card/</loc>
     <lastmod>2025-02-19T19:18:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/student/</loc>
-    <lastmod>2025-02-19T19:18:40+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-19T19:18:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -152,11 +162,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/railway/</loc>
-    <lastmod>2025-02-02T19:53:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/railway/rrc-ecr-apprentices-feb25/</loc>
     <lastmod>2025-02-02T19:53:48+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -264,11 +269,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mp/pension-apply/</loc>
     <lastmod>2025-01-22T18:58:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/railway/rrb-group-d-cen-08-2024/</loc>
-    <lastmod>2025-01-22T10:35:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
