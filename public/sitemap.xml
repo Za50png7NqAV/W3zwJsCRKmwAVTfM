@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/rpsc/rssb-patwari-02-2025/</loc>
+    <lastmod>2025-02-22T16:19:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rpsc/</loc>
+    <lastmod>2025-02-22T16:19:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-22T16:19:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/</loc>
     <lastmod>2025-02-21T19:20:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/mp/mpesb_parvekshak_2024/</loc>
-    <lastmod>2025-02-21T19:20:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-21T19:20:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -403,11 +413,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/rpsc/rsmssb-cho-11-2022/</loc>
-    <lastmod>2025-01-10T12:58:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/rpsc/</loc>
     <lastmod>2025-01-10T12:58:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
