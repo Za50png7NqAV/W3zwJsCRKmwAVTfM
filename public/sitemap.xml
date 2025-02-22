@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/card/</loc>
+    <lastmod>2025-02-22T19:14:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/card/samagra-id-print/</loc>
+    <lastmod>2025-02-22T19:14:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-22T19:14:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/rpsc/</loc>
     <lastmod>2025-02-22T18:04:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/rpsc/rrvunl-technician-feb25/</loc>
-    <lastmod>2025-02-22T18:04:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-22T18:04:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -244,11 +254,6 @@
   </url><url>
     <loc>http://localhost:1313/student/2025/mpbse-10th-12th-main-exam-2024-25/</loc>
     <lastmod>2025-01-28T20:43:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/card/</loc>
-    <lastmod>2025-01-27T11:29:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
