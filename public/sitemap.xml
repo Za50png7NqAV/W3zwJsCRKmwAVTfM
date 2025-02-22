@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/rpsc/rssb-patwari-02-2025/</loc>
-    <lastmod>2025-02-22T16:19:46+05:30</lastmod>
+    <loc>http://localhost:1313/rpsc/</loc>
+    <lastmod>2025-02-22T18:04:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/rpsc/</loc>
-    <lastmod>2025-02-22T16:19:46+05:30</lastmod>
+    <loc>http://localhost:1313/rpsc/rrvunl-technician-feb25/</loc>
+    <lastmod>2025-02-22T18:04:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-22T18:04:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rpsc/rssb-patwari-02-2025/</loc>
     <lastmod>2025-02-22T16:19:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
