@@ -4,3 +4,4 @@
 
 [context.production.environment]
   HUGO_VERSION = "0.92.0"  # अपने प्रोजेक्ट के अनुसार Hugo वर्शन अपडेट करें
+  

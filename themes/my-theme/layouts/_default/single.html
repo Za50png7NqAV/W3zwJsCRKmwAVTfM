@@ -39,7 +39,14 @@
     <div class="single-post-content">
       {{ .Content }}
     
-      {{ partial "adsense.html" . }}
+      {{ $imageURL := .Params.imageBanner }}
+      <img src="{{ $imageURL }}" 
+           loading="lazy"
+           sizes="(max-width: 800px) 100vw, 800px"  
+           alt="Yojna Portal Banner"
+           style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+
+
     <!-- Include partial for tags/terms -->
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
    

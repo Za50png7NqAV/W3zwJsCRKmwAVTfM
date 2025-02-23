@@ -2,17 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/card/</loc>
+    <lastmod>2025-02-22T19:14:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/card/samagra-id-print/</loc>
+    <lastmod>2025-02-22T19:14:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-22T19:14:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rpsc/</loc>
+    <lastmod>2025-02-22T18:04:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rpsc/rrvunl-technician-feb25/</loc>
+    <lastmod>2025-02-22T18:04:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rpsc/rssb-patwari-02-2025/</loc>
+    <lastmod>2025-02-22T16:19:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/</loc>
+    <lastmod>2025-02-21T19:20:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb_parvekshak_2024/</loc>
+    <lastmod>2025-02-21T19:20:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
+    <lastmod>2025-02-21T19:15:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/mp/mpbhuabhilekh-certified-copy/</loc>
     <lastmod>2025-02-20T18:38:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/mp/</loc>
-    <lastmod>2025-02-20T18:38:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-20T18:38:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -87,11 +127,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2025-02-14T10:05:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mp/mpesb-excise-constable-feb25/</loc>
     <lastmod>2025-02-14T10:05:39+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -109,11 +144,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp/mpesb-paramedical-group5/</loc>
     <lastmod>2025-02-12T11:14:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
-    <lastmod>2025-02-11T19:49:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -224,11 +254,6 @@
   </url><url>
     <loc>http://localhost:1313/student/2025/mpbse-10th-12th-main-exam-2024-25/</loc>
     <lastmod>2025-01-28T20:43:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/card/</loc>
-    <lastmod>2025-01-27T11:29:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -402,11 +427,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/rpsc/</loc>
-    <lastmod>2025-01-10T12:58:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/rpsc/rsmssb-jr-accountant-02-23/</loc>
     <lastmod>2025-01-10T12:44:12+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -459,11 +479,6 @@
   </url><url>
     <loc>http://localhost:1313/student/mp/mptaas-scholarship-profile/</loc>
     <lastmod>2025-01-05T19:50:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb_parvekshak_2024/</loc>
-    <lastmod>2025-01-04T19:40:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

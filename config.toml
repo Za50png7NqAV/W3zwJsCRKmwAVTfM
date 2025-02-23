@@ -1,4 +1,4 @@
-baseURL = "https://www.yojnaportal.com/"
+baseURL = "https://yojnaportal.com/"
 languageCode = 'en-us'
 title = 'YOJNA PORTAL'
 theme = 'my-theme'
@@ -30,4 +30,8 @@ home = ["HTML", "JSON"]
   filename = "sitemap.xml"
   changefreq = "daily"
   priority = 0.5
-   
+  
+[caches]
+  [caches.assets]
+    dir = ":resourceDir/_gen"
+    maxAge = "31536000s"  # 365 दिन = 365 * 24 * 60 * 60 सेकंड

@@ -147,48 +147,48 @@ button:hover {
   }
 }
 
-#table-head {
-  text-align: center;
-  padding: 5px;
-  font-weight: bold;
-  border-bottom: 2px solid #ddd;
-  margin-bottom: 10px;
-  text-align: center;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(-45deg, #d13100, #630026, #0b2e00, #000000, #0c0244);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  
-  }
-  @keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-  }
-  .lastDateContainer {
-  background: linear-gradient(-45deg, #4CAF50, #f4b400, rgb(255, 115, 68), #021e3d94);
-  background-size: 400% 400%;
-  animation: gradientBG 5s ease infinite;
-  
-  }
-  @keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-  }
+ #table-head {
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 10px;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #d13100, #630026, #0b2e00, #000000, #0c0244);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            
+            }
+            @keyframes gradientBG {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+            }
+            .lastDateContainer {
+            background: linear-gradient(-45deg, #4CAF50, #f4b400, rgb(255, 115, 68), #021e3d94);
+            background-size: 400% 400%;
+            animation: gradientBG 5s ease infinite;
+            
+            }
+            @keyframes gradientBG {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+            }

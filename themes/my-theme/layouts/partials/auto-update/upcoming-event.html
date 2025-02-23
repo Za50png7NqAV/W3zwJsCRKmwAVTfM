@@ -7,8 +7,10 @@
       </tr>
     </thead>
     <tbody>
+
       {{ range first 20 (where .Pages ".Params.post-type" "schemes") }}
-        <tr>
+        
+      <tr>
           <td>{{ .Title }}</td>
           <td>{{ .Params.state }}</td>
           <td><a href="{{ .Permalink }}">Know More</a></td>
