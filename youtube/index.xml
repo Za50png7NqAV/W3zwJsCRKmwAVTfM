@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Youtube Channel on YOJNA PORTAL</title>
-    <link>https://www.yojnaportal.com/youtube/</link>
+    <link>https://yojnaportal.com/youtube/</link>
     <description>Recent content in Youtube Channel on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://www.yojnaportal.com/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yojnaportal.com/youtube/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
