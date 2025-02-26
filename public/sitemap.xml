@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ads/whatsapp-promotion/</loc>
-    <lastmod>2025-02-25T18:48:38+05:30</lastmod>
+    <loc>http://localhost:1313/2025/</loc>
+    <lastmod>2025-02-26T19:13:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2025/csir-iitr-lucknow-jsa-feb25/</loc>
+    <lastmod>2025-02-26T19:13:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-26T19:13:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ads/whatsapp-promotion/</loc>
     <lastmod>2025-02-25T18:48:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -84,11 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/student/2025/mpsaras-admission-6/</loc>
     <lastmod>2025-02-18T19:56:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/</loc>
-    <lastmod>2025-02-17T19:27:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
