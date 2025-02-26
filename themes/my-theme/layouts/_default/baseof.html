@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ .Params.lang | default .Site.Language.Lang }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js\baseof.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
-   
-    <link rel="stylesheet" href="\css\yp-main.css">
-    
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-GWSRPE5DVE');
-    </script>
-   
-    <style> 
-      body {
-      background-color: #eee;
-      }
-  
-    </style>
-</head> 
+
 <body>
   {{ partial "header" . }} 
   {{ partial "baseof-part/navbar" . }}
