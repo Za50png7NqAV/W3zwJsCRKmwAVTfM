@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/imp/</loc>
+    <lastmod>2025-02-27T09:54:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-27T09:54:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/imp/dot-tefcop-know-your-mobile-connetion/</loc>
+    <lastmod>2025-02-27T09:52:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/2025/</loc>
     <lastmod>2025-02-26T19:13:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/2025/csir-iitr-lucknow-jsa-feb25/</loc>
-    <lastmod>2025-02-26T19:13:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-26T19:13:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
