@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/</loc>
+    <lastmod>2025-03-01T09:20:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb_parvekshak_2024/</loc>
+    <lastmod>2025-03-01T09:20:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-01T09:20:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/card/</loc>
     <lastmod>2025-02-27T20:04:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/card/print-parivahan-rc-online/</loc>
-    <lastmod>2025-02-27T20:04:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-02-27T20:04:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -69,16 +79,6 @@
   </url><url>
     <loc>http://localhost:1313/rpsc/rssb-patwari-02-2025/</loc>
     <lastmod>2025-02-22T16:19:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2025-02-21T19:20:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb_parvekshak_2024/</loc>
-    <lastmod>2025-02-21T19:20:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
