@@ -1,0 +1,159 @@
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  th, td {
+    border: 1px solid ;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #datezoon1 { background: linear-gradient(to right, #886600, #ffff99, #886600);
+  width: 200px;
+  
+  background-image: linear-gradient(to right, #ff0000, #ffff00); /* Yellow gradient */
+  background-size: 200px 100%; /* Adjust size to match container */
+  }
+  
+  #datezoon  {
+          position: relative;
+          max-width: 150px; /* Adjust width as needed */
+       /* Adjust height as needed */
+  
+      left:11px;
+      top:-10px
+    
+      }
+      #datezoon:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+         width: 150px; /* Adjust width as needed */
+        height: 20px; /* Same height as the shape */
+          background: linear-gradient(to right, #886600, #ffff99, #886600);
+          transform: skewX(-45deg);
+          transform-origin: top right;
+             z-index:;
+            
+       
+  
+  
+      }
+      #today  {
+     position:absolute;
+     font-size:13px;
+     padding: 3px;
+     font-weight: 700;
+     color:#333;
+     z-index:1;  
+     text-align: center;
+    }
+  
+  
+  
+  
+  .past-exam, .expired {
+    background-color: #e6c7ca;
+  }
+  
+  .current-exam, .upcoming {
+    background-color: #d4edda;
+  }
+  
+   .upcoming-exam, .today {
+    background-color: #fff3cd;
+  }
+  
+  .yesterday {
+    background-color: #f5c6cb;
+  }
+  
+  .tomorrow {
+    background-color: #c3e6cb;
+  }
+  
+  button {
+    padding: 10px;
+  background: linear-gradient(to right, rgb(255, 78, 57), rgb(255, 115, 68));
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  
+  .lastDateContainer { color:black;}
+  
+  button:hover {
+  
+   background: linear-gradient(to right,  rgb(255, 78, 57), #f4b400);
+  color:black;
+  
+  }
+  .lastDateContainer a {text-decoration: none;}
+  
+  .lastDateContainer a:hover {color:red;}
+  
+    /* background degine */
+    #table-head {
+      text-align: center;
+      padding: 5px;
+      font-weight: bold;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 10px;
+      text-align: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #d13100, #630026, #0b2e00, #000000, #0c0244);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      
+      }
+      @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+      }
+      .lastDateContainer {
+      background: linear-gradient(-45deg, #4CAF50, #f4b400, rgb(255, 115, 68), #021e3d94);
+      background-size: 400% 400%;
+      animation: gradientBG 5s ease infinite;
+      
+      }
+      @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+      }
