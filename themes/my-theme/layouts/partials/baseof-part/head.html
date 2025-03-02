@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ .Params.lang | default .Site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="website">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Description }}">
+<meta name="twitter:image" content="{{ .Params.imageBanner | absURL }}">
+<!-- Meta for WhatsApp (Uses Open Graph) -->
+<meta property="og:image" content="{{ .Params.imageBanner | absURL }}">
+<meta name="theme-color" content="#0084ff"> <!-- WhatsApp theme color -->
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="robots" content="index, follow">
+<meta name="distribution" content="global">
+<meta http-equiv="content-language" content="en-hi">
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+<title>{{ .Title }}</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="{{ "css/header.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/yp-main1.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/main/footer.css" | relURL }}">
+    {{ if .Params.cssStyle }}
+  <link rel="stylesheet" href="{{ .Params.cssStyle | relURL }}">
+{{ else }}
+  <link rel="stylesheet" href="{{ "css/default.css" | relURL }}">
+{{ end }}
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
+   
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-GWSRPE5DVE');
+      </script>
+     
+    <style> 
+        body {
+        background-color: #eee;
+        }
+    
+      </style>
+</head>
+<header>
+   <div class="header-container">
+       <div class="logo">
+           <a href="/"> <source srcset="/logo/logo.webp" type="image/webp">
+                <img id="logo" alt="Yojna Portal - Best Yojna Updates Website" src="/logo/size400x74.png" loading="lazy"/>
+          </a>
+       </div>
+       <div class="portal-name">
+        
+       </div>
+       <div id="main-btn">
+        <a style="font-size:30px;cursor:pointer" href="/notification"><i class='fas fa-bell'></i> </a>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>
+      </div>
+   </div>
+</header>
+
+<div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fas fa-arrow-left'></i></a>
+    <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
+  </div>
+

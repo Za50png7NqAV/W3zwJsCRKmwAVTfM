@@ -1,43 +1,9 @@
 
 <head>
 
-<link rel="stylesheet" href="css\list-posts1.css">
+<link rel="stylesheet" href="\css\list-posts.css">
 <style>
-.post-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 posts per row */
-    gap: 2px;
-    margin: 20px auto;
-    max-width:900px;
-    min-width:300px;
-}
 
-.post {
- text-align: center;
-    padding: 5px;
-    color:#fff;
-    border-radius: 3px;
-    height:30px; 
-   font-weight: bold;  
-    overflow: hidden;
-}
-.post:hover { font-size:small;
-border-bottom:2px solid #f4b400;
-
-}   
-.post-link {
-    color: black;
-    text-decoration: none;
-}
-
-.post-link:hover {
-    color: blanchedalmond;
-}
-@media (max-width: 768px) { /* मोबाइल स्क्रीन के लिए */
-    .post{
-        font-size:small; /* पूरी स्क्रीन की चौड़ाई */
-    }
-}
 
 </style>
 
@@ -63,16 +29,4 @@ border-bottom:2px solid #f4b400;
 </div>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const posts = document.querySelectorAll('.post[data-random-bg]');
 
-        // Array of random colors
-        const colors = [  '#2E7D32' , '#990000' , '##000080' , '#b36b00' , '#663d00' , '#330000' , '#001a00' , '#f06508' , '#926400' , '#1f2937' , '#000033' ];
-
-        posts.forEach(post => {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            post.style.backgroundColor = randomColor;
-        });
-    });
-</script>

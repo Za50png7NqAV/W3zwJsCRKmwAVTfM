@@ -1,30 +1,17 @@
 
 <body>
-  {{ partial "header" . }} 
+  {{ partial "baseof-part/head" . }} 
   {{ partial "baseof-part/navbar" . }}
     <div class="main-container">
   
   <!-- Include the sidenav partial -->
  
         <!-- Navbar section -->
-        
-       
-        <div id="sidenav-main">
+       <div id="sidenav-main">
         <!-- Main content block -->
         {{ block "main" . }} {{ end }}
-        
-      </div> 
+   </div> 
       {{ partial "baseof-part/footer" . }}
     </div>
-   
-       
-        
-    
-        
-   
-     
 
-      
 </body>
-
-</html>

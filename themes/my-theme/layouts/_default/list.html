@@ -1,26 +1,9 @@
 
-
-
-
 {{ define "main" }}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yojna Portal - Latest Government Schemes, Yojna News, and Updates</title>
-
-</head>
 <body>
-
-  
-
-    <div id="home" class="content active">
+<div id="home" class="content active">
 
         {{ partial "auto-update/list-posts.html" . }}
-      
-        {{ partial "homelist/grid-container.html" . }}
-        
+       {{ partial "homelist/grid-container.html" . }}
 </body>
-</html>
 {{ end }}
