@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/nta/nta-cuet-ug-2025/</loc>
+    <lastmod>2025-03-03T16:27:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/nta/</loc>
+    <lastmod>2025-03-03T16:27:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-03T16:27:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2025/</loc>
+    <lastmod>2025-03-03T15:56:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2025/assam-rifles-rally-feb25/</loc>
+    <lastmod>2025-03-03T15:56:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/</loc>
     <lastmod>2025-03-03T11:59:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/mp/mpesb-group1-sub3-feb25/</loc>
-    <lastmod>2025-03-03T11:59:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-03-03T11:59:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -69,11 +89,6 @@
   </url><url>
     <loc>http://localhost:1313/imp/dot-tefcop-know-your-mobile-connetion/</loc>
     <lastmod>2025-02-27T09:52:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/</loc>
-    <lastmod>2025-02-26T19:13:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -228,11 +243,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/nta/nta-neet-ug-2025/</loc>
-    <lastmod>2025-02-08T13:59:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/nta/</loc>
     <lastmod>2025-02-08T13:59:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
