@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regs on YOJNA PORTAL</title>
+    <title>YOJNA PORTAL</title>
     <link>http://localhost:1313/reg/</link>
-    <description>Recent content in Regs on YOJNA PORTAL</description>
+    <description>Recent content on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jan 2025 18:51:55 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 03 Mar 2025 10:21:14 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/reg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MP Citizen Character Certificate | Police Verification Apply Online </title>
+      <link>http://localhost:1313/reg/mp-citizen-character-verification/</link>
+      <pubDate>Mon, 03 Mar 2025 10:21:14 +0530</pubDate>
+      <guid>http://localhost:1313/reg/mp-citizen-character-verification/</guid>
+      <description>Character Certificate | Police Verification&#xD;मध्य प्रदेश में चरित्र प्रमाण पत्र (Character Certificate) प्राप्त करने के लिए आप ऑनलाइन आवेदन कर सकते हैं। यह प्रमाण पत्र विभिन्न उद्देश्यों, जैसे नौकरी, वीज़ा आवेदन, या उच्च शिक्षा के लिए आवश्यक हो सकता है।&#xD;📢 ऑनलाइन आवेदन प्रक्रिया: पंजीकरण करें:लॉगिन करें:आवेदन पत्र भरें:दस्तावेज़ अपलोड करें:शुल्क का भुगतान करें:आवेदन सबमिट करें:स्थिति जांचें-पावती डाउलोड करें&#xD;📢 पंजीकरण करें: मध्य प्रदेश पुलिस के सिटीजन पोर्टल पर जाएं: CITIZEN.</description>
+    </item>
     <item>
       <title>MPESB Profile Registration/ Vyapam Panjiyan</title>
       <link>http://localhost:1313/reg/mpesb-profile/</link>
