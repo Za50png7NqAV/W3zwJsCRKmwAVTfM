@@ -4,12 +4,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
 <meta name="description" content="Stay updated with the latest government schemes, Sarkari Yojna news, and policy updates on Yojna Portal.">
 <meta name="keywords" content="Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://yojnaportal.com;">
+
 <link rel="canonical" href="https://yojnaportal.com/mp/">
+
 
 <meta property="og:title" content="Mps">
 <meta property="og:description" content="Stay updated with the latest government schemes, Sarkari Yojna news, and policy updates on Yojna Portal.">
@@ -32,10 +35,18 @@
 <meta http-equiv="content-language" content="en-hi">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 <title>Mps</title>
-    <link rel="stylesheet" href="\css\header.css">
-    <link rel="stylesheet" href="\css\yp-main.css">
-    <script src="\js\header.js"></script>
-    <script src="js\baseof.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/yp-main.css">
+<link rel="stylesheet" href="/css/main/navbar.css">
+    <script src="\js\navbar.js"></script>
+    
+<link rel="stylesheet" href="/css/main/footer.css">
+
+    
+  <link rel="stylesheet" href="/css/default.css">
+
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
    
     <script>
@@ -56,9 +67,9 @@
 <header>
    <div class="header-container">
        <div class="logo">
-           <a href="/">
-               <img id="logo" alt="Yojna Portal" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgupxc_-tu96ZSzHXeXk-k9h7dtThni2_X9W80cEeofspgmss2Nfqgw39jcwJAGp1OmN44uGZ9jK_KambtN64sPTcZdd0BcJYTr2NEpde9eQGvDCiTSIbX3J6hzmeemPsS3trhz1d9QMGezbSCxTG0A6vwKTvOq0h3Pk01Sp5qzY6mrhonkxvTgSADmdQ/s1600/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%A4%AA%E0%A5%8B%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%B2%20700x131.png"/>
-           </a>
+           <a href="/"> <source srcset="/logo/logo.webp" type="image/webp">
+                <img id="logo" alt="Yojna Portal - Best Yojna Updates Website" src="/logo/size400x74.png" loading="lazy"/>
+          </a>
        </div>
        <div class="portal-name">
         
@@ -78,8 +89,6 @@
 
  
   <head>
-    <link rel="stylesheet" href=" \css\navbar.css">
-    <script src="\js\navbar.js"></script>
     <style> </style>
 </head>
 <body>
@@ -123,65 +132,18 @@
   
  
         
-        
-       
-        <div id="sidenav-main">
+       <div id="sidenav-main">
         
         
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yojna Portal - Latest Government Schemes, Yojna News, and Updates</title>
-
-</head>
 <body>
-
-  
-
-    <div id="home" class="content active">
+<div id="home" class="content active">
 
         
 <head>
 
-<link rel="stylesheet" href="css\list-posts1.css">
+<link rel="stylesheet" href="\css\list-posts.css">
 <style>
-.post-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);  
-    gap: 2px;
-    margin: 20px auto;
-    max-width:900px;
-    min-width:300px;
-}
 
-.post {
- text-align: center;
-    padding: 5px;
-    color:#fff;
-    border-radius: 3px;
-    height:30px; 
-   font-weight: bold;  
-    overflow: hidden;
-}
-.post:hover { font-size:small;
-border-bottom:2px solid #f4b400;
-
-}   
-.post-link {
-    color: black;
-    text-decoration: none;
-}
-
-.post-link:hover {
-    color: blanchedalmond;
-}
-@media (max-width: 768px) {  
-    .post{
-        font-size:small;  
-    }
-}
 
 </style>
 
@@ -191,7 +153,7 @@ border-bottom:2px solid #f4b400;
     <a href="https://yojnaportal.com/card/print-parivahan-rc-online/" class="post-link" target="_blank">
     <div 
         class="post" 
-        style="background-color: olive;" 
+        style="background-color: red;" 
         data-random-bg
     >
        
@@ -202,7 +164,7 @@ border-bottom:2px solid #f4b400;
     <a href="https://yojnaportal.com/card/samagra-id-print/" class="post-link" target="_blank">
     <div 
         class="post" 
-        style="background-color: olive;" 
+        style="background-color: blue;" 
         data-random-bg
     >
        
@@ -235,7 +197,7 @@ border-bottom:2px solid #f4b400;
     <a href="https://yojnaportal.com/jobs/2025/india-post-gds-jan25/" class="post-link" target="_blank">
     <div 
         class="post" 
-        style="background-color: olive;" 
+        style="background-color: #2e0202;" 
         data-random-bg
     >
        
@@ -246,7 +208,7 @@ border-bottom:2px solid #f4b400;
     <a href="https://yojnaportal.com/nta/nta-neet-ug-2025/" class="post-link" target="_blank">
     <div 
         class="post" 
-        style="background-color: olive;" 
+        style="background-color: #011d01;" 
         data-random-bg
     >
        
@@ -268,7 +230,7 @@ border-bottom:2px solid #f4b400;
     <a href="https://yojnaportal.com/card/nrega-jobs-card-muster-roll/" class="post-link" target="_blank">
     <div 
         class="post" 
-        style="background-color: olive;" 
+        style="background-color: #095602;" 
         data-random-bg
     >
        
@@ -290,7 +252,7 @@ border-bottom:2px solid #f4b400;
     <a href="https://yojnaportal.com/scheme/pm-awas-yojna-2/" class="post-link" target="_blank">
     <div 
         class="post" 
-        style="background-color: olive;" 
+        style="background-color: #4d3302;" 
         data-random-bg
     >
        
@@ -312,7 +274,7 @@ border-bottom:2px solid #f4b400;
     <a href="https://yojnaportal.com/card/aadhar-card-uidai/" class="post-link" target="_blank">
     <div 
         class="post" 
-        style="background-color: olive;" 
+        style="background-color: #033c31;" 
         data-random-bg
     >
        
@@ -328,160 +290,13 @@ border-bottom:2px solid #f4b400;
 </div>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const posts = document.querySelectorAll('.post[data-random-bg]');
 
-        
-        const colors = [  '#2E7D32' , '#990000' , '##000080' , '#b36b00' , '#663d00' , '#330000' , '#001a00' , '#f06508' , '#926400' , '#1f2937' , '#000033' ];
 
-        posts.forEach(post => {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            post.style.backgroundColor = randomColor;
-        });
-    });
-</script>
-
-      
-        <!DOCTYPE html>
+       <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    :root {
-      --primary: #f06508;
-      --primary-dark: #926400;
-      --secondary: #f3f4f6;
-      --text-light: #ffffff;
-      --text-dark: #1f2937;
-      --border-radius: 5px;
-      --shadow: 0 2px 4px rgba(0,0,0,0.1);
-      --font-size: 16px;
-      --mfont-size: 1rem;
-      --card-width: 350px;
-      --mcard-width: 200px;
-    }
-  
-    .grid-container {
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);  
-      gap: 10px;  
-      max-width:800px;
-      padding: 8px;
-    }
-  
-    .card {
-      background: white;
-      max-width: 350px;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      transition: transform 0.2s, box-shadow 0.2s;
-      overflow: hidden;
-    }
-  
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-  
-    .card-header {
-      background: var(--primary);
-      color: var(--text-light);
-      padding: 3px;
-      font-weight: 600;
-      text-align: center;
-      letter-spacing: 0.5px;
-      font-size:medium;
-      text-shadow: 2px 2px 5px black;
-    }
-  
-    .card-content {
-      padding: 8px;  
-      border: 1px dashed #fff;
-      max-height: 300px;
-     
-      background: var(--secondary);
-      line-height: 1.5;
-      text-align: left;  
-      overflow-y: auto;  
-      overflow-x: hidden;  
-      border-radius: 2px;  
-  }
-  .card-content a { text-decoration: none;}
+  <link rel="stylesheet" href="\css\main\homelist.css">
 
-  li::marker {
-    color: red;
-  }
-     
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-
-   
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 20px;
-  }
-
-   
-  ::-webkit-scrollbar-thumb {
-    background: golden en;
-    border-radius: 20px;
-  }
-
-   
-  ::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
-  }
-
-    .card-footer {
-      
-      background: white;
-      padding: 2px;
-      display: flex;
-      bottom:0;
-      justify-content: flex-end;
-      border-top: 1px solid #e5e7eb;
-    }
-  
-    .more-link {
-      color: var(--primary);
-      text-decoration: none;
-      font-size: var(--font-size);
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      transition: color 0.2s;
-    }
-  
-    .more-link:hover {
-      color: var(--primary-dark);
-    }
-  
-    .more-link::after {
-      content: '→';
-      font-size: 1.1rem;
-    }
-  .card-content a:hover {color:red;}
-     
-    @media (max-width: 768px) {
-      .grid-container {
-        grid-template-columns: repeat(3, 1fr);  
-    gap: 10px 2px;  
-    
-      }
-      .card-header {
-        font-size: smaller;
-      
-      }
-    }
-    @media (max-width: 600px) {
-        .card-content {
-        font-size:7px;
-        }
-    }
-  </style>
 </head>
 <body>
 
@@ -1159,12 +974,9 @@ border-bottom:2px solid #f4b400;
 </body>
 </html>
 
-        
 </body>
-</html>
 
-        
-      </div> 
+   </div> 
       <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="\css\bottam-nav.css">
@@ -1209,25 +1021,10 @@ border-bottom:2px solid #f4b400;
     </nav>
    
 </body>
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href=" \css\footer.css">
-    <script src="\js\translate.js"></script>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/g/f9063374b04d/api.js?onload=fjGVd3&render=explicit"></script>
-   
-   
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-4855323063398382",
-        enable_page_level_ads: true
-    });
-</script>
 
-   
+<head>
+<script src="https://challenges.cloudflare.com/turnstile/v0/g/f9063374b04d/api.js?onload=fjGVd3&render=explicit"></script>
+
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
@@ -1238,56 +1035,48 @@ border-bottom:2px solid #f4b400;
         }
     </script>
 </head>
-
-   
-
-    <footer id="footer">
+<footer id="footer">
         
         <div class="footer-content">
             <div style="color:#f4b400;">|| Follow us on Social Media ||</div>
             <div class="social-media">
-                <a href="https://bit.ly/SarkariJankari" target="_blank" aria-label="WhatsApp">
+                <a href="/whatsapp/" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="https://telegram.me/yojnaportal" target="_blank" aria-label="Telegram">
+                <a href="/telegram/" target="_blank" aria-label="Telegram">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <a href="https://youtube.com/@yojnaportal" target="_blank" aria-label="Youtube">
+                <a href="/youtube/" target="_blank" aria-label="Youtube">
                     <i class="fab fa-youtube"></i>
                 </a>
-                <a href="https://instagram.com/yojnaportalofficial" target="_blank" aria-label="WhatsApp">
+                <a href="/instagram/" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://facebook.com/yojnaportal" target="_blank" aria-label="facebook">
+                <a href="/facebook/" target="_blank" aria-label="facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="https://x.com/yojnaportal" target="_blank" aria-label="WhatsApp">
+                <a href="/x/" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-twitter"></i>
                 </a>
                
             </div>
+            <div id="google_translate_element"></div>
             <nav>
                 <ul>
-                    <li><a href="https://www.yojnaportal.com/">Home</a></li> |
+                    <li><a href="/">Home</a></li> |
                     <li><a href="/about/">About Us</a></li> |
                     <li><a href="/contact/">Contact Us</a></li> |
                     <li><a href="/privacy-policy/">Privacy Policy</a></li> |
                     <li><a href="/disclaimer/">Disclaimer</a></li>
                 </ul>
             </nav>
-            <div id="google_translate_element"></div>
+            
 
-           <div id="copyright" style="color:#f7630e"> ©️ All Copyright <a href="https://www.yojnaportal.com" style="text-decoration:none; color:white;"> www.yojnaportal.com </a> | Yojna Portal </div>
+           <div id="copyright" style="color:#f7630e"> ©️ All Copyright <a href="/" style="text-decoration:none; color:white;"> www.yojnaportal.com </a> | Yojna Portal </div>
          
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-
-            <path fill="#f4b400" fill-opacity="1" d="M0,224L60,240C120,256,240,288,360,288C480,288,600,256,720,224C840,192,960,160,1080,144C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-        
-          </svg>
+       
     </footer>
-  
-   
 
 <script> 
     if (someCondition) {
@@ -1296,23 +1085,15 @@ border-bottom:2px solid #f4b400;
         script.src = 'https://challenges.cloudflare.com/turnstile/v0/g/f9063374b04d/api.js?onload=fjGVd3&render=explicit';
         document.body.appendChild(script);
       }
-      
 </script>
-
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+  <script src="/js/default.js" defer></script>
+
+<script src="/js/header.js" defer></script>
+<script src="/js/navbar.js" defer></script>
 </html>
 
     </div>
-   
-       
-        
-    
-        
-   
-     
 
-      
 </body>
-
-</html>
