@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/</loc>
-    <lastmod>2025-03-04T12:39:07+05:30</lastmod>
+    <loc>http://localhost:1313/force/cisf-constable-tradesman-mar25/</loc>
+    <lastmod>2025-03-05T15:44:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-group-4-mar25/</loc>
-    <lastmod>2025-03-04T12:39:07+05:30</lastmod>
+    <loc>http://localhost:1313/force/</loc>
+    <lastmod>2025-03-05T15:44:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-05T15:44:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/</loc>
+    <lastmod>2025-03-05T09:20:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb_parvekshak_2024/</loc>
+    <lastmod>2025-03-05T09:20:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb-group-4-mar25/</loc>
     <lastmod>2025-03-04T12:39:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -69,11 +84,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/</loc>
     <lastmod>2025-03-01T18:49:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb_parvekshak_2024/</loc>
-    <lastmod>2025-03-01T09:20:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -184,11 +194,6 @@
   </url><url>
     <loc>http://localhost:1313/mp/mpesb-excise-constable-feb25/</loc>
     <lastmod>2025-02-15T18:41:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/force/</loc>
-    <lastmod>2025-02-15T18:24:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
