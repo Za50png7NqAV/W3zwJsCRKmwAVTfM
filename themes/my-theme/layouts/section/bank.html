@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>Latest Bank Jobs</h1>
+    <ul class="upsc-link-list">
+        {{ range where .Site.RegularPages "Section" "bank" }}
+            <li class="upsc-link-item">
+                <a href="{{ .RelPermalink }}" class="upsc-link">{{ .Title }}</a> 
+                <span class="upsc-date">
+                    Last Update: {{ .Lastmod.Format "02 Jan 2006" }}
+                </span>
+            </li>
+        {{ end }}
+    </ul>
+{{ end }}
