@@ -1,11 +1,11 @@
 {{ define "main" }}
-<h1>Latest Admission Post</h1>
+<h1> Latest Card Type Documents Update</h1>
     <ul class="upsc-link-list">
-        {{ range where .Site.RegularPages "Section" "admission" }}
+        {{ range where .Site.RegularPages "Section" "card" }}
             <li class="upsc-link-item">
                 <a href="{{ .RelPermalink }}" class="upsc-link">{{ .Title }}</a> 
                 <span class="upsc-date">
-                    Post Update: {{ .Lastmod.Format "02 Jan 2006" }}
+                    Last Update: {{ .Lastmod.Format "02 Jan 2006" }}
                 </span>
             </li>
         {{ end }}

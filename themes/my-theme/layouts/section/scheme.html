@@ -1,7 +1,7 @@
 {{ define "main" }}
-<h1>Latest Admission Post</h1>
+<h1> Latest Scheme Update</h1>
     <ul class="upsc-link-list">
-        {{ range where .Site.RegularPages "Section" "admission" }}
+        {{ range where .Site.RegularPages "Section" "scheme" }}
             <li class="upsc-link-item">
                 <a href="{{ .RelPermalink }}" class="upsc-link">{{ .Title }}</a> 
                 <span class="upsc-date">
