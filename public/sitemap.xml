@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/bank/boi-apprentices-mar25/</loc>
-    <lastmod>2025-03-06T16:56:11+05:30</lastmod>
+    <loc>http://localhost:1313/admission/2025/</loc>
+    <lastmod>2025-03-06T18:51:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/</loc>
+    <lastmod>2025-03-06T18:51:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/bank/</loc>
-    <lastmod>2025-03-06T16:56:11+05:30</lastmod>
+    <lastmod>2025-03-06T18:51:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/</loc>
+    <lastmod>2025-03-06T18:51:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-06T18:51:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/upsc/</loc>
+    <lastmod>2025-03-06T17:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/bank/boi-apprentices-mar25/</loc>
     <lastmod>2025-03-06T16:56:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -22,22 +42,12 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/</loc>
-    <lastmod>2025-03-06T11:57:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/2025/kvs-class-1/</loc>
     <lastmod>2025-03-06T11:57:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/force/cisf-constable-tradesman-mar25/</loc>
-    <lastmod>2025-03-05T15:44:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/force/</loc>
     <lastmod>2025-03-05T15:44:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -798,11 +808,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/upcoming/</loc>
-    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/upsc/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
