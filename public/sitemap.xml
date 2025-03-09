@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/imp/epfoindia-online-info/</loc>
-    <lastmod>2025-03-09T14:58:36+05:30</lastmod>
+    <loc>http://localhost:1313/mp/domicile-certificate-apply/</loc>
+    <lastmod>2025-03-09T20:06:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-09T20:06:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/income-certificate-apply/</loc>
+    <lastmod>2025-03-09T19:41:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/imp/epfoindia-online-info/</loc>
     <lastmod>2025-03-09T14:58:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -58,6 +68,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/mp/</loc>
+    <lastmod>2025-03-06T18:51:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/</loc>
     <lastmod>2025-03-06T18:51:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -213,11 +228,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/mp/mpbhuabhilekh-certified-copy/</loc>
-    <lastmod>2025-02-20T18:38:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/</loc>
     <lastmod>2025-02-20T18:38:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
