@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>Latest Railway's Jobs Update</h1>
+    <ul class="upsc-link-list">
+        {{ range where .Site.RegularPages "Section" "railway" }}
+            <li class="upsc-link-item">
+                <a href="{{ .RelPermalink }}" class="upsc-link">{{ .Title }}</a> 
+                <span class="upsc-date">
+                    Post Update: {{ .Lastmod.Format "02 Jan 2006" }}
+                </span>
+            </li>
+        {{ end }}
+    </ul>
+{{ end }}
