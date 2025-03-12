@@ -34,13 +34,11 @@
     </div>
 <!-- Hidden list from where text will be taken -->
 <div class="find-list" style="display: none;">
-    <ul>
-        {{ $pages := shuffle .Site.RegularPages }}
-       
+    <ul>   
 <ul>
-  {{ range $pages }}
+    {{ range first 25  .Site.RegularPages }}
     <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ .Title }}
     </li>
   {{ end }}
 </ul>
