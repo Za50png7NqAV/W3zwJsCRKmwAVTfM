@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/ssc/ssc-mts-2024/</loc>
+    <lastmod>2025-03-13T09:25:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ssc/</loc>
+    <lastmod>2025-03-13T09:25:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-13T09:25:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/mp/mpesb-constable-june23/</loc>
     <lastmod>2025-03-13T09:13:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-13T09:13:53+05:30</lastmod>
+    <loc>http://localhost:1313/ssc/ssc-cgl-2024/</loc>
+    <lastmod>2025-03-13T08:28:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -327,11 +342,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/ssc/</loc>
-    <lastmod>2025-02-11T10:29:11+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/nta/nta-neet-ug-2025/</loc>
     <lastmod>2025-02-08T13:59:29+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -417,11 +427,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/ssc/ssc-mts-2024/</loc>
-    <lastmod>2025-01-26T16:25:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/ssc/ssc-gd-constable-2024/</loc>
     <lastmod>2025-01-25T17:55:15+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -483,11 +488,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/ssc/ssc-cgl-2024/</loc>
-    <lastmod>2025-01-15T10:28:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/ssc/ssc-cgl-2024/</loc>
     <lastmod>2025-01-15T10:28:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
