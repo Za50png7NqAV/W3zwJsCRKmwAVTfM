@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025{{ end }}">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://yojnaportal.com;">
 <link rel="canonical" href="{{ .Permalink }}">
 {{ partial "jsonid.html" . }}
+<meta name="debug" content="JSON-LD Loaded">
 <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
