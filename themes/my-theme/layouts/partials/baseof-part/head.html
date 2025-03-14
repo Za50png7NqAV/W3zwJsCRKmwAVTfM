@@ -7,6 +7,7 @@
 <meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025{{ end }}">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://yojnaportal.com;">
 <link rel="canonical" href="{{ .Permalink }}">
+{{ partial "jsonid.html" . }}
 <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">

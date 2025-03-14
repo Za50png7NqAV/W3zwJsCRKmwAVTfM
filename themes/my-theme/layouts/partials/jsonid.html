@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      },
+      "headline": "{{ .Title }}",
+      "description": "{{ .Description }}",
+      "image": "{{ .Params.imageBanner }}",
+      "author": {
+        "@type": "Organization",
+        "name": "{{ .Params.author | default "Yojna Portal" }}",
+        "url": "https://yojnaportal.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Yojna Portal",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.Params.logo }}"
+        }
+      },
+      "datePublished": "{{ .PublishDate.Format "2006-01-02" }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02" }}"
+    }
+    </script>
+    

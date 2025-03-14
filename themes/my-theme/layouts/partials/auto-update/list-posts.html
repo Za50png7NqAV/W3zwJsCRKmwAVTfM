@@ -1,12 +1,6 @@
 
 <head>
-
 <link rel="stylesheet" href="\css\list-posts.css">
-<style>
-
-
-</style>
-
 </head>
 <div class="post-grid">
     {{ range first 12 (where  .Site.RegularPages ".Params.recommend" "yes") }}
