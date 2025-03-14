@@ -12,7 +12,7 @@
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:type" content="website">
+<meta property="og:image" content="{{ .Site.Params.logo | absURL }}">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }}">
@@ -24,12 +24,16 @@
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name='dmca-site-verification' content='T256Y3p2alQ4QW03ZzdEcGd3MWpwQT090' />
 <meta name="robots" content="index, follow">
 <meta name="distribution" content="global">
+{{- with .Lastmod -}}
+  <meta name="lastmod" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
 <meta http-equiv="content-language" content="en-hi">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 <title>{{ .Title }}</title>
-<meta name='dmca-site-verification' content='T256Y3p2alQ4QW03ZzdEcGd3MWpwQT090' />
+
 <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
 <link rel="stylesheet" href="{{ "css/header.css" | relURL }}">
@@ -58,6 +62,7 @@
         body {
         background-color: #eee;
         }
+       .logo a {text-decoration: none;}
     
       </style>
 </head>
@@ -65,7 +70,18 @@
    <div class="header-container">
        <div class="logo">
            <a href="/"> <source srcset="/logo/logo.webp" type="image/webp">
-                <img id="logo" alt="Yojna Portal - Best Yojna Updates Website" src="/logo/size400x74.png" loading="lazy"/>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <img  src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}" style="width: 80px; height: auto;" loading="lazy" />
+              <div>
+                  <div style="font-size: 32px; font-weight: bold; background: linear-gradient(to right, #d32f2f, #ff9800); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                      योजना पोर्टल
+                  </div>
+                  <div style="font-size: 16px; color: #d32f2f; font-weight: bold;">
+                      YOJNA PORTAL
+                  </div>
+              </div>
+          </div>
+          
           </a>
        </div>
        <div class="portal-name">

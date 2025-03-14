@@ -24,3 +24,9 @@ weight = 30
 
 [params]
 paginate = 20
+logo = "logo/logo-100x100.png"
+
+[sitemap]
+  filename = "sitemap.xml"
+  changefreq = "daily"
+  priority = 0.5
