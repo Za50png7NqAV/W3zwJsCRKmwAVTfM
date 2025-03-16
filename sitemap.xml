@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yojnaportal.com/2025/</loc>
-    <lastmod>2025-03-14T16:38:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://yojnaportal.com/categories/admission/</loc>
     <lastmod>2025-03-14T16:38:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -729,6 +724,11 @@
   </url><url>
     <loc>https://yojnaportal.com/categories/yojna/</loc>
     <lastmod>2024-12-25T19:20:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://yojnaportal.com/2025/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
