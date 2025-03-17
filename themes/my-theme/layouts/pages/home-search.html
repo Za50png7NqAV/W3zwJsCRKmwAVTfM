@@ -34,15 +34,15 @@
     </div>
 <!-- Hidden list from where text will be taken -->
 <div class="find-list" style="display: none;">
-    <ul>   
+     
 <ul>
-    {{ range first 25  .Site.RegularPages }}
+    {{ range  shuffle (first 25 .Site.RegularPages) }}
     <li>
       {{ .Title }}
     </li>
   {{ end }}
 </ul>
-    </ul>
+   
 </div>
 <script>
     let sentences = []; // Empty array where sentences will be stored
