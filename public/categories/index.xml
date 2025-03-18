@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on YOJNA PORTAL</title>
-    <link>https://yojnaportal.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Mar 2025 16:38:54 +0530</lastBuildDate>
-    <atom:link href="https://yojnaportal.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Admission</title>
-      <link>https://yojnaportal.com/categories/admission/</link>
+      <link>http://localhost:1313/categories/admission/</link>
       <pubDate>Fri, 14 Mar 2025 16:38:54 +0530</pubDate>
-      <guid>https://yojnaportal.com/categories/admission/</guid>
+      <guid>http://localhost:1313/categories/admission/</guid>
       <description></description>
     </item>
     <item>
       <title>Student</title>
-      <link>https://yojnaportal.com/categories/student/</link>
+      <link>http://localhost:1313/categories/student/</link>
       <pubDate>Fri, 14 Mar 2025 16:38:54 +0530</pubDate>
-      <guid>https://yojnaportal.com/categories/student/</guid>
+      <guid>http://localhost:1313/categories/student/</guid>
       <description></description>
     </item>
     <item>
       <title>UGC-NET</title>
-      <link>https://yojnaportal.com/categories/ugc-net/</link>
+      <link>http://localhost:1313/categories/ugc-net/</link>
       <pubDate>Tue, 31 Dec 2024 10:26:15 +0530</pubDate>
-      <guid>https://yojnaportal.com/categories/ugc-net/</guid>
+      <guid>http://localhost:1313/categories/ugc-net/</guid>
       <description></description>
     </item>
     <item>
       <title>Card</title>
-      <link>https://yojnaportal.com/categories/card/</link>
+      <link>http://localhost:1313/categories/card/</link>
       <pubDate>Mon, 30 Dec 2024 18:17:58 +0530</pubDate>
-      <guid>https://yojnaportal.com/categories/card/</guid>
+      <guid>http://localhost:1313/categories/card/</guid>
       <description></description>
     </item>
     <item>
       <title>Votar Card</title>
-      <link>https://yojnaportal.com/categories/votar-card/</link>
+      <link>http://localhost:1313/categories/votar-card/</link>
       <pubDate>Mon, 30 Dec 2024 18:17:58 +0530</pubDate>
-      <guid>https://yojnaportal.com/categories/votar-card/</guid>
+      <guid>http://localhost:1313/categories/votar-card/</guid>
       <description></description>
     </item>
     <item>
       <title>Jobs</title>
-      <link>https://yojnaportal.com/categories/jobs/</link>
+      <link>http://localhost:1313/categories/jobs/</link>
       <pubDate>Sun, 29 Dec 2024 10:09:15 +0530</pubDate>
-      <guid>https://yojnaportal.com/categories/jobs/</guid>
+      <guid>http://localhost:1313/categories/jobs/</guid>
       <description></description>
     </item>
     <item>
       <title>Recruitment</title>
-      <link>https://yojnaportal.com/categories/recruitment/</link>
+      <link>http://localhost:1313/categories/recruitment/</link>
       <pubDate>Thu, 26 Dec 2024 19:15:11 +0530</pubDate>
-      <guid>https://yojnaportal.com/categories/recruitment/</guid>
+      <guid>http://localhost:1313/categories/recruitment/</guid>
       <description></description>
     </item>
     <item>
       <title>Schemes</title>
-      <link>https://yojnaportal.com/categories/schemes/</link>
+      <link>http://localhost:1313/categories/schemes/</link>
       <pubDate>Wed, 25 Dec 2024 19:20:54 +0530</pubDate>
-      <guid>https://yojnaportal.com/categories/schemes/</guid>
+      <guid>http://localhost:1313/categories/schemes/</guid>
       <description></description>
     </item>
     <item>
       <title>Yojna</title>
-      <link>https://yojnaportal.com/categories/yojna/</link>
+      <link>http://localhost:1313/categories/yojna/</link>
       <pubDate>Wed, 25 Dec 2024 19:20:54 +0530</pubDate>
-      <guid>https://yojnaportal.com/categories/yojna/</guid>
+      <guid>http://localhost:1313/categories/yojna/</guid>
       <description></description>
     </item>
   </channel>

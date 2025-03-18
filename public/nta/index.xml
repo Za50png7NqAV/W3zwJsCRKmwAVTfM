@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ntas on YOJNA PORTAL</title>
-    <link>https://yojnaportal.com/nta/</link>
+    <link>http://localhost:1313/nta/</link>
     <description>Recent content in Ntas on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Mar 2025 16:27:02 +0530</lastBuildDate>
-    <atom:link href="https://yojnaportal.com/nta/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/nta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NTA CUET UG 2025 Online Form</title>
-      <link>https://yojnaportal.com/nta/nta-cuet-ug-2025/</link>
+      <link>http://localhost:1313/nta/nta-cuet-ug-2025/</link>
       <pubDate>Mon, 03 Mar 2025 16:27:02 +0530</pubDate>
-      <guid>https://yojnaportal.com/nta/nta-cuet-ug-2025/</guid>
+      <guid>http://localhost:1313/nta/nta-cuet-ug-2025/</guid>
       <description>NTA Common University Admission Test CUET UG 2025 National Testing Agency (NTA) Short Details of Notification NTA CUET UG Exam 2025&#xA;Important Dates Application Begin: 01/03/2025 Last Date for Apply Online: 22/03/2025 Last Date Online Payment: 23/03/2025Correction Date: 24-26 March 2025NTA CUET UG 2025 Exam Date: 08/05/2025 and 01/06/2025Admit Card Available: Before ExamResult Declared: Notified Soon Application Fee General: 1000/-EWS / OBC: 900/-SC / ST / PH: 800/-Additional Subject Charge: General: 400/- Each SubjectEWS / OBC: 375/- Each SubjectSC / ST / PH: 350/- Each SubjectPay the Examination Fee Through E Challan Offline Mode or Pay the Exam Fee Through Online Debit Card, Credit Card or Net Banking Fee Mode Eligibility CUET UG Notification 2025: Age LimitNo Age Limit in Common University Entrance Test CUET UG 2025 Age relaxation as per rules of NTA CUET UG Exam 2025.</description>
     </item>
     <item>
       <title>NTA NEET UG Exam 2025 Apply Online Form</title>
-      <link>https://yojnaportal.com/nta/nta-neet-ug-2025/</link>
+      <link>http://localhost:1313/nta/nta-neet-ug-2025/</link>
       <pubDate>Sat, 08 Feb 2025 13:59:29 +0530</pubDate>
-      <guid>https://yojnaportal.com/nta/nta-neet-ug-2025/</guid>
+      <guid>http://localhost:1313/nta/nta-neet-ug-2025/</guid>
       <description>NTA NEET UG Admissions 2025 Apply Online Form for MBBS / BDS Course</description>
     </item>
     <item>
       <title>NTA CUET PG 2025 Online Form</title>
-      <link>https://yojnaportal.com/nta/nta-cuet-pg-2025/</link>
+      <link>http://localhost:1313/nta/nta-cuet-pg-2025/</link>
       <pubDate>Sun, 02 Feb 2025 10:05:28 +0530</pubDate>
-      <guid>https://yojnaportal.com/nta/nta-cuet-pg-2025/</guid>
+      <guid>http://localhost:1313/nta/nta-cuet-pg-2025/</guid>
       <description>National Testing Agency (NTA) has released the Common University Entrance Test CUET PG 2024 online application for admission 2025 will start from 02 January 2025 and the last date to apply will be 08 February 2025. Various Institution are participating in CUET PG 2025,</description>
     </item>
   </channel>
