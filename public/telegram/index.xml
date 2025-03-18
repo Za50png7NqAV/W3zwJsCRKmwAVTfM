@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>telegram Channel on YOJNA PORTAL</title>
-    <link>http://localhost:1313/telegram/</link>
+    <link>https://yojnaportal.com/telegram/</link>
     <description>Recent content in telegram Channel on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/telegram/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yojnaportal.com/telegram/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

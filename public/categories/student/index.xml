@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Student on YOJNA PORTAL</title>
-    <link>http://localhost:1313/categories/student/</link>
+    <link>https://yojnaportal.com/categories/student/</link>
     <description>Recent content in Student on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Mar 2025 16:38:54 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/student/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yojnaportal.com/categories/student/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NTA All India Sainik Schools Entrance Exam AISSEE 2025 (Exam City)</title>
-      <link>http://localhost:1313/2025/nta-aissee-2025/</link>
+      <link>https://yojnaportal.com/2025/nta-aissee-2025/</link>
       <pubDate>Fri, 14 Mar 2025 16:38:54 +0530</pubDate>
-      <guid>http://localhost:1313/2025/nta-aissee-2025/</guid>
+      <guid>https://yojnaportal.com/2025/nta-aissee-2025/</guid>
       <description>एनटीए अखिल भारतीय सैनिक स्कूल प्रवेश परीक्षा (AISSEE 2025)</description>
     </item>
     <item>
       <title>NTA CSIR UGC NET / JRF Exam Dec 2024</title>
-      <link>http://localhost:1313/2024/nta-csir-ugc-dec24/</link>
+      <link>https://yojnaportal.com/2024/nta-csir-ugc-dec24/</link>
       <pubDate>Tue, 31 Dec 2024 10:26:15 +0530</pubDate>
-      <guid>http://localhost:1313/2024/nta-csir-ugc-dec24/</guid>
+      <guid>https://yojnaportal.com/2024/nta-csir-ugc-dec24/</guid>
       <description>NTA CSIR UGC NET / JRF Exam December 2024 Apply Online Form for February 2025</description>
     </item>
   </channel>

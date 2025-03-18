@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jobs on YOJNA PORTAL</title>
-    <link>http://localhost:1313/categories/jobs/</link>
+    <link>https://yojnaportal.com/categories/jobs/</link>
     <description>Recent content in Jobs on YOJNA PORTAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Dec 2024 10:09:15 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/jobs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yojnaportal.com/categories/jobs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SBI Probationary Officers PO Recruitment 2024</title>
-      <link>http://localhost:1313/jobs/bank/sbi-po-dec24/</link>
+      <link>https://yojnaportal.com/jobs/bank/sbi-po-dec24/</link>
       <pubDate>Sun, 29 Dec 2024 10:09:15 +0530</pubDate>
-      <guid>http://localhost:1313/jobs/bank/sbi-po-dec24/</guid>
+      <guid>https://yojnaportal.com/jobs/bank/sbi-po-dec24/</guid>
       <description>SBI has relased Probationary Officers PO Recruitment 2024. Those candidates Are Interested to the Following SBI PO Recruitment 2024</description>
     </item>
     <item>
       <title>MPPKVVCL Various Post Dec24</title>
-      <link>http://localhost:1313/jobs/mp/mppkvvcl-various-post-dec24/</link>
+      <link>https://yojnaportal.com/jobs/mp/mppkvvcl-various-post-dec24/</link>
       <pubDate>Thu, 26 Dec 2024 19:15:11 +0530</pubDate>
-      <guid>http://localhost:1313/jobs/mp/mppkvvcl-various-post-dec24/</guid>
+      <guid>https://yojnaportal.com/jobs/mp/mppkvvcl-various-post-dec24/</guid>
       <description>MPEZ MPPKVVCL Various Post Recruitment 2024</description>
     </item>
   </channel>
