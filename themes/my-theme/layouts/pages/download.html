@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        .contain-items {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .iframe-container {
+            border-radius: 8px;
+            
+            margin: auto;
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            height: auto;
+        }
+
+        iframe {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+    
+            width: 100%;
+            height: 800px;
+        }
+
+        .download-link-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-link-container a {
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .download-link-container a:hover {
+            background-color: #45a049;
+        }
+
+        .fs-6 {
+            display: none;
+        }
+
+        .px-3 {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="iframe-container">
+    <iframe 
+        id="iframe" 
+        src="" 
+        width="100%" 
+        height="800px" 
+        style="border:none;">
+    </iframe>
+</div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const shortCode = urlParams.get('id'); 
+    const iframe = document.getElementById('iframe');
+    const containItemsDiv = document.querySelector('.contain-items');
+
+    function decodeBase64(encodedStr) {
+        try {
+            return atob(encodedStr);
+        } catch (e) {
+            console.error("Invalid Base64 string:", e);
+            return null;
+        }
+    }
+
+    if (shortCode) {
+        const decodedURL = decodeBase64(shortCode);
+        if (decodedURL) {
+            iframe.src = decodeURIComponent(decodedURL);
+
+            iframe.onload = () => {
+                try {
+                    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                    if (iframeDoc && iframeDoc.body && iframeDoc.body.innerHTML.trim()) {
+                        containItemsDiv.style.display = 'none';
+                    } else {
+                        containItemsDiv.style.display = 'block';
+                    }
+                } catch (e) {
+                    console.warn("Cross-origin issue or iframe blocked:", e);
+                    containItemsDiv.style.display = 'none'; // Cross-origin error होने पर भी छिपा रहे
+                }
+            };
+        } else {
+            containItemsDiv.style.display = 'block';
+        }
+    } else {
+        containItemsDiv.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
