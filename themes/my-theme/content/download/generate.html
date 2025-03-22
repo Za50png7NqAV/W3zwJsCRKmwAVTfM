@@ -12,7 +12,7 @@
     <p id="generatedLink"></p>
 
     <script>
-        // Predefined tokens (custom static tokens) — बिना डिफॉल्ट वैल्यू के
+        // Predefined tokens (custom static tokens)
         const tokens = [
             "abc123", "xyz456", "pqr789", 
             "rst111", "mno222", "uvw333"
@@ -21,13 +21,11 @@
         function generateLink() {
             const url = document.getElementById('inputUrl').value;
             if (url) {
-                const encodedUrl = btoa(url); // Base64 Encode URL
-                const token = tokens[Math.floor(Math.random() * tokens.length)]; // Random Token
-                
-                // Save token and encoded URL in the tokens object
+                const encodedUrl = btoa(url); 
+                const token = tokens[Math.floor(Math.random() * tokens.length)];
+
                 permanentLinks[token] = encodedUrl;
 
-                // Create Permanent Link
                 const permanentLink = `https://yojnaportal.com/download/pdf?token=${token}&url=${encodedUrl}`;
                 
                 document.getElementById('generatedLink').innerHTML = `
@@ -38,8 +36,15 @@
             }
         }
 
-        // Store token and encoded URL mapping (empty initially)
-        const permanentLinks = {};
+        // Store token and encoded URL mapping (to be accessed globally)
+        const permanentLinks = {
+            "abc123": "",
+            "xyz456": "",
+            "pqr789": "",
+            "rst111": "",
+            "mno222": "",
+            "uvw333": ""
+        };
     </script>
 </body>
 </html>
