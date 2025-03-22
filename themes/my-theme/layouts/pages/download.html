@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Download Notification</title>
-    <meta name="robots" content="noindex, follow">
+    <meta name="robots" content="noindex, follow" />
 
     <style>
-        .contain-items {
-            display: none;
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-        }
-
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -26,64 +18,27 @@
             flex-direction: column;
         }
 
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-
         .iframe-container {
             border-radius: 8px;
-            
             margin: auto;
             width: 100%;
             text-align: center;
-            height: 2000px;
+            height: 800px;
         }
 
         iframe {
             border: 1px solid #ccc;
             border-radius: 8px;
-    
             width: 100%;
-            height: 2000px;
+            height: 800px;
         }
 
-        .download-link-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .download-link-container a {
-            padding: 12px 25px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 4px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s;
-        }
-
-        .download-link-container a:hover {
-            background-color: #45a049;
-        }
-
-        .fs-6 {
-            display: none;
-        }
-
-        .px-3 {
-            padding-right: 0 !important;
-            padding-left: 0 !important;
-        }
         ::-webkit-scrollbar {
-            width: 0px; 
-          }
+            width: 0px;
+        }
     </style>
 </head>
 <body>
-
-
 
 <div class="iframe-container">
     <iframe 
@@ -96,43 +51,63 @@
 </div>
 
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const shortCode = urlParams.get('pdf'); 
-    const iframe = document.getElementById('iframe');
-    const containItemsDiv = document.querySelector('.contain-items');
-
+    // ✅ Secure Token Generate करने का Function
+    function generateSecureToken(length = 32) {
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let token = '';
+        for (let i = 0; i < length; i++) {
+            token += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        return token;
+    }
     function decodeBase64(encodedStr) {
         try {
-            return atob(encodedStr);
+            if (/^[A-Za-z0-9+/=]+$/.test(encodedStr)) {
+                const decodedString = atob(encodedStr);
+                new URL(decodedString); // URL validation
+                return decodedString;
+            } else {
+                console.error("Invalid Base64 string");
+                return null;
+            }
         } catch (e) {
-            console.error("Invalid Base64 string:", e);
+            console.error("Base64 decoding failed:", e);
             return null;
         }
     }
 
-    if (shortCode) {
-        const decodedURL = decodeBase64(shortCode);
-        if (decodedURL) {
-            iframe.src = decodeURIComponent(decodedURL);
+   
+    const tokenMap = JSON.parse(localStorage.getItem('tokenMap')) || {};
 
-            iframe.onload = () => {
-                try {
-                    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-                    if (iframeDoc && iframeDoc.body && iframeDoc.body.innerHTML.trim()) {
-                        containItemsDiv.style.display = 'none';
-                    } else {
-                        containItemsDiv.style.display = 'block';
-                    }
-                } catch (e) {
-                    console.warn("Cross-origin issue or iframe blocked:", e);
-                    containItemsDiv.style.display = 'none'; // Cross-origin error होने पर भी छिपा रहे
-                }
-            };
+   
+    const urlParams = new URLSearchParams(window.location.search);
+    const shortCode = urlParams.get('pdf');
+    const iframe = document.getElementById('iframe');
+
+    if (shortCode) {
+       
+        if (tokenMap[shortCode]) {
+           
+            iframe.src = decodeURIComponent(tokenMap[shortCode]);
+            console.log(`✅ Secure Token से लोड किया गया: ${tokenMap[shortCode]}`);
         } else {
-            containItemsDiv.style.display = 'block';
+            
+            const decodedURL = decodeBase64(shortCode);
+            if (decodedURL) {
+                
+                const secureToken = generateSecureToken();
+                tokenMap[secureToken] = decodedURL;
+                localStorage.setItem('tokenMap', JSON.stringify(tokenMap)); 
+                
+               
+                iframe.src = decodeURIComponent(decodedURL);
+                const newUrl = `${window.location.origin}${window.location.pathname}?pdf=${secureToken}`;
+                window.history.replaceState(null, null, newUrl);
+                console.log(`✅ New Secure Token Generated: ${secureToken}`);
+            } else {
+                console.error("Invalid PDF URL");
+            }
         }
-    } else {
-        containItemsDiv.style.display = 'block';
     }
 </script>
 
