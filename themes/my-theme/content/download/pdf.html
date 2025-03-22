@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirecting...</title>
-    <script>
-        window.onload = function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const token = urlParams.get('token');
-
-            if (token) {
-                const encodedUrl = localStorage.getItem(token);
-                if (encodedUrl) {
-                    const decodedUrl = atob(encodedUrl);
-                    window.location.href = decodedUrl;
-                } else {
-                    document.body.innerHTML = `<h2>Invalid Token or Link Expired</h2>`;
-                }
-            } else {
-                document.body.innerHTML = `<h2>No token provided</h2>`;
-            }
-        };
-    </script>
 </head>
 <body>
+    <script>
+        // Token और Encoded URL Mapping (Initially Empty)
+        const permanentLinks = {};
+
+        // Get token from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+
+        if (token && permanentLinks[token]) {
+            const decodedUrl = atob(permanentLinks[token]); // Decode Base64 URL
+            window.location.href = decodedUrl; // Redirect to original URL
+        } else {
+            document.body.innerHTML = "<h2>Invalid or Expired Link!</h2>";
+        }
+    </script>
 </body>
 </html>

@@ -217,8 +217,8 @@
       <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generate Permanent Link</title>
 </head>
 <body>
@@ -228,29 +228,34 @@
     <p id="generatedLink"></p>
 
     <script>
+        // Predefined tokens (custom static tokens) — बिना डिफॉल्ट वैल्यू के
+        const tokens = [
+            "abc123", "xyz456", "pqr789", 
+            "rst111", "mno222", "uvw333"
+        ];
+
         function generateLink() {
             const url = document.getElementById('inputUrl').value;
             if (url) {
-                const encodedUrl = btoa(url);
-                const token = generateToken();
-                // Permanent Link Creation
+                const encodedUrl = btoa(url); // Base64 Encode URL
+                const token = tokens[Math.floor(Math.random() * tokens.length)]; // Random Token
+                
+                // Save token and encoded URL in the tokens object
+                permanentLinks[token] = encodedUrl;
+
+                // Create Permanent Link
                 const permanentLink = `https://yojnaportal.com/download/pdf?token=${token}&url=${encodedUrl}`;
                 
                 document.getElementById('generatedLink').innerHTML = `
                     <a href="${permanentLink}" target="_blank">${permanentLink}</a>
                 `;
-                
-                // Save token and encoded URL in localStorage (for demo)
-                localStorage.setItem(token, encodedUrl);
             } else {
                 alert("Please enter a valid URL");
             }
         }
 
-        // Random Token Generator
-        function generateToken() {
-            return Math.random().toString(36).substr(2, 10);
-        }
+        // Store token and encoded URL mapping (empty initially)
+        const permanentLinks = {};
     </script>
 </body>
 </html>
