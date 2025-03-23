@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .iframe-container {
@@ -19,4 +20,24 @@ body {
 
 ::-webkit-scrollbar {
     width: 0px;
+}
+
+@media (hover: none) and (pointer: coarse), (max-width:900px),  (min-width: 768px) {
+    iframe {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100vw; 
+        height: 100vh;
+        border: none;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    iframe {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; 
+        height: 100vh;
+        border: none;
+    }
 }
