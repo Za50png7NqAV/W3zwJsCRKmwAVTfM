@@ -115,7 +115,13 @@
         {{ range  (where .Site.RegularPages ".Params.pdf-form" "yes") }}
         <tr>
             <td>{{ .Date.Format "02/01/2006" }}</td>
-            <td><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></td>
+            <td>
+                {{ if .Params.pdfName }}
+                    <a href="{{ .RelPermalink }}" target="_blank">{{ .Params.pdfName }}</a>
+                {{ else }}
+                    <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+                {{ end }}
+            </td>
             <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="{{ with .Params.category }}{{ . }}{{ else }}---{{ end }}"> {{ with .Params.category }}{{ . }}{{ else }}---{{ end }}  </a></td>
            
         </tr>

@@ -1,0 +1,24 @@
+
+
+<table class="post-table" id="dataTable">
+    <tr> 
+        <th>Extended Post</th>
+        <th>Last Date</th> 
+    </tr>
+    {{ $now := now }}
+    {{ range where .Site.RegularPages ".Params.extended" "yes" }}
+        {{ $page := . }}
+        {{ with .Params.lastdate }}
+            {{ if ge (time .) $now }}
+                <tr>
+                    <td>
+                        <a href="{{ $page.RelPermalink }}" target="_blank">{{ $page.Title }}</a>
+                    </td>
+                    <td>
+                        {{ (time .).Format "02-01-2006" }}
+                    </td>
+                </tr>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</table>

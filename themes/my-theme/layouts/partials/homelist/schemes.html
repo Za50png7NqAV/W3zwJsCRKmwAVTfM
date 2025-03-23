@@ -1,5 +1,6 @@
 {{ range first 20 (where .Site.RegularPages ".Params.post-type" "schemes") }}
 <li>
   <a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a>
+  {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended </a>{{ end }}
 </li><hr>
 {{ end }}    

@@ -1,7 +1,18 @@
 
     {{ range first 20  .Site.RegularPages }}
     <li>
-        <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+    
+            <a href="{{ .RelPermalink }}" target="_blank">
+                {{ if .Params.resultName }}
+                    {{ .Params.resultName }}
+                {{ else if .Params.admitcardName }}
+                    {{ .Params.admitcardName }}
+                {{ else }}
+                    {{ .Title }}
+                {{ end }}
+            </a>
+            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended </a>{{ end }}
+        
     </li>
 <hr>
   {{ end }}

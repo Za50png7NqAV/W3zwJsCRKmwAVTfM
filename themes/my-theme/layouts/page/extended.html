@@ -1,0 +1,10 @@
+{{ define "main" }}
+  
+<h2 style="text-align:center;">Last Date Extended Post</h2>
+    {{ partial "list-update/extended.html" . }}
+
+    <!-- Content Section -->
+    <div class="content">
+        {{ .Content }}
+    </div>
+{{ end }}
