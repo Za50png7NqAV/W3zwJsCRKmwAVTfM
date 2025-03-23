@@ -60,6 +60,8 @@
         }
         return token;
     }
+
+    // ✅ Base64 Decode करने का Function
     function decodeBase64(encodedStr) {
         try {
             if (/^[A-Za-z0-9+/=]+$/.test(encodedStr)) {
@@ -76,38 +78,43 @@
         }
     }
 
-   
+    // ✅ Token Storage
     const tokenMap = JSON.parse(localStorage.getItem('tokenMap')) || {};
 
-   
+    // ✅ URL से Parameter Read करना
     const urlParams = new URLSearchParams(window.location.search);
     const shortCode = urlParams.get('pdf');
     const iframe = document.getElementById('iframe');
 
     if (shortCode) {
-       
         if (tokenMap[shortCode]) {
-           
+            // ✅ Existing Token Found -> Load URL
             iframe.src = decodeURIComponent(tokenMap[shortCode]);
             console.log(`✅ Secure Token से लोड किया गया: ${tokenMap[shortCode]}`);
         } else {
-            
+            // ✅ Base64 से Decode करके URL चेक करें
             const decodedURL = decodeBase64(shortCode);
             if (decodedURL) {
-                
+                // ✅ Secure Token Generate करें
                 const secureToken = generateSecureToken();
                 tokenMap[secureToken] = decodedURL;
                 localStorage.setItem('tokenMap', JSON.stringify(tokenMap)); 
                 
-               
+                // ✅ Iframe में URL लोड करें
                 iframe.src = decodeURIComponent(decodedURL);
+                
+                // ✅ URL को Secure Token के साथ Replace करें
                 const newUrl = `${window.location.origin}${window.location.pathname}?pdf=${secureToken}`;
                 window.history.replaceState(null, null, newUrl);
                 console.log(`✅ New Secure Token Generated: ${secureToken}`);
             } else {
                 console.error("Invalid PDF URL");
+                window.location.href = "https://yojnaportal.com"; // 🔥 Invalid होने पर redirect करें
             }
         }
+    } else {
+        // ✅ Token ना मिलने पर Redirect करें
+        window.location.href = "https://yojnaportal.com";
     }
 </script>
 
