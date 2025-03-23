@@ -1,10 +1,6 @@
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href=" \css\list-table.css">
-  <title>Latest Pdf Form</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Latest Yojna, Latest Schemes, Lates Post, New Schemes, New Yojna, Govt. Yojna, Sarkari Yojana, Sarkari Yojna, सरकारी योजना, नई योजना, PM Yojana, PM Yojna, State Yojna, State yojna portal my schemes, india Schemes .">
+ 
  <style>
     .search-container {
         display: flex;
@@ -112,7 +108,7 @@
         </tr>
     </thead>
     <tbody>
-        {{ range  (where .Site.RegularPages ".Params.pdf-form" "yes") }}
+        {{ range  (where .Site.RegularPages ".Params.pdfForm" "yes") }}
         <tr>
             <td>{{ .Date.Format "02/01/2006" }}</td>
             <td>

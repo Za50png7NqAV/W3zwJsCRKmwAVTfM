@@ -14,18 +14,31 @@
     <table class="post-table">
       <thead>
           <tr>
-              <th>Latest</th>
-              <th>Post Date</th>
-              <th>Detail</th>
+              
+              <th>Begin Date</th>
+              <th>Latest Jobs</th>
           </tr>
       </thead>
       <tbody>
           {{ range .Pages }}
           <tr>
-              <td><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a> {{ if eq .Params.extended "yes" }} Extended{{ end }}</td>
-              <td>{{ .Date.Format "02/01/2006" }}</td>
-              <td><a href="{{ .RelPermalink }}" target="_blank">Click here</a></td>
-          </tr>
+            <td>
+              {{ if and (.Params.begindate) (ne .Params.begindate "") }}
+                {{ .Params.begindate | time.Format "02/01/2006" }}
+              {{ else }}
+              {{ .Date.Format "02/01/2006" }}
+              {{ end }}
+            </td>
+              <td> <a href="{{ .RelPermalink }}" target="_blank">
+                {{ if .Params.resultName }}
+                    {{ .Params.resultName }}
+                {{ else if .Params.admitcardName }}
+                    {{ .Params.admitcardName }}
+                {{ else }}
+                    {{ .Title }}
+                {{ end }} </a></td>
+          
+ </tr>
           {{ end }}
       </tbody>
     </table>
