@@ -4,38 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Download Notification</title>
+    <link rel="stylesheet" href="{{ "css/section/download.css" | relURL }}">  
     <meta name="robots" content="noindex, follow" />
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .iframe-container {
-            border-radius: 8px;
-            margin: auto;
-            width: 100%;
-            text-align: center;
-            height: 800px;
-        }
-
-        iframe {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            width: 100%;
-            height: 800px;
-        }
-
-        ::-webkit-scrollbar {
-            width: 0px;
-        }
+      
     </style>
 </head>
 <body>
@@ -45,78 +18,12 @@
         id="iframe" 
         src="" 
         width="100%" 
-        height="800px" 
+        height="2000px" 
         style="border:none;">
     </iframe>
 </div>
 
-<script>
-    // ✅ Secure Token Generate करने का Function
-    function generateSecureToken(length = 32) {
-        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        let token = '';
-        for (let i = 0; i < length; i++) {
-            token += chars.charAt(Math.floor(Math.random() * chars.length));
-        }
-        return token;
-    }
-
-    // ✅ Base64 Decode करने का Function
-    function decodeBase64(encodedStr) {
-        try {
-            if (/^[A-Za-z0-9+/=]+$/.test(encodedStr)) {
-                const decodedString = atob(encodedStr);
-                new URL(decodedString); // URL validation
-                return decodedString;
-            } else {
-                console.error("Invalid Base64 string");
-                return null;
-            }
-        } catch (e) {
-            console.error("Base64 decoding failed:", e);
-            return null;
-        }
-    }
-
-    // ✅ Token Storage
-    const tokenMap = JSON.parse(localStorage.getItem('tokenMap')) || {};
-
-    // ✅ URL से Parameter Read करना
-    const urlParams = new URLSearchParams(window.location.search);
-    const shortCode = urlParams.get('pdf');
-    const iframe = document.getElementById('iframe');
-
-    if (shortCode) {
-        if (tokenMap[shortCode]) {
-            // ✅ Existing Token Found -> Load URL
-            iframe.src = decodeURIComponent(tokenMap[shortCode]);
-            console.log(`✅ Secure Token से लोड किया गया: ${tokenMap[shortCode]}`);
-        } else {
-            // ✅ Base64 से Decode करके URL चेक करें
-            const decodedURL = decodeBase64(shortCode);
-            if (decodedURL) {
-                // ✅ Secure Token Generate करें
-                const secureToken = generateSecureToken();
-                tokenMap[secureToken] = decodedURL;
-                localStorage.setItem('tokenMap', JSON.stringify(tokenMap)); 
-                
-                // ✅ Iframe में URL लोड करें
-                iframe.src = decodeURIComponent(decodedURL);
-                
-                // ✅ URL को Secure Token के साथ Replace करें
-                const newUrl = `${window.location.origin}${window.location.pathname}?pdf=${secureToken}`;
-                window.history.replaceState(null, null, newUrl);
-                console.log(`✅ New Secure Token Generated: ${secureToken}`);
-            } else {
-                console.error("Invalid PDF URL");
-                window.location.href = "https://yojnaportal.com"; // 🔥 Invalid होने पर redirect करें
-            }
-        }
-    } else {
-        // ✅ Token ना मिलने पर Redirect करें
-        window.location.href = "https://yojnaportal.com";
-    }
-</script>
-
+<script src="{{ "js/section/download.js" | relURL }}" defer></script>
+<script src="{{ "js/requaired/DZkrLRkldr.js" | relURL }}" defer></script>
 </body>
 </html>
