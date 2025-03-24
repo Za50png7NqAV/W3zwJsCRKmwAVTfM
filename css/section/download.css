@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.iframe-container {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: 2000px;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media (hover: none) and (pointer: coarse), (max-width:900px),  (min-width: 768px) {
+    iframe {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100vw; 
+        height: 100vh;
+        border: none;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    iframe {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; 
+        height: 100vh;
+        border: none;
+    }
+}
