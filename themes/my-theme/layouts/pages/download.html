@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Download Notification</title>
+    <title>Loading...</title>
     <link rel="stylesheet" href="{{ "css/section/download.css" | relURL }}">  
     <meta name="robots" content="noindex, follow" />
-
-    <style>
-      
-    </style>
 </head>
 <body>
 
@@ -22,6 +18,20 @@
         style="border:none;">
     </iframe>
 </div>
+
+<script>
+    const iframe = document.getElementById('iframe');
+
+    // जब iframe का कंटेंट लोड हो जाए, तब टाइटल सेट करें
+    iframe.onload = () => {
+        try {
+            // Same-origin के लिए title एक्सेस करें
+            document.title = iframe.contentWindow.document.title;
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
+</script>
 
 <script src="{{ "js/section/download.js" | relURL }}" defer></script>
 <script src="{{ "js/requaired/DZkrLRkldr.js" | relURL }}" defer></script>
