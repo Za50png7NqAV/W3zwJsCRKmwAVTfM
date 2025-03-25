@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>Opening...</p>
+
+    <script>
+        
+        const params = new URLSearchParams(window.location.search);
+        const base64Pdf = params.get('pdf');
+
+        if (base64Pdf) {
+            try {
+                
+                const decodedPath = atob(base64Pdf);
+
+                
+                const baseUrl = 'https://pdf.v2kcomputers.com';
+
+                
+                const finalUrl = `${baseUrl}${decodedPath}`;
+
+                
+                const newBase64Url = btoa(finalUrl);
+
+                
+                const newUrl = `https://www.yojnaportal.com/download?pdf=${newBase64Url}`;
+                
+                
+                window.location.href = newUrl;
+            } catch (error) {
+                console.error('Error decoding base64:', error);
+                
+                window.location.href = 'https://yojnaportal.com';
+            }
+        } else {
+            
+            window.location.href = 'https://yojnaportal.com';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>Opening...</p>
+
+    <script>
+        // URL से Base64 डाटा पढ़ना
+        const params = new URLSearchParams(window.location.search);
+        const base64Pdf = params.get('pdf');
+
+        if (base64Pdf) {
+            try {
+                // Base64 डिकोड करके path निकालना
+                const decodedPath = atob(base64Pdf);
+
+                // Base URL सेट करना
+                const baseUrl = 'https://pdf.v2kcomputers.com';
+
+                // Final URL तैयार करना
+                const finalUrl = `${baseUrl}${decodedPath}`;
+
+                // नए URL को Base64 में Encode करना
+                const newBase64Url = btoa(finalUrl);
+
+                // Redirect करने से पहले नया लिंक सेट करना
+                const newUrl = `https://www.yojnaportal.com/download?pdf=${newBase64Url}`;
+                
+                // ✅ Redirect करना
+                window.location.href = newUrl;
+            } catch (error) {
+                console.error('Error decoding base64:', error);
+                // 🛑 अगर Error हो तो Homepage पर Redirect करना
+                window.location.href = 'https://yojnaportal.com';
+            }
+        } else {
+            // 🛑 अगर `pdf` parameter गायब हो तो Homepage पर Redirect करना
+            window.location.href = 'https://yojnaportal.com';
+        }
+    </script>
+</body>
+</html>
