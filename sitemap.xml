@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yojnaportal.com/2025/bhu-jr-clerk-advt-07-2025/</loc>
-    <lastmod>2025-03-23T18:38:31+05:30</lastmod>
+    <loc>https://yojnaportal.com/mp/cmkvy-kanya-vivah-yojna-form/</loc>
+    <lastmod>2025-03-25T12:06:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://yojnaportal.com/</loc>
+    <lastmod>2025-03-25T12:06:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://yojnaportal.com/2025/bhu-jr-clerk-advt-07-2025/</loc>
     <lastmod>2025-03-23T18:38:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -873,6 +878,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://yojnaportal.com/notification/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://yojnaportal.com/open/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
