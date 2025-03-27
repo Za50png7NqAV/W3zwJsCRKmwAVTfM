@@ -1,0 +1,60 @@
++++
+title = 'Sarpanch / Sachiv (ग्राम पंचायत) Lable PDF Forms Download'
+date = 2025-03-26T10:45:01+05:30
+subtitle = ""
+post-type = "schemes" #hint>> imp-link , student, schemes, results, admitcard, latest-jobs
+lang = "hi" #hindi hi English en
+bgcolor = "olive"
+expiryDate = "9024-10-03" # date must be in YYYY-MM-DD format more and equl today
+begindate= "2025-03-26" # date must be in YYYY-MM-DD format more and equl today
+lastdate = "" # date must be in YYYY-MM-DD format more and equl today
+resultDate = ""
+category = "Panchayat"
+recommend ="no"
+RecommendName =""
+admitcard ="no" 
+AdmitcardName = ''
+result = "no"
+ResultName = ''
+pdfForm  = "yes"   # yes if offiline pdf form availble
+pdfName = "All Gram Panchayat (ग्राम पंचायत) Lable PDF Forms Download"
+important ="yes" # yes if this important for cyber cafe
+baner = "no"
+link = "#"
+details_url = "#"
+draft = false
+image = ""
+imageBig = ""
+imageBanner =""
+authors = ["Vikram Singh"]
+avatar = "/images/"
+keywords = ["pdf-forms", "Aganwadi pdf Form Yojna", "आंगनबाड़ी फार्म डाउनलोड", "Yojna Portal"]
+description = ""
+cssStyle = "/css/pdf-forms.css"
+jsFile = "/js/custom.js"
+Summary =""
++++
+<body>
+    <h1>Patwari / Kisan /Farmer Form Downloads</h1>
+    <div class="table-container">
+     <table>
+      <thead>
+     <tr><th>Form Name</th><th>Action</th></tr> </thead>
+  <tbody>
+    <tr>
+    <td>
+        Gaon Ki Beti Scholarship Form 
+        <span class="form-category">गांव की बेटी छात्रवत्ति फार्म  पर संरपच /सचिव के हस्ताक्षर या पदमुद्रा ।</span>
+    </td>
+    <td>
+        <a href="/mp/gaon-ki-beti-schorlarship/" class="download-link" target="_blank">
+            <span class="download-icon">📥</span> Download Now
+        </a>
+    </td>
+</tr>
+
+    </tbody>
+     </table>
+    </div>
+    </body>
+    </html>
