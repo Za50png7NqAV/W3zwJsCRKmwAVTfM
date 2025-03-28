@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-pnst-2022/</loc>
-    <lastmod>2025-03-28T08:48:21+05:30</lastmod>
+    <loc>http://localhost:1313/pdf/uploaded-pdf-forms/</loc>
+    <lastmod>2025-03-28T10:21:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-28T10:21:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb-pnst-2022/</loc>
     <lastmod>2025-03-28T08:48:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
