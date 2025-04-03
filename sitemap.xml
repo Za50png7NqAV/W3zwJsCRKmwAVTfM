@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yojnaportal.com/scheme/pm-awas-yojna-2/</loc>
-    <lastmod>2025-03-30T14:29:39+05:30</lastmod>
+    <loc>https://yojnaportal.com/admission/2025/up-gnm-upget/</loc>
+    <lastmod>2025-04-02T19:03:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://yojnaportal.com/</loc>
+    <lastmod>2025-04-02T19:03:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://yojnaportal.com/jobs/bihar/bihar-home-guard-01-2025/</loc>
+    <lastmod>2025-04-02T16:37:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://yojnaportal.com/jobs/bihar/bssc-statistical-01-2025/</loc>
+    <lastmod>2025-04-02T10:59:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://yojnaportal.com/scheme/pm-awas-yojna-2/</loc>
     <lastmod>2025-03-30T14:29:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
