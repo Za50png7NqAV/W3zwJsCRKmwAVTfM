@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/bank/aic-management-trainee-jan25/</loc>
+    <lastmod>2025-04-04T19:40:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-04T19:40:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/rpsc/rpsc-jr-chemist-advt-02-2025/</loc>
     <lastmod>2025-04-04T11:52:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/rpsc/</loc>
-    <lastmod>2025-04-04T11:52:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-04T11:52:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -549,11 +554,6 @@
   </url><url>
     <loc>http://localhost:1313/ssc/ssc-gd-constable-2024/</loc>
     <lastmod>2025-02-01T17:55:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/bank/aic-management-trainee-jan25/</loc>
-    <lastmod>2025-01-31T19:40:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
