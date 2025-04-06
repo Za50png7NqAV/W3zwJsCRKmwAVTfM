@@ -1,0 +1,15 @@
+{{- $text := . -}}
+{{- /* पहले <li> को • से replace करें */ -}}
+{{- $text = replace $text "<li>" "• " -}}
+{{- $text = replace $text "</li>" " | " -}}
+
+{{- /* <br> को | से replace करें */ -}}
+{{- $text = replace $text "<br>" " | " -}}
+
+{{- /* HTML tags हटाने के लिए plainify */ -}}
+{{- $text = $text | plainify -}}
+
+{{- /* अंतिम | हटा दें */ -}}
+{{- $text = replaceRE "\\|\\s*$" "" $text -}}
+
+{{- $text | safeHTML -}}

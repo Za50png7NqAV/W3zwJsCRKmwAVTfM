@@ -1,4 +1,5 @@
 <script type="application/ld+json">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -7,11 +8,11 @@
         "@id": "{{ .Permalink }}"
       },
       "headline": "{{ .Title }}",
-      "description": "{{ .Description }}",
-      "image": "{{ .Params.imageBanner }}",
+      "description": "{{ .Params.description | default "इस योजना की जानकारी प्राप्त करें।" }}",
+      "image": "{{ .Params.featuredImage | absURL }}",
       "author": {
         "@type": "Organization",
-        "name": "{{ .Params.author | default "Yojna Portal" }}",
+        "name": "Yojna Portal",
         "url": "https://yojnaportal.com/"
       },
       "publisher": {
@@ -19,11 +20,13 @@
         "name": "Yojna Portal",
         "logo": {
           "@type": "ImageObject",
-          "url": "{{ .Site.Params.logo }}"
+          "url": "{{ "logo/logo-100x100.png" | absURL }}"
         }
       },
-      "datePublished": "{{ .PublishDate.Format "2006-01-02" }}",
-      "dateModified": "{{ .Lastmod.Format "2006-01-02" }}"
+      "datePublished": "{{ with .Date }}{{ .Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}",
+      "dateModified": "{{ with .Lastmod }}{{ .Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}"
     }
+    </script>
+    
     </script>
     

@@ -1,0 +1,11 @@
+{{- $content := . | plainify -}}
+{{- $content = replace $content "<li>" "• " -}}
+{{- $content = replace $content "</li>" " " -}}
+{{- $content = replace $content "<br>" " | " -}}
+{{- $content = replace $content "<br/>" " | " -}}
+{{- $content = replaceRE "\\s+" " " $content | trim -}}
+{{- if gt (len $content) 250 -}}  {{/* आप चाहें तो यहाँ character limit बदल सकते हैं */}}
+  {{ substr $content 0 250 }}...
+{{ else }}
+  {{ $content }}
+{{ end }}

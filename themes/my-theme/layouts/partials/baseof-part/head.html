@@ -36,9 +36,21 @@
 <meta http-equiv="content-language" content="en-hi">
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 <title>{{ .Title }}</title>
-<meta name="google-adsense-account" content="ca-pub-4855323063398382">
+{{ if eq .Params.adsense true }}
+<!-- Adsense Script -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+     crossorigin="anonymous"></script>
+{{ end }}
 <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
+
+{{ with .Params.cssStyles }}
+  {{ range . }}
+    {{ $css := resources.Get . | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ end }}
+{{ end }}
+
 <link rel="stylesheet" href="{{ "css/header.css" | relURL }}">
 <link rel="stylesheet" href="{{ "css/yp-main.css" | relURL }}">
 <link rel="stylesheet" href="{{ "css/main/navbar.css" | relURL }}">   
@@ -68,8 +80,7 @@
        .logo a {text-decoration: none;}
     
       </style>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-     crossorigin="anonymous"></script>
+     
 </head>
 <header>
    <div class="header-container">

@@ -25,8 +25,12 @@ weight = 30
 [params]
 paginate = 20
 logo = "logo/logo-100x100.png"
+cssStyle = "css/main/scheme.css"
+jsFile = "js/main/default.js"
 
 [sitemap]
   filename = "sitemap.xml"
   changefreq = "daily"
   priority = 0.5
+
+  
