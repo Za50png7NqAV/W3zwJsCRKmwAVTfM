@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+{{ .Title }}
+
+
+{{ range (sort .Site.RegularPages "Date" "desc") }}
+ 
+    {{ partial "auto-update/baner.html" . }}
+   
+    {{ end }}
+    <!-- Content Section -->
+    <div class="content">
+        {{ .Content }}
+    </div>
+{{ end }}
