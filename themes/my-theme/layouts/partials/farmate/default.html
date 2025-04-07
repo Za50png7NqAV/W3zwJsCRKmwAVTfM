@@ -32,14 +32,8 @@
       <div class="single-post-content">
         {{ .Content }}
   
-        {{ $imageURL := .Params.imageBanner }}
-        <img src="{{ $imageURL }}" 
-             loading="lazy"
-             sizes="(max-width: 800px) 100vw, 800px"  
-             alt="www.YojnaPortal.com"
-             style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
-  
-             {{ partial "baseof-part/social-link.html" . }}
+        {{ partial "imp-codes/imageBanner.html" . }}
+       {{ partial "baseof-part/social-link.html" . }}
       <!-- Include partial for tags/terms -->
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
      

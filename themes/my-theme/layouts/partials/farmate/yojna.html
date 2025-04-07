@@ -9,7 +9,12 @@
 </head>
 <div class="container">
   <div class="post-card">
-      <h2>{{ .Title }} – 2025 | पूरी जानकारी</h2>
+    {{ if .Params.department }}
+       <h2 style="color:green;"> {{ .Params.department }} </h2>
+       {{ end }}
+      <h2>{{ .Title }}  {{ if .Params.state }}
+         {{ .Params.state }}
+        {{ end }}    </h2>
 
       {{ if .Params.objective }}
       <div class="section">
@@ -89,8 +94,10 @@
       </div>
       {{ end }}
   </div>
+  {{ partial "imp-codes/imageBanner.html" . }}
 </div>
 {{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}
+
 <div class="section">
     <h3>🔍{{ .Params.YojnaName }} का संक्षिप्त सारांश (Summary)</h3>
     <table style="width:100%; border-collapse: collapse; background-color: #fff; box-shadow: var(--card-shadow); border-radius: var(--border-radius); overflow: hidden;">
@@ -124,12 +131,7 @@
                 </td>
             </tr>
             {{ end }}
-            {{ if .Params.important_dates }}
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">📅 आवेदन तिथि</th>
-                <td style="padding: 10px;">{{ .Params.important_dates }}</td>
-            </tr>
-            {{ end }}
+      
            
             {{ if .Params.documents }}
             <tr style="border-bottom: 1px solid #ddd;">
@@ -140,10 +142,16 @@
                 </td>
             </tr>
             {{ end }}
-            {{ if .Params.apply_online }}
+            {{ if .Params.lastdate}}
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">📅 अंतिम तिथि</th>
+                <td style="padding: 10px;">{{ .Params.lastdate | time.Format "02-01-2006" }}</td>
+            </tr>
+            {{ end }}
+            {{ if .Params.OfficialSource }}
             <tr>
-                <th style="text-align: left; padding: 10px;">🌐 आवेदन</th>
-                <td style="padding: 10px;">{{ .Params.apply_online | safeHTML }}</td>
+                <th style="text-align: left; padding: 10px;">🌐 Website</th>
+                <td style="padding: 10px;">{{ .Params.OfficialSource | safeHTML }}</td>
             </tr>
             {{ end }}
         </tbody>
