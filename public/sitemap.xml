@@ -437,6 +437,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/ads/sponsor-disclaimer/</loc>
+    <lastmod>2025-02-25T18:48:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/ads/whatsapp-promotion/</loc>
     <lastmod>2025-02-25T18:48:38+05:30</lastmod>
     <changefreq>daily</changefreq>
