@@ -69,14 +69,7 @@
       </div>
       {{ end }}
 
-      {{ if .Params.links }}
-      <div class="section">
-          <h3>🔸{{ .Params.YojnaName }} महत्वपूर्ण लिंक (Important Links)</h3>
-          <div class="links-container">
-              <p>{{ .Params.links | safeHTML }}</p>
-          </div>
-      </div>
-      {{ end }}
+  
 
       {{ if .Params.faqs }}
       <div class="section">
@@ -94,6 +87,18 @@
       </div>
       {{ end }}
   </div>
+  {{ if .Params.links }}
+  <div class="section">
+      <h3>🔸{{ .Params.YojnaName }} महत्वपूर्ण लिंक (Important Links)</h3>
+      <div class="links-container">
+          <p>{{ .Params.links | safeHTML }}</p>
+      </div>
+  </div>
+  {{ end }}
+  <div class="content">
+    {{ .Content }}
+</div>
+
   {{ partial "imp-codes/imageBanner.html" . }}
 </div>
 {{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}
