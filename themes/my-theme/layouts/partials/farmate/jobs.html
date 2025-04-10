@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPESB Madhyamik & Prathamik Shikshak Selection Test -2024</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-light: #3b82f6;
+            --primary-dark: #1e40af;
+            --secondary-color: #1e40af;
+            --accent-color: #fbbf24;
+            --accent-light: #fcd34d;
+            --text-color: #1f2937;
+            --text-light: #6b7280;
+            --light-bg: #f3f4f6;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+      
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1rem;
+            border-radius: 1rem;
+            box-shadow: var(--card-shadow);
+           border-top: 4px solid transparent;
+        }
+
+
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--accent-color);
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+   
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .card li:last-child {
+            border-bottom: none;
+        }
+
+        .card strong {
+            color: var(--primary-dark);
+        }
+
+  </style>
+  </head>
+
+  <div class="card" tabindex="0">
+    {{ if .Params.Notification }}
+      <h3>{{ .Params.Notification }}</h3>
+    {{ end }}
+    {{ if .Params.department }}
+      <h2>{{ .Params.department }}</h2>
+    {{ end }}
+    {{ if .Params.recruitment }}
+      <h2>{{ .Params.recruitment }}</h2>
+    {{ end }}
+  </div>
+  <br>
+  
+  <div class="grid">
+    {{ if .Params.important_dates }}
+      <div class="card" tabindex="0">
+        <h3>📅 महत्वपूर्ण तिथियां / Important Dates</h3>
+        <ul><li>{{ .Params.important_dates | safeHTML }}</li></ul>
+      </div>
+    {{ end }}
+  
+    {{ if .Params.application_fee }}
+      <div class="card" tabindex="0">
+        <h3>💸 आवेदन शुल्क/ Application Fee</h3>
+        <ul><li>{{ .Params.application_fee | safeHTML }}</li></ul>
+      </div>
+    {{ end }}
+  </div>
+  
+  <div class="grid">
+    <div class="card" tabindex="0">
+      <h3>🔍 महत्वपूर्ण जानकारी / Important Information</h3>
+      <ul>
+        {{ with .Params.postName }}<li><strong>पद का नाम (Post Name):</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.totalPost }}<li><strong>पदों की संख्या (Total Post):</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.Qualification }}<li><strong>शैक्षणिक योग्यता (Qualification):</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.ageLimit }}<li><strong>आयु सीमा (Age Limit):</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.selection }}<li><strong>चयन प्रक्रिया (Selection):</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.salary }}<li><strong>वेतन (Salary):</strong> {{ . | safeHTML }}</li>{{ end }}
+      </ul>
+    </div>
+  
+    {{ if .Params.documents }}
+      <div class="card" tabindex="0">
+        <h3>📄 Required Documents / दस्तावेज़</h3>
+        <ul><li>{{ .Params.documents | safeHTML }}</li></ul>
+      </div>
+    {{ end }}
+  </div>
+  
+  {{ if .Params.Eligibility }}
+    <div class="card" tabindex="0">
+      <h3>🧾 पात्रता / Eligibility</h3>
+      {{ .Params.Eligibility | safeHTML }}
+    </div>
+  {{ end }}
+  <div class="content">
+    {{ .Content }}
+</div>
+
+  {{ partial "imp-codes/imageBanner.html" . }}
+  <table class="yp-table" style="width:100%; border-collapse: collapse; margin-bottom: 1rem;">
+    <tr style="background-color:#f2f2f2;">
+      <th style="padding: 8px; text-align: left;">Title</th>
+      <th style="padding: 8px; text-align: left;">Details</th>
+    </tr>
+    {{ with .Params.Notification }}
+    <tr>
+      <td style="padding: 8px;">Notification</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.department }}
+    <tr>
+      <td style="padding: 8px;">Department</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.recruitment }}
+    <tr>
+      <td style="padding: 8px;">Recruitment</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.postName }}
+    <tr>
+      <td style="padding: 8px;">Post Name</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.totalPost }}
+    <tr>
+      <td style="padding: 8px;">Total Posts</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.Qualification }}
+    <tr>
+      <td style="padding: 8px;">Qualification</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.ageLimit }}
+    <tr>
+      <td style="padding: 8px;">Age Limit</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.application_fee }}
+    <tr>
+      <td style="padding: 8px;">Application Fee</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.important_dates }}
+    <tr>
+      <td style="padding: 8px;">Important Dates</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.selection }}
+    <tr>
+      <td style="padding: 8px;">Selection Process</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.salary }}
+    <tr>
+      <td style="padding: 8px;">Salary</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.documents }}
+    <tr>
+      <td style="padding: 8  px;">Required Documents</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.Eligibility }}
+    <tr>
+      <td style="padding: 8px;">Eligibility</td>
+      <td style="padding: 8px;">{{ . }}</td>
+    </tr>
+    {{ end }}
+  </table>
+  
