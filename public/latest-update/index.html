@@ -2511,6 +2511,24 @@ function filterTable() {
 <script src="\js\bottam-nav.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+<script>
+    let lastScrollTop = 0;
+    const nav = document.getElementById("bottomNav");
+
+    window.addEventListener("scroll", function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            
+            nav.classList.add("hide");
+        } else {
+            
+            nav.classList.remove("hide");
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+    }, false);
+</script>
 <body>
     <nav class="bottom-nav">
         <ul>

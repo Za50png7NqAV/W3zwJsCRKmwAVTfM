@@ -4,6 +4,34 @@
 <script src="\js\bottam-nav.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+<script>
+    let lastScrollTop = 0;
+    const nav = document.querySelector('.bottom-nav');
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // नीचे स्क्रॉल → छिपाओ
+            nav.classList.remove("show");
+            nav.classList.add("hide");
+        } else {
+            // ऊपर स्क्रॉल → दिखाओ
+            nav.classList.remove("hide");
+            nav.classList.add("show");
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+
+    // जब पेज लोड हो, तब दिखे मोबाइल पर
+    document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth <= 600) {
+            document.querySelector('.bottom-nav').classList.add("show");
+        }
+    });
+</script>
+
 <body>
     <nav class="bottom-nav">
         <ul>
