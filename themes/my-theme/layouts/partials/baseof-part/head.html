@@ -55,6 +55,7 @@
 <link rel="stylesheet" href="{{ "css/yp-main.css" | relURL }}">
 <link rel="stylesheet" href="{{ "css/main/navbar.css" | relURL }}">   
 <link rel="stylesheet" href="{{ "css/main/footer.css" | resources.Get | minify | fingerprint | relURL }}">
+<link rel="stylesheet" href="{{ "css/main/bottom.css" | resources.Get | minify | fingerprint | relURL }}">
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
 {{ if .Params.cssStyle }}
 <link rel="preload" as="style" href="{{ .Params.cssStyle | relURL }}" onload="this.onload=null;this.rel='stylesheet'">

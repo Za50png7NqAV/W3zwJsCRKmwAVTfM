@@ -1,72 +1,9 @@
-<!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="\css\bottam-nav.css">
-<script src="\js\bottam-nav.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<script>
-    let lastScrollTop = 0;
-    const nav = document.querySelector('.bottom-nav');
-
-    window.addEventListener('scroll', function () {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > lastScrollTop) {
-            // नीचे स्क्रॉल → छिपाओ
-            nav.classList.remove("show");
-            nav.classList.add("hide");
-        } else {
-            // ऊपर स्क्रॉल → दिखाओ
-            nav.classList.remove("hide");
-            nav.classList.add("show");
-        }
-
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
-
-    // जब पेज लोड हो, तब दिखे मोबाइल पर
-    document.addEventListener("DOMContentLoaded", function () {
-        if (window.innerWidth <= 600) {
-            document.querySelector('.bottom-nav').classList.add("show");
-        }
-    });
-</script>
-
-<body>
-    <nav class="bottom-nav">
+ <nav class="bottom-nav">
         <ul>
-            <li>
-                <a href="/" class="active1">
-                    <i class="fas fa-home"></i>
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="/quick/last-date/">
-                    <i class="fas fa-calendar-alt"></i>
-                    LastDate
-                </a>
-            </li>
-            <li>
-                <a href="#">  <span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"> <i class="fas fa-search"></i> </span>
-                   
-                    Search
-                </a>
-            </li>
-            <li>
-                <a href="/notification/">
-                    <i class="fas fa-bell"></i>
-                    Update
-                </a>
-            </li>
-
-            <li>
-                <a href="/menu/">
-                    <i class="fas fa-bars"></i>
-                    Menu
-                </a>
-            </li>
+            <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
+            <li><a href="#"><span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>Search</a></li>
+            <li><a href="/notification/"><i class="fas fa-bell"></i>Update</a></li>
+            <li><a href="/menu/"><i class="fas fa-bars"></i>Menu</a></li>
         </ul>
     </nav>
-   
-</body>

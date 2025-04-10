@@ -66,5 +66,7 @@
 
 {{ $navbarScript := resources.Get "js/main/navbar.js" | minify | fingerprint }}
 <script src="{{ $navbarScript.Permalink }}" integrity="{{ $navbarScript.Data.Integrity }}" defer></script>
+{{ $bottomScript := resources.Get "js/main/bottom.js" | minify | fingerprint }}
+<script src="{{ $bottomScript.Permalink }}" integrity="{{ $bottomScript.Data.Integrity }}" defer></script>
 
 </html>
