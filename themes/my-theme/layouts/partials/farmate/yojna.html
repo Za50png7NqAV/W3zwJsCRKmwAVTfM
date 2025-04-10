@@ -1,13 +1,6 @@
-<head>
-  {{ $stylePath := .Site.Params.cssStyle }}
-{{ $style := resources.Get $stylePath | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
-<style>
- 
-</style>
 </head>
-<div class="container">
+<div class="yp-container">
   <div class="post-card">
     {{ if .Params.department }}
        <h2 style="color:green;"> {{ .Params.department }} </h2>
@@ -71,14 +64,6 @@
 
   
 
-      {{ if .Params.faqs }}
-      <div class="section">
-          <h3>🔸{{ .Params.YojnaName }} के लिए अक्सर पूछे जाने वाले प्रश्न (FAQs)</h3>
-          <div class="faq">
-              {{ .Params.faqs | safeHTML }}
-          </div>
-      </div>
-      {{ end }}
 
       {{ if .Params.conclusion }}
       <div class="section">
@@ -87,14 +72,7 @@
       </div>
       {{ end }}
   </div>
-  {{ if .Params.links }}
-  <div class="section">
-      <h3>🔸{{ .Params.YojnaName }} महत्वपूर्ण लिंक (Important Links)</h3>
-      <div class="links-container">
-          <p>{{ .Params.links | safeHTML }}</p>
-      </div>
-  </div>
-  {{ end }}
+
   <div class="content">
     {{ .Content }}
 </div>
@@ -105,7 +83,7 @@
 
 <div class="section">
     <h3>🔍{{ .Params.YojnaName }} का संक्षिप्त सारांश (Summary)</h3>
-    <table style="width:100%; border-collapse: collapse; background-color: #fff; box-shadow: var(--card-shadow); border-radius: var(--border-radius); overflow: hidden;">
+    <table class="yp-table">
         <tbody>
             <tr style="border-bottom: 1px solid #ddd;">
                 <th style="text-align: left; padding: 10px;">📌 योजना</th>
