@@ -10,7 +10,7 @@
 <meta name="keywords" content="Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://yojnaportal.com;">
 <link rel="canonical" href="https://yojnaportal.com/new-baner/">
-<script type="application/ld+json">
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -40,7 +40,7 @@
     }
     </script>
     
-    </script>
+
     
 <meta name="debug" content="JSON-LD Loaded">
 
@@ -76,6 +76,7 @@
 <link rel="stylesheet" href="/css/yp-main.css">
 <link rel="stylesheet" href="/css/main/navbar.css">   
 <link rel="stylesheet" href="/css/main/footer.css">
+<link rel="stylesheet" href="/css/main/bottom.css">
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
 
 <link rel="preload" as="style" href="/css/default.css" onload="this.onload=null;this.rel='stylesheet'">
@@ -342,11 +343,227 @@ New Baner
 <body>
 
   <div class="yojna-banner-wrapper">
+    <div class="yojna-banner-container" id="yojna-banner-63c9ad25e9dd2def7efe4989f7548cde">
+      <div class="yojna-header"></div>
+      <div class="yojna-subheader"></div>
+      <div class="yojna-main-title">Army Agniveer CEE Online Form 2025</div>
+      <div class="yojna-hindi-title"></div>
+
+      <div class="baner-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
+      </div>
+
+      <div class="yojna-cta">
+        <a href="/force/army-agniveer-cee-mar25/" class="yojna-apply-button">Apply Online</a>
+        <a href="/force/army-agniveer-cee-mar25/" class="yojna-apply-button">force</a>
+        <a href="/force/army-agniveer-cee-mar25/" class="yojna-apply-button"></a>
+      </div>
+
+      <div class="yojna-footer">Details: www.YojnaPortal.com</div>
+    </div>
+
+    <div class="yojna-download-section">
+        <input type="file" id="imageUpload" accept="image/*" />
+      <button onclick="downloadBanner('yojna-banner-63c9ad25e9dd2def7efe4989f7548cde', 'army-agniveer-cee-mar25')" class="yojna-download-btn">
+        Download as Image
+      </button>
+      
+    </div>
+  </div>
+
+  <script>
+    function downloadBanner(id, filename) {
+        const banner = document.getElementById(id);
+        html2canvas(banner, {
+          scale: 2,
+          useCORS: true
+        }).then(canvas => {
+          canvas.toBlob(function(blob) {
+            const link = document.createElement('a');
+            link.download = filename + '.webp';
+            link.href = URL.createObjectURL(blob);
+            link.click();
+          }, 'image/webp', 0.95);
+        });
+      }
+    
+      
+      document.getElementById('imageUpload').addEventListener('change', function (event) {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            document.querySelector('.baner-image img').src = e.target.result;
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+  </script>
+</body>
+</html>
+
+   
+    
+ 
+    <!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yojna Banner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <style>
+ 
+
+    .yojna-banner-wrapper {
+      max-width: 1280px;
+      margin: auto;
+    }
+
+    .yojna-banner-container {
+      width: 100%;
+      max-height: 800px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+    }
+
+    .yojna-header {
+      background-color: #0046ae;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 38px;
+      font-weight: 700;
+    }
+
+    .yojna-subheader {
+      background-color: #1a237e;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .yojna-main-title {
+      background-color: #333;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 700;
+      width: 68%;
+      margin: 20px 0;
+      line-height: 1.1;
+      border-radius: 15px;
+    }
+
+    .yojna-hindi-title {
+      background-color: #8b4513;
+      color: white;
+      width: 70%;
+      margin: 10px 0;
+      padding: 10px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 26px;
+      border-radius: 12px;
+    }
+
+    .baner-image {
+      position: absolute;
+      top: 220px;
+      right: 20px;
+      width: 25%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .baner-image img {
+        position: static;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    .yojna-cta {
+      text-align: left;
+      padding: 10px 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      width: 70%;
+    }
+
+    .yojna-apply-button {
+      background-color: #0046ae;
+      color: white;
+      padding: 12px 20px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .yojna-footer {
+      background-color: #ff3d00;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      position: static;
+      bottom: 0;
+      width: 97%;
+    }
+
+    .yojna-download-section {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .yojna-download-btn {
+      background-color: #2e7d32;
+      color: white;
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .yojna-main-title,
+      .yojna-hindi-title,
+      .yojna-cta {
+        width: 100%;
+      }
+
+      .baner-image {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="yojna-banner-wrapper">
     <div class="yojna-banner-container" id="yojna-banner-d842db4f5b905112a53af4b37dbf460b">
       <div class="yojna-header"> Madhya Pradesh Madhya kshetra Viddhut Vitran Co Ltd</div>
       <div class="yojna-subheader">योजना का उद्देश्य । आवदेन । लाभ । पात्रता । महत्तपूर्ण लिंक</div>
-      <div class="yojna-main-title">5 Rupaye Bijli Pump  Yojana Mp</div>
-      <div class="yojna-hindi-title"></div>
+      <div class="yojna-main-title">5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana</div>
+      <div class="yojna-hindi-title">स्थाई बिजली पंप कनेक्शन सरल योजना 2025</div>
 
       <div class="baner-image">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
@@ -9220,222 +9437,6 @@ New Baner
     <div class="yojna-download-section">
         <input type="file" id="imageUpload" accept="image/*" />
       <button onclick="downloadBanner('yojna-banner-fc0f1e47a40a8e1d5be567d7d4265796', 'csbc-bp-constable-01-2025')" class="yojna-download-btn">
-        Download as Image
-      </button>
-      
-    </div>
-  </div>
-
-  <script>
-    function downloadBanner(id, filename) {
-        const banner = document.getElementById(id);
-        html2canvas(banner, {
-          scale: 2,
-          useCORS: true
-        }).then(canvas => {
-          canvas.toBlob(function(blob) {
-            const link = document.createElement('a');
-            link.download = filename + '.webp';
-            link.href = URL.createObjectURL(blob);
-            link.click();
-          }, 'image/webp', 0.95);
-        });
-      }
-    
-      
-      document.getElementById('imageUpload').addEventListener('change', function (event) {
-        const file = event.target.files[0];
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            document.querySelector('.baner-image img').src = e.target.result;
-          };
-          reader.readAsDataURL(file);
-        }
-      });
-  </script>
-</body>
-</html>
-
-   
-    
- 
-    <!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yojna Banner</title>
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-  <style>
- 
-
-    .yojna-banner-wrapper {
-      max-width: 1280px;
-      margin: auto;
-    }
-
-    .yojna-banner-container {
-      width: 100%;
-      max-height: 800px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      position: relative;
-      padding: 20px;
-    }
-
-    .yojna-header {
-      background-color: #0046ae;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 38px;
-      font-weight: 700;
-    }
-
-    .yojna-subheader {
-      background-color: #1a237e;
-      color: white;
-      padding: 12px;
-      text-align: center;
-      font-size: 22px;
-    }
-
-    .yojna-main-title {
-      background-color: #333;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-      font-size: 50px;
-      font-weight: 700;
-      width: 68%;
-      margin: 20px 0;
-      line-height: 1.1;
-      border-radius: 15px;
-    }
-
-    .yojna-hindi-title {
-      background-color: #8b4513;
-      color: white;
-      width: 70%;
-      margin: 10px 0;
-      padding: 10px;
-      text-align: center;
-      font-weight: 700;
-      font-size: 26px;
-      border-radius: 12px;
-    }
-
-    .baner-image {
-      position: absolute;
-      top: 220px;
-      right: 20px;
-      width: 25%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .baner-image img {
-        position: static;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 12px;
-    }
-
-    .yojna-cta {
-      text-align: left;
-      padding: 10px 0;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      width: 70%;
-    }
-
-    .yojna-apply-button {
-      background-color: #0046ae;
-      color: white;
-      padding: 12px 20px;
-      font-size: 20px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .yojna-footer {
-      background-color: #ff3d00;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 22px;
-      font-weight: 600;
-      position: static;
-      bottom: 0;
-      width: 97%;
-    }
-
-    .yojna-download-section {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .yojna-download-btn {
-      background-color: #2e7d32;
-      color: white;
-      padding: 12px 30px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
-      .yojna-main-title,
-      .yojna-hindi-title,
-      .yojna-cta {
-        width: 100%;
-      }
-
-      .baner-image {
-        position: static;
-        width: 100%;
-        margin-top: 20px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="yojna-banner-wrapper">
-    <div class="yojna-banner-container" id="yojna-banner-63c9ad25e9dd2def7efe4989f7548cde">
-      <div class="yojna-header"></div>
-      <div class="yojna-subheader"></div>
-      <div class="yojna-main-title">Army Agniveer CEE Online Form 2025</div>
-      <div class="yojna-hindi-title"></div>
-
-      <div class="baner-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
-      </div>
-
-      <div class="yojna-cta">
-        <a href="/force/army-agniveer-cee-mar25/" class="yojna-apply-button">Apply Online</a>
-        <a href="/force/army-agniveer-cee-mar25/" class="yojna-apply-button">force</a>
-        <a href="/force/army-agniveer-cee-mar25/" class="yojna-apply-button"></a>
-      </div>
-
-      <div class="yojna-footer">Details: www.YojnaPortal.com</div>
-    </div>
-
-    <div class="yojna-download-section">
-        <input type="file" id="imageUpload" accept="image/*" />
-      <button onclick="downloadBanner('yojna-banner-63c9ad25e9dd2def7efe4989f7548cde', 'army-agniveer-cee-mar25')" class="yojna-download-btn">
         Download as Image
       </button>
       
@@ -32593,50 +32594,16 @@ New Baner
     </div>
 
    </div> 
-      <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="\css\bottam-nav.css">
-<script src="\js\bottam-nav.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-    <nav class="bottom-nav">
+       <nav class="bottom-nav">
         <ul>
-            <li>
-                <a href="/" class="active1">
-                    <i class="fas fa-home"></i>
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="/quick/last-date/">
-                    <i class="fas fa-calendar-alt"></i>
-                    LastDate
-                </a>
-            </li>
-            <li>
-                <a href="#">  <span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"> <i class="fas fa-search"></i> </span>
-                   
-                    Search
-                </a>
-            </li>
-            <li>
-                <a href="/notification/">
-                    <i class="fas fa-bell"></i>
-                    Update
-                </a>
-            </li>
-
-            <li>
-                <a href="/menu/">
-                    <i class="fas fa-bars"></i>
-                    Menu
-                </a>
-            </li>
+            <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
+            <li><a href="#"><span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>Search</a></li>
+            <li><a href="/notification/"><i class="fas fa-bell"></i>Update</a></li>
+            <li><a href="/menu/"><i class="fas fa-bars"></i>Menu</a></li>
         </ul>
     </nav>
-   
-</body>
+
 
 <footer id="footer">
         
@@ -32700,6 +32667,8 @@ New Baner
 
 
 <script src="https://yojnaportal.com/js/main/navbar.min.7d6c1b268d0262d9095c7f8af44f48c08ef800d9bf16192fa94347036980d893.js" integrity="sha256-fWwbJo0CYtkJXH&#43;K9E9IwI74ANm/FhkvqUNHA2mA2JM=" defer></script>
+
+<script src="https://yojnaportal.com/js/main/bottom.min.90a33d83cf5d22a7b086cc7c8508dac13a8d29fbbd9bbdde3262a6b2f5dd28b3.js" integrity="sha256-kKM9g89dIqewhsx8hQjawTqNKfu9m73eMmKmsvXdKLM=" defer></script>
 
 </html>
 
