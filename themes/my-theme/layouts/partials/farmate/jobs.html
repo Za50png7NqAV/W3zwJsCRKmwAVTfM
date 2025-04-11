@@ -67,19 +67,68 @@
         .card strong {
             color: var(--primary-dark);
         }
-
+        /* ========== Table (Schemes Table) ========== */
+  .yp-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .yp-table th {
+    background-color: #eba40d;
+    color: white;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .yp-table td {
+    padding: 12px 15px;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    color: var(--text-color);
+  }
+  .yp-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .yp-table tr:hover {
+    background-color: #ffe9c2;
+  }
+  .yp-table a:hover {
+    color: #bb0b0b;
+  }
+  
+/* ========== Links degin ========== */
+.yp-table a {
+text-decoration: none;}
+/* ========== heading ========== */
+h3 {
+  color: rgb(12, 0, 175);
+}
+h2 {
+  color: rgb(250, 55, 20);
+  text-align: center;
+}
+h1 {
+  color: rgb(46, 119, 4);
+  text-align: center;
+}
   </style>
   </head>
 
   <div class="card" tabindex="0">
-    {{ if .Params.Notification }}
-      <h3>{{ .Params.Notification }}</h3>
+    {{ if .Params.Notification }} 
+      <h3>{{ .Params.Notification }} Short Detail of Notification / <br> अधिसूचना पर आधारित संक्षिप्त जानकारी</h3>
     {{ end }}
     {{ if .Params.department }}
       <h2>{{ .Params.department }}</h2>
     {{ end }}
     {{ if .Params.recruitment }}
-      <h2>{{ .Params.recruitment }}</h2>
+      <h1>{{ .Params.recruitment }}</h1>
     {{ end }}
   </div>
   <br>
@@ -111,12 +160,15 @@
         {{ with .Params.selection }}<li><strong>चयन प्रक्रिया (Selection):</strong> {{ . | safeHTML }}</li>{{ end }}
         {{ with .Params.salary }}<li><strong>वेतन (Salary):</strong> {{ . | safeHTML }}</li>{{ end }}
       </ul>
+      <p><strong>नोट:</strong> उपरोक्त विवरण संक्षिप्त है। पूरी जानकारी के लिए आधिकारिक विज्ञापन देखें।</p>
     </div>
   
     {{ if .Params.documents }}
       <div class="card" tabindex="0">
-        <h3>📄 Required Documents / दस्तावेज़</h3>
+        <h3>📄Required Details/ Documents / दस्तावेज़</h3>
         <ul><li>{{ .Params.documents | safeHTML }}</li></ul>
+        <p><strong>नोट:</strong> उपरोक्त दस्तावेज़ सामान्य जानकारी हेतु हैं, आवश्यकता अनुसार अन्य दस्तावेज़ भी माँगे जा सकते हैं।</p>
+
       </div>
     {{ end }}
   </div>
@@ -137,82 +189,48 @@
       <th style="padding: 8px; text-align: left;">Title</th>
       <th style="padding: 8px; text-align: left;">Details</th>
     </tr>
-    {{ with .Params.Notification }}
-    <tr>
-      <td style="padding: 8px;">Notification</td>
-      <td style="padding: 8px;">{{ . }}</td>
-    </tr>
-    {{ end }}
-    {{ with .Params.department }}
-    <tr>
-      <td style="padding: 8px;">Department</td>
-      <td style="padding: 8px;">{{ . }}</td>
-    </tr>
-    {{ end }}
-    {{ with .Params.recruitment }}
-    <tr>
-      <td style="padding: 8px;">Recruitment</td>
-      <td style="padding: 8px;">{{ . }}</td>
-    </tr>
-    {{ end }}
+   
     {{ with .Params.postName }}
     <tr>
-      <td style="padding: 8px;">Post Name</td>
-      <td style="padding: 8px;">{{ . }}</td>
+      <td style="padding: 8px;">📰Post Name</td>
+      <td style="padding: 8px;">{{ . | safeHTML }}</td>
     </tr>
     {{ end }}
     {{ with .Params.totalPost }}
     <tr>
-      <td style="padding: 8px;">Total Posts</td>
-      <td style="padding: 8px;">{{ . }}</td>
+      <td style="padding: 8px;">🔖Total Posts</td>
+      <td style="padding: 8px;">{{ . | safeHTML }}</td>
     </tr>
     {{ end }}
     {{ with .Params.Qualification }}
     <tr>
-      <td style="padding: 8px;">Qualification</td>
-      <td style="padding: 8px;">{{ . }}</td>
+      <td style="padding: 8px;">🎓Qualification</td>
+      <td style="padding: 8px;">{{ . | safeHTML }}</td>
     </tr>
     {{ end }}
     {{ with .Params.ageLimit }}
     <tr>
-      <td style="padding: 8px;">Age Limit</td>
-      <td style="padding: 8px;">{{ . }}</td>
+      <td style="padding: 8px;">👨🏼‍🎓Age Limit</td>
+      <td style="padding: 8px;">{{ . | safeHTML }}</td>
     </tr>
     {{ end }}
-    {{ with .Params.application_fee }}
-    <tr>
-      <td style="padding: 8px;">Application Fee</td>
-      <td style="padding: 8px;">{{ . }}</td>
+    {{ if .Params.lastdate}}
+    <tr style="border-bottom: 1px solid #ddd;">
+        <td style="text-align: left; padding: 10px;">📅Last Date</td>
+        <td style="padding: 10px; color:#bb0b0b">{{ .Params.lastdate | time.Format "02-01-2006" }}</td>
     </tr>
     {{ end }}
-    {{ with .Params.important_dates }}
-    <tr>
-      <td style="padding: 8px;">Important Dates</td>
-      <td style="padding: 8px;">{{ . }}</td>
-    </tr>
-    {{ end }}
-    {{ with .Params.selection }}
-    <tr>
-      <td style="padding: 8px;">Selection Process</td>
-      <td style="padding: 8px;">{{ . }}</td>
-    </tr>
-    {{ end }}
-    {{ with .Params.salary }}
-    <tr>
-      <td style="padding: 8px;">Salary</td>
-      <td style="padding: 8px;">{{ . }}</td>
-    </tr>
-    {{ end }}
+  
     {{ with .Params.documents }}
     <tr>
-      <td style="padding: 8  px;">Required Documents</td>
-      <td style="padding: 8px;">{{ . }}</td>
+      <td style="padding: 8  px;">📄Documents/ Details</td>
+      <td style="padding: 8px;">  {{ partial "imp-codes/cleanlist.html" . }} </td>
     </tr>
     {{ end }}
-    {{ with .Params.Eligibility }}
+    {{ if .Params.OfficialSource }}
     <tr>
-      <td style="padding: 8px;">Eligibility</td>
-      <td style="padding: 8px;">{{ . }}</td>
+        <td style="text-align: left; padding: 10px;">🌐Source</td>
+        <td style="padding: 10px;">{{ .Params.OfficialSource | safeHTML }}</td>
     </tr>
     {{ end }}
   </table>
