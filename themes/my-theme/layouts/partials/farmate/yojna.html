@@ -82,12 +82,12 @@
 {{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}
 
 <div class="section">
-    <h3>🔍{{ .Params.YojnaName }} का संक्षिप्त सारांश (Summary)</h3>
+    <h3>🔍  {{ .Params.YojnaName }} का संक्षिप्त सारांश (Summary) </h3>
     <table class="yp-table">
         <tbody>
             <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">📌 योजना</th>
-                <td style="padding: 10px;">{{ .Title }}</td>
+                <th style="text-align: left; padding: 10px;">📌 योजना </th>
+                <td style="padding: 10px;">{{ .Title }} | <a href="/{{.Params.shorturl}}/"> #{{.Params.shorturl}}</a></td>
             </tr>
             {{ if .Params.objective }}
             <tr style="border-bottom: 1px solid #ddd;">

@@ -117,9 +117,63 @@ h1 {
   color: rgb(46, 119, 4);
   text-align: center;
 }
+/* ========== breadcrumb Start ========== */
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+  font-size: small;
+  color: #f30909;
+  
+  }
+  
+  .breadcrumb li {
+  display: inline-flex;
+  align-items: left;
+  
+  }
+    
+  .breadcrumb li + li::before {
+  
+  margin: 0 8px;
+  color: #f36a0f; /* Separator color */
+  font-weight: bold;
+  }
+  
+  .breadcrumb li a {
+  color: #07011a; /* Link color */
+  text-decoration: none;
+  transition: color 0.2s;
+  }
+  
+  .breadcrumb li a:hover {
+  text-decoration: underline;
+  color: #f7560b; /* Link hover color */
+  }
+  
+  .breadcrumb li:last-child {
+  color: #f5900d; /* Last item color (current page) */
+  font-weight: bold;
+  }
+  
+  
   </style>
   </head>
 
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ul>
+      <li><a href="{{ "/" | absURL }}">Home</a> &raquo;</li>
+      {{ if .Section }}
+        <li><a href="{{ (print "/" .Section "/") | relURL }}">{{ title (replaceRE "-" " " .Section) }}</a> &raquo;</li>
+      {{ end }}
+      <li>{{ .Title }}</li>
+    </ul>
+  </nav>
+  <b>Post Name :</b> {{ with .Params.seo_title }} {{ . }} {{ else }} {{ .Title }} | {{ .Site.Title }} {{ end }}</title> <br>
+  <b>Last Update :</b> {{ .Date | time.Format "02/01/2006 | 03:04 PM" }} <br>
+  <b>Description :</b> <a href="{{ .Params.OfficialSource }}">{{ .Params.department }}</a> has released a {{ .Params.Notification }} for the recruitment of {{ .Params.recruitment }}. The application process will be open from <b>{{ .Params.begindate | time.Format "02 January" }} to {{ .Params.lastdate | time.Format "02 January 2006" }}</b>. Candidates must meet the required eligibility criteria including {{ .Params.qualification }}. As per the official notification, {{ .Params.postdetails }}. Interested candidates are advised to check the important dates and ensure they apply before the last date. For complete information, download the official notification and apply online using the links provided below.
   <div class="card" tabindex="0">
     {{ if .Params.Notification }} 
       <h3>{{ .Params.Notification }} Short Detail of Notification / <br> अधिसूचना पर आधारित संक्षिप्त जानकारी</h3>
@@ -181,56 +235,62 @@ h1 {
   {{ end }}
   <div class="content">
     {{ .Content }}
-</div>
+   </div>
 
   {{ partial "imp-codes/imageBanner.html" . }}
-  <table class="yp-table" style="width:100%; border-collapse: collapse; margin-bottom: 1rem;">
-    <tr style="background-color:#f2f2f2;">
-      <th style="padding: 8px; text-align: left;">Title</th>
-      <th style="padding: 8px; text-align: left;">Details</th>
-    </tr>
+  <table class="yp-table" >
+   <tr>
+    <th>Summary</th>
+    <th>Short Details | <a href="/{{.Params.shorturl}}/"> #{{.Params.shorturl}}</a></th>
+   </tr>
    
     {{ with .Params.postName }}
     <tr>
-      <td style="padding: 8px;">📰Post Name</td>
-      <td style="padding: 8px;">{{ . | safeHTML }}</td>
+      <td><strong>📰Post Name </strong></td>
+      <td><b style="color:green">{{ . | safeHTML }} </b></td>
     </tr>
     {{ end }}
     {{ with .Params.totalPost }}
     <tr>
-      <td style="padding: 8px;">🔖Total Posts</td>
-      <td style="padding: 8px;">{{ . | safeHTML }}</td>
+      <td > <strong> 🔖Total Vacancy</strong></td>
+      <td >{{ . | safeHTML }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.Domicile }}
+    <tr>
+      <td ><strong>📍Domicile </strong> </td>
+      <td >{{ . | safeHTML }}</td>
     </tr>
     {{ end }}
     {{ with .Params.Qualification }}
     <tr>
-      <td style="padding: 8px;">🎓Qualification</td>
-      <td style="padding: 8px;">{{ . | safeHTML }}</td>
+      <td ><strong> 🎓Qualification </strong> </td>
+      <td >{{ . | safeHTML }}</td>
     </tr>
     {{ end }}
     {{ with .Params.ageLimit }}
     <tr>
-      <td style="padding: 8px;">👨🏼‍🎓Age Limit</td>
-      <td style="padding: 8px;">{{ . | safeHTML }}</td>
+      <td> <strong> 👨🏼‍🎓Age Limit</strong></td>
+      <td>{{ . | safeHTML }}</td>
     </tr>
     {{ end }}
     {{ if .Params.lastdate}}
-    <tr style="border-bottom: 1px solid #ddd;">
-        <td style="text-align: left; padding: 10px;">📅Last Date</td>
-        <td style="padding: 10px; color:#bb0b0b">{{ .Params.lastdate | time.Format "02-01-2006" }}</td>
+    <tr>
+      <td><strong>📅Apply Date </strong> </td>
+      <td> <b style="color:red">{{ .Params.begindate | time.Format "02 Jan" }} to {{ .Params.lastdate | time.Format "02 Jan 2006" }} </b></td>
     </tr>
     {{ end }}
   
     {{ with .Params.documents }}
     <tr>
-      <td style="padding: 8  px;">📄Documents/ Details</td>
-      <td style="padding: 8px;">  {{ partial "imp-codes/cleanlist.html" . }} </td>
+      <td><strong>📄Documents</strong></td>
+      <td>  {{ partial "imp-codes/cleanlist.html" . }} </td>
     </tr>
     {{ end }}
     {{ if .Params.OfficialSource }}
     <tr>
-        <td style="text-align: left; padding: 10px;">🌐Source</td>
-        <td style="padding: 10px;">{{ .Params.OfficialSource | safeHTML }}</td>
+      <td><strong>🌐Source </strong></td>
+      <td>{{ .Params.OfficialSource | safeHTML }}</td>
     </tr>
     {{ end }}
   </table>
