@@ -157,7 +157,15 @@ h1 {
   color: #f5900d; /* Last item color (current page) */
   font-weight: bold;
   }
-  
+  .yp-job-head {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-top: 3px solid #eba40d;
+    border-radius: 12px;
+    background: #f9f9f9;
+    font-family: sans-serif;
+    line-height: 1.6;
+  }
   
   </style>
   </head>
@@ -171,13 +179,31 @@ h1 {
       <li>{{ .Title }}</li>
     </ul>
   </nav>
-  <b>Post Name :</b> {{ with .Params.seo_title }} {{ . }} {{ else }} {{ .Title }} | {{ .Site.Title }} {{ end }}</title> <br>
-  <b>Last Update :</b> {{ .Date | time.Format "02/01/2006 | 03:04 PM" }} <br>
-  <b>Description :</b> <a href="{{ .Params.OfficialSource }}">{{ .Params.department }}</a> has released a {{ .Params.Notification }} for the recruitment of {{ .Params.recruitment }}. The application process will be open from <b>{{ .Params.begindate | time.Format "02 January" }} to {{ .Params.lastdate | time.Format "02 January 2006" }}</b>. Candidates must meet the required eligibility criteria including {{ .Params.qualification }}. As per the official notification, {{ .Params.postdetails }}. Interested candidates are advised to check the important dates and ensure they apply before the last date. For complete information, download the official notification and apply online using the links provided below.
-  <div class="card" tabindex="0">
-    {{ if .Params.Notification }} 
-      <h3>{{ .Params.Notification }} Short Detail of Notification / <br> अधिसूचना पर आधारित संक्षिप्त जानकारी</h3>
-    {{ end }}
+  <div class="yp-job-head">
+    <h2 style="margin-top:0;"><b>Post Name:</b> 
+      {{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+    </h2>
+  
+    <p><b>Last Update:</b> {{ .Date | time.Format "02/01/2006 | 03:04 PM" }}</p>
+  
+    <p><b>Description:</b> 
+      <a href="{{ .Params.OfficialSource }}" target="_blank" style="color:#007BFF;">
+        {{ .Params.department }}
+      </a> has released a <b>{{ .Params.Notification }}</b> for the recruitment of <b>{{ .Params.recruitment }}</b>. 
+      The application process will be open from <b>{{ .Params.begindate | time.Format "02 January" }} to {{ .Params.lastdate | time.Format "02 January 2006" }}</b>. 
+      Candidates must meet the required eligibility criteria including <b>{{ .Params.qualification }}</b>. 
+      As per the official notification, <b>{{ .Params.postdetails }}</b>. 
+      Interested candidates are advised to check the important dates and ensure they apply before the last date. 
+      For complete information, download the official notification and apply online using the links provided below.
+    </p>
+    <p><b>Notification:</b> {{ if .Params.Notification }} 
+      <span style="text-align:center; color:#2563eb "> {{ .Params.Notification | default "N/A" }} </span>
+         {{ with .Params.notificationdate }} </span>(Dated: {{ . | time.Format "02 January 2006" }}){{ end }}
+        
+    {{ end }}</p>
+    </div>
+    <div class="card" tabindex="0">
+    
     {{ if .Params.department }}
       <h2>{{ .Params.department }}</h2>
     {{ end }}
@@ -228,10 +254,10 @@ h1 {
   </div>
   
   {{ if .Params.Eligibility }}
-    <div class="card" tabindex="0">
+   
       <h3>🧾 पात्रता / Eligibility</h3>
       {{ .Params.Eligibility | safeHTML }}
-    </div>
+   
   {{ end }}
   <div class="content">
     {{ .Content }}
