@@ -401,7 +401,7 @@ h1 {
     <p><b>Description:</b> 
       <a href="https://www.police.rajasthan.gov.in/" target="_blank" style="color:#007BFF;">
         Govt of Rajasthan – Police Department
-      </a> has released a <span title="क्रमांक-5( )पु.फो./कानि.भर्ती–25/2024/1360">Notification</span> for the recruitment of <b>Rajasthan Police RP Constable Recruitment 2025</b>. 
+      </a> has released a <a href="#"  title="क्रमांक-5( )पु.फो./कानि.भर्ती–25/2024/1360">Notification</a> for the recruitment of <b>Rajasthan Police RP Constable Recruitment 2025</b>. 
       The application process will be open from <b>28 April to 17 May 2025</b>. 
       Candidates must meet the required eligibility criteria including <b>12th Pass</b>. 
       As per the official notification, <b></b>. 
@@ -590,7 +590,83 @@ h1 {
     </tr>
     
   </table>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Group</title>
+  <style>
   
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-like { background-color: #f0ad4e; }
+    .btn-share { background-color: #5bc0de; }
+    .btn-whatsapp { background-color: #25D366; }
+    .btn-telegram { background-color: #0088cc; }
+    .btn-copy { background-color: #6f42c1; }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-group">
+    <button class="btn btn-like">Like</button>
+   
+
+    <a href="https://whatsapp.com/channel/yourchannelid" target="_blank" class="btn btn-whatsapp">
+      Join WhatsApp
+    </a>
+
+    <a href="https://t.me/yourchannelid" target="_blank" class="btn btn-telegram">
+      Join Telegram
+    </a>
+
+    <button class="btn btn-copy" onclick="copyLink()">Copy Link</button>
+
+      <a class="btn btn-share" href="https://wa.me/?text=✅Rajasthan%20Police%20Constable%20Vacancy%202025%20%e2%80%93%20Notification%20PDF%2c%20%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a5%8d%e0%a4%af%e0%a4%a4%e0%a4%be%2c%20%e0%a4%9a%e0%a4%af%e0%a4%a8%20%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%95%e0%a5%8d%e0%a4%b0%e0%a4%bf%e0%a4%af%e0%a4%be%0A✅Check%20Details%20👇%0A🔗http%3a%2f%2flocalhost%3a1313%2frpc2025" target="_blank">
+        Share on WhatsApp
+      </a>
+      
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = "https://yourwebsite.com/your-post-url";
+      navigator.clipboard.writeText(link).then(() => {
+        alert("✅ Link copied to clipboard!");
+      }).catch(err => {
+        alert("❌ Failed to copy: " + err);
+      });
+    }
+  </script>
+
+</body>
+</html>
+
 
 
 
