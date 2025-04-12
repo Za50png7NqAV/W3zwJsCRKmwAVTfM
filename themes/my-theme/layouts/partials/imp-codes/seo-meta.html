@@ -2,6 +2,7 @@
 <title>{{ with .Params.seo_title }} {{ . }} {{ else }} {{ .Title }} | {{ .Site.Title }} {{ end }}</title>
   
   <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+  <meta property="og:url" content="{{ if .Params.shorturl }}{{ .Site.BaseURL }}{{ .Params.shorturl }}{{ else }}{{ .Permalink }}{{ end }}">
   <meta property="og:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}">
   <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
   <meta name="twitter:card" content="summary_large_image">

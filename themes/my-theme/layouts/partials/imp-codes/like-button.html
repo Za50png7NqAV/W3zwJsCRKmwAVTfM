@@ -1,0 +1,52 @@
+<div class="button-group">
+    <button onclick="likePost()" class="btn btn-like">
+      ❤️ Like (<span id="like-count">0</span>)
+    </button>
+  </div>
+  
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+  
+  <script>
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyD6_gBTkyIcWPJ_NqpTKXz-wG8fcKcsjLw",
+      authDomain: "yojna-like-system.firebaseapp.com",
+      databaseURL: "https://yojna-like-system-default-rtdb.firebaseio.com",
+      projectId: "yojna-like-system",
+      storageBucket: "yojna-like-system.firebasestorage.app",
+      messagingSenderId: "990645944795",
+      appId: "1:990645944795:web:a6289e78bb4e6c5bbde7fe",
+      measurementId: "G-5B56M89V0S"
+    };
+  
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+  
+    // Dynamically get postId (can use Hugo templating to set this dynamically)
+    const postId = "{{ .File.BaseFileName }}";  // For Hugo: This will be the file name without extension.
+  
+    // Update the like count displayed
+    function updateLikeDisplay(count) {
+      document.getElementById("like-count").innerText = count;
+    }
+  
+    // Listen for real-time like count updates
+    db.ref('likes/' + postId).on('value', snapshot => {
+      updateLikeDisplay(snapshot.val() || 0);
+    });
+  
+    // Increment like count
+    function likePost() {
+      const likesRef = db.ref('likes/' + postId);
+      likesRef.transaction(current => (current || 0) + 1, (error, committed, snapshot) => {
+        if (error) {
+          console.error("Error updating like count:", error);
+        } else if (committed) {
+          console.log("Like added successfully!");
+        }
+      });
+    }
+  </script>
+  

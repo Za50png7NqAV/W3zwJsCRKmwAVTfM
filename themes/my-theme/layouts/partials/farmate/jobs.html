@@ -166,7 +166,31 @@ h1 {
     font-family: sans-serif;
     line-height: 1.6;
   }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
   
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
   </style>
   </head>
 
@@ -180,7 +204,7 @@ h1 {
     </ul>
   </nav>
   <div class="yp-job-head">
-    <h2 style="margin-top:0;"><b>Post Name:</b> 
+    <h2 style="margin-top:0;">
       {{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
     </h2>
   
@@ -189,14 +213,14 @@ h1 {
     <p><b>Description:</b> 
       <a href="{{ .Params.OfficialSource }}" target="_blank" style="color:#007BFF;">
         {{ .Params.department }}
-      </a> has released a <a href="#"  title="{{ .Params.Notification }}">Notification</a> for the recruitment of <b>{{ .Params.recruitment }}</b>. 
+      </a> has released a <span class="tooltip"> notification  <span class="tooltiptext"> {{ .Params.Notification }}</span></span> for the recruitment of <b>{{ .Params.recruitment }}</b>. 
       The application process will be open from <b>{{ .Params.begindate | time.Format "02 January" }} to {{ .Params.lastdate | time.Format "02 January 2006" }}</b>. 
       Candidates must meet the required eligibility criteria including <b>{{ .Params.qualification }}</b>. 
       As per the official notification, <b>{{ .Params.postdetails }}</b>. 
       Interested candidates are advised to check the important dates and ensure they apply before the last date. 
       For complete information, download the official notification and apply online using the links provided below.
     </p>
-    <p><b>Notification:</b> {{ if .Params.Notification }} 
+    <p><b>Notification :</b> {{ if .Params.Notification }} 
       <span style="text-align:center; color:#2563eb "> {{ .Params.Notification | default "N/A" }} </span>
          {{ with .Params.notificationdate }} </span>(Dated: {{ . | time.Format "02 January 2006" }}){{ end }}
         
@@ -321,3 +345,4 @@ h1 {
     {{ end }}
   </table>
   {{ partial "manual-update/button-group.html" . }}
+  

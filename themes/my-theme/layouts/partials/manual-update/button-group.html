@@ -42,9 +42,8 @@
 <body>
 
   <div class="button-group">
-    <button class="btn btn-like">Like</button>
-   
 
+    {{ partial "imp-codes/like-button.html" . }}
     <a href="https://whatsapp.com/channel/yourchannelid" target="_blank" class="btn btn-whatsapp">
       Join WhatsApp
     </a>
@@ -63,7 +62,7 @@
 
   <script>
     function copyLink() {
-      const link = "https://yourwebsite.com/your-post-url";
+      const link = "{{ if .Params.shorturl }}{{ .Site.BaseURL }}{{ .Params.shorturl }}{{ else }}{{ .Permalink }}{{ end }}";
       navigator.clipboard.writeText(link).then(() => {
         alert("✅ Link copied to clipboard!");
       }).catch(err => {

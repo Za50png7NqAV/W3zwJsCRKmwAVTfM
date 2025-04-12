@@ -8,10 +8,10 @@
     },
     "headline": {{ with .Params.seo_title }}"{{ . | plainify | htmlEscape }}"{{ else }}"{{ .Title | plainify | htmlEscape }}"{{ end }},
     "description": {{ with .Params.description }}"{{ . | plainify | htmlEscape }}"{{ else }}"{{ .Summary | plainify | htmlEscape }}"{{ end }},
-    "image": "{{ with .Params.featuredImage }}{{ . | absURL }}{{ else }}{{ "default-social.jpg" | absURL }}{{ end }}",
+    "image": "{{ with .Params.imageBanner }}{{ . | absURL }}{{ else }}{{ "default-social.jpg" | absURL }}{{ end }}",
     "author": {
       "@type": "Organization",
-      "name": "Yojna Portal",
+      "name": "Yojna Portal",     
       "url": "https://yojnaportal.com/"
     },
     "publisher": {
