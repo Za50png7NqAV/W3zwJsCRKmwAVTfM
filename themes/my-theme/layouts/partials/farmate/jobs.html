@@ -62,12 +62,12 @@
     <div class="card" tabindex="0">
       <h3>🔍 महत्वपूर्ण जानकारी / Important Information</h3>
       <ul>
-        {{ with .Params.postName }}<li><strong>पद का नाम (Post Name):</strong> {{ . | safeHTML }}</li>{{ end }}
-        {{ with .Params.totalPost }}<li><strong>पदों की संख्या (Total Post):</strong> {{ . | safeHTML }}</li>{{ end }}
-        {{ with .Params.Qualification }}<li><strong>शैक्षणिक योग्यता (Qualification):</strong> {{ . | safeHTML }}</li>{{ end }}
-        {{ with .Params.ageLimit }}<li><strong>आयु सीमा (Age Limit):</strong> {{ . | safeHTML }}</li>{{ end }}
-        {{ with .Params.selection }}<li><strong>चयन प्रक्रिया (Selection):</strong> {{ . | safeHTML }}</li>{{ end }}
-        {{ with .Params.salary }}<li><strong>वेतन (Salary):</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.postName }}<li><strong>पद का नाम:</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.totalPost }}<li><strong>पदों की संख्या:</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.Qualification }}<li><strong>शैक्षणिक योग्यता:</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.ageLimit }}<li><strong>आयु सीमा:</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.selection }}<li><strong>चयन प्रक्रिया:</strong> {{ . | safeHTML }}</li>{{ end }}
+        {{ with .Params.salary }}<li><strong>प्रारंभिक वेतन:</strong> {{ . | safeHTML }}</li>{{ end }}
       </ul>
       <p><strong>नोट:</strong> उपरोक्त विवरण संक्षिप्त है। पूरी जानकारी के लिए आधिकारिक विज्ञापन देखें।</p>
     </div>
@@ -91,14 +91,13 @@
   <div class="content">
     {{ .Content }}
    </div>
-
   {{ partial "imp-codes/imageBanner.html" . }}
-  <table class="yp-table" >
+  <h2>Post Highlight</h2>
+  <table class="yp-table" width="100%">
    <tr>
     <th>Summary</th>
     <th>Short Details | <a href="/{{.Params.shorturl}}/"> #{{.Params.shorturl}}</a></th>
    </tr>
-   
     {{ with .Params.postName }}
     <tr>
       <td><strong>📰Post Name </strong></td>
