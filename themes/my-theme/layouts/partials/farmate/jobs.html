@@ -93,7 +93,8 @@
    </div>
   {{ partial "imp-codes/imageBanner.html" . }}
   <h2>Post Highlight</h2>
-  <table class="yp-table" width="100%">
+  <div style="overflow-x:auto;">
+  <table class="yp-table">
    <tr>
     <th>Summary</th>
     <th>Short Details | <a href="/{{.Params.shorturl}}/"> #{{.Params.shorturl}}</a></th>
@@ -148,5 +149,7 @@
     </tr>
     {{ end }}
   </table>
+</div>
   {{ partial "manual-update/button-group.html" . }}
   
+    

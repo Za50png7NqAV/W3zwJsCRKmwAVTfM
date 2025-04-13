@@ -187,3 +187,54 @@ z-index: 1;
 .tooltip:hover .tooltiptext {
 visibility: visible;
 }
+/* Mobile-Friendly Media Queries */
+@media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+  
+    .card {
+      padding: 1rem;
+    }
+  
+    .yp-table th,
+    .yp-table td {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  
+    .breadcrumb {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .breadcrumb li + li::before {
+      content: '>';
+      display: none; /* Hide separators on mobile */
+    }
+  
+    .yp-job-head {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .tooltip .tooltiptext {
+      width: 90vw;
+      left: 5%;
+      margin-left: 0;
+    }
+  }
+  
