@@ -1,5 +1,4 @@
-
-</head>
+{{ partial "imp-codes/breadcrumb.html" . }}
 <div class="yp-container">
   <div class="post-card">
     {{ if .Params.department }}
@@ -73,6 +72,14 @@
       {{ end }}
   </div>
 
+  {{ if .Params.faqs }}
+  <div class="faqs">
+    <b>🙋‍♀️ अक्सर पूछे जाने वाले प्रश्न - {{ .Params.YojnaName }}</b>
+  <div class="faq">
+     {{ .Params.faqs | safeHTML }}
+    </div>
+    {{ end }} 
+</div>
   <div class="content">
     {{ .Content }}
 </div>
@@ -81,7 +88,7 @@
 </div>
 {{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}
 
-<div class="section">
+<div class="faq">
     <h3>🔍  {{ .Params.YojnaName }} का संक्षिप्त सारांश (Summary) </h3>
     <table class="yp-table">
         <tbody>
@@ -139,6 +146,7 @@
             {{ end }}
         </tbody>
     </table>
-</div>
+
 {{ end }}
 
+</div>

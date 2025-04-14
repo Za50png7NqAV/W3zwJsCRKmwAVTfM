@@ -1,0 +1,9 @@
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <ul>
+      <li><a href="{{ "/" | absURL }}">Home</a> &raquo;</li>
+      {{ if .Section }}
+        <li><a href="{{ (print "/" .Section "/") | relURL }}">{{ title (replaceRE "-" " " .Section) }}</a> &raquo;</li>
+      {{ end }}
+      <li>{{ .Title }}</li>
+    </ul>
+  </nav>

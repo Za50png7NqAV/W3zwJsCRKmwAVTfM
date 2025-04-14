@@ -1,28 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width">
-{{ partial "imp-codes/seo-meta.html" . }}
-<meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025{{ end }}">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://yojnaportal.com;">
-<link rel="canonical" href="{{ .Permalink }}">
+  {{ partial "imp-codes/seo-meta.html" . }}
 {{ partial "imp-codes/schema.html" . }}
-<meta name="debug" content="JSON-LD Loaded">
-<!-- Meta for WhatsApp (Uses Open Graph) -->
-<meta name="theme-color" content="#0084ff">
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<meta name='dmca-site-verification' content='T256Y3p2alQ4QW03ZzdEcGd3MWpwQT090' />
-<meta name="robots" content="index, follow">
-<meta name="distribution" content="global">
-{{- with .Lastmod -}}
-  <meta name="lastmod" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
-{{- end }}
-<meta http-equiv="content-language" content="en-hi">
-<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
 {{ if eq .Params.adsense true }}
 <!-- Adsense Script -->

@@ -126,46 +126,7 @@ color: rgb(46, 119, 4);
 text-align: center;
 font-size:  2rem;
 }
-/* ========== breadcrumb Start ========== */
-.breadcrumb {
-list-style: none;
-padding: 0;
-display: flex;
-flex-wrap: wrap;
 
-font-size: small;
-color: #f30909;
-
-}
-
-.breadcrumb li {
-display: inline-flex;
-align-items: left;
-
-}
-
-.breadcrumb li + li::before {
-
-margin: 0 8px;
-color: #f36a0f; /* Separator color */
-font-weight: bold;
-}
-
-.breadcrumb li a {
-color: #07011a; /* Link color */
-text-decoration: none;
-transition: color 0.2s;
-}
-
-.breadcrumb li a:hover {
-text-decoration: underline;
-color: #f7560b; /* Link hover color */
-}
-
-.breadcrumb li:last-child {
-color: #f5900d; /* Last item color (current page) */
-font-weight: bold;
-}
 .yp-job-head {
 border: 1px solid #ddd;
 padding: 16px;
