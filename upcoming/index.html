@@ -180,84 +180,487 @@
        <div id="sidenav-main">
         
         
-
-<h2 style="text-align:center;" > Upcoming Information </h2>
-
-
-    
-    <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact us for any queries or support related to Yojna Portal.">
-    <title>Contact Us - Yojna Portal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin:  auto;
-
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
+    <styLe>
+        .upload-button {
+            background-color: #9b403a;
+            border: none;
+            color: white;
+            padding: 15px 32px;
             text-align: center;
-            color: #0056b3;
-        }
-        p {
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
             font-size: 16px;
-            line-height: 1.5;
+            margin: 0 auto;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
         }
-      
-      #Message-container {
-              margin:auto;
-              max-width:500px; }
-    </style>
+        .upload-button:hover {
+            background-color: #010a3a;
+        }
+    </styLe>
 </head>
-<body>
-    <div class="container">
-        <h1>Contact Us</h1>
-        <p>
-            If you have any questions, feedback, or need support regarding Yojna Portal, feel free to contact us using the form below or reach us via email or phone.
-        </p>
-        <h1>Send Message / Suggestion / Feedback</h1>
-<div id="Message-container"></div>
-        <div class="contact-info">
-            <h2>Other Ways to Reach Us</h2>
-            <ul>
-                <li>Email: <a href="mailto:yojnaportalhelp@gmail.com">yojnaportalhelp@gmail.com </a></li>
-                <li> More: <a href="/about"> Social Media</a> </li>
-                
-            </ul>
-        </div>
-    </div>
-</body>
-    <script>
-        
-        const iframe = document.createElement("iframe");
-
-        
-        iframe.src = "https://bit.ly/4g3wHHR";
-        iframe.width = "350";
-        iframe.height = "410";
-        iframe.style.border = "none";
-
-        
-        document.getElementById("Message-container").appendChild(iframe);
-    </script>
-</html>
-
-
+Upcoming Information
+<h2>Latest Yourself Forms (आपके द्वारा अपलोड किये गयें फार्म) Pdf </h2>
+<a href="https://forms.gle/sFESSsRuqVJG6BAn8" target="_blank"> <button class="upload-button">+ New Upload</button></a>
+<a href="/pdf/uploaded-pdf-forms/" target="_blank"> <button class="upload-button">Your Forms</button></a>
     
+    
+<head>
+ 
+ <style>
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .search-bar {
+        flex: 1;
+        padding: 12px 16px;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+        outline: none;
+    }
+    
+    .search-bar:focus {
+        border-color: #4a90e2;
+        box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    }
+    
+    .search-bar::placeholder {
+        color: #999;
+    }
+    
+    .close-button {
+        padding: 8px 12px;
+        font-size: 20px;
+        color: #666;
+        background: transparent;
+        border: 1px solid #666;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    
+    .close-button:hover {
+        color: #ff4444;
+    }
+    
+    #categoryFilter {
+        padding: 12px;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 16px;
+        background-color: white;
+        color: #333;
+        cursor: pointer;
+        min-width: 180px;
+        transition: border-color 0.3s ease;
+    }
+    
+    #categoryFilter:focus {
+        border-color: #4a90e2;
+        outline: none;
+    }
+    
+     
+    @media screen and (max-width: 600px) {
+        .search-container {
+            flex-direction: column;
+            padding: 10px;
+        }
+    
+        .search-bar, 
+        #categoryFilter {
+            width: 90%;
+        }
+    
+        .close-button , #categoryFilter {
+           display:none;
+        }
+        
+    }
+ </style>
+    </head>
+	<div class="search-container">
+        <input type="text" id="searchBar" class="search-bar" onkeyup="searchTable()" placeholder="Search for forms...">
+        <button class="close-button" onclick="location.reload();">×</button>
+
+        <select id="categoryFilter" onchange="populateInputAndSearch()">
+            <option value="">Search</option>
+            <option value="pension">Pension Form</option>
+            <option value="Ladli Laxmi">Ladli Laxmi Yojna Form</option>
+          <option value="Aadhar">Adhar Update Form</option>
+            <option value="PMFBY"> Fasal Bima Yojna Form</option>
+            <option value="Sambal"> Sambal Card Form</option>
+        </select>
+    </div>
+
+    <table class="post-table" id="formsTable">
+    <thead>
+        <tr>
+            <th>Post Date</th>
+            <th> Download PDF / Form </th>
+            <th>Category</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>09/04/2025</td>
+            <td>
+                
+                    <a href="/mp/5-rupaye-bijli-pump-yojana-mp/" target="_blank">Stathai Bijli Pump Connection Saral Yojana pdf Forms</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="MPMKVV"> MPMKVV  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>30/03/2025</td>
+            <td>
+                
+                    <a href="/pdf/student-school-college-pdf-form/" target="_blank">School / College (विद्यार्थी संबंधित फार्म) PDF Forms Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Student"> Student  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>28/03/2025</td>
+            <td>
+                
+                    <a href="/pdf/uploaded-pdf-forms/" target="_blank">Upload Your own (आपके द्वारा अपलोड गए फार्म) pdf form Files</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Yourself Forms"> Yourself Forms  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>26/03/2025</td>
+            <td>
+                
+                    <a href="/pdf/gram-panchamchyat-forms/" target="_blank">All Gram Panchayat (ग्राम पंचायत) Lable PDF Forms Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Gram Panchayat"> Gram Panchayat  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>26/03/2025</td>
+            <td>
+                
+                    <a href="/pdf/all-lokseva-forms/" target="_blank">All Lokseva /eDistrict (लोकसेवा सें संबंधित) PDF Forms Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Lokseva"> Lokseva  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>26/03/2025</td>
+            <td>
+                
+                    <a href="/pdf/all-farmer-forms/" target="_blank">All Patwari / Farmer (किसान से संबंधित) PDF Forms Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Farmer"> Farmer  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>25/03/2025</td>
+            <td>
+                
+                    <a href="/mp/cmkvy-kanya-vivah-yojna-form/" target="_blank">MP CMKVY Kanya Vivah Yojna Pdf Form Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Kanya Vivah"> Kanya Vivah  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>18/03/2025</td>
+            <td>
+                
+                    <a href="/pdf/all-aganwadi-forms/" target="_blank">All Anganwadi (आंगनवाड़ी से संबंधित) PDF Forms Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Anganwadi"> Anganwadi  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>10/03/2025</td>
+            <td>
+                
+                    <a href="/card/pan-card-apply/" target="_blank">New Pan Card, Correction / Update Old Pan, Download 49A pdf Form</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Card"> Card  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>09/03/2025</td>
+            <td>
+                
+                    <a href="/mp/domicile-certificate-apply/" target="_blank">Domicile Certificate (निवास प्रमाण पत्र) Self Declaration Form </a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Certificate"> Certificate  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>09/03/2025</td>
+            <td>
+                
+                    <a href="/mp/income-certificate-apply/" target="_blank">Income Certificate (आय प्रमाण पत्र) Self Declaration Form </a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Certificate"> Certificate  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>03/03/2025</td>
+            <td>
+                
+                    <a href="/reg/mp-citizen-character-verification/" target="_blank">MP Citizen Character Certificate | Police Verification Apply Online </a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Certificate"> Certificate  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>01/03/2025</td>
+            <td>
+                
+                    <a href="/scheme/pmmvy-pdf-form-apply/" target="_blank">PMMVY PM Matru Vandana Yojana Apply Online &amp; Download pdf Form and Status</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="PM Scheme"> PM Scheme  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>22/02/2025</td>
+            <td>
+                
+                    <a href="/card/samagra-id-print/" target="_blank">Samagra Pariwar Vibhajan Form / Samagra Aadhar DeLink From</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Samagra"> Samagra  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>20/02/2025</td>
+            <td>
+                
+                    <a href="/mp/mpbhuabhilekh-certified-copy/" target="_blank">MP Bhuabhilekh Khasra / Naksha / B1 / Bhu-Pushtika Certified Copy Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="MP Bhuabhilekh"> MP Bhuabhilekh  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>19/02/2025</td>
+            <td>
+                
+                    <a href="/card/apaar-id-card/" target="_blank">Apaar ID Consent  Form Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="---"> ---  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>17/02/2025</td>
+            <td>
+                
+                    <a href="/mp/ssapy-cm-unmarried-pension-scheme/" target="_blank">SSAPY CM Unmarried Pension Scheme  Online form Apply</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Pension"> Pension  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>22/01/2025</td>
+            <td>
+                
+                    <a href="/scheme/mp/pension-apply/" target="_blank">Social Security Pension Apply /Stutus/ Download Pdf Form</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Scheme"> Scheme  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>18/01/2025</td>
+            <td>
+                
+                    <a href="/reg/mpesb-profile/" target="_blank">MP ESB Profile / Vyapam Profile Template Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Profile"> Profile  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>14/01/2025</td>
+            <td>
+                
+                    <a href="/scheme/mp/cmlly-ladli-laxmi-yojna/" target="_blank">CM Ladli Laxmi Yojna Apply And Scholarship Pdf Forms</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="CMLLY"> CMLLY  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>13/01/2025</td>
+            <td>
+                
+                    <a href="/scheme/pm-sbm-bls-toilet/" target="_blank">PM SBM Shouchalaya/Toilet Apply Online</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="scheme"> scheme  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>13/01/2025</td>
+            <td>
+                
+                    <a href="/card/aadhar-card-uidai/" target="_blank">Aadhar (uidai) Update PDF From Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="card"> card  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>09/01/2025</td>
+            <td>
+                
+                    <a href="/scheme/pmfby-pm-fasal-bima-yojna/" target="_blank">PMFBY Buai Praman Patra for Fasal Bima Dwonload pdf</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Insurance"> Insurance  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>02/01/2025</td>
+            <td>
+                
+                    <a href="/card/sambal-card-apply-download/" target="_blank">Sambal Card Yojna Apply pdf form Download</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Scheme"> Scheme  </a></td>
+           
+        </tr>
+        
+        <tr>
+            <td>02/01/2025</td>
+            <td>
+                
+                    <a href="/student/mp/gaon-ki-beti-schorlarship/" target="_blank">Gaon ki Beti  Download PDF Form for Apply</a>
+                
+            </td>
+            <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Scholarship"> Scholarship  </a></td>
+           
+        </tr>
+        
+    </tbody>
+</table>
+  
+<script>
+	function populateInputAndSearch() {
+		var dropdown = document.getElementById("categoryFilter");
+		var input = document.getElementById("searchBar");
+
+		
+		input.value = dropdown.value;
+
+		
+		searchTable();
+	}
+</script>
+  <script>
+		function searchTable() {
+			var input, filter, table, tr, td, i, j, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toLowerCase();
+			table = document.getElementById("formsTable");
+			tr = table.getElementsByTagName("tr");
+
+			for (i = 1; i < tr.length; i++) {
+				tr[i].style.display = "none";
+				td = tr[i].getElementsByTagName("td");
+				for (j = 0; j < td.length; j++) {
+					if (td[j]) {
+						txtValue = td[j].textContent || td[j].innerText;
+						if (txtValue.toLowerCase().indexOf(filter) > -1) {
+							tr[i].style.display = "";
+							break;
+						}
+					}
+				}
+			}
+		}
+	</script>
+  
+    
+
+<head>
+  <style>
+    
+    
+    
+    table.gsc-search-box td, .gsc-clear-button {display:none;}
+  </style></head>
+
+  <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+  </script>
+  <div id="pse">
+  <div class="gcse-search"></div> </div>
+
+  <script>
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        const queryParam = this.getAttribute('data-search');
+        const newUrl = `?gsc.q=${encodeURIComponent(queryParam)}`;
+         window.history.pushState({}, '', newUrl);
+         document.querySelector("input.gsc-input").value = queryParam;
+         document.querySelector("button.gsc-search-button").click();
+      });
+    });
+    </script>
+      
+  
     <div class="content">
         
     </div>
