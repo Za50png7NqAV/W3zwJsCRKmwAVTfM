@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
-    <lastmod>2025-04-13T19:15:51+05:30</lastmod>
+    <loc>http://localhost:1313/mp/ladli-bahna-yojana-update-2025/</loc>
+    <lastmod>2025-04-14T07:43:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-14T07:43:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
     <lastmod>2025-04-13T19:15:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
