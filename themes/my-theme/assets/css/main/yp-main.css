@@ -1,109 +1,109 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  
-  .container, .main-content {
-    width: 100%;
-    max-width: 100vw;
-    box-sizing: border-box;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  
-    .main-container {
-        max-width: 1200px;
-       width: 900px;
-        margin: auto;
-       /* Center the container and add margin */
-        padding: 0px;
-         align-items: center;
-        justify-content: center;
-        word-wrap: break-word !important;
-    }
-    /* ========== breadcrumb Start ========== */
-.breadcrumb {
-  list-style: none;
+  margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  
-  font-size: small;
-  color: #f30909;
-  
+ 
+}
+
+.container, .main-content {
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+  .main-container {
+      max-width: 1200px;
+     width: 900px;
+      margin: auto;
+     /* Center the container and add margin */
+      padding: 0px;
+       align-items: center;
+      justify-content: center;
+      word-wrap: break-word !important;
   }
-  
-  .breadcrumb li {
-  display: inline-flex;
-  align-items: left;
-  
-  }
-  
-  .breadcrumb li + li::before {
-  
-  margin: 0 8px;
-  color: #f36a0f; /* Separator color */
+  /* ========== breadcrumb Start ========== */
+.breadcrumb {
+list-style: none;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+
+font-size: small;
+color: #f30909;
+
+}
+
+.breadcrumb li {
+display: inline-flex;
+align-items: left;
+
+}
+
+.breadcrumb li + li::before {
+
+margin: 0 8px;
+color: #f36a0f; /* Separator color */
+font-weight: bold;
+}
+
+.breadcrumb li a {
+color: #07011a; /* Link color */
+text-decoration: none;
+transition: color 0.2s;
+}
+
+.breadcrumb li a:hover {
+text-decoration: underline;
+color: #f7560b; /* Link hover color */
+}
+
+.breadcrumb li:last-child {
+color: #f5900d; /* Last item color (current page) */
+font-weight: bold;
+}
+/* ========== FAQ Section ========== */
+.faq,
+.faqs {
+  background-color: #fff8e1;
+  border: 1px solid #ffd54f;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 15px 0;
+  font-family: var(--font-family);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+.faqs:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+.faq details {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border-left: 3px solid var(--secondary-color);
+}
+.faq summary {
   font-weight: bold;
-  }
-  
-  .breadcrumb li a {
-  color: #07011a; /* Link color */
-  text-decoration: none;
-  transition: color 0.2s;
-  }
-  
-  .breadcrumb li a:hover {
-  text-decoration: underline;
-  color: #f7560b; /* Link hover color */
-  }
-  
-  .breadcrumb li:last-child {
-  color: #f5900d; /* Last item color (current page) */
+  cursor: pointer;
+  padding: 8px;
+}
+.faqs b:first-child {
+  color: #d17b00;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.faqs b:nth-child(3) {
+  color: var(--secondary-color);
   font-weight: bold;
-  }
-  /* ========== FAQ Section ========== */
-  .faq,
-  .faqs {
-    background-color: #fff8e1;
-    border: 1px solid #ffd54f;
-    border-radius: 10px;
-    padding: 16px 20px;
-    margin: 15px 0;
-    font-family: var(--font-family);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease-in-out;
-  }
-  .faqs:hover {
-    transform: scale(1.01);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-  }
-  .faq details {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
-    border-left: 3px solid var(--secondary-color);
-  }
-  .faq summary {
-    font-weight: bold;
-    cursor: pointer;
-    padding: 8px;
-  }
-  .faqs b:first-child {
-    color: #d17b00;
-    display: block;
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
-  .faqs b:nth-child(3) {
-    color: var(--secondary-color);
-    font-weight: bold;
-  }
-    @media (max-width: 768px) {
-        .main-container {
-          width: 100%;
-        }
-          
-        }
+}
+  @media (max-width: 768px) {
+      .main-container {
+        width: 100%;
+      }
+        
+      }

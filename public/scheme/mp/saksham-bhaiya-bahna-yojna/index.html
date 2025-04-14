@@ -360,17 +360,7 @@
                 </td>
             </tr>
             
-            
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">💰 लाभ</th>
-                <td style="padding: 10px;">
-                  एनएसक्यूएफ़ समबद्ध प्रशिक्षण भागीदार | एनएसक्यूएफ़ समर्पित कौशल पाठ्यक्रम | रोजगार के साथ कौशल विकास | VED – Vocational Education to address Dropouts – औपचारिक स्कूल शिक्षा के साथ 8वीं/10वीं के बाद स्कूल छोड़ने वाले बच्चों के लिए विशेष रूप से डिजाइन पाठ्यक्रम | किफायती लागत पर कौशल शिक्षा | प्लेसमेंट लिंकज | पाठ्यक्रम शुल्क के बाद में समान्यीकृत करने के लिए मानव पूंजी बैंक की शुरुआत | प्रस्तावित पाठ्यक्रम • आईटीआई/आईटीआईस | • मिनी आई | • सुरक्षा | • आईटी वित्त संबंधी 
-
-                </td>
-            </tr>
-            
-      
-           
+         
             
             <tr style="border-bottom: 1px solid #ddd;">
                 <th style="text-align: left; padding: 10px;">📄 आवश्यक दस्तावेज</th>
@@ -398,6 +388,73 @@
 
 
 </div>
+
+  <style>
+   .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-like { background-color: #f0ad4e; }
+    .btn-share { background-color: #5bc0de; }
+    .btn-whatsapp { background-color: #25D366; }
+    .btn-telegram { background-color: #0088cc; }
+    .btn-copy { background-color: #6f42c1; }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-group">
+    <a href="https://yojnaportal.com/whatsapp" target="_blank" class="btn btn-whatsapp">
+      Join WhatsApp
+    </a>
+
+    <a href="https://yojnaportal.com/telegram" target="_blank" class="btn btn-telegram">
+      Join Telegram
+    </a>
+
+    <button class="btn btn-copy" onclick="copyLink()">Copy Link</button>
+
+      <a class="btn btn-share" href="https://wa.me/?text=✅Saksham%20Bhaiya%20Bahna%20Yojna%0A✅Check%20Details%20👇%0A🔗http%3a%2f%2flocalhost%3a1313%2fscheme%2fmp%2fsaksham-bhaiya-bahna-yojna%2f" target="_blank">
+        Share on WhatsApp
+      </a>
+      
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = "http:\/\/localhost:1313\/scheme\/mp\/saksham-bhaiya-bahna-yojna\/";
+      navigator.clipboard.writeText(link).then(() => {
+        alert("✅ Link copied to clipboard!");
+      }).catch(err => {
+        alert("❌ Failed to copy: " + err);
+      });
+    }
+  </script>
+</body>
+
+
 
 
 

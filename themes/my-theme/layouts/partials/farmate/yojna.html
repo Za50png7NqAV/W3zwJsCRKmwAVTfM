@@ -112,17 +112,7 @@
                 </td>
             </tr>
             {{ end }}
-            {{ if .Params.benefits }}
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">💰 लाभ</th>
-                <td style="padding: 10px;">
-                  {{ partial "imp-codes/cleanlist.html" .Params.benefits }}
-
-                </td>
-            </tr>
-            {{ end }}
-      
-           
+         
             {{ if .Params.documents }}
             <tr style="border-bottom: 1px solid #ddd;">
                 <th style="text-align: left; padding: 10px;">📄 आवश्यक दस्तावेज</th>
@@ -150,3 +140,4 @@
 {{ end }}
 
 </div>
+{{ partial "manual-update/button-group.html" . }}

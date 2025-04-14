@@ -85,10 +85,13 @@
     <link rel="stylesheet" href="http://localhost:1313/css/main/navbar.min.ff52fb93b219fba959b96e2a11ad528d0f9c8bf49194900ee6085519f8377796.css" integrity="sha256-/1L7k7IZ&#43;6lZuW4qEa1SjQ&#43;ci/SRlJAO5ghVGfg3d5Y=">
   
     
+    <link rel="stylesheet" href="http://localhost:1313/css/main/bottom.min.c0f412b29bacef6ea5b72428bb2d1be722aa2bf0443c60c8a75ba1a42899b406.css" integrity="sha256-wPQSspus726ltyQouy0b5yKqK/BEPGDIp1uhpCiZtAY=">
+  
+    
     <link rel="stylesheet" href="http://localhost:1313/css/main/footer.min.7d62111213465ed4c6399fd27ed88958793b0a5a57f067ae87795c7efc12c859.css" integrity="sha256-fWIREhNGXtTGOZ/SftiJWHk7ClpX8Geuh3lcfvwSyFk=">
   
     
-    <link rel="stylesheet" href="http://localhost:1313/css/main/yp-main.min.747ba62809b211d12537d23ee7f761a63fa21d606729489329f99c73530d0661.css" integrity="sha256-dHumKAmyEdElN9I&#43;5/dhpj&#43;iHWBnKUiTKfmcc1MNBmE=">
+    <link rel="stylesheet" href="http://localhost:1313/css/main/yp-main.min.f4c8e550ac323437f7c57a13657e98f31d2f6124a8956db9cef5268cbc261c88.css" integrity="sha256-9MjlUKwyNDf3xXoTZX6Y8x0vYSSolW25zvUmjLwmHIg=">
   
     
     <link rel="stylesheet" href="http://localhost:1313/css/main/header.min.41282502fabcfb1a20d0d30d5b12d1ca6079fb40355347a9861ff8ecde27fc23.css" integrity="sha256-QSglAvq8&#43;xog0NMNWxLRymB5&#43;0A1U0ephh/47N4n/CM=">
@@ -372,17 +375,7 @@
                 </td>
             </tr>
             
-            
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">💰 लाभ</th>
-                <td style="padding: 10px;">
-                  • ₹5 प्रति HP / यूनिट में स्थायी बिजली कनेक्शन। | • एकमुश्त प्रक्रिया से सस्ती और स्थायी बिजली सुविधा। | • कृषि कार्यों के लिए बिजली की निर्बाध आपूर्ति। | • बिजली विभाग की ओर से अनुदान। | • खेतों की सिंचाई में समय और लागत की बचत। 
-
-                </td>
-            </tr>
-            
-      
-           
+         
             
             <tr style="border-bottom: 1px solid #ddd;">
                 <th style="text-align: left; padding: 10px;">📄 आवश्यक दस्तावेज</th>
@@ -405,6 +398,73 @@
 
 
 </div>
+
+  <style>
+   .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-like { background-color: #f0ad4e; }
+    .btn-share { background-color: #5bc0de; }
+    .btn-whatsapp { background-color: #25D366; }
+    .btn-telegram { background-color: #0088cc; }
+    .btn-copy { background-color: #6f42c1; }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-group">
+    <a href="https://yojnaportal.com/whatsapp" target="_blank" class="btn btn-whatsapp">
+      Join WhatsApp
+    </a>
+
+    <a href="https://yojnaportal.com/telegram" target="_blank" class="btn btn-telegram">
+      Join Telegram
+    </a>
+
+    <button class="btn btn-copy" onclick="copyLink()">Copy Link</button>
+
+      <a class="btn btn-share" href="https://wa.me/?text=✅5%20Rupaye%20Mein%20Sthai%20Bijli%20Pump%20Connection%20Saral%20Yojana%0A✅Check%20Details%20👇%0A🔗http%3a%2f%2flocalhost%3a1313%2fmp%2f5-rupaye-bijli-pump-yojana-mp%2f" target="_blank">
+        Share on WhatsApp
+      </a>
+      
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = "http:\/\/localhost:1313\/mp\/5-rupaye-bijli-pump-yojana-mp\/";
+      navigator.clipboard.writeText(link).then(() => {
+        alert("✅ Link copied to clipboard!");
+      }).catch(err => {
+        alert("❌ Failed to copy: " + err);
+      });
+    }
+  </script>
+</body>
+
+
 
 
 
