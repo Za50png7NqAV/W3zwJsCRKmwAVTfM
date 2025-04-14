@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yojna Banner</title>
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tillana&family=Yatra+One&family=Passion+One&family=Poetsen+One&family=Poppins&family=Roboto&family=Mukta&family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <style>
  
@@ -17,7 +17,8 @@
     .yojna-banner-container {
       width: 100%;
       max-height: 800px;
-      background-color: #fff;
+      background: #fff;
+      font-weight: 700;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       overflow: hidden;
@@ -26,29 +27,36 @@
     }
 
     .yojna-header {
-      background-color: #0046ae;
+      font-family: "Passion One", sans-serif;
+      background: linear-gradient(30deg, #814501, #ffb107);
+      text-shadow: 1px 5px 8px black;
       color: white;
       padding: 20px;
       text-align: center;
       font-size: 38px;
-      font-weight: 700;
+      font-weight: 400;
     }
 
     .yojna-subheader {
-      background-color: #1a237e;
+      font-family: "Tillana", sans-serif;
+      background: linear-gradient(30deg, #01810c, #2f4d01);
+      text-shadow: 1px 4px 9px black;
       color: white;
       padding: 12px;
       text-align: center;
-      font-size: 22px;
+      font-weight: 600;
+      font-size: 30px;
     }
 
     .yojna-main-title {
-      background-color: #333;
+      font-family: "Poetsen One", sans-serif;
+      background: linear-gradient(45deg, #db7603, #f5b041);
+      text-shadow: 1px 5px 8px black;
       color: white;
       padding: 30px 20px;
       text-align: center;
       font-size: 50px;
-      font-weight: 700;
+      font-weight: 400;
       width: 68%;
       margin: 20px 0;
       line-height: 1.1;
@@ -56,7 +64,9 @@
     }
 
     .yojna-hindi-title {
-      background-color: #8b4513;
+      font-family: "Yatra One", sans-serif;
+      background: linear-gradient(30deg, #01810c, #2f4d01);
+      text-shadow: 1px 4px 9px black;
       color: white;
       width: 70%;
       margin: 10px 0;
@@ -95,9 +105,9 @@
     }
 
     .yojna-apply-button {
-      background-color: #0046ae;
+      background: linear-gradient(45deg, #020755, #024666);
       color: white;
-      padding: 12px 20px;
+      padding: 12px 30px;
       font-size: 20px;
       border: none;
       border-radius: 10px;
@@ -107,12 +117,14 @@
     }
 
     .yojna-footer {
-      background-color: #ff3d00;
+      font-family: "Poetsen One", sans-serif;
+      background: linear-gradient(45deg, #db7603, #fa0000);
+      text-shadow: 1px 5px 10px black;
       color: white;
       padding: 15px;
       text-align: center;
-      font-size: 22px;
-      font-weight: 600;
+      font-size: 40px;
+      font-weight: 100;
       position: static;
       bottom: 0;
       width: 97%;
@@ -150,25 +162,25 @@
   </style>
 </head>
 <body>
-
+  {{ range first 5  .Site.RegularPages }}
   <div class="yojna-banner-wrapper">
     <div class="yojna-banner-container" id="yojna-banner-{{ .File.UniqueID }}">
-      <div class="yojna-header">{{ .Params.Department }}</div>
-      <div class="yojna-subheader">{{ .Params.InnerPost }}</div>
-      <div class="yojna-main-title">{{ .Title }}</div>
-      <div class="yojna-hindi-title">{{ .Params.Summary }}</div>
+      <div class="yojna-header" contenteditable="true">{{ .Params.Department }}</div>
+      <div class="yojna-subheader" contenteditable="true">{{ .Params.InnerPost }}</div>
+      <div class="yojna-main-title" contenteditable="true">{{ .Title }}</div>
+      <div class="yojna-hindi-title" contenteditable="true">{{ .Params.Summary }}</div>
 
       <div class="baner-image">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
       </div>
 
       <div class="yojna-cta">
-        <a href="{{ .RelPermalink }}" class="yojna-apply-button">Apply Online</a>
-        <a href="{{ .RelPermalink }}" class="yojna-apply-button">{{ .Params.category }}</a>
-        <a href="{{ .RelPermalink }}" class="yojna-apply-button">{{ .Params.state }}</a>
+        <a href="{{ .RelPermalink }}" class="yojna-apply-button" contenteditable="true">Apply Online</a>
+        <a href="{{ .RelPermalink }}" class="yojna-apply-button" contenteditable="true">{{ .Params.category }}</a>
+        <a href="{{ .RelPermalink }}" class="yojna-apply-button" contenteditable="true">{{ .Params.state }}</a>
       </div>
 
-      <div class="yojna-footer">Details: www.YojnaPortal.com</div>
+      <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
     </div>
 
     <div class="yojna-download-section">
@@ -179,7 +191,7 @@
       
     </div>
   </div>
-
+  {{ end }}
   <script>
     function downloadBanner(id, filename) {
         const banner = document.getElementById(id);
