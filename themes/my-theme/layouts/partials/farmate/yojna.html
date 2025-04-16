@@ -7,7 +7,7 @@
       <h2>{{ .Title }}  {{ if .Params.state }}
          {{ .Params.state }}
         {{ end }}    </h2>
-
+        {{ partial "imp-codes/video-iframe.html" . }}
       {{ if .Params.objective }}
       <div class="section">
           <h3>🔸{{ .Params.YojnaName }} का उद्देश्य (Objective)</h3>
