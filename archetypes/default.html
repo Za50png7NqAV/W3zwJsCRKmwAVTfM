@@ -8,7 +8,7 @@ aliases = [
   "/sarkari-naukri/railway-alp-2025/",
   "/railway/alp-exam-2025/",
   "/rrbalp2025/",
-  "{{ .File.Path | md5 | truncate 6 }}"
+  "/{{ .File.Path | md5 | truncate 6 }}/"
 ]
 shorturl ="{{ .File.Path | md5 | truncate 6 }}"
 post-type = "" #hint>> imp-link , student, schemes, results, admitcard, latest-jobs
@@ -31,7 +31,7 @@ AdmitcardName = ''
 result = "no"
 ResultName = ''
 pdfForm  = "no"   # yes if offiline pdf form availble
-Videolink= "https://youtu.be/LOcXT2rfePo"
+Videolink= ""
 pdfName = ""
 important ="no" # yes if this important for cyber cafe
 baner = "no"
@@ -40,10 +40,10 @@ details_url = "#"
 draft = false
 image = ""
 imageBig = ""
-imageBanner ="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm7Hl5mwyBAcxI1Is_mFwSiMXD8uDBgrfu8-uJtFeb0x412Nt6i_MLeI97W-r4-gWu8SkEE0uyx_pT-SNen74odtrS5nTJc20bAjKMu50s9U6OnTBps3ICnmY2DwDVTW_aTfhizHSzHmNDPkFRCo5fhsVKRotF6oQtP2BGBw0iGawQs2y4JMCCJhG09A/s1600/ration-card-ekyc-compressed.webp"
+imageBanner =""
 authors = ["Vikram Singh"]
 avatar = "/images/"
-keywords = ["Schemes", "PM Yojna", "Yojna Portal"]
+keywords = ["Schemes", "PM Yojna", "  Portal"]
 description = ""
 cssStyles = ["css/posts/jobs.css", "css/main/navbar.css","css/main/footer.css","css/main/yp-main.css","css/main/header.css"]
 jsFiles = ["js/main/default.js"]
