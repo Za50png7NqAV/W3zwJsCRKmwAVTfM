@@ -94,12 +94,12 @@
         <tbody>
             <tr style="border-bottom: 1px solid #ddd;">
                 <th style="text-align: left; padding: 10px;">📌 योजना </th>
-                <td style="padding: 10px;">{{ .Title }} | <a href="/{{.Params.shorturl}}/"> #{{.Params.shorturl}}</a></td>
+                <td style="padding: 10px; font-size:20px; color:green;">{{ .Title }} | <a href="/{{.Params.shorturl}}/"> #{{.Params.shorturl}}</a></td>
             </tr>
             {{ if .Params.objective }}
             <tr style="border-bottom: 1px solid #ddd;">
                 <th style="text-align: left; padding: 10px;">🎯 उद्देश्य</th>
-                <td style="padding: 10px;">{{ .Params.objective }}</td>
+                <td style="padding: 10px;">{{ .Params.objective | safeHTML }}</td>
             </tr>
             {{ end }}
             {{ if .Params.eligibility }}
@@ -115,7 +115,7 @@
          
             {{ if .Params.documents }}
             <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">📄 आवश्यक दस्तावेज</th>
+                <th style="text-align: left; padding: 10px;">📄 दस्तावेज</th>
                 <td style="padding: 10px;">
                   {{ partial "imp-codes/cleanlist.html" .Params.documents }}
 
@@ -130,14 +130,20 @@
             {{ end }}
             {{ if .Params.OfficialSource }}
             <tr>
-                <th style="text-align: left; padding: 10px;">🌐 Website</th>
-                <td style="padding: 10px;">{{ .Params.OfficialSource | safeHTML }}</td>
+                <th style="text-align: left; padding: 10px;">🏬 विभाग </th>
+                <td style="padding: 10px;"><a href="{{ .Params.OfficialSource | safeHTML }}">{{ .Params.department }}</a></td>
             </tr>
             {{ end }}
         </tbody>
     </table>
 
 {{ end }}
+{{ if .Params.impnote }}
 
+
+    <p class="notice">{{ .Params.impnote | safeHTML }}</p>
+
+{{ end }}
+</div>
 </div>
 {{ partial "manual-update/button-group.html" . }}
