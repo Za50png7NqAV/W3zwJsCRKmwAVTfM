@@ -135,8 +135,8 @@
     {{ end }}
     {{ if .Params.OfficialSource }}
     <tr>
-      <td><strong>🌐Source </strong></td>
-      <td>{{ .Params.OfficialSource | safeHTML }}</td>
+      <td><strong>🏬Department </strong></td>
+      <td><a href="{{ .Params.OfficialSource | safeHTML }}"> {{ .Params.department }} </a></td>
     </tr>
     {{ end }}
   </table>
