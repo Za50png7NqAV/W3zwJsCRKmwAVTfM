@@ -4,10 +4,10 @@ title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 seo_title = ""
 slug= "{{ .File.ContentBaseName }}"
-url = "{{ .Dir }}{{ .File.ContentBaseName }}/" # ✅ Main SEO Friendly URL
+url = "/{{ .Dir }}{{ .File.ContentBaseName }}/" # ✅ Main SEO Friendly URL
 aliases = [
 
-  "{{ .Dir }}{{ .File.ContentBaseName }}/",
+  "/{{ .Dir }}{{ .File.ContentBaseName }}/",
   "/{{ .File.Path | md5 | truncate 6 }}/"
 ]
 shorturl ="{{ .File.Path | md5 | truncate 6 }}"
