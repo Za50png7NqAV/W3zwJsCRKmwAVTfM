@@ -3,11 +3,11 @@ adsense = true
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 seo_title = ""
-url = "/rajasthan-police/constable-bharti-2025/" # ✅ Main SEO Friendly URL
+slug= "{{ .File.ContentBaseName }}"
+url = "{{ .Dir }}{{ .File.ContentBaseName }}/" # ✅ Main SEO Friendly URL
 aliases = [
-  "/sarkari-naukri/railway-alp-2025/",
-  "/railway/alp-exam-2025/",
-  "/rrbalp2025/",
+
+  "{{ .Dir }}{{ .File.ContentBaseName }}/",
   "/{{ .File.Path | md5 | truncate 6 }}/"
 ]
 shorturl ="{{ .File.Path | md5 | truncate 6 }}"
@@ -35,14 +35,8 @@ Videolink= ""
 pdfName = ""
 important ="no" # yes if this important for cyber cafe
 baner = "no"
-link = "#"
-details_url = "#"
-draft = false
-image = ""
-imageBig = ""
 imageBanner =""
 authors = ["Vikram Singh"]
-avatar = "/images/"
 keywords = ["{{ replace .File.ContentBaseName "-" " " | title }}", "PM Yojna", "yojna Portal"]
 description = ""
 cssStyles = ["css/posts/jobs.css", "css/main/yojna.css"]
@@ -58,7 +52,6 @@ apply_offline= " " # ऑफलाइन जानकारी
 links= " " # महत्वपूर्ण लिंक
 faqs= " " # प्रश्न
 conclusion= " " # निष्कर्ष
-
 InnerPost = "योजना का उद्देश्य । आवदेन । लाभ । पात्रता । महत्तपूर्ण लिंक"
 Department = " "  # अधिकारित सोर्स
 documents= " " # दस्तावेज
@@ -67,7 +60,7 @@ application_fee= " " # आववेदन शुल्क
 OfficialSource = " "  # अधिकारित लिंक
 eligibility= " " # पात्रता 
 Notification= " " # विज्ञापन नाम
-notificationdate= "2025-04-09"
+notificationdate= ""
 recruitment= " " # जॉब / परीक्षा नाम
 totalPost = " " # कुल पद
 Qualification = " " # न्यूनतम योग्यता
@@ -76,5 +69,4 @@ selection = " " # चयन प्रकिया
 salary = " " # वेतन भुगतान  
 postName = " " # पद का नाम
 postdetails = "there are -- vacancies available for male and female candidates"
-
 +++
