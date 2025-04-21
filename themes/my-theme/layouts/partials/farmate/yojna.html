@@ -7,6 +7,14 @@
       <h2>{{ .Title }}  {{ if .Params.state }}
          {{ .Params.state }}
         {{ end }}    </h2>
+        {{ if .Params.Whatis }}
+        <div class="section">
+        <details open >  <summary> <h3>🔸 {{ .Params.YojnaName }} क्या है ? (short Details) </h3> </summary>
+            <p >{{ .Params.Whatis | safeHTML }}</p>
+        </details>
+        </div>
+        {{ end }}
+
         {{ partial "imp-codes/video-iframe.html" . }}
       {{ if .Params.objective }}
       <div class="section">
