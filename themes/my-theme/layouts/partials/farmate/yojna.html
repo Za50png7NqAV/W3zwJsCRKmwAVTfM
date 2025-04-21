@@ -8,11 +8,11 @@
          {{ .Params.state }}
         {{ end }}    </h2>
         {{ if .Params.Whatis }}
-        <div class="section">
-        <details open >  <summary> <h3>🔸 {{ .Params.YojnaName }} क्या है ? (short Details) </h3> </summary>
-            <p >{{ .Params.Whatis | safeHTML }}</p>
+        
+        <details open class="faqs" >  <summary> 🔸<strong> {{ .Params.YojnaName }} क्या है ? </strong> </summary>
+            <p class="conclusion">{{ .Params.Whatis | safeHTML }}</p>
         </details>
-        </div>
+        
         {{ end }}
 
         {{ partial "imp-codes/video-iframe.html" . }}
@@ -97,7 +97,7 @@
 {{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}
 
 <div class="faq">
-    <h3>🔍  {{ .Params.YojnaName }} का संक्षिप्त सारांश (Summary) </h3>
+    <h3>🔍  {{ .Params.YojnaName }} का संक्षिप्त सारांश (Summary) </h3>  
     <table class="yp-table">
         <tbody>
             <tr style="border-bottom: 1px solid #ddd;">
@@ -139,7 +139,7 @@
             {{ if .Params.OfficialSource }}
             <tr>
                 <th style="text-align: left; padding: 10px;">🏬 विभाग </th>
-                <td style="padding: 10px;"><a href="{{ .Params.OfficialSource | safeHTML }}">{{ .Params.department }}</a></td>
+                <td style="padding: 10px;"><a href="{{ .Params.OfficialSource | safeHTML }}" target="_blank">{{ .Params.department }}</a></td>
             </tr>
             {{ end }}
         </tbody>
