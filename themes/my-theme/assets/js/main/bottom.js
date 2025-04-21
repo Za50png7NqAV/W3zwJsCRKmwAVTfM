@@ -1,24 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const nav = document.querySelector('.bottom-nav');
+let lastScrollTop = 0;
+const nav = document.querySelector(".bottom-nav");
 
-    // लोड के समय कोई क्लास न लगाएँ
-    nav.classList.remove("show");
-    nav.classList.add("hide");
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    window.addEventListener('scroll', function () {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (window.innerWidth <= 600) {
+    if (currentScroll < lastScrollTop) {
+      // Scrolling up
+      nav.classList.add("show");
+    } else {
+      // Scrolling down
+      nav.classList.remove("show");
+    }
+  }
 
-        if (scrollTop < lastScrollTop) {
-            // ऊपर स्क्रॉल → दिखाओ
-            nav.classList.remove("hide");
-            nav.classList.add("show");
-        } else {
-            // नीचे स्क्रॉल या वहीं रुका → छिपाओ
-            nav.classList.remove("show");
-            nav.classList.add("hide");
-        }
-
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });

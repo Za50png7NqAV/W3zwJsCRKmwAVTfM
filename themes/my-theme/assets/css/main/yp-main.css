@@ -381,7 +381,13 @@ header {
 
 @media (max-width: 600px) {
   .bottom-nav {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .bottom-nav.show {
     display: block;
+    transform: translateY(0%);
   }
 
   .bottom-nav ul li a {
