@@ -7,11 +7,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/how-to/</loc>
-    <lastmod>2025-04-21T09:09:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-21T09:09:10+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -393,6 +388,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/force/</loc>
+    <lastmod>2025-03-06T18:51:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/how-to/</loc>
     <lastmod>2025-03-06T18:51:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

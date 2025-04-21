@@ -73,7 +73,7 @@ html, body {
   margin: 0 8px;
   color: var(--breadcrumb-separator);
   font-weight: bold;
-  content: ">>";
+  
 }
 
 .breadcrumb li a {
@@ -85,6 +85,7 @@ html, body {
 .breadcrumb li a:hover {
   text-decoration: underline;
   color: var(--accent-color);
+
 }
 
 .breadcrumb li:last-child {
