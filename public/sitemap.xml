@@ -37,11 +37,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/document/</loc>
-    <lastmod>2025-04-16T11:07:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/update/ration-card-ekyc/</loc>
     <lastmod>2025-04-16T11:07:53+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -388,6 +383,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/card/</loc>
+    <lastmod>2025-03-06T18:51:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/</loc>
     <lastmod>2025-03-06T18:51:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
