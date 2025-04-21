@@ -3,7 +3,7 @@ adsense = true
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 seo_title = ""
-slug= "{{ .File.ContentBaseName }}"
+slug= "/{{ .File.ContentBaseName }}/"
 url = "/{{ .Dir }}{{ .File.ContentBaseName }}/" # ✅ Main SEO Friendly URL
 aliases = [
 
