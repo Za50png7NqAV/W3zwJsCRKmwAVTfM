@@ -1,0 +1,1 @@
+let lastScrollTop=0;const nav=document.querySelector(".bottom-nav");window.addEventListener("scroll",function(){let e=window.pageYOffset||document.documentElement.scrollTop;window.innerWidth<=600&&(e<lastScrollTop?nav.classList.add("show"):nav.classList.remove("show")),lastScrollTop=e<=0?0:e})

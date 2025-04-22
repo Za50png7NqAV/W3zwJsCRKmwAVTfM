@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YOJNA PORTAL</title>
+    <link>http://localhost:1313/how-to/aadhar/</link>
+    <description>Recent content on YOJNA PORTAL</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Apr 2025 09:09:10 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/how-to/aadhar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Check Linked Mobile Number With Aadhar</title>
+      <link>http://localhost:1313/how-to/check-link-mobile-no-with-aadhar/</link>
+      <pubDate>Mon, 21 Apr 2025 09:09:10 +0530</pubDate>
+      <guid>http://localhost:1313/how-to/check-link-mobile-no-with-aadhar/</guid>
+      <description>इस लेख में जानिए आधार कार्ड में लिंक मोबाइल नंबर कैसे पता करें – Digilocker, mAadhaar ऐप और myAadhaar.gov.in जैसी आधिकारिक वेबसाइटों की मदद से मोबाइल नंबर के अंतिम अंक कैसे देखें।</description>
+    </item>
+  </channel>
+</rss>
