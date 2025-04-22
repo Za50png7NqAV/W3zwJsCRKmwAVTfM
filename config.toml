@@ -9,7 +9,7 @@ theme = 'my-theme'
 [params]
  
 description = "Stay updated with the latest government schemes, Sarkari Yojna news, and policy updates on Yojna Portal."
-
+adminMode = true
 
   
 # config.toml
