@@ -74,6 +74,11 @@ html, body {
     color: var(--primary-dark);
 }
 /* ========== Table (Schemes Table) ========== */
+.yp-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+}
 .yp-table {
 width: 100%;
 margin: 10px auto;
