@@ -75,7 +75,7 @@
       <th>URL</th>
       <th>Folder</th>
       <th>File Name</th>
-      <th>Edit</th>
+      <th>Path</th>
     </tr>
   </thead>
   <tbody>
@@ -88,8 +88,8 @@
         <td data-label="File"><code>{{ $file.BaseFileName }}{{ $file.Ext }}</code></td>
         {{ $dir := replace $file.Dir "\\" "/" }}
         <td class="edit-link" data-label="Edit">
-            <a href="https://github.com/Za50png7NqAV/W3zwJsCRKmwAVTfM/blob/main/content/{{ replace $file.Dir "\\" "/" }}{{ $file.BaseFileName }}.html" target="_blank">Edit</a>
-          </td>
+          <button onclick="copyToClipboard('/{{ $dir }}{{ $file.BaseFileName }}.html')">Copy</button>
+        </td>
         
       </tr>
     {{ end }}
@@ -108,7 +108,18 @@
     });
   });
 </script>
-
+<script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text)
+        .then(() => {
+          alert("Copied to clipboard: " + text);
+        })
+        .catch(err => {
+          console.error("Failed to copy: ", err);
+        });
+    }
+  </script>
+  
 {{ else }}
 <h2 style="color:red;">⛔ Access Denied: This page is only visible to the site admin.</h2>
 {{ end }}
