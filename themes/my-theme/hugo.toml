@@ -27,6 +27,7 @@ paginate = 20
 logo = "logo/logo-100x100.png"
 cssStyle = "css/main/scheme.css"
 jsFile = "js/main/default.js"
+adminMode = true
 
 [sitemap]
   filename = "sitemap.xml"
