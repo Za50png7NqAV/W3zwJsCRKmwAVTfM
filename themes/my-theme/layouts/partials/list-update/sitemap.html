@@ -1,0 +1,105 @@
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    #searchBox {
+      padding: 10px;
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      font-weight: bold;
+    }
+    th {
+      background-color: #f9f9f9;
+      color: #444;
+      font-weight: bold;
+    }
+    tr:hover {
+      background-color: #f7d28f;
+      font-weight: bold;
+    }
+    code {
+      background-color: #f2f2f2;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        position: absolute;
+        left: -9999px;
+      }
+      td {
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+      }
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+      }
+    }
+  </style>
+  
+  <h1>🗂 Sitemaps with Folder</h1>
+  
+  <input type="text" id="searchBox" placeholder="🔍 Search title, folder or file...">
+  
+  <table id="sitemapTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>URL</th>
+        <th>Folder</th>
+        <th>File Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Site.RegularPages }}
+        <tr>
+          <td data-label="Title">{{ .Title }}</td>
+          <td data-label="URL"><code>{{ .RelPermalink }}</code></td>
+          <td data-label="Folder"><code>{{ .File.Dir }}</code></td>
+          <td data-label="File"><code>{{ .File.BaseFileName }}{{ .File.Ext }}</code></td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+  
+  <script>
+    const searchBox = document.getElementById("searchBox");
+    const tableRows = document.querySelectorAll("#sitemapTable tbody tr");
+  
+    searchBox.addEventListener("input", function () {
+      const value = this.value.toLowerCase();
+  
+      tableRows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(value) ? "" : "none";
+      });
+    });
+  </script>
