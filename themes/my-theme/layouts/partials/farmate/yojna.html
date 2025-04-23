@@ -71,7 +71,7 @@
 
   
 
-      {{ partial "adsense.html" . }}
+     
       {{ if .Params.conclusion }}
       <div class="section">
           <h3>🔚{{ .Params.YojnaName }} का निष्कर्ष (Conclusion)</h3>
@@ -79,7 +79,7 @@
       </div>
       {{ end }}
   </div>
-
+  {{ partial "adsense.html" . }}
   {{ if .Params.faqs }}
   <div class="faqs">
     <b>🙋‍♀️ अक्सर पूछे जाने वाले प्रश्न - {{ .Params.YojnaName }}</b>
@@ -91,7 +91,7 @@
   <div class="content">
     {{ .Content }}
 </div>
-
+{{ partial "adsense.html" . }}
   {{ partial "imp-codes/imageBanner.html" . }}
 </div>
 {{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}
