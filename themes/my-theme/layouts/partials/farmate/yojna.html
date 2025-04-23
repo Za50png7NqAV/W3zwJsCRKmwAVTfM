@@ -22,7 +22,7 @@
           <p>{{ .Params.objective | safeHTML }}</p>
       </div>
       {{ end }}
-
+      {{ partial "adsense.html" . }}
       {{ if .Params.eligibility }}
       <div class="section">
           <h3>🔸{{ .Params.YojnaName }} हेतु पात्रता (Eligibility)</h3>
@@ -36,7 +36,7 @@
           <p>{{ .Params.benefits | safeHTML }}</p>
       </div>
       {{ end }}
-
+      {{ partial "adsense.html" . }}
       {{ if .Params.documents }}
       <div class="section">
           <h3>🔸{{ .Params.YojnaName }} के लिए आवश्यक दस्तावेज़ (Required Documents)</h3>
@@ -57,7 +57,7 @@
           {{ end }}
       </div>
       {{ end }}
-
+      {{ partial "adsense.html" . }}
       {{ if .Params.important_dates }}
       <div class="section">
           <h3>🔸{{ .Params.YojnaName }} महत्वपूर्ण तिथियाँ (Important Dates)</h3>
@@ -71,7 +71,7 @@
 
   
 
-
+      {{ partial "adsense.html" . }}
       {{ if .Params.conclusion }}
       <div class="section">
           <h3>🔚{{ .Params.YojnaName }} का निष्कर्ष (Conclusion)</h3>
@@ -154,4 +154,5 @@
 {{ end }}
 </div>
 </div>
+{{ partial "adsense.html" . }}
 {{ partial "manual-update/button-group.html" . }}

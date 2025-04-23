@@ -22,6 +22,7 @@
         
     {{ end }}</p>
     </div>
+    {{ partial "adsense.html" . }}
     <div class="card" tabindex="0">
     
     {{ if .Params.department }}
@@ -79,9 +80,11 @@
       {{ .Params.Eligibility | safeHTML }}
    
   {{ end }}
+  {{ partial "adsense.html" . }}
   <div class="content">
     {{ .Content }}
    </div>
+   {{ partial "adsense.html" . }}
   {{ partial "imp-codes/imageBanner.html" . }}
 
   <div style="overflow-x:auto;">
@@ -141,6 +144,7 @@
     {{ end }}
   </table>
 </div>
+{{ partial "adsense.html" . }}
   {{ partial "manual-update/button-group.html" . }}
   
     
