@@ -1,4 +1,4 @@
-baseURL = "https://yojnaportal.com/"
+baseURL = "https://www.yojnaportal.com/"
 languageCode = 'en-us'
 title = 'YOJNA PORTAL'
 theme = 'my-theme'
