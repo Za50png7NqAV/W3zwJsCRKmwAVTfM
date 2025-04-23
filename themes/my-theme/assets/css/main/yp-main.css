@@ -354,9 +354,24 @@ header {
 
 .scroll-left { left: 0; }
 .scroll-right { right: 0; }
+.ad-container {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+
 
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
+  .ad-container {
+    margin-left: -10px;
+    margin-right: -10px;
+    border-radius: 0;
+  }
   .header-container {
     flex-direction: column;
     text-align: center;
