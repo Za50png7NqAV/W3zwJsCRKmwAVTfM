@@ -36,7 +36,7 @@
           <p>{{ .Params.benefits | safeHTML }}</p>
       </div>
       {{ end }}
-      {{ partial "adsense.html" . }}
+      
       {{ if .Params.documents }}
       <div class="section">
           <h3>🔸{{ .Params.YojnaName }} के लिए आवश्यक दस्तावेज़ (Required Documents)</h3>
@@ -57,7 +57,7 @@
           {{ end }}
       </div>
       {{ end }}
-      {{ partial "adsense.html" . }}
+    
       {{ if .Params.important_dates }}
       <div class="section">
           <h3>🔸{{ .Params.YojnaName }} महत्वपूर्ण तिथियाँ (Important Dates)</h3>
@@ -79,7 +79,7 @@
       </div>
       {{ end }}
   </div>
-  {{ partial "adsense.html" . }}
+  
   {{ if .Params.faqs }}
   <div class="faqs">
     <b>🙋‍♀️ अक्सर पूछे जाने वाले प्रश्न - {{ .Params.YojnaName }}</b>

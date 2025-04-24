@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/2025/nvs-class-9th/</loc>
-    <lastmod>2025-04-24T09:38:50+05:30</lastmod>
+    <loc>http://localhost:1313/document/mp-sambal-yojna-apply/</loc>
+    <lastmod>2025-04-24T18:41:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-24T18:41:05+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar/bihar-home-guard-01-2025/</loc>
+    <lastmod>2025-04-24T16:37:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/2025/nvs-class-9th/</loc>
     <lastmod>2025-04-24T09:38:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -174,11 +184,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/2025/up-gnm-upget/</loc>
     <lastmod>2025-04-02T19:03:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bihar/bihar-home-guard-01-2025/</loc>
-    <lastmod>2025-04-02T16:37:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
