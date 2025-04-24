@@ -1,5 +1,43 @@
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
+.ad-box {
+  position: fixed;
+  top: 100px;
+  width: 120px;
+  height: 600px;
+  background-color: #ffc107;
+  display: none;
+  z-index: 0;
+}
 
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><body>
+.left-ad {
+  left: calc(50% - 400px - 130px);  
+}
+
+.right-ad {
+  right: calc(50% - 400px - 130px);
+}
+
+ 
+@media (min-width: 850px) and (max-width: 949px) {
+  .right-ad {
+    display: block;
+  }
+}
+
+ 
+@media (min-width: 950px) {
+  .left-ad,
+  .right-ad {
+    display: block;
+  }
+}
+
+</style>
+
+
+<body>
+  <div class="ad-box left-ad">Left Ad</div>
+<div class="ad-box right-ad">Right Ad</div>
   <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -191,6 +229,13 @@
     <ul class="upsc-link-list">
         
             <li class="upsc-link-item">
+                <a href="/admission/2025/nvs-class-9th/" class="upsc-link">NVS Class 9th Admissions 2025 Mark Detail</a> 
+                <span class="upsc-date">
+                    Post Update: 24 Apr 2025
+                </span>
+            </li>
+        
+            <li class="upsc-link-item">
                 <a href="/admission/neet-pg-2025/" class="upsc-link">NEET PG 2025 -Apply Online Form</a> 
                 <span class="upsc-date">
                     Post Update: 18 Apr 2025
@@ -208,13 +253,6 @@
                 <a href="/admission/2025/kvs-class-1/" class="upsc-link">KVS Class 1 Admissions Online Form 2025</a> 
                 <span class="upsc-date">
                     Post Update: 06 Mar 2025
-                </span>
-            </li>
-        
-            <li class="upsc-link-item">
-                <a href="/admission/2025/nvs-class-9th/" class="upsc-link">NVS Class 9th Admissions Online Form 2025 Admit Card</a> 
-                <span class="upsc-date">
-                    Post Update: 06 Feb 2025
                 </span>
             </li>
         

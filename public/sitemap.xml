@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/2025/nvs-class-9th/</loc>
+    <lastmod>2025-04-24T09:38:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-24T09:38:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/student/2025/nvs-class-6th/</loc>
+    <lastmod>2025-04-24T09:02:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/student/</loc>
+    <lastmod>2025-04-24T09:02:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/nta/nta-neet-ug-2025/</loc>
     <lastmod>2025-04-23T19:59:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/nta/</loc>
-    <lastmod>2025-04-23T19:59:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-23T19:59:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -127,11 +142,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/student/</loc>
-    <lastmod>2025-04-05T19:27:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/rpsc/rssb-nhm-01-2025/</loc>
     <lastmod>2025-04-05T18:58:53+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -234,11 +244,6 @@
   </url><url>
     <loc>http://localhost:1313/pdf/gram-panchamchyat-forms/</loc>
     <lastmod>2025-03-26T17:22:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/student/2025/nvs-class-6th/</loc>
-    <lastmod>2025-03-26T14:02:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -644,11 +649,6 @@
   </url><url>
     <loc>http://localhost:1313/mp/mp-euparjan-ravi-pajiyan-2025/</loc>
     <lastmod>2025-02-07T19:15:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/2025/nvs-class-9th/</loc>
-    <lastmod>2025-02-06T15:38:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
