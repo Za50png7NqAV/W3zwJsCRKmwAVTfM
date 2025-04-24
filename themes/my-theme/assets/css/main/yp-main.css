@@ -368,7 +368,7 @@ header {
 ad-box {
   position: fixed;
   top: 100px;
-  max-width: 160px;
+  max-width: 120px;
   max-height: 600px;
   display: none;
   z-index: 999; /* Better layering */
@@ -383,7 +383,7 @@ ad-box {
 }
 
 /* Show only right ad on medium screens */
-@media (min-width: 900px) and (max-width: 1020px) {
+@media (min-width: 900px)  {
   .right-ad {
     display: block;
   }
