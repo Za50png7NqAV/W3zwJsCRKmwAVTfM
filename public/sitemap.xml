@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/</loc>
-    <lastmod>2025-04-22T18:03:10+05:30</lastmod>
+    <loc>http://localhost:1313/nta/nta-neet-ug-2025/</loc>
+    <lastmod>2025-04-23T19:59:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/nta/</loc>
+    <lastmod>2025-04-23T19:59:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-23T19:59:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/</loc>
     <lastmod>2025-04-22T18:03:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -253,11 +263,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/nta/nta-cuet-ug-2025/</loc>
-    <lastmod>2025-03-23T08:27:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/nta/</loc>
     <lastmod>2025-03-23T08:27:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -629,11 +634,6 @@
   </url><url>
     <loc>http://localhost:1313/ssc/ssc-jht-2024/</loc>
     <lastmod>2025-02-11T10:29:11+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/nta/nta-neet-ug-2025/</loc>
-    <lastmod>2025-02-08T13:59:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
