@@ -2,30 +2,30 @@
 .ad-box {
   position: fixed;
   top: 100px;
-  width: 120px;
-  height: 600px;
-  background-color: #ffc107;
+  max-width: 160px;
+  max-height: 600px;
   display: none;
+  border:1px solid red;
   z-index: 0;
 }
 
 .left-ad {
-  left: calc(50% - 400px - 130px);  
+  left: calc(50% - 460px - 130px);  
 }
 
 .right-ad {
-  right: calc(50% - 400px - 130px);
+  right: calc(50% - 460px - 130px);
 }
 
  
-@media (min-width: 850px) and (max-width: 949px) {
+@media (min-width: 900px) and (max-width: 1020px) {
   .right-ad {
     display: block;
   }
 }
 
  
-@media (min-width: 950px) {
+@media (min-width: 1021px) {
   .left-ad,
   .right-ad {
     display: block;
@@ -36,8 +36,30 @@
 
 
 <body>
-  <div class="ad-box left-ad">Left Ad</div>
-<div class="ad-box right-ad">Right Ad</div>
+  <div class="ad-box left-ad"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+    crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-4855323063398382"
+    data-ad-slot="3850001664"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div class="ad-box right-ad"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+    crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-4855323063398382"
+    data-ad-slot="3850001664"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
   <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -364,7 +364,38 @@ header {
   max-width: 100%;
 }
 
+/* ============sidesads =========== */
+ad-box {
+  position: fixed;
+  top: 100px;
+  max-width: 160px;
+  max-height: 600px;
+  display: none;
+  z-index: 999; /* Better layering */
+}
 
+.left-ad {
+  left: calc(50% - 460px - 130px); /* Adjust for your layout */
+}
+
+.right-ad {
+  right: calc(50% - 460px - 130px);
+}
+
+/* Show only right ad on medium screens */
+@media (min-width: 900px) and (max-width: 1020px) {
+  .right-ad {
+    display: block;
+  }
+}
+
+/* Show both ads on wider screens */
+@media (min-width: 1021px) {
+  .left-ad,
+  .right-ad {
+    display: block;
+  }
+}
 
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
