@@ -2,11 +2,10 @@
 <style>
     /* Main sidebar container */
 .main-sidebar {
-    width: 250px;
+    width: 100%;
     background-color: #f5f5f5;
     border-right: 1px solid #ddd;
     padding: 15px;
-    height: 100vh;
     overflow-y: auto;
   }
   
@@ -25,7 +24,7 @@
   }
   
   /* Summary heading style */
-  .summary {
+  .sidebar-list .summary {
     padding: 10px 15px;
     cursor: pointer;
     font-weight: 600;
@@ -76,19 +75,49 @@
   details[open] .sidebar-list ul {
     max-height: 500px;
   }
+  .sidebar-list a{ text-decoration: none;
+  }
+  
+  a:hover { text-color:red; }
 </style>
 
 <div class="main-sidebar">
+    <div class="sidebar-section">
+
+        <details open class="sidebar-list" >
+        <summary class="summary"> Recommended Post</summary>
+        {{ range first 5 (shuffle .Site.RegularPages) }}
+        {{ $lastdate := .Params.lastdate | default "9999-12-31" }}
+        {{ if ge $lastdate (now.Format "2006-01-02") }}
+          <li>
+            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
+            {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
+          </li>
+          <hr>
+        {{ end }}
+      {{ end }}
+      
+
+    </details>
+    
+    </div>
 <div class="sidebar-section">
 
     <details open class="sidebar-list" >
-    <summary class="summary"> Main-List </summary>
+    <summary class="summary"> Latest Scheme Updates </summary>
 
-        <li>this is post Views</li>
-        <li>this is post Views</li>
-        <li>this is post Views</li>
-        <li>this is post Views</li>
-        <li>this is post Views</li>
+    {{ range first 5 (where .Site.RegularPages ".Params.post-type" "schemes") }}
+    {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
+    {{ if ge $lastdate (now.Format "2006-01-02") }}
+        <li>
+            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
+            {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
+        </li>
+       
+    {{ end }}
+{{ end }}
   
 </details>
 
@@ -96,32 +125,21 @@
 <div  class="sidebar-section">
 
     <details open class="sidebar-list" >
-    <summary class="summary"> Main-List </summary>
-   
-        <li>this is post Views</li>
-        <li>this is post Views</li>
-        <li>this is post Views</li>
-        <li>this is post Views</li>
-        <li>this is post Views</li>
+    <summary class="summary"> Latest Jobs Update</summary>
+    {{ range first 5 (where .Site.RegularPages ".Params.post-type" "latest-jobs") }}
+    {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
+    {{ if ge $lastdate (now.Format "2006-01-02") }}
+        <li>
+            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
+            {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
+        </li>
+
+    {{ end }}
+{{ end }}
  
 </details>
 
 </div>
-<div class="sidebar-section">
 
-    <details open class="sidebar-list" >
-    <summary class="summary"> Main-List </summary>
-    
-        <li>this is post Views</li>
-        <li>this is post Views</li>
-        <li>this is post Views</li>
-        <li>this is post Views</li>
-        <li>this is post Views</li>
- 
-</details>
-
-</div>
-</div>
-<div class="main-container">
-    
 </div>
