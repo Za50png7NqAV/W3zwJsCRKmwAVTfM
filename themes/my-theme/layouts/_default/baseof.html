@@ -1,42 +1,6 @@
-<style>
-.ad-box {
-  position: fixed;
-  top: 100px;
-  max-width: 160px;
-  max-height: 600px;
-  display: none;
-  border:1px solid red;
-  z-index: 0;
-}
-
-.left-ad {
-  left: calc(50% - 460px - 130px); /* 800/2 + 130 offset */
-}
-
-.right-ad {
-  right: calc(50% - 460px - 130px);
-}
-
-/* Show right ad between 850px and 950px */
-@media (min-width: 900px) and (max-width: 1020px) {
-  .right-ad {
-    display: block;
-  }
-}
-
-/* Show both ads from 950px and up */
-@media (min-width: 1021px) {
-  .left-ad,
-  .right-ad {
-    display: block;
-  }
-}
-
-</style>
-
 
 <body>
-  {{ partial "baseof-part/sideads" . }}
+  
   {{ partial "baseof-part/head" . }} 
   {{ partial "baseof-part/navbar" . }}
     <div class="main-container">

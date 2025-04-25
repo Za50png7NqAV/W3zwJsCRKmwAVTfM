@@ -1,0 +1,127 @@
+
+<style>
+    /* Main sidebar container */
+.main-sidebar {
+    width: 250px;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  /* Individual sidebar sections */
+  .sidebar-section {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the collapsible lists */
+  .sidebar-list {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Summary heading style */
+  .summary {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  /* Add an arrow indicator to summary */
+  .summary::after {
+    content: "▼";
+    font-size: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Rotate arrow when details is open */
+  details[open] .summary::after {
+    transform: rotate(180deg);
+  }
+  
+  /* List styling */
+  .sidebar-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-list li {
+    padding: 8px 15px 8px 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .sidebar-list li:hover {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Animation for expanding/collapsing */
+  .sidebar-list ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  details[open] .sidebar-list ul {
+    max-height: 500px;
+  }
+</style>
+
+<div class="main-sidebar">
+<div class="sidebar-section">
+
+    <details open class="sidebar-list" >
+    <summary class="summary"> Main-List </summary>
+
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+  
+</details>
+
+</div>
+<div  class="sidebar-section">
+
+    <details open class="sidebar-list" >
+    <summary class="summary"> Main-List </summary>
+   
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+ 
+</details>
+
+</div>
+<div class="sidebar-section">
+
+    <details open class="sidebar-list" >
+    <summary class="summary"> Main-List </summary>
+    
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+        <li>this is post Views</li>
+ 
+</details>
+
+</div>
+</div>
+<div class="main-container">
+    
+</div>
