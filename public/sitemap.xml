@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/document/mp-sambal-yojna-apply/</loc>
-    <lastmod>2025-04-24T18:41:05+05:30</lastmod>
+    <loc>http://localhost:1313/student/</loc>
+    <lastmod>2025-04-25T08:47:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/student/up-board-10th-12th-Result/</loc>
+    <lastmod>2025-04-25T08:47:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-25T08:47:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/mp-sambal-yojna-apply/</loc>
     <lastmod>2025-04-24T18:41:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -23,11 +33,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/student/2025/nvs-class-6th/</loc>
-    <lastmod>2025-04-24T09:02:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/student/</loc>
     <lastmod>2025-04-24T09:02:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
