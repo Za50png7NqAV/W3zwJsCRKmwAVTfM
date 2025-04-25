@@ -9,7 +9,7 @@
         {{ end }}    </h2>
         {{ if .Params.Whatis }}
         
-        <details open class="faqs" >  <summary> 🔸<strong> {{ .Params.YojnaName }} क्या है ? </strong> </summary>
+        <details open class="faqs" >  <summary> 🔸<strong> {{ .Params.YojnaName }} की संक्षिप्त जानकारी (short details)</strong> </summary>
             <p class="conclusion">{{ .Params.Whatis | safeHTML }}</p>
         </details>
         
@@ -97,7 +97,7 @@
 {{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}
 
 <div class="faq">
-    <h3>🔍  {{ .Params.YojnaName }} का संक्षिप्त सारांश (Summary) </h3>  
+    <h3>🔍  {{ .Params.YojnaName }} एक नंजर में (Summary) </h3>  
     <table class="yp-table">
         <tbody>
             <tr style="border-bottom: 1px solid #ddd;">
