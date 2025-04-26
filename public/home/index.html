@@ -1,7 +1,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
 
 
   
@@ -9,231 +9,243 @@
   
 
 <style>
+   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+  }
+  
+   
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-1 {
+    display: flex;
+    flex: 1;
+  }
+  
+   
+  header {
+    background-color: #fff;  
+    color: white;
+    padding: 1rem;
+    font-size: 1.25rem;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo a {text-decoration: none;}
+   
+  #openSidebar {
+    font-size: 1.5rem;  
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+   
+  #sidebarOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);  
+    z-index: 30;
+    display: none;  
+  }
+  
+   
+  #leftSidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 16rem;  
+    background-color: #f3f4f6;  
+    padding: 0rem;
+    z-index: 40;
+    transform: translateX(-100%);  
+    transition: transform 0.3s ease;  
+  }
+  
+   
+  #leftSidebar .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  #leftSidebar .font-bold {
+    font-weight: bold;
+    font-size: 1.125rem;  
+  }
+  
+   
+  #closeSidebar {
+    font-size: 1.5rem;  
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+   
+  #leftSidebar a {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;  
+    text-decoration: none;
+    color: #1f2937;  
+  }
+  
+  #leftSidebar a:hover {
+    color: #2563eb;  
+  }
+  
+   
+  main {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  main h2 {
+    font-size: 1.125rem;  
+    font-weight: 600;  
+    margin-bottom: 0.5rem;  
+  }
+  
+   
+  aside {
+    background-color: #f9fafb;  
+    padding: 1rem;
+  }
+  
+  aside h3 {
+    font-weight: bold;  
+    margin-bottom: 0.5rem;  
+  }
+  
+   
+  footer {
+    background-color: #242323;  
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+   
+  @media (min-width: 768px) {  
      
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    html, body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      line-height: 1.5;
-    }
-    
-     
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .flex-1 {
-      display: flex;
-      flex: 1;
-    }
-    
-     
-    header {
-      background-color: #2563eb;  
-      color: white;
-      padding: 1rem;
-      font-size: 1.25rem;  
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-     
-    #openSidebar {
-      font-size: 1.5rem;  
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
-    
-     
-    #sidebarOverlay {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.4);  
-      z-index: 30;
-      display: none;  
+    #openSidebar, 
+    #sidebarOverlay,
+    #leftSidebar .flex,
+    aside:last-of-type {
+      display: none;
     }
     
      
     #leftSidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 16rem;  
-      background-color: #f3f4f6;  
-      padding: 0rem;
-      z-index: 40;
-      transform: translateX(-100%);  
-      transition: transform 0.3s ease;  
-    }
-    
-     
-    #leftSidebar .flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-    
-    #leftSidebar .font-bold {
-      font-weight: bold;
-      font-size: 1.125rem;  
-    }
-    
-     
-    #closeSidebar {
-      font-size: 1.5rem;  
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    
-     
-    #leftSidebar a {
-      display: block;
-      margin-bottom: 1rem;
-      font-size: 1.25rem;  
-      text-decoration: none;
-      color: #1f2937;  
-    }
-    
-    #leftSidebar a:hover {
-      color: #2563eb;  
-    }
-    
-     
-    main {
-      flex: 1;
-      background-color: white;
-      padding: 1rem;
-    }
-    
-    main h2 {
-      font-size: 1.125rem;  
-      font-weight: 600;  
-      margin-bottom: 0.5rem;  
-    }
-    
-     
-    aside {
-      background-color: #f9fafb;  
-      padding: 1rem;
-    }
-    
-    aside h3 {
-      font-weight: bold;  
-      margin-bottom: 0.5rem;  
-    }
-    
-     
-    footer {
-      background-color: #2563eb;  
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    
-     
-    @media (min-width: 768px) {  
-       
-      #openSidebar, 
-      #sidebarOverlay,
-      #leftSidebar .flex,
-      aside:last-of-type {
-        display: none;
-      }
-      
-       
-      #leftSidebar {
-        position: static;
-        transform: translateX(0);
-        width: 20%;  
-        display: flex;
-        flex-direction: column;
-      }
-      
-      main {
-        width: 60%;  
-      }
-      
-       
-      aside:nth-of-type(2) {
-        display: block;
-        width: 20%;  
-      }
-      
-       
-      .flex-1 {
-        flex-direction: row;
-      }
-    }
-    
-     
-    @media (max-width: 767px) {
-       
-      aside:nth-of-type(2) {
-        display: none;
-      }
-      
-       
-      aside:last-of-type {
-        display: block;
-        
-      }
-      
-       
-      .flex-1 {
-        flex-direction: column;
-      }
-      
-       
-      .yp-main-content, 
-      .yp-main-sidebar {
-        width: 100%;
-      }
-      
-       
-      main.yp-main-content {
-        order: 1;
-      }
-      
-      aside.yp-main-sidebar {
-        order: 2;
-      }
-    }
-    
-     
-    #leftSidebar.active {
+      position: static;
       transform: translateX(0);
-      width: 300px;
+      width: 20%;  
+      display: flex;
+      flex-direction: column;
     }
     
-    #sidebarOverlay.active {
+    main {
+      width: 60%;  
+    }
+    
+     
+    aside:nth-of-type(2) {
+      display: block;
+      width: 20%;  
+    }
+    
+     
+    .flex-1 {
+      flex-direction: row;
+    }
+  }
+  
+   
+  @media (max-width: 767px) {
+     
+    aside:nth-of-type(2) {
+      display: none;
+    }
+    
+     
+    aside:last-of-type {
       display: block;
       
     }
-    </style>
-    </head>
-    <body>
+    
+     
+    .flex-1 {
+      flex-direction: column;
+    }
+    
+     
+    .yp-main-content, 
+    .yp-main-sidebar {
+      width: 100%;
+    }
+    
+     
+    main.yp-main-content {
+      order: 1;
+    }
+    
+    aside.yp-main-sidebar {
+      order: 2;
+    }
+  }
+  
+   
+  #leftSidebar.active {
+    transform: translateX(0);
+    width: 300px;
+  }
+  
+  #sidebarOverlay.active {
+    display: block;
+    
+  }
+  </style>
+  </head>
+  <body>
+    
+    <header>
+      <div class="logo">
+        <a href="/"> <source srcset="/logo/logo.webp" type="image/webp">
+         <div style="display: flex; align-items: center; gap: 10px;">
+           <img  src="/logo/logo-100x100.png" alt="YOJNA PORTAL" style="width: 80px; height: auto;" loading="lazy" />
+           <div>
+               <div style="font-size: 32px; font-weight: bold; background: linear-gradient(to right, #d32f2f, #ff9800); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                YOJNA PORTAL
+               </div>
+               <div style="font-size: 16px; color: #d32f2f; font-weight: bold;">
+                  www.YojnaPortal.com
+               </div>
+           </div>
+       </div>
       
-      <header>
-        Yojna Portal
-        
-        <button id="openSidebar">☰</button>
-      </header>
-      <head>
+      <button id="openSidebar">☰➖</button>
+    </header>
+    <head>
     <style> </style>
 </head>
 <body>
@@ -272,24 +284,24 @@
 </body>
 
 
+    
+    <div id="sidebarOverlay"></div>
+  
+    <div class="flex-1">
       
-      <div id="sidebarOverlay"></div>
-    
-      <div class="flex-1">
+      <aside id="leftSidebar">
         
-        <aside id="leftSidebar">
-          
-          <div class="flex">
-            <span class="font-bold">Menu</span>
-            <button id="closeSidebar">✕</button>
-          </div>
-          <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
-        </aside>
-    
-        
-        <main class="yp-main-content">
-         
-        
+        <div class="flex">
+          <span class="font-bold">Menu</span>
+          <button id="closeSidebar">✕</button>
+        </div>
+        <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
+      </aside>
+  
+      
+      <main class="yp-main-content">
+       
+      
 <head>
 <link rel="stylesheet" href="\css\list-posts.css">
 </head>
@@ -437,8 +449,8 @@
 
 
 
-        <iframe  src="/quick/" frameborder="0" marginheight="0" marginwidth="0" height="50px" width="100%" >Loading…</iframe>
-        <!DOCTYPE html>
+      <iframe  src="/quick/" frameborder="0" marginheight="0" marginwidth="0" height="50px" width="100%" >Loading…</iframe>
+      <!DOCTYPE html>
 <html>
 <head>
 
@@ -1014,7 +1026,7 @@
      
     
         <li>
-            <a href="/scheme/mp/saksham-bhaiya-bahna-yojna/" target="_blank">Saksham Bhaiya Bahna Yojna</a>
+            <a href="/scheme/saksham-bhaiya-bahna-yojna/" target="_blank">Saksham Bhaiya Bahna Yojna</a>
             
         </li>
         <hr>
@@ -1513,11 +1525,11 @@
 </body>
 </html>
 
-        </main>
-    
-        
-        <aside class="yp-main-sidebar">
-            
+      </main>
+  
+      
+      <aside class="yp-main-sidebar">
+          
 <style>
      
 .main-sidebar {
@@ -1608,6 +1620,13 @@
         
         
         
+          <li>
+            <a href="/reg/mineral-water-license/" target="_blank">Mineral Water License Online FSSAI Apply</a>
+            
+            
+          </li>
+       
+        
     
         
         
@@ -1618,9 +1637,9 @@
         
         
           <li>
-            <a href="/imp/epfoindia-online-info/" target="_blank">ePFO India Claim / Withdrawal ePF, Do eKYC, Find UAN etc.</a>
+            <a href="/pdf/all-aganwadi-forms/" target="_blank">Aganwadi (आंगनवाडी) PDF Forms Download</a>
             
-            
+             • <a href="/pdf-forms/">PDF</a>
           </li>
        
         
@@ -1730,14 +1749,14 @@
 
 </div>
 
-        </aside>
-      </div>
+      </aside>
+    </div>
+  
+  
+  
     
-    
-    
-      
-      <footer>
-         <nav class="bottom-nav">
+    <footer>
+       <nav class="bottom-nav">
         <ul>
             <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
             <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
@@ -1815,28 +1834,28 @@
 
 </html>
 
-      </footer>
+    </footer>
+  
     
-      
-      <script>
-        const openBtn = document.getElementById('openSidebar');
-        const closeBtn = document.getElementById('closeSidebar');
-        const sidebar = document.getElementById('leftSidebar');
-        const overlay = document.getElementById('sidebarOverlay');
-    
-        openBtn.addEventListener('click', () => {
-          sidebar.classList.add('active');
-          overlay.classList.add('active');
-        });
-    
-        closeBtn.addEventListener('click', () => {
-          sidebar.classList.remove('active');
-          overlay.classList.remove('active');
-        });
-    
-        overlay.addEventListener('click', () => {
-          sidebar.classList.remove('active');
-          overlay.classList.remove('active');
-        });
-      </script>
-    </body>
+    <script>
+      const openBtn = document.getElementById('openSidebar');
+      const closeBtn = document.getElementById('closeSidebar');
+      const sidebar = document.getElementById('leftSidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+  
+      openBtn.addEventListener('click', () => {
+        sidebar.classList.add('active');
+        overlay.classList.add('active');
+      });
+  
+      closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+  
+      overlay.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+    </script>
+  </body>
