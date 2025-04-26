@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-
-{{ partial "baseof-part/sideads" . }}
 {{ if eq .Type "yojna" }}
   {{ partial "farmate/yojna.html" . }}
 {{ else if eq .Type "job" }}

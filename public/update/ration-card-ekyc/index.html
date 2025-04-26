@@ -1,6 +1,924 @@
-
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><body>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
+
+
+  
+    <link rel="stylesheet" href="/css/main/yp-main.min.b8e3cd92cb096a9fb1200bc05b60413d83e2907e7b0a88cc14f3f47a3ff46c23.css" integrity="sha256-uOPNkssJap&#43;xIAvAW2BBPYPikH57CojMFPP0ej/0bCM=">
+  
+
+<style>
+   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+  }
+  
+   
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-1 {
+    display: flex;
+    flex: 1;
+  }
+  
+   
+  header {
+    background-color: #fff;  
+    color: white;
+    padding: 1rem;
+    font-size: 1.25rem;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo a {text-decoration: none;}
+   
+  #openSidebar {
+    font-size: 1.5rem;  
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+   
+  #sidebarOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);  
+    z-index: 30;
+    display: none;  
+  }
+  
+   
+  #leftSidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 16rem;  
+    background-color: #f3f4f6;  
+    padding: 0rem;
+    z-index: 40;
+    transform: translateX(-100%);  
+    transition: transform 0.3s ease;  
+  }
+  
+   
+  #leftSidebar .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  #leftSidebar .font-bold {
+    font-weight: bold;
+    font-size: 1.125rem;  
+  }
+  
+   
+  #closeSidebar {
+    font-size: 1.5rem;  
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+   
+  #leftSidebar a {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;  
+    text-decoration: none;
+    color: #1f2937;  
+  }
+  
+  #leftSidebar a:hover {
+    color: #2563eb;  
+  }
+  
+   
+  main {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  main h2 {
+    font-size: 1.125rem;  
+    font-weight: 600;  
+    margin-bottom: 0.5rem;  
+  }
+  
+   
+  aside {
+    background-color: #f9fafb;  
+    padding: 1rem;
+  }
+  
+  aside h3 {
+    font-weight: bold;  
+    margin-bottom: 0.5rem;  
+  }
+  
+   
+  footer {
+    background-color: #242323;  
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+   
+  @media (min-width: 768px) {  
+     
+    #openSidebar, 
+    #sidebarOverlay,
+    #leftSidebar .flex,
+    aside:last-of-type {
+      display: none;
+    }
+    
+     
+    #leftSidebar {
+      position: static;
+      transform: translateX(0);
+      width: 20%;  
+      display: flex;
+      flex-direction: column;
+    }
+    
+    main {
+      width: 60%;  
+    }
+    
+     
+    aside:nth-of-type(2) {
+      display: block;
+      width: 20%;  
+    }
+    
+     
+    .flex-1 {
+      flex-direction: row;
+    }
+  }
+  
+   
+  @media (max-width: 767px) {
+     
+    aside:nth-of-type(2) {
+      display: none;
+    }
+    
+     
+    aside:last-of-type {
+      display: block;
+      
+    }
+    
+     
+    .flex-1 {
+      flex-direction: column;
+    }
+    
+     
+    .yp-main-content, 
+    .yp-main-sidebar {
+      width: 100%;
+    }
+    
+     
+    main.yp-main-content {
+      order: 1;
+    }
+    
+    aside.yp-main-sidebar {
+      order: 2;
+    }
+  }
+  
+   
+  #leftSidebar.active {
+    transform: translateX(0);
+    width: 300px;
+  }
+  
+  #sidebarOverlay.active {
+    display: block;
+    
+  }
+  </style>
+  </head>
+  <body>
+    
+    <header>
+      <div class="logo">
+        <a href="/"> <source srcset="/logo/logo.webp" type="image/webp">
+         <div style="display: flex; align-items: center; gap: 10px;">
+           <img  src="/logo/logo-100x100.png" alt="YOJNA PORTAL" style="width: 80px; height: auto;" loading="lazy" />
+           <div>
+               <div style="font-size: 32px; font-weight: bold; background: linear-gradient(to right, #d32f2f, #ff9800); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                YOJNA PORTAL
+               </div>
+               <div style="font-size: 16px; color: #d32f2f; font-weight: bold;">
+                  www.YojnaPortal.com
+               </div>
+           </div>
+       </div>
+      
+      <button id="openSidebar">☰➖</button>
+    </header>
+    <head>
+    <style> </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
+        <div class="scroll-menu" id="scrollMenu">
+           
+ <a href="/" class="menu-item active"> <i class="fas fa-home"> </i> Home</a>
+ 
+ <a href="/search/" class="menu-item" > <i class="fas fa-search"> </i> Search </a>
+ <a href="/quick/last-date/" class="menu-item" target="_blank">📅Last Date</a>
+ <a href="/quick/exam-date/" class="menu-item" target="_blank" ><i class="fas fa-time"> </i>Exam Dates</a>
+ <a href="/upcoming/" class="menu-item" target="_blank"> ↗️Upcoming</a>
+ <a href="/pdf-forms/" class="menu-item" target="_blank" ><i class="fas fa-print"> </i>PDF FORM</a>
+ <a href="/imp-links/" class="menu-item" target="_blank"> <i class="fas fa-link"> </i>Useful Links</a>
+ <a href="/certificate/" class="menu-item" target="_blank"> 📃Certificate</a>
+ <a href="/student-help/" class="menu-item" target="_blank"> 🎓Education</a>
+ <a href="https://www.yojnaportal.com/latest-update/" class="menu-item"> Latest Update</a>
+           
+            <a href="/update/" class="menu-item" >Update</a>
+
+            
+            <a href="/latest-schemes/" class="menu-item">Latest Schemes</a>
+            
+            
+            <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
+            <a href="https://tools.v2kcomputers.com/" class="menu-item">Advance Tools</a>
+            <a href="/admitcard/" class="menu-item">Admit Card</a>
+            <a href="/results/" class="menu-item">Results</a>
+            <span  style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i> Search</span>
+            <a href="https://www.yojnaportal.com/menu/" class="menu-item"> &#9776; Menu</a>
+           
+        </div>
+        <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
+    </div>
+</body>
+
+
+    
+    <div id="sidebarOverlay"></div>
+  
+    <div class="flex-1">
+      
+      <aside id="leftSidebar">
+        
+        <div class="flex">
+          <span class="font-bold">Menu</span>
+          <button id="closeSidebar">✕</button>
+        </div>
+        <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
+      </aside>
+  
+      
+      <main class="yp-main-content">
+        
+
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ul>
+      <li><a href="http://localhost:1313/">Home</a> &raquo;</li>
+      
+        <li><a href="/document/">Document</a> &raquo;</li>
+      
+      <li>Ration Ki e-KYC | Moblie Se | Abhi Kare</li>
+    </ul>
+  </nav>
+<div class="yp-container">
+  <div class="post-card">
+    
+       <h2 style="color:green;"> Department of Food &amp; Public Distribution </h2>
+       
+      <h2>Ration Ki e-KYC | Moblie Se | Abhi Kare      </h2>
+        
+
+        
+  
+    <div class="video-container" style="margin: 1rem 0;">
+      <iframe width="100%" height="315"
+        src="https://www.youtube.com/embed/LOcXT2rfePo"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  
+
+
+      
+      <div class="section">
+          <h3>🔸राशन की eKYC का उद्देश्य (Objective)</h3>
+          <p>राशन कार्ड eKYC का उद्देश्य लाभार्थियों की पहचान को आधार से सत्यापित करके फर्जी और डुप्लीकेट राशन कार्ड को समाप्त करना, पात्र लोगों तक सब्सिडी पहुँचाना और वितरण प्रणाली को पारदर्शी व प्रभावी बनाना है।</p>
+      </div>
+      
+      <div class="ad-container">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+    crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4855323063398382"
+         data-ad-slot="5787799671"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+      
+      <div class="section">
+          <h3>🔸राशन की eKYC हेतु पात्रता (Eligibility)</h3>
+          <p><li>आवदेक का नाम राशन से जुड़ा होना चाहिए</li><li>आवेदक के पास आधार और मोबाइल नंबर होना चाहिए</li></p>
+      </div>
+      
+
+      
+      <div class="section">
+          <h3>🔸राशन की eKYC से लाभ (Benefits)</h3>
+          <p><ul><li>डुप्लीकेट और फर्जी राशन कार्ड हट जाते हैं।</li><li>सब्सिडी और मुफ्त राशन सीधे लाभार्थी तक पहुंचता है।</li><li>पात्रता के अनुसार सही योजनाओं का लाभ मिलता है।</li></ul> </p>
+      </div>
+      
+      
+      
+      <div class="section">
+          <h3>🔸राशन की eKYC के लिए आवश्यक दस्तावेज़ (Required Documents)</h3>
+          <p>राशन कार्ड नंबर <br> आधार कार्ड <br>  मोबाइल नंबर</p>
+      </div>
+      
+
+      
+      <div class="section">
+          <h3>🔸 राशन की eKYC के लिए आवेदन प्रक्रिया (How to Apply)</h3>
+          
+          <h4>🖥️ ऑनलाइन आवेदन:</h4>
+          <p><p></p>कुछ राज्यों में eKYC प्रोसेस Mera eKYC App से ऑनलाइन हो सकती हैं लिंक सेक्सन मे लिंक दी गई है </p><li>सबसे पहले मेरा eKYC App खोलें।</li><li>अब अपना State चुनें और Verification Location सिलेक्ट करें।</li><li>फिर आधार नंबर डालें, जो राशन कार्ड से लिंक हो।</li><li>अब Generate OTP पर क्लिक करें।</li><li>मोबाइल पर आया OTP डालें, Captcha भरें और Submit करें।</li><li>आपकी जानकारी स्क्रीन पर दिखाई देगी — नाम, राज्य, राशन कार्ड नंबर वगैरह।</li><li>अब Face eKYC पर क्लिक करें।</li><li>कंसेंट स्क्रीन पर Accept करें।</li><li>कैमरा खुलेगा — चेहरा फ्रेम में रखें, आंखें खुली हों और पूरा फेस दिखे।</li><li>कुछ सेकंड में चेहरा पहचाना जाएगा और eKYC सफलतापूर्वक हो जाएगी।</li></p>
+          
+          
+          <h4>🏢 ऑफलाइन आवेदन:</h4>
+          <p>जिन राज्यों मे प्रकिया चालू नही है, या कोई अन्य समस्या है, तो नजदीकी FPS में जाकर अपने राशन की eKYC करवा लेवें</p>
+          
+      </div>
+      
+    
+      
+
+  
+
+     
+      
+      <div class="section">
+          <h3>🔚राशन की eKYC का निष्कर्ष (Conclusion)</h3>
+          <p class="conclusion">राशन कार्ड की eKYC एक आवश्यक प्रक्रिया है जो सरकारी योजनाओं के लाभ को सही और पात्र व्यक्तियों तक पहुँचाने में अहम भूमिका निभाती है। इससे न केवल फर्जी लाभार्थियों की पहचान रोकी जा सकती है, बल्कि वितरण प्रणाली में पारदर्शिता और विश्वसनीयता भी आती है। सभी लाभार्थियों को समय पर eKYC कराना जरूरी है, ताकि वे योजनाओं का निरंतर लाभ प्राप्त कर सकें।</p>
+      </div>
+      
+  </div>
+  
+  
+  <div class="faqs">
+    <b>🙋‍♀️ अक्सर पूछे जाने वाले प्रश्न - राशन की eKYC</b>
+  <div class="faq">
+     <details><summary>Q. राशन कार्ड की eKYC क्या होती है?</summary><p>A. eKYC का मतलब है -इलेक्ट्रॉनिक केवाईसी, जिसमें आपके राशन कार्ड को आधार कार्ड से ऑनलाइन या बायोमेट्रिक तरीके से सत्यापित किया जाता है।</p></details><details><summary>Q. eKYC कब तक कराना जरूरी है?</summary><p>A. राज्य सरकार द्वारा निर्धारित समय सीमा के भीतर eKYC कराना जरूरी होता है। देरी करने पर राशन वितरण रुक सकता है।</p></details><details><summary>Q. क्या eKYC के लिए आधार कार्ड अनिवार्य है?</summary><p>A. हाँ, eKYC के लिए हर सदस्य का आधार कार्ड आवश्यक होता है।</p></details><details><summary>Q. क्या घर बैठे eKYC की जा सकती है?</summary><p>A. कुछ राज्यों में Self eKYC की सुविधा है, जहाँ OTP के माध्यम से घर बैठे eKYC की जा सकती है। , लेकिन जिन राज्यो में ऑनलाइन सुविधा नही है, वे निकट FPS (जहां राशन वितरण होता है) से फिंगर द्वारा करवा सकते हैं ।</p></details><details><summary>Q. क्या सभी सदस्यों की eKYC कराना जरूरी है?</summary><p>A. हाँ, राशन कार्ड में शामिल प्रत्येक सदस्य की eKYC कराना अनिवार्य है।</p></details>
+    </div>
+     
+</div>
+  <div class="content">
+    
+<p class="notice"><b>⚠️ जरूरी बातें:</b> </p><p class="notice">हर सदस्य का आधार नंबर अपडेट होना चाहिए।</p><p class="notice"></p><p class="notice">एक ही आधार से दो राशन कार्ड लिंक नहीं हो सकते।</p><p class="notice"></p><p class="notice">समय पर eKYC नहीं करने पर राशन वितरण रुक सकता है।</p>
+<table class="yp-table">
+  <tr>
+    <th>Important Links</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>Download Mera Ration App for Status</td>
+    <td><a href="https://play.google.com/store/apps/details?id=com.nic.onenationonecard" target="_blank">Click Here</a></td>
+  </tr>
+  <tr>
+    <td>Download Mera eKYC App</td>
+    <td><a href="https://play.google.com/store/apps/details?id=com.nic.facialauth" target="_blank">Click Here</a></td>
+  </tr>
+  <tr>
+    <td>Download Aadhar Face RD</td>
+    <td><a href="https://play.google.com/store/apps/details?id=com.nic.onenationonecard" target="_blank">Click Here</a></td>
+  </tr>
+  <tr>
+    <td>Download Ration /Add New Member / Remove Member</td>
+    <td><a href="https://play.google.com/store/apps/details?id=com.nic.onenationonecard" target="_blank">Click Here</a></td>
+  </tr>
+  <tr>
+    <td>Ration List</td>
+    <td><a href="https://nfsa.gov.in/portal/Ration_Card_State_Portals_AA" target="_blank">Click Here</a></td>
+  </tr>
+  <tr>
+    <td>Ration Status</td>
+    <td><a href="https://nfsa.gov.in/public/frmPublicGetMyRCDetails.aspx" target="_blank">Click Here</a></td>
+  </tr>
+  <tr>
+    <td>Follow Us</td>
+    <td><a href="/whatsapp/" target="_blank">WhatsApp</a> <a href="/telegram/" target="_blank">Telegram</a></td>
+  </tr>
+  <tr>
+    <td>Official Website</td>
+    <td><a href="https://nfsa.gov.in/" target="_blank">NFSA Official Website</a></td>
+  </tr>
+</table>
+</div>
+
+  
+
+<a href ="#" target="_blank"></a><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm7Hl5mwyBAcxI1Is_mFwSiMXD8uDBgrfu8-uJtFeb0x412Nt6i_MLeI97W-r4-gWu8SkEE0uyx_pT-SNen74odtrS5nTJc20bAjKMu50s9U6OnTBps3ICnmY2DwDVTW_aTfhizHSzHmNDPkFRCo5fhsVKRotF6oQtP2BGBw0iGawQs2y4JMCCJhG09A/s1600/ration-card-ekyc-compressed.webp" 
+     loading="lazy"
+     sizes="(max-width: 800px) 100vw, 800px"  
+     alt="Ration Ki e-KYC | Moblie Se | Abhi Kare | www.YojnaPortal.com"
+     style="display: block; margin: 0 auto; max-width: 100%; height: auto;"> </a>
+</div>
+
+
+<div class="faq">
+    <h3>🔍  राशन की eKYC एक नंजर में (Summary) </h3>  
+    <table class="yp-table">
+        <tbody>
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">📌 योजना </th>
+                <td style="padding: 10px; font-size:20px; color:green;">Ration Ki e-KYC | Moblie Se | Abhi Kare | <a href="/ration-ekyc/"> #ration-ekyc</a></td>
+            </tr>
+            
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">🎯 उद्देश्य</th>
+                <td style="padding: 10px;">राशन कार्ड eKYC का उद्देश्य लाभार्थियों की पहचान को आधार से सत्यापित करके फर्जी और डुप्लीकेट राशन कार्ड को समाप्त करना, पात्र लोगों तक सब्सिडी पहुँचाना और वितरण प्रणाली को पारदर्शी व प्रभावी बनाना है।</td>
+            </tr>
+            
+            
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">👥 पात्रता</th>
+                <td style="padding: 10px;"> 
+
+                  • आवदेक का नाम राशन से जुड़ा होना चाहिए | • आवेदक के पास आधार और मोबाइल नंबर होना चाहिए 
+
+                </td>
+            </tr>
+            
+         
+            
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">📄 दस्तावेज</th>
+                <td style="padding: 10px;">
+                  राशन कार्ड नंबर  |  आधार कार्ड  |   मोबाइल नंबर
+
+                </td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th style="text-align: left; padding: 10px;">🏬 विभाग </th>
+                <td style="padding: 10px;"><a href="https://nfsa.gov.in" target="_blank">Department of Food &amp; Public Distribution</a></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+
+</div>
+</div>
+
+
+  <style>
+   .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-like { background-color: #f0ad4e; }
+    .btn-share { background-color: #5bc0de; }
+    .btn-whatsapp { background-color: #25D366; }
+    .btn-telegram { background-color: #0088cc; }
+    .btn-copy { background-color: #6f42c1; }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-group">
+    <a href="https://yojnaportal.com/whatsapp" target="_blank" class="btn btn-whatsapp">
+      Join WhatsApp
+    </a>
+
+    <a href="https://yojnaportal.com/telegram" target="_blank" class="btn btn-telegram">
+      Join Telegram
+    </a>
+
+    <button class="btn btn-copy" onclick="copyLink()">Copy Link</button>
+
+      <a class="btn btn-share" href="https://wa.me/?text=✅Ration%20ki%20e-KYC%20Mobile%20Se%20Kare-%20%e0%a4%b0%e0%a4%be%e0%a4%b6%e0%a4%a8%20%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a1%20%e0%a4%95%e0%a5%80%20eKYC%20%e0%a4%95%e0%a4%b0%e0%a5%87%20%e0%a4%ae%e0%a5%8b%e0%a4%ac%e0%a4%be%e0%a4%87%e0%a4%b2%20%e0%a4%b8%e0%a5%87%0A✅Check%20Details%20👇%0A🔗http%3a%2f%2flocalhost%3a1313%2fration-ekyc" target="_blank">
+        Share on WhatsApp
+      </a>
+      
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = "http:\/\/localhost:1313\/ration-ekyc";
+      navigator.clipboard.writeText(link).then(() => {
+        alert("✅ Link copied to clipboard!");
+      }).catch(err => {
+        alert("❌ Failed to copy: " + err);
+      });
+    }
+  </script>
+</body>
+
+
+
+
+
+      </main>
+  
+      
+      <aside class="yp-main-sidebar">
+          
+<style>
+     
+.main-sidebar {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+   
+  .sidebar-section {
+    margin-bottom: 15px;
+  }
+  
+   
+  .sidebar-list {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+   
+  .sidebar-list .summary {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+   
+  .summary::after {
+    content: "▼";
+    font-size: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+   
+  details[open] .summary::after {
+    transform: rotate(180deg);
+  }
+  
+   
+  .sidebar-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-list li {
+    padding: 8px 15px 8px 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .sidebar-list li:hover {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+   
+  .sidebar-list ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  details[open] .sidebar-list ul {
+    max-height: 500px;
+  }
+  .sidebar-list a{ text-decoration: none;
+  }
+  
+  a:hover { text-color:red; }
+</style>
+
+<div class="main-sidebar">
+    <div class="sidebar-section">
+
+        <details open class="sidebar-list" >
+        <summary class="summary"> Recommended Post</summary>
+        
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+          <li>
+            <a href="/rpsc/rssb-nhm-01-2025/" target="_blank">RSSB NHM Contractual Posts Online Form 2025</a>
+            
+            
+          </li>
+       
+        
+    
+        
+        
+          <li>
+            <a href="/ads/whatsapp-promotion/" target="_blank">Promotion or Ads       on Whatsapp Channel Terms</a>
+            
+            
+          </li>
+       
+        
+    
+      <hr>
+      <p > <a href="/latest-update/"> <div style="text-align:right;"> More >> </div></a></p>
+    </details>
+    
+    </div>
+<div class="sidebar-section">
+
+    <details open class="sidebar-list" >
+    <summary class="summary"> Latest Scheme Updates </summary>
+
+    
+     
+    
+        <li>
+            <a href="/document/mp-sambal-yojna-apply/" target="_blank">MP Sambal Card Apply Online 2025 – फॉर्म, पात्रता, लाभ और आवश्यक दस्तावेज</a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+        </li>
+       
+    
+
+     
+    
+        <li>
+            <a href="/scheme/madhya-pradesh/social-security-pension-apply/" target="_blank">MP Social Security  Pension Form PDF Download &amp; Application Process</a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+        </li>
+       
+    
+
+     
+    
+        <li>
+            <a href="/document/eshram-card-apply/" target="_blank">Eshram Card Apply, Update and Download</a>
+            
+            
+        </li>
+       
+    
+
+     
+    
+        <li>
+            <a href="/mp/pm-krishak-mitra-surya-yojana/" target="_blank">PM Krishak Mitra Surya Yojana 2025 – सब्सिडी पर सोलर पंप योजना</a>
+            
+            
+        </li>
+       
+    
+
+     
+    
+        <li>
+            <a href="/mp/cm-kalyani-vivah-yojna-mmkvy/" target="_blank">CM Kalyani Vivah Yojana Details &amp; Apply Online</a>
+            
+            
+        </li>
+       
+    
+
+<hr>
+      <p > <a href="/latest-schemes/"> <div style="text-align:right;"> More >> </div></a></p>
+  
+</details>
+
+</div>
+<div  class="sidebar-section">
+
+    <details open class="sidebar-list" >
+    <summary class="summary"> Latest Jobs Update</summary>
+    
+     
+    
+
+     
+    
+
+     
+    
+
+     
+    
+        <li>
+            <a href="/bihar/field-assistant-vacancy-2025/" target="_blank">BSSC Field Assistant 2025 Apply Form</a>
+            
+            
+        </li>
+
+    
+
+     
+    
+
+<hr>
+<p > <a href="/latest-jobs/"> <div style="text-align:right;"> More >> </div></a></p>
+</details>
+
+</div>
+
+</div>
+
+      </aside>
+    </div>
+  
+  
+  
+    
+    <footer>
+       <nav class="bottom-nav">
+        <ul>
+            <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
+            <li><a href="#"><span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>Search</a></li>
+            <li><a href="/notification/"><i class="fas fa-bell"></i>Update</a></li>
+            <li><a href="/menu/"><i class="fas fa-bars"></i>Menu</a></li>
+        </ul>
+    </nav>
+
+
+<footer id="footer">
+        
+        <div class="footer-content">
+            <div style="color:#f4b400;">|| Follow us on Social Media ||</div>
+            <div class="social-media">
+                <a href="/whatsapp/" target="_blank" aria-label="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#25D366" viewBox="0 0 24 24"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.47 3.44 1.36 4.93L2 22l5.21-1.36C8.7 21.53 10.37 22 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18c-1.43 0-2.83-.39-4.04-1.13l-.29-.18-3.09.81.83-3-.2-.31A8.05 8.05 0 0 1 4.04 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.41-5.42c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.17-.71-.63-1.2-1.4-1.34-1.64-.14-.24-.01-.37.1-.48.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.86.84-.86 2.04s.88 2.36 1.02 2.52c.14.16 1.73 2.64 4.2 3.7.59.26 1.05.42 1.41.54.59.19 1.12.16 1.54.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+
+                </a>
+                <a href="/telegram/" target="_blank" aria-label="Telegram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0088cc" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.642 1.017 5.052 2.685 6.858L4 22l3.241-.854A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.94 7.35-1.355 6.385c-.1.447-.36.555-.73.345l-2.025-1.493-1.018.98c-.113.113-.208.208-.425.208l.153-2.172 3.957-3.578c.172-.153-.038-.24-.267-.087l-4.892 3.084-2.107-.658c-.456-.142-.465-.456.095-.675l8.222-3.176c.382-.142.718.087.597.67z"/></svg>
+
+                </a>
+                <a href="/youtube/" target="_blank" aria-label="Youtube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF0000" viewBox="0 0 24 24"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.9-1.6-.9-2-1C16.2 4.8 12 4.8 12 4.8h0s-4.2 0-7 .2c-.4.1-1.2.1-2 1-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.9 1.9.8 2.4.9C8 19.2 12 19.2 12 19.2s4.2 0 7-.2c.4-.1 1.2-.1 2-1 .6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6c0-1.6-.2-3.2-.2-3.2zM10 14.7V9.3l5.2 2.7L10 14.7z"/></svg>
+
+                </a>
+                <a href="/instagram/" target="_blank" aria-label="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#E1306C" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.3.1 2 .3 2.5.5.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.5.4 1.2.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.3-.3 2-.5 2.5-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.5.2-1.2.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.3-.1-2-.3-2.5-.5-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.5-.4-1.2-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.3.3-2 .5-2.5.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.5-.2 1.2-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.2 0 6.9.1 5.5.2 4.6.4 3.9.7 3 .9 2.2 1.3 1.5 2 .8 2.7.4 3.5.1 4.4c-.3.7-.5 1.6-.6 3C0 8.2 0 8.7 0 12s0 3.8.1 5.1c.1 1.4.3 2.3.6 3 .3.9.7 1.7 1.4 2.4.7.7 1.5 1.1 2.4 1.4.7.3 1.6.5 3 .6 1.3.1 1.8.1 5.1.1s3.8 0 5.1-.1c1.4-.1 2.3-.3 3-.6.9-.3 1.7-.7 2.4-1.4.7-.7 1.1-1.5 1.4-2.4.3-.7.5-1.6.6-3 .1-1.3.1-1.8.1-5.1s0-3.8-.1-5.1c-.1-1.4-.3-2.3-.6-3-.3-.9-.7-1.7-1.4-2.4C21.8.8 21 .4 20.1.1c-.7-.3-1.6-.5-3-.6C15.8 0 15.3 0 12 0z"/><path d="M12 5.8A6.2 6.2 0 1 0 12 18.2 6.2 6.2 0 1 0 12 5.8zm0 10.2A4 4 0 1 1 12 8a4 4 0 0 1 0 8z"/><circle cx="18.4" cy="5.6" r="1.44"/></svg>
+
+                </a>
+                <a href="/facebook/" target="_blank" aria-label="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1877F2" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24h-1.918c-1.504 0-1.795.716-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.729 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z"/></svg>
+
+                </a>
+                <a href="/x/" target="_blank" aria-label="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
+                        <path d="M4.25 3h4.71l3.28 4.56L16.89 3h2.86l-5.95 6.5L20 21h-4.73l-3.75-5.24L7 21H4.14l6.29-7L4.25 3zm3.5 1.5 4.08 5.69L8.33 13.5H10l3.87 5.42h1.71l-4.27-6 6.3-7.02H16l-3.47 3.86L7.75 4.5h-.01z"/>
+                      </svg>
+                      
+                </a>
+               
+            </div>
+            <div id="google_translate_element"></div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li> |
+                    <li><a href="/about/">About Us</a></li> |
+                    <li><a href="/contact/">Contact Us</a></li> |
+                    <li><a href="/privacy-policy/">Privacy Policy</a></li> |
+                    <li><a href="/disclaimer/">Disclaimer</a></li>
+                </ul>
+            </nav>
+            
+
+           <div id="copyright" style="color:#f0edeb">   <p>&copy; 2025 YOJNA PORTAL. All Rights Reserved.</p></div>
+         
+        </div>
+       
+    </footer>
+
+
+
+  
+    
+    <script src="http://localhost:1313/js/main/default.min.79f575209485ca486e47c4263ee59e73740712a91de598c4eabf89b87a4a6b6b.js" integrity="sha256-efV1IJSFykhuR8QmPuWec3QHEqkd5ZjE6r&#43;JuHpKa2s=" defer></script>
+  
+
+
+
+
+<script src="http://localhost:1313/js/main/header.min.38bd75fa5067387be5b4d16f625b0bc942b6079bc2f49a8173e5505c0b96c111.js" integrity="sha256-OL11&#43;lBnOHvltNFvYlsLyUK2B5vC9JqBc&#43;VQXAuWwRE=" defer></script>
+
+
+<script src="http://localhost:1313/js/main/navbar.min.7d6c1b268d0262d9095c7f8af44f48c08ef800d9bf16192fa94347036980d893.js" integrity="sha256-fWwbJo0CYtkJXH&#43;K9E9IwI74ANm/FhkvqUNHA2mA2JM=" defer></script>
+
+<script src="http://localhost:1313/js/main/bottom.min.029d4aa13a4cfbab2555aaf3ed22b0459faf0085d71740db726ef26ab5d506b3.js" integrity="sha256-Ap1KoTpM&#43;6slVarz7SKwRZ&#43;vAIXXF0Dbcm7yarXVBrM=" defer></script>
+
+</html>
+
+    </footer>
+  
+    
+    <script>
+      const openBtn = document.getElementById('openSidebar');
+      const closeBtn = document.getElementById('closeSidebar');
+      const sidebar = document.getElementById('leftSidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+  
+      openBtn.addEventListener('click', () => {
+        sidebar.classList.add('active');
+        overlay.classList.add('active');
+      });
+  
+      closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+  
+      overlay.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+    </script>
+  </body>
   <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -162,469 +1080,4 @@
   </div>
 
  
-  <head>
-    <style> </style>
-</head>
-<body>
-    <div class="menu-container">
-        <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
-        <div class="scroll-menu" id="scrollMenu">
-           
- <a href="/" class="menu-item active"> <i class="fas fa-home"> </i> Home</a>
- 
- <a href="/search/" class="menu-item" > <i class="fas fa-search"> </i> Search </a>
- <a href="/quick/last-date/" class="menu-item" target="_blank">📅Last Date</a>
- <a href="/quick/exam-date/" class="menu-item" target="_blank" ><i class="fas fa-time"> </i>Exam Dates</a>
- <a href="/upcoming/" class="menu-item" target="_blank"> ↗️Upcoming</a>
- <a href="/pdf-forms/" class="menu-item" target="_blank" ><i class="fas fa-print"> </i>PDF FORM</a>
- <a href="/imp-links/" class="menu-item" target="_blank"> <i class="fas fa-link"> </i>Useful Links</a>
- <a href="/certificate/" class="menu-item" target="_blank"> 📃Certificate</a>
- <a href="/student-help/" class="menu-item" target="_blank"> 🎓Education</a>
- <a href="https://www.yojnaportal.com/latest-update/" class="menu-item"> Latest Update</a>
-           
-            <a href="/update/" class="menu-item" >Update</a>
 
-            
-            <a href="/latest-schemes/" class="menu-item">Latest Schemes</a>
-            
-            
-            <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
-            <a href="https://tools.v2kcomputers.com/" class="menu-item">Advance Tools</a>
-            <a href="/admitcard/" class="menu-item">Admit Card</a>
-            <a href="/results/" class="menu-item">Results</a>
-            <span  style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i> Search</span>
-            <a href="https://www.yojnaportal.com/menu/" class="menu-item"> &#9776; Menu</a>
-           
-        </div>
-        <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
-    </div>
-</body>
-
-
-    <div class="main-container">
-  
-  
- 
-        
-       <div id="sidenav-main">
-        
-        
-
-
-<div class="ad-box left-ad"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-4855323063398382"
-    data-ad-slot="3850001664"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-<div class="ad-box right-ad"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-4855323063398382"
-    data-ad-slot="3850001664"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <ul>
-      <li><a href="http://localhost:1313/">Home</a> &raquo;</li>
-      
-        <li><a href="/document/">Document</a> &raquo;</li>
-      
-      <li>Ration Ki e-KYC | Moblie Se | Abhi Kare</li>
-    </ul>
-  </nav>
-<div class="yp-container">
-  <div class="post-card">
-    
-       <h2 style="color:green;"> Department of Food &amp; Public Distribution </h2>
-       
-      <h2>Ration Ki e-KYC | Moblie Se | Abhi Kare      </h2>
-        
-
-        
-  
-    <div class="video-container" style="margin: 1rem 0;">
-      <iframe width="100%" height="315"
-        src="https://www.youtube.com/embed/LOcXT2rfePo"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
-    </div>
-  
-
-
-      
-      <div class="section">
-          <h3>🔸राशन की eKYC का उद्देश्य (Objective)</h3>
-          <p>राशन कार्ड eKYC का उद्देश्य लाभार्थियों की पहचान को आधार से सत्यापित करके फर्जी और डुप्लीकेट राशन कार्ड को समाप्त करना, पात्र लोगों तक सब्सिडी पहुँचाना और वितरण प्रणाली को पारदर्शी व प्रभावी बनाना है।</p>
-      </div>
-      
-      <div class="ad-container">
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4855323063398382"
-         data-ad-slot="5787799671"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-      
-      <div class="section">
-          <h3>🔸राशन की eKYC हेतु पात्रता (Eligibility)</h3>
-          <p><li>आवदेक का नाम राशन से जुड़ा होना चाहिए</li><li>आवेदक के पास आधार और मोबाइल नंबर होना चाहिए</li></p>
-      </div>
-      
-
-      
-      <div class="section">
-          <h3>🔸राशन की eKYC से लाभ (Benefits)</h3>
-          <p><ul><li>डुप्लीकेट और फर्जी राशन कार्ड हट जाते हैं।</li><li>सब्सिडी और मुफ्त राशन सीधे लाभार्थी तक पहुंचता है।</li><li>पात्रता के अनुसार सही योजनाओं का लाभ मिलता है।</li></ul> </p>
-      </div>
-      
-      
-      
-      <div class="section">
-          <h3>🔸राशन की eKYC के लिए आवश्यक दस्तावेज़ (Required Documents)</h3>
-          <p>राशन कार्ड नंबर <br> आधार कार्ड <br>  मोबाइल नंबर</p>
-      </div>
-      
-
-      
-      <div class="section">
-          <h3>🔸 राशन की eKYC के लिए आवेदन प्रक्रिया (How to Apply)</h3>
-          
-          <h4>🖥️ ऑनलाइन आवेदन:</h4>
-          <p><p></p>कुछ राज्यों में eKYC प्रोसेस Mera eKYC App से ऑनलाइन हो सकती हैं लिंक सेक्सन मे लिंक दी गई है </p><li>सबसे पहले मेरा eKYC App खोलें।</li><li>अब अपना State चुनें और Verification Location सिलेक्ट करें।</li><li>फिर आधार नंबर डालें, जो राशन कार्ड से लिंक हो।</li><li>अब Generate OTP पर क्लिक करें।</li><li>मोबाइल पर आया OTP डालें, Captcha भरें और Submit करें।</li><li>आपकी जानकारी स्क्रीन पर दिखाई देगी — नाम, राज्य, राशन कार्ड नंबर वगैरह।</li><li>अब Face eKYC पर क्लिक करें।</li><li>कंसेंट स्क्रीन पर Accept करें।</li><li>कैमरा खुलेगा — चेहरा फ्रेम में रखें, आंखें खुली हों और पूरा फेस दिखे।</li><li>कुछ सेकंड में चेहरा पहचाना जाएगा और eKYC सफलतापूर्वक हो जाएगी।</li></p>
-          
-          
-          <h4>🏢 ऑफलाइन आवेदन:</h4>
-          <p>जिन राज्यों मे प्रकिया चालू नही है, या कोई अन्य समस्या है, तो नजदीकी FPS में जाकर अपने राशन की eKYC करवा लेवें</p>
-          
-      </div>
-      
-    
-      
-
-  
-
-     
-      
-      <div class="section">
-          <h3>🔚राशन की eKYC का निष्कर्ष (Conclusion)</h3>
-          <p class="conclusion">राशन कार्ड की eKYC एक आवश्यक प्रक्रिया है जो सरकारी योजनाओं के लाभ को सही और पात्र व्यक्तियों तक पहुँचाने में अहम भूमिका निभाती है। इससे न केवल फर्जी लाभार्थियों की पहचान रोकी जा सकती है, बल्कि वितरण प्रणाली में पारदर्शिता और विश्वसनीयता भी आती है। सभी लाभार्थियों को समय पर eKYC कराना जरूरी है, ताकि वे योजनाओं का निरंतर लाभ प्राप्त कर सकें।</p>
-      </div>
-      
-  </div>
-  
-  
-  <div class="faqs">
-    <b>🙋‍♀️ अक्सर पूछे जाने वाले प्रश्न - राशन की eKYC</b>
-  <div class="faq">
-     <details><summary>Q. राशन कार्ड की eKYC क्या होती है?</summary><p>A. eKYC का मतलब है -इलेक्ट्रॉनिक केवाईसी, जिसमें आपके राशन कार्ड को आधार कार्ड से ऑनलाइन या बायोमेट्रिक तरीके से सत्यापित किया जाता है।</p></details><details><summary>Q. eKYC कब तक कराना जरूरी है?</summary><p>A. राज्य सरकार द्वारा निर्धारित समय सीमा के भीतर eKYC कराना जरूरी होता है। देरी करने पर राशन वितरण रुक सकता है।</p></details><details><summary>Q. क्या eKYC के लिए आधार कार्ड अनिवार्य है?</summary><p>A. हाँ, eKYC के लिए हर सदस्य का आधार कार्ड आवश्यक होता है।</p></details><details><summary>Q. क्या घर बैठे eKYC की जा सकती है?</summary><p>A. कुछ राज्यों में Self eKYC की सुविधा है, जहाँ OTP के माध्यम से घर बैठे eKYC की जा सकती है। , लेकिन जिन राज्यो में ऑनलाइन सुविधा नही है, वे निकट FPS (जहां राशन वितरण होता है) से फिंगर द्वारा करवा सकते हैं ।</p></details><details><summary>Q. क्या सभी सदस्यों की eKYC कराना जरूरी है?</summary><p>A. हाँ, राशन कार्ड में शामिल प्रत्येक सदस्य की eKYC कराना अनिवार्य है।</p></details>
-    </div>
-     
-</div>
-  <div class="content">
-    
-<p class="notice"><b>⚠️ जरूरी बातें:</b> </p><p class="notice">हर सदस्य का आधार नंबर अपडेट होना चाहिए।</p><p class="notice"></p><p class="notice">एक ही आधार से दो राशन कार्ड लिंक नहीं हो सकते।</p><p class="notice"></p><p class="notice">समय पर eKYC नहीं करने पर राशन वितरण रुक सकता है।</p>
-<table class="yp-table">
-  <tr>
-    <th>Important Links</th>
-    <th>Action</th>
-  </tr>
-  <tr>
-    <td>Download Mera Ration App for Status</td>
-    <td><a href="https://play.google.com/store/apps/details?id=com.nic.onenationonecard" target="_blank">Click Here</a></td>
-  </tr>
-  <tr>
-    <td>Download Mera eKYC App</td>
-    <td><a href="https://play.google.com/store/apps/details?id=com.nic.facialauth" target="_blank">Click Here</a></td>
-  </tr>
-  <tr>
-    <td>Download Aadhar Face RD</td>
-    <td><a href="https://play.google.com/store/apps/details?id=com.nic.onenationonecard" target="_blank">Click Here</a></td>
-  </tr>
-  <tr>
-    <td>Download Ration /Add New Member / Remove Member</td>
-    <td><a href="https://play.google.com/store/apps/details?id=com.nic.onenationonecard" target="_blank">Click Here</a></td>
-  </tr>
-  <tr>
-    <td>Ration List</td>
-    <td><a href="https://nfsa.gov.in/portal/Ration_Card_State_Portals_AA" target="_blank">Click Here</a></td>
-  </tr>
-  <tr>
-    <td>Ration Status</td>
-    <td><a href="https://nfsa.gov.in/public/frmPublicGetMyRCDetails.aspx" target="_blank">Click Here</a></td>
-  </tr>
-  <tr>
-    <td>Follow Us</td>
-    <td><a href="/whatsapp/" target="_blank">WhatsApp</a> <a href="/telegram/" target="_blank">Telegram</a></td>
-  </tr>
-  <tr>
-    <td>Official Website</td>
-    <td><a href="https://nfsa.gov.in/" target="_blank">NFSA Official Website</a></td>
-  </tr>
-</table>
-</div>
-<div class="ad-container">
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4855323063398382"
-         data-ad-slot="5787799671"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-  
-
-<a href ="#" target="_blank"></a><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm7Hl5mwyBAcxI1Is_mFwSiMXD8uDBgrfu8-uJtFeb0x412Nt6i_MLeI97W-r4-gWu8SkEE0uyx_pT-SNen74odtrS5nTJc20bAjKMu50s9U6OnTBps3ICnmY2DwDVTW_aTfhizHSzHmNDPkFRCo5fhsVKRotF6oQtP2BGBw0iGawQs2y4JMCCJhG09A/s1600/ration-card-ekyc-compressed.webp" 
-     loading="lazy"
-     sizes="(max-width: 800px) 100vw, 800px"  
-     alt="Ration Ki e-KYC | Moblie Se | Abhi Kare | www.YojnaPortal.com"
-     style="display: block; margin: 0 auto; max-width: 100%; height: auto;"> </a>
-</div>
-
-
-<div class="faq">
-    <h3>🔍  राशन की eKYC एक नंजर में (Summary) </h3>  
-    <table class="yp-table">
-        <tbody>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">📌 योजना </th>
-                <td style="padding: 10px; font-size:20px; color:green;">Ration Ki e-KYC | Moblie Se | Abhi Kare | <a href="/ration-ekyc/"> #ration-ekyc</a></td>
-            </tr>
-            
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">🎯 उद्देश्य</th>
-                <td style="padding: 10px;">राशन कार्ड eKYC का उद्देश्य लाभार्थियों की पहचान को आधार से सत्यापित करके फर्जी और डुप्लीकेट राशन कार्ड को समाप्त करना, पात्र लोगों तक सब्सिडी पहुँचाना और वितरण प्रणाली को पारदर्शी व प्रभावी बनाना है।</td>
-            </tr>
-            
-            
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">👥 पात्रता</th>
-                <td style="padding: 10px;"> 
-
-                  • आवदेक का नाम राशन से जुड़ा होना चाहिए | • आवेदक के पास आधार और मोबाइल नंबर होना चाहिए 
-
-                </td>
-            </tr>
-            
-         
-            
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">📄 दस्तावेज</th>
-                <td style="padding: 10px;">
-                  राशन कार्ड नंबर  |  आधार कार्ड  |   मोबाइल नंबर
-
-                </td>
-            </tr>
-            
-            
-            
-            <tr>
-                <th style="text-align: left; padding: 10px;">🏬 विभाग </th>
-                <td style="padding: 10px;"><a href="https://nfsa.gov.in" target="_blank">Department of Food &amp; Public Distribution</a></td>
-            </tr>
-            
-        </tbody>
-    </table>
-
-
-
-</div>
-</div>
-
-
-  <style>
-   .button-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .btn {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      color: #fff;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-    }
-
-    .btn-like { background-color: #f0ad4e; }
-    .btn-share { background-color: #5bc0de; }
-    .btn-whatsapp { background-color: #25D366; }
-    .btn-telegram { background-color: #0088cc; }
-    .btn-copy { background-color: #6f42c1; }
-
-    .btn:active {
-      transform: scale(0.95);
-    }
-  </style>
-</head>
-<body>
-
-  <div class="button-group">
-    <a href="https://yojnaportal.com/whatsapp" target="_blank" class="btn btn-whatsapp">
-      Join WhatsApp
-    </a>
-
-    <a href="https://yojnaportal.com/telegram" target="_blank" class="btn btn-telegram">
-      Join Telegram
-    </a>
-
-    <button class="btn btn-copy" onclick="copyLink()">Copy Link</button>
-
-      <a class="btn btn-share" href="https://wa.me/?text=✅Ration%20ki%20e-KYC%20Mobile%20Se%20Kare-%20%e0%a4%b0%e0%a4%be%e0%a4%b6%e0%a4%a8%20%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a1%20%e0%a4%95%e0%a5%80%20eKYC%20%e0%a4%95%e0%a4%b0%e0%a5%87%20%e0%a4%ae%e0%a5%8b%e0%a4%ac%e0%a4%be%e0%a4%87%e0%a4%b2%20%e0%a4%b8%e0%a5%87%0A✅Check%20Details%20👇%0A🔗http%3a%2f%2flocalhost%3a1313%2fration-ekyc" target="_blank">
-        Share on WhatsApp
-      </a>
-      
-  </div>
-
-  <script>
-    function copyLink() {
-      const link = "http:\/\/localhost:1313\/ration-ekyc";
-      navigator.clipboard.writeText(link).then(() => {
-        alert("✅ Link copied to clipboard!");
-      }).catch(err => {
-        alert("❌ Failed to copy: " + err);
-      });
-    }
-  </script>
-</body>
-
-
-
-
-
-   </div> 
-    </div>
-    <div class="ad-container">
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4855323063398382"
-         data-ad-slot="5787799671"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-     <nav class="bottom-nav">
-        <ul>
-            <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
-            <li><a href="#"><span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>Search</a></li>
-            <li><a href="/notification/"><i class="fas fa-bell"></i>Update</a></li>
-            <li><a href="/menu/"><i class="fas fa-bars"></i>Menu</a></li>
-        </ul>
-    </nav>
-
-
-<footer id="footer">
-        
-        <div class="footer-content">
-            <div style="color:#f4b400;">|| Follow us on Social Media ||</div>
-            <div class="social-media">
-                <a href="/whatsapp/" target="_blank" aria-label="WhatsApp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#25D366" viewBox="0 0 24 24"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.47 3.44 1.36 4.93L2 22l5.21-1.36C8.7 21.53 10.37 22 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18c-1.43 0-2.83-.39-4.04-1.13l-.29-.18-3.09.81.83-3-.2-.31A8.05 8.05 0 0 1 4.04 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.41-5.42c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.17-.71-.63-1.2-1.4-1.34-1.64-.14-.24-.01-.37.1-.48.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.86.84-.86 2.04s.88 2.36 1.02 2.52c.14.16 1.73 2.64 4.2 3.7.59.26 1.05.42 1.41.54.59.19 1.12.16 1.54.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
-
-                </a>
-                <a href="/telegram/" target="_blank" aria-label="Telegram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0088cc" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.642 1.017 5.052 2.685 6.858L4 22l3.241-.854A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.94 7.35-1.355 6.385c-.1.447-.36.555-.73.345l-2.025-1.493-1.018.98c-.113.113-.208.208-.425.208l.153-2.172 3.957-3.578c.172-.153-.038-.24-.267-.087l-4.892 3.084-2.107-.658c-.456-.142-.465-.456.095-.675l8.222-3.176c.382-.142.718.087.597.67z"/></svg>
-
-                </a>
-                <a href="/youtube/" target="_blank" aria-label="Youtube">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF0000" viewBox="0 0 24 24"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.9-1.6-.9-2-1C16.2 4.8 12 4.8 12 4.8h0s-4.2 0-7 .2c-.4.1-1.2.1-2 1-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.9 1.9.8 2.4.9C8 19.2 12 19.2 12 19.2s4.2 0 7-.2c.4-.1 1.2-.1 2-1 .6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6c0-1.6-.2-3.2-.2-3.2zM10 14.7V9.3l5.2 2.7L10 14.7z"/></svg>
-
-                </a>
-                <a href="/instagram/" target="_blank" aria-label="WhatsApp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#E1306C" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.3.1 2 .3 2.5.5.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.5.4 1.2.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.3-.3 2-.5 2.5-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.5.2-1.2.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.3-.1-2-.3-2.5-.5-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.5-.4-1.2-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.3.3-2 .5-2.5.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.5-.2 1.2-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.2 0 6.9.1 5.5.2 4.6.4 3.9.7 3 .9 2.2 1.3 1.5 2 .8 2.7.4 3.5.1 4.4c-.3.7-.5 1.6-.6 3C0 8.2 0 8.7 0 12s0 3.8.1 5.1c.1 1.4.3 2.3.6 3 .3.9.7 1.7 1.4 2.4.7.7 1.5 1.1 2.4 1.4.7.3 1.6.5 3 .6 1.3.1 1.8.1 5.1.1s3.8 0 5.1-.1c1.4-.1 2.3-.3 3-.6.9-.3 1.7-.7 2.4-1.4.7-.7 1.1-1.5 1.4-2.4.3-.7.5-1.6.6-3 .1-1.3.1-1.8.1-5.1s0-3.8-.1-5.1c-.1-1.4-.3-2.3-.6-3-.3-.9-.7-1.7-1.4-2.4C21.8.8 21 .4 20.1.1c-.7-.3-1.6-.5-3-.6C15.8 0 15.3 0 12 0z"/><path d="M12 5.8A6.2 6.2 0 1 0 12 18.2 6.2 6.2 0 1 0 12 5.8zm0 10.2A4 4 0 1 1 12 8a4 4 0 0 1 0 8z"/><circle cx="18.4" cy="5.6" r="1.44"/></svg>
-
-                </a>
-                <a href="/facebook/" target="_blank" aria-label="facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1877F2" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24h-1.918c-1.504 0-1.795.716-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.729 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z"/></svg>
-
-                </a>
-                <a href="/x/" target="_blank" aria-label="WhatsApp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
-                        <path d="M4.25 3h4.71l3.28 4.56L16.89 3h2.86l-5.95 6.5L20 21h-4.73l-3.75-5.24L7 21H4.14l6.29-7L4.25 3zm3.5 1.5 4.08 5.69L8.33 13.5H10l3.87 5.42h1.71l-4.27-6 6.3-7.02H16l-3.47 3.86L7.75 4.5h-.01z"/>
-                      </svg>
-                      
-                </a>
-               
-            </div>
-            <div id="google_translate_element"></div>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li> |
-                    <li><a href="/about/">About Us</a></li> |
-                    <li><a href="/contact/">Contact Us</a></li> |
-                    <li><a href="/privacy-policy/">Privacy Policy</a></li> |
-                    <li><a href="/disclaimer/">Disclaimer</a></li>
-                </ul>
-            </nav>
-            
-
-           <div id="copyright" style="color:#f0edeb">   <p>&copy; 2025 YOJNA PORTAL. All Rights Reserved.</p></div>
-         
-        </div>
-       
-    </footer>
-
-
-
-  
-    
-    <script src="http://localhost:1313/js/main/default.min.79f575209485ca486e47c4263ee59e73740712a91de598c4eabf89b87a4a6b6b.js" integrity="sha256-efV1IJSFykhuR8QmPuWec3QHEqkd5ZjE6r&#43;JuHpKa2s=" defer></script>
-  
-
-
-
-
-<script src="http://localhost:1313/js/main/header.min.38bd75fa5067387be5b4d16f625b0bc942b6079bc2f49a8173e5505c0b96c111.js" integrity="sha256-OL11&#43;lBnOHvltNFvYlsLyUK2B5vC9JqBc&#43;VQXAuWwRE=" defer></script>
-
-
-<script src="http://localhost:1313/js/main/navbar.min.7d6c1b268d0262d9095c7f8af44f48c08ef800d9bf16192fa94347036980d893.js" integrity="sha256-fWwbJo0CYtkJXH&#43;K9E9IwI74ANm/FhkvqUNHA2mA2JM=" defer></script>
-
-<script src="http://localhost:1313/js/main/bottom.min.029d4aa13a4cfbab2555aaf3ed22b0459faf0085d71740db726ef26ab5d506b3.js" integrity="sha256-Ap1KoTpM&#43;6slVarz7SKwRZ&#43;vAIXXF0Dbcm7yarXVBrM=" defer></script>
-
-</html>
-
-</body>

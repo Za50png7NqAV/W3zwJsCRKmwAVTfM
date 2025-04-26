@@ -355,9 +355,7 @@ header {
 .scroll-left { left: 0; }
 .scroll-right { right: 0; }
 .ad-container {
-  background: #f4f4f4;
-  background: #fefefe;
-  padding: 12px;
+  padding: 10px;
   border-radius: 10px;
   margin: 24px auto;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);

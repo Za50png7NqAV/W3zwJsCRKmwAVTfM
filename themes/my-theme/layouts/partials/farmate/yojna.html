@@ -78,7 +78,7 @@
           <p class="conclusion">{{ .Params.conclusion | safeHTML }}</p>
       </div>
       {{ end }}
-  </div>
+  
   
   {{ if .Params.faqs }}
   <div class="faqs">
@@ -91,7 +91,7 @@
   <div class="content">
     {{ .Content }}
 </div>
-{{ partial "adsense.html" . }}
+
   {{ partial "imp-codes/imageBanner.html" . }}
 </div>
 {{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}

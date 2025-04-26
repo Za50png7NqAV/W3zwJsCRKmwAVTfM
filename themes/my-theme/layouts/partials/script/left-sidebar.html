@@ -1,0 +1,2 @@
+{{ $leftSidebar := resources.Get "js/main/left-sidebar.js" | minify | fingerprint }}
+<script src="{{ $leftSidebar.Permalink }}" integrity="{{ $leftSidebar.Data.Integrity }}" defer></script>

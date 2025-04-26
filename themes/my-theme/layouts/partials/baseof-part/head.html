@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ end }}
 {{ end }}
-{{ partial "imp-codes/stylesheet.html" . }}
-
- 
+{{ partial "style/stylesheet" . }}
+{{ partial "style/yp-main-base" . }}
+{{ partial "style/right-sidebar" . }}
 
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
 {{ if .Params.cssStyle }}
@@ -49,37 +49,7 @@
       </style>
      
 </head>
-<header>
-   <div class="header-container">
-       <div class="logo">
-           <a href="/"> <source srcset="/logo/logo.webp" type="image/webp">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <img  src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}" style="width: 80px; height: auto;" loading="lazy" />
-              <div>
-                  <div style="font-size: 32px; font-weight: bold; background: linear-gradient(to right, #d32f2f, #ff9800); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                      योजना पोर्टल
-                  </div>
-                  <div style="font-size: 16px; color: #d32f2f; font-weight: bold;">
-                      YOJNA PORTAL
-                  </div>
-              </div>
-          </div>
-          
-          </a>
-       </div>
-       <div class="portal-name">
-        
-       </div>
-       <div id="main-btn">
-        <a style="font-size:30px;cursor:pointer" href="/notification"><i class='fas fa-bell'></i> </a>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>
-      </div>
-   </div>
-</header>
 
-<div id="mySidenav" class="sidenav">
-
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fas fa-arrow-left'></i></a>
-    <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
-  </div>
-
+  <!-- Header -->
+  {{ partial "main-part/header" . }}
+  {{ partial "baseof-part/navbar" . }}

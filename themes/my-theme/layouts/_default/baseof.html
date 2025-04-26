@@ -1,18 +1,32 @@
 
-<body>
+  <body>
+     <!-- head-->
+    {{ partial "baseof-part/head" . }}
+    
+    <!-- left Sidebar Overlay (mobile only) -->
+    {{ partial "main-part/left-sidebar" . }}
   
-  {{ partial "baseof-part/head" . }} 
-  {{ partial "baseof-part/navbar" . }}
-    <div class="main-container">
-  
-  <!-- Include the sidenav partial -->
- 
-        <!-- Navbar section -->
-       <div id="sidenav-main">
-        <!-- Main content block -->
+      <!-- Main Content -->
+      <main class="yp-main-content">
         {{ block "main" . }} {{ end }}
-   </div> 
+      </main>
+  
+      <!-- Right Sidebar (desktop only) -->
+      <aside class="yp-main-sidebar">
+          {{ partial "baseof-part/sidebar" . }}
+      </aside>
     </div>
-    {{ partial "adsense.html" . }}
-    {{ partial "baseof-part/footer" . }}
-</body>
+  
+  
+  
+    <!-- Footer -->
+    <footer>
+      {{ partial "baseof-part/footer" . }}
+    </footer>
+  
+    <!-- Sidebar Toggle JS -->
+    {{ partial "script/left-sidebar" . }}
+    
+  </body>
+ 
+

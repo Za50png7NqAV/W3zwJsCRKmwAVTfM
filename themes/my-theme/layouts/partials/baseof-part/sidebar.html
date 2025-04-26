@@ -1,86 +1,4 @@
 
-<style>
-    /* Main sidebar container */
-.main-sidebar {
-    width: 100%;
-    background-color: #f5f5f5;
-    border-right: 1px solid #ddd;
-    padding: 15px;
-    overflow-y: auto;
-  }
-  
-  /* Individual sidebar sections */
-  .sidebar-section {
-    margin-bottom: 15px;
-  }
-  
-  /* Style for the collapsible lists */
-  .sidebar-list {
-    width: 100%;
-    border: none;
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Summary heading style */
-  .sidebar-list .summary {
-    padding: 10px 15px;
-    cursor: pointer;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  }
-  
-  /* Add an arrow indicator to summary */
-  .summary::after {
-    content: "▼";
-    font-size: 12px;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Rotate arrow when details is open */
-  details[open] .summary::after {
-    transform: rotate(180deg);
-  }
-  
-  /* List styling */
-  .sidebar-list ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar-list li {
-    padding: 8px 15px 8px 20px;
-    border-top: 1px solid #eee;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .sidebar-list li:hover {
-    background-color: #f7f7f7;
-    color: #333;
-  }
-  
-  /* Animation for expanding/collapsing */
-  .sidebar-list ul {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-  
-  details[open] .sidebar-list ul {
-    max-height: 500px;
-  }
-  .sidebar-list a{ text-decoration: none;
-  }
-  
-  a:hover { text-color:red; }
-</style>
-
 <div class="main-sidebar">
     <div class="sidebar-section">
 
@@ -90,7 +8,7 @@
         {{ $lastdate := .Params.lastdate | default "9999-12-31" }}
         {{ if ge $lastdate (now.Format "2006-01-02") }}
           <li>
-            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" >{{ .Title }}</a>
             {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
             {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
           </li>
@@ -98,10 +16,15 @@
         {{ end }}
     {{ end }}
       <hr>
-      <p > <a href="/latest-update/"> <div style="text-align:right;"> More >> </div></a></p>
+      <p > <a href="/latest-update/" target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
     </details>
     
     </div>
+
+    <div class="sidebar-section">
+    {{ partial "adsense.html" . }}
+
+</div>
 <div class="sidebar-section">
 
     <details open class="sidebar-list" >
@@ -119,7 +42,7 @@
     {{ end }}
 {{ end }}
 <hr>
-      <p > <a href="/latest-schemes/"> <div style="text-align:right;"> More >> </div></a></p>
+      <p > <a href="/latest-schemes/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
   
 </details>
 
@@ -132,7 +55,7 @@
     {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
     {{ if ge $lastdate (now.Format "2006-01-02") }}
         <li>
-            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" >{{ .Title }}</a>
             {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
             {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
         </li>
@@ -140,9 +63,9 @@
     {{ end }}
 {{ end }}
 <hr>
-<p > <a href="/latest-jobs/"> <div style="text-align:right;"> More >> </div></a></p>
+<p > <a href="/latest-jobs/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
 </details>
 
 </div>
-
+{{ partial "adsense.html" . }}
 </div>

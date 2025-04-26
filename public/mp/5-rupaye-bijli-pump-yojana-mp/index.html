@@ -1,6 +1,933 @@
-
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><body>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
+
+
+  
+    <link rel="stylesheet" href="/css/main/yp-main.min.b8e3cd92cb096a9fb1200bc05b60413d83e2907e7b0a88cc14f3f47a3ff46c23.css" integrity="sha256-uOPNkssJap&#43;xIAvAW2BBPYPikH57CojMFPP0ej/0bCM=">
+  
+
+<style>
+   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+  }
+  
+   
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-1 {
+    display: flex;
+    flex: 1;
+  }
+  
+   
+  header {
+    background-color: #fff;  
+    color: white;
+    padding: 1rem;
+    font-size: 1.25rem;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo a {text-decoration: none;}
+   
+  #openSidebar {
+    font-size: 1.5rem;  
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+   
+  #sidebarOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);  
+    z-index: 30;
+    display: none;  
+  }
+  
+   
+  #leftSidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 16rem;  
+    background-color: #f3f4f6;  
+    padding: 0rem;
+    z-index: 40;
+    transform: translateX(-100%);  
+    transition: transform 0.3s ease;  
+  }
+  
+   
+  #leftSidebar .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  #leftSidebar .font-bold {
+    font-weight: bold;
+    font-size: 1.125rem;  
+  }
+  
+   
+  #closeSidebar {
+    font-size: 1.5rem;  
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+   
+  #leftSidebar a {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;  
+    text-decoration: none;
+    color: #1f2937;  
+  }
+  
+  #leftSidebar a:hover {
+    color: #2563eb;  
+  }
+  
+   
+  main {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  main h2 {
+    font-size: 1.125rem;  
+    font-weight: 600;  
+    margin-bottom: 0.5rem;  
+  }
+  
+   
+  aside {
+    background-color: #f9fafb;  
+    padding: 1rem;
+  }
+  
+  aside h3 {
+    font-weight: bold;  
+    margin-bottom: 0.5rem;  
+  }
+  
+   
+  footer {
+    background-color: #242323;  
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+   
+  @media (min-width: 768px) {  
+     
+    #openSidebar, 
+    #sidebarOverlay,
+    #leftSidebar .flex,
+    aside:last-of-type {
+      display: none;
+    }
+    
+     
+    #leftSidebar {
+      position: static;
+      transform: translateX(0);
+      width: 20%;  
+      display: flex;
+      flex-direction: column;
+    }
+    
+    main {
+      width: 60%;  
+    }
+    
+     
+    aside:nth-of-type(2) {
+      display: block;
+      width: 20%;  
+    }
+    
+     
+    .flex-1 {
+      flex-direction: row;
+    }
+  }
+  
+   
+  @media (max-width: 767px) {
+     
+    aside:nth-of-type(2) {
+      display: none;
+    }
+    
+     
+    aside:last-of-type {
+      display: block;
+      
+    }
+    
+     
+    .flex-1 {
+      flex-direction: column;
+    }
+    
+     
+    .yp-main-content, 
+    .yp-main-sidebar {
+      width: 100%;
+    }
+    
+     
+    main.yp-main-content {
+      order: 1;
+    }
+    
+    aside.yp-main-sidebar {
+      order: 2;
+    }
+  }
+  
+   
+  #leftSidebar.active {
+    transform: translateX(0);
+    width: 300px;
+  }
+  
+  #sidebarOverlay.active {
+    display: block;
+    
+  }
+  </style>
+  </head>
+  <body>
+    
+    <header>
+      <div class="logo">
+        <a href="/"> <source srcset="/logo/logo.webp" type="image/webp">
+         <div style="display: flex; align-items: center; gap: 10px;">
+           <img  src="/logo/logo-100x100.png" alt="YOJNA PORTAL" style="width: 80px; height: auto;" loading="lazy" />
+           <div>
+               <div style="font-size: 32px; font-weight: bold; background: linear-gradient(to right, #d32f2f, #ff9800); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                YOJNA PORTAL
+               </div>
+               <div style="font-size: 16px; color: #d32f2f; font-weight: bold;">
+                  www.YojnaPortal.com
+               </div>
+           </div>
+       </div>
+      
+      <button id="openSidebar">☰➖</button>
+    </header>
+    <head>
+    <style> </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
+        <div class="scroll-menu" id="scrollMenu">
+           
+ <a href="/" class="menu-item active"> <i class="fas fa-home"> </i> Home</a>
+ 
+ <a href="/search/" class="menu-item" > <i class="fas fa-search"> </i> Search </a>
+ <a href="/quick/last-date/" class="menu-item" target="_blank">📅Last Date</a>
+ <a href="/quick/exam-date/" class="menu-item" target="_blank" ><i class="fas fa-time"> </i>Exam Dates</a>
+ <a href="/upcoming/" class="menu-item" target="_blank"> ↗️Upcoming</a>
+ <a href="/pdf-forms/" class="menu-item" target="_blank" ><i class="fas fa-print"> </i>PDF FORM</a>
+ <a href="/imp-links/" class="menu-item" target="_blank"> <i class="fas fa-link"> </i>Useful Links</a>
+ <a href="/certificate/" class="menu-item" target="_blank"> 📃Certificate</a>
+ <a href="/student-help/" class="menu-item" target="_blank"> 🎓Education</a>
+ <a href="https://www.yojnaportal.com/latest-update/" class="menu-item"> Latest Update</a>
+           
+            <a href="/update/" class="menu-item" >Update</a>
+
+            
+            <a href="/latest-schemes/" class="menu-item">Latest Schemes</a>
+            
+            
+            <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
+            <a href="https://tools.v2kcomputers.com/" class="menu-item">Advance Tools</a>
+            <a href="/admitcard/" class="menu-item">Admit Card</a>
+            <a href="/results/" class="menu-item">Results</a>
+            <span  style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i> Search</span>
+            <a href="https://www.yojnaportal.com/menu/" class="menu-item"> &#9776; Menu</a>
+           
+        </div>
+        <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
+    </div>
+</body>
+
+
+    
+    <div id="sidebarOverlay"></div>
+  
+    <div class="flex-1">
+      
+      <aside id="leftSidebar">
+        
+        <div class="flex">
+          <span class="font-bold">Menu</span>
+          <button id="closeSidebar">✕</button>
+        </div>
+        <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
+      </aside>
+  
+      
+      <main class="yp-main-content">
+        
+
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ul>
+      <li><a href="http://localhost:1313/">Home</a> &raquo;</li>
+      
+        <li><a href="/mp/">Mp</a> &raquo;</li>
+      
+      <li>5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana</li>
+    </ul>
+  </nav>
+<div class="yp-container">
+  <div class="post-card">
+    
+       <h2 style="color:green;">  Madhya Pradesh Madhya kshetra Viddhut Vitran Co Ltd </h2>
+       
+      <h2>5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana  
+         Madhya Pradesh
+            </h2>
+        
+
+        
+
+      
+      <div class="section">
+          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल का उद्देश्य (Objective)</h3>
+          <p>इस योजना का मुख्य उद्देश्य किसानों को सस्ती दरों पर स्थायी विद्युत कनेक्शन प्रदान कराना है, जिससे वे अपने कृषि पंपों के लिए निर्बाध और किफायती बिजली का उपयोग कर सकें। यह योजना खेती की लागत को कम करने और सिंचाई व्यवस्था को सुदृढ़ करने के लिए शुरू की गई है। </p>
+      </div>
+      
+      <div class="ad-container">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+    crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4855323063398382"
+         data-ad-slot="5787799671"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+      
+      <div class="section">
+          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल हेतु पात्रता (Eligibility)</h3>
+          <p><li>आवेदक मध्य प्रदेश का नागरिक हो।</li><li>आवेदक एक पंजीकृत किसान होना चाहिए।</li><li>किसान के पास खुद की या पट्टे की जमीन होनी चाहिए।</li><li>जिस खेत के लिए कनेक्शन चाहिए, वह सिंचाई के योग्य होना चाहिए।</li><li>पहले से बिजली कनेक्शन न हो या अस्थायी हो।</li></p>
+      </div>
+      
+
+      
+      <div class="section">
+          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल से लाभ (Benefits)</h3>
+          <p><li>₹5 प्रति HP / यूनिट में स्थायी बिजली कनेक्शन।</li><li>एकमुश्त प्रक्रिया से सस्ती और स्थायी बिजली सुविधा।</li><li>कृषि कार्यों के लिए बिजली की निर्बाध आपूर्ति।</li><li>बिजली विभाग की ओर से अनुदान।</li><li>खेतों की सिंचाई में समय और लागत की बचत।</li></p>
+      </div>
+      
+      
+      
+      <div class="section">
+          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल के लिए आवश्यक दस्तावेज़ (Required Documents)</h3>
+          <p><li>आवेदन पत्र फाईल / फार्म</li><li>खसरा/खतौनी B1/ नक्शा (डिजीटल)</li><li>भूपुस्तिका (बही ) की प्रति</li><li>जल उपलब्धता का प्रमाण पत्र</li><li>आधार कार्ड की प्रति</li><li>बैंक पासबुक की प्रति</li><li>पासपोर्ट साइज की 2 फोटो</li><li>समग्र आई की प्रति</li><li>घरेलु विद्युत कनेक्शन भुगतान बिल की रसीद</li><li>लाईन मेन का सर्वे - नक्शा</li></p>
+      </div>
+      
+
+      
+      <div class="section">
+          <h3>🔸 स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल के लिए आवेदन प्रक्रिया (How to Apply)</h3>
+          
+          <h4>🖥️ ऑनलाइन आवेदन:</h4>
+          <p> <li>ऑनलाइन आवेदन करें – संबंधित राज्य की बिजली विभाग की वेबसाइट www.mpcz.in/  या MP Online / CSC से करवा सकते हैं</li> </p>
+          
+          
+          <h4>🏢 ऑफलाइन आवेदन:</h4>
+          <p><li> विजली विभाग / बिजली ऑफिस / लाइन मेन से  संपर्क करें </li><li>आवेदन पत्र भरें और सभी आवश्यक दस्तावेज़ अपलोड करें।</li><li>आवेदन की पुष्टि के बाद अधिकारी स्थल निरीक्षण करते हैं।</li><li>निरीक्षण के पश्चात बिजली कनेक्शन की स्वीकृति दी जाती है।</li><li>निर्धारित ₹5 प्रति HP दर पर कनेक्शन चार्ज लेकर कनेक्शन जोड़ दिया जाता है।</li> </p>
+          
+      </div>
+      
+    
+      
+      <div class="section">
+          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल महत्वपूर्ण तिथियाँ (Important Dates)</h3>
+          <div class="important-dates">
+              <div class="date-item">
+                  <p> योजना की घोषणा मार्च 2025 में, मुख्यमंत्री डॉ. मोहन यादव द्वारा की गई</p>
+              </div>
+          </div>
+      </div>
+      
+
+  
+
+     
+      
+      <div class="section">
+          <h3>🔚स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल का निष्कर्ष (Conclusion)</h3>
+          <p class="conclusion">यह योजना किसानों को सस्ती और सुगम बिजली कनेक्शन प्रदान करके उनकी सिंचाई आवश्यकताओं को पूरा करने में सहायक है, जिससे कृषि उत्पादन में वृद्धि होगी।</p>
+      </div>
+      
+  </div>
+  
+   
+</div>
+  <div class="content">
+    <head>
+  <p class="faqs"> नोट: ऑनलाइन आवेदन करने से पहले ऑफलाइन बिजली विभाग सें संपर्क करें, क्योकि अलग-अलग क्षेत्रो के आवेदन  के तरीके भिन्न हो सकते हैं।</p>
+<h3> महत्वपूर्ण लिंक (Important Links) </h3>
+<table class="yp-table">
+    <tr>
+      <th>Important Links</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>MPMKVVCL MP Online</td>
+      <td><a href="https://mpeb.mponline.gov.in/portal/home.aspx" target="_blank">Click Here</a></td>
+    </tr>
+    <tr>
+      <td> MPCZApply Online  (Saral Sanyojan) </td>
+      <td><a href="https://saralsanyojan.mpcz.in:8888/fetch_samagra_detail" target="_blank">Click Here</a></td>
+    </tr>
+    <tr>
+      <td>Track Status</td>
+      <td><a href="https://saralsanyojan.mpcz.in:8888/track_application" target="_blank">Click Here</a></td>
+    </tr>
+
+    <tr>
+      <td>📄Download Pdf Form</td>
+      <td><a href="https://www.yojnaportal.com/open/?pdf=L3AvYnBjZi5odG1s" target="_blank">Click Here</a></td>
+    </tr>
+    <tr>
+        <td>📄Download Notification</td>
+        <td><a href="https://portal.mpcz.in/upload_files/pdf/home/latest_news_and_updates/%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A4%BF_%E0%A4%AA%E0%A4%82%E0%A4%AA_%E0%A4%89%E0%A4%AA%E0%A4%AD%E0%A5%8B%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BE_%E0%A4%95%E0%A5%8B_%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8_%E0%A4%B5%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A4_%E0%A4%95%E0%A4%A8%E0%A5%87%E0%A4%95%E0%A5%8D%E0%A4%B6%E0%A4%A8_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A6%E0%A4%BE%E0%A4%A8_%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A5%87_%E0%A4%95%E0%A5%87_%E0%A4%B8%E0%A4%82%E0%A4%AC%E0%A4%82%E0%A4%A7_%E0%A4%AE%E0%A5%87%E0%A4%82.PDF" target="_blank">Click Here</a></td>
+      </tr>
+    <tr>
+      <td>Official Website</td>
+      <td><a href="https://www.mpcz.in/" target="_blank">Click Here</a></td>
+    </tr>
+  </table>
+  <h3> अक्सर पूछें जाने वाले प्रश्न (FAQSs) </h3>
+  <div class="faqs"><b>Q. क्या यह योजना पूरे मध्य प्रदेश में लागू है?</b> <br>
+    <b>A.</b> हाँ, यह योजना मध्य प्रदेश के ग्रामीण क्षेत्रों में लागू है।​</div>
+<div class="faqs"><b>Q. क्या शहरी क्षेत्र के किसान इस योजना का लाभ उठा सकते हैं?</b>
+    <br> <b>A.</b> नहीं, यह योजना केवल ग्रामीण क्षेत्रों के किसानों के लिए है।​</div>
+<div class="faqs"><b>Q. सुरक्षा निधि का भुगतान कैसे करना होगा?</b> <br><b>A.</b> सुरक्षा निधि की राशि (₹1200 प्रति हॉर्सपावर) आपके पहले बिजली बिल में जोड़ी जाएगी।</div>
+<div class="faqs"><b>Q. कया सभी क्षेत्र के लिए ऑनलाइन आवेदन कर सकते है?</b> <br><b>A.</b> नही, अभी सिर्फ मध्म प्रदेश के मध्य क्षेत्र भोपाल (Bhopal Discom) अंतर्गत आवेदन कर सकते है।</div>
+</div>
+
+  
+
+<a href ="#" target="_blank"></a><img src="https://ia600706.us.archive.org/23/items/bijli_connection/5-rupaye-bijli-pump-yojana-mp.jpg" 
+     loading="lazy"
+     sizes="(max-width: 800px) 100vw, 800px"  
+     alt="5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana | www.YojnaPortal.com"
+     style="display: block; margin: 0 auto; max-width: 100%; height: auto;"> </a>
+</div>
+
+
+<div class="faq">
+    <h3>🔍  स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल एक नंजर में (Summary) </h3>  
+    <table class="yp-table">
+        <tbody>
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">📌 योजना </th>
+                <td style="padding: 10px; font-size:20px; color:green;">5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana | <a href="//"> #</a></td>
+            </tr>
+            
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">🎯 उद्देश्य</th>
+                <td style="padding: 10px;">इस योजना का मुख्य उद्देश्य किसानों को सस्ती दरों पर स्थायी विद्युत कनेक्शन प्रदान कराना है, जिससे वे अपने कृषि पंपों के लिए निर्बाध और किफायती बिजली का उपयोग कर सकें। यह योजना खेती की लागत को कम करने और सिंचाई व्यवस्था को सुदृढ़ करने के लिए शुरू की गई है। </td>
+            </tr>
+            
+            
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">👥 पात्रता</th>
+                <td style="padding: 10px;"> 
+
+                  • आवेदक मध्य प्रदेश का नागरिक हो। | • आवेदक एक पंजीकृत किसान होना चाहिए। | • किसान के पास खुद की या पट्टे की जमीन होनी चाहिए। | • जिस खेत के लिए कनेक्शन चाहिए, वह सिंचाई के योग्य होना चाहिए। | • पहले से बिजली कनेक्शन न हो या अस्थायी हो। 
+
+                </td>
+            </tr>
+            
+         
+            
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">📄 दस्तावेज</th>
+                <td style="padding: 10px;">
+                  • आवेदन पत्र फाईल / फार्म | • खसरा/खतौनी B1/ नक्शा (डिजीटल) | • भूपुस्तिका (बही ) की प्रति | • जल उपलब्धता का प्रमाण पत्र | • आधार कार्ड की प्रति | • बैंक पासबुक की प्रति | • पासपोर्ट साइज की 2 फोटो | • समग्र आई की प्रति | • घरेलु विद्युत कनेक्शन भुगतान बिल की रसीद | • लाईन मेन का सर्वे - नक्शा 
+
+                </td>
+            </tr>
+            
+            
+            
+            <tr>
+                <th style="text-align: left; padding: 10px;">🏬 विभाग </th>
+                <td style="padding: 10px;"><a href="%20www.mpcz.in/" target="_blank"> Madhya Pradesh Madhya kshetra Viddhut Vitran Co Ltd</a></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+
+</div>
+</div>
+
+
+  <style>
+   .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-like { background-color: #f0ad4e; }
+    .btn-share { background-color: #5bc0de; }
+    .btn-whatsapp { background-color: #25D366; }
+    .btn-telegram { background-color: #0088cc; }
+    .btn-copy { background-color: #6f42c1; }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-group">
+    <a href="https://yojnaportal.com/whatsapp" target="_blank" class="btn btn-whatsapp">
+      Join WhatsApp
+    </a>
+
+    <a href="https://yojnaportal.com/telegram" target="_blank" class="btn btn-telegram">
+      Join Telegram
+    </a>
+
+    <button class="btn btn-copy" onclick="copyLink()">Copy Link</button>
+
+      <a class="btn btn-share" href="https://wa.me/?text=✅5%20Rupaye%20Mein%20Sthai%20Bijli%20Pump%20Connection%20Saral%20Yojana%0A✅Check%20Details%20👇%0A🔗http%3a%2f%2flocalhost%3a1313%2fmp%2f5-rupaye-bijli-pump-yojana-mp%2f" target="_blank">
+        Share on WhatsApp
+      </a>
+      
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = "http:\/\/localhost:1313\/mp\/5-rupaye-bijli-pump-yojana-mp\/";
+      navigator.clipboard.writeText(link).then(() => {
+        alert("✅ Link copied to clipboard!");
+      }).catch(err => {
+        alert("❌ Failed to copy: " + err);
+      });
+    }
+  </script>
+</body>
+
+
+
+
+
+      </main>
+  
+      
+      <aside class="yp-main-sidebar">
+          
+<style>
+     
+.main-sidebar {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+   
+  .sidebar-section {
+    margin-bottom: 15px;
+  }
+  
+   
+  .sidebar-list {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+   
+  .sidebar-list .summary {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+   
+  .summary::after {
+    content: "▼";
+    font-size: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+   
+  details[open] .summary::after {
+    transform: rotate(180deg);
+  }
+  
+   
+  .sidebar-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-list li {
+    padding: 8px 15px 8px 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .sidebar-list li:hover {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+   
+  .sidebar-list ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  details[open] .sidebar-list ul {
+    max-height: 500px;
+  }
+  .sidebar-list a{ text-decoration: none;
+  }
+  
+  a:hover { text-color:red; }
+</style>
+
+<div class="main-sidebar">
+    <div class="sidebar-section">
+
+        <details open class="sidebar-list" >
+        <summary class="summary"> Recommended Post</summary>
+        
+        
+        
+          <li>
+            <a href="/railway/assistant-loco-pilot-bharti-2025/" target="_blank">RRB ALP Bharti 2025 – Railway Assistant Loco Pilot Apply Online</a>
+            
+            
+          </li>
+       
+        
+    
+        
+        
+          <li>
+            <a href="/pdf/gram-panchamchyat-forms/" target="_blank">GP Sarpanch / Sachiv (ग्राम पंचायत) Lable PDF Forms Download</a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+          </li>
+       
+        
+    
+        
+        
+          <li>
+            <a href="/mp/5-rupaye-bijli-pump-yojana-mp/" target="_blank">5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana</a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+          </li>
+       
+        
+    
+        
+        
+          <li>
+            <a href="/mp/cmkvy-kanya-vivah-yojna-form/" target="_blank">CMKVY  Kanya Vivah Yojna Form Madhya Pradesh</a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+          </li>
+       
+        
+    
+        
+        
+    
+      <hr>
+      <p > <a href="/latest-update/"> <div style="text-align:right;"> More >> </div></a></p>
+    </details>
+    
+    </div>
+<div class="sidebar-section">
+
+    <details open class="sidebar-list" >
+    <summary class="summary"> Latest Scheme Updates </summary>
+
+    
+     
+    
+        <li>
+            <a href="/document/mp-sambal-yojna-apply/" target="_blank">MP Sambal Card Apply Online 2025 – फॉर्म, पात्रता, लाभ और आवश्यक दस्तावेज</a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+        </li>
+       
+    
+
+     
+    
+        <li>
+            <a href="/scheme/madhya-pradesh/social-security-pension-apply/" target="_blank">MP Social Security  Pension Form PDF Download &amp; Application Process</a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+        </li>
+       
+    
+
+     
+    
+        <li>
+            <a href="/document/eshram-card-apply/" target="_blank">Eshram Card Apply, Update and Download</a>
+            
+            
+        </li>
+       
+    
+
+     
+    
+        <li>
+            <a href="/mp/pm-krishak-mitra-surya-yojana/" target="_blank">PM Krishak Mitra Surya Yojana 2025 – सब्सिडी पर सोलर पंप योजना</a>
+            
+            
+        </li>
+       
+    
+
+     
+    
+        <li>
+            <a href="/mp/cm-kalyani-vivah-yojna-mmkvy/" target="_blank">CM Kalyani Vivah Yojana Details &amp; Apply Online</a>
+            
+            
+        </li>
+       
+    
+
+<hr>
+      <p > <a href="/latest-schemes/"> <div style="text-align:right;"> More >> </div></a></p>
+  
+</details>
+
+</div>
+<div  class="sidebar-section">
+
+    <details open class="sidebar-list" >
+    <summary class="summary"> Latest Jobs Update</summary>
+    
+     
+    
+
+     
+    
+
+     
+    
+
+     
+    
+        <li>
+            <a href="/bihar/field-assistant-vacancy-2025/" target="_blank">BSSC Field Assistant 2025 Apply Form</a>
+            
+            
+        </li>
+
+    
+
+     
+    
+
+<hr>
+<p > <a href="/latest-jobs/"> <div style="text-align:right;"> More >> </div></a></p>
+</details>
+
+</div>
+
+</div>
+
+      </aside>
+    </div>
+  
+  
+  
+    
+    <footer>
+       <nav class="bottom-nav">
+        <ul>
+            <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
+            <li><a href="#"><span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>Search</a></li>
+            <li><a href="/notification/"><i class="fas fa-bell"></i>Update</a></li>
+            <li><a href="/menu/"><i class="fas fa-bars"></i>Menu</a></li>
+        </ul>
+    </nav>
+
+
+<footer id="footer">
+        
+        <div class="footer-content">
+            <div style="color:#f4b400;">|| Follow us on Social Media ||</div>
+            <div class="social-media">
+                <a href="/whatsapp/" target="_blank" aria-label="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#25D366" viewBox="0 0 24 24"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.47 3.44 1.36 4.93L2 22l5.21-1.36C8.7 21.53 10.37 22 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18c-1.43 0-2.83-.39-4.04-1.13l-.29-.18-3.09.81.83-3-.2-.31A8.05 8.05 0 0 1 4.04 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.41-5.42c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.17-.71-.63-1.2-1.4-1.34-1.64-.14-.24-.01-.37.1-.48.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.86.84-.86 2.04s.88 2.36 1.02 2.52c.14.16 1.73 2.64 4.2 3.7.59.26 1.05.42 1.41.54.59.19 1.12.16 1.54.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+
+                </a>
+                <a href="/telegram/" target="_blank" aria-label="Telegram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0088cc" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.642 1.017 5.052 2.685 6.858L4 22l3.241-.854A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.94 7.35-1.355 6.385c-.1.447-.36.555-.73.345l-2.025-1.493-1.018.98c-.113.113-.208.208-.425.208l.153-2.172 3.957-3.578c.172-.153-.038-.24-.267-.087l-4.892 3.084-2.107-.658c-.456-.142-.465-.456.095-.675l8.222-3.176c.382-.142.718.087.597.67z"/></svg>
+
+                </a>
+                <a href="/youtube/" target="_blank" aria-label="Youtube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF0000" viewBox="0 0 24 24"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.9-1.6-.9-2-1C16.2 4.8 12 4.8 12 4.8h0s-4.2 0-7 .2c-.4.1-1.2.1-2 1-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.9 1.9.8 2.4.9C8 19.2 12 19.2 12 19.2s4.2 0 7-.2c.4-.1 1.2-.1 2-1 .6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6c0-1.6-.2-3.2-.2-3.2zM10 14.7V9.3l5.2 2.7L10 14.7z"/></svg>
+
+                </a>
+                <a href="/instagram/" target="_blank" aria-label="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#E1306C" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.3.1 2 .3 2.5.5.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.5.4 1.2.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.3-.3 2-.5 2.5-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.5.2-1.2.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.3-.1-2-.3-2.5-.5-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.5-.4-1.2-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.3.3-2 .5-2.5.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.5-.2 1.2-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.2 0 6.9.1 5.5.2 4.6.4 3.9.7 3 .9 2.2 1.3 1.5 2 .8 2.7.4 3.5.1 4.4c-.3.7-.5 1.6-.6 3C0 8.2 0 8.7 0 12s0 3.8.1 5.1c.1 1.4.3 2.3.6 3 .3.9.7 1.7 1.4 2.4.7.7 1.5 1.1 2.4 1.4.7.3 1.6.5 3 .6 1.3.1 1.8.1 5.1.1s3.8 0 5.1-.1c1.4-.1 2.3-.3 3-.6.9-.3 1.7-.7 2.4-1.4.7-.7 1.1-1.5 1.4-2.4.3-.7.5-1.6.6-3 .1-1.3.1-1.8.1-5.1s0-3.8-.1-5.1c-.1-1.4-.3-2.3-.6-3-.3-.9-.7-1.7-1.4-2.4C21.8.8 21 .4 20.1.1c-.7-.3-1.6-.5-3-.6C15.8 0 15.3 0 12 0z"/><path d="M12 5.8A6.2 6.2 0 1 0 12 18.2 6.2 6.2 0 1 0 12 5.8zm0 10.2A4 4 0 1 1 12 8a4 4 0 0 1 0 8z"/><circle cx="18.4" cy="5.6" r="1.44"/></svg>
+
+                </a>
+                <a href="/facebook/" target="_blank" aria-label="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1877F2" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24h-1.918c-1.504 0-1.795.716-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.729 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z"/></svg>
+
+                </a>
+                <a href="/x/" target="_blank" aria-label="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
+                        <path d="M4.25 3h4.71l3.28 4.56L16.89 3h2.86l-5.95 6.5L20 21h-4.73l-3.75-5.24L7 21H4.14l6.29-7L4.25 3zm3.5 1.5 4.08 5.69L8.33 13.5H10l3.87 5.42h1.71l-4.27-6 6.3-7.02H16l-3.47 3.86L7.75 4.5h-.01z"/>
+                      </svg>
+                      
+                </a>
+               
+            </div>
+            <div id="google_translate_element"></div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li> |
+                    <li><a href="/about/">About Us</a></li> |
+                    <li><a href="/contact/">Contact Us</a></li> |
+                    <li><a href="/privacy-policy/">Privacy Policy</a></li> |
+                    <li><a href="/disclaimer/">Disclaimer</a></li>
+                </ul>
+            </nav>
+            
+
+           <div id="copyright" style="color:#f0edeb">   <p>&copy; 2025 YOJNA PORTAL. All Rights Reserved.</p></div>
+         
+        </div>
+       
+    </footer>
+
+
+
+  
+    
+    <script src="http://localhost:1313/js/main/default.min.79f575209485ca486e47c4263ee59e73740712a91de598c4eabf89b87a4a6b6b.js" integrity="sha256-efV1IJSFykhuR8QmPuWec3QHEqkd5ZjE6r&#43;JuHpKa2s=" defer></script>
+  
+
+
+
+
+<script src="http://localhost:1313/js/main/header.min.38bd75fa5067387be5b4d16f625b0bc942b6079bc2f49a8173e5505c0b96c111.js" integrity="sha256-OL11&#43;lBnOHvltNFvYlsLyUK2B5vC9JqBc&#43;VQXAuWwRE=" defer></script>
+
+
+<script src="http://localhost:1313/js/main/navbar.min.7d6c1b268d0262d9095c7f8af44f48c08ef800d9bf16192fa94347036980d893.js" integrity="sha256-fWwbJo0CYtkJXH&#43;K9E9IwI74ANm/FhkvqUNHA2mA2JM=" defer></script>
+
+<script src="http://localhost:1313/js/main/bottom.min.029d4aa13a4cfbab2555aaf3ed22b0459faf0085d71740db726ef26ab5d506b3.js" integrity="sha256-Ap1KoTpM&#43;6slVarz7SKwRZ&#43;vAIXXF0Dbcm7yarXVBrM=" defer></script>
+
+</html>
+
+    </footer>
+  
+    
+    <script>
+      const openBtn = document.getElementById('openSidebar');
+      const closeBtn = document.getElementById('closeSidebar');
+      const sidebar = document.getElementById('leftSidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+  
+      openBtn.addEventListener('click', () => {
+        sidebar.classList.add('active');
+        overlay.classList.add('active');
+      });
+  
+      closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+  
+      overlay.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+    </script>
+  </body>
   <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -165,464 +1092,4 @@
   </div>
 
  
-  <head>
-    <style> </style>
-</head>
-<body>
-    <div class="menu-container">
-        <button class="scroll-button scroll-left" aria-label="Scroll left">&#10094;</button>
-        <div class="scroll-menu" id="scrollMenu">
-           
- <a href="/" class="menu-item active"> <i class="fas fa-home"> </i> Home</a>
- 
- <a href="/search/" class="menu-item" > <i class="fas fa-search"> </i> Search </a>
- <a href="/quick/last-date/" class="menu-item" target="_blank">📅Last Date</a>
- <a href="/quick/exam-date/" class="menu-item" target="_blank" ><i class="fas fa-time"> </i>Exam Dates</a>
- <a href="/upcoming/" class="menu-item" target="_blank"> ↗️Upcoming</a>
- <a href="/pdf-forms/" class="menu-item" target="_blank" ><i class="fas fa-print"> </i>PDF FORM</a>
- <a href="/imp-links/" class="menu-item" target="_blank"> <i class="fas fa-link"> </i>Useful Links</a>
- <a href="/certificate/" class="menu-item" target="_blank"> 📃Certificate</a>
- <a href="/student-help/" class="menu-item" target="_blank"> 🎓Education</a>
- <a href="https://www.yojnaportal.com/latest-update/" class="menu-item"> Latest Update</a>
-           
-            <a href="/update/" class="menu-item" >Update</a>
 
-            
-            <a href="/latest-schemes/" class="menu-item">Latest Schemes</a>
-            
-            
-            <a href="https://www.v2kcomputers.com/p/pdf-formsjn.html" class="menu-item">PDF Form</a>
-            <a href="https://tools.v2kcomputers.com/" class="menu-item">Advance Tools</a>
-            <a href="/admitcard/" class="menu-item">Admit Card</a>
-            <a href="/results/" class="menu-item">Results</a>
-            <span  style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i> Search</span>
-            <a href="https://www.yojnaportal.com/menu/" class="menu-item"> &#9776; Menu</a>
-           
-        </div>
-        <button class="scroll-button scroll-right" aria-label="Scroll right">&#10095;</button>
-    </div>
-</body>
-
-
-    <div class="main-container">
-  
-  
- 
-        
-       <div id="sidenav-main">
-        
-        
-
-
-<div class="ad-box left-ad"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-4855323063398382"
-    data-ad-slot="3850001664"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-<div class="ad-box right-ad"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-4855323063398382"
-    data-ad-slot="3850001664"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <ul>
-      <li><a href="http://localhost:1313/">Home</a> &raquo;</li>
-      
-        <li><a href="/mp/">Mp</a> &raquo;</li>
-      
-      <li>5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana</li>
-    </ul>
-  </nav>
-<div class="yp-container">
-  <div class="post-card">
-    
-       <h2 style="color:green;">  Madhya Pradesh Madhya kshetra Viddhut Vitran Co Ltd </h2>
-       
-      <h2>5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana  
-         Madhya Pradesh
-            </h2>
-        
-
-        
-
-      
-      <div class="section">
-          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल का उद्देश्य (Objective)</h3>
-          <p>इस योजना का मुख्य उद्देश्य किसानों को सस्ती दरों पर स्थायी विद्युत कनेक्शन प्रदान कराना है, जिससे वे अपने कृषि पंपों के लिए निर्बाध और किफायती बिजली का उपयोग कर सकें। यह योजना खेती की लागत को कम करने और सिंचाई व्यवस्था को सुदृढ़ करने के लिए शुरू की गई है। </p>
-      </div>
-      
-      <div class="ad-container">
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4855323063398382"
-         data-ad-slot="5787799671"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-      
-      <div class="section">
-          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल हेतु पात्रता (Eligibility)</h3>
-          <p><li>आवेदक मध्य प्रदेश का नागरिक हो।</li><li>आवेदक एक पंजीकृत किसान होना चाहिए।</li><li>किसान के पास खुद की या पट्टे की जमीन होनी चाहिए।</li><li>जिस खेत के लिए कनेक्शन चाहिए, वह सिंचाई के योग्य होना चाहिए।</li><li>पहले से बिजली कनेक्शन न हो या अस्थायी हो।</li></p>
-      </div>
-      
-
-      
-      <div class="section">
-          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल से लाभ (Benefits)</h3>
-          <p><li>₹5 प्रति HP / यूनिट में स्थायी बिजली कनेक्शन।</li><li>एकमुश्त प्रक्रिया से सस्ती और स्थायी बिजली सुविधा।</li><li>कृषि कार्यों के लिए बिजली की निर्बाध आपूर्ति।</li><li>बिजली विभाग की ओर से अनुदान।</li><li>खेतों की सिंचाई में समय और लागत की बचत।</li></p>
-      </div>
-      
-      
-      
-      <div class="section">
-          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल के लिए आवश्यक दस्तावेज़ (Required Documents)</h3>
-          <p><li>आवेदन पत्र फाईल / फार्म</li><li>खसरा/खतौनी B1/ नक्शा (डिजीटल)</li><li>भूपुस्तिका (बही ) की प्रति</li><li>जल उपलब्धता का प्रमाण पत्र</li><li>आधार कार्ड की प्रति</li><li>बैंक पासबुक की प्रति</li><li>पासपोर्ट साइज की 2 फोटो</li><li>समग्र आई की प्रति</li><li>घरेलु विद्युत कनेक्शन भुगतान बिल की रसीद</li><li>लाईन मेन का सर्वे - नक्शा</li></p>
-      </div>
-      
-
-      
-      <div class="section">
-          <h3>🔸 स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल के लिए आवेदन प्रक्रिया (How to Apply)</h3>
-          
-          <h4>🖥️ ऑनलाइन आवेदन:</h4>
-          <p> <li>ऑनलाइन आवेदन करें – संबंधित राज्य की बिजली विभाग की वेबसाइट www.mpcz.in/  या MP Online / CSC से करवा सकते हैं</li> </p>
-          
-          
-          <h4>🏢 ऑफलाइन आवेदन:</h4>
-          <p><li> विजली विभाग / बिजली ऑफिस / लाइन मेन से  संपर्क करें </li><li>आवेदन पत्र भरें और सभी आवश्यक दस्तावेज़ अपलोड करें।</li><li>आवेदन की पुष्टि के बाद अधिकारी स्थल निरीक्षण करते हैं।</li><li>निरीक्षण के पश्चात बिजली कनेक्शन की स्वीकृति दी जाती है।</li><li>निर्धारित ₹5 प्रति HP दर पर कनेक्शन चार्ज लेकर कनेक्शन जोड़ दिया जाता है।</li> </p>
-          
-      </div>
-      
-    
-      
-      <div class="section">
-          <h3>🔸स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल महत्वपूर्ण तिथियाँ (Important Dates)</h3>
-          <div class="important-dates">
-              <div class="date-item">
-                  <p> योजना की घोषणा मार्च 2025 में, मुख्यमंत्री डॉ. मोहन यादव द्वारा की गई</p>
-              </div>
-          </div>
-      </div>
-      
-
-  
-
-     
-      
-      <div class="section">
-          <h3>🔚स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल का निष्कर्ष (Conclusion)</h3>
-          <p class="conclusion">यह योजना किसानों को सस्ती और सुगम बिजली कनेक्शन प्रदान करके उनकी सिंचाई आवश्यकताओं को पूरा करने में सहायक है, जिससे कृषि उत्पादन में वृद्धि होगी।</p>
-      </div>
-      
-  </div>
-  
-   
-</div>
-  <div class="content">
-    <head>
-  <p class="faqs"> नोट: ऑनलाइन आवेदन करने से पहले ऑफलाइन बिजली विभाग सें संपर्क करें, क्योकि अलग-अलग क्षेत्रो के आवेदन  के तरीके भिन्न हो सकते हैं।</p>
-<h3> महत्वपूर्ण लिंक (Important Links) </h3>
-<table class="yp-table">
-    <tr>
-      <th>Important Links</th>
-      <th>Action</th>
-    </tr>
-    <tr>
-      <td>MPMKVVCL MP Online</td>
-      <td><a href="https://mpeb.mponline.gov.in/portal/home.aspx" target="_blank">Click Here</a></td>
-    </tr>
-    <tr>
-      <td> MPCZApply Online  (Saral Sanyojan) </td>
-      <td><a href="https://saralsanyojan.mpcz.in:8888/fetch_samagra_detail" target="_blank">Click Here</a></td>
-    </tr>
-    <tr>
-      <td>Track Status</td>
-      <td><a href="https://saralsanyojan.mpcz.in:8888/track_application" target="_blank">Click Here</a></td>
-    </tr>
-
-    <tr>
-      <td>📄Download Pdf Form</td>
-      <td><a href="https://www.yojnaportal.com/open/?pdf=L3AvYnBjZi5odG1s" target="_blank">Click Here</a></td>
-    </tr>
-    <tr>
-        <td>📄Download Notification</td>
-        <td><a href="https://portal.mpcz.in/upload_files/pdf/home/latest_news_and_updates/%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A4%BF_%E0%A4%AA%E0%A4%82%E0%A4%AA_%E0%A4%89%E0%A4%AA%E0%A4%AD%E0%A5%8B%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BE_%E0%A4%95%E0%A5%8B_%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8_%E0%A4%B5%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A5%81%E0%A4%A4_%E0%A4%95%E0%A4%A8%E0%A5%87%E0%A4%95%E0%A5%8D%E0%A4%B6%E0%A4%A8_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A6%E0%A4%BE%E0%A4%A8_%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A5%87_%E0%A4%95%E0%A5%87_%E0%A4%B8%E0%A4%82%E0%A4%AC%E0%A4%82%E0%A4%A7_%E0%A4%AE%E0%A5%87%E0%A4%82.PDF" target="_blank">Click Here</a></td>
-      </tr>
-    <tr>
-      <td>Official Website</td>
-      <td><a href="https://www.mpcz.in/" target="_blank">Click Here</a></td>
-    </tr>
-  </table>
-  <h3> अक्सर पूछें जाने वाले प्रश्न (FAQSs) </h3>
-  <div class="faqs"><b>Q. क्या यह योजना पूरे मध्य प्रदेश में लागू है?</b> <br>
-    <b>A.</b> हाँ, यह योजना मध्य प्रदेश के ग्रामीण क्षेत्रों में लागू है।​</div>
-<div class="faqs"><b>Q. क्या शहरी क्षेत्र के किसान इस योजना का लाभ उठा सकते हैं?</b>
-    <br> <b>A.</b> नहीं, यह योजना केवल ग्रामीण क्षेत्रों के किसानों के लिए है।​</div>
-<div class="faqs"><b>Q. सुरक्षा निधि का भुगतान कैसे करना होगा?</b> <br><b>A.</b> सुरक्षा निधि की राशि (₹1200 प्रति हॉर्सपावर) आपके पहले बिजली बिल में जोड़ी जाएगी।</div>
-<div class="faqs"><b>Q. कया सभी क्षेत्र के लिए ऑनलाइन आवेदन कर सकते है?</b> <br><b>A.</b> नही, अभी सिर्फ मध्म प्रदेश के मध्य क्षेत्र भोपाल (Bhopal Discom) अंतर्गत आवेदन कर सकते है।</div>
-</div>
-<div class="ad-container">
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4855323063398382"
-         data-ad-slot="5787799671"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-  
-
-<a href ="#" target="_blank"></a><img src="https://ia600706.us.archive.org/23/items/bijli_connection/5-rupaye-bijli-pump-yojana-mp.jpg" 
-     loading="lazy"
-     sizes="(max-width: 800px) 100vw, 800px"  
-     alt="5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana | www.YojnaPortal.com"
-     style="display: block; margin: 0 auto; max-width: 100%; height: auto;"> </a>
-</div>
-
-
-<div class="faq">
-    <h3>🔍  स्थाई बिजली पंप कनेक्शन सरल संयोजन पोर्टल एक नंजर में (Summary) </h3>  
-    <table class="yp-table">
-        <tbody>
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">📌 योजना </th>
-                <td style="padding: 10px; font-size:20px; color:green;">5 Rupaye Mein Sthai Bijli Pump Connection Saral Yojana | <a href="//"> #</a></td>
-            </tr>
-            
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">🎯 उद्देश्य</th>
-                <td style="padding: 10px;">इस योजना का मुख्य उद्देश्य किसानों को सस्ती दरों पर स्थायी विद्युत कनेक्शन प्रदान कराना है, जिससे वे अपने कृषि पंपों के लिए निर्बाध और किफायती बिजली का उपयोग कर सकें। यह योजना खेती की लागत को कम करने और सिंचाई व्यवस्था को सुदृढ़ करने के लिए शुरू की गई है। </td>
-            </tr>
-            
-            
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">👥 पात्रता</th>
-                <td style="padding: 10px;"> 
-
-                  • आवेदक मध्य प्रदेश का नागरिक हो। | • आवेदक एक पंजीकृत किसान होना चाहिए। | • किसान के पास खुद की या पट्टे की जमीन होनी चाहिए। | • जिस खेत के लिए कनेक्शन चाहिए, वह सिंचाई के योग्य होना चाहिए। | • पहले से बिजली कनेक्शन न हो या अस्थायी हो। 
-
-                </td>
-            </tr>
-            
-         
-            
-            <tr style="border-bottom: 1px solid #ddd;">
-                <th style="text-align: left; padding: 10px;">📄 दस्तावेज</th>
-                <td style="padding: 10px;">
-                  • आवेदन पत्र फाईल / फार्म | • खसरा/खतौनी B1/ नक्शा (डिजीटल) | • भूपुस्तिका (बही ) की प्रति | • जल उपलब्धता का प्रमाण पत्र | • आधार कार्ड की प्रति | • बैंक पासबुक की प्रति | • पासपोर्ट साइज की 2 फोटो | • समग्र आई की प्रति | • घरेलु विद्युत कनेक्शन भुगतान बिल की रसीद | • लाईन मेन का सर्वे - नक्शा 
-
-                </td>
-            </tr>
-            
-            
-            
-            <tr>
-                <th style="text-align: left; padding: 10px;">🏬 विभाग </th>
-                <td style="padding: 10px;"><a href="%20www.mpcz.in/" target="_blank"> Madhya Pradesh Madhya kshetra Viddhut Vitran Co Ltd</a></td>
-            </tr>
-            
-        </tbody>
-    </table>
-
-
-
-</div>
-</div>
-
-
-  <style>
-   .button-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .btn {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      color: #fff;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-    }
-
-    .btn-like { background-color: #f0ad4e; }
-    .btn-share { background-color: #5bc0de; }
-    .btn-whatsapp { background-color: #25D366; }
-    .btn-telegram { background-color: #0088cc; }
-    .btn-copy { background-color: #6f42c1; }
-
-    .btn:active {
-      transform: scale(0.95);
-    }
-  </style>
-</head>
-<body>
-
-  <div class="button-group">
-    <a href="https://yojnaportal.com/whatsapp" target="_blank" class="btn btn-whatsapp">
-      Join WhatsApp
-    </a>
-
-    <a href="https://yojnaportal.com/telegram" target="_blank" class="btn btn-telegram">
-      Join Telegram
-    </a>
-
-    <button class="btn btn-copy" onclick="copyLink()">Copy Link</button>
-
-      <a class="btn btn-share" href="https://wa.me/?text=✅5%20Rupaye%20Mein%20Sthai%20Bijli%20Pump%20Connection%20Saral%20Yojana%0A✅Check%20Details%20👇%0A🔗http%3a%2f%2flocalhost%3a1313%2fmp%2f5-rupaye-bijli-pump-yojana-mp%2f" target="_blank">
-        Share on WhatsApp
-      </a>
-      
-  </div>
-
-  <script>
-    function copyLink() {
-      const link = "http:\/\/localhost:1313\/mp\/5-rupaye-bijli-pump-yojana-mp\/";
-      navigator.clipboard.writeText(link).then(() => {
-        alert("✅ Link copied to clipboard!");
-      }).catch(err => {
-        alert("❌ Failed to copy: " + err);
-      });
-    }
-  </script>
-</body>
-
-
-
-
-
-   </div> 
-    </div>
-    <div class="ad-container">
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-    crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4855323063398382"
-         data-ad-slot="5787799671"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-     <nav class="bottom-nav">
-        <ul>
-            <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
-            <li><a href="#"><span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>Search</a></li>
-            <li><a href="/notification/"><i class="fas fa-bell"></i>Update</a></li>
-            <li><a href="/menu/"><i class="fas fa-bars"></i>Menu</a></li>
-        </ul>
-    </nav>
-
-
-<footer id="footer">
-        
-        <div class="footer-content">
-            <div style="color:#f4b400;">|| Follow us on Social Media ||</div>
-            <div class="social-media">
-                <a href="/whatsapp/" target="_blank" aria-label="WhatsApp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#25D366" viewBox="0 0 24 24"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.47 3.44 1.36 4.93L2 22l5.21-1.36C8.7 21.53 10.37 22 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18c-1.43 0-2.83-.39-4.04-1.13l-.29-.18-3.09.81.83-3-.2-.31A8.05 8.05 0 0 1 4.04 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.41-5.42c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.17-.71-.63-1.2-1.4-1.34-1.64-.14-.24-.01-.37.1-.48.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.86.84-.86 2.04s.88 2.36 1.02 2.52c.14.16 1.73 2.64 4.2 3.7.59.26 1.05.42 1.41.54.59.19 1.12.16 1.54.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
-
-                </a>
-                <a href="/telegram/" target="_blank" aria-label="Telegram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0088cc" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 2.642 1.017 5.052 2.685 6.858L4 22l3.241-.854A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.94 7.35-1.355 6.385c-.1.447-.36.555-.73.345l-2.025-1.493-1.018.98c-.113.113-.208.208-.425.208l.153-2.172 3.957-3.578c.172-.153-.038-.24-.267-.087l-4.892 3.084-2.107-.658c-.456-.142-.465-.456.095-.675l8.222-3.176c.382-.142.718.087.597.67z"/></svg>
-
-                </a>
-                <a href="/youtube/" target="_blank" aria-label="Youtube">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF0000" viewBox="0 0 24 24"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.9-1.6-.9-2-1C16.2 4.8 12 4.8 12 4.8h0s-4.2 0-7 .2c-.4.1-1.2.1-2 1-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.9 1.9.8 2.4.9C8 19.2 12 19.2 12 19.2s4.2 0 7-.2c.4-.1 1.2-.1 2-1 .6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6c0-1.6-.2-3.2-.2-3.2zM10 14.7V9.3l5.2 2.7L10 14.7z"/></svg>
-
-                </a>
-                <a href="/instagram/" target="_blank" aria-label="WhatsApp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#E1306C" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.3.1 2 .3 2.5.5.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.5.4 1.2.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.3-.3 2-.5 2.5-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.5.2-1.2.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.3-.1-2-.3-2.5-.5-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.5-.4-1.2-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.3.3-2 .5-2.5.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.5-.2 1.2-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.2 0 6.9.1 5.5.2 4.6.4 3.9.7 3 .9 2.2 1.3 1.5 2 .8 2.7.4 3.5.1 4.4c-.3.7-.5 1.6-.6 3C0 8.2 0 8.7 0 12s0 3.8.1 5.1c.1 1.4.3 2.3.6 3 .3.9.7 1.7 1.4 2.4.7.7 1.5 1.1 2.4 1.4.7.3 1.6.5 3 .6 1.3.1 1.8.1 5.1.1s3.8 0 5.1-.1c1.4-.1 2.3-.3 3-.6.9-.3 1.7-.7 2.4-1.4.7-.7 1.1-1.5 1.4-2.4.3-.7.5-1.6.6-3 .1-1.3.1-1.8.1-5.1s0-3.8-.1-5.1c-.1-1.4-.3-2.3-.6-3-.3-.9-.7-1.7-1.4-2.4C21.8.8 21 .4 20.1.1c-.7-.3-1.6-.5-3-.6C15.8 0 15.3 0 12 0z"/><path d="M12 5.8A6.2 6.2 0 1 0 12 18.2 6.2 6.2 0 1 0 12 5.8zm0 10.2A4 4 0 1 1 12 8a4 4 0 0 1 0 8z"/><circle cx="18.4" cy="5.6" r="1.44"/></svg>
-
-                </a>
-                <a href="/facebook/" target="_blank" aria-label="facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1877F2" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24h-1.918c-1.504 0-1.795.716-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.729 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z"/></svg>
-
-                </a>
-                <a href="/x/" target="_blank" aria-label="WhatsApp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
-                        <path d="M4.25 3h4.71l3.28 4.56L16.89 3h2.86l-5.95 6.5L20 21h-4.73l-3.75-5.24L7 21H4.14l6.29-7L4.25 3zm3.5 1.5 4.08 5.69L8.33 13.5H10l3.87 5.42h1.71l-4.27-6 6.3-7.02H16l-3.47 3.86L7.75 4.5h-.01z"/>
-                      </svg>
-                      
-                </a>
-               
-            </div>
-            <div id="google_translate_element"></div>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li> |
-                    <li><a href="/about/">About Us</a></li> |
-                    <li><a href="/contact/">Contact Us</a></li> |
-                    <li><a href="/privacy-policy/">Privacy Policy</a></li> |
-                    <li><a href="/disclaimer/">Disclaimer</a></li>
-                </ul>
-            </nav>
-            
-
-           <div id="copyright" style="color:#f0edeb">   <p>&copy; 2025 YOJNA PORTAL. All Rights Reserved.</p></div>
-         
-        </div>
-       
-    </footer>
-
-
-
-  
-    
-    <script src="http://localhost:1313/js/main/default.min.79f575209485ca486e47c4263ee59e73740712a91de598c4eabf89b87a4a6b6b.js" integrity="sha256-efV1IJSFykhuR8QmPuWec3QHEqkd5ZjE6r&#43;JuHpKa2s=" defer></script>
-  
-
-
-
-
-<script src="http://localhost:1313/js/main/header.min.38bd75fa5067387be5b4d16f625b0bc942b6079bc2f49a8173e5505c0b96c111.js" integrity="sha256-OL11&#43;lBnOHvltNFvYlsLyUK2B5vC9JqBc&#43;VQXAuWwRE=" defer></script>
-
-
-<script src="http://localhost:1313/js/main/navbar.min.7d6c1b268d0262d9095c7f8af44f48c08ef800d9bf16192fa94347036980d893.js" integrity="sha256-fWwbJo0CYtkJXH&#43;K9E9IwI74ANm/FhkvqUNHA2mA2JM=" defer></script>
-
-<script src="http://localhost:1313/js/main/bottom.min.029d4aa13a4cfbab2555aaf3ed22b0459faf0085d71740db726ef26ab5d506b3.js" integrity="sha256-Ap1KoTpM&#43;6slVarz7SKwRZ&#43;vAIXXF0Dbcm7yarXVBrM=" defer></script>
-
-</html>
-
-</body>
