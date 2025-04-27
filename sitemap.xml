@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.yojnaportal.com/admission/mp-rte-admission-2025/</loc>
+    <lastmod>2025-04-26T08:32:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/</loc>
+    <lastmod>2025-04-26T08:32:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.yojnaportal.com/student/</loc>
     <lastmod>2025-04-25T08:47:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/student/up-board-10th-12th-Result/</loc>
-    <lastmod>2025-04-25T08:47:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/</loc>
     <lastmod>2025-04-25T08:47:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -147,7 +152,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/scheme/mp/saksham-bhaiya-bahna-yojna/</loc>
+    <loc>https://www.yojnaportal.com/scheme/saksham-bhaiya-bahna-yojna/</loc>
     <lastmod>2025-04-06T10:13:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1181,10 +1186,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/download/pdf/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/tstpst/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

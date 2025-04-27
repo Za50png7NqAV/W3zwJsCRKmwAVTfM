@@ -1,239 +1,251 @@
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
 
 
   
-    <link rel="stylesheet" href="/css/main/yp-main.min.b8e3cd92cb096a9fb1200bc05b60413d83e2907e7b0a88cc14f3f47a3ff46c23.css" integrity="sha256-uOPNkssJap&#43;xIAvAW2BBPYPikH57CojMFPP0ej/0bCM=">
+    <link rel="stylesheet" href="/css/main/yp-main.min.ac9c051fcec3313e74a7ec6ad8e38dda2316967fd50b10e1dfafb1a349c420d1.css" integrity="sha256-rJwFH87DMT50p&#43;xq2OON2iMWln/VCxDh36&#43;xo0nEINE=">
   
 
 <style>
+   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+  }
+  
+   
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-1 {
+    display: flex;
+    flex: 1;
+  }
+  
+   
+  header {
+    background-color: #fff;  
+    color: white;
+    padding: 1rem;
+    font-size: 1.25rem;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo a {text-decoration: none;}
+   
+  #openSidebar {
+    font-size: 1.5rem;  
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+   
+  #sidebarOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);  
+    z-index: 30;
+    display: none;  
+  }
+  
+   
+  #leftSidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 16rem;  
+    background-color: #f3f4f6;  
+    padding: 0rem;
+    z-index: 40;
+    transform: translateX(-100%);  
+    transition: transform 0.3s ease;  
+  }
+  
+   
+  #leftSidebar .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  #leftSidebar .font-bold {
+    font-weight: bold;
+    font-size: 1.125rem;  
+  }
+  
+   
+  #closeSidebar {
+    font-size: 1.5rem;  
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+   
+  #leftSidebar a {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;  
+    text-decoration: none;
+    color: #1f2937;  
+  }
+  
+  #leftSidebar a:hover {
+    color: #2563eb;  
+  }
+  
+   
+  main {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  main h2 {
+    font-size: 1.125rem;  
+    font-weight: 600;  
+    margin-bottom: 0.5rem;  
+  }
+  
+   
+  aside {
+    background-color: #f9fafb;  
+    padding: 1rem;
+  }
+  
+  aside h3 {
+    font-weight: bold;  
+    margin-bottom: 0.5rem;  
+  }
+  
+   
+  footer {
+    background-color: #242323;  
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+   
+  @media (min-width: 768px) {  
      
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    html, body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      line-height: 1.5;
-    }
-    
-     
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .flex-1 {
-      display: flex;
-      flex: 1;
-    }
-    
-     
-    header {
-      background-color: #2563eb;  
-      color: white;
-      padding: 1rem;
-      font-size: 1.25rem;  
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-     
-    #openSidebar {
-      font-size: 1.5rem;  
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
-    
-     
-    #sidebarOverlay {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.4);  
-      z-index: 30;
-      display: none;  
+    #openSidebar, 
+    #sidebarOverlay,
+    #leftSidebar .flex,
+    aside:last-of-type {
+      display: none;
     }
     
      
     #leftSidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 16rem;  
-      background-color: #f3f4f6;  
-      padding: 0rem;
-      z-index: 40;
-      transform: translateX(-100%);  
-      transition: transform 0.3s ease;  
-    }
-    
-     
-    #leftSidebar .flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-    
-    #leftSidebar .font-bold {
-      font-weight: bold;
-      font-size: 1.125rem;  
-    }
-    
-     
-    #closeSidebar {
-      font-size: 1.5rem;  
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    
-     
-    #leftSidebar a {
-      display: block;
-      margin-bottom: 1rem;
-      font-size: 1.25rem;  
-      text-decoration: none;
-      color: #1f2937;  
-    }
-    
-    #leftSidebar a:hover {
-      color: #2563eb;  
-    }
-    
-     
-    main {
-      flex: 1;
-      background-color: white;
-      padding: 1rem;
-    }
-    
-    main h2 {
-      font-size: 1.125rem;  
-      font-weight: 600;  
-      margin-bottom: 0.5rem;  
-    }
-    
-     
-    aside {
-      background-color: #f9fafb;  
-      padding: 1rem;
-    }
-    
-    aside h3 {
-      font-weight: bold;  
-      margin-bottom: 0.5rem;  
-    }
-    
-     
-    footer {
-      background-color: #2563eb;  
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    
-     
-    @media (min-width: 768px) {  
-       
-      #openSidebar, 
-      #sidebarOverlay,
-      #leftSidebar .flex,
-      aside:last-of-type {
-        display: none;
-      }
-      
-       
-      #leftSidebar {
-        position: static;
-        transform: translateX(0);
-        width: 20%;  
-        display: flex;
-        flex-direction: column;
-      }
-      
-      main {
-        width: 60%;  
-      }
-      
-       
-      aside:nth-of-type(2) {
-        display: block;
-        width: 20%;  
-      }
-      
-       
-      .flex-1 {
-        flex-direction: row;
-      }
-    }
-    
-     
-    @media (max-width: 767px) {
-       
-      aside:nth-of-type(2) {
-        display: none;
-      }
-      
-       
-      aside:last-of-type {
-        display: block;
-        
-      }
-      
-       
-      .flex-1 {
-        flex-direction: column;
-      }
-      
-       
-      .yp-main-content, 
-      .yp-main-sidebar {
-        width: 100%;
-      }
-      
-       
-      main.yp-main-content {
-        order: 1;
-      }
-      
-      aside.yp-main-sidebar {
-        order: 2;
-      }
-    }
-    
-     
-    #leftSidebar.active {
+      position: static;
       transform: translateX(0);
-      width: 300px;
+      width: 20%;  
+      display: flex;
+      flex-direction: column;
     }
     
-    #sidebarOverlay.active {
+    main {
+      width: 60%;  
+    }
+    
+     
+    aside:nth-of-type(2) {
+      display: block;
+      width: 20%;  
+    }
+    
+     
+    .flex-1 {
+      flex-direction: row;
+    }
+  }
+  
+   
+  @media (max-width: 767px) {
+     
+    aside:nth-of-type(2) {
+      display: none;
+    }
+    
+     
+    aside:last-of-type {
       display: block;
       
     }
-    </style>
-    </head>
-    <body>
+    
+     
+    .flex-1 {
+      flex-direction: column;
+    }
+    
+     
+    .yp-main-content, 
+    .yp-main-sidebar {
+      width: 100%;
+    }
+    
+     
+    main.yp-main-content {
+      order: 1;
+    }
+    
+    aside.yp-main-sidebar {
+      order: 2;
+    }
+  }
+  
+   
+  #leftSidebar.active {
+    transform: translateX(0);
+    width: 300px;
+  }
+  
+  #sidebarOverlay.active {
+    display: block;
+    
+  }
+  </style>
+  </head>
+  <body>
+    
+    <header>
+      <div class="logo">
+        <a href="/"> <source srcset="/logo/logo.webp" type="image/webp">
+         <div style="display: flex; align-items: center; gap: 10px;">
+           <img  src="/logo/logo-100x100.png" alt="YOJNA PORTAL" style="width: 80px; height: auto;" loading="lazy" />
+           <div>
+               <div style="font-size: 32px; font-weight: bold; background: linear-gradient(to right, #d32f2f, #ff9800); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                YOJNA PORTAL
+               </div>
+               <div style="font-size: 16px; color: #d32f2f; font-weight: bold;">
+                  www.YojnaPortal.com
+               </div>
+           </div>
+       </div>
       
-      <header>
-        Yojna Portal
-        
-        <button id="openSidebar">☰</button>
-      </header>
-      <head>
+      <button id="openSidebar">☰➖</button>
+    </header>
+    <head>
     <style> </style>
 </head>
 <body>
@@ -272,24 +284,24 @@
 </body>
 
 
+    
+    <div id="sidebarOverlay"></div>
+  
+    <div class="flex-1">
       
-      <div id="sidebarOverlay"></div>
-    
-      <div class="flex-1">
+      <aside id="leftSidebar">
         
-        <aside id="leftSidebar">
-          
-          <div class="flex">
-            <span class="font-bold">Menu</span>
-            <button id="closeSidebar">✕</button>
-          </div>
-          <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
-        </aside>
-    
-        
-        <main class="yp-main-content">
-         
-        
+        <div class="flex">
+          <span class="font-bold">Menu</span>
+          <button id="closeSidebar">✕</button>
+        </div>
+        <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
+      </aside>
+  
+      
+      <main class="yp-main-content">
+       
+      
 <head>
 <link rel="stylesheet" href="\css\list-posts.css">
 </head>
@@ -437,8 +449,8 @@
 
 
 
-        <iframe  src="/quick/" frameborder="0" marginheight="0" marginwidth="0" height="50px" width="100%" >Loading…</iframe>
-        <!DOCTYPE html>
+      <iframe  src="/quick/" frameborder="0" marginheight="0" marginwidth="0" height="50px" width="100%" >Loading…</iframe>
+      <!DOCTYPE html>
 <html>
 <head>
 
@@ -700,6 +712,19 @@
     
     <li>
     
+            <a href="/admission/mp-rte-admission-2025/" target="_blank">
+                
+                    MP RTE Admission (Nursery to 1st) 2025-26 Apply Online Form
+                
+            </a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+        
+    </li>
+<hr>
+  
+    <li>
+    
             <a href="/student/up-board-10th-12th-Result/" target="_blank">
                 
                     UP Board 10th /12th Results
@@ -945,19 +970,6 @@
     </li>
 <hr>
   
-    <li>
-    
-            <a href="/mp/ladli-bahna-yojana-update-2025/" target="_blank">
-                
-                    Ladli Bahna Yojna MP Latest Update
-                
-            </a>
-            
-            
-        
-    </li>
-<hr>
-  
  
     </div>
     <div class="card-footer">
@@ -969,6 +981,15 @@
     <div class="card-header">Education</div>
     <div class="card-content">
       
+     
+    
+        <li>
+            <a href="/admission/mp-rte-admission-2025/" target="_blank">MP RTE (Right to Education) Admssion 2025-26 Apply Online</a>
+            
+        </li>
+        <hr>
+    
+
      
     
         <li>
@@ -1005,7 +1026,7 @@
      
     
         <li>
-            <a href="/scheme/mp/saksham-bhaiya-bahna-yojna/" target="_blank">Saksham Bhaiya Bahna Yojna</a>
+            <a href="/scheme/saksham-bhaiya-bahna-yojna/" target="_blank">Saksham Bhaiya Bahna Yojna</a>
             
         </li>
         <hr>
@@ -1078,15 +1099,6 @@
     
 
      
-    
-
-     
-    
-        <li>
-            <a href="/profile/mp-ifms-profile/" target="_blank">IFMS Profile Update, Karmchari Profile ekyc</a>
-            
-        </li>
-        <hr>
     
 
 
@@ -1334,6 +1346,11 @@
 
   
   <li>
+    <a href="/admission/mp-rte-admission-2025/" target="_blank">MP RTE (Right to Education) Admssion 2025-26 Apply Online</a>
+</li>
+<hr>
+  
+  <li>
     <a href="/rajasthan-police/constable-bharti-2025/" target="_blank">Rajasthan Police Constable 2025 Apply Form</a>
 </li>
 <hr>
@@ -1508,93 +1525,11 @@
 </body>
 </html>
 
-        </main>
-    
-        
-        <aside class="yp-main-sidebar">
-            
-<style>
-     
-.main-sidebar {
-    width: 100%;
-    background-color: #f5f5f5;
-    border-right: 1px solid #ddd;
-    padding: 15px;
-    overflow-y: auto;
-  }
+      </main>
   
-   
-  .sidebar-section {
-    margin-bottom: 15px;
-  }
-  
-   
-  .sidebar-list {
-    width: 100%;
-    border: none;
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-   
-  .sidebar-list .summary {
-    padding: 10px 15px;
-    cursor: pointer;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  }
-  
-   
-  .summary::after {
-    content: "▼";
-    font-size: 12px;
-    transition: transform 0.3s ease;
-  }
-  
-   
-  details[open] .summary::after {
-    transform: rotate(180deg);
-  }
-  
-   
-  .sidebar-list ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar-list li {
-    padding: 8px 15px 8px 20px;
-    border-top: 1px solid #eee;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .sidebar-list li:hover {
-    background-color: #f7f7f7;
-    color: #333;
-  }
-  
-   
-  .sidebar-list ul {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-  
-  details[open] .sidebar-list ul {
-    max-height: 500px;
-  }
-  .sidebar-list a{ text-decoration: none;
-  }
-  
-  a:hover { text-color:red; }
-</style>
-
+      
+      <aside class="yp-main-sidebar">
+          
 <div class="main-sidebar">
     <div class="sidebar-section">
 
@@ -1603,20 +1538,13 @@
         
         
         
-          <li>
-            <a href="/scheme/pm-sbm-bls-toilet/" target="_blank">PM SBM Shouchalaya/Toilet Apply Online</a>
-            
-             • <a href="/pdf-forms/">PDF</a>
-          </li>
-       
-        
     
         
         
           <li>
-            <a href="/scheme/pmmvy-pdf-form-apply/" target="_blank">PMMVY PM Matru Vandana Yojana Apply Online &amp; Download pdf Form and Status</a>
+            <a href="/imp/epfoindia-online-info/" >ePFO India Claim / Withdrawal ePF, Do eKYC, Find UAN etc.</a>
             
-             • <a href="/pdf-forms/">PDF</a>
+            
           </li>
        
         
@@ -1626,22 +1554,41 @@
     
         
         
-    
-        
-        
           <li>
-            <a href="/ads/whatsapp-promotion/" target="_blank">Promotion or Ads       on Whatsapp Channel Terms</a>
+            <a href="/how-to/check-link-mobile-no-with-aadhar/" >How to Check Linked Mobile Number With Aadhar</a>
             
             
           </li>
        
+        
+    
+        
         
     
       <hr>
-      <p > <a href="/latest-update/"> <div style="text-align:right;"> More >> </div></a></p>
+      <p > <a href="/latest-update/" target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
     </details>
     
     </div>
+
+    <div class="sidebar-section">
+    <div class="ad-container">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+    crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4855323063398382"
+         data-ad-slot="5787799671"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+
+</div>
 <div class="sidebar-section">
 
     <details open class="sidebar-list" >
@@ -1699,7 +1646,7 @@
     
 
 <hr>
-      <p > <a href="/latest-schemes/"> <div style="text-align:right;"> More >> </div></a></p>
+      <p > <a href="/latest-schemes/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
   
 </details>
 
@@ -1721,7 +1668,7 @@
      
     
         <li>
-            <a href="/bihar/field-assistant-vacancy-2025/" target="_blank">BSSC Field Assistant 2025 Apply Form</a>
+            <a href="/bihar/field-assistant-vacancy-2025/" >BSSC Field Assistant 2025 Apply Form</a>
             
             
         </li>
@@ -1732,21 +1679,35 @@
     
 
 <hr>
-<p > <a href="/latest-jobs/"> <div style="text-align:right;"> More >> </div></a></p>
+<p > <a href="/latest-jobs/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
 </details>
 
 </div>
+<div class="ad-container">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+    crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4855323063398382"
+         data-ad-slot="5787799671"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 
 </div>
 
-        </aside>
-      </div>
+      </aside>
+    </div>
+  
+  
+  
     
-    
-    
-      
-      <footer>
-         <nav class="bottom-nav">
+    <footer>
+       <nav class="bottom-nav">
         <ul>
             <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
             <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
@@ -1821,31 +1782,34 @@
 <script src="https://www.yojnaportal.com/js/main/navbar.min.7d6c1b268d0262d9095c7f8af44f48c08ef800d9bf16192fa94347036980d893.js" integrity="sha256-fWwbJo0CYtkJXH&#43;K9E9IwI74ANm/FhkvqUNHA2mA2JM=" defer></script>
 
 <script src="https://www.yojnaportal.com/js/main/bottom.min.029d4aa13a4cfbab2555aaf3ed22b0459faf0085d71740db726ef26ab5d506b3.js" integrity="sha256-Ap1KoTpM&#43;6slVarz7SKwRZ&#43;vAIXXF0Dbcm7yarXVBrM=" defer></script>
+   
+   
+<script src="https://www.yojnaportal.com/js/main/left-sidebar.min.ef8ec01b151791f08b9d930abdb0f112a0fd297500eedefdcffe3e480be5339d.js" integrity="sha256-747AGxUXkfCLnZMKvbDxEqD9KXUA7t79z/4&#43;SAvlM50=" defer></script>
 
 </html>
 
-      </footer>
+    </footer>
+  
     
-      
-      <script>
-        const openBtn = document.getElementById('openSidebar');
-        const closeBtn = document.getElementById('closeSidebar');
-        const sidebar = document.getElementById('leftSidebar');
-        const overlay = document.getElementById('sidebarOverlay');
-    
-        openBtn.addEventListener('click', () => {
-          sidebar.classList.add('active');
-          overlay.classList.add('active');
-        });
-    
-        closeBtn.addEventListener('click', () => {
-          sidebar.classList.remove('active');
-          overlay.classList.remove('active');
-        });
-    
-        overlay.addEventListener('click', () => {
-          sidebar.classList.remove('active');
-          overlay.classList.remove('active');
-        });
-      </script>
-    </body>
+    <script>
+      const openBtn = document.getElementById('openSidebar');
+      const closeBtn = document.getElementById('closeSidebar');
+      const sidebar = document.getElementById('leftSidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+  
+      openBtn.addEventListener('click', () => {
+        sidebar.classList.add('active');
+        overlay.classList.add('active');
+      });
+  
+      closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+  
+      overlay.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+    </script>
+  </body>
