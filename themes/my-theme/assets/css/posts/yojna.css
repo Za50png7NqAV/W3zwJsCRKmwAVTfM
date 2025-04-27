@@ -10,15 +10,7 @@
   }
   
   /* ========== Base Styles ========== */
-  body {
-    font-family: var(--font-family);
-    line-height: 1.7;
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    background-color: var(--light-bg);
-    scroll-behavior: smooth;
-  }
+
   
   a {
     color: var(--accent-color);
@@ -30,13 +22,7 @@
     color: var(--primary-color);
   }
   
-  /* ========== Container ========== */
-  .yp-container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-  
+
   /* ========== Headings ========== */
   h2 {
     color: var(--primary-color);
@@ -176,9 +162,7 @@
   
   /* ========== Responsive Design ========== */
   @media (max-width: 768px) {
-    .yp-container {
-      padding: 0 15px;
-    }
+ 
   
     .post-card,
     .faqs {

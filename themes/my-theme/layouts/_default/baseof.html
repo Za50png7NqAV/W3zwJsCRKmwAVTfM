@@ -1,32 +1,34 @@
 
-  <body>
-     <!-- head-->
-    {{ partial "baseof-part/head" . }}
-    
-    <!-- left Sidebar Overlay (mobile only) -->
-    {{ partial "main-part/left-sidebar" . }}
-  
-      <!-- Main Content -->
-      <main class="yp-main-content">
-        {{ block "main" . }} {{ end }}
-      </main>
-  
-      <!-- Right Sidebar (desktop only) -->
-      <aside class="yp-main-sidebar">
-          {{ partial "baseof-part/sidebar" . }}
-      </aside>
-    </div>
-  
-  
-  
-    <!-- Footer -->
-    <footer>
-      {{ partial "baseof-part/footer" . }}
-    </footer>
-  
-    <!-- Sidebar Toggle JS -->
-    {{ partial "script/left-sidebar" . }}
-    
-  </body>
- 
 
+  
+   <!-- head-->
+   {{ partial "baseof-part/main-head" . }}
+  
+   
+    <!-- left Sidebar Overlay (mobile only) -->
+  <div class="main-container">
+  
+    <aside class="left-sidebar" id="leftSidebar">
+     {{ partial "main-part/left-sidebar" . }}
+    </aside>
+   <!-- Right Sidebar (desktop only) -->
+    <main class="main-content">
+   
+    {{ block "main" . }} {{ end }}
+    </main>
+   <!-- Right Sidebar (desktop only) -->
+    <aside class="right-sidebar">
+      {{ partial "baseof-part/sidebar" . }}
+    </aside>
+  
+  </div>
+      <!-- Footer -->
+  <footer class="footer">
+    {{ partial "baseof-part/footer" . }}
+  </footer>
+  
+  
+  {{ partial "script/left-top-header" . }}
+  
+  
+  

@@ -1,26 +1,19 @@
 
-<head>
-<link rel="stylesheet" href="\css\list-posts.css">
-</head>
 <div class="post-grid">
-    {{ range first 12 (where  .Site.RegularPages ".Params.recommend" "yes") }}
-    <a href="{{ .Permalink }}" class="post-link" target="_blank">
-    <div 
-        class="post" 
-        style="background-color: {{ with .Params.bgcolor }}{{ . }}{{ else }}gray{{ end }};" 
-        data-random-bg
-    >
-       
-    {{ .Params.RecommendName }}
-        
-    </div></a>
+    {{ $colors := slice "#FFD700" "#FF6347" "#7FFFD4" "#DDA0DD" "#90EE90" "#FFA07A" "#87CEFA" "#F0E68C" "#98FB98" "#FFC0CB" "#B0E0E6" "#D8BFD8" "#FFDAB9" "#AFEEEE" "#FFE4B5" "#ADD8E6" }}
+    {{ range $index, $element := first 12 (where .Site.RegularPages ".Params.recommend" "yes") }}
+      {{ $colorIndex := mod $index (len $colors) }}
+      {{ $randColor := index $colors $colorIndex }}
+      <a href="{{ $element.Permalink }}" class="post-link" target="_blank">
+        <div
+          class="post"
+          style="background-color: {{ $randColor }};"
+        >
+          {{ $element.Params.RecommendName }}
+        </div>
+      </a>
     {{ end }}
-
-
+  </div>
   
-
-
-</div>
-
-
-
+    
+    

@@ -1,0 +1,39 @@
+#footer {
+    flex-shrink: 0;
+    background-color: #242323;
+    padding: 20px 0 0;
+    bottom: 0;
+  }
+  .footer-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .social-media a {
+    color: #f7630e;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .social-media a:hover,
+  nav {
+    color: #f4b400;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  nav ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  nav ul li a:hover {
+    color: #007bff;
+  }
+  .goog-te-gadget-simple {
+    background-color: gold;
+  }

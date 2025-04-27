@@ -1,0 +1,77 @@
+.menu-container {
+    width: 100%;
+    position: relative;
+    background-color: #f3f4f6;
+    padding: 0;
+  }
+  .scroll-menu {
+    display: flex;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0 rem;
+  }
+  .scroll-menu::-webkit-scrollbar {
+    display: none;
+  }
+  .menu-item {
+    margin-right: .1rem;
+    color: #4b5563;
+    text-decoration: none;
+    border-radius: .1;
+  }
+  .menu-item:hover {
+    background-color: #e5e7eb;
+  }
+  .menu-item.active {
+    color: #2563eb;
+  }
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f4b400;
+    border: none;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+  }
+  .scroll-button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .scroll-button:hover {
+    background-color: #f3f4f6;
+  }
+  .scroll-left {
+    left: 0;
+  }
+  .scroll-right {
+    right: 0;
+  }
+  .scroll-menu {
+    background: linear-gradient(to right, #ff4e39, #ff7344);
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+  }
+  .scroll-menu a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    transition: background-color .3s, color .3s;
+  }
+  .scroll-menu a.active,
+  .scroll-menu a:hover {
+    background-color: #f4b400;
+    color: #333;
+  }

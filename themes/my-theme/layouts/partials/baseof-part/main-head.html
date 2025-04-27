@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Params.lang | default .Site.Language.Lang }}">
+<head>
+  {{ partial "imp-codes/seo-meta.html" . }}
+{{ partial "imp-codes/schema.html" . }}
+{{ partial "style/yp-base-main" . }}
+{{ partial "style/right-sidebar" . }}
+
+{{ if eq .Params.adsense true }}
+<!-- Adsense Script -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+     crossorigin="anonymous"></script>
+{{ end }}
+
+{{ with .Params.cssStyles }}
+  {{ range . }}
+    {{ $css := resources.Get . | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ end }}
+{{ end }}
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
+{{ if .Params.cssStyle }}
+<link rel="preload" as="style" href="{{ .Params.cssStyle | relURL }}" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ .Params.cssStyle | relURL }}"></noscript>
+{{ else }}
+<link rel="preload" as="style" href="{{ "css/default.css" | relURL }}" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ "css/default.css" | relURL }}"></noscript>
+{{ end }}
+<script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
+    </script> 
+</head>
+
+  <!-- Header -->
+  {{ partial "main-part/yp-header" . }}
+

@@ -1,0 +1,2 @@
+{{ $lefttopheader := resources.Get "js/main/left-top-header.js" | minify | fingerprint }}
+<script src="{{ $lefttopheader.Permalink }}" integrity="{{ $lefttopheader.Data.Integrity }}" defer></script>
