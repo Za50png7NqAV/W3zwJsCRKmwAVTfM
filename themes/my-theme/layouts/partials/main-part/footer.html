@@ -51,15 +51,15 @@
     </footer>
 
 
-{{ with .Params.jsFiles }}
-  {{ range . }}
-    {{ $js := resources.Get . | js.Build | minify | fingerprint }}
-    <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+    {{ with .Params.jsFiles }}
+    {{ range . }}
+      {{ $js := resources.Get . | minify | fingerprint }}
+      <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+    {{ end }}
+  {{ else }}
+    <!-- No custom JS files -->
   {{ end }}
-{{ else }}
-  <!-- No custom JS files -->
-{{ end }}
-
+  
 
 {{ $headerScript := resources.Get "js/main/header.js" | minify | fingerprint }}
 <script src="{{ $headerScript.Permalink }}" integrity="{{ $headerScript.Data.Integrity }}" defer></script>
@@ -69,5 +69,6 @@
 {{ $bottomScript := resources.Get "js/main/bottom.js" | minify | fingerprint }}
 <script src="{{ $bottomScript.Permalink }}" integrity="{{ $bottomScript.Data.Integrity }}" defer></script>
    <!-- Sidebar Toggle JS -->
-   {{ partial "script/left-sidebar" . }}
+
+   {{ partial "script/left-top-header" . }}
 </html>

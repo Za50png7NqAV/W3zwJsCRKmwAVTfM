@@ -1,0 +1,14 @@
+{{ range first 10 (where .Site.RegularPages ".Params.pdfForm" "yes") }}
+  <li>
+    {{ if .Params.pdfName }}
+      <a href="{{ .RelPermalink }}" target="_blank">{{ .Params.pdfName }}</a>
+    {{ else }}
+      <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+    {{ end }}
+
+    {{ if eq .Params.pdfForm "yes" }}
+      • <a href="/pdf-forms/" target="_blank">pdf</a>
+    {{ end }}
+  </li>
+  <hr>
+{{ end }}

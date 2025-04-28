@@ -1,10 +1,9 @@
 <header class="header">
-  
-    <div class="header-container">
+ <div class="header-container">
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"  loading="lazy" /> <a href="#" class="logo"> Yojna <span>Portal</span></a>
+        <img class="logo-img" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"  loading="lazy" /> <a href="/" class="logo"> Yojna <span>Portal</span></a>
       </div>
           <div class="hamburger">
               <span class="bar"></span>
@@ -14,18 +13,16 @@
           
           <ul class="nav-menu">
          
-              <li class="active"><a href="/">Home</a></li>
+              <li class="active"><a href="/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/quick/last-date/">LastDate</a></li>
               <li><a href="/imp-links/">Useful</a></li>
               <li><a href="/latest-update/">Latest</a></li>
               <li><a href="/latest-schemes/">Schemes</a></li>
               <li><a href="/latest-jobs/">Jobs</a></li>
-              <li><a href="/Menu/" class="btn-primary">Menu</a></li>
-              
+              <li><a href="/menu/" class="btn-primary">Menu</a></li>
           </ul>
       </div>
   </div>
-  
-  <span class="menu-icon" onclick="toggleSidebar()">▶</span>
+ <span class="menu-icon" onclick="toggleSidebar()">▶</span>
   </header>

@@ -1,55 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-  <link rel="stylesheet" href="{{ "css/main/homelist.css" | relURL }}">
-<style>
-
- /* Scrollbar Styles */
- ::-webkit-scrollbar {
-  width: 8px; 
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #f06508;
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #f4b400;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .grid-container {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px 2px;
-  }
-  .card-header {
-      font-size: smaller;
-  }
-}
-
-@media (max-width: 600px) {
-  .card-content {
-      font-size: 7px;
-  }
-    /* Scrollbar Styles */
-::-webkit-scrollbar {
-  width: 0; 
-}
-}
-</style>
-</head>
-<body>
 
 <div class="grid-container">
   <!-- First Row -->
+
   <div class="card">
     <div class="card-header">Schemes</div>
     <div class="card-content">
@@ -61,12 +13,12 @@
   </div>
 
   <div class="card">
-    <div class="card-header">Latest Update</div>
+    <div class="card-header"> Latest Jobs </div>
     <div class="card-content">
-      {{ partial "homelist/latest-update.html" . }}
+      {{ partial "homelist/latest-jobs.html" . }}
     </div>
     <div class="card-footer">
-      <a href="/latest-update/" class="more-link" target="_blank">more</a>
+      <a href="/latest-jobs/" class="more-link" target="_blank">more</a>
     </div>
   </div>
 
@@ -100,27 +52,28 @@
       <a href="/admitcard/" class="more-link" target="_blank">more</a>
     </div>
   </div>
-
+ 
   <div class="card">
-    <div class="card-header">Latest Job</div>
+    <div class="card-header"> Upcoming </div>
     <div class="card-content">
-      {{ partial "homelist/latest-jobs.html" . }}
+      {{ partial "homelist/upcoming.html" . }}
     </div>
     <div class="card-footer">
-      <a href="/latest-jobs/" class="more-link" target="_blank">more</a>
+      <a href="/upcoming/" class="more-link" target="_blank">more</a>
     </div>
   </div>
 <!-- 3rd Row -->
+
+
 <div class="card">
-  <div class="card-header"> Upcoming </div>
+  <div class="card-header">Latest Forms</div>
   <div class="card-content">
-    {{ partial "homelist/upcoming.html" . }}
+    {{ partial "homelist/pdf-forms" . }}
   </div>
   <div class="card-footer">
-    <a href="/upcoming/" class="more-link" target="_blank">more</a>
+    <a href="/pdf-forms/" class="more-link" target="_blank">more</a>
   </div>
 </div>
-
 <div class="card">
   <div class="card-header"> Certificates </div>
   <div class="card-content">
@@ -140,10 +93,5 @@
     <a href="/imp-links/" class="more-link" target="_blank">more</a>
   </div>
 </div>
-
 <!-- third Row -->
-
 </div>
-
-</body>
-</html>

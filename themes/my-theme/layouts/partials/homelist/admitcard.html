@@ -1,5 +1,5 @@
 
-{{ range first 20 (where  .Site.RegularPages ".Params.admitcard" "yes") }}
+{{ range first 10 (where  .Site.RegularPages ".Params.admitcard" "yes") }}
 <li>
   <a href="{{ .Permalink }}" target="_blank">{{ .Params.admitcardName }}</a>
 </li><hr>

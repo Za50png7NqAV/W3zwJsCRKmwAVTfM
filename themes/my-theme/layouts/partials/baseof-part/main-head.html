@@ -1,16 +1,14 @@
 
   <!-- Header -->
+ 
   {{ partial "main-part/yp-header" . }}
 
-
-  <!DOCTYPE html>
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
 <head>
   {{ partial "imp-codes/seo-meta.html" . }}
 {{ partial "imp-codes/schema.html" . }}
 {{ partial "style/yp-base-main" . }}
 {{ partial "style/right-sidebar" . }}
-
 {{ if eq .Params.adsense true }}
 <!-- Adsense Script -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
@@ -25,9 +23,7 @@
     <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ end }}
 {{ end }}
-{{ partial "style/stylesheet" . }}
-{{ partial "style/yp-main-base" . }}
-{{ partial "style/right-sidebar" . }}
+
 
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
 {{ if .Params.cssStyle }}
@@ -46,15 +42,6 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
-     
-    <style> 
-        body {
-        background-color: #eee;
-        }
-       .logo a {text-decoration: none;}
-    
-      </style>
-     
 </head>
 
   <!-- Header -->

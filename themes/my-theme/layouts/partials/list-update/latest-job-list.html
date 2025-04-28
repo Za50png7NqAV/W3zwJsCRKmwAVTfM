@@ -1,48 +1,46 @@
 
-    <head>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" href=" \css\list-table.css">
-      <title>Admit Card</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Latest Admitcard, New Admit Card , Latest Exams, New Admitcard, प्रवेश पत्र, परीक्षा तिथि, .">
-    </head>
-    
-    
-    
-    
-    
-    <table class="post-table">
-      <thead>
-          <tr>
-              
-              <th>Begin Date</th>
-              <th>Latest Jobs</th>
-          </tr>
-      </thead>
-      <tbody>
-          {{ range .Pages }}
-          <tr>
-            <td>
-              {{ if and (.Params.begindate) (ne .Params.begindate "") }}
-                {{ .Params.begindate | time.Format "02/01/2006" }}
-              {{ else }}
-              {{ .Date.Format "02/01/2006" }}
-              {{ end }}
-            </td>
-              <td> <a href="{{ .RelPermalink }}" target="_blank">
-                {{ if .Params.resultName }}
-                    {{ .Params.resultName }}
-                {{ else if .Params.admitcardName }}
-                    {{ .Params.admitcardName }}
-                {{ else }}
-                    {{ .Title }}
-                {{ end }} </a></td>
-          
- </tr>
+
+<div class="search-container">
+  <input type="text" id="searchBar" class="search-bar" onkeyup="searchTable()" placeholder="Search for forms...">
+  <button class="close-button" onclick="location.reload();">×</button>
+
+  <select id="categoryFilter" onchange="populateInputAndSearch()">
+    {{ $seen := slice }}
+    {{ range (where .Site.RegularPages ".Params.post-type" "latest-jobs") }}
+      {{ $cat := .Params.category | default "jobs" }}
+      {{ if not (in $seen $cat) }}
+        <option value="{{ $cat }}">{{ $cat }}</option>
+        {{ $seen = $seen | append $cat }}
+      {{ end }}
+    {{ end }}
+    </select>
+</div>
+
+<table class="post-table" id="formsTable">
+<thead>
+  <tr>
+      <th>Post Date</th>
+      <th> Latest Jobs </th>
+      <th>Category</th>
+     
+  </tr>
+</thead>
+<tbody>
+  {{ range  (where .Site.RegularPages ".Params.post-type" "latest-jobs") }}
+  <tr>
+      <td>{{ .Date.Format "02/01/2006" }}</td>
+      <td>
+          {{ if .Params.pdfName }}
+              <a href="{{ .RelPermalink }}" target="_blank">{{ .Params.pdfName }}</a>
+          {{ else }}
+              <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
           {{ end }}
-      </tbody>
-    </table>
-    
-    <div class="pagination">
-      {{ partial "imp-codes/paginator.html" . }}
-      </div>
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="{{ with .Params.category }}{{ . }}{{ else }} forms {{ end }}"> {{ with .Params.category }}{{ . }}{{ else }} Jobs {{ end }}  </a></td>
+  </tr>
+  {{ end }}
+</tbody>
+</table>
+
+
+

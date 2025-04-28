@@ -2,11 +2,7 @@
 
 {{ .Title }}
 
-
-    <!-- Header Partial -->
-{{ $Pages := where .Site.RegularPages ".Params.post-type" "student" }}
-    {{ $paginator := .Paginate $Pages }}
-    {{ partial "list-update/student-list.html" $paginator }}
+    {{ partial "list-update/student-list.html" . }}
 
     
     <!-- Content Section -->

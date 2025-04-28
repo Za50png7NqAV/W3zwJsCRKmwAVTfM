@@ -268,7 +268,6 @@
   
   .left-sidebar a {
     text-decoration: none;
-    color: #333;
     font-weight: bold;
   }
   
@@ -301,7 +300,8 @@
   
   .right-sidebar a {
     text-decoration: none;
-    color: #333;
+    font-weight: bold;
+  
   }
   /* footer */
   #footer {
@@ -344,41 +344,7 @@
     background-color: gold;
   }
 
-  /* --------------grid itesm------------*/
-  .post-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 posts per row */
-    gap: 2px;
-    margin: 10px auto;
-    max-width:900px;
-    min-width:300px;
-}
-
-.post {
- text-align: center;
- font-size:0.8rem;
-    padding: 5px;
-    color:#020101;
-    border-radius: 3px;
-    border: 0.1px dashed black;
-    height:40px; 
-    overflow: hidden;
-    font-weight: 700;
-}
-.post:hover { 
-  color:#f7630e;
-  border: 0.1px dashed #f7630e;
-border-bottom:2px solid #f7630e;
-
-}   
- .post-link {
-    color: black;
-    text-decoration: none;
-}
-
-.post-link:hover {
-    color: blanchedalmond;
-}
+  
 /* -------------ads style-----------*/
 .ads-div {
   margin: 10px 0;

@@ -1,11 +1,7 @@
 {{ define "main" }}
-    <!-- Header Partial -->
-    {{ $jobsPages := where .Site.RegularPages ".Params.post-type" "latest-jobs" }}
-{{ $paginator := .Paginate $jobsPages }}
-{{ partial "list-update/latest-job-list.html" $paginator }}
-
-
-    <!-- Content Section -->
+{{ .Title }}
+{{ partial "list-update/latest-job-list.html" . }}
+{{ partial "baseof-part/dynamic-link.html" . }}
     <div class="content">
         {{ .Content }}
     </div>

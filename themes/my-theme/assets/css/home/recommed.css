@@ -1,0 +1,33 @@
+/* --------------grid itesm------------*/
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 posts per row */
+    gap: 5px;
+    margin: 10px auto;
+    min-width:300px;
+}
+
+.post {
+ text-align: center;
+
+    padding: 5px;
+    color:#020101;
+    border-radius: 3px;
+    border: 0.1px solid black;
+    height:40px; 
+    overflow: hidden;
+    font-weight: 700;
+}
+.post:hover { 
+  border: 0.1px dashed #f7630e;
+border-bottom:2px solid #f7630e;
+
+}   
+ .post-link {
+    color: black;
+    text-decoration: none;
+}
+
+.post-link:hover {
+    color: blanchedalmond;
+}

@@ -1,6 +1,10 @@
-{{ range first 20 (where (where .Site.RegularPages ".Params.post-type" "latest-jobs") ".Params.lastdate" "ge" (now.Format "2006-01-02")) }}
-  <a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a>
-  {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended </a>{{ end }}
-  
-</li><hr>
+{{ range first 20 (where .Site.RegularPages ".Params.post-type" "latest-jobs") }}
+    {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
+    {{ if ge $lastdate (now.Format "2006-01-02") }}
+        <li>
+            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
+        </li>
+        <hr>
+    {{ end }}
 {{ end }}
