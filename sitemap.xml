@@ -1012,7 +1012,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/quick/exam-date/</loc>
+    <loc>https://www.yojnaportal.com/exam-date/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1042,7 +1042,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/quick/last-date/</loc>
+    <loc>https://www.yojnaportal.com/lastdate/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
