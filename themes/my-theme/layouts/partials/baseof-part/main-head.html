@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+
+  <!-- Header -->
+  {{ partial "main-part/yp-header" . }}
+
+
+  <!DOCTYPE html>
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
 <head>
   {{ partial "imp-codes/seo-meta.html" . }}
@@ -11,6 +16,8 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
      crossorigin="anonymous"></script>
 {{ end }}
+<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
 
 {{ with .Params.cssStyles }}
   {{ range . }}
@@ -18,6 +25,9 @@
     <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ end }}
 {{ end }}
+{{ partial "style/stylesheet" . }}
+{{ partial "style/yp-main-base" . }}
+{{ partial "style/right-sidebar" . }}
 
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
 {{ if .Params.cssStyle }}
@@ -35,9 +45,18 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
-    </script> 
+    </script>
+     
+    <style> 
+        body {
+        background-color: #eee;
+        }
+       .logo a {text-decoration: none;}
+    
+      </style>
+     
 </head>
 
   <!-- Header -->
-  {{ partial "main-part/yp-header" . }}
+
 

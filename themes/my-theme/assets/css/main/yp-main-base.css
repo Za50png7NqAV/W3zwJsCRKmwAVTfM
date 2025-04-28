@@ -183,7 +183,7 @@
     #leftSidebar {
       position: static;
       transform: translateX(0);
-      width: 20%; /* w-1/5 */
+     
       display: flex;
       flex-direction: column;
       overflow-y: auto;
