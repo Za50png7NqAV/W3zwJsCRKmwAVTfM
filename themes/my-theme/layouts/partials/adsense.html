@@ -1,11 +1,49 @@
-<div class="ads-div">
+<div class="ads-div" id="lazyload" data-content="adsense">
      Advertisement
 <div class="ad-container">
     <!-- yp-resposive-ads -->
-    <div class="lazy-load-ad" data-ad="true" style="min-height: 250px;">
-     <!-- Ad content will be dynamically loaded here -->
- </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+    crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4855323063398382"
+         data-ad-slot="5787799671"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
  
-     
+     <script>
+          document.addEventListener("DOMContentLoaded", function() {
+               var adContainer = document.getElementById('lazyload');
+           
+               // Check if IntersectionObserver is available
+               if ("IntersectionObserver" in window) {
+                   var observer = new IntersectionObserver(function(entries, observer) {
+                       entries.forEach(function(entry) {
+                           if (entry.isIntersecting) {
+                               // Show the ad when it's in view
+                               adContainer.style.display = 'block';
+                               // Once the ad is shown, unobserve it
+                               observer.unobserve(entry.target);
+                           }
+                       });
+                   }, { threshold: 0.5 }); // Trigger when 50% of the element is visible
+           
+                   // Start observing the ad container
+                   observer.observe(adContainer);
+               } else {
+                   // Fallback if IntersectionObserver is not supported, using scroll event
+                   window.addEventListener('scroll', function() {
+                       var rect = adContainer.getBoundingClientRect();
+                       if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                           adContainer.style.display = 'block';
+                       }
+                   });
+               }
+           });
+           
+     </script>
 </div>
