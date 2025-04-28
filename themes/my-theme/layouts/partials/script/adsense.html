@@ -1,0 +1,2 @@
+{{ $adsenseObserverAPI := resources.Get "js/adsense.js" | minify | fingerprint }}
+<script src="{{ $adsenseObserverAPI.Permalink }}" integrity="{{ $adsenseObserverAPI.Data.Integrity }}" defer></script>
