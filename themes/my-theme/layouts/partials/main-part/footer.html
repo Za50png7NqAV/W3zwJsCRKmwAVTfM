@@ -60,14 +60,6 @@
     <!-- No custom JS files -->
   {{ end }}
   
-
-{{ $headerScript := resources.Get "js/main/header.js" | minify | fingerprint }}
-<script src="{{ $headerScript.Permalink }}" integrity="{{ $headerScript.Data.Integrity }}" defer></script>
-
-{{ $navbarScript := resources.Get "js/main/navbar.js" | minify | fingerprint }}
-<script src="{{ $navbarScript.Permalink }}" integrity="{{ $navbarScript.Data.Integrity }}" defer></script>
-{{ $bottomScript := resources.Get "js/main/bottom.js" | minify | fingerprint }}
-<script src="{{ $bottomScript.Permalink }}" integrity="{{ $bottomScript.Data.Integrity }}" defer></script>
    <!-- Sidebar Toggle JS -->
 
    {{ partial "script/left-top-header" . }}

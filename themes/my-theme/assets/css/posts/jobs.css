@@ -14,15 +14,6 @@
   --border-radius: 1rem;
 }
 
-/* Global Reset */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: sans-serif;
-}
-
 /* Headings */
 h1, h2, h3 {
   margin: 0.5rem 0;

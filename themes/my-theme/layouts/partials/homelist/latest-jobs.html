@@ -1,6 +1,28 @@
-{{ range first 20 (where .Site.RegularPages ".Params.post-type" "latest-jobs") }}
-    {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
-    {{ if ge $lastdate (now.Format "2006-01-02") }}
+{{ $today := now }}
+{{ $todayFormatted := $today.Format "2006-01-02" }}
+
+{{/* Step 1: आज वाली begindate पोस्ट सबसे ऊपर */}}
+{{ range where (where .Site.RegularPages ".Params.post-type" "latest-jobs") ".Params.begindate" $todayFormatted }}
+    {{ $begindate := (.Params.begindate | time) }}
+    {{ $lastdate := (.Params.lastdate | default "9999-12-31") | time }}
+    {{ $lastdatePlus3 := $lastdate.AddDate 0 0 3 }}
+
+    {{ if and (ge $today $begindate) (le $today $lastdatePlus3) }}
+        <li>
+            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
+        </li>
+        <hr>
+    {{ end }}
+{{ end }}
+
+{{/* Step 2: बाकी की पोस्ट जिनकी begindate आज नहीं है */}}
+{{ range first 10 (where (where .Site.RegularPages ".Params.post-type" "latest-jobs") ".Params.begindate" "ne" $todayFormatted) }}
+    {{ $begindate := (.Params.begindate | time) }}
+    {{ $lastdate := (.Params.lastdate | default "9999-12-31") | time }}
+    {{ $lastdatePlus3 := $lastdate.AddDate 0 0 3 }}
+
+    {{ if and (ge $today $begindate) (le $today $lastdatePlus3) }}
         <li>
             <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
             {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
