@@ -4,13 +4,13 @@
    
    
   
+ 
   <header class="header">
-  
-    <div class="header-container">
+ <div class="header-container">
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL"  loading="lazy" /> <a href="#" class="logo"> Yojna <span>Portal</span></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL"  loading="lazy" /> <a href="/" class="logo"> Yojna <span>Portal</span></a>
       </div>
           <div class="hamburger">
               <span class="bar"></span>
@@ -20,24 +20,19 @@
           
           <ul class="nav-menu">
          
-              <li class="active"><a href="/">Home</a></li>
+              <li class="active"><a href="/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/quick/last-date/">LastDate</a></li>
               <li><a href="/imp-links/">Useful</a></li>
               <li><a href="/latest-update/">Latest</a></li>
               <li><a href="/latest-schemes/">Schemes</a></li>
               <li><a href="/latest-jobs/">Jobs</a></li>
-              <li><a href="/Menu/" class="btn-primary">Menu</a></li>
-              
+              <li><a href="/menu/" class="btn-primary">Menu</a></li>
           </ul>
       </div>
   </div>
-  
-  <span class="menu-icon" onclick="toggleSidebar()">▶</span>
   </header>
 
-
-  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -105,7 +100,7 @@
 
 
   
-    <link rel="stylesheet" href="/css/main/yp-base-main.min.5c6ca3878d36bb3ed43a03ad9efb9a7058a18bfb7f229e4ecbf91429f686db85.css" integrity="sha256-XGyjh402uz7UOgOtnvuacFihi/t/Ip5Oy/kUKfaG24U=">
+    <link rel="stylesheet" href="/css/main/yp-base-main.min.1ff9bce4324995018831491d0166df2753b0090feaf2f163f51bc124161d11f8.css" integrity="sha256-H/m85DJJlQGIMUkdAWbfJ1OwCQ/q8vFj9RvBJBYdEfg=">
   
 
 
@@ -116,34 +111,18 @@
 
 
 
-<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
-
-
-
-
 
   
-    <link rel="stylesheet" href="/css/main/yp-main.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=">
+    
+    <link rel="stylesheet" href="https://www.yojnaportal.com/css/pages/list-table.min.3ac6bcc57a8085f1505fb9b92ab9127af35321e2f890e37fb8a0a66a4c9eb580.css" integrity="sha256-Osa8xXqAhfFQX7m5KrkSevNTIeL4kON/uKCmakyetYA=">
+  
+    
+    <link rel="stylesheet" href="https://www.yojnaportal.com/css/pages/list-search.min.b4f03d1014c4fd3b718e57c335b0f5e2d656ada600aad4028a9ba9adc1831c60.css" integrity="sha256-tPA9EBTE/TtxjlfDNbD14tZWraYAqtQCipuprcGDHGA=">
   
 
 
 
-  
-    <link rel="stylesheet" href="/css/main/yp-main-base.min.d2e576202ca4f1244a48861b7abbfcb2684d278a66a80c41a8b91cf70d7ade6d.css" integrity="sha256-0uV2ICyk8SRKSIYberv8smhNJ4pmqAxBqLkc9w163m0=">
-  
 
-
-
-  
-    <link rel="stylesheet" href="/css/main/right-sidebar.min.ecc51c56554b41213807607ab983f72872cfae54dee363cb4c121bc08f9701eb.css" integrity="sha256-7MUcVlVLQSE4B2B6uYP3KHLPrlTe42PLTBIbwI&#43;XAes=">
-  
-
-
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
-
-<link rel="preload" as="style" href="/css/default.css" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/css/default.css"></noscript>
 
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
@@ -154,15 +133,6 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
-     
-    <style> 
-        body {
-        background-color: #eee;
-        }
-       .logo a {text-decoration: none;}
-    
-      </style>
-     
 </head>
 
   
@@ -176,6 +146,7 @@
   
     <aside class="left-sidebar" id="leftSidebar">
      <div id="sidebarOverlay"></div>
+<span class="menu-icon" onclick="toggleSidebar()">▶</span>
   
     <div class="flex-1">
       
@@ -185,7 +156,7 @@
           
         </div>
         <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
-        <div class="ads-div">
+        <div class="ads-div" id="lazyload" data-content="adsense">
      Advertisement
 <div class="ad-container">
     
@@ -202,7 +173,37 @@
     </script>
   </div>
  
-     
+     <script>
+          document.addEventListener("DOMContentLoaded", function() {
+               var adContainer = document.getElementById('lazyload');
+           
+               
+               if ("IntersectionObserver" in window) {
+                   var observer = new IntersectionObserver(function(entries, observer) {
+                       entries.forEach(function(entry) {
+                           if (entry.isIntersecting) {
+                               
+                               adContainer.style.display = 'block';
+                               
+                               observer.unobserve(entry.target);
+                           }
+                       });
+                   }, { threshold: 0.5 }); 
+           
+                   
+                   observer.observe(adContainer);
+               } else {
+                   
+                   window.addEventListener('scroll', function() {
+                       var rect = adContainer.getBoundingClientRect();
+                       if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                           adContainer.style.display = 'block';
+                       }
+                   });
+               }
+           });
+           
+     </script>
 </div>
       </aside>  
       
@@ -214,124 +215,420 @@
 
 Student Portal
 
-
     
 
+<div class="search-container">
+  <input type="text" id="searchBar" class="search-bar" onkeyup="searchTable()" placeholder="Search for forms...">
+  <button class="close-button" onclick="location.reload();">×</button>
+
+  <select id="categoryFilter" onchange="populateInputAndSearch()">
     
-    <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href=" \css\list-table.css">
-  <title>Student Help</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Student help, Education help, School news Update, Colege Update, Scholarship Portal, student portal, Education Portal, विद्यार्थी सहायता, छात्रवृत्ति फार्म, eDistrict, MPTAAS etc Update">
-</head>
-<h2 class="list-tittle" style="text-align:center;"> Student Help- Education Update</h2>
-<table class="post-table">
-  <thead>
-      <tr>
-        <th>Post/Update</th>
-          <th>Latest</th>
-          <th>Detail</th>
-      </tr>
-  </thead>
-  <tbody>
+    
       
-      <tr>
-        <td>26/04/2025</td>
-          <td><a href="/admission/mp-rte-admission-2025/" target="_blank">MP RTE (Right to Education) Admssion 2025-26 Apply Online</a></td>
-         
-          <td><a href="/admission/mp-rte-admission-2025/" target="_blank">Click here</a></td>
-      </tr>
       
-      <tr>
-        <td>25/04/2025</td>
-          <td><a href="/student/up-board-10th-12th-Result/" target="_blank">UP Board Result 2025 – Check 10th &amp; 12th Result</a></td>
-         
-          <td><a href="/student/up-board-10th-12th-Result/" target="_blank">Click here</a></td>
-      </tr>
+        <option value="Admission">Admission</option>
+        
       
-      <tr>
-        <td>24/04/2025</td>
-          <td><a href="/student/2025/nvs-class-6th/" target="_blank">Navoday JNV Selection Test for Class VI Marks 2025 (Summer Bound)</a></td>
-         
-          <td><a href="/student/2025/nvs-class-6th/" target="_blank">Click here</a></td>
-      </tr>
+    
       
-      <tr>
-        <td>23/04/2025</td>
-          <td><a href="/nta/nta-neet-ug-2025/" target="_blank">NTA NEET UG Exam 2025 - Check examcity</a></td>
-         
-          <td><a href="/nta/nta-neet-ug-2025/" target="_blank">Click here</a></td>
-      </tr>
       
-      <tr>
-        <td>22/04/2025</td>
-          <td><a href="/admission/nta-ugc-net-june-2025/" target="_blank">NTA UGC NET June 2025 Online Form</a></td>
-         
-          <td><a href="/admission/nta-ugc-net-june-2025/" target="_blank">Click here</a></td>
-      </tr>
+        <option value="Board Results">Board Results</option>
+        
       
-      <tr>
-        <td>18/04/2025</td>
-          <td><a href="/admission/neet-pg-2025/" target="_blank">NEET PG 2025 -Apply Online Form</a></td>
-         
-          <td><a href="/admission/neet-pg-2025/" target="_blank">Click here</a></td>
-      </tr>
+    
       
-      <tr>
-        <td>06/04/2025</td>
-          <td><a href="/scheme/saksham-bhaiya-bahna-yojna/" target="_blank">Saksham Bhaiya Bahna Yojna</a></td>
-         
-          <td><a href="/scheme/saksham-bhaiya-bahna-yojna/" target="_blank">Click here</a></td>
-      </tr>
       
-      <tr>
-        <td>05/04/2025</td>
-          <td><a href="/student/azim-premji-scholarship/" target="_blank">Azim Premji Scholarship 2024-25 Update Documents</a></td>
-         
-          <td><a href="/student/azim-premji-scholarship/" target="_blank">Click here</a></td>
-      </tr>
+        <option value="Addmission">Addmission</option>
+        
       
-      <tr>
-        <td>02/04/2025</td>
-          <td><a href="/admission/2025/up-gnm-upget/" target="_blank">UP GNM Entrance Test UPGET 2025 Online Form</a></td>
-         
-          <td><a href="/admission/2025/up-gnm-upget/" target="_blank">Click here</a></td>
-      </tr>
+    
       
-      <tr>
-        <td>30/03/2025</td>
-          <td><a href="/pdf/student-school-college-pdf-form/" target="_blank">School / College (विद्यार्थी संबंधित फार्म) PDF Forms Download</a></td>
-         
-          <td><a href="/pdf/student-school-college-pdf-form/" target="_blank">Click here</a></td>
-      </tr>
       
-  </tbody>
+        <option value="NTA">NTA</option>
+        
+      
+    
+      
+      
+        <option value="Eligibility Test">Eligibility Test</option>
+        
+      
+    
+      
+      
+    
+      
+      
+        <option value="MPSOS">MPSOS</option>
+        
+      
+    
+      
+      
+        <option value="Scholarship">Scholarship</option>
+        
+      
+    
+      
+      
+        <option value="Education">Education</option>
+        
+      
+    
+      
+      
+        <option value="Student">Student</option>
+        
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+        <option value="MPSARAS">MPSARAS</option>
+        
+      
+    
+      
+      
+    
+      
+      
+        <option value="MP Board">MP Board</option>
+        
+      
+    
+      
+      
+        <option value="profile">profile</option>
+        
+      
+    
+      
+      
+        <option value="admission">admission</option>
+        
+      
+    
+      
+      
+        <option value="CTET">CTET</option>
+        
+      
+    
+      
+      
+        <option value="Profile">Profile</option>
+        
+      
+    
+      
+      
+    
+      
+      
+        <option value="exam">exam</option>
+        
+      
+    
+    </select>
+</div>
+
+<table class="post-table" id="formsTable">
+<thead>
+  <tr>
+      <th>Post Date</th>
+      <th> Latest Education Updates </th>
+      <th>Category</th>
+     
+  </tr>
+</thead>
+<tbody>
+  
+  <tr>
+      <td>26/04/2025</td>
+      <td>
+          
+              <a href="/admission/mp-rte-admission-2025/" target="_blank">MP RTE Admission 2025-26 Farmate Download</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Admission"> Admission  </a></td>
+  </tr>
+  
+  <tr>
+      <td>25/04/2025</td>
+      <td>
+          
+              <a href="/student/up-board-10th-12th-Result/" target="_blank">UP Board Result 2025 – Check 10th &amp; 12th Result</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Board Results"> Board Results  </a></td>
+  </tr>
+  
+  <tr>
+      <td>24/04/2025</td>
+      <td>
+          
+              <a href="/student/2025/nvs-class-6th/" target="_blank">Navoday JNV Selection Test for Class VI Marks 2025 (Summer Bound)</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Addmission"> Addmission  </a></td>
+  </tr>
+  
+  <tr>
+      <td>23/04/2025</td>
+      <td>
+          
+              <a href="/nta/nta-neet-ug-2025/" target="_blank">NTA NEET UG Exam 2025 - Check examcity</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="NTA"> NTA  </a></td>
+  </tr>
+  
+  <tr>
+      <td>22/04/2025</td>
+      <td>
+          
+              <a href="/admission/nta-ugc-net-june-2025/" target="_blank">NTA UGC NET June 2025 Online Form</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Eligibility Test"> Eligibility Test  </a></td>
+  </tr>
+  
+  <tr>
+      <td>18/04/2025</td>
+      <td>
+          
+              <a href="/admission/neet-pg-2025/" target="_blank">NEET PG 2025 -Apply Online Form</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Admission"> Admission  </a></td>
+  </tr>
+  
+  <tr>
+      <td>06/04/2025</td>
+      <td>
+          
+              <a href="/scheme/saksham-bhaiya-bahna-yojna/" target="_blank">Saksham Bhaiya Bahna Yojna</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="MPSOS"> MPSOS  </a></td>
+  </tr>
+  
+  <tr>
+      <td>05/04/2025</td>
+      <td>
+          
+              <a href="/student/azim-premji-scholarship/" target="_blank">Azim Premji Scholarship 2024-25 Update Documents</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Scholarship"> Scholarship  </a></td>
+  </tr>
+  
+  <tr>
+      <td>02/04/2025</td>
+      <td>
+          
+              <a href="/admission/2025/up-gnm-upget/" target="_blank">UP GNM Entrance Test UPGET 2025 Online Form</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search=" Education ">  Education   </a></td>
+  </tr>
+  
+  <tr>
+      <td>30/03/2025</td>
+      <td>
+          
+              <a href="/pdf/student-school-college-pdf-form/" target="_blank">School / College (विद्यार्थी संबंधित फार्म) PDF Forms Download</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Student"> Student  </a></td>
+  </tr>
+  
+  <tr>
+      <td>29/03/2025</td>
+      <td>
+          
+              <a href="/2025/bseb-10th-resuls/" target="_blank">Bihar Board BSEB 10th Resuls</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search=" Education ">  Education   </a></td>
+  </tr>
+  
+  <tr>
+      <td>28/03/2025</td>
+      <td>
+          
+              <a href="/student/mp/rskmp-class-5th-and-8th-result/" target="_blank">MP Board Class 5th and 8th Result</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search=" Education ">  Education   </a></td>
+  </tr>
+  
+  <tr>
+      <td>27/03/2025</td>
+      <td>
+          
+              <a href="/student/mp/mpsos-excellent-model-schools/" target="_blank">MPSOS Excellent &amp; Model Schools Exam 2025-26 (Admitcard)</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Admission"> Admission  </a></td>
+  </tr>
+  
+  <tr>
+      <td>23/03/2025</td>
+      <td>
+          
+              <a href="/nta/nta-cuet-ug-2025/" target="_blank">NTA CUET UG 2025 Online Apply Form </a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Admission"> Admission  </a></td>
+  </tr>
+  
+  <tr>
+      <td>14/03/2025</td>
+      <td>
+          
+              <a href="/2025/nta-aissee-2025/" target="_blank">NTA All India Sainik Schools Entrance Exam AISSEE 2025 (Exam City)</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Admission"> Admission  </a></td>
+  </tr>
+  
+  <tr>
+      <td>06/03/2025</td>
+      <td>
+          
+              <a href="/admission/2025/kvs-class-1/" target="_blank">KVS Class 1 Admissions Online Form 2025</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Admission"> Admission  </a></td>
+  </tr>
+  
+  <tr>
+      <td>19/02/2025</td>
+      <td>
+          
+              <a href="/card/apaar-id-card/" target="_blank">Apaar ID Consent  Form Download</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search=" Education ">  Education   </a></td>
+  </tr>
+  
+  <tr>
+      <td>18/02/2025</td>
+      <td>
+          
+              <a href="/student/2025/mpsaras-admission-6/" target="_blank">MPSARAS Admission 6th 2025-26 Apply online</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="MPSARAS"> MPSARAS  </a></td>
+  </tr>
+  
+  <tr>
+      <td>02/02/2025</td>
+      <td>
+          
+              <a href="/nta/nta-cuet-pg-2025/" target="_blank">NTA CUET PG 2025 Online Form</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Admission"> Admission  </a></td>
+  </tr>
+  
+  <tr>
+      <td>28/01/2025</td>
+      <td>
+          
+              <a href="/student/2025/mpbse-10th-12th-main-exam-2024-25/" target="_blank">MPBSE 10th &amp; 12th Main Exam 2024-25 Admit Card</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="MP Board"> MP Board  </a></td>
+  </tr>
+  
+  <tr>
+      <td>23/01/2025</td>
+      <td>
+          
+              <a href="/profile/mp-ifms-profile/" target="_blank">IFMS Profile Update, Karmchari Profile ekyc</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="profile"> profile  </a></td>
+  </tr>
+  
+  <tr>
+      <td>09/01/2025</td>
+      <td>
+          
+              <a href="/student/mp/sharmodaya-admission-2025/" target="_blank">Sharmodaya Enterance Exam 2025-26</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="admission"> admission  </a></td>
+  </tr>
+  
+  <tr>
+      <td>09/01/2025</td>
+      <td>
+          
+              <a href="/2024/ctet-december-2024/" target="_blank">Ctet December 2024</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="CTET"> CTET  </a></td>
+  </tr>
+  
+  <tr>
+      <td>05/01/2025</td>
+      <td>
+          
+              <a href="/student/mp/mptaas-scholarship-profile/" target="_blank">MPTAAS Scholarship Profile Panjiayan</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Profile"> Profile  </a></td>
+  </tr>
+  
+  <tr>
+      <td>02/01/2025</td>
+      <td>
+          
+              <a href="/student/mp/gaon-ki-beti-schorlarship/" target="_blank">Gaon ki Beti  Download PDF Form for Apply</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="Scholarship"> Scholarship  </a></td>
+  </tr>
+  
+  <tr>
+      <td>31/12/2024</td>
+      <td>
+          
+              <a href="/2024/nta-csir-ugc-dec24/" target="_blank">NTA CSIR UGC NET / JRF Exam Dec 2024</a>
+          
+      </td>
+      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="exam"> exam  </a></td>
+  </tr>
+  
+</tbody>
 </table>
-<div class="pagination">
-  
-    
-  
-    
-    
-    <strong>1</strong>
-    
-    
-    
-    <a href="/student-help/page/2/">2</a>
-    
-    
-    
-    <a href="/student-help/page/3/">3</a>
-    
-    
-  
-    
-    <a href="/student-help/page/2/">Next</a>
-    
- 
-  
-  </div>
+
+
+
 
 
     
@@ -353,14 +650,11 @@ Student Portal
         
         
           <li>
-            <a href="/imp/dot-tefcop-know-your-mobile-connetion/" >How to Know Mobile Connections in Your Name Block Report etc</a>
+            <a href="/mp/ssapy-cm-unmarried-pension-scheme/" >SSAPY CM Unmarried Pension Scheme  Online form Apply</a>
             
-            
+             • <a href="/pdf-forms/">PDF</a>
           </li>
        
-        
-    
-        
         
     
         
@@ -375,15 +669,25 @@ Student Portal
     
         
         
-    
-        
-        
           <li>
-            <a href="/mp/ladli-bahna-yojana-update-2025/" >Ladli Bahna Yojna MP Latest Update</a>
+            <a href="/rpsc/rpsc-jr-chemist-advt-02-2025/" >Rajasthan RPSC Junior Chemist Online Form 2025</a>
             
             
           </li>
        
+        
+    
+        
+        
+          <li>
+            <a href="/railway/assistant-loco-pilot-bharti-2025/" >RRB ALP Bharti 2025 – Railway Assistant Loco Pilot Apply Online</a>
+            
+            
+          </li>
+       
+        
+    
+        
         
     
       <hr>
@@ -393,7 +697,7 @@ Student Portal
     </div>
 
     <div class="sidebar-section">
-    <div class="ads-div">
+    <div class="ads-div" id="lazyload" data-content="adsense">
      Advertisement
 <div class="ad-container">
     
@@ -410,7 +714,37 @@ Student Portal
     </script>
   </div>
  
-     
+     <script>
+          document.addEventListener("DOMContentLoaded", function() {
+               var adContainer = document.getElementById('lazyload');
+           
+               
+               if ("IntersectionObserver" in window) {
+                   var observer = new IntersectionObserver(function(entries, observer) {
+                       entries.forEach(function(entry) {
+                           if (entry.isIntersecting) {
+                               
+                               adContainer.style.display = 'block';
+                               
+                               observer.unobserve(entry.target);
+                           }
+                       });
+                   }, { threshold: 0.5 }); 
+           
+                   
+                   observer.observe(adContainer);
+               } else {
+                   
+                   window.addEventListener('scroll', function() {
+                       var rect = adContainer.getBoundingClientRect();
+                       if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                           adContainer.style.display = 'block';
+                       }
+                   });
+               }
+           });
+           
+     </script>
 </div>
 
 </div>
@@ -508,7 +842,7 @@ Student Portal
 </details>
 
 </div>
-<div class="ads-div">
+<div class="ads-div" id="lazyload" data-content="adsense">
      Advertisement
 <div class="ad-container">
     
@@ -525,25 +859,49 @@ Student Portal
     </script>
   </div>
  
-     
+     <script>
+          document.addEventListener("DOMContentLoaded", function() {
+               var adContainer = document.getElementById('lazyload');
+           
+               
+               if ("IntersectionObserver" in window) {
+                   var observer = new IntersectionObserver(function(entries, observer) {
+                       entries.forEach(function(entry) {
+                           if (entry.isIntersecting) {
+                               
+                               adContainer.style.display = 'block';
+                               
+                               observer.unobserve(entry.target);
+                           }
+                       });
+                   }, { threshold: 0.5 }); 
+           
+                   
+                   observer.observe(adContainer);
+               } else {
+                   
+                   window.addEventListener('scroll', function() {
+                       var rect = adContainer.getBoundingClientRect();
+                       if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                           adContainer.style.display = 'block';
+                       }
+                   });
+               }
+           });
+           
+     </script>
 </div>
 </div>
-
+<div class="side-mobile-search">
+    <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
+</div>
     </aside>
-  
+      
+      <div id="sidebarOverlay"></div>
   </div>
       
   <footer class="footer">
-     <nav class="bottom-nav">
-        <ul>
-            <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
-            <li><a href="#"><span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>Search</a></li>
-            <li><a href="/notification/"><i class="fas fa-bell"></i>Update</a></li>
-            <li><a href="/menu/"><i class="fas fa-bars"></i>Menu</a></li>
-        </ul>
-    </nav>
-
+    
 
 <footer id="footer">
         
@@ -597,30 +955,28 @@ Student Portal
     </footer>
 
 
-
+    
+    
+      
+      <script src="https://www.yojnaportal.com/js/pages/searchbar.min.884a5324ce5d1ed6d74681d37ae1728e7cd4647d2a3f753bb2857b9ff3bf582a.js" integrity="sha256-iEpTJM5dHtbXRoHTeuFyjnzUZH0qP3U7soV7n/O/WCo=" defer></script>
+    
   
-
-
-
-
-<script src="https://www.yojnaportal.com/js/main/header.min.38bd75fa5067387be5b4d16f625b0bc942b6079bc2f49a8173e5505c0b96c111.js" integrity="sha256-OL11&#43;lBnOHvltNFvYlsLyUK2B5vC9JqBc&#43;VQXAuWwRE=" defer></script>
-
-
-<script src="https://www.yojnaportal.com/js/main/navbar.min.7d6c1b268d0262d9095c7f8af44f48c08ef800d9bf16192fa94347036980d893.js" integrity="sha256-fWwbJo0CYtkJXH&#43;K9E9IwI74ANm/FhkvqUNHA2mA2JM=" defer></script>
-
-<script src="https://www.yojnaportal.com/js/main/bottom.min.029d4aa13a4cfbab2555aaf3ed22b0459faf0085d71740db726ef26ab5d506b3.js" integrity="sha256-Ap1KoTpM&#43;6slVarz7SKwRZ&#43;vAIXXF0Dbcm7yarXVBrM=" defer></script>
+  
    
-   
-<script src="https://www.yojnaportal.com/js/main/left-sidebar.min.ef8ec01b151791f08b9d930abdb0f112a0fd297500eedefdcffe3e480be5339d.js" integrity="sha256-747AGxUXkfCLnZMKvbDxEqD9KXUA7t79z/4&#43;SAvlM50=" defer></script>
 
+   
+<script src="https://www.yojnaportal.com/js/main/left-top-header.min.a053cad6ad3fc83a6119ed2509827418093049ff901250f0f148260e5685b071.js" integrity="sha256-oFPK1q0/yDphGe0lCYJ0GAkwSf&#43;QElDw8UgmDlaFsHE=" defer></script>
+
+   
+<script src="https://www.yojnaportal.com/js/general/lazy-load.min.090918162e3a8eb9414c402f4be98ba3f2e6973aafb743b2eceb8159ce155f29.js" integrity="sha256-CQkYFi46jrlBTEAvS&#43;mLo/Lmlzqvt0Oy7OuBWc4VXyk=" defer></script>
+
+ 
 </html>
 
   </footer>
   
   
   
-<script src="https://www.yojnaportal.com/js/main/left-top-header.min.a053cad6ad3fc83a6119ed2509827418093049ff901250f0f148260e5685b071.js" integrity="sha256-oFPK1q0/yDphGe0lCYJ0GAkwSf&#43;QElDw8UgmDlaFsHE=" defer></script>
-
   
   
   

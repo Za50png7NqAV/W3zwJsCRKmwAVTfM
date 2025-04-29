@@ -4,13 +4,13 @@
    
    
   
+ 
   <header class="header">
-  
-    <div class="header-container">
+ <div class="header-container">
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL"  loading="lazy" /> <a href="#" class="logo"> Yojna <span>Portal</span></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL"  loading="lazy" /> <a href="/" class="logo"> Yojna <span>Portal</span></a>
       </div>
           <div class="hamburger">
               <span class="bar"></span>
@@ -20,24 +20,19 @@
           
           <ul class="nav-menu">
          
-              <li class="active"><a href="/">Home</a></li>
+              <li class="active"><a href="/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/quick/last-date/">LastDate</a></li>
               <li><a href="/imp-links/">Useful</a></li>
               <li><a href="/latest-update/">Latest</a></li>
               <li><a href="/latest-schemes/">Schemes</a></li>
               <li><a href="/latest-jobs/">Jobs</a></li>
-              <li><a href="/Menu/" class="btn-primary">Menu</a></li>
-              
+              <li><a href="/menu/" class="btn-primary">Menu</a></li>
           </ul>
       </div>
   </div>
-  
-  <span class="menu-icon" onclick="toggleSidebar()">▶</span>
   </header>
 
-
-  <!DOCTYPE html>
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
@@ -105,7 +100,7 @@
 
 
   
-    <link rel="stylesheet" href="/css/main/yp-base-main.min.5c6ca3878d36bb3ed43a03ad9efb9a7058a18bfb7f229e4ecbf91429f686db85.css" integrity="sha256-XGyjh402uz7UOgOtnvuacFihi/t/Ip5Oy/kUKfaG24U=">
+    <link rel="stylesheet" href="/css/main/yp-base-main.min.1ff9bce4324995018831491d0166df2753b0090feaf2f163f51bc124161d11f8.css" integrity="sha256-H/m85DJJlQGIMUkdAWbfJ1OwCQ/q8vFj9RvBJBYdEfg=">
   
 
 
@@ -116,31 +111,8 @@
 
 
 
-<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
 
 
-
-
-
-  
-    <link rel="stylesheet" href="/css/main/yp-main.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=">
-  
-
-
-
-  
-    <link rel="stylesheet" href="/css/main/yp-main-base.min.d2e576202ca4f1244a48861b7abbfcb2684d278a66a80c41a8b91cf70d7ade6d.css" integrity="sha256-0uV2ICyk8SRKSIYberv8smhNJ4pmqAxBqLkc9w163m0=">
-  
-
-
-
-  
-    <link rel="stylesheet" href="/css/main/right-sidebar.min.ecc51c56554b41213807607ab983f72872cfae54dee363cb4c121bc08f9701eb.css" integrity="sha256-7MUcVlVLQSE4B2B6uYP3KHLPrlTe42PLTBIbwI&#43;XAes=">
-  
-
-
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
 
 <link rel="preload" as="style" href="/css/job-posts.css" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/css/job-posts.css"></noscript>
@@ -154,15 +126,6 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
-     
-    <style> 
-        body {
-        background-color: #eee;
-        }
-       .logo a {text-decoration: none;}
-    
-      </style>
-     
 </head>
 
   
@@ -176,6 +139,7 @@
   
     <aside class="left-sidebar" id="leftSidebar">
      <div id="sidebarOverlay"></div>
+<span class="menu-icon" onclick="toggleSidebar()">▶</span>
   
     <div class="flex-1">
       
@@ -185,7 +149,7 @@
           
         </div>
         <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
-        <div class="ads-div">
+        <div class="ads-div" id="lazyload" data-content="adsense">
      Advertisement
 <div class="ad-container">
     
@@ -202,7 +166,37 @@
     </script>
   </div>
  
-     
+     <script>
+          document.addEventListener("DOMContentLoaded", function() {
+               var adContainer = document.getElementById('lazyload');
+           
+               
+               if ("IntersectionObserver" in window) {
+                   var observer = new IntersectionObserver(function(entries, observer) {
+                       entries.forEach(function(entry) {
+                           if (entry.isIntersecting) {
+                               
+                               adContainer.style.display = 'block';
+                               
+                               observer.unobserve(entry.target);
+                           }
+                       });
+                   }, { threshold: 0.5 }); 
+           
+                   
+                   observer.observe(adContainer);
+               } else {
+                   
+                   window.addEventListener('scroll', function() {
+                       var rect = adContainer.getBoundingClientRect();
+                       if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                           adContainer.style.display = 'block';
+                       }
+                   });
+               }
+           });
+           
+     </script>
 </div>
       </aside>  
       
@@ -251,7 +245,7 @@
     </div>
     <div class="single-post-wrapper">
       <div class="single-post-content">
-        <div class="ads-div">
+        <div class="ads-div" id="lazyload" data-content="adsense">
      Advertisement
 <div class="ad-container">
     
@@ -268,7 +262,37 @@
     </script>
   </div>
  
-     
+     <script>
+          document.addEventListener("DOMContentLoaded", function() {
+               var adContainer = document.getElementById('lazyload');
+           
+               
+               if ("IntersectionObserver" in window) {
+                   var observer = new IntersectionObserver(function(entries, observer) {
+                       entries.forEach(function(entry) {
+                           if (entry.isIntersecting) {
+                               
+                               adContainer.style.display = 'block';
+                               
+                               observer.unobserve(entry.target);
+                           }
+                       });
+                   }, { threshold: 0.5 }); 
+           
+                   
+                   observer.observe(adContainer);
+               } else {
+                   
+                   window.addEventListener('scroll', function() {
+                       var rect = adContainer.getBoundingClientRect();
+                       if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                           adContainer.style.display = 'block';
+                       }
+                   });
+               }
+           });
+           
+     </script>
 </div>
         
 <body>
@@ -673,11 +697,8 @@
         
         
         
-    
-        
-        
           <li>
-            <a href="/rpsc/rssb-nhm-01-2025/" >RSSB NHM Contractual Posts Online Form 2025</a>
+            <a href="/admission/nta-ugc-net-june-2025/" >NTA UGC NET June 2025 Online Form</a>
             
             
           </li>
@@ -687,17 +708,7 @@
         
         
           <li>
-            <a href="/rajasthan-police/constable-bharti-2025/" >Rajasthan Police Constable 2025 Apply Form</a>
-            
-            
-          </li>
-       
-        
-    
-        
-        
-          <li>
-            <a href="/reg/mp-citizen-character-verification/" >MP Citizen Character Certificate | Police Verification Apply Online </a>
+            <a href="/pdf/all-aganwadi-forms/" >Aganwadi (आंगनवाडी) PDF Forms Download</a>
             
              • <a href="/pdf-forms/">PDF</a>
           </li>
@@ -706,12 +717,11 @@
     
         
         
-          <li>
-            <a href="/rpsc/rpsc-jr-chemist-advt-02-2025/" >Rajasthan RPSC Junior Chemist Online Form 2025</a>
-            
-            
-          </li>
-       
+    
+        
+        
+    
+        
         
     
       <hr>
@@ -721,7 +731,7 @@
     </div>
 
     <div class="sidebar-section">
-    <div class="ads-div">
+    <div class="ads-div" id="lazyload" data-content="adsense">
      Advertisement
 <div class="ad-container">
     
@@ -738,7 +748,37 @@
     </script>
   </div>
  
-     
+     <script>
+          document.addEventListener("DOMContentLoaded", function() {
+               var adContainer = document.getElementById('lazyload');
+           
+               
+               if ("IntersectionObserver" in window) {
+                   var observer = new IntersectionObserver(function(entries, observer) {
+                       entries.forEach(function(entry) {
+                           if (entry.isIntersecting) {
+                               
+                               adContainer.style.display = 'block';
+                               
+                               observer.unobserve(entry.target);
+                           }
+                       });
+                   }, { threshold: 0.5 }); 
+           
+                   
+                   observer.observe(adContainer);
+               } else {
+                   
+                   window.addEventListener('scroll', function() {
+                       var rect = adContainer.getBoundingClientRect();
+                       if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                           adContainer.style.display = 'block';
+                       }
+                   });
+               }
+           });
+           
+     </script>
 </div>
 
 </div>
@@ -836,7 +876,7 @@
 </details>
 
 </div>
-<div class="ads-div">
+<div class="ads-div" id="lazyload" data-content="adsense">
      Advertisement
 <div class="ad-container">
     
@@ -853,25 +893,49 @@
     </script>
   </div>
  
-     
+     <script>
+          document.addEventListener("DOMContentLoaded", function() {
+               var adContainer = document.getElementById('lazyload');
+           
+               
+               if ("IntersectionObserver" in window) {
+                   var observer = new IntersectionObserver(function(entries, observer) {
+                       entries.forEach(function(entry) {
+                           if (entry.isIntersecting) {
+                               
+                               adContainer.style.display = 'block';
+                               
+                               observer.unobserve(entry.target);
+                           }
+                       });
+                   }, { threshold: 0.5 }); 
+           
+                   
+                   observer.observe(adContainer);
+               } else {
+                   
+                   window.addEventListener('scroll', function() {
+                       var rect = adContainer.getBoundingClientRect();
+                       if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                           adContainer.style.display = 'block';
+                       }
+                   });
+               }
+           });
+           
+     </script>
 </div>
 </div>
-
+<div class="side-mobile-search">
+    <iframe src="/quick/search/" width="100%" height="750" style="border:none;"></iframe>
+</div>
     </aside>
-  
+      
+      <div id="sidebarOverlay"></div>
   </div>
       
   <footer class="footer">
-     <nav class="bottom-nav">
-        <ul>
-            <li><a href="/" class="active1"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="/quick/last-date/"><i class="fas fa-calendar-alt"></i>LastDate</a></li>
-            <li><a href="#"><span style="font-size:20px;color:white;cursor:pointer" onclick="openNav()"><i class="fas fa-search"></i></span>Search</a></li>
-            <li><a href="/notification/"><i class="fas fa-bell"></i>Update</a></li>
-            <li><a href="/menu/"><i class="fas fa-bars"></i>Menu</a></li>
-        </ul>
-    </nav>
-
+    
 
 <footer id="footer">
         
@@ -925,30 +989,25 @@
     </footer>
 
 
-
+    
+    
   
-
-
-
-
-<script src="https://www.yojnaportal.com/js/main/header.min.38bd75fa5067387be5b4d16f625b0bc942b6079bc2f49a8173e5505c0b96c111.js" integrity="sha256-OL11&#43;lBnOHvltNFvYlsLyUK2B5vC9JqBc&#43;VQXAuWwRE=" defer></script>
-
-
-<script src="https://www.yojnaportal.com/js/main/navbar.min.7d6c1b268d0262d9095c7f8af44f48c08ef800d9bf16192fa94347036980d893.js" integrity="sha256-fWwbJo0CYtkJXH&#43;K9E9IwI74ANm/FhkvqUNHA2mA2JM=" defer></script>
-
-<script src="https://www.yojnaportal.com/js/main/bottom.min.029d4aa13a4cfbab2555aaf3ed22b0459faf0085d71740db726ef26ab5d506b3.js" integrity="sha256-Ap1KoTpM&#43;6slVarz7SKwRZ&#43;vAIXXF0Dbcm7yarXVBrM=" defer></script>
+  
    
-   
-<script src="https://www.yojnaportal.com/js/main/left-sidebar.min.ef8ec01b151791f08b9d930abdb0f112a0fd297500eedefdcffe3e480be5339d.js" integrity="sha256-747AGxUXkfCLnZMKvbDxEqD9KXUA7t79z/4&#43;SAvlM50=" defer></script>
 
+   
+<script src="https://www.yojnaportal.com/js/main/left-top-header.min.a053cad6ad3fc83a6119ed2509827418093049ff901250f0f148260e5685b071.js" integrity="sha256-oFPK1q0/yDphGe0lCYJ0GAkwSf&#43;QElDw8UgmDlaFsHE=" defer></script>
+
+   
+<script src="https://www.yojnaportal.com/js/general/lazy-load.min.090918162e3a8eb9414c402f4be98ba3f2e6973aafb743b2eceb8159ce155f29.js" integrity="sha256-CQkYFi46jrlBTEAvS&#43;mLo/Lmlzqvt0Oy7OuBWc4VXyk=" defer></script>
+
+ 
 </html>
 
   </footer>
   
   
   
-<script src="https://www.yojnaportal.com/js/main/left-top-header.min.a053cad6ad3fc83a6119ed2509827418093049ff901250f0f148260e5685b071.js" integrity="sha256-oFPK1q0/yDphGe0lCYJ0GAkwSf&#43;QElDw8UgmDlaFsHE=" defer></script>
-
   
   
   
