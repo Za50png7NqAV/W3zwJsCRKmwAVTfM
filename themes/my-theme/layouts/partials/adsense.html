@@ -15,35 +15,3 @@
     </script>
   </div>
  
-     <script>
-          document.addEventListener("DOMContentLoaded", function() {
-               var adContainer = document.getElementById('lazyload');
-           
-               // Check if IntersectionObserver is available
-               if ("IntersectionObserver" in window) {
-                   var observer = new IntersectionObserver(function(entries, observer) {
-                       entries.forEach(function(entry) {
-                           if (entry.isIntersecting) {
-                               // Show the ad when it's in view
-                               adContainer.style.display = 'block';
-                               // Once the ad is shown, unobserve it
-                               observer.unobserve(entry.target);
-                           }
-                       });
-                   }, { threshold: 0.5 }); // Trigger when 50% of the element is visible
-           
-                   // Start observing the ad container
-                   observer.observe(adContainer);
-               } else {
-                   // Fallback if IntersectionObserver is not supported, using scroll event
-                   window.addEventListener('scroll', function() {
-                       var rect = adContainer.getBoundingClientRect();
-                       if (rect.top < window.innerHeight && rect.bottom >= 0) {
-                           adContainer.style.display = 'block';
-                       }
-                   });
-               }
-           });
-           
-     </script>
-</div>

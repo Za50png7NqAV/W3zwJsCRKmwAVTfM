@@ -243,13 +243,15 @@
   /* Container */
   .main-container {
     display: flex;
+    max-width: 100%;
+    margin:auto;
     flex: 1;
     margin-top: 70px; /* height of header */
   }
   
   /* Left Sidebar */
   .left-sidebar {
-    width: 20%;
+    max-width: 256px;
     background-color: #fff;
     padding: 0;
     height: calc(100vh - 70px);
@@ -274,13 +276,13 @@
   
   /* Main Content */
   .main-content {
-    width: 60%;
-    padding: 2rem;
+    max-width: 768px;
+    padding: 1rem;
   }
   
   /* Right Sidebar */
   .right-sidebar {
-    width: 20%;
+    max-width: 256px;
     padding: 0;
     position: sticky;
     top: 70px;
@@ -365,9 +367,41 @@
   color: #888;
   font-style: italic;
 }
+
+/* Start with hidden content (opacity 0), which will fade in after lazy loading */
+.lazy-load-section {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* When content is loaded, make it visible */
+.lazy-load-section.loaded {
+  opacity: 1;
+}
+
+
   /* ------mobile search------- */
 .side-mobile-search {display: none;}
   /* Responsive Changes */
+  @media screen and (max-width: 1024px) {
+   /* Left Sidebar Hidden */
+   .left-sidebar {
+    display: none;
+   }
+   
+   /* Main Content */
+   .main-content {
+     max-width: 768px;
+     padding: 1rem;
+   }
+ 
+   /* Right Sidebar */
+   .right-sidebar {
+     max-width: 256px;
+     margin-top: 2rem;
+   }
+
+  }
 
 
   @media screen and (max-width: 768px) {
@@ -412,25 +446,20 @@
       display: block;
     }
     
- 
-   /* Left Sidebar Hidden */
-   .left-sidebar {
-   display: none;
-  }
-  
+
   /* Main Content */
   .main-content {
-    width: 70%;
-    padding: 1rem;
+   flex: 0 0 73%;
+    padding-right:16px;
   }
 
   /* Right Sidebar */
   .right-sidebar {
-    width: 30%;
-    margin-top: 2rem;
+    flex: 0 0 27%;
   }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 767px) {
   /* ------mobile search------- */
  .side-mobile-search {
    display: block;
@@ -442,13 +471,13 @@
    /* Main Content */
    .main-content {
     width: 100%;
-    padding: 1rem;
+   
   }
 
   /* Right Sidebar */
   .right-sidebar {
-    width: 100%;
-    margin-top: 2rem;
+   display:none;
+  
   }
 
 }

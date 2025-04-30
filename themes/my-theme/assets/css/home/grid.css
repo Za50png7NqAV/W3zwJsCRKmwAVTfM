@@ -53,6 +53,7 @@
   
   .card-content {
     padding: 10px;
+    font-size: 1rem;
     flex-grow: 1;
   }
   
@@ -95,6 +96,7 @@
   .more-link {
     display: inline-block;
     color: var(--primary-color);
+    font-size: 1rem;
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);

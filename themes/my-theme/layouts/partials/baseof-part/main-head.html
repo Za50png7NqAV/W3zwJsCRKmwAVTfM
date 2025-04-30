@@ -1,7 +1,7 @@
 
   <!-- Header -->
  
-  {{ partial "main-part/yp-header" . }}
+  <header class="header">
 
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
 <head>
@@ -38,7 +38,7 @@
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
 </head>
-
+{{ partial "main-part/yp-header" . }}
   <!-- Header -->
-
+</header>
 
