@@ -21,7 +21,6 @@
   {{ end }}
 {{ end }}
 
-
 {{ if .Params.cssStyle }}
 <link rel="preload" as="style" href="{{ .Params.cssStyle | relURL }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ .Params.cssStyle | relURL }}"></noscript>
@@ -36,9 +35,8 @@
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
 </head>
- <!-- Header -->
-<header class="header">
-{{ partial "main-part/yp-header" . }}
- 
-</header>
 
+  <!-- Header -->
+  <header class="header">
+    {{ partial "main-part/yp-header" . }}
+    </header>
