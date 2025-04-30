@@ -1,0 +1,2 @@
+{{ $fadeObserverAPI := resources.Get "js/general/scroll-fade.js" | minify | fingerprint }}
+<script src="{{ $fadeObserverAPI.Permalink }}" integrity="{{ $fadeObserverAPI.Data.Integrity }}" defer></script>
