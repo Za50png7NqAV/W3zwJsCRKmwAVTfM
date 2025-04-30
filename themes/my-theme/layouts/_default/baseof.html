@@ -3,8 +3,11 @@
   
    <!-- head-->
    {{ partial "baseof-part/main-head" . }}
-  
-   
+   <body>
+   <!-- Header -->
+<header class="header">
+  {{ partial "main-part/yp-header" . }}
+  </header>
     <!-- left Sidebar Overlay (mobile only) -->
   <div class="main-container scroll-fade">
   
@@ -20,15 +23,14 @@
     <aside class="right-sidebar">
       {{ partial "baseof-part/sidebar" . }}
     </aside>
-   
-    
+
   </div>
       <!-- Footer -->
-  <footer class="footer">
+
     {{ partial "baseof-part/footer" . }}
-  </footer>
-  
-  
+
+</body>
+</html>
   
   
   

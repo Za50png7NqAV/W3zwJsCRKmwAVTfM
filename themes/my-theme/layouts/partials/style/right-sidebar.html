@@ -1,6 +1,7 @@
 {{ $rightSidebarstyles := slice "css/main/right-sidebar.css" }}
 {{ range $rightSidebarstyles }}
   {{ with resources.Get . | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+  <link rel="preload" as="style" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></noscript>
   {{ end }}
 {{ end }}

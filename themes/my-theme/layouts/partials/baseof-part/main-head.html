@@ -1,32 +1,30 @@
 
-  <!-- Header -->
- 
-  <header class="header">
-
+  <!doctype html>
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
-<head>
-  {{ partial "imp-codes/seo-meta.html" . }}
+<head>.
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{{ partial "imp-codes/seo-meta.html" . }}
 {{ partial "imp-codes/schema.html" . }}
 {{ partial "style/yp-base-main" . }}
 {{ partial "style/right-sidebar" . }}
 {{ if eq .Params.adsense true }}
 <!-- Adsense Script -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-     crossorigin="anonymous"></script>
+     crossorigin="anonymo us"></script>
 {{ end }}
-
 {{ with .Params.cssStyles }}
   {{ range . }}
     {{ $css := resources.Get . | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+    <link rel="preload" as="style" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}"></noscript>
   {{ end }}
 {{ end }}
+
 
 {{ if .Params.cssStyle }}
 <link rel="preload" as="style" href="{{ .Params.cssStyle | relURL }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ .Params.cssStyle | relURL }}"></noscript>
-{{ else }}
-
 {{ end }}
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
@@ -38,7 +36,9 @@
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
 </head>
+ <!-- Header -->
+<header class="header">
 {{ partial "main-part/yp-header" . }}
-  <!-- Header -->
+ 
 </header>
 
