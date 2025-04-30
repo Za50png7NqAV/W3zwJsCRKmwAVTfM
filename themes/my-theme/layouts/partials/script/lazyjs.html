@@ -1,0 +1,2 @@
+{{ $lazyjs := resources.Get "js/lazy-iframe.js" | minify | fingerprint }}
+<script src="{{ $lazyjs.RelPermalink }}" defer></script>

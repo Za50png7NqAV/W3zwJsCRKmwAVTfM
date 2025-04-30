@@ -378,6 +378,16 @@
   opacity: 1;
 }
 
+.lazy-iframe {
+  background: #fff;
+  min-height: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
 
   /* ------mobile search------- */
 .side-mobile-search {display: none;}
