@@ -33,6 +33,7 @@
         {{ .Content }}
        
         {{ partial "imp-codes/imageBanner.html" . }}
+        {{ partial "imp-codes/random-list.html" . }}
        {{ partial "baseof-part/social-link.html" . }}
       <!-- Include partial for tags/terms -->
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

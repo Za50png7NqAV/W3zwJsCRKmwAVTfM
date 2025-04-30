@@ -6,8 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {{ partial "imp-codes/seo-meta.html" . }}
 {{ partial "imp-codes/schema.html" . }}
-{{ partial "style/yp-base-main" . }}
-{{ partial "style/right-sidebar" . }}
 {{ if eq .Params.adsense true }}
 <!-- Adsense Script -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
@@ -20,7 +18,8 @@
     <noscript><link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}"></noscript>
   {{ end }}
 {{ end }}
-
+{{ partial "style/yp-base-main" . }}
+{{ partial "style/right-sidebar" . }}
 {{ if .Params.cssStyle }}
 <link rel="preload" as="style" href="{{ .Params.cssStyle | relURL }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ .Params.cssStyle | relURL }}"></noscript>
@@ -36,7 +35,4 @@
     </script>
 </head>
 
-  <!-- Header -->
-  <header class="header">
-    {{ partial "main-part/yp-header" . }}
-    </header>
+ 

@@ -1,33 +1,48 @@
-
-<meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025{{ end }}">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://yojnaportal.com;">
-<link rel="canonical" href="{{ .Permalink }}">
 {{/* SEO Meta Partial */}}
-<title>{{ with .Params.seo_title }} {{ . }} {{ else }} {{ .Title }} | {{ .Site.Title }} {{ end }}</title>
-  <meta name="application-name" content="Yojna Portal">
-  <meta property="og:site_name" content="Yojna Portal">
-  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-  <meta property="og:url" content="{{ if .Params.shorturl }}{{ .Site.BaseURL }}{{ .Params.shorturl }}{{ else }}{{ .Permalink }}{{ end }}">
-  <meta property="og:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}">
-  <meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-  <meta property="og:image" content="{{ .Params.imageBanner | absURL }}">
-  <meta name="twitter:image" content="{{ .Params.imageBanner | absURL }}">
-  <meta name="twitter:site" content="@yojnaportal">
-  <meta name="debug" content="JSON-LD Loaded">
-<!-- Meta for WhatsApp (Uses Open Graph) -->
+
+<!-- Basic Meta -->
+<title>{{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+<meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025{{ end }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Open Graph (Facebook/WhatsApp) -->
+<meta property="og:site_name" content="Yojna Portal">
+<meta property="og:url" content="{{ if .Params.shorturl }}{{ .Site.BaseURL }}{{ .Params.shorturl }}{{ else }}{{ .Permalink }}{{ end }}">
+<meta property="og:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ .Params.imageBanner | absURL }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+<meta name="twitter:image" content="{{ .Params.imageBanner | absURL }}">
+<meta name="twitter:site" content="@yojnaportal">
+
+<!-- Extra Meta -->
+<meta name="application-name" content="Yojna Portal">
 <meta name="theme-color" content="#0084ff">
+<meta name="robots" content="index, follow">
+<meta name="distribution" content="global">
+<meta name="debug" content="JSON-LD Loaded">
+<meta name="dmca-site-verification" content="T256Y3p2alQ4QW03ZzdEcGd3MWpwQT090" />
+<meta http-equiv="content-language" content="en-hi">
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+<!-- ✅ Correct Placement of CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' {{ .Site.BaseURL | absURL }};">
+
+
+<!-- Favicon -->
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-<meta name='dmca-site-verification' content='T256Y3p2alQ4QW03ZzdEcGd3MWpwQT090' />
-<meta name="robots" content="index, follow">
-<meta name="distribution" content="global">
+
+<!-- Last Modified -->
 {{- with .Lastmod -}}
   <meta name="lastmod" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
 {{- end }}
-<meta http-equiv="content-language" content="en-hi">
-<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
