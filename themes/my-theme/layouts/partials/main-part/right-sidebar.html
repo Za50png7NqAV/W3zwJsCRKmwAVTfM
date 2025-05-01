@@ -1,0 +1,71 @@
+
+<div class="main-sidebar">
+    <div class="sidebar-section">
+
+        <details open class="sidebar-list" >
+        <summary class="summary"> Recommended Post</summary>
+        {{ range first 5 (shuffle .Site.RegularPages) }}
+        {{ $lastdate := .Params.lastdate | default "9999-12-31" }}
+        {{ if ge $lastdate (now.Format "2006-01-02") }}
+          <li>
+            <a href="{{ .RelPermalink }}" >{{ .Title }}</a>
+            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
+            {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
+          </li>
+       
+        {{ end }}
+    {{ end }}
+      <hr>
+      <p > <a href="/latest-update/" target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
+    </details>
+    
+    </div>
+
+    <div class="sidebar-section">
+    {{ partial "adsense.html" . }}
+
+</div>
+<div class="sidebar-section">
+
+    <details open class="sidebar-list" >
+    <summary class="summary"> Latest Scheme Updates </summary>
+
+    {{ range first 5 (where .Site.RegularPages ".Params.post-type" "schemes") }}
+    {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
+    {{ if ge $lastdate (now.Format "2006-01-02") }}
+        <li>
+            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
+            {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
+        </li>
+       
+    {{ end }}
+{{ end }}
+<hr>
+      <p > <a href="/latest-schemes/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
+  
+</details>
+
+</div>
+<div  class="sidebar-section">
+
+    <details open class="sidebar-list" >
+    <summary class="summary"> Latest Jobs Update</summary>
+    {{ range first 5 (where .Site.RegularPages ".Params.post-type" "latest-jobs") }}
+    {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
+    {{ if ge $lastdate (now.Format "2006-01-02") }}
+        <li>
+            <a href="{{ .RelPermalink }}" >{{ .Title }}</a>
+            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
+            {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
+        </li>
+
+    {{ end }}
+{{ end }}
+<hr>
+<p > <a href="/latest-jobs/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
+</details>
+
+</div>
+{{ partial "adsense.html" . }}
+</div>
