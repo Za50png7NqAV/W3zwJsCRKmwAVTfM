@@ -86,6 +86,55 @@ h3 {
   color: var(--primary-dark);
 }
 
+/* Table Styles */
+.yp-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.yp-table {
+  width: 100%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.yp-table th {
+  background-color: #fcd9c5;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.yp-table td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.yp-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.yp-table tr:hover {
+  background-color: #ffe9c2a6;
+}
+
+.yp-table a {
+  text-decoration: none;
+}
+
+.yp-table a:hover {
+  color: #bb0b0b;
+}
+
 /* Job Head */
 .yp-job-head {
   border: 1px solid #ddd;
@@ -185,7 +234,11 @@ h3 {
     font-size: 1.2rem;
   }
 
-
+  .yp-table th,
+  .yp-table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
 
   .breadcrumb {
     flex-direction: column;
