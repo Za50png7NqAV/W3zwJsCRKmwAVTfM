@@ -8,7 +8,8 @@
         <div class="flex">
           
         </div>
-        <iframe class="lazy-iframe"  src="/quick/search/" width="100%" height="750" style="border:none;" loading="lazy"></iframe>
+        {{ partial "main-part/click-search" . }}
+        {{ partial "homelist/latest-update" . }}
         {{ partial "adsense.html" . }}
       </aside>  
       

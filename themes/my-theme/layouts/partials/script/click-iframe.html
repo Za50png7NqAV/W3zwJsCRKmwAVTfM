@@ -1,0 +1,2 @@
+{{ $lazyloadsection := resources.Get "js/lazy-load/click-iframe.js" | minify | fingerprint }}
+<script src="{{ $lazyloadsection.Permalink }}" integrity="{{ $lazyloadsection.Data.Integrity }}" defer></script>

@@ -390,7 +390,7 @@
 }
 
   /* ------mobile search------- */
-.side-mobile-search {display: none;}
+.mobile-search {display: none;}
   /* Responsive Changes */
   @media screen and (max-width: 1024px) {
    /* Left Sidebar Hidden */
@@ -470,7 +470,7 @@
 
 @media screen and (max-width: 767px) {
   /* ------mobile search------- */
- .side-mobile-search {
+ .mobile-search {
    display: block;
  }
  .main-container {

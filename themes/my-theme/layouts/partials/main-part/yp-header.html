@@ -5,12 +5,14 @@
         <div class="main-logo">
         <img class="logo-img" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"  loading="lazy" /> <a href="/" class="logo"> Yojna <span>Portal</span></a>
       </div>
+      
           <div class="hamburger">
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
           </div>
          <ul class="nav-menu">
+             <div class="mobile-search"> {{ partial "main-part/click-search" . }}</div>
               <li class="active"><a href="/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/quick/last-date/">LastDate</a></li>
