@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #ff5722;
-    --secondary-color: #4caf50;
+    --primary-color: rgb(240, 70, 1);
+    --secondary-color: rgb(250, 180, 2);
     --accent-color: #2196f3;
-    --text-color: #333;
+    --text-color: #000000;
     --light-bg: #f9f9f9;
     --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     --border-radius: 12px;
@@ -10,17 +10,8 @@
   }
   
   /* ========== Base Styles ========== */
-
+a:link  {text-decoration: none;}
   
-  a {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 500;
-  }
-  a:hover {
-    text-decoration: underline;
-    color: var(--primary-color);
-  }
   
 
   /* ========== Headings ========== */
@@ -135,8 +126,8 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   .yp-table th {
-    background-color: #eba40d;
-    color: white;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 12px 15px;
     text-transform: uppercase;
