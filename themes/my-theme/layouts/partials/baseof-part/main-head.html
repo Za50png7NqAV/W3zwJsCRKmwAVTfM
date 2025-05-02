@@ -17,19 +17,33 @@
     https://www.googlesyndication.com
     https://www.google.com
     https://adservice.google.com
+    https://securepubads.g.doubleclick.net
     https://*.firebaseio.com;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   font-src 'self' https://fonts.gstatic.com;
-  img-src 'self' data: https: https://tpc.googlesyndication.com https://*.googlesyndication.com;
-  connect-src 'self' https://*.firebaseio.com https://www.google-analytics.com https://adservice.google.com;
-  frame-src https://*.google.com https://*.googlesyndication.com;
+  img-src 'self' data: https:
+    https://tpc.googlesyndication.com
+    https://*.googlesyndication.com
+    https://*.doubleclick.net;
+  connect-src 'self'
+    https://*.firebaseio.com
+    https://www.google-analytics.com
+    https://adservice.google.com
+    https://ep1.adtrafficquality.google
+    https://*.googlesyndication.com
+    https://*.google.com
+    https://*.doubleclick.net;
+  frame-src
+    https://*.google.com
+    https://*.googlesyndication.com
+    https://*.doubleclick.net;
 ">
-
 
 {{ if eq .Params.adsense true }}
 <!-- Adsense Script -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-     crossorigin="anonymo us"></script>
+     crossorigin="anonymous"></script>
+
 {{ end }}
 {{ with .Params.cssStyles }}
   {{ range . }}
