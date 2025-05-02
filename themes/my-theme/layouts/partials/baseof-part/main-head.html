@@ -1,49 +1,23 @@
 
   <!doctype html>
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
-<head>
+<head>.
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {{ partial "imp-codes/seo-meta.html" . }}
 {{ partial "imp-codes/schema.html" . }}
 <meta http-equiv="Content-Security-Policy" content="
   default-src 'self';
-  script-src 'self' 'unsafe-inline'
-    https://kit.fontawesome.com
-    https://www.gstatic.com
-    https://www.googletagmanager.com
-    https://www.google-analytics.com
-    https://pagead2.googlesyndication.com
-    https://www.googlesyndication.com
-    https://www.google.com
-    https://adservice.google.com
-    https://securepubads.g.doubleclick.net
-    https://*.firebaseio.com;
+  script-src 'self' https://kit.fontawesome.com https://www.gstatic.com 'unsafe-inline';
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   font-src 'self' https://fonts.gstatic.com;
-  img-src 'self' data: https:
-    https://tpc.googlesyndication.com
-    https://*.googlesyndication.com
-    https://*.doubleclick.net;
-  connect-src 'self'
-    https://*.firebaseio.com
-    https://www.google-analytics.com
-    https://adservice.google.com
-    https://ep1.adtrafficquality.google
-    https://*.googlesyndication.com
-    https://*.google.com
-    https://*.doubleclick.net;
-  frame-src
-    https://*.google.com
-    https://*.googlesyndication.com
-    https://*.doubleclick.net;
+  connect-src 'self' https://*.firebaseio.com;
+  img-src 'self' data: https:;
 ">
-
 {{ if eq .Params.adsense true }}
 <!-- Adsense Script -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
-     crossorigin="anonymous"></script>
-
+     crossorigin="anonymo us"></script>
 {{ end }}
 {{ with .Params.cssStyles }}
   {{ range . }}
