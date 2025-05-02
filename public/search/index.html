@@ -81,12 +81,16 @@
   
 <meta http-equiv="Content-Security-Policy" content="
   default-src 'self';
-  script-src 'self' https://kit.fontawesome.com https://www.gstatic.com 'unsafe-inline';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pagead2.googlesyndication.com https://www.googletagservices.com https://www.google-analytics.com https://securepubads.g.doubleclick.net;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-  font-src 'self' https://fonts.gstatic.com;
-  connect-src 'self' https://*.firebaseio.com;
-  img-src 'self' data: https:;
+  font-src https://fonts.gstatic.com;
+  img-src 'self' data: https: https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net;
+  connect-src 'self' https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com;
+  frame-src 'self' https://tpc.googlesyndication.com https://googleads.g.doubleclick.net;
 ">
+
+
+
 
 
 
@@ -639,30 +643,13 @@ if (query) {
         
         
         
-          <li>
-            <a href="/scheme/mp/cm-kisan-reg-for-schemes/" >CM Kisan Khadya Beej Anudan</a>
-            
-            
-          </li>
-       
-        
     
         
         
           <li>
-            <a href="/scheme/pmjay-ayushman-card/" >PMJAY Ayushman Bharat Card</a>
+            <a href="/document/eshram-card-apply/" >Eshram Card Apply, Update and Download</a>
             
             
-          </li>
-       
-        
-    
-        
-        
-          <li>
-            <a href="/scheme/mp/cmlly-ladli-laxmi-yojna/" >Ladli Laxmi Yojna Apply Online- Download pdf form</a>
-            
-             • <a href="/pdf-forms/">PDF</a>
           </li>
        
         
@@ -672,12 +659,8 @@ if (query) {
     
         
         
-          <li>
-            <a href="/imp/self-npci-link-status/" >How to Self-Link DBT with NPCI? – Easy Online &amp; Offline Methods</a>
-            
-            
-          </li>
-       
+    
+        
         
     
       <hr>
