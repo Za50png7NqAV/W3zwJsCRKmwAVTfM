@@ -15,14 +15,14 @@
         
         {{ end }}
 
-        {{ partial "imp-codes/video-iframe.html" . }}
+        
       {{ if .Params.objective }}
       <div class="section">
           <h3>🔸{{ .Params.YojnaName }} का उद्देश्य (Objective)</h3>
           <p>{{ .Params.objective | safeHTML }}</p>
       </div>
       {{ end }}
-      {{ partial "adsense.html" . }}
+      
       {{ if .Params.eligibility }}
       <div class="section">
           <h3>🔸{{ .Params.YojnaName }} हेतु पात्रता (Eligibility)</h3>
@@ -36,14 +36,14 @@
           <p>{{ .Params.benefits | safeHTML }}</p>
       </div>
       {{ end }}
-      
+    
       {{ if .Params.documents }}
       <div class="section">
           <h3>🔸{{ .Params.YojnaName }} के लिए आवश्यक दस्तावेज़ (Required Documents)</h3>
           <p>{{ .Params.documents | safeHTML }}</p>
       </div>
       {{ end }}
-
+      {{ partial "adsense.html" . }}
       {{ if or (.Params.apply_online) (.Params.apply_offline) }}
       <div class="section">
           <h3>🔸 {{ .Params.YojnaName }} के लिए आवेदन प्रक्रिया (How to Apply)</h3>
@@ -91,7 +91,7 @@
   <div class="content">
     {{ .Content }}
 </div>
-
+{{ partial "imp-codes/video-iframe.html" . }}
   {{ partial "imp-codes/imageBanner.html" . }}
 </div>
 {{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}
