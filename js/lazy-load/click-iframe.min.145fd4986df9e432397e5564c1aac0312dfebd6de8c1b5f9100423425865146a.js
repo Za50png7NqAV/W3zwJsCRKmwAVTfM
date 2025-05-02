@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".click-iframe").forEach(e=>{e.addEventListener("click",()=>{const n=e.dataset.src,s=e.dataset.title||"Iframe",t=document.createElement("iframe");t.src=n,t.width="100%",t.height="750",t.style.border="none",t.loading="lazy",t.title=s,e.innerHTML="",e.appendChild(t)})})})
