@@ -158,18 +158,18 @@
   
   .main-logo img {
     margin-right: 8px; /* Logo और Text के बीच थोड़ा space */
-    width: 30px;
+    width: 40px;
   }
   
   .main-logo .logo {
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
-    color: #a87c03; /* अपने हिसाब से रंग बदल सकते हो */
+    font-size: 2rem;
+    color: #a56300; /* अपने हिसाब से रंग बदल सकते हो */
   }
   
   .main-logo .logo span {
-    color: #f7630e; /* Portal word का कलर अलग करने के लिए */
+    color: #780000; /* Portal word का कलर अलग करने के लिए */
   }
   
   .nav-menu {
@@ -183,17 +183,17 @@
   
   .nav-menu a {
     text-decoration: none;
-    color: #333;
+    color: #000102;
     font-weight: 500;
     transition: color 0.3s;
   }
   
   .nav-menu a:hover {
-    color: #f7630e;
+    color: hsl(38, 50%, 3%);
   }
   
   .nav-menu .active a {
-    color: #cfb102;
+    color: #00071a;
   }
   
   .hamburger {
@@ -211,7 +211,7 @@
   }
   
   .btn-primary {
-    background-color: #f7630e;
+    background-color: #a56300;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
