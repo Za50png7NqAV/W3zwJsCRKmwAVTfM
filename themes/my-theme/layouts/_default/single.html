@@ -1,10 +1,10 @@
 {{ define "main" }}
-
-{{ if eq .Type "yojna" }}
-  {{ partial "farmate/yojna.html" . }}
-{{ else if eq .Type "job" }}
-  {{ partial "farmate/jobs.html" . }}
-{{ else }}
-  {{ partial "farmate/default.html" . }}
-{{ end }}
+  {{- $type := .Type -}}
+  {{- if eq $type "yojna" -}}
+    {{ partial "farmate/yojna.html" . }}
+  {{- else if eq $type "job" -}}
+    {{ partial "farmate/jobs.html" . }}
+  {{- else -}}
+    {{ partial "farmate/default.html" . }}
+  {{- end }}
 {{ end }}
