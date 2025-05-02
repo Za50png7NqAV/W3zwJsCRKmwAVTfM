@@ -2,17 +2,30 @@
   <!doctype html>
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
 <head>
-    <!-- ✅ Correct Placement of CSP -->
-    <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' https://www.gstatic.com https://kit.fontawesome.com;
-    style-src 'self' 'unsafe-inline';
-    connect-src 'self' https://*.firebaseio.com;
-  ">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {{ partial "imp-codes/seo-meta.html" . }}
 {{ partial "imp-codes/schema.html" . }}
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' 'unsafe-inline'
+    https://kit.fontawesome.com
+    https://www.gstatic.com
+    https://www.googletagmanager.com
+    https://www.google-analytics.com
+    https://pagead2.googlesyndication.com
+    https://www.googlesyndication.com
+    https://www.google.com
+    https://adservice.google.com
+    https://*.firebaseio.com;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  img-src 'self' data: https: https://tpc.googlesyndication.com https://*.googlesyndication.com;
+  connect-src 'self' https://*.firebaseio.com https://www.google-analytics.com https://adservice.google.com;
+  frame-src https://*.google.com https://*.googlesyndication.com;
+">
+
+
 {{ if eq .Params.adsense true }}
 <!-- Adsense Script -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
@@ -31,8 +44,7 @@
 <link rel="preload" as="style" href="{{ .Params.cssStyle | relURL }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ .Params.cssStyle | relURL }}"></noscript>
 {{ end }}
-
-<script type="module" defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
     <script>
