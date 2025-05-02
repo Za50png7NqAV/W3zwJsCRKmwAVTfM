@@ -23,6 +23,7 @@ weight = 30
     min = "0.116.0"
 
 [params]
+description = "Stay updated with the latest government schemes, Sarkari Yojna news, and policy updates on Yojna Portal."
 paginate = 20
 logo = "logo/logo-100x100.png"
 cssStyle = "css/main/scheme.css"

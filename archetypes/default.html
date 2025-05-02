@@ -2,6 +2,7 @@
 adsense = true
 title = '{{ replace .File.ContentBaseName "-" " " | title }} {{ now.Year }}'
 date = {{ .Date }}
+lastmod = {{ .Date }}
 seo_title = ""
 url = "/{{ .Dir }}{{ .File.ContentBaseName }}/" # ✅ Main SEO Friendly URL
 aliases = [

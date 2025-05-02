@@ -1,21 +1,16 @@
 baseURL = "https://www.yojnaportal.com/"
 languageCode = 'en-us'
-title = 'YOJNA PORTAL'
+title = 'YOJNA PORTAL 2025 - Govt Schemes & Sarkari Job Updates Daily'
 theme = 'my-theme'
 
 # Add taxonomies
 [taxonomies]
   category = "categories"
 [params]
- 
-description = "Stay updated with the latest government schemes, Sarkari Yojna news, and policy updates on Yojna Portal."
+ description = "Yojna Portal brings you daily updates on government schemes (Sarkari Yojana), PM Schemes, State Schemes, New Yojna, e-KYC, Ration Card, and latest Sarkari Naukri. Admit Card, Results Stay updated and apply online easily."
 adminMode = true
-
-  
 # config.toml
-
 googleAnalytics = "G-GWSRPE5DVE"
-
 
 [[menu.main]]
   identifier = "home"
@@ -24,7 +19,6 @@ googleAnalytics = "G-GWSRPE5DVE"
   weight = 1
 [outputs]
 home = ["HTML", "JSON"]
-
 
 [sitemap]
   filename = "sitemap.xml"

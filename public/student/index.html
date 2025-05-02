@@ -5,19 +5,27 @@
    
   <!doctype html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>.
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://www.gstatic.com https://kit.fontawesome.com;
+    style-src 'self' 'unsafe-inline';
+    connect-src 'self' https://*.firebaseio.com;
+  ">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
 
-<title>Students | YOJNA PORTAL</title>
-<meta name="description" content="">
+
+
+<title>Students | YOJNA PORTAL </title>
+<meta name="description" content="Yojna Portal brings you daily updates on government schemes (Sarkari Yojana), PM Schemes, State Schemes, New Yojna, e-KYC, Ration Card, and latest Sarkari Naukri. Admit Card, Results Stay updated and apply online easily.">
 <meta name="keywords" content="Yojna, Government Schemes, Sarkari Yojna, Yojna Updates, Latest Yojna 2025">
 
 
 <link rel="canonical" href="http://localhost:1313/student/">
-
 
 <meta property="og:site_name" content="Yojna Portal">
 <meta property="og:url" content="http://localhost:1313/student/">
@@ -25,7 +33,6 @@
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
 <meta property="og:image" content="http://localhost:1313/">
-
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Students">
@@ -44,16 +51,21 @@
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
 
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' http://localhost:1313/;">
-
-
-
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-<meta name="lastmod" content="2025-05-01T09:22:39&#43;05:30">
 
+
+<meta property="article:published_time" content="2025-05-01T09:22:39&#43;05:30">
+<meta name="lastmod" content="2025-05-01T09:22:39&#43;05:30">
+  
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' https://www.gstatic.com https://kit.fontawesome.com;
+  style-src 'self' 'unsafe-inline';
+  connect-src 'self' https://*.firebaseio.com;
+">
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,7 +76,7 @@
     },
     "headline": "Students",
     "description": "",
-    "image": "http:\/\/localhost:1313\/default-social.jpg",
+    "image": "http:\/\/localhost:1313\/logo\/logo-100x100.png",
     "author": {
       "@type": "Organization",
       "name": "Yojna Portal",     
@@ -100,7 +112,8 @@
   
 
 
-<script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+
+<script type="module" defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
     <script>
@@ -119,7 +132,7 @@
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL"  loading="lazy" /> <a href="/" class="logo"> Yojna <span>Portal</span></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /> <a href="/" class="logo"> Yojna <span>Portal</span></a>
       </div>
       
           <div class="hamburger">
@@ -588,7 +601,7 @@
 
     </div>
     <div class="card-footer">
-      <a href="/latest-schemes/" title="View all latest government schemes">View all schemes</a>
+      <a href="/latest-schemes/" class="more-link" title="View all latest government schemes">View all schemes</a>
     </div>
   </div>
 
@@ -684,7 +697,7 @@
 
     </div>
     <div class="card-footer">
-      <a href="/latest-jobs/" title="View all latest government job openings">View all jobs Updates</a>
+      <a href="/latest-jobs/" class="more-link" title="View all latest government job openings">View More jobs</a>
     </div>
   </div>
 
@@ -767,7 +780,7 @@
 
     </div>
     <div class="card-footer">
-      <a href="/student-help/" title="View all resources available for students">View all student help resources</a>
+      <a href="/student-help/" class="more-link" title="View all resources available for students">More student resources</a>
     </div>
   </div>
 
@@ -818,7 +831,7 @@
 
     </div>
     <div class="card-footer">
-      <a href="/results/" title="View all latest exam results">View all latest exam results</a>
+      <a href="/results/" class="more-link" title="View all latest exam results">View more results</a>
     </div>
   </div>
 
@@ -870,7 +883,7 @@
 
     </div>
     <div class="card-footer">
-      <a href="/admitcard/" title="View and download all available admit cards">View all available admit cards</a>
+      <a href="/admitcard/"  class="more-link" title="View and download all available admit cards">more  admit cards</a>
     </div>
   </div>
  
@@ -891,7 +904,7 @@
 
     </div>
     <div class="card-footer">
-      <a href="/upcoming/" title="View all upcoming government schemes/jobs">View all upcoming Update</a>
+      <a href="/upcoming/" class="more-link" title="View all upcoming government schemes/jobs">More Upcoming Update</a>
     </div>
   </div>
 
@@ -1012,7 +1025,7 @@
 
   </div>
   <div class="card-footer">
-    <a href="/pdf-forms/" title="View and download all useful PDF forms">View all PDF forms</a>
+    <a href="/pdf-forms/" class="more-link" title="View and download all useful PDF forms">View all PDF forms</a>
   </div>
 </div>
 <div class="card">
@@ -1061,7 +1074,7 @@
 
   </div>
   <div class="card-footer">
-    <a href="/certificate/" title="View  more useful Documents Update">View More Certificate</a>
+    <a href="/certificate/" class="more-link" title="View  more useful Documents Update">View More Certificate</a>
   </div>
 </div>
 
@@ -1070,48 +1083,48 @@
   <div class="card-content">
     
 <li>
-  <a href="http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/"  title="MP Social Security  Pension Form PDF Download &amp; Application Process" target="_blank">MP Social Security  Pension Form PDF Download &amp; Application Process</a>
+  <a href="http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/"  target="_blank">MP Social Security  Pension Form PDF Download &amp; Application Process</a>
 </li><hr>
 
 <li>
-  <a href="http://localhost:1313/document/eshram-card-apply/"  title="Eshram Card Apply, Update and Download" target="_blank">Eshram Card Apply, Update and Download</a>
+  <a href="http://localhost:1313/document/eshram-card-apply/"  target="_blank">Eshram Card Apply, Update and Download</a>
 </li><hr>
 
 <li>
-  <a href="http://localhost:1313/scheme/pm-awas-yojna-2/"  title="PM Awas Yojna Gramin 2.0 Online Self Servey " target="_blank">PM Awas Yojna Gramin 2.0 Online Self Servey </a>
+  <a href="http://localhost:1313/scheme/pm-awas-yojna-2/"  target="_blank">PM Awas Yojna Gramin 2.0 Online Self Servey </a>
 </li><hr>
 
 <li>
-  <a href="http://localhost:1313/pdf/student-school-college-pdf-form/"  title="School / College (विद्यार्थी संबंधित फार्म) PDF Forms Download" target="_blank">School / College (विद्यार्थी संबंधित फार्म) PDF Forms Download</a>
+  <a href="http://localhost:1313/pdf/student-school-college-pdf-form/"  target="_blank">School / College (विद्यार्थी संबंधित फार्म) PDF Forms Download</a>
 </li><hr>
 
 <li>
-  <a href="http://localhost:1313/pdf/gram-panchamchyat-forms/"  title="GP Sarpanch / Sachiv (ग्राम पंचायत) Lable PDF Forms Download" target="_blank">GP Sarpanch / Sachiv (ग्राम पंचायत) Lable PDF Forms Download</a>
+  <a href="http://localhost:1313/pdf/gram-panchamchyat-forms/"  target="_blank">GP Sarpanch / Sachiv (ग्राम पंचायत) Lable PDF Forms Download</a>
 </li><hr>
 
 <li>
-  <a href="http://localhost:1313/pdf/all-lokseva-forms/"  title="Lokseva /eDistrict (लोकसेवा सें संबंधित) PDF Forms Download" target="_blank">Lokseva /eDistrict (लोकसेवा सें संबंधित) PDF Forms Download</a>
+  <a href="http://localhost:1313/pdf/all-lokseva-forms/"  target="_blank">Lokseva /eDistrict (लोकसेवा सें संबंधित) PDF Forms Download</a>
 </li><hr>
 
 <li>
-  <a href="http://localhost:1313/pdf/all-farmer-forms/"  title="Patwari / Farmer (किसान से संबंधित) PDF Forms Download" target="_blank">Patwari / Farmer (किसान से संबंधित) PDF Forms Download</a>
+  <a href="http://localhost:1313/pdf/all-farmer-forms/"  target="_blank">Patwari / Farmer (किसान से संबंधित) PDF Forms Download</a>
 </li><hr>
 
 <li>
-  <a href="http://localhost:1313/pdf/all-aganwadi-forms/"  title="Aganwadi (आंगनवाडी) PDF Forms Download" target="_blank">Aganwadi (आंगनवाडी) PDF Forms Download</a>
+  <a href="http://localhost:1313/pdf/all-aganwadi-forms/"  target="_blank">Aganwadi (आंगनवाडी) PDF Forms Download</a>
 </li><hr>
 
 <li>
-  <a href="http://localhost:1313/card/pan-card-apply/"  title="New Pan Card, Correction / Update Old Pan, Download 49A pdf Form" target="_blank">New Pan Card, Correction / Update Old Pan, Download 49A pdf Form</a>
+  <a href="http://localhost:1313/card/pan-card-apply/"  target="_blank">New Pan Card, Correction / Update Old Pan, Download 49A pdf Form</a>
 </li><hr>
 
 <li>
-  <a href="http://localhost:1313/mp/domicile-certificate-apply/"  title="MP Domicile (Niwas) Certificate Download pdf form &amp; Apply Online" target="_blank">MP Domicile (Niwas) Certificate Download pdf form &amp; Apply Online</a>
+  <a href="http://localhost:1313/mp/domicile-certificate-apply/"  target="_blank">MP Domicile (Niwas) Certificate Download pdf form &amp; Apply Online</a>
 </li><hr>
 
   </div>
   <div class="card-footer">
-    <a href="/imp-links/" title="View  more useful Link Update">View More Useful link</a>
+    <a href="/imp-links/" class="more-link" title="View  more useful Link Update">View More Useful link</a>
   </div>
 </div>
 
@@ -1133,7 +1146,27 @@
         
         
           <li>
-            <a href="/admission/nta-ugc-net-june-2025/" >NTA UGC NET June 2025 Online Form</a>
+            <a href="/reg/mp-citizen-character-verification/" >MP Citizen Character Certificate | Police Verification Apply Online </a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+          </li>
+       
+        
+    
+        
+        
+          <li>
+            <a href="/scheme/mp/agristack-farmer-registry/" >Agristack Farmer Registry | Farmer Id | Kisan Card | Annadata Card  Download</a>
+            
+            
+          </li>
+       
+        
+    
+        
+        
+          <li>
+            <a href="/imp/dot-tefcop-know-your-mobile-connetion/" >How to Know Mobile Connections in Your Name Block Report etc</a>
             
             
           </li>
@@ -1145,16 +1178,10 @@
     
         
         
-    
-        
-        
-    
-        
-        
           <li>
-            <a href="/mp/domicile-certificate-apply/" >MP Domicile (Niwas) Certificate Download pdf form &amp; Apply Online</a>
+            <a href="/mp/farmer-mpdage-ekrishi-yantra/" >Farmer mpdage ekrishi Yantra Anudan Apply Online</a>
             
-             • <a href="/pdf-forms/">PDF</a>
+            
           </li>
        
         
@@ -1315,7 +1342,7 @@
             </nav>
             
 
-           <div id="copyright" style="color:#f0edeb">   <p>&copy; 2025 YOJNA PORTAL. All Rights Reserved.</p></div>
+           <div id="copyright" style="color:#f0edeb">   <p>&copy; 2025 YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily. All Rights Reserved.</p></div>
          
         </div>
        

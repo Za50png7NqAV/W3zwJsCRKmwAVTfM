@@ -1,7 +1,14 @@
 
   <!doctype html>
 <html lang="{{ .Params.lang | default .Site.Language.Lang }}">
-<head>.
+<head>
+    <!-- ✅ Correct Placement of CSP -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://www.gstatic.com https://kit.fontawesome.com;
+    style-src 'self' 'unsafe-inline';
+    connect-src 'self' https://*.firebaseio.com;
+  ">
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {{ partial "imp-codes/seo-meta.html" . }}
@@ -24,7 +31,8 @@
 <link rel="preload" as="style" href="{{ .Params.cssStyle | relURL }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ .Params.cssStyle | relURL }}"></noscript>
 {{ end }}
-<script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+
+<script type="module" defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
     <script>
