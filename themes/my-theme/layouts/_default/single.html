@@ -1,5 +1,10 @@
 {{ define "main" }}
-
-    {{ partial "base-wrapper/combine.html" . }}
-
+  {{- $type := .Type -}}
+  {{- if eq $type "yojna" -}}
+    {{ partial "farmate/yojna.html" . }}
+  {{- else if eq $type "job" -}}
+    {{ partial "farmate/jobs.html" . }}
+  {{- else -}}
+    {{ partial "farmate/default.html" . }}
+  {{- end }}
 {{ end }}
