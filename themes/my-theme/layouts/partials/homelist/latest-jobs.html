@@ -1,32 +1,23 @@
-{{ $today := now }}
-{{ $todayFormatted := $today.Format "2006-01-02" }}
+{{ $today := now.Format "2006-01-02" }}
+{{ $latestJobs := where .Site.RegularPages "Params.post-type" "eq" "latest-jobs" }}
+{{ $filteredPages := where $latestJobs "Params.lastdate" "ge" $today }}
 
-{{/* Step 1: आज वाली begindate पोस्ट सबसे ऊपर */}}
-{{ range where (where .Site.RegularPages ".Params.post-type" "latest-jobs") ".Params.begindate" $todayFormatted }}
-    {{ $begindate := (.Params.begindate | time) }}
-    {{ $lastdate := (.Params.lastdate | default "9999-12-31") | time }}
-    {{ $lastdatePlus3 := $lastdate.AddDate 0 0 3 }}
-
-    {{ if and (ge $today $begindate) (le $today $lastdatePlus3) }}
-        <li>
-            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
-            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
-        </li>
-        <hr>
-    {{ end }}
-{{ end }}
-
-{{/* Step 2: बाकी की पोस्ट जिनकी begindate आज नहीं है */}}
-{{ range first 10 (where (where .Site.RegularPages ".Params.post-type" "latest-jobs") ".Params.begindate" "ne" $todayFormatted) }}
-    {{ $begindate := (.Params.begindate | time) }}
-    {{ $lastdate := (.Params.lastdate | default "9999-12-31") | time }}
-    {{ $lastdatePlus3 := $lastdate.AddDate 0 0 3 }}
-
-    {{ if and (ge $today $begindate) (le $today $lastdatePlus3) }}
-        <li>
-            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
-            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
-        </li>
-        <hr>
-    {{ end }}
+{{ if $filteredPages }}
+  {{ range $filteredPages }}
+    <li>
+      <a href="{{ .RelPermalink }}" target="_blank">
+        {{ if .Params.pdfName }}
+          {{ .Params.pdfName }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </a>
+      {{ partial "main-part/list-comment" . }}
+    </li>
+    <hr>
+  {{ end }}
+{{ else }}
+  <a href="/latest-update/" style="text-align: center;" target="_blank">
+    No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update
+  </a>
 {{ end }}
