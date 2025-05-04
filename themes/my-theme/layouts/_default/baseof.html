@@ -9,23 +9,9 @@
     </header>
    <body>
  
-    <!-- left Sidebar Overlay (mobile only) -->
-  <div class="main-container scroll-fade">
-  
-    <aside class="left-sidebar" id="leftSidebar">
-     {{ partial "main-part/left-sidebar" . }}
-    </aside>
-   <!-- Right Sidebar (desktop only) -->
-    <main class="main-content">
-   
     {{ block "main" . }} {{ end }}
     </main>
-   <!-- Right Sidebar (desktop only) -->
-    <aside class="right-sidebar">
-      {{ partial "main-part/right-sidebar" . }}
-    </aside>
 
-  </div>
       <!-- Footer -->
 
     {{ partial "baseof-part/footer" . }}

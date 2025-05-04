@@ -1,0 +1,23 @@
+    <!-- left Sidebar-->
+    <div class="main-container scroll-fade">
+  
+        <aside class="left-sidebar" id="leftSidebar">
+         {{ partial "main-part/left-sidebar" . }}
+        </aside>
+       <!-- main-wrapper  -->
+        <main class="main-content">
+              {{- $type := .Type -}}
+            {{- if eq $type "yojna" -}}
+              {{ partial "farmate/yojna.html" . }}
+            {{- else if eq $type "job" -}}
+              {{ partial "farmate/jobs.html" . }}
+            {{- else -}}
+              {{ partial "farmate/default.html" . }}
+            {{- end }}
+        </main>
+       <!-- Right Sidebar  -->
+        <aside class="right-sidebar">
+          {{ partial "main-part/right-sidebar" . }}
+        </aside>
+    
+      </div>
