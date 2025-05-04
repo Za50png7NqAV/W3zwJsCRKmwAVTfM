@@ -127,6 +127,22 @@
     display: flex;
     flex-direction: column;
   }
+
+  .keyword-tag {
+    display: inline-block;
+    margin: 4px 6px 4px 0;
+    padding: 4px 8px;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    transition: background-color 0.2s ease;
+  }
+  .keyword-tag:hover {
+    background-color: #bafaa694;
+  }
   
   /* Header */
   header {

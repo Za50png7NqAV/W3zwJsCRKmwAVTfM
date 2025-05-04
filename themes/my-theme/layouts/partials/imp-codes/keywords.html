@@ -1,0 +1,12 @@
+{{/* Hugo Partial for displaying keywords as plain text without links */}}
+
+{{ $keywords := .Params.keywords }}
+
+<div class="related-keywords">
+  <strong>Related Keywords:</strong>
+  <ul>
+    {{ range $keywords }}
+    <a href="https://yojnaportal.com/search/#gsc.tab=0&gsc.sort=&gsc.q={{ . | urlize }}" target="_blank"> <button class="keyword-tag"> {{ . }}</button></a>
+    {{ end }}
+  </ul>
+</div>
