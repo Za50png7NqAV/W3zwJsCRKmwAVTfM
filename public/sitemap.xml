@@ -8,7 +8,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-05T18:11:08+05:30</lastmod>
+    <lastmod>2025-05-05T19:11:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -68,12 +68,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/student/mp-board/result/2025/</loc>
-    <lastmod>2025-05-01T09:22:39+05:30</lastmod>
+    <lastmod>2025-05-05T19:11:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/student/</loc>
-    <lastmod>2025-05-01T09:22:39+05:30</lastmod>
+    <lastmod>2025-05-05T19:11:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
