@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/how-to/samagra-adhar-de-link-mp/</loc>
-    <lastmod>2025-05-05T18:11:08+05:30</lastmod>
+    <loc>http://localhost:1313/student/mp-board/result/2025/</loc>
+    <lastmod>2025-05-05T20:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/student/</loc>
+    <lastmod>2025-05-05T20:22:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-05T19:11:08+05:30</lastmod>
+    <lastmod>2025-05-05T20:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/how-to/samagra-adhar-de-link-mp/</loc>
+    <lastmod>2025-05-05T18:11:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -64,16 +74,6 @@
   </url><url>
     <loc>http://localhost:1313/update/ration-card-ekyc/</loc>
     <lastmod>2025-05-01T11:10:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/student/mp-board/result/2025/</loc>
-    <lastmod>2025-05-05T19:11:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/student/</loc>
-    <lastmod>2025-05-05T19:11:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
