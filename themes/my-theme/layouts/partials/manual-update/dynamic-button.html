@@ -1,16 +1,10 @@
 
 
+{{ $keywords := .Params.keywords }}
+
 <div class="btn-container">
-    
-         <a href="#" class="dynamic-link" data-search="Latest Update"> <button class="dynamic-button"><i class="fas fa-search"></i>Latest Update </button></a>
-         <a href="#" class="dynamic-link" data-search="Advance Tools"> <button class="dynamic-button"><i class="fas fa-search"></i>Advance Tools </button></a>  
-         <a href="#" class="dynamic-link" data-search="Shok Sandesh"> <button class="dynamic-button"><i class="fas fa-search"></i>Shok Sandesh Maker </button></a>
-         <a href="#" class="dynamic-link" data-search="Resume Maker"> <button class="dynamic-button"><i class="fas fa-search"></i>Resume Maker </button></a>  
-         <a href="#" class="dynamic-link" data-search="Latest Yojna"> <button class="dynamic-button"><i class="fas fa-search"></i>Latest Yojna </button></a>  
-         <a href="#" class="dynamic-link" data-search="PM Schemes"> <button class="dynamic-button"><i class="fas fa-search"></i>PM Schemes </button></a>
-         <a href="#" class="dynamic-link" data-search="Govt Schemes"> <button class="dynamic-button"><i class="fas fa-search"></i>Govt Schemes </button></a>  
-         <a href="#" class="dynamic-link" data-search="Sarkari Yojana"> <button class="dynamic-button"><i class="fas fa-search"></i>Sarkari Yojna </button></a> 
-         <a href="#" class="dynamic-link" data-search="Sarkari Recruitments"> <button class="dynamic-button"><i class="fas fa-search"></i>Sarkari Recruitments </button></a>  
-         <a href="#" class="dynamic-link" data-search="Latest Jobs"> <button class="dynamic-button"><i class="fas fa-search"></i>Latest Jobs </button></a>   
-        
-        </div>
+    {{ range $keywords }}
+    <a href="#" class="dynamic-link" data-search="{{ . | urlize }}"> <button class="dynamic-button">🏷️   
+{{ . }} </button></a>
+    {{ end }}
+</div>
