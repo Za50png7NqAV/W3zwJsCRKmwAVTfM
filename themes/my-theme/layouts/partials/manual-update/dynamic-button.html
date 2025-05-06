@@ -2,9 +2,11 @@
 
 {{ $keywords := .Params.keywords }}
 
-<div class="btn-container">
+<div class="related-keywords" style="overflow-x:auto; height:200px;">
     {{ range $keywords }}
-    <a href="#" class="dynamic-link" data-search="{{ . | urlize }}"> <button class="dynamic-button">🏷️   
-{{ . }} </button></a>
+    <a href="#"  class="dynamic-link" class="keyword-tag" data-search="{{ . | urlize }}">🏷️   
+{{ . }} </a>
     {{ end }}
 </div>
+
+{{ partial "adsense.html" . }}

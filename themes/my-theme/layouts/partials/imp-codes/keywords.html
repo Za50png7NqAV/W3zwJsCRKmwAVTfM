@@ -1,12 +1,10 @@
 {{/* Hugo Partial for displaying keywords as plain text without links */}}
 
 {{ $keywords := .Params.keywords }}
-
-<div class="related-keywords">
-  <strong>Related Keywords:</strong>
-  <ul>
-    {{ range $keywords }}
-    <a href="/keyword?={{ . | urlize }}" target="_blank"> <button class="keyword-tag"> {{ . }}</button></a>
-    {{ end }}
-  </ul>
+<strong>Related Keywords:</strong>
+<div class="related-keywords" style="overflow-x:auto; white-space:nowrap;">
+ 
+  {{ range $keywords }}
+  <a href="/keyword?={{ . | urlize }}" target="_blank" class="keyword-tag">{{ . }}</a>
+  {{ end }}
 </div>
