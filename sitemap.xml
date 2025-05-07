@@ -2,18 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.yojnaportal.com/student/mp-board/result/2025/</loc>
-    <lastmod>2025-05-05T20:22:08+05:30</lastmod>
+    <loc>https://www.yojnaportal.com/education/</loc>
+    <lastmod>2025-05-06T19:04:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/student/</loc>
-    <lastmod>2025-05-05T20:22:08+05:30</lastmod>
+    <loc>https://www.yojnaportal.com/education/mp-board-retotaling-form-2025/</loc>
+    <lastmod>2025-05-06T19:04:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/</loc>
-    <lastmod>2025-05-05T20:22:08+05:30</lastmod>
+    <lastmod>2025-05-06T19:04:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/education/mp-board-result-2025/</loc>
+    <lastmod>2025-05-06T08:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/student/mp-board/results/2025/</loc>
+    <lastmod>2025-05-06T08:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/student/</loc>
+    <lastmod>2025-05-06T08:22:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -29,11 +44,6 @@
   </url><url>
     <loc>https://www.yojnaportal.com/jobs/asrb-net-ars-sms-sto-2025/</loc>
     <lastmod>2025-05-04T16:00:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/education/</loc>
-    <lastmod>2025-05-04T11:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
