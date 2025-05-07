@@ -1,13 +1,11 @@
-{{ with .Params.Videolink }}
-  {{ if ne . "" }}
-    <div class="lazy-iframe"
-         data-src="https://www.youtube.com/embed/{{ replace (replace . "https://youtu.be/" "" ) "https://www.youtube.com/watch?v=" "" }}"
-         data-title="YouTube Video - {{ $.Title }}">
-         
-      <!-- Placeholder (thumbnail या टेक्स्ट) -->
-      <div class="video-placeholder" style="width:100%;height:315px;background:#000;display:flex;align-items:center;justify-content:center;color:#fff;">
-        ▶ वीडियो देखने के लिए स्क्रॉल करें
-      </div>
-    </div>
-  {{ end }}
+{{ $link := .Params.Videolink }}
+{{ if and $link (ne $link "") }}
+  <div class="video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/{{ replace (replace $link "https://youtu.be/" "" ) "https://www.youtube.com/watch?v=" "" }}"
+            title="YouTube Video - {{ .Title }}"
+            frameborder="0"
+            allowfullscreen
+            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+    </iframe>
+  </div>
 {{ end }}
