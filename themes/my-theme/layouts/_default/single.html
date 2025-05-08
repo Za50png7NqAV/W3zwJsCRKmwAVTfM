@@ -4,6 +4,14 @@
     {{ partial "farmate/yojna.html" . }}
   {{- else if eq $type "job" -}}
     {{ partial "farmate/jobs.html" . }}
+  {{- else if eq $type "form" -}}
+    {{ partial "farmate/form.html" . }}
+  {{- else if eq $type "admission" -}}
+    {{ partial "farmate/admission.html" . }}
+  {{- else if eq $type "exams" -}}
+    {{ partial "farmate/exams.html" . }}
+  {{- else if eq $type "howto" -}}
+    {{ partial "farmate/howto.html" . }}
   {{- else -}}
     {{ partial "farmate/default.html" . }}
   {{- end }}
