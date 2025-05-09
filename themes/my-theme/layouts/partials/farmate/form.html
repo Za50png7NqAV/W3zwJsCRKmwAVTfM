@@ -1,0 +1,22 @@
+<div class="form container">
+  <h2> 📄{{ .Title }} </h2>
+ 
+    <table>
+      <thead>
+        <tr><th>Form Name</th><th>Action</th></tr> </thead>
+        <tbody>
+          {{ range .Params.table }}
+       <tr><td> 📄 {{ .forms }} </a><span class="form-category">{{ .formshi }}</span></td>
+            <td><a href="{{ .formlink}}" class="download-link" target="_blank"> <span class="download-icon">📥</span>Download</a> </td>
+        </tr>
+  {{ end }}
+        </tbody>
+      </table>
+      {{ range .Params.PostDetails}} 
+      <p Class="note"> {{ .Whatis }}</p>
+      {{ end }}
+</div>
+{{ partial "imp-codes/random-list.html" . }}
+{{ partial "manual-update/button-group.html" . }}
+{{ partial "adsense.html" . }}
+{{ partial "imp-codes/keywords.html" . }}
