@@ -2,18 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-group1-sub3-feb25/</loc>
-    <lastmod>2025-05-08T19:00:03+05:30</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-05-10T09:24:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-09T15:42:38+05:30</lastmod>
+    <loc>http://localhost:1313/railway/assistant-loco-pilot-bharti-2025/</loc>
+    <lastmod>2025-05-10T08:48:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-05-07T16:20:26+05:30</lastmod>
+    <lastmod>2025-05-10T08:42:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
+    <lastmod>2025-05-10T08:42:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb-group1-sub3-feb25/</loc>
+    <lastmod>2025-05-08T19:00:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -67,11 +77,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/mp/ederp-guest-teacher/</loc>
-    <lastmod>2025-05-04T11:42:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/bank/bob-peon-2025/</loc>
     <lastmod>2025-05-03T19:44:20+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -89,11 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/celebration/yojnaportal-Whatsapp-100k/</loc>
     <lastmod>2025-05-03T08:47:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-iti-counseling-2025/</loc>
-    <lastmod>2025-05-02T17:24:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -219,11 +219,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
     <lastmod>2025-04-13T19:15:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/railway/assistant-loco-pilot-bharti-2025/</loc>
-    <lastmod>2025-04-13T08:48:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
