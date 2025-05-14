@@ -1,0 +1,19 @@
+{{ with .Params.faqs }}
+<div class="faqs">
+  <h3>❓अक्सर पूछे जाने वाले प्रश्न</h3>
+  <div class="faq">
+    {{ range . }}
+      {{ $parts := split . "//" }}
+      <details>
+        {{ if eq (len $parts) 2 }}
+          <summary> Q. {{ index $parts 0 }}?</summary>
+          <p>उत्तरः {{ index $parts 1 }}</p>
+        {{ else }}
+          {{ . }}
+        {{ end }}
+      </details>  
+    {{ end }}
+    </div>
+  </div>
+{{ end }}
+

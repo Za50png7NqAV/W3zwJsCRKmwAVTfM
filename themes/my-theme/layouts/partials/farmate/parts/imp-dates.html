@@ -1,0 +1,19 @@
+{{ $dates := dict
+  "आवेदन शुरू" .Params.impdates.bigen_date
+  "अंतिम तिथि" .Params.impdates.last_date
+  "एडमिट कार्ड" .Params.impdates.admitcard_date
+  "परीक्षा तिथि" .Params.impdates.exam_date
+  "परिणाम तिथि" .Params.impdates.result_date
+}}
+
+{{ range $label, $value := $dates }}
+  {{ with $value }}
+    <li>
+      {{ if eq $label "अंतिम तिथि" }}
+       {{ $label }}:  <span style="color:red;">{{ . }}</span>
+      {{ else }}
+        {{ $label }}: {{ . }}
+      {{ end }}
+    </li>
+  {{ end }}
+{{ end }}

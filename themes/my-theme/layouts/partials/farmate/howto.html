@@ -1,0 +1,14 @@
+
+{{ partial "imp-codes/breadcrumb.html" . }}
+<div class="yp-container">
+  <div class="post-card">
+    {{ if .Params.department }}
+       <h2 style="color:green;"> {{ .Params.department }} </h2>
+       {{ end }}
+      <h2>{{ .Title }}  {{ if .Params.state }}
+        , {{ .Params.state }}
+        {{ end }}    </h2>
+{{ partial "farmate/parts/how_to.html" . }}
+{{ partial "farmate/parts/documents.html" . }}
+{{ partial "farmate/parts/faqs.html" . }}
+{{ partial "farmate/parts/link-table.html" . }}

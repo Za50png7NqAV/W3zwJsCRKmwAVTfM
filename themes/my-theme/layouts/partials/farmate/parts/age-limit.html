@@ -1,0 +1,8 @@
+{{ with .Params.age_limit }}
+  <h3>आयु सीमा:</h3>
+  <ul>
+    {{ range . }}
+      <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+{{ end }}

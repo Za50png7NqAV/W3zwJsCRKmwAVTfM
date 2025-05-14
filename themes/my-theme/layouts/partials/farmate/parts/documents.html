@@ -1,0 +1,15 @@
+{{ with .Params.documents }}
+  <h3>आवश्यक दस्तावेज</h3>
+  <ul>
+    {{ range . }}
+      {{ $parts := split . "//" }}
+      <li>
+        {{ if eq (len $parts) 2 }}
+          <b>{{ index $parts 0 }}:</b> {{ index $parts 1 }}
+        {{ else }}
+          {{ . }}
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

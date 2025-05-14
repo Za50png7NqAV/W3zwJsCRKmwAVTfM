@@ -1,0 +1,20 @@
+{{ with .Params.application_fee }}
+  <h3>आवेदन शुल्क:</h3>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr>
+        <th>श्रेणी</th>
+        <th>शुल्क</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range . }}
+        {{ $parts := split . ":" }}
+        <tr>
+          <td>{{ index $parts 0 | trim }}</td>
+          <td>{{ index $parts 1 | trim }}</td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+{{ end }}

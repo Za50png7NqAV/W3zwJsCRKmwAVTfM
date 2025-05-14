@@ -1,0 +1,16 @@
+{{ with .Params.how_to }}
+  <h3>आवेदन प्रक्रिया:</h3>
+  <ul>
+    {{ range . }}
+      {{ $parts := split . "//" }}
+      <li>
+        {{ if eq (len $parts) 2 }}
+          <b>{{ index $parts 0 }}:</b> {{ index $parts 1 }}
+        {{ else }}
+          {{ . }}
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
+   
