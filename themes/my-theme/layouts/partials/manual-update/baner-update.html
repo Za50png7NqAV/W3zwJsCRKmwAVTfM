@@ -1,0 +1,36 @@
+<body>
+
+<h1>बैनर / पोस्टर गैलरी </h1>
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="खोजें... जैसे आय प्रमाण पत्र, बिहार, आदि" />
+</div>
+
+<div id="categoryContainer"></div>
+
+<!-- Modal -->
+<div class="modal" id="imageModal">
+  <span class="close" id="closeModal">&times;</span>
+  <img id="modalImage" src="" alt="" />
+  <div class="modal-buttons">
+    <button id="downloadBtn" class="modal-button">📥 Download</button>
+    <button id="shareBtn" class="modal-button">📤 Share Now </button>
+   <button id="printBtn" class="modal-button">🖨️ Print </button>
+  </div>
+</div>
+<script>
+    const images = [
+  {{- range $index, $img := .Params.images -}}
+    {
+      src: "{{ $img.src }}",
+      title: "{{ $img.title }}",
+      category: "{{ $img.category }}"
+    }{{ if lt (add $index 1) (len $.Params.images) }},{{ end }}
+    {{- end -}}
+    
+  ];
+</script>
+
+{{ partial "script/baner-update" . }}
+</body>
+</html>

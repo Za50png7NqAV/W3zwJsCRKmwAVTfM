@@ -7,6 +7,16 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2025-05-16T14:42:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
+    <lastmod>2025-05-16T14:42:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/admission/mpesb-anmtst-2025/</loc>
     <lastmod>2025-05-15T19:10:44+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -29,11 +39,6 @@
   </url><url>
     <loc>http://localhost:1313/education/central-board-result-2025/</loc>
     <lastmod>2025-05-13T12:21:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-05-16T14:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -74,11 +79,6 @@
   </url><url>
     <loc>http://localhost:1313/railway/assistant-loco-pilot-bharti-2025/</loc>
     <lastmod>2025-05-10T08:48:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
-    <lastmod>2025-05-16T14:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
