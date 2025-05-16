@@ -249,13 +249,14 @@
   }
   
   /* Footer */
-  .footer {
+  #footer {
     background-color: #222;
     color: white;
     text-align: center;
     padding: 1rem;
     margin-top: auto;
-    min-width: 600px;
+     min-width:600px;
+   
   }
   
   /* Container */
