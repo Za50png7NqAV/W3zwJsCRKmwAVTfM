@@ -3,7 +3,13 @@
 <h1>बैनर / पोस्टर गैलरी </h1>
 
 <div class="search-container">
-  <input type="text" id="searchInput" placeholder="खोजें... जैसे आय प्रमाण पत्र, बिहार, आदि" />
+<form method="post" action="" name="search-form">
+  <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
+  <input type="hidden" name="use-in" class="advnce" value="Mobile/Desktop">
+  
+  <input type="text" name="Search" id="searchInput" placeholder="खोजें... जैसे आय प्रमाण पत्र, बिहार, आदि" />
+  <button id="submitBtn" style="margin-left: 5px;">🔍</button>
+</form>
 </div>
 
 <div id="categoryContainer"></div>
@@ -30,7 +36,54 @@
     
   ];
 </script>
+ <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzA_zNbxIRDyx8hjYvfoRm97aM9SM1oKceu8ZYnmFIleTXvO5iULYRaBXn_ecGwN3pJ/exec';
+        const form = document.forms['search-form'];
+        
+        // Set the timestamp automatically
+        const timestampField = document.getElementById('timestamp-field');
+        const now = new Date();
+        const formattedDate = now.toLocaleString('en-GB', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        }).replace(',', '');
+        timestampField.value = formattedDate;
+      
+        // Handle form submission
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(() => alert("Thank you! Your form is submitted successfully."))
+            .then(() => { window.location.reload(); })
+            .catch(error => console.error('Error!', error.message));
+        });
+      </script>
+      
 
 {{ partial "script/baner-update" . }}
+
+<script>
+  let typingTimer;
+  const doneTypingInterval = 3000; // 3 सेकंड
+  const input = document.getElementById('searchInput');
+  const form = document.forms['search-form'];
+  const button = document.getElementById('submitBtn');
+
+  input.addEventListener('input', () => {
+    clearTimeout(typingTimer);
+    typingTimer = setTimeout(() => {
+      // simulate button click
+      button.click();
+    }, doneTypingInterval);
+  });
+
+  input.addEventListener('keydown', () => {
+    clearTimeout(typingTimer); // जब भी टाइपिंग हो रही हो, टाइमर रीसेट करो
+  });
+</script>
 </body>
 </html>
