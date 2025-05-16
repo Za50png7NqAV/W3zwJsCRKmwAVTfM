@@ -234,7 +234,6 @@ header {
 .main-container {
   display: flex;
   max-width: 100%;
-  min-width: 600px;
   margin: auto;
   flex: 1;
   margin-top: 70px;
@@ -303,7 +302,7 @@ header {
   padding: 20px 0 0;
   text-align: center;
   color: white;
-  min-width: 600px;
+  width: 100%;
 }
 
 .footer-content {
@@ -451,7 +450,7 @@ nav ul li a:hover {
     display: none;
   }
 
-  .main-content {
+  .main-container, .main-content {
     max-width: 100%;
     padding: 1rem;
   }
