@@ -267,7 +267,6 @@ header {
 }
 
 .main-content {
-  min-width: 600px;
   max-width: 768px;
   padding: 1rem;
 }
@@ -450,7 +449,7 @@ nav ul li a:hover {
     display: none;
   }
 
-  .main-container, .main-content {
+   .main-content {
     max-width: 100%;
     padding: 1rem;
   }
