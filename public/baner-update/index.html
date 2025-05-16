@@ -1,0 +1,328 @@
+
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>baner update
+
+
+
+ 
+
+   
+
+    
+    <div class="content">
+        
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <title>बैनर गैलरी</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .search-container input {
+      width: 90%;
+      max-width: 500px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .category {
+      margin-bottom: 30px;
+    }
+
+    .category h2 {
+      margin: 10px 0;
+      padding-left: 10px;
+      color: #444;
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      padding: 10px;
+      gap: 15px;
+    }
+
+    .gallery::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .gallery::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+
+    .gallery-item {
+      min-width: 180px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .image-title {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      flex-direction: column;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 80vh;
+    }
+
+    .modal-buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .modal-button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    #downloadBtn { background-color: #2196F3; }
+    #shareBtn { background-color: #e91e63; }
+    #printBtn { background-color: #ff9800; }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .gallery-item {
+        min-width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>बैनर / पोस्टर गैलरी </h1>
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="खोजें... जैसे आय प्रमाण पत्र, बिहार, आदि" />
+</div>
+
+<div id="categoryContainer"></div>
+
+<!-- Modal -->
+<div class="modal" id="imageModal">
+  <span class="close" id="closeModal">&times;</span>
+  <img id="modalImage" src="" alt="" />
+  <div class="modal-buttons">
+    <button id="downloadBtn" class="modal-button">📥 Download</button>
+    <button id="shareBtn" class="modal-button">📤 Share Now </button>
+   <button id="printBtn" class="modal-button">🖨️ Print </button>
+  </div>
+</div>
+
+<script>
+  const images = [
+    {
+      src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifaIczv6sNZmuOKXJJK8Whvc1Mt1_qI66qKxVMeztJQIU6o7_dZIHlGde0H4oD208bk24hnmoOYUWSDuTtdMcUp9J4C-lk1DD8Nh_7dPiMVWRZ_hW89TJrNxKMLgKVZAJz1VYbDPr05-nRocnac7A-_eC4GOb7crSSruTDXWTsj08kh5bASNPUHIYdOw/s1600/%E0%A4%86%E0%A4%AF%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%BE%E0%A4%A3%20%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%B0,%20%E0%A4%B5%E0%A4%BF%E0%A4%B9%E0%A4%BE%E0%A4%B0.gif",
+      title: "आय प्रमाण पत्र", category: "दस्तावेज़"
+    },
+    {
+      src: "https://archive.org/download/rrb-alp-cen-01-2025/rrb-alp-cen-01-2025.jpg",
+      title: "ALP फॉर्म", category: "नौकरी"
+    },
+    {
+      src: "https://ia801902.us.archive.org/13/items/20250516_20250516_0440/%E0%A4%86%E0%A4%AF%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%BE%E0%A4%A3%20%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%B0%2C%20%E0%A4%B5%E0%A4%BF%E0%A4%B9%E0%A4%BE%E0%A4%B0.gif",
+      title: "bihar Aay Praman", category: "Documents"
+    },
+    {
+      src: "https://picsum.photos/400/300?random=1",
+      title: "प्राकृतिक दृश्य", category: "प्रकृति"
+    },
+    {
+      src: "https://picsum.photos/400/300?random=2",
+      title: "शहर", category: "शहर"
+    },
+    {
+      src: "https://picsum.photos/400/300?random=3",
+      title: "जंगल", category: "प्रकृति"
+    },
+    {
+      src: "https://picsum.photos/400/300?random=4",
+      title: "नदी", category: "प्रकृति"
+    },
+    {
+      src: "https://picsum.photos/400/300?random=5",
+      title: "सूर्यास्त", category: "प्रकृति"
+    }
+  ];
+
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  const closeModal = document.getElementById("closeModal");
+  const downloadBtn = document.getElementById("downloadBtn");
+  const shareBtn = document.getElementById("shareBtn");
+  const printBtn = document.getElementById("printBtn");
+  const categoryContainer = document.getElementById("categoryContainer");
+  const searchInput = document.getElementById("searchInput");
+
+  let currentImage = {};
+
+  function renderGallery(filteredImages) {
+    categoryContainer.innerHTML = '';
+
+    const categories = [...new Set(filteredImages.map(img => img.category))];
+    categories.forEach(cat => {
+      const catDiv = document.createElement('div');
+      catDiv.className = "category";
+      catDiv.innerHTML = `<h2>${cat}</h2><div class="gallery" id="cat-${cat}"></div>`;
+      categoryContainer.appendChild(catDiv);
+
+      const container = catDiv.querySelector('.gallery');
+
+      filteredImages
+        .filter(img => img.category === cat)
+        .forEach(img => {
+          const item = document.createElement('div');
+          item.className = "gallery-item";
+          item.innerHTML = `
+            <img loading="lazy" src="${img.src}" alt="${img.title}">
+            <div class="image-title">${img.title}</div>`;
+          item.onclick = () => openModal(img);
+          container.appendChild(item);
+        });
+    });
+  }
+
+  function openModal(img) {
+    modal.style.display = "flex";
+    modalImage.src = img.src;
+    currentImage = img;
+  }
+
+  closeModal.onclick = () => (modal.style.display = "none");
+  window.onclick = e => {
+    if (e.target === modal) modal.style.display = "none";
+  };
+
+  downloadBtn.onclick = () => downloadImage(currentImage.src, currentImage.title);
+
+  shareBtn.onclick = async () => {
+    try {
+      const response = await fetch(currentImage.src);
+      const blob = await response.blob();
+      const file = new File([blob], currentImage.title + ".gif", { type: blob.type });
+
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({
+          title: currentImage.title,
+          files: [file],
+        });
+      } else {
+        alert("यह ब्राउज़र इस फ़ाइल को शेयर नहीं कर सकता।");
+      }
+    } catch (err) {
+      console.log("शेयर करने में त्रुटि:", err);
+    }
+  };
+
+printBtn.onclick = () => {
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write(`
+    <html>
+      <head>
+        <title>${currentImage.title}</title>
+        <style>
+          body { margin: 0; text-align: center; }
+          img { max-width: 100%; max-height: 100vh; }
+        </style>
+      </head>
+      <body onload="window.print(); window.close();">
+        <img src="${currentImage.src}" alt="${currentImage.title}" />
+      </body>
+    </html>
+  `);
+  printWindow.document.close();
+};
+
+  function downloadImage(src, title) {
+    return fetch(src)
+      .then(res => res.blob())
+      .then(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = title + ".jpg";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+      });
+  }
+
+  searchInput.addEventListener("input", () => {
+    const keyword = searchInput.value.toLowerCase();
+    const filtered = images.filter(
+      img =>
+        img.title.toLowerCase().includes(keyword) ||
+        img.category.toLowerCase().includes(keyword)
+    );
+    renderGallery(filtered);
+  });
+
+  // Initial Render
+  renderGallery(images);
+</script>
+
+</body>
+</html>
+
+    </div>
+    
