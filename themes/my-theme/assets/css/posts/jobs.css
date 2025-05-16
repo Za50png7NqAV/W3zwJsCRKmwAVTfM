@@ -154,7 +154,7 @@ h3 {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  max-width: 120px;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -163,8 +163,7 @@ h3 {
   position: absolute;
   z-index: 1;
   top: 100%;
-  left: 50%;
-  margin-left: -60px;
+  left: 0%;
 }
 
 .tooltip:hover .tooltiptext {
