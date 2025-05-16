@@ -95,7 +95,7 @@ printBtn.onclick = () => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = title + ".jpg";
+        a.download = title + ".gif";
         document.body.appendChild(a);
         a.click();
         a.remove();
