@@ -1,4 +1,3 @@
-
 <h1>Baner Poster / Gallery</h1>
 
     <div class="search-container">
@@ -10,14 +9,14 @@
                 name="Search" 
                 id="searchInput" 
                 class="search-input"
-                placeholder="खोजें... जैसे आय प्रमाण पत्र, बिहार, आदि" 
+                placeholder="Search... MP ,Certifcate, job baner etc" 
                 autocomplete="off"
             />
             <button type="submit" class="search-button" id="searchButton">Search</button>
         </form>
     </div>
 
-<div id="categoryContainer" style="min-width:600px;"></div>
+<div id="categoryContainer"></div>
 
 <!-- Modal -->
 <div class="modal" id="imageModal">
@@ -32,6 +31,8 @@
 </div>
   <!-- Google CSE Script -->
     <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a"></script>
+    <div id="pse">
+  <div class="gcse-search"></div> </div>
    <script>
         document.getElementById('searchButton').addEventListener('click', function() {
             const query = document.getElementById('searchInput').value;
@@ -68,4 +69,7 @@
 </script>
 
 
-   
+   {{ partial "imp-codes/random-list.html" . }}
+  {{ partial "manual-update/button-group.html" . }}
+  {{ partial "adsense.html" . }}
+  {{ partial "imp-codes/keywords.html" . }}
