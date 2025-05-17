@@ -59,15 +59,13 @@
     </script>
 
 <script>
-    const images = [
-  {{- range $index, $img := .Params.images -}}
-    {
-     icon: "{{ $img.icon }}",  link: "{{ $img.link }}",  title: "{{ $img.title }}", src: "{{ $img.src }}", category: "{{ $img.category }}"
-   
-    }{{ if lt (add $index 1) (len $.Params.images) }},{{ end }}
+  const images = [
+    {{- range $i, $img := .Params.images -}}
+      {{- if $i }},{{ end -}}
+      { icon: "{{ $img.icon }}", link: "{{ $img.link }}", title: "{{ $img.title }}", src: "{{ $img.src }}", category: "{{ $img.category }}" }
     {{- end -}}
-    
-  ];
+  ].reverse();
 </script>
+
 
    
