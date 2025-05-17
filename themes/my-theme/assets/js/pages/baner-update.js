@@ -30,6 +30,7 @@
           item.className = "gallery-item";
           item.innerHTML = `
             <img loading="lazy" src="${img.src}" alt="${img.title}">
+             <div class="icon">${img.icon}</div>
             <div class="image-title">${img.title}</div>`;
           item.onclick = () => openModal(img);
           container.appendChild(item);
@@ -112,5 +113,13 @@ printBtn.onclick = () => {
     renderGallery(filtered);
   });
 
-  // Initial Render
+
+    // Initial Render
   renderGallery(images);
+  detailBtn.onclick = () => {
+  if (currentImage.link) {
+    window.open(currentImage.link, "_blank");
+  } else {
+    alert("कोई डिटेल लिंक उपलब्ध नहीं है।");
+  }
+};

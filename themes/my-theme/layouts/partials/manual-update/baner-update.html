@@ -1,15 +1,21 @@
-<body>
 
-<h1>बैनर / पोस्टर गैलरी </h1>
+<h1>Baner Poster / Gallery</h1>
 
-<div class="search-container">
-   <form method="post" action="" name="search-form" >
-      <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
-    <input type="hidden" name="use-in" class="advnce" value="Baner Search">
-  <input type="text" onchange="submit" name="Search" id="searchInput" placeholder="खोजें... जैसे आय प्रमाण पत्र, बिहार, आदि" />
-   <button   style="margin-left: 5px;"> Search</button>
-</form>
-</div>
+    <div class="search-container">
+        <form method="post" action="" name="search-form" class="search-form">
+            <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
+            <input type="hidden" name="use-in" class="advnce" value="Baner Search">
+            <input 
+                type="text" 
+                name="Search" 
+                id="searchInput" 
+                class="search-input"
+                placeholder="खोजें... जैसे आय प्रमाण पत्र, बिहार, आदि" 
+                autocomplete="off"
+            />
+            <button type="submit" class="search-button" id="searchButton">Search</button>
+        </form>
+    </div>
 
 <div id="categoryContainer" style="min-width:600px;"></div>
 
@@ -21,50 +27,47 @@
     <button id="downloadBtn" class="modal-button">📥 Download</button>
     <button id="shareBtn" class="modal-button">📤 Share Now </button>
    <button id="printBtn" class="modal-button">🖨️ Print </button>
+   <button id="detailBtn" class="modal-button">🔗Link</button>
   </div>
 </div>
+  <!-- Google CSE Script -->
+    <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a"></script>
+   <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const query = document.getElementById('searchInput').value;
+            if (query) {
+                updateURL(query);
+                search(query);
+            }
+        });
+
+        function updateURL(query) {
+            const hash = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+            window.location.hash = hash;
+        }
+  function readQuery() {
+            const hash = window.location.hash;
+            const params = new URLSearchParams(hash.substring(1)); // Remove the '#' character
+            const query = params.get('gsc.q');
+            if (query) {
+                document.getElementById('searchInput').value = query;
+                search(query);
+            }
+        }
+
+        window.onload = readQuery;
+    </script>
+
 <script>
     const images = [
   {{- range $index, $img := .Params.images -}}
     {
-      src: "{{ $img.src }}",
-      title: "{{ $img.title }}",
-      category: "{{ $img.category }}"
+     icon: "{{ $img.icon }}",  link: "{{ $img.link }}",  title: "{{ $img.title }}", src: "{{ $img.src }}", category: "{{ $img.category }}"
+   
     }{{ if lt (add $index 1) (len $.Params.images) }},{{ end }}
     {{- end -}}
     
   ];
 </script>
- <script type="text/javascript">
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzA_zNbxIRDyx8hjYvfoRm97aM9SM1oKceu8ZYnmFIleTXvO5iULYRaBXn_ecGwN3pJ/exec';
-        const form = document.forms['search-form'];
-        
-        // Set the timestamp automatically
-        const timestampField = document.getElementById('timestamp-field');
-        const now = new Date();
-        const formattedDate = now.toLocaleString('en-GB', {
-          day: '2-digit',
-          month: '2-digit',
-          year: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit',
-          hour12: false
-        }).replace(',', '');
-        timestampField.value = formattedDate;
-      
-        // Handle form submission
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(() => alert("Thank you! Your form is submitted successfully."))
-            .then(() => { window.location.reload(); })
-            .catch(error => console.error('Error!', error.message));
-        });
-      </script>
-      
 
-{{ partial "script/baner-update" . }}
-
-
-</body>
-</html>
+   
