@@ -1,6 +1,6 @@
 +++
 adsense = true
-title = '{{ replace .File.ContentBaseName "-" " " | title }} {{ now.Year }}'
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 lastmod = {{ .Date }}
 seo_title = ""
@@ -37,7 +37,7 @@ important ="no" # yes if this important for cyber cafe
 baner = "no"
 imageBanner =""
 authors = ["Vikram Singh"]
-keywords = ["{{ replace .File.ContentBaseName "-" " " | title }}", "{{ now.Year }}",  "yojna Portal"]
+keywords = ["{{ replace .File.ContentBaseName "-" " " | title }} {{ now.Year }}", "{{ .File.TranslationBaseName }}", "{{/* {{ .File.Path | md5 | truncate 6 }} */}}", "{{ .File.Path | md5 | truncate 6 }}", "yojna Portal"]
 description = ""
 cssStyles = ["css/posts/jobs.css"]
 jsFiles = ["js/main/default.js"]
