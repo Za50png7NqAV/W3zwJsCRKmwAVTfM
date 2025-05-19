@@ -1,3 +1,80 @@
+<style>
+  .disclaimer-box {
+    background-color: #fff8e1;
+    border-left: 6px solid #ffa000;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .disclaimer-box h3 {
+    color: #d84315;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .disclaimer-box p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #333;
+    font-size: 15px;
+  }
+   .features-box {
+    background-color: #e3f2fd;
+    border-left: 6px solid #2196f3;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .features-box h3 {
+    color: #0d47a1;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .features-box ul {
+    padding-left: 20px;
+  }
+
+  .features-box li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 15px;
+  }
+
+  @media (max-width: 600px) {
+    .disclaimer-box {
+      padding: 15px;
+    }
+
+    .disclaimer-box h3 {
+      font-size: 18px;
+    }
+
+    .disclaimer-box p {
+      font-size: 14px;
+    }
+        .features-box {
+      padding: 15px;
+    }
+
+    .features-box h3 {
+      font-size: 18px;
+    }
+
+    .features-box li {
+      font-size: 14px;
+    }
+
+  }
+</style>
+
 <h1>Baner Poster / Gallery</h1>
 
     <div class="search-container">
@@ -21,10 +98,10 @@
 <!-- Modal -->
 <div class="modal" id="imageModal">
   <span class="close" id="closeModal">&times;</span>
-  <img id="modalImage" src="" alt="" />
+  <img id="modalImage" src="" alt="" loading="lazy" />
   <div class="modal-buttons">
     <button id="downloadBtn" class="modal-button">📥 Download</button>
-    <button id="shareBtn" class="modal-button">📤 Share Now </button>
+    <button id="shareBtn" class="modal-button">📤 Share </button>
    <button id="printBtn" class="modal-button">🖨️ Print </button>
    <button id="detailBtn" class="modal-button">🔗Link</button>
   </div>
@@ -33,7 +110,29 @@
     <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a"></script>
     <div id="pse">
   <div class="gcse-search"></div> </div>
-   
+   <div class="features-box">
+  <h3>🎨 बैनर फीचर्स | Banner Features</h3>
+  <ul>
+    <li>📂 बैनर <strong>GIF, PNG, स्क्वायर और A4 साइज</strong> में उपलब्ध हैं।</li>
+    <li>🖨️ सभी बैनर/पोस्टर <strong>प्रिंट योग्य</strong> हैं।</li>
+    <li>📥 सभी बैनर को <strong>डाउनलोड</strong> किया जा सकता है। डाउनलोड स्पीड आपके <strong>इंटरनेट और फाइल साइज</strong> पर निर्भर करती है, जिससे डाउनलोड बटन पर क्लिक करने के बाद थोड़ा इंतज़ार हो सकता है।</li>
+    <li>📤 सभी बैनर <strong>शेयर</strong> किए जा सकते हैं।</li>
+    <li>🔗 प्रत्येक बैनर में <strong>लिंक</strong> भी जुड़ा होता है, जो संबंधित विवरण तक पहुंचने में मदद करता है।</li>
+    <li>✍️ ये बैनर <strong>मैन्युअली और समझ के अनुसार</strong> तैयार किए गए हैं। इससे कुछ गलतियाँ होना स्वाभाविक है — कृपया <strong>प्रिंट या शेयर</strong> करने से पहले जानकारी की जाँच अवश्य करें।</li>
+    <li>📮यदि कोई बेनर या जानकारी गलत दिखें तो आप हमें तुरंत समाधान के लिए <a href="/instagram/" style="text-decoration:none">Instagram । @yojnaportalofficial </a> पर मेंसेज करें</li>
+    <li>⚠️ हमारी वेबसाइट किसी प्रकार की गलती या गलत जानकारी के लिए <strong>उत्तरदायी नहीं</strong> होगी। धन्यवाद।</li>
+  </ul>
+</div>
+<div class="disclaimer-box">
+  <h3>🔒 Disclaimer | अस्वीकरण</h3>
+  <p>
+    Yojna Portal एक प्राइवेट वेबसाइट है, जो विभिन्न सरकारी योजनाओं की जानकारी को सरल भाषा में आम नागरिकों तक पहुंचाने का कार्य करती है। 
+    हम किसी सरकारी संस्था से सीधे जुड़े नहीं हैं और न ही किसी योजना के लिए आवेदन जमा करते हैं।
+  </p>
+  <p>
+    यह प्लेटफ़ॉर्म केवल सूचना, गाइड और सेवाओं के लिए है — कृपया योजना के लिए आवेदन करते समय आधिकारिक वेबसाइट की पुष्टि अवश्य करें।
+  </p>
+</div>
 
 <script>
   const images = [
