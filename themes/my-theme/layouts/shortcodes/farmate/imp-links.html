@@ -1,0 +1,21 @@
+<table class="yp-table">
+  <tr>
+    <th>Important Links</th>
+    <th>Action</th>
+  </tr>
+  {{ with .Params.links.item }}
+    {{ range . }}
+      <tr>
+        <td>{{ .title }}</td>
+        <td>
+          {{ range $index, $act := .actions }}
+            {{ if gt $index 0 }} | {{ end }}
+            <a href="{{ $act.url }}" target="_blank">{{ $act.name }}</a>
+          {{ end }}
+        </td>
+      </tr>
+    {{ end }}
+  {{ else }}
+    <tr><td colspan="2">कोई महत्वपूर्ण लिंक उपलब्ध नहीं है।</td></tr>
+  {{ end }}
+</table>
