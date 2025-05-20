@@ -1,4 +1,4 @@
-{{ range first 10 (where .Site.RegularPages ".Params.post-type" "student") }}
+{{ range first 15 (where .Site.RegularPages ".Params.post-type" "student") }}
     {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
     {{ if ge $lastdate (now.Format "2006-01-02") }}
         <li>
