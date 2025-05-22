@@ -1,9 +1,11 @@
 {{ with .Params.how_to }}
   <h3>आवेदन प्रक्रिया:</h3>
-  <ul>
+  <ul class="steps-container">
     {{ range . }}
-      {{ $parts := split . "//" }}
-      <li>
+  {{ $step1 := replace . ":" "//" }}
+  {{ $clean := replace $step1 "ः" "//" }}
+  {{ $parts := split $clean "//" }}
+      <li class="step-item">
         {{ if eq (len $parts) 2 }}
           <b>{{ index $parts 0 }}:</b> {{ index $parts 1 }}
         {{ else }}
@@ -11,6 +13,8 @@
         {{ end }}
       </li>
     {{ end }}
-  </ul>
+    </ol>
 {{ end }}
-   
+    <ol >
+              
+                

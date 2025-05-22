@@ -1,0 +1,18 @@
+{{ with .Params.shortinfo }}
+  <div class="impdates">
+     {{ range . }}
+  {{ $step1 := replace . ":" "//" }}
+  {{ $step2 := replace $step1 "ः" "//" }}
+   {{ $clean := replace $step2 "-" "//" }}
+  {{ $parts := split $clean "//" }}
+      <p>
+        {{ if eq (len $parts) 2 }}
+          {{ index $parts 0 }}: <b>{{ index $parts 1 }}</b>
+        {{ else }}
+          {{ . }}
+        {{ end }}
+      </p>
+    {{ end }}
+    </div>
+{{ end }}
+   

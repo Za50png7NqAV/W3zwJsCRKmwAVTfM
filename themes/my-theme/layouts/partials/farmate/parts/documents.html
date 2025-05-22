@@ -1,15 +1,17 @@
 {{ with .Params.documents }}
-  <h3>आवश्यक दस्तावेज</h3>
-  <ul>
+ <div class="impdates">
+
     {{ range . }}
-      {{ $parts := split . "//" }}
-      <li>
+  {{ $step1 := replace . ":" "//" }}
+  {{ $clean := replace $step1 "ः" "//" }}
+  {{ $parts := split $clean "//" }}
+      <p>🏷️
         {{ if eq (len $parts) 2 }}
-          <b>{{ index $parts 0 }}:</b> {{ index $parts 1 }}
+          <b style="color:rgb(1, 1, 37);">{{ index $parts 0 }} </b>: {{ index $parts 1 }}
         {{ else }}
           {{ . }}
         {{ end }}
-      </li>
+      </p>
     {{ end }}
-  </ul>
+  </div>
 {{ end }}

@@ -1,0 +1,166 @@
+<style>
+        /* Styling for the impdates container */
+        .impdates {
+            background-color: #f4f7fa; /* Light gray background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Inner spacing */
+            max-width: 300px; /* Limit width */
+            margin: 20px auto; /* Center the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            font-family: 'Arial', sans-serif; /* Clean font */
+        }
+
+        /* Styling for the unordered list */
+        .impdates ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Styling for list items */
+        .impdates li {
+            background-color: #ffffff; /* White background for each item */
+            border-left: 4px solid #007bff; /* Blue accent on the left */
+            padding: 10px 15px; /* Inner spacing */
+            margin-bottom: 10px; /* Space between items */
+            border-radius: 5px; /* Slightly rounded corners */
+            font-size: 16px; /* Readable font size */
+            color: #333; /* Dark text color */
+            transition: transform 0.2s; /* Smooth hover effect */
+        }
+
+        /* Hover effect for list items */
+        .impdates li:hover {
+            transform: translateX(5px); /* Slight shift on hover */
+            background-color: #e9f1ff; /* Light blue on hover */
+        }
+          .steps-container {
+            counter-reset: step-counter;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .step-item {
+            position: relative;
+            padding: 15px 15px 15px 60px;
+            margin-bottom: 15px;
+            background-color: var(--light-bg);
+            border-radius: 8px;
+        }
+        
+        .step-item:before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--primary-color);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+
+
+{{ partial "imp-codes/breadcrumb.html" . }}
+  <div class="yp-job-head">
+    <h2 style="margin-top:0;">
+      {{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+    </h2>
+  
+    <p><b>Last Update:</b> {{ .Date | time.Format "02/01/2006 | 03:04 PM" }}</p>
+  
+    <p><b>Description:</b> 
+      <a href="{{ .Params.OfficialSource }}" target="_blank" style="color:#007BFF;">
+        {{ .Params.department }}
+      </a> has released a <span class="tooltip"> notification  <span class="tooltiptext"> {{ .Params.Notification }}</span></span>  of <b>{{ .Params.recruitment }}</b>. 
+      The application process will be open from <b></b>. 
+      Candidates must meet the required eligibility criteria including <b>{{ .Params.qualification }}</b>. 
+      As per the official notification, <b>{{ .Params.postdetails }}</b>. 
+      Interested candidates are advised to check the important dates and ensure they apply before the last date. 
+      For complete information, download the official notification and apply online using the links provided below.
+    </p>
+    <p><b>Notification :</b> {{ if .Params.Notification }} 
+      <span style="text-align:center; color:#2563eb "> {{ .Params.Notification | default "N/A" }} </span>
+         {{ with .Params.notificationdate }} </span>(Dated: {{ . | time.Format "02 January 2006" }}){{ end }}
+        
+    {{ end }}</p>
+    </div>
+    {{ partial "adsense.html" . }}
+    <div class="card" tabindex="0">
+    
+    {{ if .Params.department }}
+      <h2>{{ .Params.department }}</h2>
+    {{ end }}
+    {{ if .Params.recruitment }}
+      <h1>{{ .Params.recruitment }}</h1>
+    {{ end }}
+  </div>
+  <br>
+  
+  <div class="grid">
+    {{ if .Params.impdates }}
+      <div class="card" tabindex="0">
+        <h3>📅 महत्वपूर्ण तिथियां / Important Dates</h3>
+      {{ partial "farmate/parts/impdates.html" . }}
+      </div>
+    {{ end }}
+  
+    {{ if .Params.applyfees }}
+      <div class="card" tabindex="0">
+         <h3>📅 आवेदन शुल्क / Important Dates</h3>
+         {{ partial "farmate/parts/applyfees" . }}
+      </div>
+    {{ end }} 
+  </div>
+  
+  <div class="grid">
+      {{ if .Params.shortinfo }}
+    <div class="card" tabindex="0">
+      <h3>🔍 महत्वपूर्ण जानकारी / Important Information</h3>
+   {{ partial "farmate/parts/shortinfo" . }}
+      <p><strong>नोट:</strong> उपरोक्त विवरण संक्षिप्त है। पूरी जानकारी के लिए आधिकारिक विज्ञापन देखें।</p>
+    </div>
+  {{ end }} 
+    {{ if .Params.documents }}
+      <div class="card" tabindex="0">
+        <h3>📄Required Details/ Documents / दस्तावेज़</h3>
+         {{ partial "farmate/parts/documents.html" . }}
+        <p><strong>नोट:</strong> उपरोक्त दस्तावेज़ सामान्य जानकारी हेतु हैं, आवश्यकता अनुसार अन्य दस्तावेज़ भी माँगे जा सकते हैं।</p>
+  
+      </div>
+    {{ end }}
+  </div>
+  
+  {{ if .Params.Eligibility }}
+  <div class="card" tabindex="0">
+      <h3>🧾 पात्रता / Eligibility</h3>
+      {{ .Params.Eligibility | safeHTML }}
+   </div>
+  {{ end }}
+
+    {{ if .Params.how_to }}
+  <div class="card" tabindex="0">
+        {{ partial "farmate/parts/how_to.html" . }}
+   </div>
+  {{ end }}
+ 
+  <div class="content">
+    {{ .Content }}
+  {{ partial "farmate/parts/link-table.html" . }}
+</div>
+  
+  {{ partial "imp-codes/imageBanner.html" . }}
+
+
+  {{ partial "imp-codes/random-list.html" . }}
+  {{ partial "manual-update/button-group.html" . }}
+  {{ partial "adsense.html" . }}
+  {{ partial "imp-codes/keywords.html" . }}
+  
+    
