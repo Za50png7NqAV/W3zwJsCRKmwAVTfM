@@ -1,17 +1,21 @@
 {{ with .Params.documents }}
- <div class="impdates">
-
+  <table class="yp-table">
     {{ range . }}
-  {{ $step1 := replace . ":" "//" }}
-  {{ $clean := replace $step1 "ः" "//" }}
-  {{ $parts := split $clean "//" }}
-      <p>🏷️
+      {{ $step1 := replace . ":" "//" }}
+      {{ $clean := replace $step1 "ः" "//" }}
+      {{ $parts := split $clean "//" }}
+      <tr>
         {{ if eq (len $parts) 2 }}
-          <b style="color:rgb(1, 1, 37);">{{ index $parts 0 }} </b>: {{ index $parts 1 }}
+          <td>✓<b>{{ index $parts 0 | safeHTML}}</b></td>
+          <td>{{ index $parts 1 | safeHTML}}</td>
         {{ else }}
-          {{ . }}
+          <td colspan="2">✓<b>{{ . | safeHTML}}</b></td>
         {{ end }}
-      </p>
+      </tr>
+    {{ else }}
+      <tr>
+        <td colspan="2">⚠️ कोई दस्तावेज़ नहीं मिला</td>
+      </tr>
     {{ end }}
-  </div>
+  </table>
 {{ end }}

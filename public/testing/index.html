@@ -81,12 +81,6 @@
   
 
 
-  
-    
-    <link rel="preload" as="style" href="http://localhost:1313/css/posts/jobs.min.d6f76a14788d1bc64535e6703d7f4b612a1ada316edeeb6f90664059371aee5e.css" integrity="sha256-1vdqFHiNG8ZFNeZwPX9LYSoa2jFu3utvkGZAWTca7l4=" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="http://localhost:1313/css/posts/jobs.min.d6f76a14788d1bc64535e6703d7f4b612a1ada316edeeb6f90664059371aee5e.css" integrity="sha256-1vdqFHiNG8ZFNeZwPX9LYSoa2jFu3utvkGZAWTca7l4="></noscript>
-  
-
 
 
   
@@ -321,6 +315,254 @@
     <main class="main-content">
    
     <style>
+  :root {
+  --primary-color: #011a07;
+  --secondary-color: rgb(250, 122, 2);
+  --third-color: rgb(15, 131, 7);
+  --primary-light: #3b82f6;
+  --primary-dark: #1e40af;
+  --accent-color: #fbbf24;
+  --accent-light: #fcd34d;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
+  --light-bg: #f3f4f6;
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --transition: all 0.3s ease;
+  --border-radius: 1rem;
+}
+
+ 
+h1, h2, h3 {
+  margin: 0.5rem 0;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+
+
+
+
+ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+ 
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  border-top: 4px solid transparent;
+}
+
+.card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 3px solid var(--accent-color);
+  font-size: 1rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  border-bottom: 1px dashed #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.card li:last-child {
+  border-bottom: none;
+}
+
+.card strong {
+  color: var(--primary-dark);
+}
+
+ 
+.yp-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.yp-table {
+  width: 100%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.yp-table th {
+  background-color: #fcd9c5;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.yp-table td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.yp-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.yp-table tr:hover {
+  background-color: #ffe9c2a6;
+}
+
+.yp-table a {
+  text-decoration: none;
+}
+
+.yp-table a:hover {
+  color: #bb0b0b;
+}
+
+ 
+.yp-job-head {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-top: 3px solid #eba40d;
+  border-radius: 12px;
+  background: #f9f9f9;
+  line-height: 1.6;
+}
+
+ 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  max-width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+ 
+.yp-div {
+  background-color: #fdfdfd;
+  border-left: 5px solid #3f51b5;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.yp-div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.yp-div h2 {
+  font-size: 1.4rem;
+  color: #2c387e;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.4rem;
+}
+
+.yp-div ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+.yp-div ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+ 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .yp-table th,
+  .yp-table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .breadcrumb {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .breadcrumb li + li::before {
+    display: none;
+  }
+
+  .yp-job-head {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .tooltip .tooltiptext {
+    width: 90vw;
+    left: 5%;
+    margin-left: 0;
+  }
+}
+
          
         .impdates {
             background-color: #f4f7fa;  
@@ -386,6 +628,30 @@
             justify-content: center;
             font-weight: bold;
         }
+        .short-note {font-size: 0.7rem;
+        margin: 10px;}
+         .eligibility {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .eligibility-card {
+            flex: 1 0 200px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-top: 3px solid var(--third-color);
+        }
+        
+        .eligibility-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--third-color);
+        }
+        
     </style>
 
 
@@ -410,7 +676,7 @@
         
       </a> has released a <span class="tooltip"> notification  <span class="tooltiptext"> </span></span>  of <b></b>. 
       The application process will be open from <b></b>. 
-      Candidates must meet the required eligibility criteria including <b></b>. 
+      Candidates must meet the required eligibility criteria including <b>[न्यूनतम शिक्षा जैसे 10वीं, 12वीं, ग्रेजुएशन आदि]</b>. 
       As per the official notification, <b></b>. 
       Interested candidates are advised to check the important dates and ensure they apply before the last date. 
       For complete information, download the official notification and apply online using the links provided below.
@@ -531,71 +797,72 @@
     <div class="card" tabindex="0">
       <h3>🔍 महत्वपूर्ण जानकारी / Important Information</h3>
    
-  <div class="impdates">
+  <table class="yp-table">
      
   
   
    
   
-      <p>
+       <tr>
         
-          🎓न्यूनतम शैक्षिणिक योग्यता: <b> 12वीं पास</b>
+          <td colspan="2">✓<b><strong style="color:red;"> लिंग:	पुरुष / महिला / दोनों </strong></b></td>
         
-      </p>
+      </tr>
     
-  
-  
-   
-  
-      <p>
-        
-          🔖आयु सीमा: <b> 18 से 36 वर्ष</b>
-        
-      </p>
-    
-    </div>
+    </table>
 
    
-      <p><strong>नोट:</strong> उपरोक्त विवरण संक्षिप्त है। पूरी जानकारी के लिए आधिकारिक विज्ञापन देखें।</p>
+      <p class="short-note"><strong>नोट:</strong> उपरोक्त विवरण संक्षिप्त है। पूरी जानकारी के लिए आधिकारिक विज्ञापन देखें।</p>
     </div>
    
     
       <div class="card" tabindex="0">
         <h3>📄Required Details/ Documents / दस्तावेज़</h3>
          
- <div class="impdates">
+  <table class="yp-table">
+    
+      
+      
+      
+      <tr>
+        
+          <td>✓<b>आयु प्रमाण</b></td>
+          <td> आधार कार्ड/10वीं अंकसूची</td>
+        
+      </tr>
+    
+      
+      
+      
+      <tr>
+        
+          <td colspan="2">✓<b>ITI सर्टिफिकेट</b></td>
+        
+      </tr>
+    
+      
+      
+      
+      <tr>
+        
+          <td>✓<b>आधार कार्ड</b></td>
+          <td> -पता प्रमाण हेतु</td>
+        
+      </tr>
+    
+      
+      
+      
+      <tr>
+        
+          <td colspan="2">✓<b>आधार कार्ड</b></td>
+        
+      </tr>
+    
+  </table>
 
-    
-  
-  
-  
-      <p>🏷️
-        
-          <b style="color:rgb(1, 1, 37);">10वीं मार्कशीट </b>: जन्म तिथि
-        
-      </p>
-    
-  
-  
-  
-      <p>🏷️
-        
-          ITI सर्टिफिकेट
-        
-      </p>
-    
-  
-  
-  
-      <p>🏷️
-        
-          आधार कार्ड
-        
-      </p>
-    
-  </div>
 
-        <p><strong>नोट:</strong> उपरोक्त दस्तावेज़ सामान्य जानकारी हेतु हैं, आवश्यकता अनुसार अन्य दस्तावेज़ भी माँगे जा सकते हैं।</p>
+        <p class="short-note"><strong>नोट:</strong> उपरोक्त दस्तावेज़ सामान्य जानकारी हेतु हैं, आवश्यकता अनुसार अन्य दस्तावेज़ भी माँगे जा सकते हैं।</p>
   
       </div>
     
@@ -603,11 +870,173 @@
   
   
   <div class="card" tabindex="0">
-      <h3>🧾 पात्रता / Eligibility</h3>
-      ITI Pass
+      <h3>🧾 पात्रता मापदंड / Eligibility Criteria</h3>
+      <div class="eligibility">
+    
+  
+<div class="eligibility-card">
+ <div class="eligibility-title">🎂 आयु सीमा (Age Limit)</div>
+     
+  
+  
+   
+  
+      <p>
+        
+          : <b>01/01/2025 के अनुसार</b>
+        
+      </p>
+    
+  
+  
+   
+  
+      <p>
+        
+          न्यूनतम आयु: <b> 18 वर्ष</b>
+        
+      </p>
+    
+  
+  
+   
+  
+      <p>
+        
+          अधिकतम आयु: <b> 35 वर्ष</b>
+        
+      </p>
+    
+
+    </div>
+
+ 
+                
+
+
+  
+  
+<div class="eligibility-card">
+ <div class="eligibility-title">🏋️‍♂️शारीरिक मापदंड (Physical Standards) </div>
+
+     
+  
+  
+   
+  
+      <p>
+        
+          Height Male : <b> 168 CMS & Female </b>
+        
+      </p>
+    
+  
+  
+   
+  
+      <p>
+        
+          Chest Male : <b> 81</b>
+        
+      </p>
+    
+  
+  
+   
+  
+      <p>
+        
+          Running : <b> Male </b>
+        
+      </p>
+    
+  
+  
+   
+  
+      <p>
+        
+          Female : <b> 5 Km in 35 Minutes.</b>
+        
+      </p>
+    
+    </div>
+
+   
+
+ 
+  
+<div class="eligibility-card">
+ <div class="eligibility-title">👤श्रेणी अनुसार (Category Details) </div>
+     
+  
+  
+   
+  
+      <p>
+        
+          OBC : <b> 500</b>
+        
+      </p>
+    
+  
+  
+   
+  
+      <p>
+        
+          SC: <b> 50</b>
+        
+      </p>
+    
+  
+  
+   
+  
+      <p>
+        
+          ST: <b> 100</b>
+        
+      </p>
+    
+  
+  
+   
+  
+      <p>
+        
+          General: <b> 200</b>
+        
+      </p>
+    
+    </div>
+
+   
+
+ 
+  
+<div class="eligibility-card">
+ <div class="eligibility-title">🎓 शैक्षणिक योग्यता (Education Eligibility)</div>
+     
+  
+  
+   
+  
+      <p>
+        
+          न्यूनतम शिक्षा जैसे 10वीं, 12वीं, ग्रेजुएशन आदि
+        
+      </p>
+    
+    </div>
+
+ 
+                
+
+
    </div>
   
-
+</div>
     
   <div class="card" tabindex="0">
         
@@ -711,8 +1140,24 @@
     
     
     
+  
+    
+    
+  
+    
+    
       <li>
-        <a href="/document/eshram-card-apply/" >Eshram Card Apply, Update and Download</a>
+        <a href="/how-to/samagra-marital-stutus-correction/" >Marital Stutus Correction in Samagra 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/card/voter-card-download/" >Voter Card Download/Apply</a>
         
         
       </li>
@@ -730,13 +1175,6 @@
   
     
     
-      <li>
-        <a href="/mp/cmkvy-kanya-vivah-nikah-yojna-form/" >Mukhya Mantri Kanya Vivah /Nikah Yojna -(MKVNY)</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
-      </li>
-   
-    
   
     
     
@@ -744,25 +1182,9 @@
     
     
       <li>
-        <a href="/scheme/pmjay-ayushman-card/" >PMJAY Ayushman Bharat Card</a>
+        <a href="/download/loader/" ></a>
         
         
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/pdf/student-school-college-pdf-form/" >School / College (विद्यार्थी संबंधित फार्म) PDF Forms Download</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
       </li>
    
     
@@ -871,13 +1293,10 @@
     
         
         
-    
-        
-        
           <li>
-            <a href="/student/mp/mptaas-scholarship-profile/" >MPTAAS Scholarship Profile Panjiayan</a>
+            <a href="/reg/mp-citizen-character-verification/" >MP Citizen Character Certificate | Police Verification Apply Online </a>
             
-            
+             • <a href="/pdf-forms/">PDF</a>
           </li>
        
         
@@ -888,9 +1307,19 @@
         
         
           <li>
-            <a href="/card/apaar-id-card/" >Apaar Id Card Download and Apaar Consent Pdf Form</a>
+            <a href="/download/loader/" ></a>
             
-             • <a href="/pdf-forms/">PDF</a>
+            
+          </li>
+       
+        
+    
+        
+        
+          <li>
+            <a href="/how-to/book-my-hsrp-online/" >Book HSRP Online Apply 2025</a>
+            
+            
           </li>
        
         
