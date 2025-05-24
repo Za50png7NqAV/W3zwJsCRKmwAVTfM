@@ -5,12 +5,12 @@
   {{ $step1 := replace . ":" "//" }}
   {{ $clean := replace $step1 "ः" "//" }}
   {{ $parts := split $clean "//" }}
-      <li class="step-item">
+      <li class="step-item"><details>
         {{ if eq (len $parts) 2 }}
-          <b>{{ index $parts 0 }}:</b> {{ index $parts 1 }}
+        <summary> <b>{{ index $parts 0 }}:</b></summary> <p> {{ index $parts 1 }}</p>
         {{ else }}
           {{ . }}
-        {{ end }}
+        {{ end }}</details>
       </li>
     {{ end }}
     </ol>
