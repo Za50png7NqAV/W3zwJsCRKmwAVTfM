@@ -1,0 +1,183 @@
+<style>
+ </style>
+
+
+{{ partial "imp-codes/breadcrumb.html" . }}
+  <div class="yp-job-head">
+    <h2 style="margin-top:0;">
+      {{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+    </h2>
+  
+    <p><b>Last Update:</b> {{ .Date | time.Format "02/01/2006 | 03:04 PM" }}</p>
+  
+    <p><b>Description:</b> 
+      <a href="{{ .Params.OfficialSource }}" target="_blank" style="color:#007BFF;">
+        {{ .Params.department }}
+      </a> has released a <span class="tooltip"> Official Notification  <span class="tooltiptext"> {{ .Params.Notification }}</span></span>  of <b>{{ .Params.postName}}</b>. 
+      The application process will be open from <b>   {{ with .Params.begindate }} {{ . | time.Format "02 Jan" }}{{ end }}</b> to <b>{{ with .Params.lastdate }} </span> {{ . | time.Format "02 Jan 2006" }}{{ end }}  </b>. 
+      Candidates must meet the required eligibility criteria including <b>{{ .Params.qualified }}</b>. 
+      As per the official notification, <b>{{ .Params.postdetails }}</b>. 
+      Interested candidates are advised to check the important dates and ensure they apply before the last date. 
+      For complete information, download the official notification and apply online using the links provided below.
+    </p>
+    {{ if .Params.Notification }} 
+    <p><b>Notification :</b> 
+      <span style="text-align:center; color:#2563eb "> {{ .Params.Notification | default "N/A" }} </span>
+         {{ with .Params.notificationdate }} </span>(Dated: {{ . | time.Format "02 January 2006" }}){{ end }}
+        
+    {{ end }}</p>
+    </div>
+    {{ partial "adsense.html" . }}
+    <div class="posthead" tabindex="0">
+    
+    {{ if .Params.department }}
+      <h2 class="Department">{{ .Params.department }}</h2>
+    {{ end }}
+    {{ if .Params.recruitment }}
+      <h1 class="PostName">{{ .Params.recruitment }}</h1>
+    {{ end }}
+  </div>
+  <br>
+  
+  <div class="grid">
+    {{ if .Params.impdates }}
+      <div class="card" tabindex="0">
+        <h3>📅 महत्वपूर्ण तिथियां / Important Dates</h3>
+      {{ partial "farmate/parts/impdates.html" . }}
+      </div>
+    {{ end }}
+  
+    {{ if .Params.applyfees }}
+      <div class="card" tabindex="0">
+         <h3>📅 आवेदन शुल्क / Important Dates</h3>
+         {{ partial "farmate/parts/applyfees" . }}
+      </div>
+    {{ end }} 
+  </div>
+  
+  <div class="grid">
+      {{ if .Params.shortinfo }}
+    <div class="card" tabindex="0">
+      <h3>🔍 महत्वपूर्ण जानकारी / Important Information</h3>
+   {{ partial "farmate/parts/shortinfo" . }}
+      <p class="short-note"><strong>नोट:</strong> उपरोक्त विवरण संक्षिप्त है। पूरी जानकारी के लिए आधिकारिक विज्ञापन देखें।</p>
+    </div>
+  {{ end }} 
+    {{ if .Params.documents }}
+      <div class="card" tabindex="0">
+        <h3>📄Required Details/ Documents / दस्तावेज़</h3>
+         {{ partial "farmate/parts/documents.html" . }}
+        <p class="short-note"><strong>नोट:</strong> उपरोक्त दस्तावेज़ सामान्य जानकारी हेतु हैं, आवश्यकता अनुसार अन्य दस्तावेज़ भी माँगे जा सकते हैं।</p>
+  
+      </div>
+    {{ end }}
+  </div>
+  
+  {{ if .Params.Eligibility }}
+  <div class="card" tabindex="0">
+      <h3>🧾 पात्रता मापदंड / Eligibility Criteria</h3>
+      <div class="eligibility">
+    {{ if .Params.age_limit }}
+  {{ partial "farmate/parts/Criteria/age-limit.html" . }}
+{{ end }}
+
+  {{ if .Params.physical }}
+  {{ partial "farmate/parts/Criteria/physical-test.html" . }}
+{{ end }}
+ {{ if .Params.castewise }}
+  {{ partial "farmate/parts/Criteria/castewise.html" . }}
+{{ end }}
+ {{ if .Params.qualification }}
+  {{ partial "farmate/parts/Criteria/qualification.html" . }}
+{{ end }}
+
+   </div>
+  {{ end }}
+</div>
+    {{ if .Params.how_to }}
+  <div class="card" tabindex="0">
+        {{ partial "farmate/parts/how_to.html" . }}
+   </div>
+  {{ end }}
+ 
+  <div class="content">
+    {{ .Content }}
+  {{ partial "farmate/parts/link-table.html" . }}
+
+<hr>
+
+  <div style="overflow-x:auto;">
+  <table class="yp-table">
+   <tr>
+    <th>Highlight</th>
+    <th>Short Details | <a href="/{{.Params.shorturl}}/"> #{{.Params.shorturl}}</a></th>
+   </tr>
+    {{ with .Params.postName }}
+    <tr>
+      <td><strong>📰Post Name </strong></td>
+      <td><b style="color:green">{{ . | safeHTML }} </b></td>
+    </tr>
+    {{ end }}
+    {{ with .Params.totalPost }}
+    <tr>
+      <td > <strong> 🔖Vacancy</strong></td>
+      <td >{{ . | safeHTML }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.Domicile }}
+    <tr>
+      <td ><strong>📍Domicile </strong> </td>
+      <td >{{ . | safeHTML }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.Eligibility }}
+    <tr>
+      <td ><strong> 🎓Qualification </strong> </td>
+       <td>  {{ . | safeHTML }}</td>
+    </tr>
+    {{ end }}
+    {{ with .Params.age_limit }}
+    <tr>
+      <td> <strong> 👨🏼‍🎓Age Limit</strong></td>
+      <td>{{ range . }}
+       {{ partial "imp-codes/cleanlist.html" .  | safeHTML}} <b style="color:red;">|</b>
+    {{ end }}</td>
+    </tr>
+    {{ end }}
+    {{ if .Params.lastdate}}
+    <tr>
+      <td><strong>📅Apply Date </strong> </td>
+      <td> <b style="color:red"> {{ with .Params.begindate }} {{ . | time.Format "02 Jan" }}{{ end }}</b> to <b>{{ with .Params.lastdate }} </span> {{ . | time.Format "02 Jan 2006" }}{{ end }} </b></td>
+    </tr>
+    {{ end }}
+  
+    {{ with .Params.documents }}
+    <tr>
+      <td><strong>📄Documents</strong></td>
+      <td>
+    {{ range . }}
+      {{ partial "imp-codes/cleanlist.html" .  | safeHTML}} <b style="color:rgb(250, 162, 0);">|</b>
+    {{ end }}
+    </td>
+    </tr>
+{{ end }}
+
+    {{ if .Params.OfficialSource }}
+    <tr>
+      <td><strong>🏬Department </strong></td>
+      <td><a href="{{ .Params.OfficialSource | safeHTML }}"> {{ .Params.department }} </a></td>
+    </tr>
+    {{ end }}
+  </table>
+</div>
+</div>
+  
+  {{ partial "imp-codes/imageBanner.html" . }}
+
+
+  {{ partial "imp-codes/random-list.html" . }}
+  {{ partial "manual-update/button-group.html" . }}
+  {{ partial "adsense.html" . }}
+  {{ partial "imp-codes/keywords.html" . }}
+  
+    

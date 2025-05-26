@@ -4,7 +4,7 @@
 
 {{ partial "imp-codes/breadcrumb.html" . }}
   <div class="yp-job-head">
-    <h2 style="margin-top:0;">
+    <h2 style="margin-top:0; color: rgba(223, 83, 3, 0.849);">
       {{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
     </h2>
   
@@ -13,7 +13,7 @@
     <p><b>Description:</b> 
       <a href="{{ .Params.OfficialSource }}" target="_blank" style="color:#007BFF;">
         {{ .Params.department }}
-      </a> has released a <span class="tooltip"> Official Notification  <span class="tooltiptext"> {{ .Params.Notification }}</span></span>  of <b>{{ .Params.AdmissionName}}</b>. 
+      </a> has released a <span class="tooltip"> Official Notification  <span class="tooltiptext"> {{ .Params.Notification }}</span></span>  of <b>{{ .Params.postName}}</b>. 
       The application process will be open from <b>   {{ with .Params.begindate }} {{ . | time.Format "02 Jan" }}{{ end }}</b> to <b>{{ with .Params.lastdate }} </span> {{ . | time.Format "02 Jan 2006" }}{{ end }}  </b>. 
       Candidates must meet the required eligibility criteria including <b>{{ .Params.qualified }}</b>. 
       As per the official notification, <b>{{ .Params.postdetails }}</b>. 
