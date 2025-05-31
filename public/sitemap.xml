@@ -3,16 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-05-31T10:42:53+05:30</lastmod>
+    <lastmod>2025-05-31T20:40:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/ruk-jana-nahin-yojana-jun-2025/</loc>
-    <lastmod>2025-05-31T10:42:53+05:30</lastmod>
+    <loc>http://localhost:1313/education/mp-board-dwitiya-pariksha-2025/</loc>
+    <lastmod>2025-05-31T20:40:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-05-31T20:40:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/ruk-jana-nahin-yojana-jun-2025/</loc>
     <lastmod>2025-05-31T10:42:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -89,11 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mpesb-msc-pbbse-2025/</loc>
     <lastmod>2025-05-24T18:39:11+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-board-dwitiya-pariksha-2025/</loc>
-    <lastmod>2025-05-22T08:20:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
