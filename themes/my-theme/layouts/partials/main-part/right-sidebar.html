@@ -1,69 +1,79 @@
 
 <div class="main-sidebar">
-    <div class="sidebar-section">
-
-        <details open class="sidebar-list" >
-        <summary class="summary"> Recommended Post</summary>
+<h3>Recommended</h3>
+    <ul class="card-list">
         {{ range first 5 (shuffle .Site.RegularPages) }}
         {{ $lastdate := .Params.lastdate | default "9999-12-31" }}
         {{ if ge $lastdate (now.Format "2006-01-02") }}
-          <li>
-            <a href="{{ .RelPermalink }}" >{{ .Title }}</a>
-            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
-            {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
+          <li class="card-item">
+            <a class="card-title" href="{{ .RelPermalink }}" >{{ .Title }}</a>
+            
+          <div class="card-tags">
+        {{ if eq .Params.extended "yes" }}<a href="/extended/">📌 Extended</a>{{ end }}
+        {{ if eq .Params.pdfForm "yes" }}<a href="/pdf-forms/">📄 PDF Form</a>{{ end }}
+      </div>
+
+      <div class="card-date">📅 {{ .Date.Format "02 Jan 2006" }}</div>
           </li>
        
         {{ end }}
     {{ end }}
-      <hr>
-      <p > <a href="/latest-update/" target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
-    </details>
+    <hr>
+      <p > <a class="card-title" href="/latest-update/" target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
+  
     
-    </div>
+        </ul>
 
     <div class="sidebar-section">
     {{ partial "adsense.html" . }}
 
 </div>
 <div class="sidebar-section">
-
-    <details open class="sidebar-list" >
-    <summary class="summary"> Latest Scheme Updates </summary>
+<h3>Latest Schemes Update</h3>
+    <ul class="card-list">
 
     {{ range first 5 (where .Site.RegularPages ".Params.post-type" "schemes") }}
     {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
     {{ if ge $lastdate (now.Format "2006-01-02") }}
-        <li>
-            <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
-            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
-            {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
+        <li class="card-item">
+            <a class="card-title" href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+            <div class="card-tags">
+        {{ if eq .Params.extended "yes" }}<a href="/extended/">📌 Extended</a>{{ end }}
+        {{ if eq .Params.pdfForm "yes" }}<a href="/pdf-forms/">📄 PDF Form</a>{{ end }}
+      </div>
+
+      <div class="card-date">📅 {{ .Date.Format "02 Jan 2006" }}</div>
         </li>
        
     {{ end }}
 {{ end }}
 <hr>
-      <p > <a href="/latest-schemes/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
+      <p > <a  class="card-title" href="/latest-schemes/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
   
-</details>
+
 
 </div>
 <div  class="sidebar-section">
 
-    <details open class="sidebar-list" >
-    <summary class="summary"> Latest Jobs Update</summary>
+ <h3>Latest Jobs Update</h3>
+    <ul class="card-list">
     {{ range first 5 (where .Site.RegularPages ".Params.post-type" "latest-jobs") }}
     {{ $lastdate := .Params.lastdate | default "9999-12-31" }} 
     {{ if ge $lastdate (now.Format "2006-01-02") }}
-        <li>
-            <a href="{{ .RelPermalink }}" >{{ .Title }}</a>
-            {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
-            {{ if eq .Params.pdfForm "yes" }} • <a href="/pdf-forms/">PDF</a>{{ end }}
+        <li class="card-item">
+            <a class="card-title"  href="{{ .RelPermalink }}" >{{ .Title }}</a>
+           <div class="card-tags">
+        {{ if eq .Params.extended "yes" }}<a href="/extended/">📌 Extended</a>{{ end }}
+        {{ if eq .Params.pdfForm "yes" }}<a href="/pdf-forms/">📄 PDF Form</a>{{ end }}
+      </div>
+
+      <div class="card-date">📅 {{ .Date.Format "02 Jan 2006" }}</div>
         </li>
 
     {{ end }}
 {{ end }}
 <hr>
-<p > <a href="/latest-jobs/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
+<p > <a  class="card-title" href="/latest-jobs/"  target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
 </details>
 
 </div>
