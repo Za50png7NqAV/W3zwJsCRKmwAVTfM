@@ -818,7 +818,121 @@
   
  
   <div class="content">
-    
+    <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#20c997;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#28a745;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <filter id="boxShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Main background with border -->
+  <rect width="500" height="350" fill="url(#bgGradient)" stroke="#ddd" stroke-width="3" rx="15" filter="url(#shadow)"/>
+  
+  <!-- Header section with gradient -->
+  <rect x="0" y="0" width="500" height="65" fill="url(#headerGradient)" rx="15" ry="0"/>
+  <rect x="0" y="50" width="500" height="15" fill="url(#headerGradient)"/>
+  
+  <!-- BPSC Logo/Icon (stylized) -->
+  <circle cx="60" cy="32" r="18" fill="white" opacity="0.9"/>
+  <text x="60" y="38" text-anchor="middle" fill="#28a745" font-family="Arial, sans-serif" font-size="16" font-weight="bold">BP</text>
+  
+  <!-- Header Text -->
+  <text x="250" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    Bihar Public Service Commission (BPSC)
+  </text>
+  <text x="250" y="47" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" opacity="0.95">
+    बिहार लोक सेवा आयोग
+  </text>
+  
+  <!-- Decorative line under header -->
+  <rect x="50" y="75" width="400" height="3" fill="#ffc107" rx="2"/>
+  
+  <!-- Main Title with enhanced styling -->
+  <text x="250" y="110" text-anchor="middle" fill="#dc3545" font-family="Arial, sans-serif" font-size="24" font-weight="bold" filter="url(#shadow)">
+    Bihar BPSC 71st Recruitment
+  </text>
+  <text x="250" y="138" text-anchor="middle" fill="#dc3545" font-family="Arial, sans-serif" font-size="24" font-weight="bold" filter="url(#shadow)">
+    2025
+  </text>
+  
+  <!-- Decorative stars -->
+  <polygon points="100,115 103,125 113,125 105,132 108,142 100,135 92,142 95,132 87,125 97,125" fill="#ffc107"/>
+  <polygon points="400,115 403,125 413,125 405,132 408,142 400,135 392,142 395,132 387,125 397,125" fill="#ffc107"/>
+  
+  <!-- Hindi subtitle with background -->
+  <rect x="100" y="155" width="300" height="30" fill="white" stroke="#28a745" stroke-width="2" rx="15" filter="url(#boxShadow)"/>
+  <text x="250" y="175" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    न्यूनतम शिक्षा: स्नातक डिग्री
+  </text>
+  
+  <!-- Enhanced Info boxes with gradients -->
+  <!-- Total Posts box -->
+  <rect x="70" y="210" width="140" height="90" fill="white" stroke="#28a745" stroke-width="3" rx="12" filter="url(#boxShadow)"/>
+  <rect x="70" y="210" width="140" height="25" fill="#28a745" rx="12" ry="0"/>
+  <rect x="70" y="225" width="140" height="12" fill="#28a745"/>
+  
+  <text x="140" y="227" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    कुल पद
+  </text>
+  <text x="140" y="260" text-anchor="middle" fill="#28a745" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+    1250+
+  </text>
+  <text x="140" y="285" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="12">
+    Total Posts
+  </text>
+  
+  <!-- Last Date box -->
+  <rect x="290" y="210" width="140" height="90" fill="white" stroke="#dc3545" stroke-width="3" rx="12" filter="url(#boxShadow)"/>
+  <rect x="290" y="210" width="140" height="25" fill="#dc3545" rx="12" ry="0"/>
+  <rect x="290" y="225" width="140" height="12" fill="#dc3545"/>
+  
+  <text x="360" y="227" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    अंतिम तिथि
+  </text>
+  <text x="360" y="258" text-anchor="middle" fill="#dc3545" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+    30/06/2025
+  </text>
+  <text x="360" y="285" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="12">
+    Last Date
+  </text>
+
+  
+  <!-- Bottom section with website info -->
+  <rect x="0" y="320" width="500" height="30" fill="url(#footerGradient)" rx="0" ry="15"/>
+  <rect x="0" y="320" width="500" height="15" fill="url(#footerGradient)"/>
+  
+  <text x="250" y="338" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    Visit Website: www.yojnaportal.com
+  </text>
+  
+  <!-- Decorative corner elements -->
+  <circle cx="25" cy="25" r="8" fill="white" opacity="0.3"/>
+  <circle cx="475" cy="25" r="8" fill="white" opacity="0.3"/>
+  <circle cx="25" cy="325" r="8" fill="#28a745" opacity="0.3"/>
+  <circle cx="475" cy="325" r="8" fill="#28a745" opacity="0.3"/>
+  
+  <!-- Important notice icon -->
+  <circle cx="50" cy="175" r="12" fill="#ffc107"/>
+  <text x="50" y="180" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">!</text>
+
+  
+</svg>
   <table class="yp-table">
   <tr>
     <th>Important Links</th>
@@ -973,14 +1087,12 @@
   
     
     
-  
-    
-    
-  
-    
-    
-  
-    
+      <li>
+        <a href="/mpdage/ekrishi-yantra-anudan/" >MP krishi yantra anudan yojana 2025 online apply</a>
+        
+        
+      </li>
+   
     
   
     
@@ -989,7 +1101,30 @@
     
     
       <li>
-        <a href="/how-to/samagra-id-profile-update-mp/" >Samagra Id Online Correction Form MP 2025</a>
+        <a href="/scheme/pmmvy-pdf-form-apply/" >PMMVY PM Matru Vandana Yojana Apply Online &amp; Download pdf Form and Status</a>
+        
+         • <a href="/pdf-forms/">PDF</a>
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/update/cm-laptop-yojna-mp/" >CM Laptop Yojana 2025-26 , MP</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/bihar/bpssc-enforcement-si-2025/" >Bihar Enforcement Sub Inspector Job 2025 – Full Details &amp; Apply Link</a>
         
         
       </li>
@@ -1163,7 +1298,27 @@
         
         
           <li>
-            <a href="/mp/farmer-mpdage-ekrishi-yantra/" >Farmer mpdage ekrishi Yantra Anudan Apply Online</a>
+            <a href="/reg/mpesb-profile/" >MPESB Profile Registration/ Vyapam Panjiyan</a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+          </li>
+       
+        
+    
+        
+        
+          <li>
+            <a href="/mp/cmkvy-kanya-vivah-yojna-form/" >CMKVY  Kanya Vivah Yojna Form Madhya Pradesh</a>
+            
+             • <a href="/pdf-forms/">PDF</a>
+          </li>
+       
+        
+    
+        
+        
+          <li>
+            <a href="/update/cm-laptop-yojna-mp/" >CM Laptop Yojana 2025-26 , MP</a>
             
             
           </li>
@@ -1173,29 +1328,9 @@
         
         
           <li>
-            <a href="/download/generate/" ></a>
+            <a href="/mp/cmkvy-kanya-vivah-nikah-yojna-form/" >Mukhya Mantri Kanya Vivah /Nikah Yojna -(MKVNY)</a>
             
-            
-          </li>
-       
-        
-    
-        
-        
-          <li>
-            <a href="/quick/search/" >Search Anything</a>
-            
-            
-          </li>
-       
-        
-    
-        
-        
-          <li>
-            <a href="/bihar/bpssc-enforcement-si-2025/" >Bihar Enforcement Sub Inspector Job 2025 – Full Details &amp; Apply Link</a>
-            
-            
+             • <a href="/pdf-forms/">PDF</a>
           </li>
        
         
