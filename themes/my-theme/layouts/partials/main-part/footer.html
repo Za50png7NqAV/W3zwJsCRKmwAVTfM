@@ -45,7 +45,7 @@
             
 
            <div id="copyright" style="color:#f0edeb;">   &copy; {{ now.Year }} {{ .Site.Title }}. All Rights Reserved.</div>
-         Site Version: {{ .Site.Params.version }}.{{ len .Site.RegularPages }} | Page updated on {{ (.Lastmod | default .Date).Format "02-01-2006 15:04" }}
+      <span style="opacity:0.5; font-size:11px;"> Last Changed : {{ (.Lastmod | default .Date).Format "02-01-2006 15:04" }} </span>
         </div>
        
 
