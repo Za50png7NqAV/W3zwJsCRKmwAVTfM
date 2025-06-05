@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/nta-csir-june-2025/</loc>
-    <lastmod>2025-06-04T20:08:46+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2025-06-05T08:42:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
+    <lastmod>2025-06-05T08:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-05T08:42:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-csir-june-2025/</loc>
     <lastmod>2025-06-04T20:08:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -39,11 +49,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-iti-counseling-2025/</loc>
     <lastmod>2025-06-02T09:24:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-05-31T20:40:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -89,11 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-rte-admission-2025/</loc>
     <lastmod>2025-05-29T08:32:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
-    <lastmod>2025-05-28T08:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
