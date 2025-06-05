@@ -96,7 +96,10 @@
   {{ end }}
 </div>
     
- 
+  {{ if .Params.content_html }}
+  {{ partial "farmate/parts/default/content_html.html" . }}
+{{ end }}
+
   <div class="content">
     {{ .Content }}
 

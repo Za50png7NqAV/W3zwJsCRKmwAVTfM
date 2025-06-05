@@ -99,7 +99,9 @@
         {{ partial "farmate/parts/how_to.html" . }}
    </div>
   {{ end }}
- 
+  {{ if .Params.content_html }}
+  {{ partial "farmate/parts/default/content_html.html" . }}
+{{ end }}
   <div class="content">
     {{ .Content }}
   {{ partial "farmate/parts/link-table.html" . }}

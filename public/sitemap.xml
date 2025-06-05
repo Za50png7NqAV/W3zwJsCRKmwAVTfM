@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bihar-zp-technical-assistant-june25/</loc>
-    <lastmod>2025-06-05T13:19:12+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ssc-junior-combined-translator-jun2025/</loc>
+    <lastmod>2025-06-05T19:55:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-05T19:55:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-grade-c-and-d-stenographer-jun2025/</loc>
+    <lastmod>2025-06-05T19:50:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/bihar/field-assistant-vacancy-2025/</loc>
+    <lastmod>2025-06-05T19:33:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-transport-si-jun25/</loc>
+    <lastmod>2025-06-05T17:32:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-zp-technical-assistant-june25/</loc>
     <lastmod>2025-06-05T13:19:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -409,11 +429,6 @@
   </url><url>
     <loc>http://localhost:1313/mp/cmkvy-kanya-vivah-nikah-yojna-form/</loc>
     <lastmod>2025-04-15T08:24:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/bihar/field-assistant-vacancy-2025/</loc>
-    <lastmod>2025-04-14T19:33:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

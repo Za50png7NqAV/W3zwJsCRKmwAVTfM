@@ -1,0 +1,20 @@
+{{ with .Params.content_html }}
+<div class="content_html">
+     {{ range . }}
+  {{ $step1 := replace . ":" "//" }}
+  {{ $step2 := replace $step1 "ः" "//" }}
+   {{ $clean := replace $step2 "-" "//" }}
+  {{ $parts := split $clean "//" }}
+      
+        {{ if eq (len $parts) 2 }}
+          {{ index $parts 0 | safeHTML}}: <b>{{ index $parts 1 | safeHTML}}</b>
+        {{ else }}
+          {{ . | safeHTML}}
+        {{ end }}
+  
+    {{ end }}
+    <p><b>Note:</b> Please make sure to read the official notification <b>{{ with $.Params.Notification }} "{{ . }}" {{ end }}</b> on the official website for the latest updates.</p>
+   </div>
+{{ end }}
+ 
+                
