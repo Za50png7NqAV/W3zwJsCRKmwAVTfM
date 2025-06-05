@@ -1,0 +1,106 @@
+<svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e7e34;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#28a745;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1f3f4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#00000033"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with gradient -->
+  <rect width="500" height="350" fill="url(#bgGrad)" stroke="#e9ecef" stroke-width="3" rx="10"/>
+  
+  <!-- Header with gradient and shadow -->
+  <rect x="0" y="0" width="500" height="70" fill="url(#headerGrad)" rx="10" filter="url(#shadow)"/>
+  <rect x="0" y="60" width="500" height="10" fill="url(#headerGrad)"/>
+  
+  <!-- BPSC Logo placeholder (circular) -->
+  <circle cx="60" cy="35" r="20" fill="#ffffff" stroke="#1e7e34" stroke-width="2"/>
+  <text x="60" y="40" text-anchor="middle" fill="#1e7e34" font-family="Arial, sans-serif" font-size="12" font-weight="bold">BPSC</text>
+  
+  <!-- Header text -->
+  <text x="250" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    Bihar Public Service Commission
+  </text>
+  <text x="250" y="45" text-anchor="middle" fill="#e8f5e8" font-family="Arial, sans-serif" font-size="14">
+    बिहार लोक सेवा आयोग (BPSC)
+  </text>
+  <text x="250" y="60" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    ★ OFFICIAL NOTIFICATION ★
+  </text>
+  
+  <!-- Main Title with enhanced styling -->
+  <rect x="50" y="90" width="400" height="50" fill="#dc354530" rx="8" stroke="#dc3545" stroke-width="2"/>
+  <text x="250" y="110" text-anchor="middle" fill="#dc3545" font-family="Arial Black, sans-serif" font-size="22" font-weight="bold">
+    BIHAR BPSC 71st RECRUITMENT
+  </text>
+  <text x="250" y="130" text-anchor="middle" fill="#dc3545" font-family="Arial Black, sans-serif" font-size="22" font-weight="bold">
+    2025
+  </text>
+  
+  <!-- Hindi subtitle with background -->
+  <rect x="100" y="150" width="300" height="30" fill="#f8f9fa" rx="15" stroke="#6c757d" stroke-width="1"/>
+  <text x="250" y="170" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    न्यूनतम शिक्षा: स्नातक (Graduate)
+  </text>
+  
+  <!-- Enhanced Info boxes with gradients and shadows -->
+  <!-- Total Posts box -->
+  <rect x="70" y="200" width="150" height="100" fill="url(#boxGrad)" stroke="#28a745" stroke-width="3" rx="12" filter="url(#shadow)"/>
+  <rect x="70" y="200" width="150" height="25" fill="#28a745" rx="12"/>
+  <rect x="70" y="200" width="150" height="25" fill="#28a745"/>
+  <text x="145" y="217" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    कुल पद / TOTAL POSTS
+  </text>
+  <text x="145" y="250" text-anchor="middle" fill="#28a745" font-family="Arial Black, sans-serif" font-size="32" font-weight="bold">
+    1250+
+  </text>
+  <text x="145" y="275" text-anchor="middle" fill="#6c757d" font-family="Arial, sans-serif" font-size="12">
+    Various Categories
+  </text>
+  <text x="145" y="290" text-anchor="middle" fill="#6c757d" font-family="Arial, sans-serif" font-size="10">
+    विभिन्न श्रेणियां
+  </text>
+  
+  <!-- Last Date box -->
+  <rect x="280" y="200" width="150" height="100" fill="url(#boxGrad)" stroke="#dc3545" stroke-width="3" rx="12" filter="url(#shadow)"/>
+  <rect x="280" y="200" width="150" height="25" fill="#dc3545" rx="12"/>
+  <rect x="280" y="200" width="150" height="25" fill="#dc3545"/>
+  <text x="355" y="217" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    अंतिम तिथि / LAST DATE
+  </text>
+  <text x="355" y="250" text-anchor="middle" fill="#dc3545" font-family="Arial Black, sans-serif" font-size="24" font-weight="bold">
+    30/06/2025
+  </text>
+  <text x="355" y="275" text-anchor="middle" fill="#6c757d" font-family="Arial, sans-serif" font-size="12">
+    Application Deadline
+  </text>
+  <text x="355" y="290" text-anchor="middle" fill="#6c757d" font-family="Arial, sans-serif" font-size="10">
+    आवेदन की अंतिम तिथि
+  </text>
+  
+  <!-- Important notice -->
+  <rect x="50" y="315" width="400" height="25" fill="#ffc107" rx="12" stroke="#fd7e14" stroke-width="1"/>
+  <text x="250" y="332" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    ⚠️ Apply Online Only | आवेदन करें | www.yojnaportal.com
+  </text>
+  
+  <!-- Decorative elements -->
+  <polygon points="30,180 40,190 30,200 20,190" fill="#28a745"/>
+  <polygon points="470,180 480,190 470,200 460,190" fill="#dc3545"/>
+  
+  <!-- Corner decorations -->
+  <circle cx="450" cy="40" r="8" fill="#ffffff30" stroke="#ffffff50" stroke-width="1"/>
+  <circle cx="450" cy="40" r="4" fill="#ffffff60"/>
+</svg>
