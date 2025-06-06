@@ -1,0 +1,83 @@
+<style>
+  .sticky-footer-ad {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px; /* ✅ Fixed Height */
+    background: #ffffff;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sticky-footer-ad .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ddd;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .sticky-footer-ad .close-btn:hover {
+    background: #ffa16a;
+  }
+
+  /* Fade-in */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(100%); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Fade-out */
+  .sticky-footer-ad.fade-out {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  @media (max-width: 768px) {
+    .sticky-footer-ad {
+      height: 70px;
+      font-size: 14px;
+    }
+  }
+</style>
+
+<!-- ✅ Footer Ad HTML -->
+<div class="sticky-footer-ad" id="footerAd">
+  <div class="close-btn" onclick="fadeOutAd()">×</div>
+  <!-- 🪧 Your ad content here -->
+  <div>    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4855323063398382"
+     crossorigin="anonymous"></script>
+<!-- stricky Footer ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4855323063398382"
+     data-ad-slot="9624644896"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div>
+
+<!-- ✅ JS for Fade Out -->
+<script>
+  function fadeOutAd() {
+    const ad = document.getElementById('footerAd');
+    ad.classList.add('fade-out');
+    setTimeout(() => ad.style.display = 'none', 500);
+  }
+</script>
