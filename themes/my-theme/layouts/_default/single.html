@@ -12,6 +12,8 @@
     {{ partial "farmate/exams.html" . }}
   {{- else if eq $type "howto" -}}
     {{ partial "farmate/howto.html" . }}
+     {{- else if eq $type "Scheme" -}}
+    {{ partial "farmate/Scheme.html" . }}
       {{- else if eq $type "Recruitment" -}}
     {{ partial "farmate/Recruitment.html" . }}
   {{- else -}}

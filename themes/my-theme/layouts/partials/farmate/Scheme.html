@@ -1,0 +1,160 @@
+{{ partial "imp-codes/breadcrumb.html" . }}
+<div class="yp-container">
+  <div class="post-card">
+    {{ if .Params.department }}
+       <h2 style="color:green;"> {{ .Params.department }} </h2>
+       {{ end }}
+      <h2>{{ .Title }}  {{ if .Params.state }}
+         {{ .Params.state }}
+        {{ end }}    </h2>
+        {{ if .Params.Whatis }}
+        
+        <details open class="faqs" >  <summary> 🔸<strong> {{ .Params.YojnaName }} की संक्षिप्त जानकारी (short details)</strong> </summary>
+            <p class="conclusion">{{ .Params.Whatis | safeHTML }}</p>
+        </details>
+        
+        {{ end }}
+
+        {{ partial "imp-codes/video-iframe.html" . }}
+      {{ if .Params.objective }}
+      <div class="section">
+          <h3>🔸{{ .Params.YojnaName }} का उद्देश्य (Objective)</h3>
+          <p>{{ .Params.objective | safeHTML }}</p>
+      </div>
+      {{ end }}
+      {{ partial "adsense.html" . }}
+      {{ if .Params.eligibility }}
+      <div class="section">
+          <h3>🔸{{ .Params.YojnaName }} हेतु पात्रता (Eligibility)</h3>
+          <p>{{ .Params.eligibility | safeHTML }}</p>
+      </div>
+      {{ end }}
+
+      {{ if .Params.benefits }}
+      <div class="section">
+          <h3>🔸{{ .Params.YojnaName }} से लाभ (Benefits)</h3>
+          <p>{{ .Params.benefits | safeHTML }}</p>
+      </div>
+      {{ end }}
+      
+      {{ if .Params.documents }}
+      <div class="section">
+          <h3>🔸{{ .Params.YojnaName }} के लिए आवश्यक दस्तावेज़ (Required Documents)</h3>
+          <p>{{ .Params.documents | safeHTML }}</p>
+      </div>
+      {{ end }}
+
+      {{ if or (.Params.apply_online) (.Params.apply_offline) }}
+      <div class="section">
+          <h3>🔸 {{ .Params.YojnaName }} के लिए आवेदन प्रक्रिया (How to Apply)</h3>
+          {{ if .Params.apply_online }}
+          <h4>🖥️ ऑनलाइन आवेदन:</h4>
+          <p>{{ .Params.apply_online | safeHTML }}</p>
+          {{ end }}
+          {{ if .Params.apply_offline }}
+          <h4>🏢 ऑफलाइन आवेदन:</h4>
+          <p>{{ .Params.apply_offline | safeHTML }}</p>
+          {{ end }}
+      </div>
+      {{ end }}
+    
+      {{ if .Params.important_dates }}
+      <div class="section">
+          <h3>🔸{{ .Params.YojnaName }} महत्वपूर्ण तिथियाँ (Important Dates)</h3>
+          <div class="important-dates">
+              <div class="date-item">
+                  <p>{{ .Params.important_dates | safeHTML }}</p>
+              </div>
+          </div>
+      </div>
+      {{ end }}
+
+  
+
+     
+      {{ if .Params.conclusion }}
+      <div class="section">
+          <h3>🔚{{ .Params.YojnaName }} का निष्कर्ष (Conclusion)</h3>
+          <p class="conclusion">{{ .Params.conclusion | safeHTML }}</p>
+      </div>
+      {{ end }}
+  
+  
+  {{ if .Params.faqs }}
+  <div class="faqs">
+    <b>🙋‍♀️ अक्सर पूछे जाने वाले प्रश्न - {{ .Params.YojnaName }}</b>
+  <div class="faq">
+     {{ .Params.faqs | safeHTML }}
+    </div>
+    {{ end }} 
+</div>
+  <div class="content">
+    {{ .Content }}
+</div>
+
+  {{ partial "imp-codes/imageBanner.html" . }}
+</div>
+{{ if or .Params.objective .Params.eligibility .Params.benefits .Params.important_dates .Params.apply_online }}
+
+<div class="faq">
+    <h3>🔍  {{ .Params.YojnaName }} एक नंजर में (Summary) </h3>  
+    <table class="yp-table">
+        <tbody>
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">📌 योजना </th>
+                <td style="padding: 10px; font-size:20px; color:green;">{{ .Title }} | <a href="/{{.Params.shorturl}}/"> #{{.Params.shorturl}}</a></td>
+            </tr>
+            {{ if .Params.objective }}
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">🎯 उद्देश्य</th>
+                <td style="padding: 10px;">{{ .Params.objective | safeHTML }}</td>
+            </tr>
+            {{ end }}
+            {{ if .Params.eligibility }}
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">👥 पात्रता</th>
+                <td style="padding: 10px;"> 
+
+                  {{ partial "imp-codes/cleanlist.html" .Params.eligibility }}
+
+                </td>
+            </tr>
+            {{ end }}
+         
+            {{ if .Params.documents }}
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">📄 दस्तावेज</th>
+                <td style="padding: 10px;">
+                  {{ partial "imp-codes/cleanlist.html" .Params.documents }}
+
+                </td>
+            </tr>
+            {{ end }}
+            {{ if .Params.lastdate}}
+            <tr style="border-bottom: 1px solid #ddd;">
+                <th style="text-align: left; padding: 10px;">📅 अंतिम तिथि</th>
+                <td style="padding: 10px;">{{ .Params.lastdate | time.Format "02-01-2006" }}</td>
+            </tr>
+            {{ end }}
+            {{ if .Params.OfficialSource }}
+            <tr>
+                <th style="text-align: left; padding: 10px;">🏬 विभाग </th>
+                <td style="padding: 10px;"><a href="{{ .Params.OfficialSource | safeHTML }}" target="_blank">{{ .Params.department }}</a></td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+
+{{ end }}
+{{ if .Params.impnote }}
+
+
+    <p class="notice">{{ .Params.impnote | safeHTML }}</p>
+
+{{ end }}
+</div>
+
+{{ partial "imp-codes/random-list.html" . }}
+{{ partial "manual-update/button-group.html" . }}
+{{ partial "adsense.html" . }}
+{{ partial "imp-codes/keywords.html" . }}

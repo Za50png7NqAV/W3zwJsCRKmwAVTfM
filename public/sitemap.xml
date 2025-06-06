@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/ssc-grade-c-and-d-stenographer-jun2025/</loc>
+    <lastmod>2025-06-06T19:15:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-06T19:15:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
     <lastmod>2025-06-06T11:40:55+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -12,18 +22,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-06-06T11:40:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/ssc-junior-combined-translator-jun2025/</loc>
     <lastmod>2025-06-05T19:55:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-grade-c-and-d-stenographer-jun2025/</loc>
-    <lastmod>2025-06-05T19:50:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -699,6 +699,11 @@
   </url><url>
     <loc>http://localhost:1313/imp/self-npci-link-status/</loc>
     <lastmod>2025-03-07T16:02:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/aa-text/</loc>
+    <lastmod>2025-03-06T18:57:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
