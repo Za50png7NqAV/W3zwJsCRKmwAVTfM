@@ -1,33 +1,11 @@
 
 <div class="main-sidebar">
-<h3>Recommended</h3>
-    <ul class="card-list">
-        {{ range first 5 (shuffle .Site.RegularPages) }}
-        {{ $lastdate := .Params.lastdate | default "9999-12-31" }}
-        {{ if ge $lastdate (now.Format "2006-01-02") }}
-          <li class="card-item">
-            <a class="card-title" href="{{ .RelPermalink }}" >{{ .Title }}</a>
-            
-          <div class="card-tags">
-        {{ if eq .Params.extended "yes" }}<a href="/extended/">📌 Extended</a>{{ end }}
-        {{ if eq .Params.pdfForm "yes" }}<a href="/pdf-forms/">📄 PDF Form</a>{{ end }}
-      </div>
-
-      <div class="card-date">📅 {{ .Date.Format "02 Jan 2006" }}</div>
-          </li>
-       
-        {{ end }}
-    {{ end }}
-    <hr>
-      <p > <a class="card-title" href="/latest-update/" target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
-  
     
-        </ul>
-
     <div class="sidebar-section">
-    {{ partial "adsense.html" . }}
-
-</div>
+      <span>« Advertisement »</span> 
+      <div class="left-ads">
+          {{ partial "ads/max-height-300.html" . }}
+         </div> </div>
 <div class="sidebar-section">
 <h3>Latest Schemes Update</h3>
     <ul class="card-list">
@@ -77,5 +55,4 @@
 </details>
 
 </div>
-{{ partial "adsense.html" . }}
 </div>

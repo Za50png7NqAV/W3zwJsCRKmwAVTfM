@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-junior-combined-translator-jun2025/</loc>
-    <lastmod>2025-06-05T19:55:37+05:30</lastmod>
+    <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
+    <lastmod>2025-06-06T11:40:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rpsc/</loc>
+    <lastmod>2025-06-06T11:40:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-06T11:40:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-junior-combined-translator-jun2025/</loc>
     <lastmod>2025-06-05T19:55:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -194,16 +204,6 @@
   </url><url>
     <loc>http://localhost:1313/how-to/book-my-hsrp-online/</loc>
     <lastmod>2025-05-18T10:07:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
-    <lastmod>2025-05-17T11:40:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/rpsc/</loc>
-    <lastmod>2025-05-17T11:40:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

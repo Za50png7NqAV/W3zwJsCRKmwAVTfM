@@ -1,3 +1,4 @@
+
 <div id="sidebarOverlay"></div>
 <span class="menu-icon" onclick="toggleSidebar()">▶</span>
   
@@ -9,7 +10,12 @@
           
         </div>
         {{ partial "main-part/click-search" . }}
+       
+     
+      {{ partial "list-update/random-post" . }}
+      <h3>Latest Update</h3>
         {{ partial "homelist/latest-update" . }}
-        {{ partial "adsense.html" . }}
+     
+         
       </aside>  
       
