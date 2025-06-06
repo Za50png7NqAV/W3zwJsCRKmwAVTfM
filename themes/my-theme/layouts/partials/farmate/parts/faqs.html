@@ -1,7 +1,4 @@
 {{ with .Params.faqs }}
-<div class="faqs">
-  <h3>❓अक्सर पूछे जाने वाले प्रश्न</h3>
-  <div class="faq">
     {{ range . }}
       {{ $parts := split . "//" }}
       <details>
@@ -13,7 +10,6 @@
         {{ end }}
       </details>  
     {{ end }}
-    </div>
-  </div>
+
 {{ end }}
 
