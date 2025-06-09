@@ -4,7 +4,7 @@
       {{ $step1 := replace . ":" "//" }}
       {{ $clean := replace $step1 "ः" "//" }}
       {{ $parts := split $clean "//" }}
-      <li>
+ 
         {{ if eq (len $parts) 2 }}
           <li><b>{{ index $parts 0 | safeHTML}}</b>: {{ index $parts 1 | safeHTML}}</li>
         {{ else }}

@@ -1,14 +1,14 @@
 {{ with .Params.how_to }}
-<ul>
+<ul class="steps-container">
     {{ range . }}
       {{ $step1 := replace . ":" "//" }}
       {{ $clean := replace $step1 "ः" "//" }}
       {{ $parts := split $clean "//" }}
-      <li>
+   
         {{ if eq (len $parts) 2 }}
-          <li><b>{{ index $parts 0 | safeHTML}}</b>: {{ index $parts 1 | safeHTML}}</li>
+          <li class="step-item"><b>{{ index $parts 0 | safeHTML}}</b>: {{ index $parts 1 | safeHTML}}</li>
         {{ else }}
-          <li colspan="2">{{ . | safeHTML}}</li>
+          <li class="step-item" >{{ . | safeHTML}}</li>
         {{ end }}
      
     {{ else }}
@@ -17,4 +17,7 @@
 
     {{ end }}
 </ul>
+  <div class="important-note">
+                <strong>महत्वपूर्ण जानकारी:</strong> किसी भी निर्णय से पहले अधिकारित जॉच अवश्य कर लेवें ।
+            </div>
 {{ end }}

@@ -1,19 +1,31 @@
 {{ partial "imp-codes/breadcrumb.html" . }}
 <div class="yp-container">
   <div class="post-card">
-    {{ if .Params.Department }}
-       <h2 style="color:green;"> {{ .Params.Department }} </h2>
-       {{ end }}
-      <h2> {{ if .Params.SchemeName }}{{ .Params.SchemeName }}{{ end }}
-         {{ if .Params.state }}{{ .Params.state }} {{ end }}    </h2>
-        {{ if .Params.Whatis }}
-        
+<section class="scheme-box sticky-header">
+  {{ with .Params.Department }}
+    <div class="department-badge">{{ . }}</div>
+  {{ end }}
+
+  {{ if or .Params.SchemeName .Params.state }}
+    <div class="scheme-title">
+      {{ with .Params.SchemeName }}{{ . }}{{ end }}
+      {{ if and .Params.SchemeName .Params.state }}
+        <span class="separator"> - </span>
+      {{ end }}
+      {{ with .Params.state }}
+        <span class="state-name">{{ . }}</span>
+      {{ end }}
+    </div>
+  {{ end }}
+</section>
+
+      
+          {{ if .Params.Whatis }}
         <details open class="faqs" >  <summary> 🔸<strong> {{ .Params.YojnaName }} की संक्षिप्त जानकारी (short details)</strong> </summary>
             {{ partial "farmate/parts/scheme/Whatis.html" . }}
-        </details>
+        </details>    {{ end }}
         
-        {{ end }}
-
+     
         {{ partial "imp-codes/video-iframe.html" . }}
       {{ if .Params.objective }}
       <div class="section">
