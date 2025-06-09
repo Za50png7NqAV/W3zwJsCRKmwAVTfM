@@ -1,7 +1,7 @@
 {{ partial "imp-codes/breadcrumb.html" . }}
 <div class="yp-container">
   <div class="post-card">
-<section class="scheme-box sticky-header">
+<section class="scheme-box">
   {{ with .Params.Department }}
     <div class="department-badge">{{ . }}</div>
   {{ end }}
@@ -21,9 +21,9 @@
 
       
           {{ if .Params.Whatis }}
-        <details open class="faqs" >  <summary> 🔸<strong> {{ .Params.YojnaName }} की संक्षिप्त जानकारी (short details)</strong> </summary>
+        <div open class="section" >  <h2> 🔸<strong> {{ .Params.YojnaName }} की संक्षिप्त जानकारी (short details)</strong> </h2>
             {{ partial "farmate/parts/scheme/Whatis.html" . }}
-        </details>    {{ end }}
+        </div>    {{ end }}
         
      
         {{ partial "imp-codes/video-iframe.html" . }}

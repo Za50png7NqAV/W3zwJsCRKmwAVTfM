@@ -147,7 +147,12 @@ header {
   align-items: center;
   padding: 2px 0;
 }
-
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #fff; /* जरूरी है ताकि पीछे का content न दिखे */
+}
 .main-logo {
   display: flex;
   align-items: center;

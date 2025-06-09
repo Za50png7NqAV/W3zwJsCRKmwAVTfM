@@ -1,8 +1,8 @@
 {{ with .Params.Whatis }}
 <div>
     {{ range . }}
-      {{ $step1 := replace . ":" "//" }}
-      {{ $clean := replace $step1 "ः" "//" }}
+      {{ $step1 := replace . "+++" "//" }}
+      {{ $clean := replace $step1 "+++" "//" }}
       {{ $parts := split $clean "//" }}
     
         {{ if eq (len $parts) 2 }}
@@ -12,8 +12,6 @@
         {{ end }}
      
     {{ else }}
- 
-        <li>⚠️ नवीनतम जानकारी के लिए अधिकारित वेवसाइट अवश्य देंखें</li>
 
     {{ end }}
       </div>
