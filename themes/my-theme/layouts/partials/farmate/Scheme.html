@@ -1,4 +1,75 @@
 {{ partial "imp-codes/breadcrumb.html" . }}
+<style>
+  .sticky-anchor {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    overflow-x: auto;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .sticky-anchor-inner {
+    display: flex;
+    gap: 8px;
+    padding: 10px 16px;
+  }
+
+  .sticky-anchor a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sticky-anchor a:hover {
+    background-color: #bae6fd;
+  }
+  div {
+    scroll-margin-top: 80px; /* Sticky bar height + थोड़ा एक्स्ट्रा */
+  }
+</style>
+{{/* STEP 1: Define Navigation Items */}}
+{{ $navItems := slice
+  (dict "key" "Whatis"     "label" "संक्षिप्त जानकारी" "icon" "" )
+  (dict "key" "objective"  "label" "🎯 उद्देश्य"         "icon" "" )
+  (dict "key" "impdates"   "label" "📅 तारीख"           "icon" "" )
+  (dict "key" "benefits"   "label" "💰 लाभ"             "icon" "" )
+  (dict "key" "eligibility" "label" "🧍 पात्रता"        "icon" "" )
+  (dict "key" "documents"  "label" "📄 डॉक्युमेंट्स"     "icon" "" )
+  (dict "key" "how_to"      "label" "📝 आवेदन"           "icon" "" )
+  (dict "key" "faqs"       "label" "❓ FAQs"            "icon" "" )
+  (dict "key" "content"    "label" "📋 जानकारी"         "icon" "" )
+  (dict "key" "implinks"   "label" "🔗 लिंक"             "icon" "" )
+}}
+
+{{/* STEP 2: Check if any Param exists */}}
+{{ $hasAny := false }}
+{{ range $navItems }}
+  {{ if index $.Params .key }}
+    {{ $hasAny = true }}
+  {{ end }}
+{{ end }}
+
+{{/* STEP 3: Show nav only if something exists */}}
+{{ if $hasAny }}
+<nav class="sticky-anchor">
+  {{ range $navItems }}
+    {{ if index $.Params .key }}
+      <a href="#{{ .key }}">{{ .label }}</a>
+    {{ end }}
+  {{ end }}
+</nav>
+{{ end }}
+
+
+
 <div class="yp-container">
   <div class="post-card">
 <section class="scheme-box">
@@ -21,59 +92,63 @@
 
       
           {{ if .Params.Whatis }}
-        <div open class="section" >  <h2> 🔸<strong> {{ .Params.YojnaName }} की संक्षिप्त जानकारी (short details)</strong> </h2>
+        <div open class="section" id="Whatis" >  <h2> 🔸<strong> {{ .Params.YojnaName }} की संक्षिप्त जानकारी (short details)</strong> </h2>
             {{ partial "farmate/parts/scheme/Whatis.html" . }}
         </div>    {{ end }}
         
      
         {{ partial "imp-codes/video-iframe.html" . }}
       {{ if .Params.objective }}
-      <div class="section">
+      <div class="section" id="objective">
           <h3>🔸{{ .Params.YojnaName }} का उद्देश्य (Objective)</h3>
          {{ partial "farmate/parts/scheme/objective.html" . }}
       </div>
       {{ end }}
+
+   {{ if .Params.impdates }}
+      <div class="section" id="impdates">
+          <h3>🔸{{ .Params.YojnaName }} महत्वपूर्ण तिथियाँ (Important Dates)</h3>
+          {{ partial "farmate/parts/impdates.html" . }}
+      </div>
+      {{ end }}
+
+
       {{ partial "adsense.html" . }}
       {{ if .Params.eligibility }}
-      <div class="section">
+      <div class="section" id="eligibility">
           <h3>🔸{{ .Params.YojnaName }} हेतु पात्रता (Eligibility)</h3>
            {{ partial "farmate/parts/scheme/eligibility.html" . }}
       </div>
       {{ end }}
 
       {{ if .Params.benefits }}
-      <div class="section">
+      <div class="section" id="benefits">
           <h3>🔸{{ .Params.YojnaName }} से लाभ (Benefits)</h3>
            {{ partial "farmate/parts/scheme/benefits.html" . }}
       </div>
       {{ end }}
       
       {{ if .Params.documents }}
-      <div class="section">
+      <div class="section" id="documents">
           <h3>🔸{{ .Params.YojnaName }} के लिए आवश्यक दस्तावेज़ (Required Documents)</h3>
          {{ partial "farmate/parts/documents.html" . }}
       </div>
       {{ end }}
 
       {{ if or (.Params.apply_online) (.Params.apply_offline) (.Params.how_to) }}
-      <div class="section">
+      <div class="section" id="how_to">
           <h3>🔸 {{ .Params.YojnaName }} के लिए आवेदन प्रक्रिया (How to Apply)</h3>
        {{ partial "farmate/parts/scheme/how_to.html" . }}
       </div>
       {{ end }}
     
-      {{ if .Params.impdates }}
-      <div class="section">
-          <h3>🔸{{ .Params.YojnaName }} महत्वपूर्ण तिथियाँ (Important Dates)</h3>
-          {{ partial "farmate/parts/impdates.html" . }}
-      </div>
-      {{ end }}
+   
 
   
 
      
       {{ if .Params.conclusion }}
-      <div class="section">
+      <div class="section" id="conclusion">
           <h3>🔚{{ .Params.YojnaName }} का निष्कर्ष (Conclusion)</h3>
           {{ partial "farmate/parts/scheme/conclusion.html" . }}
       </div>
@@ -81,14 +156,14 @@
   
   
   {{ if .Params.faqs }}
-  <div class="faqs">
+  <div class="faqs" id="faqs">
     <b>🙋‍♀️ अक्सर पूछे जाने वाले प्रश्न - {{ .Params.YojnaName }}</b>
   <div class="faq">
   {{ partial "farmate/parts/faqs.html" . }}
     </div>
     {{ end }} 
 </div>
-  <div class="content">
+  <div class="content" id="content">
     {{ .Content }}
 </div>
 
