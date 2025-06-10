@@ -9,7 +9,7 @@
       <td>
         {{ range $index, $act := .actions }}
           {{ if gt $index 0 }} | {{ end }}
-         <a href="{{ $act.url }}" target="_blank" rel="noopener" title="Go to {{ $act.name }}'s external page" >{{ $act.name }}</a>
+         <a href="{{ $act.url }}" target="_blank"  title="Go to {{ $act.name }}'s external page" rel="noopener noreferrer">{{ $act.name }}</a>
         {{ end }}
       </td>
     </tr>
