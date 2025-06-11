@@ -1,0 +1,32 @@
+{{/* STEP 1: Define Navigation Items */}}
+{{ $navItems := slice
+  (dict "key" "Whatis"     "label" "संक्षिप्त जानकारी" "icon" "" )
+  (dict "key" "objective"  "label" "🎯 उद्देश्य"         "icon" "" )
+  (dict "key" "impdates"   "label" "📅 तारीख"           "icon" "" )
+  (dict "key" "benefits"   "label" "💰 लाभ"             "icon" "" )
+  (dict "key" "eligibility" "label" "🧍 पात्रता"        "icon" "" )
+  (dict "key" "documents"  "label" "📄 डॉक्युमेंट्स"     "icon" "" )
+  (dict "key" "how_to"      "label" "📝 आवेदन जानकारी"           "icon" "" )
+  (dict "key" "faqs"       "label" "❓ FAQs"            "icon" "" )
+  (dict "key" "content"    "label" "📋 जानकारी"         "icon" "" )
+  (dict "key" "links"   "label" "🔗 महत्वपूर्ण लिंक"             "icon" "" )
+}}
+
+{{/* STEP 2: Check if any Param exists */}}
+{{ $hasAny := false }}
+{{ range $navItems }}
+  {{ if index $.Params .key }}
+    {{ $hasAny = true }}
+  {{ end }}
+{{ end }}
+
+{{/* STEP 3: Show nav only if something exists */}}
+{{ if $hasAny }}
+<nav class="sticky-anchor">
+  {{ range $navItems }}
+    {{ if index $.Params .key }}
+      <a href="#{{ .key }}">{{ .label }}</a>
+    {{ end }}
+  {{ end }}
+</nav>
+{{ end }}

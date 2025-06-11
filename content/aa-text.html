@@ -223,8 +223,42 @@ a:link  {text-decoration: none;}
 .state-name {
   color: #047857;
 }
+/* ========== sticky-anchor========== */
+  .sticky-anchor {
+    position: sticky;
+    top: 15px;
+    z-index: 10;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    overflow-x: auto;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
 
+  .sticky-anchor-inner {
+    display: flex;
+    gap: 8px;
+    padding: 10px 16px;
+  }
 
+  .sticky-anchor a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .sticky-anchor a:hover {
+    background-color: #bae6fd;
+  }
+  div {
+    scroll-margin-top: 80px; /* Sticky bar height + थोड़ा एक्स्ट्रा */
+  }
   
   /* ========== Sections & Conclusion ========== */
 .section {
