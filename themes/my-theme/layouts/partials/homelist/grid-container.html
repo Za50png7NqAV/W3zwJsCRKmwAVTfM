@@ -1,19 +1,34 @@
 
+<nav class="sticky-anchor">
+  <a href="#Schemes"> Schemes</a>
+  <a href="#Results"> Results </a>
+      <a href="#Forms">Pdf Forms</a>
+  <a href="#Jobs"> Jobs </a>
+    <a href="#Admitcard"> Admitcard </a>
+     <a href="#Certificate"> Certificate</a>
+  <a href="#Education"> Education </a>
+   <a href="#Upcoming"> Upcoming</a>
+  <a href="#Implinks"> Imp Links</a>
+</nav>
+<hr>
+
 <div class="grid-container">
   <!-- First Row -->
 
   <div class="card">
-    <div class="card-header">Schemes</div>
-    <div class="card-content">
+    <span id="Schemes"> </span>
+    <div class="card-header" >Schemes</div>
+    <div class="card-content" >
       {{ partial "homelist/schemes.html" . }}
     </div>
-    <div class="card-footer">
+    <div class="card-footer" >
       <a href="/latest-schemes/" class="more-link" title="View all latest government schemes">View all schemes</a>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-header"> Latest Jobs </div>
+     <span id="Jobs"> </span>
+    <div class="card-header" > Latest Jobs </div>
     <div class="card-content">
       {{ partial "homelist/latest-jobs.html" . }}
     </div>
@@ -23,7 +38,8 @@
   </div>
 
   <div class="card">
-    <div class="card-header">Education</div>
+    <span id="Education"> </span>
+    <div class="card-header" >Education</div>
     <div class="card-content">
       {{ partial "homelist/students.html" . }}
     </div>
@@ -34,7 +50,8 @@
 
   <!-- Second Row -->
   <div class="card">
-    <div class="card-header">Results</div>
+      <span id="Results"> </span>
+    <div class="card-header" >Results</div>
     <div class="card-content">
       {{ partial "homelist/results.html" . }}
     </div>
@@ -44,7 +61,8 @@
   </div>
 
   <div class="card">
-    <div class="card-header">Admit Card</div>
+    <span id="Admitcard"> </span>
+    <div class="card-header" >Admit Card</div>
     <div class="card-content">
       {{ partial "homelist/admitcard.html" . }}
     </div>
@@ -54,6 +72,7 @@
   </div>
  
   <div class="card">
+     <span  id="Upcoming"> </span>
     <div class="card-header"> Upcoming </div>
     <div class="card-content">
       {{ partial "homelist/upcoming.html" . }}
@@ -64,7 +83,8 @@
   </div>
 <!-- 3rd Row -->
 <div class="card">
-  <div class="card-header">Latest Forms</div>
+  <span  id="Forms"> </span>
+  <div class="card-header" >Latest Forms</div>
   <div class="card-content">
     {{ partial "homelist/pdf-forms" . }}
   </div>
@@ -73,7 +93,8 @@
   </div>
 </div>
 <div class="card">
-  <div class="card-header"> Certificates </div>
+  <span  id="Certificate"> </span>
+  <div class="card-header" > Certificates </div>
   <div class="card-content">
     {{ partial "homelist/certificate.html" . }}
   </div>
@@ -83,7 +104,9 @@
 </div>
 
 <div class="card">
-  <div class="card-header">Quick Links</div>
+    <span  id="Implinks"> </span>
+
+  <div class="card-header"   >Quick Links</div>
   <div class="card-content">
     {{ partial "homelist/important.html" . }}
   </div>
