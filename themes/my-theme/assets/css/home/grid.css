@@ -113,7 +113,7 @@
    /* ========== sticky-anchor========== */
   .sticky-anchor {
     position: sticky;
-    top: 15px;
+    top: 10px;
     z-index: 10;
     background: #fff;
     border-bottom: 1px solid #ddd;
@@ -131,12 +131,14 @@
   .sticky-anchor a {
     display: inline-block;
     padding: 6px 12px;
-    background-color: #e0f2fe;
+    background-color: #ffffff;
     color: #0369a1;
     border-radius: 5px;
+    margin:2px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
+    box-shadow: 0 1px 3px #080000;
     transition: background-color 0.3s ease;
   }
 
