@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/force/navy-cadet-entry-scheme-2025/</loc>
-    <lastmod>2025-06-12T19:00:26+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2025-06-13T07:40:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/mp-board-dwitiya-pariksha-2025/</loc>
+    <lastmod>2025-06-13T07:40:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-13T07:40:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/navy-cadet-entry-scheme-2025/</loc>
     <lastmod>2025-06-12T19:00:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -64,16 +74,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-high-court-group-d-2025/</loc>
     <lastmod>2025-06-09T20:07:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-06-08T20:40:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-board-dwitiya-pariksha-2025/</loc>
-    <lastmod>2025-06-08T20:40:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
