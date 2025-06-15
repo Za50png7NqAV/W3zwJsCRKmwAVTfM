@@ -3,12 +3,45 @@
 <div class="yp-container">
   <div class="post-card">
     {{ if .Params.department }}
-       <h2 style="color:green;"> {{ .Params.department }} </h2>
+       <h2 class="depart"> {{ .Params.department }} </h2>
        {{ end }}
-      <h2>{{ .Title }}  {{ if .Params.state }}
+      <h2 class="postname">{{ if .Params.PostName }}
+        , {{ .Params.PostName}}
+        {{ end }} {{ if .Params.state }}
         , {{ .Params.state }}
-        {{ end }}    </h2>
-{{ partial "farmate/parts/how_to.html" . }}
-{{ partial "farmate/parts/documents.html" . }}
-{{ partial "farmate/parts/faqs.html" . }}
-{{ partial "farmate/parts/link-table.html" . }}
+        {{ end }}    </h2> </div>
+<div class="back-card" >
+{{ with .Params.shortinfo }}
+<div class="head-card" >संक्षिप्त जानकारी</div> 
+  {{ partial "farmate/parts/shortinfo.html" $ }}
+{{ end }}
+
+{{ with .Params.how_to }}
+<div class="head-card" >संक्षिप्त प्रकियाः</div> 
+  {{ partial "farmate/parts/other/how_to.html" $ }}
+{{ end }}
+
+{{ with .Params.documents }}
+<div class="head-card" >आवाश्यक दस्तावेजः </div> 
+  {{ partial "farmate/parts/documents.html" $ }}
+{{ end }}
+
+{{ .Content }}
+
+{{ with .Params.faqs }}
+<div class="head-card" >अक्सर पूछे जाने वाले प्रश्न ❓ </div> 
+  {{ partial "farmate/parts/faqs.html" $ }}
+{{ end }}
+
+{{ with .Params.links }}
+<div class="head-card" >महत्वपूर्ण लिंकः </div> 
+  {{ partial "farmate/parts/link-table.html" $ }}
+{{ end }}
+</div>
+  {{ partial "imp-codes/imageBanner.html" . }}
+
+
+  {{ partial "imp-codes/random-list.html" . }}
+  {{ partial "manual-update/button-group.html" . }}
+  {{ partial "adsense.html" . }}
+  {{ partial "imp-codes/keywords.html" . }}
