@@ -285,7 +285,7 @@ h1, h2, h3 {
             background-color: #f4f7fa; /* Light gray background */
             border-radius: 10px; /* Rounded corners */
             padding: 20px; /* Inner spacing */
-            max-width: 300px; /* Limit width */
+            max-width: 100%; /* Limit width */
             margin: 20px auto; /* Center the container */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             font-family: 'Arial', sans-serif; /* Clean font */
