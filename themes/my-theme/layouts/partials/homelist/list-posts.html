@@ -1,19 +1,21 @@
-
 <div class="post-grid">
-    {{ $colors := slice "#FFD700" "#FF6347" "#7FFFD4" "#DDA0DD" "#90EE90" "#FFA07A" "#87CEFA" "#F0E68C" "#98FB98" "#FFC0CB" "#B0E0E6" "#D8BFD8" "#FFDAB9" "#AFEEEE" "#FFE4B5" "#ADD8E6" }}
-    {{ range $index, $element := first 12 (where .Site.RegularPages ".Params.recommend" "yes") }}
-      {{ $colorIndex := mod $index (len $colors) }}
-      {{ $randColor := index $colors $colorIndex }}
-      <a href="{{ $element.Permalink }}" class="post-link" target="_blank">
-        <div
-          class="post"
-          style="background-color: {{ $randColor }};"
-        >
-          {{ $element.Params.RecommendName }}
-        </div>
-      </a>
-    {{ end }}
-  </div>
-  
+  {{ $colors := slice "#f8dbb4" "#e9c3f8" "#fbfcc4" "#befccc" "#f8bcb4" "#bec9fc" "#b4f0f8" "#b4f8d3" "#f8b4de" }}
+  {{ $today := now.Format "2006-01-02" }}
+  {{ $filteredPages := where  .Site.RegularPages  ".Params.activedate" "ge" $today }}
+  {{ range $index, $element := first 12 $filteredPages }}
+    {{ $colorIndex := mod $index (len $colors) }}
+    {{ $randColor := index $colors $colorIndex }}
+    <a href="{{ $element.Permalink }}" class="post-link">
+      <div class="post" style="background-color: {{ $randColor }};">
+        {{ with $element.Params.RecommendName }}
+          {{ . }}
+        {{ else }}
+          {{ $element.Title }}
+        {{ end }}
+      </div>
+    </a>
+  {{ end }}
+</div>
+
     
     
