@@ -8,19 +8,23 @@
 }
 
 .post {
- text-align: center;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
 
-    padding: 5px;
-    color:#080808;
-    border-radius: 5px;
-    border: 0.1px solid black;
-    height:70px; 
-    font-size: 1rem;
-    overflow: hidden;
-    font-weight: 700;
-    text-shadow: 2px  2px 20px yellow;
-    box-shadow:  1px 2px 5px rgb(51, 0, 34);
+  padding: 5px;
+  color: #080808;
+  border-radius: 5px;
+  border: 0.1px solid black;
+  height: 70px;
+  font-size: 0.8rem;
+  overflow: hidden;
+  font-weight: 700;
+  text-shadow: 2px 2px 20px yellow;
+  box-shadow: 1px 2px 5px rgb(51, 0, 34);
+  text-align: center; /* Optional if multi-line text */
 }
+
 .post:hover { 
 border-bottom:1px solid #f7630e;
 text-shadow: 2px  5px 12px yellow;
@@ -46,6 +50,7 @@ color:red;
 
   .post {
     min-width: 150px; /* adjust as needed */
-    flex: 0 0 auto;   /* prevent from shrinking */
+    flex: 0 0 auto;  
+    margin:5px auto; /* prevent from shrinking */
   }
 }
