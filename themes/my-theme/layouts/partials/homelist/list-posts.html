@@ -1,12 +1,15 @@
 <div class="post-grid">
-  {{ $colors := slice "#f8dbb4" "#e9c3f8" "#fbfcc4" "#befccc" "#f8bcb4" "#bec9fc" "#b4f0f8" "#b4f8d3" "#f8b4de" }}
+  {{ $colors := slice "#f8dbb4" "#e9c3f8" "#fbfcc4" "#befccc" "#f8bcb4" "#bec9fc" "#b4f0f8" "#b4f8d3" "#f8b4de" "#ffa4ff" }}
   {{ $today := now.Format "2006-01-02" }}
-  {{ $filteredPages := where  .Site.RegularPages  ".Params.activedate" "ge" $today }}
+  {{ $filteredPages := where .Site.RegularPages ".Params.activedate" "ge" $today }}
   {{ range $index, $element := first 12 $filteredPages }}
     {{ $colorIndex := mod $index (len $colors) }}
     {{ $randColor := index $colors $colorIndex }}
-    <a href="{{ $element.Permalink }}" class="post-link">
-      <div class="post" style="background-color: {{ $randColor }};">
+    <a href="{{ $element.Permalink }}" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: {{ $randColor }}; padding: 10px; position: relative;">
+      
+          <img src="https://www.yojnaportal.com/gif/new.gif" alt="NEW" class="new-icon" />
+     
         {{ with $element.Params.RecommendName }}
           {{ . }}
         {{ else }}

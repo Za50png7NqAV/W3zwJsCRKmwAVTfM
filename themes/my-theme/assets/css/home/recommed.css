@@ -31,9 +31,21 @@ text-shadow: 2px  5px 12px yellow;
 color:red;
 
 }   
- .post-link {
+/* NEW GIF icon के लिए absolute positioning सपोर्ट */
+.post-link {
+    position: relative; /* यह जरूरी है ताकि .post के अंदर absolute आइटम सही से दिखे */
     color: black;
     text-decoration: none;
+}
+
+/* NEW GIF कोने में दिखाने के लिए */
+.post .new-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 28px;
+    height: auto;
+    z-index: 10;
 }
 
 .post-link:hover {
@@ -52,5 +64,6 @@ color:red;
     min-width: 150px; /* adjust as needed */
     flex: 0 0 auto;  
     margin:5px auto; /* prevent from shrinking */
+    height: 90px;
   }
 }
