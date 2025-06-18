@@ -12,6 +12,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
+    <lastmod>2025-06-18T10:18:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/ssc/ssc-gd-constable-2024/</loc>
     <lastmod>2025-06-18T08:55:15+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -89,11 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-motor-vehicle-inspector-mvi-2025/</loc>
     <lastmod>2025-06-11T18:32:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
-    <lastmod>2025-06-11T15:18:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
