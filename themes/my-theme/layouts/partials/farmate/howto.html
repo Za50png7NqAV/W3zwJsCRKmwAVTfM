@@ -6,9 +6,7 @@
        <h2 class="depart"> {{ .Params.department }} </h2>
        {{ end }}
       <h2 class="postname">{{ if .Params.PostName }}
-        , {{ .Params.PostName}}
-        {{ end }} {{ if .Params.state }}
-        , {{ .Params.state }}
+        {{ .Params.PostName}}
         {{ end }}    </h2> </div>
 <div class="back-card" >
 {{ with .Params.shortinfo }}
