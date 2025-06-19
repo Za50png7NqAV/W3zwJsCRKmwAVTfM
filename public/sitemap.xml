@@ -47,6 +47,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/admitcard/rrb-ntpc-ug-admitcard-2025/</loc>
+    <lastmod>2025-06-18T10:45:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
     <lastmod>2025-06-18T10:18:07+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -274,11 +279,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/shs-medical-officer-bhiar-2025/</loc>
     <lastmod>2025-05-26T13:09:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admitcard/rrb-ntpc-ug-admitcard-2025/</loc>
-    <lastmod>2025-05-25T16:38:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
