@@ -455,7 +455,9 @@ nav ul li a:hover {
   }
 
    .main-content {
+    min-width: 600px;
     max-width: 100%;
     padding: 1rem;
   }
 }
+ 

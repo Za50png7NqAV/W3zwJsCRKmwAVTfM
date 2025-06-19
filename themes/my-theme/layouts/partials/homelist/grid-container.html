@@ -15,18 +15,6 @@
 
 <div class="grid-container">
   <!-- First Row -->
-
-  <div class="card">
-    <span id="Schemes"> </span>
-    <div class="card-header" >Schemes</div>
-    <div class="card-content" >
-      {{ partial "homelist/schemes.html" . }}
-    </div>
-    <div class="card-footer" >
-      <a href="/latest-schemes/" class="more-link" title="View all latest government schemes">View all schemes</a>
-    </div>
-  </div>
-
   <div class="card">
      <span id="Jobs"> </span>
     <div class="card-header" > Latest Jobs </div>
@@ -48,6 +36,21 @@
       <a href="/student-help/" class="more-link" title="View all resources available for students">More student resources</a>
     </div>
   </div>
+
+  <div class="card">
+    <span id="Schemes"> </span>
+    <div class="card-header" >Schemes</div>
+    <div class="card-content" >
+      {{ partial "homelist/schemes.html" . }}
+    </div>
+    <div class="card-footer" >
+      <a href="/latest-schemes/" class="more-link" title="View all latest government schemes">View all schemes</a>
+    </div>
+  </div>
+
+
+
+
 
   <!-- Second Row -->
   <div class="card">
