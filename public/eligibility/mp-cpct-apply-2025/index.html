@@ -7,7 +7,7 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewportTag" />
 
 <title>CPCT Online Apply 2025 – Computer Proficiency Certification Test Registration, Eligibility &amp; Dates</title>
 <meta name="description" content="Apply online for CPCT 2025! Check eligibility, syllabus, exam pattern, typing test details &amp; important dates for the Computer Proficiency Certification Test (MP). Step-by-step registration guide included.">
@@ -137,7 +137,9 @@
               <span class="bar"></span>
               <span class="bar"></span>
           </div>
+
          <ul class="nav-menu">
+            
              <div class="mobile-search"> <div class="click-iframe" data-src="/quick/search/" data-title="Quick Search">
     <div class="iframe-placeholder" style="max-width:600px;margin:auto;height:60px;display:flex;align-items:center;gap:10px;padding:10px 15px;background:#fff;border:1px solid #ccc;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.1);font-size:16px;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gray" width="24" height="24">
@@ -146,6 +148,7 @@
       <span style="color:#888;">Search Here ...</span>
     </div>
   </div></div>
+             <button class="toggle-btn" onclick="toggleViewport()">💻 </button>
               <li class="active"><a href="/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/baner-poster-update/">Poster</a></li>
@@ -156,6 +159,7 @@
               <li><a href="/latest-jobs/">Jobs</a></li>
               <li><a href="/menu/" class="btn-primary">Menu</a></li>
           </ul>
+          
       </div>
   </div>
 
@@ -195,20 +199,20 @@
     
         
         
+    
+        
+        
           <li class="card-item">
-            <a class="card-title" href="/jobs/mppsc-transport-si-jun25/" >MPPSC Vehicle Transport Sub Inspector Recruitment 2025 Notification Out</a>
+            <a class="card-title" href="/reg/mineral-water-license/" >Mineral Water License Online FSSAI Apply</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 05 Jun 2025</div>
+      <div class="card-date">📅 03 Apr 2025</div>
           </li>
        
-        
-    
-        
         
     
         
@@ -237,8 +241,6 @@
           Railway RPF Constable Result 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -256,8 +258,6 @@
         
           लाड़ली बहनों को दिवाली से ₹1500 प्रतिमाह मिलेंगे – सीएम मोहन यादव का ऐलान
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -277,8 +277,6 @@
           Delhi DSSSB June 2025 Various Post Exam Admit Card
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -297,8 +295,6 @@
           MP DTE Polytechnic Admission 2025 Apply Online
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -316,8 +312,6 @@
         
           Pm Kisan Samman Nidhi Ki Kisht
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -1018,20 +1012,12 @@
   
     
     
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
+      <li>
+        <a href="/force/indian-coast-guard-2025/" >Join Indian Coast Guard Navik/Yantrik CGEPT 2026 Online Form</a>
+        
+        
+      </li>
+   
     
   
     
@@ -1043,11 +1029,40 @@
     
     
       <li>
-        <a href="/student/mp-board/results/2025/" >MP Board Result 2025 – Check MPBSE Class 10th &amp; 12th Result</a>
+        <a href="/scheme/mp/cmlly-ladli-laxmi-yojna/" >Ladli Laxmi Yojna Apply Online- Download pdf form</a>
+        
+         • <a href="/pdf-forms/">PDF</a>
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/imp/epfoindia-online-info/" >ePFO India Claim / Withdrawal ePF, Do eKYC, Find UAN etc.</a>
         
         
       </li>
    
+    
+  
+    
+    
+      <li>
+        <a href="/mp/ladli-bahna-yojana-update-2025/" >Ladli Bahna Yojna MP Latest Update</a>
+        
+        
+      </li>
+   
+    
+  
+    
     
   
   <hr>
@@ -1458,7 +1473,29 @@
    
 <script src="http://localhost:1313/js/lazy-load/click-iframe.min.145fd4986df9e432397e5564c1aac0312dfebd6de8c1b5f9100423425865146a.js" integrity="sha256-FF/UmG355DI5flVkwarAMS3&#43;vW3owbX5EAQjQlhlFGo=" defer></script>
 
+<script>
+  let isDesktopView = false;
 
+  function toggleViewport() {
+    const viewport = document.querySelector('meta[name="viewport"]');
+    const status = document.getElementById("status");
+    const btn = document.querySelector(".toggle-btn");
+
+    if (!isDesktopView) {
+      viewport.setAttribute("content", "width=768");
+      status.textContent = "💻 ";
+      btn.textContent = "📱";
+    } else {
+      viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
+      status.textContent = "📱";
+      btn.textContent = "💻";
+    }
+
+    isDesktopView = !isDesktopView;
+    
+    
+  }
+</script>
  
 </footer>
 
