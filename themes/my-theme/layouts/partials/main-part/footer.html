@@ -68,28 +68,5 @@
    {{ partial "script/fade-scroll" . }}
    {{ partial "script/lazyjs" . }}
    {{ partial "script/click-iframe" . }}
-<script>
-  let isDesktopView = false;
 
-  function toggleViewport() {
-    const viewport = document.querySelector('meta[name="viewport"]');
-    const status = document.getElementById("status");
-    const btn = document.querySelector(".toggle-btn");
-
-    if (!isDesktopView) {
-      viewport.setAttribute("content", "width=650");
-      status.textContent = "💻 ";
-      btn.textContent = "📱";
-    } else {
-      viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
-      status.textContent = "📱";
-      btn.textContent = "💻";
-    }
-
-    isDesktopView = !isDesktopView;
-    // Optional: uncomment to reload page for layout effect
-    // location.reload();
-  }
-</script>
- 
 </footer>

@@ -45,7 +45,7 @@ color:red;
     left: 0px;
     width: 28px;
     height: auto;
-    z-index: 10;
+    z-index: 2;
 }
 
 .post-link:hover {
