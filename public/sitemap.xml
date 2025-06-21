@@ -3,17 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/jobs/mp-anganwadi-worker-helper-wcd-2025/</loc>
-    <lastmod>2025-06-21T08:12:27+05:30</lastmod>
+    <lastmod>2025-06-21T16:12:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-06-21T08:12:27+05:30</lastmod>
+    <lastmod>2025-06-21T16:12:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/result/btsc-bihar-insect-collector-result-2025/</loc>
+    <lastmod>2025-06-21T16:04:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/result/</loc>
-    <lastmod>2025-06-20T19:22:35+05:30</lastmod>
+    <lastmod>2025-06-21T16:04:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/cg-fire-department-recruitment-2025/</loc>
+    <lastmod>2025-06-21T15:47:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-statistics-officer-assistant-geologist-2025/</loc>
+    <lastmod>2025-06-21T15:35:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
