@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #f7630e;
+    --primary-color: #f7640e;
     --secondary-color: #f4b400;
     --light-color: #f8f9fa;
     --dark-color: #212529;
@@ -45,11 +45,13 @@
   
   .card-header {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    
     padding: 5px 10px;
+    text-align:center;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.5px;
+    text-shadow: 2px 5px 9px rgb(252, 248, 248);
   }
   
   .card-content {
@@ -160,7 +162,11 @@ span {
     font-weight: bold;
     text-transform: uppercase;
   }
-  
+  hr {
+    border: 1px dashed rgb(184, 181, 181);
+    height: 1px;
+   
+}
   /* Responsive adjustments */
   @media screen and (max-width: 768px) {
     .grid-container {
