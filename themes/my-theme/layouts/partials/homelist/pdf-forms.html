@@ -9,6 +9,9 @@
     {{ if eq .Params.pdfForm "yes" }}
       • <a href="/pdf-forms/" target="_blank">pdf</a>
     {{ end }}
+{{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+    <a href="{{ .RelPermalink }}" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+{{ end }}
   </li>
   <hr>
 {{ end }}

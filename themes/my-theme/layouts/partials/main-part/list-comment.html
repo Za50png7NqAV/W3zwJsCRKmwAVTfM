@@ -8,7 +8,7 @@
 
 {{/* पोस्ट आज की तारीख को डाली गई हो तो NEW */}}
 {{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
-    • <span class="text-green-600 font-semibold">New</span>
+    <a href="{{ .RelPermalink }}" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
 {{ end }}
 
 {{/* अगर begindate आज की तारीख हो तो Start Today */}}

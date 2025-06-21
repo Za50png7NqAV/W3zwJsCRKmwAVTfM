@@ -8,7 +8,12 @@
     <a href="{{ $element.Permalink }}" class="post-link" style="position: relative;">
       <div class="post" style="background-color: {{ $randColor }}; padding: 10px; position: relative;">
       
-          <img src="https://www.yojnaportal.com/gif/new.gif" alt="NEW" class="new-icon" />
+
+{{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+    <img src="/gif/new.gif" alt="New" class="new-icon"  />
+{{ end }}
+
+       
      
         {{ with $element.Params.RecommendName }}
           {{ . }}
