@@ -118,6 +118,12 @@
       <td >{{ . | safeHTML }}</td>
     </tr>
     {{ end }}
+      {{ with .Params.candidates}}
+    <tr>
+      <td><strong>🧑‍🎓Candidates </strong> </td>
+      <td> <b>{{ . | safeHTML }} </b></td>
+    </tr>
+    {{ end }}
     {{ with .Params.ageLimit }}
     <tr>
       <td> <strong> 👨🏼‍🎓Age Limit</strong></td>

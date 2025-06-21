@@ -143,6 +143,13 @@
        <td>  {{ . | safeHTML }}</td>
     </tr>
     {{ end }}
+ {{ with .Params.candidates}}
+    <tr>
+      <td><strong>👥Candidates </strong> </td>
+      <td> {{ . | safeHTML }} </td>
+    </tr>
+    {{ end }}
+
     {{ with .Params.age_limit }}
     <tr>
       <td> <strong> 👨🏼‍🎓Age Limit</strong></td>
@@ -154,7 +161,7 @@
     {{ if .Params.lastdate}}
     <tr>
       <td><strong>📅Apply Date </strong> </td>
-      <td> <b style="color:red"> {{ with .Params.begindate }} {{ . | time.Format "02 Jan" }}{{ end }}</b> to <b>{{ with .Params.lastdate }} </span> {{ . | time.Format "02 Jan 2006" }}{{ end }} </b></td>
+      <td> <b style="color:red"> {{ with .Params.begindate }} {{ . | time.Format "02 Jan" }}{{ end }} </b> to <b style="color:red">{{ with .Params.lastdate }} </span> {{ . | time.Format "02 Jan 2006" }}{{ end }} </b></td>
     </tr>
     {{ end }}
   
