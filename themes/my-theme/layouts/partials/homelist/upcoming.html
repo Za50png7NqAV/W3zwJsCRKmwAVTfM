@@ -5,7 +5,8 @@
 {{ if $filteredPages }}
   {{ range $filteredPages }}
   <li>
-    <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>{{ partial "main-part/list-comment" . }}
+    <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+    {{ partial "main-part/list-comment" . }}
 </li>
 <hr>
   {{ end }}
