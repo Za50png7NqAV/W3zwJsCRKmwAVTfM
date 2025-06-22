@@ -4,8 +4,8 @@
 
 {{ if $filteredPages }}
   {{ range $filteredPages }}
-    <li>
-      <a href="{{ .RelPermalink }}" target="_blank">
+    <li >
+      <a href="{{ .RelPermalink }}" target="_blank" {{ with .Params.highlights }}style="background-color:{{ . }};"{{ end }} >
         {{ if .Params.pdfName }}
           {{ .Params.pdfName }}
         {{ else }}
@@ -17,7 +17,7 @@
     <hr>
   {{ end }}
 {{ else }}
-  <a href="/latest-update/" style="text-align: center;" target="_blank">
+  <a href="/latest-update/" style="text-align: center;" target="_blank" >
     No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update
   </a>
 {{ end }}
