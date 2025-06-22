@@ -1,5 +1,12 @@
 {{ $today := now.Format "2006-01-02" }}
-{{ $latestJobs := where .Site.RegularPages "Params.post-type" "eq" "latest-jobs" }}
+{{ $latestJobs := slice }}
+
+{{ range .Site.RegularPages }}
+  {{ if or (eq (index .Params "post-type") "latest-jobs") (eq .Params.post_type "latest-jobs") }}
+    {{ $latestJobs = $latestJobs | append . }}
+  {{ end }}
+{{ end }}
+
 {{ $filteredPages := where $latestJobs "Params.lastdate" "ge" $today }}
 
 {{ if $filteredPages }}

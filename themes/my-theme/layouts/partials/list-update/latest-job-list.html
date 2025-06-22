@@ -19,29 +19,92 @@
 <table class="post-table" id="formsTable">
 <thead>
   <tr>
-      <th>Post Date</th>
-      <th> Latest Jobs </th>
-      <th>Category</th>
-     
+     <th>All Latest Jobs </th>
+      <th>📅 Apply Dates</th>
   </tr>
 </thead>
+
 <tbody>
-  {{ range  (where .Site.RegularPages ".Params.post-type" "latest-jobs") }}
-  <tr>
-      <td>{{ .Date.Format "02/01/2006" }}</td>
-      <td>
-        <a href="{{ .RelPermalink }}" target="_blank">
-          {{ if .Params.pdfName }}
-             {{ .Params.pdfName }}
-          {{ else }}
-              {{ .Title }}
-          {{ end }}
-        </a>
-          {{ partial "main-part/list-comment" . }}
-      </td>
-      <td style="background-color:rgb(255, 161, 37);"><a href="#" class="dynamic-link" data-search="{{ with .Params.category }}{{ . }}{{ else }} forms {{ end }}"> {{ with .Params.category }}{{ . }}{{ else }} Jobs {{ end }}  </a></td>
-  </tr>
+  <tr><td style="color:green; font-weight:bold; background-color:rgb(210, 248, 199)" colspan="2"> ✅ Active Latest Jobs </td></tr>
+{{ $today := now.Format "2006-01-02" }}
+{{ $latestJobs := slice }}
+
+{{ range .Site.RegularPages }}
+  {{ if or (eq (index .Params "post-type") "latest-jobs") (eq .Params.post_type "latest-jobs") }}
+    {{ $latestJobs = $latestJobs | append . }}
   {{ end }}
+{{ end }}
+
+{{ $filteredPages := where $latestJobs "Params.lastdate" "ge" $today }}
+{{ if $filteredPages }}
+  {{ range $filteredPages }}
+   <tr {{ with .Params.highlights }}style="background-color:{{ . }};"{{ end }} >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="{{ .RelPermalink }}" target="_blank" {{ with .Params.highlights }}style="background-color:{{ . }};"{{ end }} >
+        {{ if .Params.pdfName }}
+          {{ .Params.pdfName }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}   {{ partial "main-part/list-comment" . }} <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="{{ with .Params.category }}{{ . }}{{ else }} forms {{ end }}"> {{ with .Params.category }}{{ . }}{{ else }} Jobs {{ end }}  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:  {{ with .Params.begindate }} <b style="color:green"> {{ . | time.Format "02-01-2006" }} </b>{{ end }}  <br> {{ with .Params.lastdate }} </span>End: <b style="color:red"> {{ . | time.Format "02-01-2006" }} </b> {{ end }}</td>
+    </tr>
+  {{ end }}
+  
+{{ else }}
+  <a href="/latest-update/" style="text-align: center;" target="_blank" >
+    No Update Post posts or updates here. If available, they will be updated soon. Go to Latest Update
+  </a>
+{{ end }}
+
+<tr>  <td style="color:red; font-weight:bold; background-color:rgb(250, 201, 137)" colspan="2"> 🛑End Lastdate / Expired Jobs </td></tr>
+
+{{ $today := now.Format "2006-01-02" }}
+{{ $latestJobs := slice }}
+
+{{ range .Site.RegularPages }}
+  {{ if or (eq (index .Params "post-type") "latest-jobs") (eq .Params.post_type "latest-jobs") }}
+    {{ $latestJobs = $latestJobs | append . }}
+  {{ end }}
+{{ end }}
+
+{{ $filteredPages := where $latestJobs "Params.lastdate" "le" $today }}
+
+{{ if $filteredPages }}
+  {{ range $filteredPages }}
+   <tr>
+      <td>
+        🔗<a href="{{ .RelPermalink }}" target="_blank"
+             style="font-size: 1.2rem;{{ with .Params.highlights }} background-color:{{ . }};{{ end }}">
+          {{ if .Params.pdfName }}
+            {{ .Params.pdfName }}
+          {{ else }}
+            {{ .Title }}
+          {{ end }}
+          {{ partial "main-part/list-comment" . }}
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="{{ with .Params.category }}{{ . }}{{ else }} forms {{ end }}">
+              {{ with .Params.category }}{{ . }}{{ else }} Jobs {{ end }}
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        {{ with .Params.lastdate }}
+          Lastdate: <br><b style="color:red">{{ . | time.Format "02-01-2006" }}</b>
+        {{ end }}
+      </td>
+    </tr>
+  {{ end }}
+{{ else }}
+  <a href="/latest-update/" style="text-align: center;" target="_blank">
+    No Update Post or updates here. If available, they will be updated soon. Go to Latest Update
+  </a>
+{{ end }}
+
 </tbody>
 </table>
 
