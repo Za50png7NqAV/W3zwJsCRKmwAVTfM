@@ -36,4 +36,5 @@ adminMode = true
   changefreq = "daily"
   priority = 0.5
 
-  
+  [outputs]
+home = ["HTML", "RSS", "JSON"]
