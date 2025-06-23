@@ -402,16 +402,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/testing/</loc>
-    <lastmod>2025-05-15T12:00:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/texting/</loc>
-    <lastmod>2025-05-15T12:00:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/mp/ladli-bahna-yojna-24th/</loc>
     <lastmod>2025-05-14T16:36:14+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1369,11 +1359,6 @@
   </url><url>
     <loc>http://localhost:1313/card/driving-learner-licence/</loc>
     <lastmod>2025-01-01T19:06:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/aa-how-to/</loc>
-    <lastmod>2025-01-01T17:48:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
