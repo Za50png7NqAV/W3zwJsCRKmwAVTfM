@@ -2,18 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-chsl-2025/</loc>
-    <lastmod>2025-06-23T17:20:25+05:30</lastmod>
+    <loc>http://localhost:1313/admission/mp-iti-counseling-2025/</loc>
+    <lastmod>2025-06-23T17:24:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-23T17:24:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-chsl-2025/</loc>
     <lastmod>2025-06-23T17:20:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/admitcard/ugc-net-june-2025/</loc>
     <lastmod>2025-06-23T15:30:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
+    <lastmod>2025-06-23T14:03:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -182,11 +192,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
-    <lastmod>2025-06-14T11:03:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/mp/ladli-behna-yojna-25th-kist/</loc>
     <lastmod>2025-06-13T07:43:47+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -314,11 +319,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
     <lastmod>2025-06-02T19:40:11+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-iti-counseling-2025/</loc>
-    <lastmod>2025-06-02T09:24:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
