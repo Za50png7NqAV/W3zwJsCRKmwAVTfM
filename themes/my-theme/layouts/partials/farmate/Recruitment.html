@@ -42,14 +42,14 @@
   <div class="grid">
     {{ if .Params.impdates }}
       <div class="card" tabindex="0">
-        <h3>📅 महत्वपूर्ण तिथियां / Important Dates</h3>
+        <h3>📅 Important Dates</h3>
       {{ partial "farmate/parts/impdates.html" . }}
       </div>
     {{ end }}
   
     {{ if .Params.applyfees }}
       <div class="card" tabindex="0">
-         <h3>📅 आवेदन शुल्क / Important Dates</h3>
+         <h3>💸 Application Fee</h3>
          {{ partial "farmate/parts/applyfees" . }}
       </div>
     {{ end }} 
@@ -58,16 +58,16 @@
   <div class="grid">
       {{ if .Params.shortinfo }}
     <div class="card" tabindex="0">
-      <h3>🔍 महत्वपूर्ण जानकारी / Important Information</h3>
+      <h3>🔍 Important Information</h3>
    {{ partial "farmate/parts/shortinfo" . }}
-      <p class="short-note"><strong>नोट:</strong> उपरोक्त विवरण संक्षिप्त है। पूरी जानकारी के लिए आधिकारिक विज्ञापन देखें।</p>
+      <p class="short-note"><strong>Note:</strong> The above details are brief. Refer to the official notification for complete information.</p>
     </div>
   {{ end }} 
     {{ if .Params.documents }}
       <div class="card" tabindex="0">
-        <h3>📄Required Details/ Documents / दस्तावेज़</h3>
+        <h3>📄Required Details/ Documents </h3>
          {{ partial "farmate/parts/documents.html" . }}
-        <p class="short-note"><strong>नोट:</strong> उपरोक्त दस्तावेज़ सामान्य जानकारी हेतु हैं, आवश्यकता अनुसार अन्य दस्तावेज़ भी माँगे जा सकते हैं।</p>
+        <p class="short-note"><strong>Note:</strong> Documents are for general info; more may be required if needed.</p>
   
       </div>
     {{ end }}
@@ -75,7 +75,7 @@
   
   {{ if .Params.Eligibility }}
   <div class="card" tabindex="0">
-      <h3>🧾 पात्रता मापदंड / Eligibility Criteria</h3>
+      <h3>🧾 Eligibility Criteria</h3>
       <div class="eligibility">
     {{ if .Params.age_limit }}
   {{ partial "farmate/parts/Criteria/age-limit.html" . }}

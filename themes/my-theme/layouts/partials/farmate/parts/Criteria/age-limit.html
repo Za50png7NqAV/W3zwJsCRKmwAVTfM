@@ -1,6 +1,6 @@
 {{ with .Params.age_limit }}
 <div class="eligibility-card">
- <div class="eligibility-title">🎂 आयु सीमा (Age Limit)</div>
+ <div class="eligibility-title">🎂 Age Limit</div>
      {{ range . }}
   {{ $step1 := replace . ":" "//" }}
   {{ $step2 := replace $step1 "ः" "//" }}
@@ -14,7 +14,7 @@
         {{ end }}
       </p>
     {{ end }}
-  आयु में छूट के लिए आधिकारिक अधिसूचना   {{ with $.Params.Notification }}  "{{ . }}" {{ end }}अवश्य पढ़ें
+ For age relaxation, please read the official notification {{ with $.Params.Notification }} "{{ . }}" {{ end }} carefully.
     </div>
 {{ end }}
  
