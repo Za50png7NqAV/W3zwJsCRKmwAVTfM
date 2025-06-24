@@ -11,10 +11,12 @@
         {{ $label := trim (index $parts 0) " " }}
         {{ $date := trim (index $parts 1) " " }}
 
-        {{ if or (in $label "अंतिम तिथि") (in $label "last date") (in $label "आवेदन की अंतिम तिथि") }}
+        {{ if or (in $label "अंतिम तिथि") (in $label "Lastdate")  (in $label "Last Date") }}
           <li>{{ $label }} :  <b style="color: red;">{{ $date }}</b></li>
-        {{ else if or (in $label "प्रारंभ तिथि") (in $label "Begin date") (in $label "आवेदन प्रारंभ") }}
+        {{ else if or (in $label "प्रारंभ") (in $label "Begin") (in $label "Start")  }}
           <li>{{ $label }} :  <b style="color: green;">{{ $date }}</b></li>
+          {{ else if or (in $label "Correction") (in $label "Update")  (in $label "सुधार") }}
+          <li>{{ $label }} :  <b style="color: blue;">{{ $date }}</b></li>
         {{ else }}
           <li>{{ $label }} :  <b>{{ $date }}</b></li>
         {{ end }}

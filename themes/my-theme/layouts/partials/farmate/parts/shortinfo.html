@@ -7,15 +7,15 @@
   {{ $parts := split $clean "//" }}
        <tr>
         {{ if eq (len $parts) 2 }}
-          <td>✓<b>{{ index $parts 0 | safeHTML}}</b></td>
+          <td><b>{{ index $parts 0 | safeHTML}}</b></td>
           <td>{{ index $parts 1 | safeHTML}}</td>
         {{ else }}
-          <td colspan="2">✓<b>{{ . | safeHTML}}</b></td>
+          <td colspan="2"><b>{{ . | safeHTML}}</b></td>
         {{ end }}
       </tr>
     {{ else }}
       <tr>
-        <td colspan="2">⚠️ कोई जानकारी उपलब्ध नही है</td>
+        <td colspan="2">⚠️ No Information Updated </td>
       </tr>
     {{ end }}
     </table>
