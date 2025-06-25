@@ -35,7 +35,7 @@
         {{ else }}
           {{ $element.Title }}
         {{ end }} {{ if or (eq $element.Params.pin "first") (eq $element.Params.pin "last") }}
-            <span style="margin-left: 5px;">📌</span>
+            <span class="pin-icon" >📌</span>
           {{ end }} 
       </div>
     </a>

@@ -47,7 +47,14 @@ color:red;
     height: auto;
     z-index: 2;
 }
-
+.post .pin-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 28px;
+    height: auto;
+    z-index: 2;
+}
 .post-link:hover {
     color: blanchedalmond;
 }
