@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mppsc-food-safety-officer-vacancy-2025/</loc>
-    <lastmod>2025-06-25T10:48:38+05:30</lastmod>
+    <loc>http://localhost:1313/result/bihar-btsc-gmo-result-2025/</loc>
+    <lastmod>2025-06-25T11:28:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/result/</loc>
+    <lastmod>2025-06-25T11:28:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-25T11:28:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-food-safety-officer-vacancy-2025/</loc>
     <lastmod>2025-06-25T10:48:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -88,11 +98,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/result/pnb-specialist-officer-result-2025/</loc>
-    <lastmod>2025-06-22T09:31:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/result/</loc>
     <lastmod>2025-06-22T09:31:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
