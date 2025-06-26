@@ -1,48 +1,7 @@
-<!doctype html>
-<html ⚡ lang="hi">
-<head>
-  <meta charset="utf-8">
-  <title>{{ .Title }}</title>
-  <link rel="canonical" href="{{ .Permalink }}">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <meta name="description" content="{{ .Params.description }}">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:image" content="{{ .Params.poster }}">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-story"
-    src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-  <style amp-boilerplate>body { visibility:hidden }</style>
-  <noscript><style amp-boilerplate>body{visibility:visible}</style></noscript>
-  <style amp-custom>
-    h1, p {
-      color: #fff;
-      text-shadow: 1px 1px 4px #000;
-    }
-    amp-story {
-      font-family: 'Noto Sans Devanagari', sans-serif;
-    }
-  </style>
-</head>
-<body>
-  <amp-story standalone
-    title="{{ .Title }}"
-    publisher="Yojna Portal"
-    publisher-logo-src="{{ .Params.logo }}"
-    poster-portrait-src="{{ .Params.poster }}">
+{{ define "main" }}
+  <main>
+    <h1>{{ .Title }}</h1>
 
-    {{ range $i, $slide := .Params.slides }}
-    <amp-story-page id="slide{{ add $i 1 }}">
-      <amp-story-grid-layer template="fill">
-        <amp-img src="{{ $slide.image }}" width="720" height="1280" layout="responsive"></amp-img>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical">
-        <h1>{{ $slide.title }}</h1>
-        <p>{{ $slide.text }}</p>
-      </amp-story-grid-layer>
-    </amp-story-page>
-    {{ end }}
-
-  </amp-story>
-</body>
-</html>
+    {{ .Content }}
+  </main>
+{{ end }}

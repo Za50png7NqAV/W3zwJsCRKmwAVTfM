@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
+</head>
+<body>
+  <header>Webstory Header</header>
+  {{ block "main" . }}     {{ end }}
+  <footer>Webstory Footer</footer>
+</body>
+</html>

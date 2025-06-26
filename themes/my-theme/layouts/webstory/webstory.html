@@ -1,5 +1,5 @@
 <!doctype html>
-<html ⚡ lang="hi">
+<html ⚡ lang="hi" dir="ltr">
 <head>
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
@@ -7,13 +7,77 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="{{ .Params.description }}">
   <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
   <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="{{ .Params.poster }}">
+  <meta property="og:locale" content="hi_IN">
+  <meta property="og:site_name" content="Yojna Portal">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ .Params.description }}">
+  <meta name="twitter:image" content="{{ .Params.poster }}">
+
+  <!-- Publisher Info -->
+  <meta name="author" content="Yojna Portal">
+
+  <!-- Schema Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}"
+    },
+    "headline": "{{ .Title }}",
+    "description": "{{ .Params.description }}",
+    "image": "{{ .Params.poster }}",
+    "author": {
+      "@type": "Organization",
+      "name": "Yojna Portal"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Yojna Portal",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ .Params.logo }}"
+      }
+    },
+    "datePublished": "{{ .Date }}"
+  }
+  </script>
+
+  <!-- AMP Scripts -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story"
     src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-  <style amp-boilerplate>body { visibility:hidden }</style>
+
+  <!-- Optional: AMP Analytics -->
+  <script async custom-element="amp-analytics"
+    src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+      visibility: hidden;
+    }
+    @-webkit-keyframes -amp-start { from { visibility: hidden } to { visibility: visible } }
+    @-moz-keyframes -amp-start { from { visibility: hidden } to { visibility: visible } }
+    @-ms-keyframes -amp-start { from { visibility: hidden } to { visibility: visible } }
+    @keyframes -amp-start { from { visibility: hidden } to { visibility: visible } }
+  </style>
   <noscript><style amp-boilerplate>body{visibility:visible}</style></noscript>
+
+  <!-- Custom Styles -->
   <style amp-custom>
     h1, p {
       color: #fff;
@@ -21,6 +85,7 @@
     }
     amp-story {
       font-family: 'Noto Sans Devanagari', sans-serif;
+      background-color: #000;
     }
   </style>
 </head>
@@ -32,9 +97,9 @@
     poster-portrait-src="{{ .Params.poster }}">
 
     {{ range $i, $slide := .Params.slides }}
-    <amp-story-page id="slide{{ add $i 1 }}">
+    <amp-story-page id="slide{{ add $i 1 }}" auto-advance-after="7s">
       <amp-story-grid-layer template="fill">
-        <amp-img src="{{ $slide.image }}" width="720" height="1280" layout="responsive"></amp-img>
+        <amp-img src="{{ $slide.image }}" width="720" height="1280" layout="responsive" alt="{{ $slide.title }}"></amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <h1>{{ $slide.title }}</h1>
@@ -43,6 +108,25 @@
     </amp-story-page>
     {{ end }}
 
+    <!-- Optionally, you can add amp-story-bookend here -->
+
   </amp-story>
+
+  <!-- Analytics Example -->
+  <amp-analytics type="googleanalytics">
+    <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-XXXXX-Y"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+    </script>
+  </amp-analytics>
 </body>
 </html>
