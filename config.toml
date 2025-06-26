@@ -18,7 +18,8 @@ googleAnalytics = "G-GWSRPE5DVE"
   url = "/"
   weight = 1
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS",  "JSON"]
+page = ["HTML", "webstory"]
 
 [sitemap]
   filename = "sitemap.xml"
@@ -29,4 +30,12 @@ home = ["HTML", "RSS", "JSON"]
   [caches.assets]
     dir = ":resourceDir/_gen"
     maxAge = "31536000s"  # 365 दिन = 365 * 24 * 60 * 60 सेकंड
+
+[outputFormats.webstory]
+mediaType = "text/html"
+baseName = "index"
+isPlainText = false
+notAlternative = true
+permalinkable = true
+path = ""
   

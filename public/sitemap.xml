@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-mts-vacancy-2025/</loc>
-    <lastmod>2025-06-26T13:18:28+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bihar-wcdc-various-post-2025/</loc>
+    <lastmod>2025-06-26T18:35:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-26T18:35:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc/ssc-gd-constable-2024/</loc>
+    <lastmod>2025-06-26T17:55:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-mts-vacancy-2025/</loc>
     <lastmod>2025-06-26T13:18:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -23,11 +33,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/web-stories/</loc>
-    <lastmod>2025-06-26T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/web-stories/pm-awas-yojana-2025/</loc>
     <lastmod>2025-06-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -254,11 +259,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
     <lastmod>2025-06-18T10:18:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc/ssc-gd-constable-2024/</loc>
-    <lastmod>2025-06-18T08:55:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1721,6 +1721,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/download/pdf/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/web-stories/pm-awas-yojana-2025/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
