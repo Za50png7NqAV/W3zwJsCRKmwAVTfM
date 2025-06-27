@@ -17,6 +17,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/admission/mp-rte-admission-2025/</loc>
+    <lastmod>2025-06-27T08:32:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/ssc-mts-vacancy-2025/</loc>
     <lastmod>2025-06-27T08:18:28+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -424,11 +429,6 @@
   </url><url>
     <loc>http://localhost:1313/form/mp-bijli-bill-ekyc-form/</loc>
     <lastmod>2025-05-29T09:19:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-rte-admission-2025/</loc>
-    <lastmod>2025-05-29T08:32:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
