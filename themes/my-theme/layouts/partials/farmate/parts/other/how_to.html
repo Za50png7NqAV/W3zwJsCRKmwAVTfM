@@ -1,8 +1,8 @@
 {{ with .Params.how_to }}
  
-  <ul class="steps-container">
+  <ul class="yp-steps-container">
     {{ range . }}
-  {{ $step1 := replace . "::" "///" }}
+  {{ $step1 := replace . ":" "///" }}
   {{ $clean := replace $step1 "ःः" "///" }}
   {{ $parts := split $clean "///" }}
  
@@ -13,6 +13,6 @@
         {{ end }}
      
     {{ end }}
-    </ol>
+   </ul>
 {{ end }}
-    <ol >
+   

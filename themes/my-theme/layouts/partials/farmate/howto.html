@@ -8,32 +8,51 @@
       <h2 class="postname">{{ if .Params.PostName }}
         {{ .Params.PostName}}
         {{ end }}    </h2> </div>
-<div class="back-card" >
+
+
+<div class ="back-card">
 {{ with .Params.shortinfo }}
-<div class="head-card" >संक्षिप्त जानकारी</div> 
-  {{ partial "farmate/parts/shortinfo.html" $ }}
+<section class="yp-section">
+  <div class="yp-card">
+    <h2 class="head-card">📝 Short Info</h2>
+    {{ partial "farmate/parts/shortinfo.html" $ }}
+  </div>
+</section>
 {{ end }}
 
 {{ with .Params.how_to }}
-<div class="head-card" >संक्षिप्त प्रकियाः</div> 
+<section class="yp-section">
+  <div class="yp-card">
+<div class="head-card">👨‍💻 How to do: </div> 
   {{ partial "farmate/parts/other/how_to.html" $ }}
+  </div>
+  </section>
 {{ end }}
 
 {{ with .Params.documents }}
-<div class="head-card" >आवाश्यक दस्तावेजः </div> 
+<section class="yp-section">
+  <div class="yp-card">
+<div class="head-card" >📄 Importent Documents/Details </div> 
   {{ partial "farmate/parts/documents.html" $ }}
+  </div> </section>
 {{ end }}
 
 {{ .Content }}
 
 {{ with .Params.faqs }}
-<div class="head-card" >अक्सर पूछे जाने वाले प्रश्न ❓ </div> 
+<section class="yp-section">
+  <div class="yp-card">
+<div class="head-card">🙋‍♂️Faqs❓ </div> 
   {{ partial "farmate/parts/faqs.html" $ }}
+  </div> </section>
 {{ end }}
 
 {{ with .Params.links }}
-<div class="head-card" >महत्वपूर्ण लिंकः </div> 
+<section class="yp-section">
+  <div class="yp-card">
+<div class="head-card" >🔗 Some Useful Link : </div> 
   {{ partial "farmate/parts/link-table.html" $ }}
+  </div> </section>
 {{ end }}
 </div>
   {{ partial "imp-codes/imageBanner.html" . }}
