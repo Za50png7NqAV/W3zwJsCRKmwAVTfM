@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admitcard/rrb-alp-cbat-exam-admit-card-2025/</loc>
-    <lastmod>2025-06-27T18:15:27+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
+    <lastmod>2025-06-28T09:20:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-28T09:20:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admitcard/rrb-alp-cbat-exam-admit-card-2025/</loc>
     <lastmod>2025-06-27T18:15:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -64,6 +69,11 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/</loc>
     <lastmod>2025-06-26T12:38:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
+    <lastmod>2025-06-26T10:18:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -292,11 +302,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
-    <lastmod>2025-06-18T10:18:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsc-cds-ii-2025/</loc>
     <lastmod>2025-06-17T19:53:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -309,11 +314,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-village-development-officer-vdo-2025/</loc>
     <lastmod>2025-06-17T19:31:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
-    <lastmod>2025-06-17T16:20:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
