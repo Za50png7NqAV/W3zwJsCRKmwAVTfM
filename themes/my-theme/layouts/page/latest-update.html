@@ -1,20 +1,9 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-
-
-
-<!-- Header Partial -->
-
-
 {{ partial "list-update/latest-update-list.html" . }}
 {{ partial "baseof-part/dynamic-link.html" . }}
 <div class="content">
     {{ .Content }}
-    
-    
-    
-    
-
 </div>
 {{ end }}
 

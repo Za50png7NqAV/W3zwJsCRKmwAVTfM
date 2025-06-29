@@ -1,0 +1,6 @@
+{{ $styles := slice "css/list/table.css" }}
+{{ range $styles }}
+  {{ with resources.Get . | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+  {{ end }}
+{{ end }}

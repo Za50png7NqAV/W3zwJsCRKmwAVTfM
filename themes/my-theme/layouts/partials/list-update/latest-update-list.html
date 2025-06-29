@@ -1,192 +1,188 @@
-<head>
-    <script src="/js/search.js"></script>
-    <link rel="stylesheet" href="/css/list-table.css">
-    <title>Latest Update</title>
-</head>
+
+
 <style>
-    .search-container {
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 15px;
-        background: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        flex-wrap: nowrap;
-    }
-    
-    .search-container > * {
-        height: 40px;
-        padding: 0 12px;
-        border: 1px solid #e0e0e0;
-        border-radius: 6px;
-        font-size: 14px;
-        transition: all 0.2s ease;
-        background: #fff;
-    }
-    
-    #textSearch {
-        flex: 2;
-        min-width: 100px;
-        background: #fff url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat;
-        background-position: 12px center;
-        padding-left: 40px;
-    }
-    
-    select {
-        flex: 1;
-        min-width: 40px;
-        cursor: pointer;
-        appearance: none;
-        -webkit-appearance: none;
-        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
-        background-repeat: no-repeat;
-        background-position: right 12px center;
-        padding-right: 35px;
-    }
-    
-    input:focus, select:focus {
-        outline: none;
-        border-color: #2196f3;
-        box-shadow: 0 0 0 3px rgba(33,150,243,0.1);
-    }
-    
-    ::placeholder {
-        color: #999;
-    }
-    
-    input:hover, select:hover {
-        border-color: #2196f3;
-    }
-    
- 
-    </style>
+  .search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .search-container > * {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background: #fff;
+  }
+
+  #textSearch {
+    flex: 2;
+    min-width: 100px;
+    background: #fff url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat;
+    background-position: 12px center;
+    padding-left: 40px;
+  }
+
+  select {
+    flex: 1;
+    min-width: 40px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 35px;
+  }
+
+  input:focus, select:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33,150,243,0.1);
+  }
+
+  ::placeholder {
+    color: #999;
+  }
+
+  input:hover, select:hover {
+    border-color: #2196f3;
+  }
+</style>
+
+<!-- 🔍 Filters -->
 <div class="search-container">
-    <!-- Text Search -->
-    <input type="text" id="textSearch" placeholder="Search Update..." onkeyup="filterTable()" />
+  <input type="text" id="textSearch" placeholder="Search Update..." onkeyup="filterTable()" />
+  
+  <select id="monthFilter" onchange="filterTable()">
+    <option value="">Month</option>
+    <option value="01">Jan</option>
+    <option value="02">Feb</option>
+    <option value="03">Mar</option>
+    <option value="04">Apr</option>
+    <option value="05">May</option>
+    <option value="06">Jun</option>
+    <option value="07">Jul</option>
+    <option value="08">Aug</option>
+    <option value="09">Sept</option>
+    <option value="10">Oct</option>
+    <option value="11">Nov</option>
+    <option value="12">Dec</option>
+  </select>
 
-    <!-- Month Dropdown -->
-    <select id="monthFilter" onchange="filterTable()">
-        <option value="">Month</option>
-        <option value="01">Jan</option>
-        <option value="02">Feb</option>
-        <option value="03">Mar</option>
-        <option value="04">Apr</option>
-        <option value="05">May</option>
-        <option value="06">Jun</option>
-        <option value="07">Jul</option>
-        <option value="08">Aug</option>
-        <option value="09">Sept</option>
-        <option value="10">Oct</option>
-        <option value="11">Nov</option>
-        <option value="12">Dec</option>
-    </select>
+  <select id="yearFilter" onchange="filterTable()"></select>
 
-    <!-- Year Dropdown -->
-    <select id="yearFilter" onchange="filterTable()">
-        <!-- Dynamic Year Options will be generated by JavaScript -->
-    </select>
+  <select id="categoryFilter" onchange="filterTable()">
+  <option value="">Categories</option>
+  {{- $seen := slice -}}
+  {{- range .Site.RegularPages -}}
+    {{- $cat := .Params.category | default "---" -}}
+    {{- if not (in $seen $cat) -}}
+      <option value="{{ $cat }}">{{ $cat }}</option>
+      {{- $seen = $seen | append $cat -}}
+    {{- end -}}
+  {{- end -}}
+</select>
 
-    <!-- Category Dropdown -->
-    <select id="categoryFilter" onchange="filterTable()"> 
-        <option value="">Categories</option>
-        
-        <option value="Recruitment">Recruitment</option>
-        <option value="Exams">Exams</option>
-        <option value="Card">Card</option>
-        <option value="Licence">Licence</option>
-        <option value="Certificate">Certificate</option>
-        <option value="Admission">Admission</option>
-        <option value="---">None</option>
-        <option value="">Cancel ❌</option>
-    </select>
 </div>
+
+<!-- 📋 Data Table -->
 <table class="post-table" id="dataTable">
-    <thead>
-        <tr>
-            <th>Latest Update/ Jobs/ Schemes/ Education</th>
-        </tr>
-    </thead>
-    <tbody>
-        {{ range .Site.RegularPages }}
-        <tr>
-        
-            <td>
-               🔖 <a href="{{ .RelPermalink }}" target="_blank">
-                    {{ if .Params.resultName }}
-                        {{ .Params.resultName }}
-                    {{ else if .Params.admitcardName }}
-                        {{ .Params.admitcardName }}
-                    {{ else }}
-                        {{ .Title }}
-                    {{ end }}
-                </a>
-                {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended </a>{{ end }} <br>
-              <span style="font-size:0.8rem">📅 {{ .Date.Format "02/01/2006" }} | <a href="#" class="dynamic-link" data-search="{{ with .Params.category }}{{ . }}{{ else }}---{{ end }}"> {{ with .Params.category }}{{ . }}{{ else }}---{{ end }} </a></span>
-            </td>
-      
-           
-        </tr>
-        {{ end }}
-    </tbody>
+  <thead>
+    <tr>
+      <th colspan="2">Latest Update / Jobs / Schemes / Education</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range .Site.RegularPages }}
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="{{ .RelPermalink }}" target="_blank">
+          {{ if .Params.resultName }}
+            {{ .Params.resultName }}
+          {{ else if .Params.admitcardName }}
+            {{ .Params.admitcardName }}
+          {{ else }}
+            {{ .Title }}
+          {{ end }}
+        </a>
+        {{ if eq .Params.extended "yes" }} • <a href="/extended/">Extended</a>{{ end }}
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 {{ .Date.Format "02/01/2006" }} |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="{{ with .Params.category }}{{ . }}{{ else }}forms{{ end }}"> {{ with .Params.category }}{{ . }}{{ else }}forms{{ end }}  </a>
+      </td>
+    </tr>
+    {{ end }}
+  </tbody>
 </table>
 
+<!-- 🧠 JavaScript Logic -->
 <script>
-// Dynamically populate the year dropdown
+// Year Dropdown (auto fill)
 document.addEventListener("DOMContentLoaded", function() {
-    const yearFilter = document.getElementById("yearFilter");
-    const currentYear = new Date().getFullYear();
+  const yearFilter = document.getElementById("yearFilter");
+  const currentYear = new Date().getFullYear();
 
-    yearFilter.innerHTML = "<option value=''>Year</option>";
-    for (let year = currentYear; year >= currentYear - 5; year--) {
-        const option = document.createElement("option");
-        option.value = year;
-        option.textContent = year;
-        yearFilter.appendChild(option);
-    }
+  yearFilter.innerHTML = "<option value=''>Year</option>";
+  for (let y = currentYear; y >= currentYear - 5; y--) {
+    const opt = document.createElement("option");
+    opt.value = y;
+    opt.textContent = y;
+    yearFilter.appendChild(opt);
+  }
 });
 
+// Filter Table Logic
 function filterTable() {
-    const textSearch = document.getElementById("textSearch").value.toLowerCase();
-    const monthFilter = document.getElementById("monthFilter").value;
-    const yearFilter = document.getElementById("yearFilter").value;
-    const categoryFilter = document.getElementById("categoryFilter").value.toLowerCase();
-    const table = document.getElementById("dataTable");
-    const rows = table.getElementsByTagName("tr");
+  const textSearch = document.getElementById("textSearch").value.toLowerCase();
+  const monthFilter = document.getElementById("monthFilter").value;
+  const yearFilter = document.getElementById("yearFilter").value;
+  const categoryFilter = document.getElementById("categoryFilter").value.toLowerCase();
+  const rows = document.querySelectorAll("#dataTable tbody tr");
 
-    for (let i = 1; i < rows.length; i++) { // Skip header row
-        const cells = rows[i].getElementsByTagName("td");
-        let dateMatch = true, categoryMatch = true, textMatch = true;
+  rows.forEach(row => {
+    const td = row.querySelector("td");
+    if (!td) return;
 
-        // Text search match
-        if (textSearch) {
-            textMatch = Array.from(cells).some(cell => 
-                cell.textContent.toLowerCase().includes(textSearch)
-            );
-        }
+    const fullText = td.textContent.toLowerCase();
+    const dateText = td.querySelector(".post-date")?.textContent || "";
+    const catText = td.querySelector(".post-category")?.textContent.toLowerCase() || "";
 
-        // Category filter match
-        if (categoryFilter) {
-            const categoryCell = cells[2]; // Assuming category is in the 3rd column
-            if (categoryCell) {
-                categoryMatch = categoryCell.textContent.toLowerCase().includes(categoryFilter);
-            }
-        }
+    let dateMatch = true, categoryMatch = true, textMatch = true;
 
-        // Month and Year filter match
-        if (monthFilter || yearFilter) {
-            const dateCell = cells[0]; // Assuming date is in the 1st column
-            if (dateCell) {
-                const [day, month, year] = dateCell.textContent.split("/"); // Format: DD/MM/YYYY
-                if (monthFilter && month !== monthFilter) dateMatch = false;
-                if (yearFilter && year !== yearFilter) dateMatch = false;
-            }
-        }
+    // Text Match
+    if (textSearch && !fullText.includes(textSearch)) textMatch = false;
 
-        // Show or hide row based on all conditions
-        rows[i].style.display = (textMatch && categoryMatch && dateMatch) ? "" : "none";
+    // Category Match
+    if (categoryFilter && !catText.includes(categoryFilter)) categoryMatch = false;
+
+    // Date Match
+    if ((monthFilter || yearFilter) && dateText) {
+      const match = dateText.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+      if (match) {
+        const [, , month, year] = match;
+        if (monthFilter && month !== monthFilter) dateMatch = false;
+        if (yearFilter && year !== yearFilter) dateMatch = false;
+      } else {
+        dateMatch = false;
+      }
     }
+
+    row.style.display = (textMatch && categoryMatch && dateMatch) ? "" : "none";
+  });
 }
 </script>
