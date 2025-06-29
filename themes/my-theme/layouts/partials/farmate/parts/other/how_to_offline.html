@@ -1,0 +1,17 @@
+{{ with .Params.how_to_offline }}
+ 
+  <ul class="yp-steps-container">
+    {{ range . }}
+  {{ $step1 := replace . ":" "///" }}
+  {{ $clean := replace $step1 "ःः" "///" }}
+  {{ $parts := split $clean "///" }}
+ 
+        {{ if eq (len $parts) 2 }}
+            <li class="step-item"><b>{{ index $parts 0 }}:</b> <span> {{ index $parts 1 }}</span> </li>
+        {{ else }}
+         <li class="step-item">  {{ . }}</li>
+        {{ end }}
+     
+    {{ end }}
+   </ul>
+{{ end }}

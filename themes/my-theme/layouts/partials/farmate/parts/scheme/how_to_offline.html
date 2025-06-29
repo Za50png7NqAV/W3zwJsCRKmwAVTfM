@@ -1,0 +1,23 @@
+{{ with .Params.how_to_offline }}
+<ul class="steps-container">
+    {{ range . }}
+      {{ $step1 := replace . ":" "///" }}
+      {{ $clean := replace $step1 "+++" "///" }}
+      {{ $parts := split $clean "///" }}
+   
+        {{ if eq (len $parts) 2 }}
+          <li class="step-item"><b>{{ index $parts 0 | safeHTML}}</b>: {{ index $parts 1 | safeHTML}}</li>
+        {{ else }}
+          <li class="step-item" >{{ . | safeHTML}}</li>
+        {{ end }}
+     
+    {{ else }}
+ 
+        <li>⚠️ अधिकारित वेवसाइट अवश्य देंखें</li>
+
+    {{ end }}
+</ul>
+  <div class="important-note">
+                <strong>महत्वपूर्ण जानकारी:</strong> किसी भी निर्णय से पहले अधिकारित जॉच अवश्य कर लेवें ।
+            </div>
+{{ end }}

@@ -66,10 +66,11 @@
       </div>
       {{ end }}
 
-      {{ if or (.Params.apply_online) (.Params.apply_offline) (.Params.how_to) }}
+      {{ if or (.Params.apply_online) (.Params.apply_offline) (.Params.how_to) (.Params.how_to_offline)}}
       <div class="section" id="how_to">
           <h3>🔸 {{ .Params.YojnaName }} के लिए आवेदन प्रक्रिया (How to Apply)</h3>
        {{ partial "farmate/parts/scheme/how_to.html" . }}
+        {{ partial "farmate/parts/scheme/how_to_offline.html" . }}
       </div>
       {{ end }}
     
