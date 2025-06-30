@@ -173,7 +173,7 @@
       nextMonth: 'Next Month'
     };
 
-    let heading = ">Jald karen Avedan";
+    let heading = ">🔔Last Date Alert:";
     if (activeTag && tagLabel[activeTag]) {
       heading += ` last date ${tagLabel[activeTag]}`;
     }
