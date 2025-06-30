@@ -1,0 +1,19 @@
+{{ $today := now }}
+{{ $yesterday := $today.AddDate 0 0 -1 }}
+{{ $startDate := $today.AddDate 0 0 -31 }}
+
+{{ range .Site.RegularPages }}
+  {{ if .Params.lastDate }}
+    {{ $lastDate := time .Params.lastDate }}
+    
+    {{ if and (lt $lastDate $yesterday) (gt $lastDate $startDate) }}
+      <tr>
+        <td>
+          <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="{{ .Params.category }}">{{ .Params.category }}</a></span>
+        </td>
+        <td>{{ $lastDate.Format "02/01/2006" }}</td>
+      </tr>
+    {{ end }}
+  {{ end }}
+{{ end }}

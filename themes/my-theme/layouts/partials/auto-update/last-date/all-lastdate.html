@@ -2,88 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Date Filter with Tags and Reset</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <style>
-    body {
-      font-family: sans-serif;
-      padding: 20px;
-      background: #f8f8f8;
-    }
+ </head>
+ 
+   
 
-    .filter-box {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-    }
-
-    .filter-box input {
-      padding: 8px;
-      font-size: 16px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      flex: 1;
-    }
-
-    .quick-tags {
-      margin-bottom: 10px;
-    }
-
-    .quick-tags button {
-      border: none;
-      padding: 6px 12px;
-      margin: 3px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: 500;
-      background: #e0e0e0;
-    }
-
-    .quick-tags button.active {
-      background: #4caf50;
-      color: white;
-    }
-
-    .quick-tags button:hover {
-      background: #4caf50;
-      color: white;
-    }
-
-    .reset-btn {
-      background: #ff5e5e !important;
-      color: white !important;
-    }
-
-    .active-tag {
-      margin-bottom: 10px;
-      font-weight: bold;
-      color: #444;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-    }
-
-    th, td {
-      padding: 10px;
-      border: 1px solid #ddd;
-    }
-
-    thead.past { background: #f44336; color: white; }
-    thead.today { background: #ff9800; color: white; }
-    thead.future { background: #4caf50; color: white; }
-
-    tr.past { background-color: #ffd6d6; }
-    tr.today { background-color: #fff7c2; }
-    tr.future { background-color: #d7fcd6; }
-  </style>
-</head>
-<body>
-
-<h2>🎯 Filter Posts by Date or Tags</h2>
+<h2>🎯 All Lastdate Update Here </h2> <br><hr><br>
 
 <div class="filter-box">
   <input type="text" id="fromDate" placeholder="From Date (dd/mm/yyyy)" oninput="filterTable(true)">
@@ -92,230 +17,41 @@
 </div>
 
 <div class="quick-tags">
-  <button class="reset-btn" onclick="resetFilters()">Reset</button>
+  <button class="reset-btn" onclick="resetFilters()">All</button>
   <button onclick="filterByTag('today')">Today</button>
   <button onclick="filterByTag('yesterday')">Yesterday</button>
   <button onclick="filterByTag('tomorrow')">Tomorrow</button>
   <button onclick="filterByTag('thisWeek')">This Week</button>
+  <button onclick="filterByTag('lastWeek')">Last Week</button>
+   <button onclick="filterByTag('nextMonth')">Next Month</button>
   <button onclick="filterByTag('thisMonth')">This Month</button>
-  <button onclick="filterByTag('nextMonth')">Next Month</button>
-  <button onclick="shareOnWhatsApp()" style="background:#25d366; color:white; padding:8px 16px; border:none; border-radius:5px; font-weight:bold; cursor:pointer; margin-bottom:10px;">
-📤 WhatsApp Share
-</button>
 </div>
 
-<div id="selectedTag" class="active-tag"></div>
+
 
 <table id="postTable">
   <thead>
     <tr>
-      <th>Post</th>
-      <th>Category</th>
-      <th>Last Date</th>
+      <th> <span id="selectedTag" class="active-tag"></span> Last date Posts</th>
+      <th>📅 Last Date</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td><a href="yojnapotal.com/newpost"> Excelence School </a></td><td>CG</td><td>25/05/2025</td></tr>
-    <tr><td>navodaya</td><td>CG</td><td>26/06/2025</td></tr>
-    <tr><td>CG Vyapam</td><td>CG</td><td>30/06/2025</td></tr>
-    <tr><td>JNV Admission</td><td>School</td><td>01/07/2025</td></tr>
-    <tr><td>SSC CHSL</td><td>SSC</td><td>03/07/2025</td></tr>
-    <tr><td>Railway</td><td>RRB</td><td>05/07/2025</td></tr>
-    <tr><td>Teacher</td><td>Govt</td><td>10/07/2025</td></tr>
-    <tr><td>PO Exam</td><td>Bank</td><td>22/07/2025</td></tr>
-    <tr><td>CHSL Phase 2</td><td>SSC</td><td>01/08/2025</td></tr>
+    {{ partial "auto-update/lastdates/today.html" . }}
+    {{ partial "auto-update/lastdates/upcoming-date.html" . }}
+     {{ partial "auto-update/lastdates/lastmonth.html" . }}
   </tbody>
+  <tfoot> <tr> <td colspan="2" style="text-align:center; background: #ffae00;font-weight:bold;"> www.YojnaPortal.com </td></tr></tfoot>
 </table>
+<br> <hr>
+ <button onclick="shareOnWhatsApp()" class="share-btn">
+📤 WhatsApp Share
+</button>
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
-  flatpickr("#fromDate", { dateFormat: "d/m/Y" });
-  flatpickr("#toDate", { dateFormat: "d/m/Y" });
-
-  let activeTag = '';
-
-  function parseDMY(str) {
-    const [d, m, y] = str.split("/").map(Number);
-    return new Date(y, m - 1, d);
-  }
-
-  function isSameDate(d1, d2) {
-    return d1.getDate() === d2.getDate() &&
-           d1.getMonth() === d2.getMonth() &&
-           d1.getFullYear() === d2.getFullYear();
-  }
-
-  function filterTable(autoReset = false) {
-    if (autoReset) clearTag();
-    const search = document.getElementById("searchInput").value.toLowerCase();
-    const fromDateStr = document.getElementById("fromDate").value;
-    const toDateStr = document.getElementById("toDate").value;
-    const rows = document.querySelectorAll("#postTable tbody tr");
-
-    let today = new Date();
-    let allDates = Array.from(rows).map(r => parseDMY(r.cells[2].textContent.trim()));
-    let hasToday = allDates.some(date => isSameDate(date, today));
-    let hasFuture = allDates.some(date => date > today);
-    let hasPast = allDates.some(date => date < today);
-
-    const thead = document.querySelector("#postTable thead");
-    thead.className = "";
-    if (hasToday) thead.classList.add("today");
-    else if (hasPast && !hasFuture) thead.classList.add("past");
-    else thead.classList.add("future");
-
-    rows.forEach(row => {
-      const title = row.cells[0].textContent.toLowerCase();
-      const category = row.cells[1].textContent.toLowerCase();
-      const dateStr = row.cells[2].textContent.trim();
-      const rowDate = parseDMY(dateStr);
-      let show = true;
-
-      if (search && !(title.includes(search) || category.includes(search))) show = false;
-      if (fromDateStr && rowDate < parseDMY(fromDateStr)) show = false;
-      if (toDateStr && rowDate > parseDMY(toDateStr)) show = false;
-
-      if (show) {
-        row.style.display = "";
-        row.classList.remove("past", "today", "future");
-        if (isSameDate(rowDate, today)) row.classList.add("today");
-        else if (rowDate < today) row.classList.add("past");
-        else row.classList.add("future");
-      } else {
-        row.style.display = "none";
-      }
-    });
-
-    // remove tag highlight
-    document.querySelectorAll(".quick-tags button").forEach(btn => {
-      btn.classList.remove("active");
-    });
-  }
-
-  function filterByTag(tag) {
-    document.getElementById("searchInput").value = '';
-    document.getElementById("fromDate").value = '';
-    document.getElementById("toDate").value = '';
-    activeTag = tag;
-    showActiveTag();
-
-    const today = new Date();
-    const rows = document.querySelectorAll("#postTable tbody tr");
-
-    const thead = document.querySelector("#postTable thead");
-    thead.className = tag === "today" ? "today" : (tag === "yesterday" ? "past" : "future");
-
-    document.querySelectorAll(".quick-tags button").forEach(btn => btn.classList.remove("active"));
-    [...document.querySelectorAll(".quick-tags button")].find(btn => btn.textContent.replace(/\s/g,'').toLowerCase() === tag.toLowerCase()).classList.add("active");
-
-    rows.forEach(row => {
-      const dateStr = row.cells[2].textContent.trim();
-      const rowDate = parseDMY(dateStr);
-      let show = false;
-
-      switch (tag) {
-        case "today":
-          show = isSameDate(rowDate, today); break;
-        case "yesterday":
-          const yest = new Date(today); yest.setDate(today.getDate() - 1);
-          show = isSameDate(rowDate, yest); break;
-        case "tomorrow":
-          const tomo = new Date(today); tomo.setDate(today.getDate() + 1);
-          show = isSameDate(rowDate, tomo); break;
-        case "thisWeek":
-          const start = new Date(today); start.setDate(today.getDate() - today.getDay());
-          const end = new Date(start); end.setDate(start.getDate() + 6);
-          show = rowDate >= start && rowDate <= end; break;
-        case "thisMonth":
-          show = rowDate.getMonth() === today.getMonth() && rowDate.getFullYear() === today.getFullYear(); break;
-        case "nextMonth":
-          const nextM = (today.getMonth() + 1) % 12;
-          const year = today.getMonth() === 11 ? today.getFullYear() + 1 : today.getFullYear();
-          show = rowDate.getMonth() === nextM && rowDate.getFullYear() === year; break;
-      }
-
-      if (show) {
-        row.style.display = "";
-        row.classList.remove("past", "today", "future");
-        if (isSameDate(rowDate, today)) row.classList.add("today");
-        else if (rowDate < today) row.classList.add("past");
-        else row.classList.add("future");
-      } else {
-        row.style.display = "none";
-      }
-    });
-  }
-
-  function resetFilters() {
-    document.getElementById("searchInput").value = '';
-    document.getElementById("fromDate").value = '';
-    document.getElementById("toDate").value = '';
-    activeTag = '';
-    showActiveTag();
-    filterTable(false);
-  }
-
-  function clearTag() {
-    activeTag = '';
-    showActiveTag();
-  }
-
-  function showActiveTag() {
-    const tagLabel = {
-      today: 'Today',
-      yesterday: 'Yesterday',
-      tomorrow: 'Tomorrow',
-      thisWeek: 'This Week',
-      thisMonth: 'This Month',
-      nextMonth: 'Next Month'
-    };
-    document.getElementById("selectedTag").textContent = activeTag ? `Active Filter: ${tagLabel[activeTag]}` : '';
-  }
+ 
 </script>
-<script>
-function shareOnWhatsApp() {
-  const rows = document.querySelectorAll("#postTable tbody tr");
-  const visibleRows = Array.from(rows).filter(r => r.style.display !== "none");
-  const maxRows = visibleRows.slice(0, 20);
-
-  if (maxRows.length === 0) {
-    alert("No posts to share.");
-    return;
-  }
-
-  const tagLabel = {
-    today: 'Today',
-    yesterday: 'Yesterday',
-    tomorrow: 'Tomorrow',
-    thisWeek: 'This Week',
-    thisMonth: 'This Month',
-    nextMonth: 'Next Month'
-  };
-
-  let heading = ">Jald karen Avedan";
-  if (activeTag && tagLabel[activeTag]) {
-    heading += ` last date ${tagLabel[activeTag]}`;
-  }
-
-  let message = heading + "\n";
-
-  maxRows.forEach(row => {
-    const aTag = row.cells[0].querySelector("a");
-    const title = aTag ? aTag.textContent.trim() : row.cells[0].textContent.trim();
-    const link = aTag ? aTag.getAttribute("href").trim() : "";
-    const date = row.cells[2].textContent.trim();
-
-    message += `⚡${title}\n🛑 Last Date: ${date}\n🔗 ${link}\n-----------------------------\n`;
-  });
-
-  const encodedMessage = encodeURIComponent(message.trim());
-  const shareLink = `https://wa.me/?text=${encodedMessage}`;
-
-  window.open(shareLink, "_blank");
-}
-</script>
-
-
 
 </body>
 </html>

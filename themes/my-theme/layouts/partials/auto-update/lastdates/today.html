@@ -1,0 +1,19 @@
+{{ $today := now }}
+{{ $startOfToday := (time (printf "%d-%02d-%02dT00:00:00" $today.Year $today.Month $today.Day)) }}
+{{ $startOfTomorrow := $startOfToday.AddDate 0 0 1 }}
+
+{{ range .Site.RegularPages }}
+  {{ if .Params.lastDate }}
+    {{ $lastDate := time .Params.lastDate }}
+    
+    {{ if and (ge $lastDate $startOfToday) (lt $lastDate $startOfTomorrow) }}
+      <tr>
+        <td>
+          <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="{{ .Params.category }}">{{ .Params.category }}</a></span>
+        </td>
+        <td>{{ $lastDate.Format "02/01/2006" }}</td>
+      </tr>
+    {{ end }}
+  {{ end }}
+{{ end }}
