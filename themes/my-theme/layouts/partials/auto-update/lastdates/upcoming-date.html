@@ -2,9 +2,9 @@
           {{ $today := now.Format "2006-01-02" }}
           {{ if gt .Params.lastDate $today }}
           <tr>
-            <td><a href="{{ .Permalink }}">{{ .Title }}</a>
-        <br><span>🔔 <a href="#" class="dynamic-link" data-search="{{ .Params.category }}"> {{ .Params.category }} </a></span></td>
-      <td>{{ (time .Params.lastDate).Format "02/01/2006" }}</td>
+            <td> <span style="color:green;"> • </span> <a href="{{ .Permalink }}">{{ .Title }}</a> 
+        <br><span>🎯 <a href="#" class="dynamic-link" data-search="{{ .Params.category }}"> {{ .Params.category }} </a></span></td>
+      <td style="color:green; font-weight:600;">{{ (time .Params.lastDate).Format "02/01/2006" }}</td>
     </tr>
           
           {{ end }}

@@ -7,12 +7,11 @@
     {{ $lastDate := time .Params.lastDate }}
     
     {{ if and (ge $lastDate $startOfToday) (lt $lastDate $startOfTomorrow) }}
-      <tr>
-        <td>
-          <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+      <tr  data-shorturl="{{ .Params.shorturl }}" data-seo-title="{{ .Params.seo_title }}">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="{{ .Permalink }}">{{ .Title }}</a><br>
           <span>⚠️<a href="#" class="dynamic-link" data-search="{{ .Params.category }}">{{ .Params.category }}</a></span>
         </td>
-        <td>{{ $lastDate.Format "02/01/2006" }}</td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">{{ $lastDate.Format "02/01/2006" }}</td>
       </tr>
     {{ end }}
   {{ end }}

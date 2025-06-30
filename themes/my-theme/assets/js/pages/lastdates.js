@@ -153,43 +153,48 @@
     document.getElementById("selectedTag").textContent = activeTag ? ` ${tagLabel[activeTag]}` : '';
   }
 
-  function shareOnWhatsApp() {
-    const rows = document.querySelectorAll("#postTable tbody tr");
-    const visibleRows = Array.from(rows).filter(r => r.style.display !== "none");
-    const maxRows = visibleRows.slice(0, 20);
+function shareOnWhatsApp() {
+  const rows = document.querySelectorAll("#postTable tbody tr");
+  const visibleRows = Array.from(rows).filter(r => r.style.display !== "none");
+  const maxRows = visibleRows.slice(0, 20);
 
-    if (maxRows.length === 0) {
-      alert("No posts to share.");
-      return;
-    }
-
-    const tagLabel = {
-      today: 'Today',
-      yesterday: 'Yesterday',
-      tomorrow: 'Tomorrow',
-      thisWeek: 'This Week',
-      lastWeek: 'Last Week',
-      thisMonth: 'This Month',
-      nextMonth: 'Next Month'
-    };
-
-    let heading = ">🔔Last Date Alert:";
-    if (activeTag && tagLabel[activeTag]) {
-      heading += ` last date ${tagLabel[activeTag]}`;
-    }
-
-    let message = heading + "\n";
-
-    maxRows.forEach(row => {
-      const aTag = row.cells[0].querySelector("a");
-      const title = aTag ? aTag.textContent.trim() : row.cells[0].textContent.trim();
-      const link = aTag ? aTag.getAttribute("href").trim() : "";
-      const date = row.cells[1].textContent.trim();
-
-      message += `⚡${title}\n🛑 Last Date: ${date}\n🔗 ${link}\n-----------------------------\n`;
-    });
-
-    const encodedMessage = encodeURIComponent(message.trim());
-    const shareLink = `https://wa.me/?text=${encodedMessage}`;
-    window.open(shareLink, "_blank");
+  if (maxRows.length === 0) {
+    alert("No posts to share.");
+    return;
   }
+
+  const tagLabel = {
+    today: 'Today',
+    yesterday: 'Yesterday',
+    tomorrow: 'Tomorrow',
+    thisWeek: 'This Week',
+    lastWeek: 'Last Week',
+    thisMonth: 'This Month',
+    nextMonth: 'Next Month'
+  };
+
+  let heading = ">🔔 Alert:";
+  if (typeof activeTag !== "undefined" && tagLabel[activeTag]) {
+    heading += ` last date ${tagLabel[activeTag]}`;
+  }
+
+  let message = heading + "\n";
+
+  maxRows.forEach(row => {
+    const aTag = row.cells[0].querySelector("a");
+    const title = aTag ? aTag.textContent.trim() : row.cells[0].textContent.trim();
+    const permalink = aTag ? aTag.getAttribute("href").trim() : "";
+    
+    const shorturl = row.dataset.shorturl?.trim() || "";
+    const seoTitle = row.dataset.seoTitle?.trim() || title;
+    const date = row.cells[1].textContent.trim();
+
+    const finalLink = shorturl ? `https://yojnaportal.com/${shorturl}` : permalink;
+
+    message += `🎯 *${seoTitle}* \n⚡_Last Date: ${date}_\n\n🔗 ${finalLink}\n---------------------------------------\n`;
+  });
+
+  const encodedMessage = encodeURIComponent(message.trim());
+  const shareLink = `https://wa.me/?text=${encodedMessage}`;
+  window.open(shareLink, "_blank");
+}
