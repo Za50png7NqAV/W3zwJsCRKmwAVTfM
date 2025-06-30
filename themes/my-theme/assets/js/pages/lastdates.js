@@ -191,7 +191,7 @@ function shareOnWhatsApp() {
 
     const finalLink = shorturl ? `https://yojnaportal.com/${shorturl}` : permalink;
 
-    message += `🎯 *${seoTitle}* \n⚡_Last Date: ${date}_\n\n🔗 ${finalLink}\n---------------------------------------\n`;
+    message += `🎯 *${seoTitle}* \n📅 _Last Date: ${date}_\n🔗 ${finalLink}\n__________________________________________\n`;
   });
 
   const encodedMessage = encodeURIComponent(message.trim());
