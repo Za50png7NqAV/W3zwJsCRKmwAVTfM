@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admitcard/dsssb-various-post-admit-card-2025-released/</loc>
-    <lastmod>2025-06-29T20:47:40+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/indian-navy-b.tech-officer-entry-scheme-jan-2026/</loc>
+    <lastmod>2025-06-30T16:50:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-30T16:50:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admitcard/jharkhand-acf-pre-exam-admit-card-2025/</loc>
+    <lastmod>2025-06-30T16:43:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admitcard/dsssb-various-post-admit-card-2025-released/</loc>
     <lastmod>2025-06-29T20:47:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
