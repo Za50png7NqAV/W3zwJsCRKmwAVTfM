@@ -43,16 +43,20 @@ h1, h2, h3 {
 /* Styling for the Department heading */
 .Department {
   font-size: 1.2rem;
-  font-weight: 500; 
-  color: #068d01; 
+  font-weight: 700; 
+  color: #005713; 
   margin: 0 0 10px 0; 
-  text-transform: uppercase; 
+  background-color: #ffee0404;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 2px;
+  margin: auto;
   letter-spacing: 1px; 
 }
 
 /* Styling for the PostName heading */
 .PostName {
-  font-size: 2rem; 
+  font-size: 1.4rem; 
   font-weight: 700; 
   color: #f70793; 
   margin: 0; 
@@ -284,11 +288,11 @@ h1, h2, h3 {
         .impdates {
             background-color: #f4f7fa; /* Light gray background */
             border-radius: 10px; /* Rounded corners */
-            padding: 20px; /* Inner spacing */
-            max-width: 100%; /* Limit width */
-            margin: 20px auto; /* Center the container */
+            max-width: 400px; /* Limit width */
+            margin: 2px auto; /* Center the container */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            font-family: 'Arial', sans-serif; /* Clean font */
+            font-family: 'Arial', sans-serif; 
+           
         }
 
         /* Styling for the unordered list */
@@ -304,7 +308,7 @@ h1, h2, h3 {
             padding: 10px 15px; /* Inner spacing */
             margin-bottom: 10px; /* Space between items */
             border-radius: 5px; /* Slightly rounded corners */
-            font-size: 16px; /* Readable font size */
+            font-size: 1rem; /* Readable font size */
             color: #333; /* Dark text color */
             transition: transform 0.2s; /* Smooth hover effect */
         }
