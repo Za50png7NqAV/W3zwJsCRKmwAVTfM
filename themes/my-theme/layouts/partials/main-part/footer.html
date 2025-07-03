@@ -60,6 +60,26 @@
     <!-- No custom JS files -->
   {{ end }}
   
+
+     <!-- Costom PWA Minifest App Download-->
+<script>
+  let deferredPrompt;
+  const installBtn = document.getElementById('installBtn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'block';
+
+    installBtn.addEventListener('click', () => {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(() => {
+        deferredPrompt = null;
+        installBtn.style.display = 'none';
+      });
+    });
+  });
+</script>
    <!-- Sidebar Toggle JS -->
 
    {{ partial "script/left-top-header" . }}

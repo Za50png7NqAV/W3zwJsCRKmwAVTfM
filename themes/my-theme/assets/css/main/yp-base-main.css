@@ -28,7 +28,38 @@
   --padding-x: 1rem;
   --border-radius: 10px;
 }
+/* ========== PWA APP========== */
+ #installBtn {
+    position: fixed;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease;
+  }
+
+  #installBtn:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  #installBtn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
 /* ========== Reset ========== */
 * {
   margin: 0;
