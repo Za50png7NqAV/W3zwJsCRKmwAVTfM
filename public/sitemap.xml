@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/indian-navy-agniveer-mr-musician-vacancy-2025/</loc>
-    <lastmod>2025-07-03T09:37:07+05:30</lastmod>
+    <loc>http://localhost:1313/admitcard/rrb-ntpc-10&#43;2-under-graduate-level-exam-date-2025/</loc>
+    <lastmod>2025-07-03T14:46:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-03T14:46:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/result/railway-rrb-alp-stage-ii-result-with-marks-2025/</loc>
+    <lastmod>2025-07-03T14:39:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/result/</loc>
+    <lastmod>2025-07-03T14:39:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-navy-agniveer-mr-musician-vacancy-2025/</loc>
     <lastmod>2025-07-03T09:37:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -113,11 +128,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/result/patna-hc-translator-final-result-2025/</loc>
-    <lastmod>2025-06-28T15:47:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/result/</loc>
     <lastmod>2025-06-28T15:47:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1677,11 +1687,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs-update/</loc>
-    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/instagram/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1768,6 +1773,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/yp/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/sarkari-result/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
