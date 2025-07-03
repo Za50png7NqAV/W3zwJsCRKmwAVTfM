@@ -1,0 +1,82 @@
+<div align="center" id="header6">
+		<div id="header6_1">
+			<div id="header6A" class="row1">
+				
+				<div id="header6A_H">
+					<a href="/results/" target="_blank">Results</a>
+				</div>
+				
+				<div id="header6ALI">
+                    {{ range first 25 (where  .Site.RegularPages ".Params.result" "yes") }}
+					<ul>
+						<li>
+							<a href="{{ .Permalink }}" 
+							target="_blank">{{ .Params.ResultName }}
+							</a>
+                            {{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+        <a href="{{ .RelPermalink }}" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+       {{ end }}
+			</li>	</ul> 
+            {{ end }}  </div>
+				<div id="header6A_A">
+					<a href="/results/" target="_blank">View More</a>
+				</div>		
+			</div>
+			
+			<div id="header6_2_1" class="row2">
+				<div id="header6A_H">
+					<a href="/pdf-forms/" target="_blank">PDF Forms</a>
+				</div>
+				<div id="header6LI">
+					  {{ range first 4 (where  .Site.RegularPages ".Params.pdfForm" "yes") }}
+					<ul>
+						<li>
+							<a href="{{ .Permalink }}" 
+							target="_blank">
+                              {{ if .Params.pdfName }}
+        {{ .Params.pdfName }}
+      {{ else }}
+        {{ .Title }}
+      {{ end }}
+							</a>
+                            {{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+        <a href="{{ .RelPermalink }}" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+       {{ end }}
+			</li>	</ul> 
+            {{ end }} 
+				</div>
+	
+				<div id="header6V" style="margin-top:30px;">
+					<a href="/pdf-forms/" target="_blank">View More</a>
+				</div>
+
+			</div>
+			
+			<div id="header6_3_1" class="row2">
+				<div id="header6A_H">
+					<a href="/certificate/" target="_blank">Certificate Verification</a>
+				</div>
+				<div id="header6LI">
+						  {{ range first 4 (where  .Site.RegularPages "Params.post-type" "certificate") }}
+					<ul>
+						<li>
+							<a href="{{ .Permalink }}" 
+							target="_blank">
+                              {{ if .Params.pdfName }}
+                              {{ .Params.pdfName }}
+                                   {{ else }}
+                                {{ .Title }}
+                            {{ end }}
+							</a>
+                            {{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+        <a href="{{ .RelPermalink }}" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+       {{ end }}
+			</li>	</ul> 
+            {{ end }} 
+				</div>
+				
+				<div id="header6V" style="margin-top:20px;">
+					<a href="/certificate/" target="_blank">View More</a>
+				</div>
+			</div>			
+			

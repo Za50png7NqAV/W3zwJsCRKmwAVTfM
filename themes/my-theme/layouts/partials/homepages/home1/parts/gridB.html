@@ -1,0 +1,96 @@
+<div id="header6B" class="row1">
+				<div id="header6A_H">
+					<a href="/admitcard/" target="_blank">Admit Card</a>
+				</div>
+				<div id="header6BLI">
+					 {{ range first 25 (where  .Site.RegularPages ".Params.admitcard" "yes") }}
+					<ul>
+						<li>
+							<a href="{{ .Permalink }}" 
+							target="_blank">
+                              {{ if .Params.pdfName }}
+        {{ .Params.pdfName }}
+      {{ else }}
+        {{ .Title }}
+      {{ end }}
+							</a>
+                            {{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+        <a href="{{ .RelPermalink }}" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+       {{ end }}
+			</li>	</ul> 
+            {{ end }} 
+				</div>
+				
+				<div id="header6B_B">
+					<a href="/admitcard/" target="_blank">View More</a>
+				</div>		
+			</div>
+			
+			<div id="header6_2_2" class="row2">
+				<div id="header6A_H">
+					<a href="/upcoming/" target="_blank">Upcoming</a>
+				</div>
+				<div id="header6LI">
+					<ul>
+{{ $today := now.Format "2006-01-02" }}
+{{ $filteredPages := where .Site.RegularPages "Params.BeginDate" "ge" $today }}
+{{ $limitedPages := first 4 $filteredPages }}
+
+{{ if $limitedPages }}
+  {{ range $limitedPages }}
+  
+    <li>
+      <a href="{{ .RelPermalink }}" target="_blank">
+        {{ if or (eq .Params.pin "first") (eq .Params.pin "last") }}
+          <span>📌</span>
+        {{ end }}
+        {{ .Title }}
+      </a>
+
+      {{ if eq (.Date.Format "2006-01-02") $today }}
+        <a href="{{ .RelPermalink }}" target="_blank">
+          <!-- You can add a "New" badge or icon here if you like -->
+        </a>
+      {{ end }}
+
+      {{ partial "main-part/list-comment" . }}
+    </li>
+
+  {{ end }}
+{{ else }}
+  <a href="/latest-update/" style="text-align: center;" target="_blank">
+    No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update
+  </a> </ul>
+{{ end }}
+</div>
+<div id="header6V" style="margin-top:10px;">
+					<a href="/upcoming/" target="_blank">View More</a>
+				</div>
+			</div>
+
+			<div id="header6_3_2" class="row3">
+				<div id="header6A_H">
+					<a href="/imp-links/" target="_blank">Important</a>
+				</div>
+				<div id="header6LI">
+						 {{ range first 5 (where  .Site.RegularPages ".Params.important" "yes") }}
+					<ul>
+						<li>
+							<a href="{{ .Permalink }}" 
+							target="_blank">
+                              {{ if .Params.pdfName }}
+        {{ .Params.pdfName }}
+      {{ else }}
+        {{ .Title }}
+      {{ end }}
+							</a>
+                            {{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+        <a href="{{ .RelPermalink }}" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+       {{ end }}
+			</li>	</ul> 
+            {{ end }} 
+				</div>
+				<div id="header6V" style="margin-top:10px;">
+					<a href="/imp-links/" target="_blank">View More</a>
+				</div>
+			</div>

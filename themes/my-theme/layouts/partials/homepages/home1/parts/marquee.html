@@ -1,0 +1,46 @@
+<div align="center">
+	<div id="marquee0">
+		<a href="/whatsapp/" target="_blank">
+		<b><font>Join WhatsApp</font></b></a> 
+		<b>||</b> <a href="/telegram/" target="_blank">
+		<b><font>Join Telegram</font></b></a> <b>||</b> 
+		<a href="/instagram/" target="_blank">
+		<b><font>Instagram</font></b></a> <b>||</b>  
+		<a href="/youtube/" target="_blank">
+		<b><font>Youtube</font></b></a>
+	</div>
+<div id="marquee1" align="center">
+		<marquee behavior="alternate">
+  {{ range first 3 .Site.RegularPages }}
+    {{ $postDate := .Date.Format "2006-01-02" }}
+
+      <a href="{{ .RelPermalink }}" target="_blank">
+		<b><font size="3">{{ .Title }}</font></b></a> <b>||</b>
+   
+  {{ end }}
+</marquee>
+	</div>
+
+<div id="marquee1" align="center">
+  <marquee behavior="alternate">
+    {{ range first 3 (after 3 .Site.RegularPages) }}
+      {{ $postDate := .Date.Format "2006-01-02" }}
+      <a href="{{ .RelPermalink }}" target="_blank">
+        <b><font size="3">{{ .Title }}</font></b>
+      </a> <b>||</b>
+    {{ end }}
+  </marquee>
+</div>
+<div id="marquee2" align="center">
+  <marquee behavior="alternate">
+    {{ range first 3 (after 6 .Site.RegularPages) }}
+      {{ $postDate := .Date.Format "2006-01-02" }}
+      <a href="{{ .RelPermalink }}" target="_blank">
+        <b><font size="3">{{ .Title }}</font></b>
+      </a> <b>||</b>
+    {{ end }}
+  </marquee>
+</div>
+</div>
+
+
