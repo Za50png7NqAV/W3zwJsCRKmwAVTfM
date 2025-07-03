@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yojna App - PWA</title>
+    
+    
+    <meta name="theme-color" content="#2563eb">
+    <meta name="description" content="Yojna Portal - Your gateway to government schemes and services">
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiWW9qbmEgQXBwIiwic2hvcnRfbmFtZSI6Illvam5hIiwic3RhcnRfdXJsIjoiLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmZmZmZmYiLCJ0aGVtZV9jb2xvciI6IiMyNTYzZWIiLCJpY29ucyI6W3sic3JjIjoiaHR0cHM6Ly93d3cueW9qbmFwb3J0YWwuY29tL2xvZ28vbG9nby0xMDB4MTAwLnBuZyIsInNpemVzIjoiMTAweDEwMCIsInR5cGUiOiJpbWFnZS9wbmcifV19">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .install-prompt {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideUp 0.6s ease forwards;
+        }
+
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            margin: 0 auto 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .app-icon:hover {
+            transform: scale(1.05);
+        }
+
+        .app-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .app-description {
+            color: #64748b;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .install-btn {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            margin-bottom: 15px;
+        }
+
+        .install-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+        }
+
+        .install-btn:active {
+            transform: translateY(0);
+        }
+
+        .install-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .features {
+            text-align: left;
+            margin: 25px 0;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #475569;
+            font-size: 14px;
+        }
+
+        .feature-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            color: #22c55e;
+        }
+
+        .status-message {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .success {
+            background: #dcfce7;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+        }
+
+        .error {
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .info {
+            background: #eff6ff;
+            color: #1e40af;
+            border: 1px solid #bfdbfe;
+        }
+
+        .later-btn {
+            background: transparent;
+            color: #6b7280;
+            border: 1px solid #d1d5db;
+            padding: 12px 24px;
+            font-size: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .later-btn:hover {
+            background: #f9fafb;
+            border-color: #9ca3af;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            .install-prompt {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .app-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="installPrompt" class="install-prompt">
+            <img class="app-icon" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="Yojna App Icon">
+            
+            <h1 class="app-title">Install Yojna App</h1>
+            <p class="app-description">Get quick access to government schemes, services, and updates directly from your home screen.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>Works offline</span>
+                </div>
+                <div class="feature">
+                    <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>Fast and reliable</span>
+                </div>
+                <div class="feature">
+                    <svg class="feature-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>No app store needed</span>
+                </div>
+            </div>
+            
+            <button id="installBtn" class="install-btn">
+                <span id="installText">Install App</span>
+            </button>
+            
+            <button id="laterBtn" class="later-btn">Maybe Later</button>
+            
+            <div id="statusMessage" class="status-message hidden"></div>
+        </div>
+    </div>
+
+    <script>
+        let deferredPrompt;
+        let installPromptShown = false;
+
+        const installBtn = document.getElementById('installBtn');
+        const laterBtn = document.getElementById('laterBtn');
+        const installPrompt = document.getElementById('installPrompt');
+        const statusMessage = document.getElementById('statusMessage');
+        const installText = document.getElementById('installText');
+
+        
+        if (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) {
+            showStatus('App is already installed!', 'success');
+            installBtn.disabled = true;
+            installText.textContent = 'Already Installed';
+        }
+
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            console.log('beforeinstallprompt event fired');
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            
+            installBtn.style.display = 'block';
+            showStatus('App can be installed', 'info');
+        });
+
+        
+        installBtn.addEventListener('click', async () => {
+            if (!deferredPrompt) {
+                
+                if (isIOS()) {
+                    showIOSInstructions();
+                } else {
+                    showStatus('Installation not available. Try adding to home screen from browser menu.', 'info');
+                }
+                return;
+            }
+
+            installBtn.disabled = true;
+            installText.textContent = 'Installing...';
+
+            try {
+                
+                deferredPrompt.prompt();
+                
+                
+                const { outcome } = await deferredPrompt.userChoice;
+                
+                if (outcome === 'accepted') {
+                    showStatus('App installed successfully!', 'success');
+                    setTimeout(() => {
+                        installPrompt.style.display = 'none';
+                    }, 2000);
+                } else {
+                    showStatus('Installation cancelled', 'error');
+                    installBtn.disabled = false;
+                    installText.textContent = 'Install App';
+                }
+                
+                
+                deferredPrompt = null;
+                
+            } catch (error) {
+                console.error('Installation failed:', error);
+                showStatus('Installation failed. Please try again.', 'error');
+                installBtn.disabled = false;
+                installText.textContent = 'Install App';
+            }
+        });
+
+        
+        laterBtn.addEventListener('click', () => {
+            installPrompt.style.transform = 'translateY(100%)';
+            installPrompt.style.opacity = '0';
+            setTimeout(() => {
+                installPrompt.style.display = 'none';
+            }, 300);
+        });
+
+        
+        window.addEventListener('appinstalled', (evt) => {
+            console.log('App was installed');
+            showStatus('App installed successfully!', 'success');
+            setTimeout(() => {
+                installPrompt.style.display = 'none';
+            }, 2000);
+        });
+
+        
+        function showStatus(message, type) {
+            statusMessage.textContent = message;
+            statusMessage.className = `status-message ${type}`;
+            statusMessage.classList.remove('hidden');
+        }
+
+        function isIOS() {
+            return /iPad|iPhone|iPod/.test(navigator.userAgent);
+        }
+
+        function showIOSInstructions() {
+            showStatus('On iOS: Tap the Share button, then "Add to Home Screen"', 'info');
+        }
+
+        
+        if (!('serviceWorker' in navigator)) {
+            showStatus('Your browser doesn\'t support PWA features', 'error');
+            installBtn.disabled = true;
+        }
+
+        
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                
+                const swCode = `
+                    self.addEventListener('fetch', event => {
+                        // Simple pass-through for now
+                        event.respondWith(fetch(event.request));
+                    });
+                `;
+                
+                const blob = new Blob([swCode], { type: 'application/javascript' });
+                const swUrl = URL.createObjectURL(blob);
+                
+                navigator.serviceWorker.register(swUrl)
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
