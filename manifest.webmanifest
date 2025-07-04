@@ -1,7 +1,7 @@
 {
   "name": "Yojna Portal",
   "short_name": "Yojna",
-  "start_url": "/",
+  "start_url": "/homepage/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#00695c",
