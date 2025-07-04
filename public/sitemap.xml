@@ -12,6 +12,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-71th-exam-2025/</loc>
+    <lastmod>2025-07-04T17:38:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/result/nta-cuet-ug-result-2025/</loc>
     <lastmod>2025-07-04T14:15:46+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -549,11 +554,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-selection-post-13th-2025/</loc>
     <lastmod>2025-06-04T16:11:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-71th-exam-2025/</loc>
-    <lastmod>2025-06-04T10:38:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
