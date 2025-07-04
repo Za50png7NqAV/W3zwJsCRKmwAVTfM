@@ -3,9 +3,9 @@
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"  loading="lazy" /><a href="/homepage/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="{{ .Site.Title }}"  loading="lazy" ></a>
+        <img class="logo-img" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"  loading="lazy" /><a href="/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="{{ .Site.Title }}"  loading="lazy" ></a>
       </div>
-      
+       <button onclick="setPreferredHome()">🏠 Switch Home</button>
           <div class="hamburger">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -13,9 +13,8 @@
           </div>
 
          <ul class="nav-menu">
-            
+                
              <div class="mobile-search"> {{ partial "main-part/click-search" . }}</div>
-        
               <li class="active"><a href="/homepage/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/baner-poster-update/">Poster</a></li>
@@ -32,3 +31,17 @@
 <button id="installBtn" style="display:none;"  >
    <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
 </button>
+
+
+<script>
+function setPreferredHome() {
+  const currentPref = localStorage.getItem("preferredHome");
+  if (currentPref === "homepage") {
+    localStorage.removeItem("preferredHome");
+    window.location.href = '/';
+  } else {
+    localStorage.setItem("preferredHome", "homepage");
+    window.location.href = '/homepage/';
+  }
+}
+</script>

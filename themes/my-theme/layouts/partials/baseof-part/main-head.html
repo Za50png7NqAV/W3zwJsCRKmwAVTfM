@@ -30,6 +30,7 @@
 <link rel="preload" as="style" href="{{ .Params.cssStyle | relURL }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ .Params.cssStyle | relURL }}"></noscript>
 {{ end }}
+
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
@@ -39,6 +40,12 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
+    <script>
+  // If user prefers homepage, redirect from / to /homepage/
+  if (window.location.pathname === '/' && localStorage.getItem("preferredHome") === "homepage") {
+    window.location.href = "/homepage/";
+  }
+</script>
 </head>
 
  

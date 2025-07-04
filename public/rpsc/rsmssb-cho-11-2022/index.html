@@ -113,6 +113,7 @@
   
 
 
+
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
@@ -122,6 +123,12 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
+    <script>
+  
+  if (window.location.pathname === '/' && localStorage.getItem("preferredHome") === "homepage") {
+    window.location.href = "/homepage/";
+  }
+</script>
 </head>
 
  
@@ -132,7 +139,7 @@
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/homepage/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
       </div>
       
           <div class="hamburger">
@@ -140,9 +147,9 @@
               <span class="bar"></span>
               <span class="bar"></span>
           </div>
-
+ <button onclick="setPreferredHome()">🏠 Switch Home</button>
          <ul class="nav-menu">
-            
+                
              <div class="mobile-search"> <div class="click-iframe" data-src="/quick/search/" data-title="Quick Search">
     <div class="iframe-placeholder" style="max-width:600px;margin:auto;height:60px;display:flex;align-items:center;gap:10px;padding:10px 15px;background:#fff;border:1px solid #ccc;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.1);font-size:16px;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gray" width="24" height="24">
@@ -151,7 +158,6 @@
       <span style="color:#888;">Search Here ...</span>
     </div>
   </div></div>
-        
               <li class="active"><a href="/homepage/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/baner-poster-update/">Poster</a></li>
@@ -168,6 +174,20 @@
 <button id="installBtn" style="display:none;"  >
    <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
 </button>
+
+
+<script>
+function setPreferredHome() {
+  const currentPref = localStorage.getItem("preferredHome");
+  if (currentPref === "homepage") {
+    localStorage.removeItem("preferredHome");
+    window.location.href = '/';
+  } else {
+    localStorage.setItem("preferredHome", "homepage");
+    window.location.href = '/homepage/';
+  }
+}
+</script>
     </header>
    <body>
  
@@ -204,6 +224,9 @@
     
         
         
+    
+        
+        
           <li class="card-item">
             <a class="card-title" href="/update/cm-laptop-yojna-mp/" >CM Laptop Yojana 2025-26 , MP</a>
             
@@ -219,18 +242,15 @@
     
         
         
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/jobs/mppsc-transport-si-jun25/" >MPPSC Vehicle Transport Sub Inspector Recruitment 2025-Apply Online</a>
+            <a class="card-title" href="/ads/whatsapp-promotion/" >Promotion or Ads       on Whatsapp Channel Terms</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 20 Jun 2025</div>
+      <div class="card-date">📅 25 Feb 2025</div>
           </li>
        
         
@@ -645,10 +665,13 @@
     
     
     
+  
+    
+    
       <li>
-        <a href="/student/mp/rskmp-class-5th-and-8th-result/" >MP Board Class 5th and 8th Result</a>
+        <a href="/scheme/mp/pension-apply/" >Social Security Pension Apply /Stutus/ Download Pdf Form</a>
         
-        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
     
@@ -658,12 +681,8 @@
   
     
     
-      <li>
-        <a href="/jobs/bank/bob-lbo-vacancy-2025/" >BOB Local Bank Officers LBO Vacancy 2025 Online Form</a>
-        
-        
-      </li>
-   
+  
+    
     
   
     
@@ -672,7 +691,7 @@
     
     
       <li>
-        <a href="/mp/ssapy-cm-unmarried-pension-scheme/" >SSAPY CM Unmarried Pension Scheme  Online form Apply</a>
+        <a href="/form/mp-bijli-bill-ekyc-form/" >MP Bijali Bill Online EKYC | MPPKVVCL 2025</a>
         
          • <a href="/pdf-forms/">PDF</a>
       </li>
@@ -691,35 +710,15 @@
   
     
     
-  
-    
-    
       <li>
-        <a href="/mp/farmer-mpdage-ekrishi-yantra/" >Farmer mpdage ekrishi Yantra Anudan Apply Online</a>
+        <a href="/card/samagra-id-print/" >Samagra Id Print, Add new Member , eKYC &amp; Pariwar Vibhajan pdf Form, Adhar D-Link pdf </a>
         
-        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
     
   
     
-    
-      <li>
-        <a href="/jobs/pfrda-assistant-manager-am-vacancy-2025/" >PFRDA Assistant Manager AM Vacancy 2025 Online Form</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/how-to/check-link-mobile-no-with-aadhar/" >How to Check Linked Mobile Number With Aadhar</a>
-        
-        
-      </li>
-   
     
   
   <hr>
@@ -765,7 +764,37 @@
     
     
       <li>
-        <a href="/scheme/toilet-subsidy-yojana-swachh-bharat/" >PM SBM Toilet Application 2025– Apply Online</a>
+        <a href="/update/pm-kisan-samman-nidhi-ki-kisht/" >Pm Kisan Samman Nidhi Ki Kisht</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/2025/uppsc-exam-calender/" >UPPSC Exam Calender 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/how-to/samagra-marital-stutus-correction/" >Marital Stutus Correction in Samagra 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/card/driving-learner-licence/" >Driving Licence  / Learning Apply / Status / Download</a>
         
         
       </li>
@@ -778,37 +807,11 @@
     
     
       <li>
-        <a href="/mp/pm-krishak-mitra-surya-yojana/" >PM Krishak Mitra Surya Yojana 2025 – सब्सिडी पर सोलर पंप योजना</a>
+        <a href="/scheme/mp/pension-apply/" >Social Security Pension Apply /Stutus/ Download Pdf Form</a>
         
-        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
-    
-  
-    
-    
-      <li>
-        <a href="/scheme/mp/mp-labour-card/" >MP Shrimik Panjiyan / Labour Card Registration</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/quick/search/" >Search Anything</a>
-        
-        
-      </li>
-   
-    
-  
-    
     
   
     
@@ -820,11 +823,14 @@
     
     
       <li>
-        <a href="/imp/self-npci-link-status/" >How to Self-Link DBT with NPCI? – Easy Online &amp; Offline Methods</a>
+        <a href="/jobs/indian-navy-b.tech-officer-entry-scheme-jan-2026/" >Indian Navy B.Tech Officer Entry Scheme Jan 2026 Batch</a>
         
         
       </li>
    
+    
+  
+    
     
   
   <hr>

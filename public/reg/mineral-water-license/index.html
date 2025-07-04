@@ -116,6 +116,7 @@
 <link rel="preload" as="style" href="/css/scheme-posts.css" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/css/scheme-posts.css"></noscript>
 
+
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
@@ -125,6 +126,12 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
+    <script>
+  
+  if (window.location.pathname === '/' && localStorage.getItem("preferredHome") === "homepage") {
+    window.location.href = "/homepage/";
+  }
+</script>
 </head>
 
  
@@ -135,7 +142,7 @@
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/homepage/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
       </div>
       
           <div class="hamburger">
@@ -143,9 +150,9 @@
               <span class="bar"></span>
               <span class="bar"></span>
           </div>
-
+ <button onclick="setPreferredHome()">🏠 Switch Home</button>
          <ul class="nav-menu">
-            
+                
              <div class="mobile-search"> <div class="click-iframe" data-src="/quick/search/" data-title="Quick Search">
     <div class="iframe-placeholder" style="max-width:600px;margin:auto;height:60px;display:flex;align-items:center;gap:10px;padding:10px 15px;background:#fff;border:1px solid #ccc;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.1);font-size:16px;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gray" width="24" height="24">
@@ -154,7 +161,6 @@
       <span style="color:#888;">Search Here ...</span>
     </div>
   </div></div>
-        
               <li class="active"><a href="/homepage/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/baner-poster-update/">Poster</a></li>
@@ -171,6 +177,20 @@
 <button id="installBtn" style="display:none;"  >
    <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
 </button>
+
+
+<script>
+function setPreferredHome() {
+  const currentPref = localStorage.getItem("preferredHome");
+  if (currentPref === "homepage") {
+    localStorage.removeItem("preferredHome");
+    window.location.href = '/';
+  } else {
+    localStorage.setItem("preferredHome", "homepage");
+    window.location.href = '/homepage/';
+  }
+}
+</script>
     </header>
    <body>
  
@@ -204,18 +224,45 @@
         
         
         
+          <li class="card-item">
+            <a class="card-title" href="/scheme/mp/cmlly-ladli-laxmi-yojna/" >Ladli Laxmi Yojna Apply Online- Download pdf form</a>
+            
+          <div class="card-tags">
+        
+        <a href="/pdf-forms/">📄 PDF Form</a>
+      </div>
+
+      <div class="card-date">📅 14 Jan 2025</div>
+          </li>
+       
+        
     
         
         
           <li class="card-item">
-            <a class="card-title" href="/jobs/ibps-specialist-officer-so-15th-vacancy-2025/" >IBPS Specialist Officer SO 15th Vacancy 2025 Online Form</a>
+            <a class="card-title" href="/download/pdf/" ></a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 01 Jul 2025</div>
+      <div class="card-date">📅 01 Jan 0001</div>
+          </li>
+       
+        
+    
+        
+        
+          <li class="card-item">
+            <a class="card-title" href="/admitcard/rpsc-various-vacancy-admit-card-2025/" >RPSC Various Vacancy Admit Card 2025</a>
+            
+          <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
           </li>
        
         
@@ -225,18 +272,15 @@
     
         
         
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/admitcard/rpsc-school-lecturer-admit-card-2025/" >RPSC School Lecturer Admit Card 2025 Released</a>
+            <a class="card-title" href="/card/udid-card/" >UDID Card Download / Apply</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 20 Jun 2025</div>
+      <div class="card-date">📅 01 Jan 2025</div>
           </li>
        
         
@@ -640,19 +684,30 @@
     
     
     
-  
-    
-    
-  
-    
+      <li>
+        <a href="/scheme/saksham-bhaiya-bahna-yojna/" >Saksham Bhaiya Bahna Yojna</a>
+        
+        
+      </li>
+   
     
   
     
     
       <li>
-        <a href="/pdf/student-school-college-pdf-form/" >School / College (विद्यार्थी संबंधित फार्म) PDF Forms Download</a>
+        <a href="/jobs/bank/bob-lbo-vacancy-2025/" >BOB Local Bank Officers LBO Vacancy 2025 Online Form</a>
         
-         • <a href="/pdf-forms/">PDF</a>
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/card/passport-card-apply/" >Passport Card Online Apply &amp; Details</a>
+        
+        
       </li>
    
     
@@ -666,17 +721,7 @@
     
     
       <li>
-        <a href="/ads/sponsor-disclaimer/" >Promotion or Add User Turms on Whatsapp Channel Terms</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/admitcard/indian-army-agniveer-admitcard/" >Indian Army Agniveer Admit Card Download 2025</a>
+        <a href="/aa-text/" >dfdf</a>
         
         
       </li>
@@ -689,11 +734,17 @@
     
     
       <li>
-        <a href="/scheme/toilet-subsidy-yojana-swachh-bharat/" >PM SBM Toilet Application 2025– Apply Online</a>
+        <a href="/jobs/ssc-chsl-2025/" >SSC 10&#43;2 CHSL 2025 Online Form</a>
         
         
       </li>
    
+    
+  
+    
+    
+  
+    
     
   
   <hr>
@@ -738,8 +789,17 @@
     
     
     
+  
+    
+    
+  
+    
+    
+  
+    
+    
       <li>
-        <a href="/scheme/mp/mp-labour-card/" >MP Shrimik Panjiyan / Labour Card Registration</a>
+        <a href="/jobs/wbssc-assistant-teacher-vacancy-2025/" >West Bengal WBSSC Assistant Teacher Vacancy 2025 Online Form</a>
         
         
       </li>
@@ -749,7 +809,7 @@
     
     
       <li>
-        <a href="/imp/self-npci-link-status/" >How to Self-Link DBT with NPCI? – Easy Online &amp; Offline Methods</a>
+        <a href="/education/central-board-result-2025/" >Central Board 10th &amp; 12th CBSE Result 2025</a>
         
         
       </li>
@@ -759,7 +819,7 @@
     
     
       <li>
-        <a href="/jobs/ssc-chsl-2025/" >SSC 10&#43;2 CHSL 2025 Online Form</a>
+        <a href="/jobs/bscb-bihar-state-co-operative-bank-assistant-2025/" >BSCB Bihar State Co-Operative Bank Assistant 2025 Online Form</a>
         
         
       </li>
@@ -768,12 +828,8 @@
   
     
     
-      <li>
-        <a href="/jobs/ssc-junior-engineer-je-vacancy-2025/" >SSC Junior Engineer JE Vacancy 2025 Online Form</a>
-        
-        
-      </li>
-   
+  
+    
     
   
     
@@ -782,37 +838,11 @@
     
     
       <li>
-        <a href="/jobs/indian-navy-agniveer-mr-musician-vacancy-2025/" >Indian Navy Agniveer MR Musician Vacancy 2025 Online Form</a>
+        <a href="/scheme/cm-kisan-kalyan-nidhi/" >CM Kisan Kalyan Nidhi 12th Kisht ₹2000 Update</a>
         
         
       </li>
    
-    
-  
-    
-    
-      <li>
-        <a href="/scheme/pm-sbm-bls-toilet/" >PM SBM Shouchalaya/Toilet Apply Online</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/card/pan-card-apply/" >New Pan Card, Correction / Update Old Pan, Download 49A pdf Form</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
-      </li>
-   
-    
-  
-    
-    
-  
-    
     
   
   <hr>

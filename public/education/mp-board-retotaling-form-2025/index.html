@@ -123,6 +123,7 @@
   
 
 
+
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
@@ -132,6 +133,12 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
+    <script>
+  
+  if (window.location.pathname === '/' && localStorage.getItem("preferredHome") === "homepage") {
+    window.location.href = "/homepage/";
+  }
+</script>
 </head>
 
  
@@ -142,7 +149,7 @@
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/homepage/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
       </div>
       
           <div class="hamburger">
@@ -150,9 +157,9 @@
               <span class="bar"></span>
               <span class="bar"></span>
           </div>
-
+ <button onclick="setPreferredHome()">🏠 Switch Home</button>
          <ul class="nav-menu">
-            
+                
              <div class="mobile-search"> <div class="click-iframe" data-src="/quick/search/" data-title="Quick Search">
     <div class="iframe-placeholder" style="max-width:600px;margin:auto;height:60px;display:flex;align-items:center;gap:10px;padding:10px 15px;background:#fff;border:1px solid #ccc;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.1);font-size:16px;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gray" width="24" height="24">
@@ -161,7 +168,6 @@
       <span style="color:#888;">Search Here ...</span>
     </div>
   </div></div>
-        
               <li class="active"><a href="/homepage/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/baner-poster-update/">Poster</a></li>
@@ -178,6 +184,20 @@
 <button id="installBtn" style="display:none;"  >
    <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
 </button>
+
+
+<script>
+function setPreferredHome() {
+  const currentPref = localStorage.getItem("preferredHome");
+  if (currentPref === "homepage") {
+    localStorage.removeItem("preferredHome");
+    window.location.href = '/';
+  } else {
+    localStorage.setItem("preferredHome", "homepage");
+    window.location.href = '/homepage/';
+  }
+}
+</script>
     </header>
    <body>
  
@@ -211,6 +231,21 @@
         
         
         
+          <li class="card-item">
+            <a class="card-title" href="/reg/mpesb-profile/" >MPESB Profile Registration/ Vyapam Panjiyan</a>
+            
+          <div class="card-tags">
+        
+        <a href="/pdf-forms/">📄 PDF Form</a>
+      </div>
+
+      <div class="card-date">📅 18 Jan 2025</div>
+          </li>
+       
+        
+    
+        
+        
     
         
         
@@ -221,19 +256,16 @@
         
         
           <li class="card-item">
-            <a class="card-title" href="/jobs/bank/bob-lbo-vacancy-2025/" >BOB Local Bank Officers LBO Vacancy 2025 Online Form</a>
+            <a class="card-title" href="/admitcard/bihar-bsphcl-technician-gr-iii-exam-date-2025/" >Bihar BSPHCL Technician Gr-III Exam Date 2025</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 04 Jul 2025</div>
+      <div class="card-date">📅 30 Jun 2025</div>
           </li>
        
-        
-    
-        
         
     
     <hr>
@@ -683,11 +715,18 @@
     
     
     
+      <li>
+        <a href="/jobs/rajasthan-high-court-group-d-2025/" >Rajasthan High Court Class IV (Peon) Vacancy 2025 - Online Form</a>
+        
+        
+      </li>
+   
+    
   
     
     
       <li>
-        <a href="/admitcard/dfccil-mts-executive-jr-2025/" >DFCCIL MTS, Executive &amp; Jr. Manager Exam Date 2025</a>
+        <a href="/jobs/bank/bob-lbo-vacancy-2025/" >BOB Local Bank Officers LBO Vacancy 2025 Online Form</a>
         
         
       </li>
@@ -703,7 +742,7 @@
     
     
       <li>
-        <a href="/jobs/wbssc-assistant-teacher-vacancy-2025/" >West Bengal WBSSC Assistant Teacher Vacancy 2025 Online Form</a>
+        <a href="/jobs/mppsc-transport-si-jun25/" >MPPSC Vehicle Transport Sub Inspector Recruitment 2025-Apply Online</a>
         
         
       </li>
@@ -716,7 +755,7 @@
     
     
       <li>
-        <a href="/update/pm-kisan-samman-nidhi-ki-kisht/" >Pm Kisan Samman Nidhi Ki Kisht</a>
+        <a href="/jobs/pfrda-assistant-manager-am-vacancy-2025/" >PFRDA Assistant Manager AM Vacancy 2025 Online Form</a>
         
         
       </li>
@@ -732,7 +771,7 @@
     
     
       <li>
-        <a href="/jobs/rrb-technician-2025/" >Railway RRB Technician 2025 Online Form</a>
+        <a href="/scheme/mp/mp-labour-card/" >MP Shrimik Panjiyan / Labour Card Registration</a>
         
         
       </li>

@@ -123,6 +123,7 @@
   
 
 
+
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
@@ -132,6 +133,12 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
+    <script>
+  
+  if (window.location.pathname === '/' && localStorage.getItem("preferredHome") === "homepage") {
+    window.location.href = "/homepage/";
+  }
+</script>
 </head>
 
  
@@ -142,7 +149,7 @@
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/homepage/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
       </div>
       
           <div class="hamburger">
@@ -150,9 +157,9 @@
               <span class="bar"></span>
               <span class="bar"></span>
           </div>
-
+ <button onclick="setPreferredHome()">🏠 Switch Home</button>
          <ul class="nav-menu">
-            
+                
              <div class="mobile-search"> <div class="click-iframe" data-src="/quick/search/" data-title="Quick Search">
     <div class="iframe-placeholder" style="max-width:600px;margin:auto;height:60px;display:flex;align-items:center;gap:10px;padding:10px 15px;background:#fff;border:1px solid #ccc;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.1);font-size:16px;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gray" width="24" height="24">
@@ -161,7 +168,6 @@
       <span style="color:#888;">Search Here ...</span>
     </div>
   </div></div>
-        
               <li class="active"><a href="/homepage/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/baner-poster-update/">Poster</a></li>
@@ -178,6 +184,20 @@
 <button id="installBtn" style="display:none;"  >
    <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
 </button>
+
+
+<script>
+function setPreferredHome() {
+  const currentPref = localStorage.getItem("preferredHome");
+  if (currentPref === "homepage") {
+    localStorage.removeItem("preferredHome");
+    window.location.href = '/';
+  } else {
+    localStorage.setItem("preferredHome", "homepage");
+    window.location.href = '/homepage/';
+  }
+}
+</script>
     </header>
    <body>
  
@@ -214,18 +234,15 @@
     
         
         
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/pdf/uploaded-pdf-forms/" >Self Uploaded PDF Forms</a>
+            <a class="card-title" href="/mp/ladli-behna-yojna-25th-kist/" >MP Ladli Bahna 25th Installment Date 2025: Payment Status, List &amp; Update</a>
             
           <div class="card-tags">
+        <a href="/extended/">📌 Extended</a>
         
-        <a href="/pdf-forms/">📄 PDF Form</a>
       </div>
 
-      <div class="card-date">📅 28 Mar 2025</div>
+      <div class="card-date">📅 13 Jun 2025</div>
           </li>
        
         
@@ -233,31 +250,22 @@
         
         
           <li class="card-item">
-            <a class="card-title" href="/admitcard/rpsc-various-vacancy-admit-card-2025/" >RPSC Various Vacancy Admit Card 2025</a>
+            <a class="card-title" href="/student/mp-board/results/2025/" >MP Board Result 2025 – Check MPBSE Class 10th &amp; 12th Result</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 04 Jul 2025</div>
+      <div class="card-date">📅 05 May 2025</div>
           </li>
        
         
     
         
         
-          <li class="card-item">
-            <a class="card-title" href="/exam-date/" >Exam Date Reminder</a>
-            
-          <div class="card-tags">
+    
         
-        
-      </div>
-
-      <div class="card-date">📅 08 Nov 2024</div>
-          </li>
-       
         
     
     <hr>
@@ -857,23 +865,7 @@
     
     
       <li>
-        <a href="/reg/mineral-water-license/" >Mineral Water License Online FSSAI Apply</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/pdf/patwari-forms/" >Patwari &amp; Farmer (पटवारी एवं किसान संबंधित) Forms 2025</a>
+        <a href="/reg/mpesb-profile/" >MPESB Profile Registration/ Vyapam Panjiyan</a>
         
          • <a href="/pdf-forms/">PDF</a>
       </li>
@@ -888,8 +880,27 @@
   
     
     
+  
+    
+    
+  
+    
+    
       <li>
-        <a href="/download/pdf/" ></a>
+        <a href="/scheme/pmmvy-pdf-form-apply/" >PMMVY PM Matru Vandana Yojana Apply Online &amp; Download pdf Form and Status</a>
+        
+         • <a href="/pdf-forms/">PDF</a>
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/update/pm-kisan-samman-nidhi-ki-kisht/" >Pm Kisan Samman Nidhi Ki Kisht</a>
         
         
       </li>
@@ -899,14 +910,11 @@
     
     
       <li>
-        <a href="/jobs/bihar-wcdc-various-post-2025/" >WCDC Bihar Various Post 2025 Online Form</a>
+        <a href="/scheme/mp-cm-seed-and-fertilizer-subsidy-scheme/" >MP CM Seed &amp; Fertilizer Subsidy Scheme 2025 – Full Details</a>
         
         
       </li>
    
-    
-  
-    
     
   
     

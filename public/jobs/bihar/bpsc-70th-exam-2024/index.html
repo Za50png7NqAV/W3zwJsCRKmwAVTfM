@@ -115,6 +115,7 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
   
 
 
+
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
@@ -124,6 +125,12 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
+    <script>
+  
+  if (window.location.pathname === '/' && localStorage.getItem("preferredHome") === "homepage") {
+    window.location.href = "/homepage/";
+  }
+</script>
 </head>
 
  
@@ -134,7 +141,7 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/homepage/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
       </div>
       
           <div class="hamburger">
@@ -142,9 +149,9 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
               <span class="bar"></span>
               <span class="bar"></span>
           </div>
-
+ <button onclick="setPreferredHome()">🏠 Switch Home</button>
          <ul class="nav-menu">
-            
+                
              <div class="mobile-search"> <div class="click-iframe" data-src="/quick/search/" data-title="Quick Search">
     <div class="iframe-placeholder" style="max-width:600px;margin:auto;height:60px;display:flex;align-items:center;gap:10px;padding:10px 15px;background:#fff;border:1px solid #ccc;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.1);font-size:16px;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gray" width="24" height="24">
@@ -153,7 +160,6 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
       <span style="color:#888;">Search Here ...</span>
     </div>
   </div></div>
-        
               <li class="active"><a href="/homepage/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/baner-poster-update/">Poster</a></li>
@@ -170,6 +176,20 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
 <button id="installBtn" style="display:none;"  >
    <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
 </button>
+
+
+<script>
+function setPreferredHome() {
+  const currentPref = localStorage.getItem("preferredHome");
+  if (currentPref === "homepage") {
+    localStorage.removeItem("preferredHome");
+    window.location.href = '/';
+  } else {
+    localStorage.setItem("preferredHome", "homepage");
+    window.location.href = '/homepage/';
+  }
+}
+</script>
     </header>
    <body>
  
@@ -203,11 +223,32 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
         
         
         
+          <li class="card-item">
+            <a class="card-title" href="/scheme/mp-rahveer-yojana/" >CM Rahveer Yojna 2025 - Join For 25000/-</a>
+            
+          <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 20 May 2025</div>
+          </li>
+       
+        
     
         
         
-    
+          <li class="card-item">
+            <a class="card-title" href="/card/eshram-card-apply/" >E-Shram Card Apply / Update / Download</a>
+            
+          <div class="card-tags">
         
+        
+      </div>
+
+      <div class="card-date">📅 13 Jan 2025</div>
+          </li>
+       
         
     
         
@@ -216,14 +257,29 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
         
         
           <li class="card-item">
-            <a class="card-title" href="/download/loader/" ></a>
+            <a class="card-title" href="/mp/ladli-behna-yojna-25th-kist/" >MP Ladli Bahna 25th Installment Date 2025: Payment Status, List &amp; Update</a>
+            
+          <div class="card-tags">
+        <a href="/extended/">📌 Extended</a>
+        
+      </div>
+
+      <div class="card-date">📅 13 Jun 2025</div>
+          </li>
+       
+        
+    
+        
+        
+          <li class="card-item">
+            <a class="card-title" href="/admitcard/rpsc-school-lecturer-admit-card-2025/" >RPSC School Lecturer Admit Card 2025 Released</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 01 Jan 0001</div>
+      <div class="card-date">📅 20 Jun 2025</div>
           </li>
        
         
@@ -637,11 +693,8 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
     
     
     
-  
-    
-    
       <li>
-        <a href="/jobs/pfrda-assistant-manager-am-vacancy-2025/" >PFRDA Assistant Manager AM Vacancy 2025 Online Form</a>
+        <a href="/admitcard/rpsc-various-vacancy-admit-card-2025/" >RPSC Various Vacancy Admit Card 2025</a>
         
         
       </li>
@@ -651,7 +704,7 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
     
     
       <li>
-        <a href="/admitcard/jharkhand-acf-pre-exam-admit-card-2025/" >Jharkhand ACF Pre Exam Admit Card 2025</a>
+        <a href="/jobs/sbi-probationary-officers-po-bharti-2025/" >SBI Probationary Officers PO Bharti 2025 Online Form</a>
         
         
       </li>
@@ -663,27 +716,44 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
   
     
     
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
       <li>
-        <a href="/document/mp-sambal-yojna-apply/" >MP Sambal Card Apply Online 2025 – फॉर्म, पात्रता, लाभ और आवश्यक दस्तावेज</a>
+        <a href="/pdf/gram-panchamchyat-forms/" >GP Sarpanch / Sachiv (ग्राम पंचायत) Lable PDF Forms Download</a>
         
          • <a href="/pdf-forms/">PDF</a>
       </li>
    
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/download/loader/" ></a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/jobs/cg-vyapam-peon-bharti-2025/" >CG Vyapam Peon Bharti 2025 Online Form</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+  
+    
     
   
   <hr>
@@ -728,11 +798,18 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
     
     
     
+      <li>
+        <a href="/result/up-police-radio-head-operator-2022-final-result/" >UP Police Radio Head Operator 2022 Final Result PDF Out</a>
+        
+        
+      </li>
+   
+    
   
     
     
       <li>
-        <a href="/web-stories/pm-awas-yojana-2025/" >प्रधानमंत्री आवास योजना 2025</a>
+        <a href="/admitcard/dsssb-various-post-admit-card-2025-released/" >DSSSB Admit Card 2025 Released for Various Post Codes</a>
         
         
       </li>
@@ -747,8 +824,11 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
   
     
     
+  
+    
+    
       <li>
-        <a href="/mp/ssapy-cm-unmarried-pension-scheme/" >SSAPY CM Unmarried Pension Scheme  Online form Apply</a>
+        <a href="/card/aadhar-card-uidai/" >Aadhar Card Download, Address Update, Find Aadhar Number</a>
         
          • <a href="/pdf-forms/">PDF</a>
       </li>
@@ -757,8 +837,11 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
   
     
     
+  
+    
+    
       <li>
-        <a href="/admitcard/jharkhand-acf-pre-exam-admit-card-2025/" >Jharkhand ACF Pre Exam Admit Card 2025</a>
+        <a href="/card/driving-learner-licence/" >Driving Licence  / Learning Apply / Status / Download</a>
         
         
       </li>
@@ -771,20 +854,7 @@ Important Dates Application Begin: 28/09/2024Last Date for Apply Online: 04/11/2
     
     
       <li>
-        <a href="/result/patna-hc-translator-final-result-2025/" >Patna HC Translator Final Result 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/update/cm-laptop-yojna-mp/" >CM Laptop Yojana 2025-26 , MP</a>
+        <a href="/mp/farmer-mpdage-ekrishi-yantra/" >Farmer mpdage ekrishi Yantra Anudan Apply Online</a>
         
         
       </li>
