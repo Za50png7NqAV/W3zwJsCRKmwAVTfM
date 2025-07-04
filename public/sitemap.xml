@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/mpesb-msc-pbbse-2025/</loc>
-    <lastmod>2025-07-03T17:39:11+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2025-07-04T08:42:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
+    <lastmod>2025-07-04T08:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-04T08:42:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mpesb-msc-pbbse-2025/</loc>
+    <lastmod>2025-07-03T17:39:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -57,6 +67,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-bihar-special-school-teacher-2025/</loc>
+    <lastmod>2025-07-02T12:03:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/admission/mpesb-pnst-gnmtst-2025/</loc>
     <lastmod>2025-07-01T12:06:38+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -74,11 +89,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
     <lastmod>2025-07-01T08:18:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-07-04T08:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -174,11 +184,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-high-court-group-d-2025/</loc>
     <lastmod>2025-06-27T13:07:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
-    <lastmod>2025-07-04T08:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -369,11 +374,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-transport-si-jun25/</loc>
     <lastmod>2025-06-20T12:32:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-bihar-special-school-teacher-2025/</loc>
-    <lastmod>2025-06-20T12:03:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
