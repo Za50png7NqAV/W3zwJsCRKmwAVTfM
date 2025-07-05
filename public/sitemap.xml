@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bihar/bihar-home-guard-01-2025/</loc>
-    <lastmod>2025-07-05T16:37:10+05:30</lastmod>
+    <loc>http://localhost:1313/update/pm-kisan-samman-nidhi-ki-kisht/</loc>
+    <lastmod>2025-07-05T18:05:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-05T18:05:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar/bihar-home-guard-01-2025/</loc>
     <lastmod>2025-07-05T16:37:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -449,11 +454,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-politachnic-admission-2025/</loc>
     <lastmod>2025-06-19T08:16:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/update/pm-kisan-samman-nidhi-ki-kisht/</loc>
-    <lastmod>2025-06-19T08:05:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
