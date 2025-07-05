@@ -7,12 +7,12 @@ lastmod = {{ .Date }}
 url = "/{{ .Dir }}{{ .File.ContentBaseName }}/" # ✅ Main SEO Friendly URL
 aliases = [
     "/{{ .File.ContentBaseName }}/" ,
-  "/{{ .File.Path | md5 | truncate 6 }}/"
+  "/{{ .File.Path | md5 | truncate 6 "" }}/"
 ]
-shorturl ="{{ .File.Path | md5 | truncate 6 }}"
+shorturl ="{{ .File.Path | md5 | truncate 6 "" }}"
+RecommendName ="{{ replace .File.ContentBaseName "-" " " | title }}"
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 seo_title = ""
-
 post-type = "" #hint>> imp-link , student, schemes, results, admitcard, latest-jobs
 lang = "hi" #hindi hi English en
 State ="Madhya Pradesh"
@@ -28,7 +28,6 @@ to_date = "" # date must be in YYYY-MM-DD format
 resultDate = ""
 category = ""
 recommend ="no"
-RecommendName =""
 admitcard ="no" 
 AdmitcardName = ''
 result = "no"
@@ -40,7 +39,7 @@ important ="no" # yes if this important for cyber cafe
 baner = "no"
 imageBanner =""
 authors = ["Vikram Singh"]
-keywords = ["{{ replace .File.ContentBaseName "-" " " | title }} {{ now.Year }}", "{{ .File.TranslationBaseName }}", "{{/* {{ .File.Path | md5 | truncate 6 }} */}}", "{{ .File.Path | md5 | truncate 6 }}", "yojna Portal"]
+keywords = ["{{ replace .File.ContentBaseName "-" " " | title }} {{ now.Year }}", "{{ .File.TranslationBaseName }}", "{{/* {{ .File.Path | md5 | truncate 6 "" }} */}}", "{{ .File.Path | md5 | truncate 6 }}", "yojna Portal"]
 description = ""
 cssStyles = ["css/posts/jobs.css"]
 jsFiles = ["js/main/default.js"]
