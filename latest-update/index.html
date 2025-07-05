@@ -123,6 +123,7 @@
   
 
 
+
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
@@ -132,6 +133,12 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
+    <script>
+  
+  if (window.location.pathname === '/' && localStorage.getItem("preferredHome") === "homepage") {
+    window.location.href = "/homepage/";
+  }
+</script>
 </head>
 
  
@@ -142,9 +149,9 @@
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/homepage/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
       </div>
-      
+       <button onclick="setPreferredHome()">🏠 Switch Home</button>
           <div class="hamburger">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -152,7 +159,7 @@
           </div>
 
          <ul class="nav-menu">
-            
+                
              <div class="mobile-search"> <div class="click-iframe" data-src="/quick/search/" data-title="Quick Search">
     <div class="iframe-placeholder" style="max-width:600px;margin:auto;height:60px;display:flex;align-items:center;gap:10px;padding:10px 15px;background:#fff;border:1px solid #ccc;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.1);font-size:16px;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gray" width="24" height="24">
@@ -161,7 +168,6 @@
       <span style="color:#888;">Search Here ...</span>
     </div>
   </div></div>
-        
               <li class="active"><a href="/homepage/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/baner-poster-update/">Poster</a></li>
@@ -178,6 +184,20 @@
 <button id="installBtn" style="display:none;"  >
    <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
 </button>
+
+
+<script>
+function setPreferredHome() {
+  const currentPref = localStorage.getItem("preferredHome");
+  if (currentPref === "homepage") {
+    localStorage.removeItem("preferredHome");
+    window.location.href = '/';
+  } else {
+    localStorage.setItem("preferredHome", "homepage");
+    window.location.href = '/homepage/';
+  }
+}
+</script>
     </header>
    <body>
  
@@ -211,21 +231,30 @@
         
         
         
-    
-        
-        
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/jobs/uppsc-computer-assistant-vacancy-2025/" >UPPSC Computer Assistant Vacancy 2025 Online Form</a>
+            <a class="card-title" href="/student/mp/mptaas-scholarship-profile/" >MPTAAS Scholarship Profile Panjiayan</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 02 Jul 2025</div>
+      <div class="card-date">📅 05 Jan 2025</div>
+          </li>
+       
+        
+    
+        
+        
+          <li class="card-item">
+            <a class="card-title" href="/card/udid-card/" >UDID Card Download / Apply</a>
+            
+          <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 01 Jan 2025</div>
           </li>
        
         
@@ -234,6 +263,21 @@
         
     
         
+        
+    
+        
+        
+          <li class="card-item">
+            <a class="card-title" href="/card/print-parivahan-rc-online/" >Print Vehicle RC (Registration Certificate)  Donwload Online</a>
+            
+          <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 27 Feb 2025</div>
+          </li>
+       
         
     
     <hr>
@@ -247,6 +291,150 @@
 
 
 <ul class="card-list">
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/dsssb-various-post-recruitment-2025/" target="_blank">
+        
+          DSSSB 2025: Apply for Various Posts
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/btsc-bihar-nursing-tutor-vacancy-2025/" target="_blank">
+        
+          BTSC Bihar Nursing Tutor Vacancy 2025 Online Form
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/bpsc-71th-exam-2025/" target="_blank">
+        
+          Bihar BPSC 71st Pre Form 2025 – Exam date Notice
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/result/nta-cuet-ug-result-2025/" target="_blank">
+        
+          NTA CUET Undergraduate Result 2025
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/bank/bob-lbo-vacancy-2025/" target="_blank">
+        
+          BOB Local Bank Officers LBO Vacancy 2025 Online Form
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/admitcard/rpsc-various-vacancy-admit-card-2025/" target="_blank">
+        
+          RPSC Multiple Post Exam Admit Card 2025 Released
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/ibps-hindi-officer-vacancy-2025/" target="_blank">
+        
+          IBPS Hindi Officer Vacancy 2025 Online Form
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/education/ederp-guest-teacher-mp/" target="_blank">
+        
+          MP Guest Teacher (Atithi Shikshak) Choice Filling 2025-26
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
   
     
     <li class="card-item">
@@ -282,150 +470,6 @@
       </div>
 
       <div class="card-date">📅 03 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/result/railway-rrb-alp-stage-ii-result-with-marks-2025/" target="_blank">
-        
-          Railway RRB ALP Exam CBT Exam Results 2025
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 03 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/indian-navy-agniveer-mr-musician-vacancy-2025/" target="_blank">
-        
-          Indian Navy Agniveer MR Musician Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 03 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/uppsc-computer-assistant-vacancy-2025/" target="_blank">
-        
-          UPPSC Computer Assistant Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/bpsc-lower-division-clerk-ldc-vacancy-2025/" target="_blank">
-        
-          BPSC Lower Division Clerk LDC Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/pfrda-assistant-manager-am-vacancy-2025/" target="_blank">
-        
-          PFRDA Assistant Manager AM Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/ssc-junior-engineer-je-vacancy-2025/" target="_blank">
-        
-          SSC Junior Engineer JE Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/how-to/webgis2-mpbhulekh-portal/" target="_blank">
-        
-          Webgis2 Mpbhulekh Portal
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/admission/mpesb-pnst-gnmtst-2025/" target="_blank">
-        
-          MPESB PNST &amp; GNMTST 2025 Answerkey Available
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 01 Jul 2025</div>
     </li>
   
 </ul>
@@ -524,7 +568,7 @@
   <select id="yearFilter" onchange="filterTable()"></select>
 
   <select id="categoryFilter" onchange="filterTable()">
-  <option value="">Categories</option><option value="Nursing">Nursing</option><option value="RRB NTPC">RRB NTPC</option><option value="RRB ALP">RRB ALP</option><option value="Indian Navy Agniveer MR Musician">Indian Navy Agniveer MR Musician</option><option value="UPPSC Computer Assistant">UPPSC Computer Assistant</option><option value="BPSC LDC Lower Division Clerk">BPSC LDC Lower Division Clerk</option><option value="PFRDA Assistant Manager">PFRDA Assistant Manager</option><option value="SSC Junior Engineer">SSC Junior Engineer</option><option value="---">---</option><option value="IBPS Probationary Officer">IBPS Probationary Officer</option><option value="IBPS Specialist Officer">IBPS Specialist Officer</option><option value="DElEd Admission">DElEd Admission</option><option value="Ruk Jana Nahi">Ruk Jana Nahi</option><option value="BSPHCL Technician Gr-III">BSPHCL Technician Gr-III</option><option value="Executive and Technical Branches">Executive and Technical Branches</option><option value="JPSC ACF">JPSC ACF</option><option value="DSSSB Admit Card">DSSSB Admit Card</option><option value="CG Vyapam">CG Vyapam</option><option value="IHHL Schemes">IHHL Schemes</option><option value="Junior Technician">Junior Technician</option><option value="Admission">Admission</option><option value="Voter Card">Voter Card</option><option value="Patna HC Translator">Patna HC Translator</option><option value="DFCCIL MTS, Executive, Jr. Manager">DFCCIL MTS, Executive, Jr. Manager</option><option value="Worker &amp; Helper">Worker &amp; Helper</option><option value="UP Police Head Operator">UP Police Head Operator</option><option value="JSSC Teacher Bhati">JSSC Teacher Bhati</option><option value="Railway RRB">Railway RRB</option><option value="RRB ALP Assistant Loco Pilot">RRB ALP Assistant Loco Pilot</option><option value="UPSC CPF Assistant Commandant">UPSC CPF Assistant Commandant</option><option value="Class IV (Peon)">Class IV (Peon)</option><option value="Guest Teacher">Guest Teacher</option><option value="SSC MTS">SSC MTS</option><option value="West Bengal School Teacher">West Bengal School Teacher</option><option value="WCDC Bihar Various Post">WCDC Bihar Various Post</option><option value="Exam">Exam</option><option value="Airforce Agnipath Vayu">Airforce Agnipath Vayu</option><option value="Indian Coast Guard">Indian Coast Guard</option><option value="UPCATET">UPCATET</option><option value="UPSSSC Junior Assistant">UPSSSC Junior Assistant</option><option value="Schemes for Farmer">Schemes for Farmer</option><option value="RCRB Various Post">RCRB Various Post</option><option value="Bihar BTSC GMO">Bihar BTSC GMO</option><option value="MPPSC FSO">MPPSC FSO</option><option value="College Admission">College Admission</option><option value="SBI PO">SBI PO</option><option value="Bihar BSPHCL JCA">Bihar BSPHCL JCA</option><option value="RSSB Patwari">RSSB Patwari</option><option value="JPSC Project Manager">JPSC Project Manager</option><option value="UGC NET Exam">UGC NET Exam</option><option value="MPESB Pre Agriculture Test PAT">MPESB Pre Agriculture Test PAT</option><option value="MP ITI">MP ITI</option><option value="SSC CHSL">SSC CHSL</option><option value="UGC NET June 2025">UGC NET June 2025</option><option value="AIIMS JR">AIIMS JR</option><option value="ISRO NRSC">ISRO NRSC</option><option value="SBI CBO">SBI CBO</option><option value="PNB Specialist Officer">PNB Specialist Officer</option><option value="Parvekshak">Parvekshak</option><option value="Bank Job">Bank Job</option><option value="SGPGI">SGPGI</option><option value="Insect Collector">Insect Collector</option><option value="Fire Department">Fire Department</option><option value="UPPSC">UPPSC</option><option value="RSK Result">RSK Result</option><option value="RPSC PGT">RPSC PGT</option><option value="Vehicle Transport Sub Inspector">Vehicle Transport Sub Inspector</option><option value="BPSC Teacher">BPSC Teacher</option><option value="Constable">Constable</option><option value="Railway RPF">Railway RPF</option><option value="DSSSB  2025">DSSSB  2025</option><option value="Driver Recruitemnt">Driver Recruitemnt</option><option value="Agniveer GD">Agniveer GD</option><option value="UPSC CDS-II">UPSC CDS-II</option><option value="UPSC NDA II Exam">UPSC NDA II Exam</option><option value="RSSB VDO">RSSB VDO</option><option value="Ladli Bahna Yojna">Ladli Bahna Yojna</option><option value="Board Exam">Board Exam</option><option value="Indian Navy">Indian Navy</option><option value="Entrance Test">Entrance Test</option><option value="BPSC">BPSC</option><option value="Vyapam Abkari Police">Vyapam Abkari Police</option><option value="SSC CGL">SSC CGL</option><option value="Eligibility Test">Eligibility Test</option><option value="Programmer">Programmer</option><option value="SSC Stenographer">SSC Stenographer</option><option value="RPSC">RPSC</option><option value="Translators">Translators</option><option value="Assistant">Assistant</option><option value="Zila Parishad Technical Assistant">Zila Parishad Technical Assistant</option><option value="Staff Nurse">Staff Nurse</option><option value="UPSC">UPSC</option><option value="Airforce AFCAT">Airforce AFCAT</option><option value="SSC">SSC</option><option value="Bihar Police">Bihar Police</option><option value="eKYC Form">eKYC Form</option><option value="Laboratory Assistant">Laboratory Assistant</option><option value="Medical Officer">Medical Officer</option><option value="RRB NTPC Graduate Level">RRB NTPC Graduate Level</option><option value="Schemes">Schemes</option><option value="MPESB">MPESB</option><option value="Booking">Booking</option><option value="Correction">Correction</option><option value="CBSE Results">CBSE Results</option><option value="Farmer">Farmer</option><option value="Bank Jobs">Bank Jobs</option><option value="MPHC">MPHC</option><option value="Teacher Transfer">Teacher Transfer</option><option value="Railway">Railway</option><option value="Board Result">Board Result</option><option value="Samagra">Samagra</option><option value="Agriculture">Agriculture</option><option value="Bank">Bank</option><option value="CSIR NBRI">CSIR NBRI</option><option value="Group 4">Group 4</option><option value="Ration Card">Ration Card</option><option value="CM Kisan Kalyan Nidhi">CM Kisan Kalyan Nidhi</option><option value="Board Results">Board Results</option><option value="Sambal Card">Sambal Card</option><option value="Home Guard">Home Guard</option><option value="Addmission">Addmission</option><option value="NTA">NTA</option><option value="Pension">Pension</option><option value="Card">Card</option><option value="Aadhar">Aadhar</option><option value="Solar Pump">Solar Pump</option><option value="CMKVY">CMKVY</option><option value="Kanya Vivah">Kanya Vivah</option><option value="farmer Id">farmer Id</option><option value="force">force</option><option value="MPMKVV">MPMKVV</option><option value="MPSOS">MPSOS</option><option value="Scholarship">Scholarship</option><option value="RSMSSB">RSMSSB</option><option value="FSSAI">FSSAI</option><option value="BSSC">BSSC</option><option value="Scheme">Scheme</option><option value="Student">Student</option><option value="MPPSC">MPPSC</option><option value="NCRTC">NCRTC</option><option value="Yourself Forms">Yourself Forms</option><option value="PNST">PNST</option><option value="Gram Panchayat">Gram Panchayat</option><option value="Lokseva">Lokseva</option><option value="Fourth Class">Fourth Class</option><option value="Char Dham">Char Dham</option><option value="Recruitment">Recruitment</option><option value="Anganwadi">Anganwadi</option><option value="Apprentice">Apprentice</option><option value="passport">passport</option><option value="Certificate">Certificate</option><option value="ePFO India">ePFO India</option><option value="NPCI">NPCI</option><option value="Government Job">Government Job</option><option value="PM Scheme">PM Scheme</option><option value="bank">bank</option><option value="Telecom">Telecom</option><option value="CSIR">CSIR</option><option value="Patwari">Patwari</option><option value="MP Bhuabhilekh">MP Bhuabhilekh</option><option value="MPSARAS">MPSARAS</option><option value="DFCCIL">DFCCIL</option><option value="uppsc">uppsc</option><option value="CSIR CDRI">CSIR CDRI</option><option value="SSC JHT">SSC JHT</option><option value="Kisan">Kisan</option><option value="Apprentices">Apprentices</option><option value="Calender">Calender</option><option value="MP Board">MP Board</option><option value="Force">Force</option><option value="profile">profile</option><option value="exam">exam</option><option value="jobs">jobs</option><option value="Profile">Profile</option><option value="DDA">DDA</option><option value="CMLLY">CMLLY</option><option value="card">card</option><option value="scheme">scheme</option><option value="Insurance">Insurance</option><option value="admission">admission</option><option value="schemes">schemes</option><option value="CTET">CTET</option><option value="Examination">Examination</option><option value="Licence">Licence</option><option value="result">result</option><option value="Results">Results</option></select>
+  <option value="">Categories</option><option value="DSSSB Bharti">DSSSB Bharti</option><option value="BTSC Bihar Nursing Tutor">BTSC Bihar Nursing Tutor</option><option value="BPSC">BPSC</option><option value="NTA CUET UG">NTA CUET UG</option><option value="BOB Local Bank Officer">BOB Local Bank Officer</option><option value="RPSC Various Post">RPSC Various Post</option><option value="IBPS Hindi Officer">IBPS Hindi Officer</option><option value="Guest Teacher">Guest Teacher</option><option value="Nursing">Nursing</option><option value="RRB NTPC">RRB NTPC</option><option value="RRB ALP">RRB ALP</option><option value="Indian Navy Agniveer MR Musician">Indian Navy Agniveer MR Musician</option><option value="UPPSC Computer Assistant">UPPSC Computer Assistant</option><option value="BPSC LDC Lower Division Clerk">BPSC LDC Lower Division Clerk</option><option value="PFRDA Assistant Manager">PFRDA Assistant Manager</option><option value="SSC Junior Engineer">SSC Junior Engineer</option><option value="---">---</option><option value="BPSC Teacher">BPSC Teacher</option><option value="IBPS Probationary Officer">IBPS Probationary Officer</option><option value="IBPS Specialist Officer">IBPS Specialist Officer</option><option value="DElEd Admission">DElEd Admission</option><option value="Ruk Jana Nahi">Ruk Jana Nahi</option><option value="BSPHCL Technician Gr-III">BSPHCL Technician Gr-III</option><option value="Executive and Technical Branches">Executive and Technical Branches</option><option value="JPSC ACF">JPSC ACF</option><option value="DSSSB Admit Card">DSSSB Admit Card</option><option value="CG Vyapam">CG Vyapam</option><option value="IHHL Schemes">IHHL Schemes</option><option value="Junior Technician">Junior Technician</option><option value="Admission">Admission</option><option value="Voter Card">Voter Card</option><option value="Patna HC Translator">Patna HC Translator</option><option value="DFCCIL MTS, Executive, Jr. Manager">DFCCIL MTS, Executive, Jr. Manager</option><option value="Worker &amp; Helper">Worker &amp; Helper</option><option value="UP Police Head Operator">UP Police Head Operator</option><option value="JSSC Teacher Bhati">JSSC Teacher Bhati</option><option value="Railway RRB">Railway RRB</option><option value="RRB ALP Assistant Loco Pilot">RRB ALP Assistant Loco Pilot</option><option value="UPSC CPF Assistant Commandant">UPSC CPF Assistant Commandant</option><option value="Class IV (Peon)">Class IV (Peon)</option><option value="SSC MTS">SSC MTS</option><option value="West Bengal School Teacher">West Bengal School Teacher</option><option value="WCDC Bihar Various Post">WCDC Bihar Various Post</option><option value="Exam">Exam</option><option value="Airforce Agnipath Vayu">Airforce Agnipath Vayu</option><option value="Indian Coast Guard">Indian Coast Guard</option><option value="UPCATET">UPCATET</option><option value="UPSSSC Junior Assistant">UPSSSC Junior Assistant</option><option value="Schemes for Farmer">Schemes for Farmer</option><option value="RCRB Various Post">RCRB Various Post</option><option value="Bihar BTSC GMO">Bihar BTSC GMO</option><option value="MPPSC FSO">MPPSC FSO</option><option value="College Admission">College Admission</option><option value="SBI PO">SBI PO</option><option value="Bihar BSPHCL JCA">Bihar BSPHCL JCA</option><option value="RSSB Patwari">RSSB Patwari</option><option value="JPSC Project Manager">JPSC Project Manager</option><option value="UGC NET Exam">UGC NET Exam</option><option value="MPESB Pre Agriculture Test PAT">MPESB Pre Agriculture Test PAT</option><option value="MP ITI">MP ITI</option><option value="SSC CHSL">SSC CHSL</option><option value="UGC NET June 2025">UGC NET June 2025</option><option value="AIIMS JR">AIIMS JR</option><option value="ISRO NRSC">ISRO NRSC</option><option value="SBI CBO">SBI CBO</option><option value="PNB Specialist Officer">PNB Specialist Officer</option><option value="Parvekshak">Parvekshak</option><option value="Bank Job">Bank Job</option><option value="SGPGI">SGPGI</option><option value="Insect Collector">Insect Collector</option><option value="Fire Department">Fire Department</option><option value="UPPSC">UPPSC</option><option value="RSK Result">RSK Result</option><option value="RPSC PGT">RPSC PGT</option><option value="Vehicle Transport Sub Inspector">Vehicle Transport Sub Inspector</option><option value="Constable">Constable</option><option value="Railway RPF">Railway RPF</option><option value="DSSSB  2025">DSSSB  2025</option><option value="Driver Recruitemnt">Driver Recruitemnt</option><option value="Agniveer GD">Agniveer GD</option><option value="UPSC CDS-II">UPSC CDS-II</option><option value="UPSC NDA II Exam">UPSC NDA II Exam</option><option value="RSSB VDO">RSSB VDO</option><option value="Ladli Bahna Yojna">Ladli Bahna Yojna</option><option value="Board Exam">Board Exam</option><option value="Indian Navy">Indian Navy</option><option value="Entrance Test">Entrance Test</option><option value="Vyapam Abkari Police">Vyapam Abkari Police</option><option value="SSC CGL">SSC CGL</option><option value="Eligibility Test">Eligibility Test</option><option value="Programmer">Programmer</option><option value="SSC Stenographer">SSC Stenographer</option><option value="RPSC">RPSC</option><option value="Translators">Translators</option><option value="Assistant">Assistant</option><option value="Zila Parishad Technical Assistant">Zila Parishad Technical Assistant</option><option value="Staff Nurse">Staff Nurse</option><option value="UPSC">UPSC</option><option value="Airforce AFCAT">Airforce AFCAT</option><option value="SSC">SSC</option><option value="Bihar Police">Bihar Police</option><option value="eKYC Form">eKYC Form</option><option value="Laboratory Assistant">Laboratory Assistant</option><option value="Medical Officer">Medical Officer</option><option value="RRB NTPC Graduate Level">RRB NTPC Graduate Level</option><option value="Schemes">Schemes</option><option value="MPESB">MPESB</option><option value="Booking">Booking</option><option value="Correction">Correction</option><option value="CBSE Results">CBSE Results</option><option value="Farmer">Farmer</option><option value="Bank Jobs">Bank Jobs</option><option value="MPHC">MPHC</option><option value="Teacher Transfer">Teacher Transfer</option><option value="Railway">Railway</option><option value="Board Result">Board Result</option><option value="Samagra">Samagra</option><option value="Agriculture">Agriculture</option><option value="Bank">Bank</option><option value="CSIR NBRI">CSIR NBRI</option><option value="Group 4">Group 4</option><option value="Ration Card">Ration Card</option><option value="CM Kisan Kalyan Nidhi">CM Kisan Kalyan Nidhi</option><option value="Board Results">Board Results</option><option value="Sambal Card">Sambal Card</option><option value="Home Guard">Home Guard</option><option value="Addmission">Addmission</option><option value="NTA">NTA</option><option value="Pension">Pension</option><option value="Card">Card</option><option value="Aadhar">Aadhar</option><option value="Solar Pump">Solar Pump</option><option value="CMKVY">CMKVY</option><option value="Kanya Vivah">Kanya Vivah</option><option value="farmer Id">farmer Id</option><option value="force">force</option><option value="MPMKVV">MPMKVV</option><option value="MPSOS">MPSOS</option><option value="Scholarship">Scholarship</option><option value="RSMSSB">RSMSSB</option><option value="FSSAI">FSSAI</option><option value="BSSC">BSSC</option><option value="Scheme">Scheme</option><option value="Student">Student</option><option value="MPPSC">MPPSC</option><option value="NCRTC">NCRTC</option><option value="Yourself Forms">Yourself Forms</option><option value="PNST">PNST</option><option value="Gram Panchayat">Gram Panchayat</option><option value="Lokseva">Lokseva</option><option value="Fourth Class">Fourth Class</option><option value="Char Dham">Char Dham</option><option value="Recruitment">Recruitment</option><option value="Anganwadi">Anganwadi</option><option value="Apprentice">Apprentice</option><option value="passport">passport</option><option value="Certificate">Certificate</option><option value="ePFO India">ePFO India</option><option value="NPCI">NPCI</option><option value="Government Job">Government Job</option><option value="PM Scheme">PM Scheme</option><option value="bank">bank</option><option value="Telecom">Telecom</option><option value="CSIR">CSIR</option><option value="Patwari">Patwari</option><option value="MP Bhuabhilekh">MP Bhuabhilekh</option><option value="MPSARAS">MPSARAS</option><option value="DFCCIL">DFCCIL</option><option value="uppsc">uppsc</option><option value="CSIR CDRI">CSIR CDRI</option><option value="SSC JHT">SSC JHT</option><option value="Kisan">Kisan</option><option value="Apprentices">Apprentices</option><option value="Calender">Calender</option><option value="MP Board">MP Board</option><option value="Force">Force</option><option value="profile">profile</option><option value="exam">exam</option><option value="jobs">jobs</option><option value="Profile">Profile</option><option value="DDA">DDA</option><option value="CMLLY">CMLLY</option><option value="card">card</option><option value="scheme">scheme</option><option value="Insurance">Insurance</option><option value="admission">admission</option><option value="schemes">schemes</option><option value="CTET">CTET</option><option value="Examination">Examination</option><option value="Licence">Licence</option><option value="result">result</option><option value="Results">Results</option></select>
 
 </div>
 
@@ -536,6 +580,158 @@
     </tr>
   </thead>
   <tbody>
+    
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="/jobs/dsssb-various-post-recruitment-2025/" target="_blank">
+          
+            DSSSB 2025: Apply for Various Posts
+          
+        </a>
+        
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 04/07/2025 |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="DSSSB Bharti"> DSSSB Bharti  </a>
+      </td>
+    </tr>
+    
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="/jobs/btsc-bihar-nursing-tutor-vacancy-2025/" target="_blank">
+          
+            BTSC Bihar Nursing Tutor Vacancy 2025 Online Form
+          
+        </a>
+        
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 04/07/2025 |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="BTSC Bihar Nursing Tutor"> BTSC Bihar Nursing Tutor  </a>
+      </td>
+    </tr>
+    
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="/jobs/bpsc-71th-exam-2025/" target="_blank">
+          
+            Bihar BPSC 71st Pre Form 2025 – Exam date Notice
+          
+        </a>
+        
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 04/07/2025 |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="BPSC"> BPSC  </a>
+      </td>
+    </tr>
+    
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="/result/nta-cuet-ug-result-2025/" target="_blank">
+          
+            NTA CUET Undergraduate Result 2025
+          
+        </a>
+        
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 04/07/2025 |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="NTA CUET UG"> NTA CUET UG  </a>
+      </td>
+    </tr>
+    
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="/jobs/bank/bob-lbo-vacancy-2025/" target="_blank">
+          
+            BOB Local Bank Officers LBO Vacancy 2025 Online Form
+          
+        </a>
+        
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 04/07/2025 |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="BOB Local Bank Officer"> BOB Local Bank Officer  </a>
+      </td>
+    </tr>
+    
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="/admitcard/rpsc-various-vacancy-admit-card-2025/" target="_blank">
+          
+            RPSC Multiple Post Exam Admit Card 2025 Released
+          
+        </a>
+        
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 04/07/2025 |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="RPSC Various Post"> RPSC Various Post  </a>
+      </td>
+    </tr>
+    
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="/jobs/ibps-hindi-officer-vacancy-2025/" target="_blank">
+          
+            IBPS Hindi Officer Vacancy 2025 Online Form
+          
+        </a>
+        
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 04/07/2025 |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="IBPS Hindi Officer"> IBPS Hindi Officer  </a>
+      </td>
+    </tr>
+    
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="/education/ederp-guest-teacher-mp/" target="_blank">
+          
+            MP Guest Teacher (Atithi Shikshak) Choice Filling 2025-26
+          
+        </a>
+        
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 04/07/2025 |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="Guest Teacher"> Guest Teacher  </a>
+      </td>
+    </tr>
     
     <tr>
          
@@ -705,6 +901,25 @@
         </span></td>
     </tr> <tr>
        <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="forms"> forms  </a>
+      </td>
+    </tr>
+    
+    <tr>
+         
+      <td rowspan="2" style="font-size:1.2rem">
+        🔖 <a href="/jobs/bpsc-bihar-special-school-teacher-2025/" target="_blank">
+          
+            BPSC Bihar Special School Teacher 2025 Online Form
+          
+        </a>
+        
+     </td>
+     <td >
+        <span class="post-date" style="font-size:0.8rem">
+          📅 02/07/2025 |
+        </span></td>
+    </tr> <tr>
+       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="BPSC Teacher"> BPSC Teacher  </a>
       </td>
     </tr>
     
@@ -1142,25 +1357,6 @@
         </span></td>
     </tr> <tr>
        <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="Class IV (Peon)"> Class IV (Peon)  </a>
-      </td>
-    </tr>
-    
-    <tr>
-         
-      <td rowspan="2" style="font-size:1.2rem">
-        🔖 <a href="/education/ederp-guest-teacher-mp/" target="_blank">
-          
-            MP Guest Teacher (Atithi Shikshak) Choice Filling 2025-26
-          
-        </a>
-        
-     </td>
-     <td >
-        <span class="post-date" style="font-size:0.8rem">
-          📅 27/06/2025 |
-        </span></td>
-    </tr> <tr>
-       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="Guest Teacher"> Guest Teacher  </a>
       </td>
     </tr>
     
@@ -1870,25 +2066,6 @@
     <tr>
          
       <td rowspan="2" style="font-size:1.2rem">
-        🔖 <a href="/jobs/bpsc-bihar-special-school-teacher-2025/" target="_blank">
-          
-            BPSC Bihar Special School Teacher 2025 Online Form
-          
-        </a>
-        
-     </td>
-     <td >
-        <span class="post-date" style="font-size:0.8rem">
-          📅 20/06/2025 |
-        </span></td>
-    </tr> <tr>
-       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="BPSC Teacher"> BPSC Teacher  </a>
-      </td>
-    </tr>
-    
-    <tr>
-         
-      <td rowspan="2" style="font-size:1.2rem">
         🔖 <a href="/jobs/bihar/csbc-bp-constable-01-2025/" target="_blank">
           
             Bihar Police Constable Admit Card 2025 : Exam City
@@ -2434,25 +2611,6 @@
         </span></td>
     </tr> <tr>
        <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="SSC"> SSC  </a>
-      </td>
-    </tr>
-    
-    <tr>
-         
-      <td rowspan="2" style="font-size:1.2rem">
-        🔖 <a href="/jobs/bpsc-71th-exam-2025/" target="_blank">
-          
-            Bihar PCS 71st Online Form 2025
-          
-        </a>
-        
-     </td>
-     <td >
-        <span class="post-date" style="font-size:0.8rem">
-          📅 04/06/2025 |
-        </span></td>
-    </tr> <tr>
-       <td  style="font-size:0.8rem"> <a href="#" class="dynamic-link" data-search="BPSC"> BPSC  </a>
       </td>
     </tr>
     
@@ -6289,16 +6447,22 @@ function filterTable() {
     
      
     
+
+     
+    
         <li class="card-item">
-            <a class="card-title"  href="/jobs/mp-anganwadi-worker-helper-wcd-2025/" >MP Anganwadi Worker &amp; Helper WCD 2025 Online Form</a>
+            <a class="card-title"  href="/jobs/bpsc-bihar-special-school-teacher-2025/" >BPSC Bihar Special School Teacher 2025 Online Form</a>
            <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 28 Jun 2025</div>
+      <div class="card-date">📅 02 Jul 2025</div>
         </li>
 
+    
+
+     
     
 
      
@@ -6327,23 +6491,6 @@ function filterTable() {
       <div class="card-date">📅 28 Jun 2025</div>
         </li>
 
-    
-
-     
-    
-        <li class="card-item">
-            <a class="card-title"  href="/jobs/rajasthan-high-court-group-d-2025/" >Rajasthan High Court Class IV (Peon) Vacancy 2025 - Online Form</a>
-           <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 27 Jun 2025</div>
-        </li>
-
-    
-
-     
     
 
 <hr>

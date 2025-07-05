@@ -123,6 +123,7 @@
   
 
 
+
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
@@ -132,6 +133,12 @@
       gtag('js', new Date());
       gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
     </script>
+    <script>
+  
+  if (window.location.pathname === '/' && localStorage.getItem("preferredHome") === "homepage") {
+    window.location.href = "/homepage/";
+  }
+</script>
 </head>
 
  
@@ -142,9 +149,9 @@
       <div class="header-content">
         
         <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/homepage/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
+        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
       </div>
-      
+       <button onclick="setPreferredHome()">🏠 Switch Home</button>
           <div class="hamburger">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -152,7 +159,7 @@
           </div>
 
          <ul class="nav-menu">
-            
+                
              <div class="mobile-search"> <div class="click-iframe" data-src="/quick/search/" data-title="Quick Search">
     <div class="iframe-placeholder" style="max-width:600px;margin:auto;height:60px;display:flex;align-items:center;gap:10px;padding:10px 15px;background:#fff;border:1px solid #ccc;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.1);font-size:16px;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gray" width="24" height="24">
@@ -161,7 +168,6 @@
       <span style="color:#888;">Search Here ...</span>
     </div>
   </div></div>
-        
               <li class="active"><a href="/homepage/"> <i class="fa fa -home"></i>Home</a></li>
               <li><a href="/pdf-forms/">Forms</a></li>
               <li><a href="/baner-poster-update/">Poster</a></li>
@@ -178,6 +184,20 @@
 <button id="installBtn" style="display:none;"  >
    <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
 </button>
+
+
+<script>
+function setPreferredHome() {
+  const currentPref = localStorage.getItem("preferredHome");
+  if (currentPref === "homepage") {
+    localStorage.removeItem("preferredHome");
+    window.location.href = '/';
+  } else {
+    localStorage.setItem("preferredHome", "homepage");
+    window.location.href = '/homepage/';
+  }
+}
+</script>
     </header>
    <body>
  
@@ -211,65 +231,41 @@
         
         
         
-          <li class="card-item">
-            <a class="card-title" href="/education/mp-board-result-2025/" >Check MP Board 10th &amp;12th Result 2025 –  MPBSE Class Xth &amp; XIIth Result Declared</a>
-            
-          <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 05 May 2025</div>
-          </li>
-       
-        
     
         
         
           <li class="card-item">
-            <a class="card-title" href="/jobs/indian-navy-b.tech-officer-entry-scheme-jan-2026/" >Indian Navy B.Tech Officer Entry Scheme Jan 2026 Batch</a>
+            <a class="card-title" href="/card/eshram-card-apply/" >E-Shram Card Apply / Update / Download</a>
             
           <div class="card-tags">
         
         
-      </div>
-
-      <div class="card-date">📅 30 Jun 2025</div>
-          </li>
-       
-        
-    
-        
-        
-          <li class="card-item">
-            <a class="card-title" href="/ads/whatsapp-promotion/" >Promotion or Ads       on Whatsapp Channel Terms</a>
-            
-          <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 25 Feb 2025</div>
-          </li>
-       
-        
-    
-        
-        
-    
-        
-        
-          <li class="card-item">
-            <a class="card-title" href="/card/aadhar-card-uidai/" >Aadhar Card Download, Address Update, Find Aadhar Number</a>
-            
-          <div class="card-tags">
-        
-        <a href="/pdf-forms/">📄 PDF Form</a>
       </div>
 
       <div class="card-date">📅 13 Jan 2025</div>
           </li>
        
+        
+    
+        
+        
+          <li class="card-item">
+            <a class="card-title" href="/download/loader/" ></a>
+            
+          <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 01 Jan 0001</div>
+          </li>
+       
+        
+    
+        
+        
+    
+        
         
     
     <hr>
@@ -283,6 +279,150 @@
 
 
 <ul class="card-list">
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/dsssb-various-post-recruitment-2025/" target="_blank">
+        
+          DSSSB 2025: Apply for Various Posts
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/btsc-bihar-nursing-tutor-vacancy-2025/" target="_blank">
+        
+          BTSC Bihar Nursing Tutor Vacancy 2025 Online Form
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/bpsc-71th-exam-2025/" target="_blank">
+        
+          Bihar BPSC 71st Pre Form 2025 – Exam date Notice
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/result/nta-cuet-ug-result-2025/" target="_blank">
+        
+          NTA CUET Undergraduate Result 2025
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/bank/bob-lbo-vacancy-2025/" target="_blank">
+        
+          BOB Local Bank Officers LBO Vacancy 2025 Online Form
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/admitcard/rpsc-various-vacancy-admit-card-2025/" target="_blank">
+        
+          RPSC Multiple Post Exam Admit Card 2025 Released
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/ibps-hindi-officer-vacancy-2025/" target="_blank">
+        
+          IBPS Hindi Officer Vacancy 2025 Online Form
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/education/ederp-guest-teacher-mp/" target="_blank">
+        
+          MP Guest Teacher (Atithi Shikshak) Choice Filling 2025-26
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Jul 2025</div>
+    </li>
   
     
     <li class="card-item">
@@ -318,150 +458,6 @@
       </div>
 
       <div class="card-date">📅 03 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/result/railway-rrb-alp-stage-ii-result-with-marks-2025/" target="_blank">
-        
-          Railway RRB ALP Exam CBT Exam Results 2025
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 03 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/indian-navy-agniveer-mr-musician-vacancy-2025/" target="_blank">
-        
-          Indian Navy Agniveer MR Musician Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 03 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/uppsc-computer-assistant-vacancy-2025/" target="_blank">
-        
-          UPPSC Computer Assistant Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/bpsc-lower-division-clerk-ldc-vacancy-2025/" target="_blank">
-        
-          BPSC Lower Division Clerk LDC Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/pfrda-assistant-manager-am-vacancy-2025/" target="_blank">
-        
-          PFRDA Assistant Manager AM Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/ssc-junior-engineer-je-vacancy-2025/" target="_blank">
-        
-          SSC Junior Engineer JE Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/how-to/webgis2-mpbhulekh-portal/" target="_blank">
-        
-          Webgis2 Mpbhulekh Portal
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/admission/mpesb-pnst-gnmtst-2025/" target="_blank">
-        
-          MPESB PNST &amp; GNMTST 2025 Answerkey Available
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 01 Jul 2025</div>
     </li>
   
 </ul>
@@ -838,16 +834,10 @@
   
     
     
-  
-    
-    
-  
-    
-    
       <li>
-        <a href="/how-to/book-my-hsrp-online/" >Book HSRP Online Apply 2025</a>
+        <a href="/reg/mpesb-profile/" >MPESB Profile Registration/ Vyapam Panjiyan</a>
         
-        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
     
@@ -855,11 +845,24 @@
     
     
       <li>
-        <a href="/update/ration-card-ekyc/" >Ration Card e-KYC Mobile Se Kare </a>
-         • <a href="/extended/">Extended</a>
+        <a href="/mp/cmkvy-kanya-vivah-yojna-form/" >CMKVY  Kanya Vivah Yojna Form Madhya Pradesh</a>
+        
+         • <a href="/pdf-forms/">PDF</a>
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/jobs/ibps-specialist-officer-so-15th-vacancy-2025/" >IBPS Specialist Officer SO 15th Vacancy 2025 Online Form</a>
+        
         
       </li>
    
+    
+  
+    
     
   
     
@@ -1101,16 +1104,22 @@
     
      
     
+
+     
+    
         <li class="card-item">
-            <a class="card-title"  href="/jobs/mp-anganwadi-worker-helper-wcd-2025/" >MP Anganwadi Worker &amp; Helper WCD 2025 Online Form</a>
+            <a class="card-title"  href="/jobs/bpsc-bihar-special-school-teacher-2025/" >BPSC Bihar Special School Teacher 2025 Online Form</a>
            <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 28 Jun 2025</div>
+      <div class="card-date">📅 02 Jul 2025</div>
         </li>
 
+    
+
+     
     
 
      
@@ -1139,23 +1148,6 @@
       <div class="card-date">📅 28 Jun 2025</div>
         </li>
 
-    
-
-     
-    
-        <li class="card-item">
-            <a class="card-title"  href="/jobs/rajasthan-high-court-group-d-2025/" >Rajasthan High Court Class IV (Peon) Vacancy 2025 - Online Form</a>
-           <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 27 Jun 2025</div>
-        </li>
-
-    
-
-     
     
 
 <hr>
