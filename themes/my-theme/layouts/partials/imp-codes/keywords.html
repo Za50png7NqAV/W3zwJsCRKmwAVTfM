@@ -3,8 +3,7 @@
 {{ $keywords := .Params.keywords }}
 <strong>Related Keywords:</strong>
 <div class="related-keywords" style="overflow-x:auto; white-space:nowrap;">
- 
   {{ range $keywords }}
-  <a href="/keyword?={{ . | urlize }}" target="_blank" class="keyword-tag">{{ . }}</a>
+    <a href="/keyword?={{ . | urlquery }}" target="_blank" class="keyword-tag">{{ . }}</a>
   {{ end }}
 </div>
