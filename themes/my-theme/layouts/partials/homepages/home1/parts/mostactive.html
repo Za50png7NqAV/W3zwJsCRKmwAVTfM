@@ -1,4 +1,3 @@
-
 {{ $colors := slice "#868a08" "#0404b4" "#fb5e03" "#8c0101" "#fb0303" "#0b610b" "#ff00bf" "#0080ff" }}
 {{ $today := now.Format "2006-01-02" }}
 
@@ -20,30 +19,35 @@
 {{ range $normal }} {{ $.Scratch.Add "ordered" (slice .) }} {{ end }}
 {{ range $pinnedLast }} {{ $.Scratch.Add "ordered" (slice .) }} {{ end }}
 {{ $orderedPages := $.Scratch.Get "ordered" }}
-<center>
-<div id="header4">
-	<div id="header4LI">
-		<ul>
-  {{ range $index, $element := first 8 $orderedPages }}
-    {{ $colorIndex := mod $index (len $colors) }}
-    {{ $randColor := index $colors $colorIndex }}
-    <li>
-	<a href="{{ $element.Permalink }}" id="dili">
-    <p id="dilip"  style="background-color: {{ $randColor }}; font-size:1.2rem;"> {{ if eq ($element.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
-          <img src="/gif/new.gif" width="20px;" alt="New" class="new-icon" />
-        {{ end }}
-        {{ if or (eq $element.Params.pin "first") (eq $element.Params.pin "last") }}
-          <span class="pin-icon">📌</span>
-        {{ end }}
-        {{ with .Params.RecommendName }}
-           {{ . }}
-        {{ else }}
-          {{ .Title }}
-        {{ end }}</p>
-    </a>
-<li>
-			
 
-  {{ end }}
-</div>
-</center>
+
+  <table class="notice-table">
+    {{ range $i, $item := first 8 $orderedPages }}
+      {{ if eq (mod $i 4) 0 }}
+        <tr>
+      {{ end }}
+      {{ $color := index $colors (mod $i (len $colors)) }}
+      <td style="background-color: {{ $color }};">
+        <a href="{{ $item.Permalink }}">
+          {{ if eq ($item.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+            <img src="/gif/new.gif" width="20px;" alt="New" class="new-icon" />
+          {{ end }}
+          {{ if or (eq $item.Params.pin "first") (eq $item.Params.pin "last") }}
+            📌
+          {{ end }}
+          {{ with $item.Params.RecommendName }}
+            {{ . }}
+          {{ else }}
+            {{ $item.Title }}
+          {{ end }}
+        </a>
+      </td>
+      {{ if eq (mod (add $i 1) 4) 0 }}
+        </tr>
+      {{ end }}
+    {{ end }}
+    {{ if ne (mod (len (first 8 $orderedPages)) 4) 0 }}
+      </tr>
+    {{ end }}
+  </table>
+

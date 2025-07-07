@@ -1,0 +1,25 @@
+  table.notice-table {
+    table-layout: fixed;
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  .notice-table td {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    border: 5px solid white;
+    color: white;
+    font-family: Arial, sans-serif;
+    vertical-align: top;
+    word-wrap: break-word;
+  }
+  .notice-table a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  .notice-table img.new-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
