@@ -1,0 +1,39 @@
+	<div id="header6A_H">
+					<a href="/upcoming/" target="_blank">Upcoming</a>
+				</div>
+				<div id="header6LI">
+					<ul>
+{{ $today := now.Format "2006-01-02" }}
+{{ $filteredPages := where .Site.RegularPages "Params.BeginDate" "ge" $today }}
+{{ $limitedPages := first 4 $filteredPages }}
+
+{{ if $limitedPages }}
+  {{ range $limitedPages }}
+  
+    <li>
+      <a href="{{ .RelPermalink }}" target="_blank">
+        {{ if or (eq .Params.pin "first") (eq .Params.pin "last") }}
+          <span>📌</span>
+        {{ end }}
+        {{ .Title }}
+      </a>
+
+      {{ if eq (.Date.Format "2006-01-02") $today }}
+        <a href="{{ .RelPermalink }}" target="_blank">
+          <!-- You can add a "New" badge or icon here if you like -->
+        </a>
+      {{ end }}
+
+      {{ partial "main-part/list-comment" . }}
+    </li>
+
+  {{ end }}
+{{ else }}
+  <a href="/latest-update/" style="text-align: center;" target="_blank">
+    No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update
+  </a> </ul>
+{{ end }}
+</div>
+<div id="header6V" style="margin-top:10px;">
+					<a href="/upcoming/" target="_blank">View More</a>
+</div>

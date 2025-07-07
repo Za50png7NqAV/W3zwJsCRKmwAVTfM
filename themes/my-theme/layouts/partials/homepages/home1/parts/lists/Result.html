@@ -1,0 +1,19 @@
+	<div id="header6A_H">
+					<a href="/results/" target="_blank">Results</a>
+				</div>
+				
+				<div id="header6ALI">
+                    {{ range first 25 (where  .Site.RegularPages ".Params.result" "yes") }}
+					<ul>
+						<li>
+							<a href="{{ .Permalink }}" 
+							target="_blank">{{ .Params.ResultName }}
+							</a>
+                            {{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+        <a href="{{ .RelPermalink }}" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+       {{ end }}
+			</li>	</ul> 
+            {{ end }}  </div>
+				<div id="header6A_A">
+					<a href="/results/" target="_blank">View More</a>
+				</div>		

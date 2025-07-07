@@ -1,0 +1,33 @@
+  table {
+    table-layout: fixed;
+    width: 1010px; /* You can adjust this width */
+    border-collapse: collapse;
+    margin:20px auto;
+  }
+  td {
+    border: none;
+    width: 100px; /* Divide total width equally */
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .listdivs {
+    float: left;
+    height: 1454px;
+    width: 304px;
+    border: 2px solid #d2691e;
+    background-color: none;
+}
+.listdivs1 {
+  float: left;
+    height: 310px;
+    width: 304px;
+    border: 2px solid #d2691e;
+    background-color: none;
+}
+.listdivs2 {
+  float: left;
+    height: 620px;
+    width: 304px;
+    border: 2px solid #d2691e;
+    background-color: none;
+}

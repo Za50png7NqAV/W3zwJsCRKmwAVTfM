@@ -1,0 +1,25 @@
+<div id="header6A_H">
+					<a href="/certificate/" target="_blank">Certificate Verification</a>
+				</div>
+				<div id="header6LI">
+						  {{ range first 4 (where  .Site.RegularPages "Params.post-type" "certificate") }}
+					<ul>
+						<li>
+							<a href="{{ .Permalink }}" 
+							target="_blank">
+                              {{ if .Params.pdfName }}
+                              {{ .Params.pdfName }}
+                                   {{ else }}
+                                {{ .Title }}
+                            {{ end }}
+							</a>
+                            {{ if eq (.Date.Format "2006-01-02") (now.Format "2006-01-02") }}
+        <a href="{{ .RelPermalink }}" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+       {{ end }}
+			</li>	</ul> 
+            {{ end }} 
+				</div>
+				
+				<div id="header6V" style="margin-top:20px;">
+					<a href="/certificate/" target="_blank">View More</a>
+				</div>

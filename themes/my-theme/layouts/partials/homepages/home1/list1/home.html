@@ -8,9 +8,22 @@
 {{ partial "homepages/home1/parts/ads1.html" . }}
 {{ partial "homepages/home1/parts/mostactive.html" . }}
 {{ partial "homepages/home1/parts/ads2.html" . }}
-{{ partial "homepages/home1/parts/gridA.html" . }}
-{{ partial "homepages/home1/parts/gridB.html" . }}
-{{ partial "homepages/home1/parts/gridC.html" . }}
+<table>
+  <tr>
+    <td><div class="listdivs" >{{ partial "homepages/home1/parts/lists/Admitcard.html" . }} </div></td>
+    <td><div class="listdivs" >{{ partial "homepages/home1/parts/lists/Result.html" . }}</div></td>
+    <td><div class="listdivs" >{{ partial "homepages/home1/parts/lists/jobs.html" . }}</div></td>
+  </tr>
+  <tr>
+    <td><div class="listdivs1" >{{ partial "homepages/home1/parts/lists/AnswerKey.html" . }}</div></td>
+    <td> <div class="listdivs1" > {{ partial "homepages/home1/parts/lists/Syllabus.html" . }} </div></td>
+    <td rowspan="2"><div class="listdivs2" >{{ partial "homepages/home1/parts/lists/Admission.html" . }}</div></td>
+  </tr>
+  <tr>
+    <td><div class="listdivs1" >{{ partial "homepages/home1/parts/lists/Certificate.html" . }}</div></td>
+    <td><div class="listdivs1" >{{ partial "homepages/home1/parts/lists/Important.html" . }} </div></td>
+  </tr>
+</table>
 {{ partial "homepages/home1/parts/ads3.html" . }} <br>
 {{ partial "homepages/home1/parts/textfooter.html" . }}
 {{ partial "homepages/home1/parts/footer.html" . }}

@@ -1,0 +1,59 @@
+<div id="header6A_H">
+					<a href="/latest-jobs/" target="_blank">Latest Jobs</a>
+				</div>
+				<div id="header6CLI">
+		{{ $today := now.Format "2006-01-02" }}
+{{ $latestJobs := slice }}
+
+{{/* Step 1: Collect latest-jobs type pages */}}
+{{ range .Site.RegularPages }}
+  {{ if or (eq (index .Params "post-type") "latest-jobs") (eq .Params.post_type "latest-jobs") }}
+    {{ $latestJobs = $latestJobs | append . }}
+  {{ end }}
+{{ end }}
+
+{{/* Step 2: Filter only those where lastdate >= today */}}
+{{ $filteredPages := where $latestJobs "Params.lastdate" "ge" $today }}
+{{ $withDate := where $filteredPages "Date" "!=" nil }}
+
+{{/* Step 3: Pinning logic */}}
+{{ $pinFirst := sort (where $withDate "Params.pin" "==" "first") "Date" "desc" }}
+{{ $pinLast := sort (where $withDate "Params.pin" "==" "last") "Date" "desc" }}
+{{ $middle := where $withDate "Params.pin" "!=" "first" }}
+{{ $normal := sort (where $middle "Params.pin" "!=" "last") "Date" "desc" }}
+
+{{/* Step 4: Merge all posts: first → normal → last */}}
+{{ $.Scratch.Set "orderedJobs" (slice) }}
+{{ range $pinFirst }}  {{ $.Scratch.Add "orderedJobs" (slice .) }} {{ end }}
+{{ range $normal }}    {{ $.Scratch.Add "orderedJobs" (slice .) }} {{ end }}
+{{ range $pinLast }}   {{ $.Scratch.Add "orderedJobs" (slice .) }} {{ end }}
+{{ $ordered := $.Scratch.Get "orderedJobs" }}
+
+{{ if $ordered }}
+  {{ range first 25 $ordered }}
+    <li>
+      <a href="{{ .RelPermalink }}" target="_blank" {{ with .Params.highlights }}style="background-color:{{ . }};"{{ end }}>
+        {{ if or (eq .Params.pin "first") (eq .Params.pin "last") }}
+          <span style="margin-left: 5px;">📌</span>
+        {{ end }}
+        {{ if .Params.pdfName }}
+          {{ .Params.pdfName }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </a>
+      {{ partial "main-part/list-comment" . }}
+    </li>
+  {{ end }}
+</ul>
+{{ else }}
+  <a href="/latest-update/" style="text-align: center;" target="_blank">
+    No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update
+  </a>
+{{ end }} 
+
+				</div>
+				
+				<div id="header6C_C">
+					<a href="/latest-jobs/" target="_blank">View More</a>
+				</div>		
