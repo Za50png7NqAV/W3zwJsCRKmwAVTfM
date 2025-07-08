@@ -1,43 +1,81 @@
 <div id="suggestions-container" class="suggestions-container">     
-    <a href="#" class="dynamic-link" data-search="Sarkari Yojana"> <button class="dynamic-button"><i class="fas fa-search"></i>Sarkari Yojna </button></a> 
-         <a href="#" class="dynamic-link" data-search="Sarkari Recruitments"> <button class="dynamic-button"><i class="fas fa-search"></i>Sarkari Recruitments </button></a>  
-         <a href="#" class="dynamic-link" data-search="Latest Jobs"> <button class="dynamic-button"><i class="fas fa-search"></i>Latest Jobs </button></a>   
+<div class="latest-posts">
+  <h2>🆕 Latest Updates</h2>
+  <ul>
+    {{ $latestPosts := first 5 (sort .Site.RegularPages "Date" "desc") }}
+    {{ range $latestPosts }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <small>{{ .Date.Format "02 Jan 2006, 15:04" }}</small>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+
+
+
+
+
 </div>
 
 
 <script>
-    const searchInput = document.getElementById('search-input');
-const suggestionsContainer = document.getElementById('suggestions-container');
+  const searchInput = document.getElementById('search-input');
+  const suggestionsContainer = document.getElementById('suggestions-container');
 
-// Sample suggestions with links 
-const suggestions = [
-{ text: 'v2k computers', link: 'https://www.v2kcomputes.com' },
-{ text: 'YouTube', link: 'https://yojnaportal.com/youtube' },
-{ text: 'Facebook', link: 'https://yojnaportal.com/facebook' },
-{ text: 'yojna Portal', link: 'https://www.yojnaportal.com' },
-{ text: 'Instagram', link: 'https://yojnaportal.com/instagram' },
-{ text: 'whatsApp', link: 'https://yojnaportal.com/whatsapp' },
-{ text: 'Twitter (X)', link: 'https://yojnaportal.com/twitter' },
-];
+  const suggestions = [
+    { text: 'v2k computers', link: 'https://www.v2kcomputes.com' },
+    { text: 'YouTube Chennel', link: 'https://yojnaportal.com/youtube' },
+    { text: 'Facebook Page', link: 'https://yojnaportal.com/facebook' },
+    { text: 'Yojna Portal | Home', link: 'https://www.yojnaportal.com' },
+    { text: 'Instagram Page', link: 'https://yojnaportal.com/instagram' },
+    { text: 'WhatsApp Chennel', link: 'https://yojnaportal.com/whatsapp' },
+    { text: 'Twitter (X)', link: 'https://yojnaportal.com/twitter' },
+    { text: 'Sarkari Result', link: 'https://yojnaportal.com/sarkariresult' },
 
-searchInput.addEventListener('input', () => {
-const query = searchInput.value.toLowerCase();
-suggestionsContainer.innerHTML = '';
+    {{ $pages := .Site.RegularPages }}
+    {{ $total := len $pages }}
+    {{ $i := 0 }}
+    {{ range $pages }}
+      {
+        text: "{{ .Title | htmlEscape }}",
+        link: "{{ .Permalink }}"
+      }{{ $i = add $i 1 }}{{ if lt $i $total }},{{ end }}
+    {{ end }}
+  ];
 
-if (query) {
-    const filteredSuggestions = suggestions.filter(suggestion =>
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase().trim();
+    suggestionsContainer.innerHTML = '';
+
+    if (query) {
+      const filteredSuggestions = suggestions.filter(suggestion =>
         suggestion.text.toLowerCase().includes(query)
-    );
+      );
 
-    filteredSuggestions.forEach(suggestion => {
-        const suggestionElement = document.createElement('div');
-        suggestionElement.className = 'suggestion';
-        suggestionElement.textContent = suggestion.text;
-        suggestionElement.addEventListener('click', () => {
+      if (filteredSuggestions.length > 0) {
+        filteredSuggestions.forEach(suggestion => {
+          const suggestionElement = document.createElement('div');
+          suggestionElement.className = 'suggestion';
+
+          // Highlight matched word
+          const regex = new RegExp(`(${query})`, 'gi');
+          const highlightedText = suggestion.text.replace(regex, `<span class="highlight">$1</span>`);
+          suggestionElement.innerHTML = highlightedText;
+
+          suggestionElement.addEventListener('click', () => {
             window.open(suggestion.link, '_blank');
+          });
+
+          suggestionsContainer.appendChild(suggestionElement);
         });
-        suggestionsContainer.appendChild(suggestionElement);
-    });
-}
-});
+      } else {
+        const noResult = document.createElement('div');
+        noResult.className = 'no-result';
+        noResult.textContent = '🔍 No result found';
+        suggestionsContainer.appendChild(noResult);
+      }
+    }
+  });
 </script>
+

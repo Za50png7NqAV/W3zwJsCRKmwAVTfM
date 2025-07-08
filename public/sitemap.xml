@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/upsc-cds-ii-2025/</loc>
-    <lastmod>2025-07-07T18:53:54+05:30</lastmod>
+    <loc>http://localhost:1313/bank/iob-local-bank-officer-2025/</loc>
+    <lastmod>2025-07-08T09:51:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-08T09:51:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/dsssb-various-post-recruitment-2025/</loc>
+    <lastmod>2025-07-08T09:36:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2025-07-08T08:32:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
+    <lastmod>2025-07-08T08:32:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/baner-poster-update/</loc>
+    <lastmod>2025-07-08T08:32:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-cds-ii-2025/</loc>
     <lastmod>2025-07-07T18:53:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -24,16 +49,6 @@
   </url><url>
     <loc>http://localhost:1313/document/vahan-rc-card-online/</loc>
     <lastmod>2025-07-07T08:48:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-07-07T08:42:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
-    <lastmod>2025-07-07T08:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -89,11 +104,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp-anganwadi-worker-helper-wcd-2025/</loc>
     <lastmod>2025-07-05T09:10:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/dsssb-various-post-recruitment-2025/</loc>
-    <lastmod>2025-07-04T20:36:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -657,11 +667,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/baner-poster-update/</loc>
-    <lastmod>2025-05-28T15:32:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mp/mpesb-group1-sub3-feb25/</loc>
     <lastmod>2025-05-18T12:00:03+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -694,11 +699,6 @@
   </url><url>
     <loc>http://localhost:1313/mpdage/ekrishi-yantra-anudan/</loc>
     <lastmod>2025-05-13T09:43:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/bank/iob-local-bank-officer-2025/</loc>
-    <lastmod>2025-05-12T16:51:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
