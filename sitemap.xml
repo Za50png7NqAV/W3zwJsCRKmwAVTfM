@@ -2,12 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.yojnaportal.com/document/driving-licence-apply-parivahan/</loc>
-    <lastmod>2025-07-06T19:48:09+05:30</lastmod>
+    <loc>https://www.yojnaportal.com/education/</loc>
+    <lastmod>2025-07-08T08:32:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/education/ederp-guest-teacher-mp/</loc>
+    <lastmod>2025-07-08T08:32:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.yojnaportal.com/</loc>
+    <lastmod>2025-07-08T08:32:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/baner-poster-update/</loc>
+    <lastmod>2025-07-08T08:32:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/jobs/upsc-cds-ii-2025/</loc>
+    <lastmod>2025-07-07T18:53:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/jobs/upsc-nda-ii-2025/</loc>
+    <lastmod>2025-07-07T18:52:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/admitcard/ugc-net-june-2025/</loc>
+    <lastmod>2025-07-07T11:03:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/document/vahan-rc-card-online/</loc>
+    <lastmod>2025-07-07T08:48:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.yojnaportal.com/document/driving-licence-apply-parivahan/</loc>
     <lastmod>2025-07-06T19:48:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -99,16 +134,6 @@
   </url><url>
     <loc>https://www.yojnaportal.com/jobs/ibps-hindi-officer-vacancy-2025/</loc>
     <lastmod>2025-07-04T09:58:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/education/</loc>
-    <lastmod>2025-07-04T08:42:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/education/ederp-guest-teacher-mp/</loc>
-    <lastmod>2025-07-04T08:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -382,11 +407,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/admitcard/ugc-net-june-2025/</loc>
-    <lastmod>2025-06-23T15:30:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.yojnaportal.com/jobs/aiims-delhi-junior-resident-07-2025/</loc>
     <lastmod>2025-06-22T20:08:13+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -484,16 +504,6 @@
   </url><url>
     <loc>https://www.yojnaportal.com/admitcard/indian-army-agniveer-admitcard/</loc>
     <lastmod>2025-06-18T10:45:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/jobs/upsc-cds-ii-2025/</loc>
-    <lastmod>2025-06-17T19:53:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/jobs/upsc-nda-ii-2025/</loc>
-    <lastmod>2025-06-17T19:52:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -649,11 +659,6 @@
   </url><url>
     <loc>https://www.yojnaportal.com/baner-update/jobs-baner/</loc>
     <lastmod>2025-05-22T09:45:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.yojnaportal.com/baner-poster-update/</loc>
-    <lastmod>2025-05-28T15:32:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1837,7 +1842,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.yojnaportal.com/sarkari-result/</loc>
+    <loc>https://www.yojnaportal.com/jobs-update/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
