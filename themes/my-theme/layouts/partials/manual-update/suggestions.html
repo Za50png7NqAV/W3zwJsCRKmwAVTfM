@@ -1,12 +1,12 @@
 <div id="suggestions-container" class="suggestions-container">     
 <div class="latest-posts">
   <h2>🆕 Latest Updates</h2>
-  <ul>
+  <ul style="overflow-x: auto; white-space: nowrap; padding: 10px; border: 1px solid #ccc; background-color:rgb(248, 245, 220);">
     {{ $latestPosts := first 5 (sort .Site.RegularPages "Date" "desc") }}
     {{ range $latestPosts }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <small>{{ .Date.Format "02 Jan 2006, 15:04" }}</small>
+      <li style="display: inline-block; min-width: 250px; margin-right: 10px; border: 1px solid #ccc; background-color:white; border-radius: 5px; padding: 10px;" >🎯
+        <a  href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <small>{{ .Date.Format "02 Jan 2006, 15:04" }}</small> 
       </li>
     {{ end }}
   </ul>
