@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/indian-coast-guard-ac-vacancy-2025/</loc>
-    <lastmod>2025-07-09T10:33:26+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/indian-army-ssc-tech-vacancy-2025/</loc>
+    <lastmod>2025-07-09T12:48:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-09T12:48:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-circle-based-officers-cbo-2025/</loc>
+    <lastmod>2025-07-09T12:31:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-csir-june-2025/</loc>
+    <lastmod>2025-07-09T12:08:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar/csbc-bp-constable-01-2025/</loc>
+    <lastmod>2025-07-09T11:19:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-26th-kist/</loc>
+    <lastmod>2025-07-09T10:43:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-coast-guard-ac-vacancy-2025/</loc>
     <lastmod>2025-07-09T10:33:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -412,11 +437,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/nta-csir-june-2025/</loc>
-    <lastmod>2025-06-24T08:08:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/mpesb-mp-pat-2025/</loc>
     <lastmod>2025-06-23T19:56:15+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -434,11 +454,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/isro-nrsc-recruitment-2025/</loc>
     <lastmod>2025-06-22T16:55:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-circle-based-officers-cbo-2025/</loc>
-    <lastmod>2025-06-22T10:48:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -492,11 +507,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bihar/csbc-bp-constable-01-2025/</loc>
-    <lastmod>2025-06-20T08:19:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/result/railway-rpf-constable-result-2025/</loc>
     <lastmod>2025-06-19T16:50:21+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -533,11 +543,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/mp/ladli-behna-yojna-25th-kist/</loc>
-    <lastmod>2025-06-13T07:43:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-26th-kist/</loc>
     <lastmod>2025-06-13T07:43:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
