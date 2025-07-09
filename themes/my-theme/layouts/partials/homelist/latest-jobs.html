@@ -8,14 +8,21 @@
   {{ end }}
 {{ end }}
 
-{{/* Step 2: Filter only those where lastdate >= today */}}
-{{ $filteredPages := where $latestJobs "Params.lastdate" "ge" $today }}
-{{ $withDate := where $filteredPages "Date" "!=" nil }}
+{{/* Step 2: Filter where lastdate >= today OR correction == "yes" */}}
+{{ $finalFiltered := slice }}
+
+{{ range $latestJobs }}
+  {{ $lastDate := .Params.lastdate | default "0000-00-00" }}
+  {{ $correction := .Params.correction | default "no" }}
+  {{ if or (ge $lastDate $today) (eq $correction "yes") }}
+    {{ $finalFiltered = $finalFiltered | append . }}
+  {{ end }}
+{{ end }}
 
 {{/* Step 3: Pinning logic */}}
-{{ $pinFirst := sort (where $withDate "Params.pin" "==" "first") "Date" "desc" }}
-{{ $pinLast := sort (where $withDate "Params.pin" "==" "last") "Date" "desc" }}
-{{ $middle := where $withDate "Params.pin" "!=" "first" }}
+{{ $pinFirst := sort (where $finalFiltered "Params.pin" "==" "first") "Date" "desc" }}
+{{ $pinLast := sort (where $finalFiltered "Params.pin" "==" "last") "Date" "desc" }}
+{{ $middle := where $finalFiltered "Params.pin" "!=" "first" }}
 {{ $normal := sort (where $middle "Params.pin" "!=" "last") "Date" "desc" }}
 
 {{/* Step 4: Merge all posts: first → normal → last */}}
@@ -32,15 +39,13 @@
          {{ if or (eq .Params.pin "first") (eq .Params.pin "last") }}
           <span style="margin-left: 5px;">📌</span>
         {{ end }}
-        {{ if .Params.pdfName }}
-          {{ .Params.pdfName }}
+        {{ if .Params.correctionName }}
+          {{ .Params.correctionName }}
         {{ else }}
+      
           {{ .Title }}
         {{ end }}
-
-       
       </a>
-
       {{ partial "main-part/list-comment" . }}
     </li>
     <hr>
@@ -50,4 +55,3 @@
     No upcoming posts or updates here. If available, they will be updated soon. Go to Latest Update
   </a>
 {{ end }}
-

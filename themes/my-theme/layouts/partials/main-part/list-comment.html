@@ -21,6 +21,6 @@
 {{/* अगर lastdate बीत गई हो तो Expired */}}
 {{ with .Params.lastdate }}
     {{ if lt . (now.Format "2006-01-02") }}
-        • <span class="text-red-600 font-semibold">Expired</span>
+        • <span class="text-red-600 font-semibold">✏️</span>
     {{ end }}
 {{ end }}
