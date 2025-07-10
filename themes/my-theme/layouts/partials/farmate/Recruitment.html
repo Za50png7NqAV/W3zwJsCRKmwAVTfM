@@ -56,23 +56,7 @@
     {{ end }} 
   </div>
   
-  <div class="grid">
-      {{ if .Params.shortinfo }}
-    <div class="card" tabindex="0">
-      <h3>🔍 Important Information</h3>
-   {{ partial "farmate/parts/shortinfo" . }}
-      <p class="short-note"><strong>Note:</strong> The above details are brief. Refer to the official notification for complete information.</p>
-    </div>
-  {{ end }} 
-    {{ if .Params.documents }}
-      <div class="card" tabindex="0">
-        <h3>📄Required Details/ Documents </h3>
-         {{ partial "farmate/parts/documents.html" . }}
-        <p class="short-note"><strong>Note:</strong> Documents are for general info; more may be required if needed.</p>
   
-      </div>
-    {{ end }}
-  </div>
   
   {{ if .Params.Eligibility }}
   <div class="card" tabindex="0">
@@ -166,17 +150,7 @@
     </tr>
     {{ end }}
   
-    {{ with .Params.documents }}
-    <tr>
-      <td><strong>📄Documents</strong></td>
-      <td>
-    {{ range . }}
-      {{ partial "imp-codes/cleanlist.html" .  | safeHTML}} <b style="color:rgb(250, 162, 0);">|</b>
-    {{ end }}
-    </td>
-    </tr>
-{{ end }}
-
+  
     {{ if .Params.OfficialSource }}
     <tr>
       <td><strong>🏬Department </strong></td>
