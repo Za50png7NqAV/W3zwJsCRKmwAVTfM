@@ -97,6 +97,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
+    <lastmod>2025-07-08T08:18:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/upsc-cds-ii-2025/</loc>
     <lastmod>2025-07-07T18:53:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -254,11 +259,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-specialist-officer-so-15th-vacancy-2025/</loc>
     <lastmod>2025-07-01T09:31:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
-    <lastmod>2025-07-01T08:18:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -602,11 +602,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/rpsc/</loc>
-    <lastmod>2025-06-06T11:40:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/ssc-junior-combined-translator-jun2025/</loc>
     <lastmod>2025-06-05T19:55:37+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -934,6 +929,11 @@
   </url><url>
     <loc>http://localhost:1313/student/azim-premji-scholarship/</loc>
     <lastmod>2025-04-05T19:27:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rpsc/</loc>
+    <lastmod>2025-04-05T18:58:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
