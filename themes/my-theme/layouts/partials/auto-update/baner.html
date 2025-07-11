@@ -4,91 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yojna Banner</title>
-  <link href="https://fonts.googleapis.com/css2?family=Tillana&family=Yatra+One&family=Passion+One&family=Poetsen+One&family=Poppins&family=Roboto&family=Mukta&family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tillana&family=Yatra+One&family=Passion+One&family=Poetsen+One&family=Poppins&family=Roboto&family=Mukta&family=Archivo+Black&family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <style>
- 
+    body {
+      font-family: "Poppins", sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
 
     .yojna-banner-wrapper {
-      max-width: 1280px;
+      max-width: 900px;
       margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .yojna-banner-container {
       width: 100%;
-      max-height: 800px;
-      background: #fff;
-      font-weight: 700;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
       position: relative;
-      padding: 20px;
+      border: 3px solid;
+      border-left-color: red;
+      border-top-color: red;
+      border-bottom-color: rgb(216, 195, 5);
+      border-right-color: rgb(231, 178, 2);
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 2px;
     }
 
     .yojna-header {
-      font-family: "Yatra One", sans-serif;
-      background: linear-gradient(30deg, #f5f3f3, #ffb107);
-      text-shadow: 1px 5px 6px black;
-      color: white;
-      padding: 20px;
+      font-family: "Archivo Black", sans-serif;
+      background: #fffABC;
+      color: red;
       text-align: center;
       font-size: 40px;
-      font-weight: bold;
+      padding: 5px;
     }
 
     .yojna-subheader {
       font-family: "Tillana", sans-serif;
-      background: linear-gradient(30deg, #01810c, #2f4d01);
-      text-shadow: 1px 4px 9px black;
-      color: white;
-      padding: 12px;
+      background: #ffee01fd;
+      color: blue;
       text-align: center;
-      font-weight: 600;
       font-size: 30px;
+      padding: 5px;
     }
 
     .yojna-main-title {
       font-family: "Poetsen One", sans-serif;
-      background: linear-gradient(45deg, #db7603, #f5b041);
-      text-shadow: 1px 5px 8px black;
-      color: white;
-      padding: 30px 20px;
+      background: #ffffff;
+      color: red;
       text-align: center;
       font-size: 50px;
-      font-weight: 400;
-      width: 68%;
-      margin: 20px 0;
-      line-height: 1.1;
+      width: 600px;
+      margin: auto 10px;
+      padding: 10px;
       border-radius: 15px;
     }
 
     .yojna-hindi-title {
       font-family: "Yatra One", sans-serif;
-      background: linear-gradient(30deg, #01810c, #2f4d01);
-      text-shadow: 1px 4px 9px black;
-      color: white;
-      width: 70%;
-      margin: 10px 0;
+      background: #fffddd;
+      color: black;
+      width: 600px;
+      margin: auto 10px;
       padding: 10px;
       text-align: center;
-      font-weight: 700;
       font-size: 26px;
       border-radius: 12px;
     }
 
     .baner-image {
       position: absolute;
-      top: 200px;
+      bottom: 65px;
       right: 20px;
+      left: auto;
       width: 25%;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease;
     }
 
     .baner-image img {
-        position: static;
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -96,16 +97,15 @@
     }
 
     .yojna-cta {
-      text-align: left;
-      padding: 10px 0;
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      width: 70%;
+      justify-content: left;
+      margin:10px;
     }
 
     .yojna-apply-button {
-      background: linear-gradient(45deg, #020755, #024666);
+      background: linear-gradient(45deg, #ee0755, #dd4666);
       color: white;
       padding: 12px 30px;
       font-size: 20px;
@@ -121,22 +121,31 @@
       background: linear-gradient(45deg, #db7603, #fa0000);
       text-shadow: 1px 5px 10px black;
       color: white;
-      padding: 15px;
+      padding: 5px;
       text-align: center;
-      font-size: 40px;
-      font-weight: 100;
-      position: static;
-      bottom: 0;
-      width: 97%;
+      font-size: 30px;
+    }
+
+    .controls {
+      margin-top: 20px;
+    }
+
+    .controls label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .controls input[type="range"] {
+      width: 100%;
     }
 
     .yojna-download-section {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     .yojna-download-btn {
-      background-color: #2e7d32;
+      background: linear-gradient(45deg, #db7603, #fa0000);
       color: white;
       padding: 12px 30px;
       font-size: 18px;
@@ -148,8 +157,7 @@
 
     @media (max-width: 768px) {
       .yojna-main-title,
-      .yojna-hindi-title,
-      .yojna-cta {
+      .yojna-hindi-title {
         width: 100%;
       }
 
@@ -162,63 +170,129 @@
   </style>
 </head>
 <body>
-  {{ range first 5  .Site.RegularPages }}
-  <div class="yojna-banner-wrapper">
-    <div class="yojna-banner-container" id="yojna-banner-{{ .File.UniqueID }}">
-      <div class="yojna-header" contenteditable="true">{{ .Params.Department }}</div>
-      <div class="yojna-subheader" contenteditable="true">{{ .Params.InnerPost }}</div>
-      <div class="yojna-main-title" contenteditable="true">{{ .Title }}</div>
-      <div class="yojna-hindi-title" contenteditable="true">{{ .Params.Summary }}</div>
 
-      <div class="baner-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
-      </div>
+{{ range first 5 .Site.RegularPages }}
+<div class="yojna-banner-wrapper">
+  <div class="yojna-banner-container" id="yojna-banner-{{ .File.UniqueID }}">
+    <div class="yojna-header" contenteditable="true">{{ .Params.Department }}</div>
+    <div class="yojna-subheader" contenteditable="true">{{ .Params.InnerPost }}</div>
+    <div class="yojna-main-title" contenteditable="true">{{ .Title }}</div>
+    <div class="yojna-hindi-title" contenteditable="true">{{ .Params.Summary }}</div>
 
-      <div class="yojna-cta">
-        <a href="{{ .RelPermalink }}" class="yojna-apply-button" contenteditable="true">Apply Online</a>
-        <a href="{{ .RelPermalink }}" class="yojna-apply-button" contenteditable="true">{{ .Params.category }}</a>
-        <a href="{{ .RelPermalink }}" class="yojna-apply-button" contenteditable="true">{{ .Params.state }}</a>
-      </div>
-
-      <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
+    <div class="baner-image" id="bannerImage-{{ .File.UniqueID }}">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
     </div>
 
-    <div class="yojna-download-section">
-        <input type="file" id="imageUpload" accept="image/*" />
-      <button onclick="downloadBanner('yojna-banner-{{ .File.UniqueID }}', '{{ .File.BaseFileName }}')" class="yojna-download-btn">
-        Download as Image
-      </button>
-      
+    <div class="yojna-cta">
+      <a href="{{ .RelPermalink }}" class="yojna-apply-button" contenteditable="true">{{ .Params.category }}</a>
+      <a href="{{ .RelPermalink }}" class="yojna-apply-button" contenteditable="true">{{ .Params.state }}</a>
     </div>
+
+    <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
   </div>
-  {{ end }}
-  <script>
-    function downloadBanner(id, filename) {
-        const banner = document.getElementById(id);
-        html2canvas(banner, {
-          scale: 2,
-          useCORS: true
-        }).then(canvas => {
-          canvas.toBlob(function(blob) {
-            const link = document.createElement('a');
-            link.download = filename + '.webp';
-            link.href = URL.createObjectURL(blob);
-            link.click();
-          }, 'image/webp', 0.95);
-        });
+
+  <!-- Controls Section -->
+  <div class="controls">
+    <label>Width (%): <span id="widthVal-{{ .File.UniqueID }}">25</span>%</label>
+    <input type="range" id="widthInput-{{ .File.UniqueID }}" min="10" max="100" value="25">
+
+    <label>Bottom (px): <span id="bottomVal-{{ .File.UniqueID }}">65</span>px</label>
+    <input type="range" id="bottomInput-{{ .File.UniqueID }}" min="0" max="300" value="65">
+
+    <label>Left (px): <span id="leftVal-{{ .File.UniqueID }}">0</span>px</label>
+    <input type="range" id="leftInput-{{ .File.UniqueID }}" min="0" max="500" value="0">
+
+    <label>Right (px): <span id="rightVal-{{ .File.UniqueID }}">20</span>px</label>
+    <input type="range" id="rightInput-{{ .File.UniqueID }}" min="0" max="500" value="20">
+  </div>
+
+  <!-- Download Section -->
+  <div class="yojna-download-section">
+    <input type="file" id="imageUpload-{{ .File.UniqueID }}" accept="image/*">
+    <button onclick="downloadBanner('yojna-banner-{{ .File.UniqueID }}', '{{ .File.BaseFileName }}')" class="yojna-download-btn">
+      Download as Image
+    </button>
+  </div>
+</div>
+{{ end }}
+
+<script>
+function downloadBanner(id, filename) {
+  const banner = document.getElementById(id);
+  html2canvas(banner, {
+    scale: 2,
+    useCORS: true
+  }).then(canvas => {
+    canvas.toBlob(function(blob) {
+      const link = document.createElement('a');
+      link.download = filename + '.webp';
+      link.href = URL.createObjectURL(blob);
+      link.click();
+    }, 'image/webp', 0.95);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const banners = document.querySelectorAll('.yojna-banner-container');
+  banners.forEach(banner => {
+    const id = banner.id.replace('yojna-banner-', '');
+    const img = document.getElementById(`bannerImage-${id}`);
+
+    const widthInput = document.getElementById(`widthInput-${id}`);
+    const bottomInput = document.getElementById(`bottomInput-${id}`);
+    const leftInput = document.getElementById(`leftInput-${id}`);
+    const rightInput = document.getElementById(`rightInput-${id}`);
+
+    const widthVal = document.getElementById(`widthVal-${id}`);
+    const bottomVal = document.getElementById(`bottomVal-${id}`);
+    const leftVal = document.getElementById(`leftVal-${id}`);
+    const rightVal = document.getElementById(`rightVal-${id}`);
+
+    function updateStyles() {
+      widthVal.textContent = widthInput.value;
+      bottomVal.textContent = bottomInput.value;
+      leftVal.textContent = leftInput.value;
+      rightVal.textContent = rightInput.value;
+
+      img.style.width = widthInput.value + '%';
+      img.style.bottom = bottomInput.value + 'px';
+
+      const left = parseInt(leftInput.value);
+      const right = parseInt(rightInput.value);
+
+      if (left > 0) {
+        img.style.left = left + 'px';
+        img.style.right = 'auto';
+        rightInput.disabled = true;
+      } else {
+        img.style.left = 'auto';
+        img.style.right = right + 'px';
+        rightInput.disabled = false;
       }
-    
-      // ✅ Image Upload Handler
-      document.getElementById('imageUpload').addEventListener('change', function (event) {
-        const file = event.target.files[0];
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            document.querySelector('.baner-image img').src = e.target.result;
-          };
-          reader.readAsDataURL(file);
-        }
-      });
-  </script>
+    }
+
+    widthInput.addEventListener('input', updateStyles);
+    bottomInput.addEventListener('input', updateStyles);
+    leftInput.addEventListener('input', updateStyles);
+    rightInput.addEventListener('input', updateStyles);
+
+    updateStyles();
+
+    // Image upload
+    const imageUpload = document.getElementById(`imageUpload-${id}`);
+    imageUpload.addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          img.querySelector('img').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>

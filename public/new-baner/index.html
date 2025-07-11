@@ -11,91 +11,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yojna Banner</title>
-  <link href="https://fonts.googleapis.com/css2?family=Tillana&family=Yatra+One&family=Passion+One&family=Poetsen+One&family=Poppins&family=Roboto&family=Mukta&family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tillana&family=Yatra+One&family=Passion+One&family=Poetsen+One&family=Poppins&family=Roboto&family=Mukta&family=Archivo+Black&family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <style>
- 
+    body {
+      font-family: "Poppins", sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
 
     .yojna-banner-wrapper {
-      max-width: 1280px;
+      max-width: 900px;
       margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .yojna-banner-container {
       width: 100%;
-      max-height: 800px;
-      background: #fff;
-      font-weight: 700;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
       position: relative;
-      padding: 20px;
+      border: 3px solid;
+      border-left-color: red;
+      border-top-color: red;
+      border-bottom-color: rgb(216, 195, 5);
+      border-right-color: rgb(231, 178, 2);
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 2px;
     }
 
     .yojna-header {
-      font-family: "Yatra One", sans-serif;
-      background: linear-gradient(30deg, #f5f3f3, #ffb107);
-      text-shadow: 1px 5px 6px black;
-      color: white;
-      padding: 20px;
+      font-family: "Archivo Black", sans-serif;
+      background: #fffABC;
+      color: red;
       text-align: center;
       font-size: 40px;
-      font-weight: bold;
+      padding: 5px;
     }
 
     .yojna-subheader {
       font-family: "Tillana", sans-serif;
-      background: linear-gradient(30deg, #01810c, #2f4d01);
-      text-shadow: 1px 4px 9px black;
-      color: white;
-      padding: 12px;
+      background: #ffee01fd;
+      color: blue;
       text-align: center;
-      font-weight: 600;
       font-size: 30px;
+      padding: 5px;
     }
 
     .yojna-main-title {
       font-family: "Poetsen One", sans-serif;
-      background: linear-gradient(45deg, #db7603, #f5b041);
-      text-shadow: 1px 5px 8px black;
-      color: white;
-      padding: 30px 20px;
+      background: #ffffff;
+      color: red;
       text-align: center;
       font-size: 50px;
-      font-weight: 400;
-      width: 68%;
-      margin: 20px 0;
-      line-height: 1.1;
+      width: 600px;
+      margin: auto 10px;
+      padding: 10px;
       border-radius: 15px;
     }
 
     .yojna-hindi-title {
       font-family: "Yatra One", sans-serif;
-      background: linear-gradient(30deg, #01810c, #2f4d01);
-      text-shadow: 1px 4px 9px black;
-      color: white;
-      width: 70%;
-      margin: 10px 0;
+      background: #fffddd;
+      color: black;
+      width: 600px;
+      margin: auto 10px;
       padding: 10px;
       text-align: center;
-      font-weight: 700;
       font-size: 26px;
       border-radius: 12px;
     }
 
     .baner-image {
       position: absolute;
-      top: 200px;
+      bottom: 65px;
       right: 20px;
+      left: auto;
       width: 25%;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease;
     }
 
     .baner-image img {
-        position: static;
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -103,16 +104,15 @@
     }
 
     .yojna-cta {
-      text-align: left;
-      padding: 10px 0;
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      width: 70%;
+      justify-content: left;
+      margin:10px;
     }
 
     .yojna-apply-button {
-      background: linear-gradient(45deg, #020755, #024666);
+      background: linear-gradient(45deg, #ee0755, #dd4666);
       color: white;
       padding: 12px 30px;
       font-size: 20px;
@@ -128,22 +128,31 @@
       background: linear-gradient(45deg, #db7603, #fa0000);
       text-shadow: 1px 5px 10px black;
       color: white;
-      padding: 15px;
+      padding: 5px;
       text-align: center;
-      font-size: 40px;
-      font-weight: 100;
-      position: static;
-      bottom: 0;
-      width: 97%;
+      font-size: 30px;
+    }
+
+    .controls {
+      margin-top: 20px;
+    }
+
+    .controls label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .controls input[type="range"] {
+      width: 100%;
     }
 
     .yojna-download-section {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     .yojna-download-btn {
-      background-color: #2e7d32;
+      background: linear-gradient(45deg, #db7603, #fa0000);
       color: white;
       padding: 12px 30px;
       font-size: 18px;
@@ -155,8 +164,7 @@
 
     @media (max-width: 768px) {
       .yojna-main-title,
-      .yojna-hindi-title,
-      .yojna-cta {
+      .yojna-hindi-title {
         width: 100%;
       }
 
@@ -169,180 +177,302 @@
   </style>
 </head>
 <body>
-  
-  <div class="yojna-banner-wrapper">
-    <div class="yojna-banner-container" id="yojna-banner-0a997fc089943e927cfb4e920926b945">
-      <div class="yojna-header" contenteditable="true">Reserve Bank of India (RBI)</div>
-      <div class="yojna-subheader" contenteditable="true">Application | Dates | Requirements | Important Links</div>
-      <div class="yojna-main-title" contenteditable="true">RBI Officers Grade A &amp; B Vacancy 2025 Online Form</div>
-      <div class="yojna-hindi-title" contenteditable="true">Reserve Bank of India (RBI) has announced 28 vacancies for various Grade A and B Officer posts under the 2025 recruitment drive. The available posts include Law Officer, Manager (Technical – Civil and Electrical), Assistant Manager (Rajbhasha), and Assistant Manager (Protocol &amp; Security). Candidates applying for these positions must meet the minimum educational qualifications such as LLB, BE/B.Tech, Master’s Degree, or have military experience, along with relevant work experience where required. This is a great opportunity for eligible candidates to join the RBI as an officer and contribute to the nation’s central banking system. Interested applicants can submit their applications through the official RBI website within the given deadline.</div>
 
-      <div class="baner-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
-      </div>
 
-      <div class="yojna-cta">
-        <a href="/jobs/rbi-officers-grade-a-and-b-vacancy-2025/" class="yojna-apply-button" contenteditable="true">Apply Online</a>
-        <a href="/jobs/rbi-officers-grade-a-and-b-vacancy-2025/" class="yojna-apply-button" contenteditable="true">RBI Officers Grade A &amp; B</a>
-        <a href="/jobs/rbi-officers-grade-a-and-b-vacancy-2025/" class="yojna-apply-button" contenteditable="true">India</a>
-      </div>
+<div class="yojna-banner-wrapper">
+  <div class="yojna-banner-container" id="yojna-banner-dba3d68c49be0218491bd765e00e2c54">
+    <div class="yojna-header" contenteditable="true">Jharkhand Staff Selection Commission (JSSC)</div>
+    <div class="yojna-subheader" contenteditable="true">Application | Dates | Requirements | Important Links</div>
+    <div class="yojna-main-title" contenteditable="true">Jharkhand SSC ANM Vacancy 2025 Online Form</div>
+    <div class="yojna-hindi-title" contenteditable="true">The Jharkhand Staff Selection Commission (JSSC) has released the official notification for the recruitment of Female Health Workers (A.N.M.) under the Regular and Backlog vacancies for the year 2025. A total of 3,181 posts are available, including 3,020 regular and 161 backlog vacancies. Only female candidates who are domicile of Jharkhand and have completed 10th (Matric) with at least 45% marks, along with 18 months A.N.M. training and registration in Jharkhand State Nursing Council, are eligible to apply. The application process will be conducted online through the official JSSC website. Interested and eligible candidates must read the official notification thoroughly and apply within the specified dates.</div>
 
-      <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
+    <div class="baner-image" id="bannerImage-dba3d68c49be0218491bd765e00e2c54">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
     </div>
 
-    <div class="yojna-download-section">
-        <input type="file" id="imageUpload" accept="image/*" />
-      <button onclick="downloadBanner('yojna-banner-0a997fc089943e927cfb4e920926b945', 'rbi-officers-grade-a-and-b-vacancy-2025')" class="yojna-download-btn">
-        Download as Image
-      </button>
-      
+    <div class="yojna-cta">
+      <a href="/jobs/jharkhand-ssc-anm-vacancy-2025/" class="yojna-apply-button" contenteditable="true">JSSC ANM</a>
+      <a href="/jobs/jharkhand-ssc-anm-vacancy-2025/" class="yojna-apply-button" contenteditable="true">Jharkhand</a>
     </div>
+
+    <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
   </div>
+
   
-  <div class="yojna-banner-wrapper">
-    <div class="yojna-banner-container" id="yojna-banner-19b7016db67b90a99e6db184c9e166c9">
-      <div class="yojna-header" contenteditable="true">Railway Recruitment Board (RRB)</div>
-      <div class="yojna-subheader" contenteditable="true">Details | Importent Dates |Useful Links</div>
-      <div class="yojna-main-title" contenteditable="true">RRB Assistant Loco Pilot ALP CBAT Admitcard 2025</div>
-      <div class="yojna-hindi-title" contenteditable="true">The Railway Recruitment Board (RRB) has released the Exam City Intimation Slip for the Assistant Loco Pilot (ALP) CBAT 2025. Candidates can now check their allotted exam city and centre details through the official RRB regional websites. This information helps applicants plan their travel and exam preparations accordingly.</div>
+  <div class="controls">
+    <label>Width (%): <span id="widthVal-dba3d68c49be0218491bd765e00e2c54">25</span>%</label>
+    <input type="range" id="widthInput-dba3d68c49be0218491bd765e00e2c54" min="10" max="100" value="25">
 
-      <div class="baner-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
-      </div>
+    <label>Bottom (px): <span id="bottomVal-dba3d68c49be0218491bd765e00e2c54">65</span>px</label>
+    <input type="range" id="bottomInput-dba3d68c49be0218491bd765e00e2c54" min="0" max="300" value="65">
 
-      <div class="yojna-cta">
-        <a href="/admitcard/rrb-alp-cbat-exam-city-2025/" class="yojna-apply-button" contenteditable="true">Apply Online</a>
-        <a href="/admitcard/rrb-alp-cbat-exam-city-2025/" class="yojna-apply-button" contenteditable="true">RRB ALP</a>
-        <a href="/admitcard/rrb-alp-cbat-exam-city-2025/" class="yojna-apply-button" contenteditable="true">India</a>
-      </div>
+    <label>Left (px): <span id="leftVal-dba3d68c49be0218491bd765e00e2c54">0</span>px</label>
+    <input type="range" id="leftInput-dba3d68c49be0218491bd765e00e2c54" min="0" max="500" value="0">
 
-      <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
-    </div>
-
-    <div class="yojna-download-section">
-        <input type="file" id="imageUpload" accept="image/*" />
-      <button onclick="downloadBanner('yojna-banner-19b7016db67b90a99e6db184c9e166c9', 'rrb-alp-cbat-exam-city-2025')" class="yojna-download-btn">
-        Download as Image
-      </button>
-      
-    </div>
+    <label>Right (px): <span id="rightVal-dba3d68c49be0218491bd765e00e2c54">20</span>px</label>
+    <input type="range" id="rightInput-dba3d68c49be0218491bd765e00e2c54" min="0" max="500" value="20">
   </div>
+
   
-  <div class="yojna-banner-wrapper">
-    <div class="yojna-banner-container" id="yojna-banner-56b02c37a71693322ef56c7f49af4417">
-      <div class="yojna-header" contenteditable="true">National Hydroelectric Power Corporation (NHPC) Limited</div>
-      <div class="yojna-subheader" contenteditable="true">Application | Dates | Requirements | Important Links</div>
-      <div class="yojna-main-title" contenteditable="true">NHPC Apprentice Vacancy 2025 Online Form</div>
-      <div class="yojna-hindi-title" contenteditable="true">NHPC Limited has announced 361 Apprentice vacancies for the year 2025 under Graduate, Diploma, and ITI categories. Candidates from Engineering, Commerce, Management, Law, and Technical trades can apply. The application process begins on 11 July 2025 and ends on 11 August 2025. This is a one-year apprenticeship program and selections will be based on academic merit. No written test or interview will be conducted.</div>
-
-      <div class="baner-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
-      </div>
-
-      <div class="yojna-cta">
-        <a href="/apprentice/nhpc-apprentice-vacancy-2025/" class="yojna-apply-button" contenteditable="true">Apply Online</a>
-        <a href="/apprentice/nhpc-apprentice-vacancy-2025/" class="yojna-apply-button" contenteditable="true">Apprentice</a>
-        <a href="/apprentice/nhpc-apprentice-vacancy-2025/" class="yojna-apply-button" contenteditable="true">India</a>
-      </div>
-
-      <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
-    </div>
-
-    <div class="yojna-download-section">
-        <input type="file" id="imageUpload" accept="image/*" />
-      <button onclick="downloadBanner('yojna-banner-56b02c37a71693322ef56c7f49af4417', 'nhpc-apprentice-vacancy-2025')" class="yojna-download-btn">
-        Download as Image
-      </button>
-      
-    </div>
+  <div class="yojna-download-section">
+    <input type="file" id="imageUpload-dba3d68c49be0218491bd765e00e2c54" accept="image/*">
+    <button onclick="downloadBanner('yojna-banner-dba3d68c49be0218491bd765e00e2c54', 'jharkhand-ssc-anm-vacancy-2025')" class="yojna-download-btn">
+      Download as Image
+    </button>
   </div>
-  
-  <div class="yojna-banner-wrapper">
-    <div class="yojna-banner-container" id="yojna-banner-ff65b53498a9aba39ee1253e7642292e">
-      <div class="yojna-header" contenteditable="true">Indian Air Force</div>
-      <div class="yojna-subheader" contenteditable="true">Application | Dates | Requirements | Important Links</div>
-      <div class="yojna-main-title" contenteditable="true">Indian Airforce Agniveervayu Intake 02/2026 Vacancy 2025 Online Form</div>
-      <div class="yojna-hindi-title" contenteditable="true">The Indian Air Force has released the notification for Agniveervayu Intake 02/2026 under the Agnipath Scheme. Eligible male and female candidates can apply online for the Agniveer Vayu post. The recruitment is open to candidates from both science and non-science backgrounds. Selection will be based on an online test, physical fitness test, and medical examination.</div>
+</div>
 
-      <div class="baner-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
-      </div>
+<div class="yojna-banner-wrapper">
+  <div class="yojna-banner-container" id="yojna-banner-0a997fc089943e927cfb4e920926b945">
+    <div class="yojna-header" contenteditable="true">Reserve Bank of India (RBI)</div>
+    <div class="yojna-subheader" contenteditable="true">Application | Dates | Requirements | Important Links</div>
+    <div class="yojna-main-title" contenteditable="true">RBI Officers Grade A &amp; B Vacancy 2025 Online Form</div>
+    <div class="yojna-hindi-title" contenteditable="true">Reserve Bank of India (RBI) has announced 28 vacancies for various Grade A and B Officer posts under the 2025 recruitment drive. The available posts include Law Officer, Manager (Technical – Civil and Electrical), Assistant Manager (Rajbhasha), and Assistant Manager (Protocol &amp; Security). Candidates applying for these positions must meet the minimum educational qualifications such as LLB, BE/B.Tech, Master’s Degree, or have military experience, along with relevant work experience where required. This is a great opportunity for eligible candidates to join the RBI as an officer and contribute to the nation’s central banking system. Interested applicants can submit their applications through the official RBI website within the given deadline.</div>
 
-      <div class="yojna-cta">
-        <a href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" class="yojna-apply-button" contenteditable="true">Apply Online</a>
-        <a href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" class="yojna-apply-button" contenteditable="true">Airforce Agnipath Vayu</a>
-        <a href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" class="yojna-apply-button" contenteditable="true">India</a>
-      </div>
-
-      <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
+    <div class="baner-image" id="bannerImage-0a997fc089943e927cfb4e920926b945">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
     </div>
 
-    <div class="yojna-download-section">
-        <input type="file" id="imageUpload" accept="image/*" />
-      <button onclick="downloadBanner('yojna-banner-ff65b53498a9aba39ee1253e7642292e', 'indian-airforce-agniveervayu-intake-02-2026')" class="yojna-download-btn">
-        Download as Image
-      </button>
-      
+    <div class="yojna-cta">
+      <a href="/jobs/rbi-officers-grade-a-and-b-vacancy-2025/" class="yojna-apply-button" contenteditable="true">RBI Officers Grade A &amp; B</a>
+      <a href="/jobs/rbi-officers-grade-a-and-b-vacancy-2025/" class="yojna-apply-button" contenteditable="true">India</a>
     </div>
+
+    <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
   </div>
+
   
-  <div class="yojna-banner-wrapper">
-    <div class="yojna-banner-container" id="yojna-banner-3b8d10b249ad4c6089c5d558b4421056">
-      <div class="yojna-header" contenteditable="true">Madhya Pradesh Public Service Commission (MPPSC)</div>
-      <div class="yojna-subheader" contenteditable="true">आवदेन । तिथिया | आवश्यकता । महत्तपूर्ण लिंक</div>
-      <div class="yojna-main-title" contenteditable="true">MPPSC Food Safety Officer Vacancy 2025 Online Form</div>
-      <div class="yojna-hindi-title" contenteditable="true">Madhya Pradesh Public Service Commission (MPPSC) has released a notification for the recruitment of Food Safety Officer (FSO) with a total of 67 vacancies. The application process will be conducted online, and the job location is Madhya Pradesh. Candidates from all over India are eligible to apply, but those from other states will be treated as General (UR) category and will not receive any reservation or fee relaxation. Applicants must hold a Bachelor&#39;s, Master&#39;s, or Ph.D. degree in Food Technology, Agriculture, Biotechnology, Chemistry, Veterinary Science, Medicine, or a related field, or possess an equivalent qualification recognized by the Central Government. The age limit is 21 to 40 years, with age relaxation applicable as per rules for reserved categories. For complete details and to apply, visit the official website mppsc.mp.gov.in.</div>
+  <div class="controls">
+    <label>Width (%): <span id="widthVal-0a997fc089943e927cfb4e920926b945">25</span>%</label>
+    <input type="range" id="widthInput-0a997fc089943e927cfb4e920926b945" min="10" max="100" value="25">
 
-      <div class="baner-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
-      </div>
+    <label>Bottom (px): <span id="bottomVal-0a997fc089943e927cfb4e920926b945">65</span>px</label>
+    <input type="range" id="bottomInput-0a997fc089943e927cfb4e920926b945" min="0" max="300" value="65">
 
-      <div class="yojna-cta">
-        <a href="/jobs/mppsc-food-safety-officer-vacancy-2025/" class="yojna-apply-button" contenteditable="true">Apply Online</a>
-        <a href="/jobs/mppsc-food-safety-officer-vacancy-2025/" class="yojna-apply-button" contenteditable="true">MPPSC FSO</a>
-        <a href="/jobs/mppsc-food-safety-officer-vacancy-2025/" class="yojna-apply-button" contenteditable="true">Madhya Pradesh</a>
-      </div>
+    <label>Left (px): <span id="leftVal-0a997fc089943e927cfb4e920926b945">0</span>px</label>
+    <input type="range" id="leftInput-0a997fc089943e927cfb4e920926b945" min="0" max="500" value="0">
 
-      <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
-    </div>
-
-    <div class="yojna-download-section">
-        <input type="file" id="imageUpload" accept="image/*" />
-      <button onclick="downloadBanner('yojna-banner-3b8d10b249ad4c6089c5d558b4421056', 'mppsc-food-safety-officer-vacancy-2025')" class="yojna-download-btn">
-        Download as Image
-      </button>
-      
-    </div>
+    <label>Right (px): <span id="rightVal-0a997fc089943e927cfb4e920926b945">20</span>px</label>
+    <input type="range" id="rightInput-0a997fc089943e927cfb4e920926b945" min="0" max="500" value="20">
   </div>
+
   
-  <script>
-    function downloadBanner(id, filename) {
-        const banner = document.getElementById(id);
-        html2canvas(banner, {
-          scale: 2,
-          useCORS: true
-        }).then(canvas => {
-          canvas.toBlob(function(blob) {
-            const link = document.createElement('a');
-            link.download = filename + '.webp';
-            link.href = URL.createObjectURL(blob);
-            link.click();
-          }, 'image/webp', 0.95);
-        });
+  <div class="yojna-download-section">
+    <input type="file" id="imageUpload-0a997fc089943e927cfb4e920926b945" accept="image/*">
+    <button onclick="downloadBanner('yojna-banner-0a997fc089943e927cfb4e920926b945', 'rbi-officers-grade-a-and-b-vacancy-2025')" class="yojna-download-btn">
+      Download as Image
+    </button>
+  </div>
+</div>
+
+<div class="yojna-banner-wrapper">
+  <div class="yojna-banner-container" id="yojna-banner-19b7016db67b90a99e6db184c9e166c9">
+    <div class="yojna-header" contenteditable="true">Railway Recruitment Board (RRB)</div>
+    <div class="yojna-subheader" contenteditable="true">Details | Importent Dates |Useful Links</div>
+    <div class="yojna-main-title" contenteditable="true">RRB Assistant Loco Pilot ALP CBAT Admitcard 2025</div>
+    <div class="yojna-hindi-title" contenteditable="true">The Railway Recruitment Board (RRB) has released the Exam City Intimation Slip for the Assistant Loco Pilot (ALP) CBAT 2025. Candidates can now check their allotted exam city and centre details through the official RRB regional websites. This information helps applicants plan their travel and exam preparations accordingly.</div>
+
+    <div class="baner-image" id="bannerImage-19b7016db67b90a99e6db184c9e166c9">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
+    </div>
+
+    <div class="yojna-cta">
+      <a href="/admitcard/rrb-alp-cbat-exam-city-2025/" class="yojna-apply-button" contenteditable="true">RRB ALP</a>
+      <a href="/admitcard/rrb-alp-cbat-exam-city-2025/" class="yojna-apply-button" contenteditable="true">India</a>
+    </div>
+
+    <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
+  </div>
+
+  
+  <div class="controls">
+    <label>Width (%): <span id="widthVal-19b7016db67b90a99e6db184c9e166c9">25</span>%</label>
+    <input type="range" id="widthInput-19b7016db67b90a99e6db184c9e166c9" min="10" max="100" value="25">
+
+    <label>Bottom (px): <span id="bottomVal-19b7016db67b90a99e6db184c9e166c9">65</span>px</label>
+    <input type="range" id="bottomInput-19b7016db67b90a99e6db184c9e166c9" min="0" max="300" value="65">
+
+    <label>Left (px): <span id="leftVal-19b7016db67b90a99e6db184c9e166c9">0</span>px</label>
+    <input type="range" id="leftInput-19b7016db67b90a99e6db184c9e166c9" min="0" max="500" value="0">
+
+    <label>Right (px): <span id="rightVal-19b7016db67b90a99e6db184c9e166c9">20</span>px</label>
+    <input type="range" id="rightInput-19b7016db67b90a99e6db184c9e166c9" min="0" max="500" value="20">
+  </div>
+
+  
+  <div class="yojna-download-section">
+    <input type="file" id="imageUpload-19b7016db67b90a99e6db184c9e166c9" accept="image/*">
+    <button onclick="downloadBanner('yojna-banner-19b7016db67b90a99e6db184c9e166c9', 'rrb-alp-cbat-exam-city-2025')" class="yojna-download-btn">
+      Download as Image
+    </button>
+  </div>
+</div>
+
+<div class="yojna-banner-wrapper">
+  <div class="yojna-banner-container" id="yojna-banner-56b02c37a71693322ef56c7f49af4417">
+    <div class="yojna-header" contenteditable="true">National Hydroelectric Power Corporation (NHPC) Limited</div>
+    <div class="yojna-subheader" contenteditable="true">Application | Dates | Requirements | Important Links</div>
+    <div class="yojna-main-title" contenteditable="true">NHPC Apprentice Vacancy 2025 Online Form</div>
+    <div class="yojna-hindi-title" contenteditable="true">NHPC Limited has announced 361 Apprentice vacancies for the year 2025 under Graduate, Diploma, and ITI categories. Candidates from Engineering, Commerce, Management, Law, and Technical trades can apply. The application process begins on 11 July 2025 and ends on 11 August 2025. This is a one-year apprenticeship program and selections will be based on academic merit. No written test or interview will be conducted.</div>
+
+    <div class="baner-image" id="bannerImage-56b02c37a71693322ef56c7f49af4417">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
+    </div>
+
+    <div class="yojna-cta">
+      <a href="/apprentice/nhpc-apprentice-vacancy-2025/" class="yojna-apply-button" contenteditable="true">Apprentice</a>
+      <a href="/apprentice/nhpc-apprentice-vacancy-2025/" class="yojna-apply-button" contenteditable="true">India</a>
+    </div>
+
+    <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
+  </div>
+
+  
+  <div class="controls">
+    <label>Width (%): <span id="widthVal-56b02c37a71693322ef56c7f49af4417">25</span>%</label>
+    <input type="range" id="widthInput-56b02c37a71693322ef56c7f49af4417" min="10" max="100" value="25">
+
+    <label>Bottom (px): <span id="bottomVal-56b02c37a71693322ef56c7f49af4417">65</span>px</label>
+    <input type="range" id="bottomInput-56b02c37a71693322ef56c7f49af4417" min="0" max="300" value="65">
+
+    <label>Left (px): <span id="leftVal-56b02c37a71693322ef56c7f49af4417">0</span>px</label>
+    <input type="range" id="leftInput-56b02c37a71693322ef56c7f49af4417" min="0" max="500" value="0">
+
+    <label>Right (px): <span id="rightVal-56b02c37a71693322ef56c7f49af4417">20</span>px</label>
+    <input type="range" id="rightInput-56b02c37a71693322ef56c7f49af4417" min="0" max="500" value="20">
+  </div>
+
+  
+  <div class="yojna-download-section">
+    <input type="file" id="imageUpload-56b02c37a71693322ef56c7f49af4417" accept="image/*">
+    <button onclick="downloadBanner('yojna-banner-56b02c37a71693322ef56c7f49af4417', 'nhpc-apprentice-vacancy-2025')" class="yojna-download-btn">
+      Download as Image
+    </button>
+  </div>
+</div>
+
+<div class="yojna-banner-wrapper">
+  <div class="yojna-banner-container" id="yojna-banner-ff65b53498a9aba39ee1253e7642292e">
+    <div class="yojna-header" contenteditable="true">Indian Air Force</div>
+    <div class="yojna-subheader" contenteditable="true">Application | Dates | Requirements | Important Links</div>
+    <div class="yojna-main-title" contenteditable="true">Indian Airforce Agniveervayu Intake 02/2026 Vacancy 2025 Online Form</div>
+    <div class="yojna-hindi-title" contenteditable="true">The Indian Air Force has released the notification for Agniveervayu Intake 02/2026 under the Agnipath Scheme. Eligible male and female candidates can apply online for the Agniveer Vayu post. The recruitment is open to candidates from both science and non-science backgrounds. Selection will be based on an online test, physical fitness test, and medical examination.</div>
+
+    <div class="baner-image" id="bannerImage-ff65b53498a9aba39ee1253e7642292e">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBAUmDJqffzKZXxNVU0vN2NEfBniWH8QImA&s" alt="Logo">
+    </div>
+
+    <div class="yojna-cta">
+      <a href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" class="yojna-apply-button" contenteditable="true">Airforce Agnipath Vayu</a>
+      <a href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" class="yojna-apply-button" contenteditable="true">India</a>
+    </div>
+
+    <div class="yojna-footer" contenteditable="true">Details: www.YojnaPortal.com</div>
+  </div>
+
+  
+  <div class="controls">
+    <label>Width (%): <span id="widthVal-ff65b53498a9aba39ee1253e7642292e">25</span>%</label>
+    <input type="range" id="widthInput-ff65b53498a9aba39ee1253e7642292e" min="10" max="100" value="25">
+
+    <label>Bottom (px): <span id="bottomVal-ff65b53498a9aba39ee1253e7642292e">65</span>px</label>
+    <input type="range" id="bottomInput-ff65b53498a9aba39ee1253e7642292e" min="0" max="300" value="65">
+
+    <label>Left (px): <span id="leftVal-ff65b53498a9aba39ee1253e7642292e">0</span>px</label>
+    <input type="range" id="leftInput-ff65b53498a9aba39ee1253e7642292e" min="0" max="500" value="0">
+
+    <label>Right (px): <span id="rightVal-ff65b53498a9aba39ee1253e7642292e">20</span>px</label>
+    <input type="range" id="rightInput-ff65b53498a9aba39ee1253e7642292e" min="0" max="500" value="20">
+  </div>
+
+  
+  <div class="yojna-download-section">
+    <input type="file" id="imageUpload-ff65b53498a9aba39ee1253e7642292e" accept="image/*">
+    <button onclick="downloadBanner('yojna-banner-ff65b53498a9aba39ee1253e7642292e', 'indian-airforce-agniveervayu-intake-02-2026')" class="yojna-download-btn">
+      Download as Image
+    </button>
+  </div>
+</div>
+
+
+<script>
+function downloadBanner(id, filename) {
+  const banner = document.getElementById(id);
+  html2canvas(banner, {
+    scale: 2,
+    useCORS: true
+  }).then(canvas => {
+    canvas.toBlob(function(blob) {
+      const link = document.createElement('a');
+      link.download = filename + '.webp';
+      link.href = URL.createObjectURL(blob);
+      link.click();
+    }, 'image/webp', 0.95);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const banners = document.querySelectorAll('.yojna-banner-container');
+  banners.forEach(banner => {
+    const id = banner.id.replace('yojna-banner-', '');
+    const img = document.getElementById(`bannerImage-${id}`);
+
+    const widthInput = document.getElementById(`widthInput-${id}`);
+    const bottomInput = document.getElementById(`bottomInput-${id}`);
+    const leftInput = document.getElementById(`leftInput-${id}`);
+    const rightInput = document.getElementById(`rightInput-${id}`);
+
+    const widthVal = document.getElementById(`widthVal-${id}`);
+    const bottomVal = document.getElementById(`bottomVal-${id}`);
+    const leftVal = document.getElementById(`leftVal-${id}`);
+    const rightVal = document.getElementById(`rightVal-${id}`);
+
+    function updateStyles() {
+      widthVal.textContent = widthInput.value;
+      bottomVal.textContent = bottomInput.value;
+      leftVal.textContent = leftInput.value;
+      rightVal.textContent = rightInput.value;
+
+      img.style.width = widthInput.value + '%';
+      img.style.bottom = bottomInput.value + 'px';
+
+      const left = parseInt(leftInput.value);
+      const right = parseInt(rightInput.value);
+
+      if (left > 0) {
+        img.style.left = left + 'px';
+        img.style.right = 'auto';
+        rightInput.disabled = true;
+      } else {
+        img.style.left = 'auto';
+        img.style.right = right + 'px';
+        rightInput.disabled = false;
       }
+    }
+
+    widthInput.addEventListener('input', updateStyles);
+    bottomInput.addEventListener('input', updateStyles);
+    leftInput.addEventListener('input', updateStyles);
+    rightInput.addEventListener('input', updateStyles);
+
+    updateStyles();
+
     
-      
-      document.getElementById('imageUpload').addEventListener('change', function (event) {
-        const file = event.target.files[0];
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            document.querySelector('.baner-image img').src = e.target.result;
-          };
-          reader.readAsDataURL(file);
-        }
-      });
-  </script>
+    const imageUpload = document.getElementById(`imageUpload-${id}`);
+    imageUpload.addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          img.querySelector('img').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
 
