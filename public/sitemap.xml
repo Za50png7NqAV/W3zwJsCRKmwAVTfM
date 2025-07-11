@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/rbi-officers-grade-a-and-b-vacancy-2025/</loc>
+    <lastmod>2025-07-11T13:27:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-11T13:27:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admitcard/rrb-alp-cbat-exam-city-2025/</loc>
+    <lastmod>2025-07-11T13:22:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2025-07-11T11:40:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentice/nhpc-apprentice-vacancy-2025/</loc>
-    <lastmod>2025-07-11T11:40:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-11T11:40:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -184,11 +194,6 @@
   </url><url>
     <loc>http://localhost:1313/admitcard/bihar-vidhan-sabha-security-guard-admit-card-2025/</loc>
     <lastmod>2025-07-06T09:56:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admitcard/rrb-alp-cbat-exam-city-2025/</loc>
-    <lastmod>2025-07-06T09:22:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
