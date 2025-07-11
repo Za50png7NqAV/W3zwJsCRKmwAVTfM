@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
-    <lastmod>2025-07-11T09:40:55+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-07-11T11:40:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/nhpc-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-07-11T11:40:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-11T11:40:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/</loc>
+    <lastmod>2025-07-11T11:38:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
     <lastmod>2025-07-11T09:40:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -19,11 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
     <lastmod>2025-07-11T07:32:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-07-10T20:53:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -399,11 +409,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc/ssc-gd-constable-2024/</loc>
     <lastmod>2025-06-26T17:55:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/</loc>
-    <lastmod>2025-06-26T12:38:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
