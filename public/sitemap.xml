@@ -22,6 +22,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-food-safety-officer-vacancy-2025/</loc>
+    <lastmod>2025-06-11T10:48:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
     <lastmod>2025-07-11T09:40:55+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -444,11 +449,6 @@
   </url><url>
     <loc>http://localhost:1313/result/bihar-btsc-gmo-result-2025/</loc>
     <lastmod>2025-06-25T11:28:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-food-safety-officer-vacancy-2025/</loc>
-    <lastmod>2025-06-25T10:48:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
