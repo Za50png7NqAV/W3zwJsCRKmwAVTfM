@@ -9,8 +9,11 @@
   }
 
   .post-card h2 {
-    color: #2e7d32;
+    color: #ff0000;
+    background-color: #ffd902;
+    border-radius: 50px;
     margin-top: 0;
+    font-weight: 700;
   }
 
   .post-card h3 {
@@ -105,29 +108,6 @@
     text-decoration: none;
   }
 
-  a:hover {
-    text-decoration: underline;
-  }
- h3 {
-      font-size: 1.8rem;
-      color: #2c3e50;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-bottom: 0.5rem;
-      font-weight: 600;
-      text-align: center;
-    }
-
-    h3::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-      width: 50px;
-      height: 3px;
-      background-color: #3498db;
-    }
 
     .steps-container {
       list-style: none;
@@ -140,9 +120,8 @@
     }
 
     .step-item {
-      display: flex;
-      align-items: flex-start;
       padding: 1rem;
+      color:black;
       margin-bottom: 1rem;
       background-color: #ffffff;
       border-left: 4px solid #3498db;
@@ -232,28 +211,13 @@
             position: relative;
         }
 
-        .postname::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            border-radius: 2px;
-            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .post-card:hover .postname::after {
-            width: 100%;
-        }
     .head-card {
-  background-color: #e8f5e9; /* हल्का हरा बैकग्राउंड */
+  background-color: #f8e007cb; /* हल्का हरा बैकग्राउंड */
   color: #2e7d32;            /* गहरा हरा टेक्स्ट */
   font-size: 20px;
   font-weight: 600;
   padding: 12px 20px;
-  border-left: 6px solid #43a047; /* बाईं ओर मोटी पट्टी */
+  border-left: 6px solid #f86605; /* बाईं ओर मोटी पट्टी */
   border-radius: 8px;
   margin: 20px 0 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);

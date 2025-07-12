@@ -3,8 +3,8 @@
       {{ $parts := split . "///" }}
       <details>
         {{ if eq (len $parts) 2 }}
-          <summary> Q. {{ index $parts 0 }}?</summary>
-          <p> {{ index $parts 1 }}</p>
+          <summary  style="color:#02191a"> Q. {{ index $parts 0 }}?</summary>
+          <p style="color:#021600"> {{ index $parts 1 }}</p>
         {{ else }}
           {{ . }}
         {{ end }}

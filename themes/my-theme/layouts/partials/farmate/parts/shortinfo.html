@@ -1,23 +1,38 @@
 {{ with .Params.shortinfo }}
-  <table class="yp-table">
-     {{ range . }}
+ <table class="yp-table">
+
+  {{ range . }}
   {{ $step1 := replace . ":" "//" }}
   {{ $step2 := replace $step1 "ः" "//" }}
    {{ $clean := replace $step2 "-" "//" }}
   {{ $parts := split $clean "//" }}
-       <tr>
-        {{ if eq (len $parts) 2 }}
-          <td><b>{{ index $parts 0 | safeHTML}}</b></td>
-          <td>{{ index $parts 1 | safeHTML}}</td>
+ <tr>
+      {{ if eq (len $parts) 2 }}
+        {{ $label := trim (index $parts 0) " " }}
+        {{ $date := trim (index $parts 1) " " }}
+
+        {{ if or (in $label "Admit") (in $label "Lastdate")   }}
+          <td>{{ $label }} : </td><td> <b style="color: rgb(187, 122, 1);">{{ $date }}</b></td>
+        {{ else if or (in $label "प्रारंभ") (in $label "Begin") (in $label "Start")  }}
+         <td>{{ $label }} : </td><td> <b style="color: green;">{{ $date }}</b></td>
+         {{ else if or (in $label "Result")  }}
+         <td>{{ $label }} : </td><td> <b style="color: rgb(3, 114, 179);">{{ $date }}</b></td>
+          {{ else if or (in $label "Center") (in $label "Update")  (in $label "Mode") }}
+          <td>{{ $label }} : </td><td> <b style="color: rgb(255, 0, 179);">{{ $date }}</b></td>
+          {{ else if or (in $label "Name") (in $label "Post")  (in $label "Examname") }}
+          <td>{{ $label }} : </td><td> <b style="color: blue;">{{ $date }}</b></td>
+           {{ else if or (in $label "Name") (in $label "Post")  (in $label "Exam Date") }}
+          <td>{{ $label }} : </td><td> <b style="color: rgb(40, 71, 3);">{{ $date }}</b></td>
         {{ else }}
-          <td colspan="2"><b>{{ . | safeHTML}}</b></td>
+         <td>{{ $label }} : </td><td><b>{{ $date }}</b></td>
         {{ end }}
-      </tr>
-    {{ else }}
-      <tr>
-        <td colspan="2">⚠️ No Information Updated </td>
-      </tr>
+
+      {{ else }}
+       <td colspan="2">{{ . }}</td>
+      {{ end }}
+     </tr>
     {{ end }}
-    </table>
+
+</table>
 {{ end }}
    
