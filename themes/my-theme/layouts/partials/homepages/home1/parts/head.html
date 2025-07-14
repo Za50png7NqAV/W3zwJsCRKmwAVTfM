@@ -17,10 +17,10 @@
 {{ with .Params.cssStyles }}
   {{ range . }}
     {{ $css := resources.Get . | resources.Minify | resources.Fingerprint }}
-    <link rel="preload" as="style" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}"></noscript>
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ end }}
 {{ end }}
+
 {{ if .Params.cssStyle }}
 <link rel="preload" as="style" href="{{ .Params.cssStyle | relURL }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ .Params.cssStyle | relURL }}"></noscript>
