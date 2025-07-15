@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-07-15T14:00:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/railway-icf-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-07-15T14:00:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-15T14:00:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/education/</loc>
     <lastmod>2025-07-15T13:02:22+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -12,8 +27,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-15T13:02:22+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/wbssc-assistant-teacher-vacancy-2025/</loc>
+    <lastmod>2025-07-15T12:40:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -99,11 +114,6 @@
   </url><url>
     <loc>http://localhost:1313/admitcard/rrb-alp-cbat-exam-city-2025/</loc>
     <lastmod>2025-07-11T13:22:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-07-11T11:40:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -464,11 +474,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-mts-vacancy-2025/</loc>
     <lastmod>2025-06-27T08:18:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/wbssc-assistant-teacher-vacancy-2025/</loc>
-    <lastmod>2025-06-26T20:40:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
