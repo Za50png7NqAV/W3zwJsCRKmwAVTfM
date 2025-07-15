@@ -8,7 +8,7 @@
       <h2 class="postname">{{ if .Params.PostName }}
         {{ .Params.PostName}}
         {{ end }}    </h2> </div>
-
+  {{ partial "adsense.html" . }}
 
 <div class ="back-card">
 {{ with .Params.shortinfo }}

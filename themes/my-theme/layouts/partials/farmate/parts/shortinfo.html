@@ -10,9 +10,8 @@
       {{ if eq (len $parts) 2 }}
         {{ $label := trim (index $parts 0) " " }}
         {{ $date := trim (index $parts 1) " " }}
-
-        {{ if or (in $label "Admit") (in $label "Lastdate")   }}
-          <td>{{ $label }} : </td><td> <b style="color: rgb(187, 122, 1);">{{ $date }}</b></td>
+        {{ if or (in $label "Admit") (in $label "Last")   }}
+          <td>{{ $label }} : </td><td> <b style="color: rgb(187, 75, 1);">{{ $date }}</b></td>
         {{ else if or (in $label "प्रारंभ") (in $label "Begin") (in $label "Start")  }}
          <td>{{ $label }} : </td><td> <b style="color: green;">{{ $date }}</b></td>
          {{ else if or (in $label "Result")  }}
