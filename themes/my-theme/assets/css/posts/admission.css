@@ -415,3 +415,13 @@ h1, h2, h3 {
             margin-bottom: 10px;
             color: var(--third-color);
         }
+
+        /* Responsive Design */
+@media (max-width: 600px) { 
+ .card {
+    padding: 0rem;
+    max-width:100%;
+  }
+
+
+}
