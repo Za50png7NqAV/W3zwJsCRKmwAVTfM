@@ -2,8 +2,13 @@
  </style>
 
 
-{{ partial "imp-codes/breadcrumb.html" . }}
-  <div class="yp-job-head">
+
+
+<div class="job-wrapper">
+
+  {{ partial "imp-codes/breadcrumb.html" . }}
+
+<div class="yp-job-head">
     <h2 style="margin-top:0; color:rgb(247, 113, 3)" >
       {{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
     </h2>
@@ -161,12 +166,13 @@
 </div>
 </div>
   
+  <!-- बाकी के partials जैसे adsense, random-list, keywords -->
   {{ partial "imp-codes/imageBanner.html" . }}
-
-
   {{ partial "imp-codes/random-list.html" . }}
   {{ partial "manual-update/button-group.html" . }}
   {{ partial "adsense.html" . }}
   {{ partial "imp-codes/keywords.html" . }}
-  
+
+</div>
+
     
