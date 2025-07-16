@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/chandigarh-high-court-reader-vacancy-2025/</loc>
-    <lastmod>2025-07-15T19:42:57+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mp/damoh-collector-office-deo-vacancy-2025/</loc>
+    <lastmod>2025-07-16T10:04:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-16T10:04:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/chandigarh-high-court-reader-vacancy-2025/</loc>
     <lastmod>2025-07-15T19:42:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
