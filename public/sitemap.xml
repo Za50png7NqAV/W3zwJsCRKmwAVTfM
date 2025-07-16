@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
+    <lastmod>2025-07-16T11:03:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-16T11:03:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/mp/damoh-collector-office-deo-vacancy-2025/</loc>
     <lastmod>2025-07-16T10:04:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-16T10:04:39+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bhel-artisan-vacancy-2025/</loc>
+    <lastmod>2025-07-16T09:40:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -19,11 +29,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/chandigarh-high-court-peon-vacancy-2025/</loc>
     <lastmod>2025-07-15T18:47:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
-    <lastmod>2025-07-15T16:03:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -84,11 +89,6 @@
   </url><url>
     <loc>http://localhost:1313/document/udid-disability-certificate/</loc>
     <lastmod>2025-07-13T20:26:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bhel-artisan-vacancy-2025/</loc>
-    <lastmod>2025-07-13T09:40:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
