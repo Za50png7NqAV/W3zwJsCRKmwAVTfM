@@ -420,7 +420,7 @@ h1, h2, h3 {
 @media (max-width: 600px) { 
  .card {
     padding: 0rem;
-    max-width:100%;
+    max-width:500px;
   }
 
 

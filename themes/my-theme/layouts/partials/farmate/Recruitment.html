@@ -164,6 +164,13 @@
     {{ end }}
   </table>
 </div>
+ {{ if .Params.faqs }}
+  <div class="faqs" id="faqs">
+    <b>🙋‍♀️ Frequently Asked Questions (FAQs) - {{ .Params.YojnaName }}</b>
+  <div class="faq">
+  {{ partial "farmate/parts/faqs.html" . }}
+    </div>
+    {{ end }} 
 </div>
   
   <!-- बाकी के partials जैसे adsense, random-list, keywords -->
