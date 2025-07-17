@@ -315,6 +315,8 @@ h1, h2, h3 {
             border-radius: 5px; /* Slightly rounded corners */
             font-size: 1rem; /* Readable font size */
             color: #333; /* Dark text color */
+            word-break: break-word;
+            box-sizing: border-box;
             transition: transform 0.2s; /* Smooth hover effect */
         }
 
@@ -409,8 +411,7 @@ h1, h2, h3 {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  border-top: 3px solid var(--third-color);
-  overflow-x: auto;               /* ✅ अगर कुछ बहुत चौड़ा हो */
+  border-top: 3px solid var(--third-color);             /* ✅ अगर कुछ बहुत चौड़ा हो */
   box-sizing: border-box;
 }
 
@@ -444,14 +445,57 @@ h1, h2, h3 {
 @media (max-width: 600px) { 
   .card {
     padding: 1rem; /* इसे 0rem से 1rem कर दें ताकि content की readability बनी रहे */
-    max-width: 100%; /* मोबाइल में overflow से बचने के लिए */
+    max-width: 400px; /* मोबाइल में overflow से बचने के लिए */
   }
-   .eligibility {
-    flex-direction: column;
-    gap: 15px;
-  }
+
+.eligibility {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.eligibility-card {
+  flex: 1 1 250px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid var(--third-color);
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make all content inside card wrap properly and stay within */
+.eligibility-card * {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Title */
+.eligibility-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--third-color);
+}
+
+
+
      .impdates {
-     max-width: 280px; /* Limit width */
+     max-width: 300px; /* Limit width */
        
         }
+        /* अंदर का कंटेंट बाहर न जाए */
+.eligibility-card * {
+  max-width: 100%;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  box-sizing: border-box;
+}
 }
