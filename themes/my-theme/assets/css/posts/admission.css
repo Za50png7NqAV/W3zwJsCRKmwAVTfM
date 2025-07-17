@@ -293,7 +293,7 @@ h1, h2, h3 {
         .impdates {
             background-color: #f4f7fa; /* Light gray background */
             border-radius: 10px; /* Rounded corners */
-            max-width: 300px; /* Limit width */
+            max-width: 400px; /* Limit width */
             margin: 2px auto; /* Center the container */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             font-family: 'Arial', sans-serif; 
@@ -450,4 +450,8 @@ h1, h2, h3 {
     flex-direction: column;
     gap: 15px;
   }
+     .impdates {
+     max-width: 280px; /* Limit width */
+       
+        }
 }
