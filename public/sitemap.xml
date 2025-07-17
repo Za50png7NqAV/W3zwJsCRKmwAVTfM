@@ -12,6 +12,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/update/ugc-net-june-2025/</loc>
+    <lastmod>2025-07-17T11:03:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/aadhaar-supervisor-vacancy-2025/</loc>
     <lastmod>2025-07-16T20:40:27+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -123,11 +128,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/result/hpsc-assistant-professor-result-2025/</loc>
-    <lastmod>2025-07-12T19:03:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/result/</loc>
     <lastmod>2025-07-12T19:03:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -279,11 +279,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-nda-ii-2025/</loc>
     <lastmod>2025-07-07T18:52:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admitcard/ugc-net-june-2025/</loc>
-    <lastmod>2025-07-07T11:03:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
