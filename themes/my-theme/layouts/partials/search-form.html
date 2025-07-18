@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Search Bar</title>
+    <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .search-section {
+        position: fixed;
+        top:0;
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 10px;
+    }
+
+    .search-form input[type="text"] {
+      flex: 1;
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .search-form input[type="text"]:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
+    .search-form button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+    .search-form button:hover {
+      background-color: #0056b3;
+    }
+
+    #search-results {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333;
+      overflow: scroll;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-section">
+    <form class="search-form" onsubmit="handleSearch(event)">
+      <input id="search-query" type="text" placeholder="Search..." />
+      <button type="submit">Submit</button>
+    </form>
+    <div id="search-results"></div>
+  </div>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('search-query');
+    const searchResults = document.getElementById('search-results');
+    let index, documents;
+
+    // JSON index load
+    fetch('/index.json')
+      .then(response => response.json())
+      .then(data => {
+        documents = data;
+        index = lunr(function () {
+          this.ref('permalink');
+          this.field('title');
+          this.field('content');
+          data.forEach(doc => this.add(doc));
+        });
+      })
+      .catch(error => console.error('Error loading index:', error));
+
+    // Realtime input search (optional)
+    searchInput.addEventListener('input', function () {
+      performSearch(this.value);
+    });
+
+    // Form submit handler
+    window.handleSearch = function (event) {
+      event.preventDefault();
+      const query = searchInput.value.trim();
+      if (!query || query.length < 2) return;
+
+      const results = index.search(query);
+      if (results.length === 0) {
+        // Directly open Google or custom search page
+        const siteSearchUrl = `https://www.google.com/search?q=site:yourdomain.com+${encodeURIComponent(query)}`;
+        window.open(siteSearchUrl, '_blank');
+        return;
+      }
+
+      // Show results
+      searchResults.innerHTML = '';
+      results.forEach(result => {
+        const doc = documents.find(d => d.permalink === result.ref);
+        const resultElement = document.createElement('div');
+        resultElement.innerHTML = `<h3><a href="${doc.permalink}">${doc.title}</a></h3><p>${doc.content.substring(0, 100)}...</p>`;
+        searchResults.appendChild(resultElement);
+      });
+    };
+
+    // Function for input-based search suggestion
+    function performSearch(query) {
+      if (!index || query.length < 2) {
+        searchResults.innerHTML = '';
+        return;
+      }
+
+      const results = index.search(query);
+      searchResults.innerHTML = '';
+
+      if (results.length === 0) {
+        const searchLink = document.createElement('p');
+        searchLink.innerHTML = `<a href="#" onclick="handleSearch(event)">🔍 Click to search "<strong>${query}</strong>"</a>`;
+        searchResults.appendChild(searchLink);
+        return;
+      }
+
+      results.forEach(result => {
+        const doc = documents.find(d => d.permalink === result.ref);
+        const resultElement = document.createElement('div');
+        resultElement.innerHTML = `<h3><a href="${doc.permalink}">${doc.title}</a></h3><p>${doc.content.substring(0, 100)}...</p>`;
+        searchResults.appendChild(resultElement);
+      });
+    }
+  });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>  
