@@ -86,7 +86,7 @@
     const searchResults = document.getElementById('search-results');
     let index, documents;
 
-    // JSON index load
+    // Load JSON index
     fetch('/index.json')
       .then(response => response.json())
       .then(data => {
@@ -100,48 +100,32 @@
       })
       .catch(error => console.error('Error loading index:', error));
 
-    // Realtime input search (optional)
+    // Realtime suggestion
     searchInput.addEventListener('input', function () {
       performSearch(this.value);
     });
 
-    // Form submit handler
+    // Submit handler
     window.handleSearch = function (event) {
-      event.preventDefault();
+      if (event) event.preventDefault();
       const query = searchInput.value.trim();
       if (!query || query.length < 2) return;
 
       const results = index.search(query);
-      if (results.length === 0) {
-        // Directly open Google or custom search page
-        const siteSearchUrl = `https://www.google.com/search?q=site:yourdomain.com+${encodeURIComponent(query)}`;
-        window.open(siteSearchUrl, '_blank');
-        return;
-      }
+      displayResults(results, query);
 
-      // Show results
-      searchResults.innerHTML = '';
-      results.forEach(result => {
-        const doc = documents.find(d => d.permalink === result.ref);
-        const resultElement = document.createElement('div');
-        resultElement.innerHTML = `<h3><a href="${doc.permalink}">${doc.title}</a></h3><p>${doc.content.substring(0, 100)}...</p>`;
-        searchResults.appendChild(resultElement);
-      });
+      // ✅ Always redirect to Google CSE format
+      const newURL = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+      window.location.hash = newURL;
     };
 
-    // Function for input-based search suggestion
-    function performSearch(query) {
-      if (!index || query.length < 2) {
-        searchResults.innerHTML = '';
-        return;
-      }
-
-      const results = index.search(query);
+    // Result Display
+    function displayResults(results, query) {
       searchResults.innerHTML = '';
 
       if (results.length === 0) {
         const searchLink = document.createElement('p');
-        searchLink.innerHTML = `<a href="#" onclick="handleSearch(event)">🔍 Click to search "<strong>${query}</strong>"</a>`;
+        searchLink.innerHTML = `<a href="#" onclick="handleHashSearch('${query}')">🔍 Click to search "<strong>${query}</strong>"</a>`;
         searchResults.appendChild(searchLink);
         return;
       }
@@ -153,8 +137,27 @@
         searchResults.appendChild(resultElement);
       });
     }
+
+    // Input-based suggestion
+    function performSearch(query) {
+      if (!index || query.length < 2) {
+        searchResults.innerHTML = '';
+        return;
+      }
+
+      const results = index.search(query);
+      displayResults(results, query);
+    }
+
+    // 🔍 Link click
+    window.handleHashSearch = function (query) {
+      const hashURL = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+      window.location.hash = hashURL;
+    };
   });
 </script>
 
 
+
 <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>  
+{{ partial "baseof-part/dynamic-link.html" . }}

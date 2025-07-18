@@ -110,41 +110,25 @@
 
     
     window.handleSearch = function (event) {
-      event.preventDefault();
+      if (event) event.preventDefault();
       const query = searchInput.value.trim();
       if (!query || query.length < 2) return;
 
       const results = index.search(query);
-      if (results.length === 0) {
-        
-        const siteSearchUrl = `https://www.google.com/search?q=site:yourdomain.com+${encodeURIComponent(query)}`;
-        window.open(siteSearchUrl, '_blank');
-        return;
-      }
+      displayResults(results, query);
 
       
-      searchResults.innerHTML = '';
-      results.forEach(result => {
-        const doc = documents.find(d => d.permalink === result.ref);
-        const resultElement = document.createElement('div');
-        resultElement.innerHTML = `<h3><a href="${doc.permalink}">${doc.title}</a></h3><p>${doc.content.substring(0, 100)}...</p>`;
-        searchResults.appendChild(resultElement);
-      });
+      const newURL = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+      window.location.hash = newURL;
     };
 
     
-    function performSearch(query) {
-      if (!index || query.length < 2) {
-        searchResults.innerHTML = '';
-        return;
-      }
-
-      const results = index.search(query);
+    function displayResults(results, query) {
       searchResults.innerHTML = '';
 
       if (results.length === 0) {
         const searchLink = document.createElement('p');
-        searchLink.innerHTML = `<a href="#" onclick="handleSearch(event)">🔍 Click to search "<strong>${query}</strong>"</a>`;
+        searchLink.innerHTML = `<a href="#" onclick="handleHashSearch('${query}')">🔍 Click to search "<strong>${query}</strong>"</a>`;
         searchResults.appendChild(searchLink);
         return;
       }
@@ -156,11 +140,55 @@
         searchResults.appendChild(resultElement);
       });
     }
+
+    
+    function performSearch(query) {
+      if (!index || query.length < 2) {
+        searchResults.innerHTML = '';
+        return;
+      }
+
+      const results = index.search(query);
+      displayResults(results, query);
+    }
+
+    
+    window.handleHashSearch = function (query) {
+      const hashURL = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+      window.location.hash = hashURL;
+    };
   });
 </script>
 
 
+
 <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>  
+
+
+<head>
+  <style>
+    table.gsc-search-box td, .gsc-clear-button {display:none;}
+  </style></head>
+
+  <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+  </script>
+  <div id="pse">
+  <div class="gcse-search"></div> </div>
+
+  <script>
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        const queryParam = this.getAttribute('data-search');
+        const newUrl = `?gsc.q=${encodeURIComponent(queryParam)}`;
+         window.history.pushState({}, '', newUrl);
+         document.querySelector("input.gsc-input").value = queryParam;
+         document.querySelector("button.gsc-search-button").click();
+      });
+    });
+    </script>
+      
+  
 
 <style>
     .search-section {
