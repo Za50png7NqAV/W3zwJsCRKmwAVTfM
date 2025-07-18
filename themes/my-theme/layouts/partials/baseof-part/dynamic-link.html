@@ -23,4 +23,21 @@
     });
     </script>
       
-  
+<script>
+  function removeGSCtabHash() {
+    // अगर hash जुड़ा है तो उसे remove करें
+    if (location.hash.startsWith("#gsc.tab=")) {
+      history.replaceState(null, document.title, window.location.pathname + window.location.search);
+    }
+  }
+
+  // Page load के 500ms बाद चेक करें
+  window.addEventListener("load", function () {
+    setTimeout(removeGSCtabHash, 100);
+  });
+
+  // किसी भी hashchange पर हटाएं (जैसे user search करे)
+  window.addEventListener("hashchange", function () {
+    setTimeout(removeGSCtabHash, 200); // थोड़ी देरी जरूरी है
+  });
+</script>

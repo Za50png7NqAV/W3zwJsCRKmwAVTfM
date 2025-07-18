@@ -1,6 +1,3 @@
- 
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -178,7 +175,7 @@
 .search-block {
   position: fixed;
   top: 0;
-  right: -100%;  
+  right: -100%; /* Screen के बाहर */
   width: 100%;
   height: 100vh;
   background: white;
@@ -188,7 +185,7 @@
 }
 
 .search-block.is-active {
-  right: 0;  
+  right: 0; /* अब स्क्रीन में दिखेगा */
 }
 .search-form-container {
       margin: 0;
@@ -411,7 +408,7 @@ p {
       const searchResults = document.getElementById('search-results');
       let index, documents;
 
-      
+      // Load JSON index
       fetch('/index.json')
         .then(response => response.json())
         .then(data => {
@@ -425,12 +422,12 @@ p {
         })
         .catch(error => console.error('Error loading index:', error));
 
-      
+      // Realtime suggestion
       searchInput.addEventListener('input', function () {
         performSearch(this.value);
       });
 
-      
+      // Submit handler
       window.handleSearch = function (event) {
         if (event) event.preventDefault();
         const query = searchInput.value.trim();
@@ -439,18 +436,18 @@ p {
         const results = index.search(query);
         displayResults(results, query);
 
-        
+        // ✅ Always redirect to Google CSE format
         const newURL = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
         window.location.hash = newURL;
       };
 
-      
+      // Highlight matched words
       function highlight(text, keyword) {
         const regex = new RegExp(`(${keyword})`, 'gi');
         return text.replace(regex, `<mark>$1</mark>`);
       }
 
-      
+      // Result Display
       function displayResults(results, query) {
         searchResults.innerHTML = '';
 
@@ -475,7 +472,7 @@ p {
         });
       }
 
-      
+      // Input-based suggestion
       function performSearch(query) {
         if (!index || query.length < 2) {
           searchResults.innerHTML = '';
@@ -486,7 +483,7 @@ p {
         displayResults(results, query);
       }
 
-      
+      // 🔍 Link click
       window.handleHashSearch = function (query) {
         const hashURL = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
         window.location.hash = hashURL;
@@ -494,51 +491,7 @@ p {
     });
   </script>
 
-  
-  
-
-<head>
-  <style>
-    table.gsc-search-box td, .gsc-clear-button {display:none;}
-  </style></head>
-
-  <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
-  </script>
-  <div id="pse">
-  <div class="gcse-search"></div> </div>
-
-  <script>
-    document.querySelectorAll('.dynamic-link').forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault(); 
-        const queryParam = this.getAttribute('data-search');
-        const newUrl = `?gsc.q=${encodeURIComponent(queryParam)}`;
-         window.history.pushState({}, '', newUrl);
-         document.querySelector("input.gsc-input").value = queryParam;
-         document.querySelector("button.gsc-search-button").click();
-      });
-    });
-    </script>
-      
-<script>
-  function removeGSCtabHash() {
-    
-    if (location.hash.startsWith("#gsc.tab=")) {
-      history.replaceState(null, document.title, window.location.pathname + window.location.search);
-    }
-  }
-
-  
-  window.addEventListener("load", function () {
-    setTimeout(removeGSCtabHash, 100);
-  });
-
-  
-  window.addEventListener("hashchange", function () {
-    setTimeout(removeGSCtabHash, 200); 
-  });
-</script>
+  <!-- Hugo Partial (Optional if you're using it) -->
+  {{ partial "baseof-part/dynamic-link.html" . }}
 </body>
 </html>
-
-
