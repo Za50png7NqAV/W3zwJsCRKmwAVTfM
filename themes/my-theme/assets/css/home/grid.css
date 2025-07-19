@@ -175,12 +175,16 @@ span {
     }
     
     .card-header {
-      font-size: 0.8rem;
+      font-size: 2rem;
     }
   }
   
   @media screen and (max-width: 480px) {
     .grid-container {
       grid-template-columns: 1fr;
+    }
+    .card {
+      max-width: 350px;
+      margin: auto;
     }
   }
