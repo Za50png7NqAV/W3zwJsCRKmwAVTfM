@@ -277,8 +277,8 @@ header {
 
 .left-sidebar,
 .right-sidebar {
-  max-width: 256px;
-  background-color: #fff;
+  width: 250px;
+  background-color: #eee;
   padding: 0;
   height: calc(100vh - 70px);
   overflow-y: auto;
@@ -303,7 +303,7 @@ header {
 }
 
 .main-content {
-  max-width: 768px;
+ max-width: 1100px;
   padding: 1rem;
 }
 
@@ -421,13 +421,13 @@ nav ul li a:hover {
 }
 .mobile-search {display: none;}
 /* ========== Responsive Design ========== */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .left-sidebar {
     display: none;
   }
 
   .main-content {
-    max-width: 768px;
+    max-width: 1024px;
     padding: 1rem;
   }
 
@@ -437,7 +437,7 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .mobile-search {display: block;}
   .hamburger {
     display: block;
