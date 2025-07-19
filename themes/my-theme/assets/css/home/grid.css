@@ -184,7 +184,7 @@ span {
       grid-template-columns: 1fr;
     }
     .card {
-      max-width: 350px;
+      max-width: 400px;
       margin: auto;
     }
   }
