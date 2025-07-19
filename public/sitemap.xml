@@ -2,23 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/psc-veterinary-officer-vacancy-2025/</loc>
-    <lastmod>2025-07-18T17:43:09+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mha-intelligence-bureau-acio-vacancy-2025/</loc>
+    <lastmod>2025-07-19T09:13:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-19T09:13:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mpesb-pat-2025/</loc>
+    <lastmod>2025-07-19T08:56:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
+    <lastmod>2025-07-18T13:11:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/psc-veterinary-officer-vacancy-2025/</loc>
     <lastmod>2025-07-18T17:43:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-senior-teacher-grade-iv-vacancy-2025/</loc>
     <lastmod>2025-07-18T16:29:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
-    <lastmod>2025-07-18T13:11:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -149,11 +159,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/uppsc-assistant-teacher-bharti-2025/</loc>
     <lastmod>2025-07-15T12:20:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mha-intelligence-bureau-acio-vacancy-2025/</loc>
-    <lastmod>2025-07-15T09:44:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -619,11 +624,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/jpsc-project-manager-2025/</loc>
     <lastmod>2025-06-24T09:03:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mpesb-mp-pat-2025/</loc>
-    <lastmod>2025-06-23T19:56:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
