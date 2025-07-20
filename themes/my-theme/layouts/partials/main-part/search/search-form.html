@@ -152,7 +152,11 @@
     .search-block.is-active {
       right: 0;
     }
-
+.search-form-container {
+  max-width: 600px;
+  margin: auto;
+  
+}
     .search-form {
       display: flex;
       align-items: center;
@@ -181,66 +185,102 @@
   background: white;
   z-index: 12;
   transition: 0.3s ease;
-  padding: 1.5rem;
+  padding: 0.8rem;
 }
 
 .search-block.is-active {
   right: 0; /* अब स्क्रीन में दिखेगा */
 }
-.search-form-container {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-    }
+.search-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
 
-    .search-section {
-      position: fixed;
-      top: 0;
-      background-color: white;
-      padding: 5px;
-      border-radius: 20px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-      width: 90%;
-      max-width: 500px;
-    }
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
 
-    .search-form {
-      display: flex;
-      gap: 10px;
-    }
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
 
-    .search-form input[type="text"] {
-      flex: 1;
-      padding: 12px 15px;
-      font-size: 16px;
-      border: 2px solid #ddd;
-      border-radius: 10px;
-      outline: none;
-      transition: 0.3s;
-    }
+.back-btn:hover {
+  color: #007BFF;
+}
 
-    .search-form input[type="text"]:focus {
-      border-color: #007bff;
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-    }
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+}
 
-    .search-form button {
-      background-color: #007bff;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.3s;
-      font-size: 16px;
-    }
+.search-icon {
+  position: absolute;
+  left: 12px;
+  font-size: 18px;
+  color: #aaa;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-    .search-form button:hover {
-      background-color: #0056b3;
-    }
+.search-input {
+  width: 100%;
+  padding: 10px 36px 10px 36px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 0 2px #007bff33;
+  outline: none;
+}
+
+.clear-input {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+  font-size: 16px;
+  display: none;
+}
+
+.clear-input:hover {
+  color: #ff4d4d;
+}
+
+.search-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
 
     #search-results {
       position: relative;
@@ -333,20 +373,28 @@ p {
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
 
-<!-- Place this inside <body> -->
+<!-- Inside <body> -->
 <div class="search-block" id="searchBlock">
-  <i class="bx bx-arrow-back search-cancel" id="searchCancel"></i>
-  <div class="search-form-container">
-    <div class="search-section">
-      <form class="search-form" onsubmit="handleSearch(event)">
-        <input id="search-query" class="search-input" type="text" placeholder="Search..." />
-        <button type="submit">Submit</button>
-      </form>
 
-      <div id="search-results"></div>
-      <div id="recent-searches"></div>
-      <iframe id="search-iframe" src="https://www.yojnaportal.com/" style="display: none; height: 600px; width: 100%; border: none;"></iframe>
-    </div>
+
+  <div class="search-form-container">
+    <form class="search-form" onsubmit="handleSearch(event)">
+      <i class="bx bx-arrow-back search-cancel" class="back-btn" id="searchCancel"></i>
+
+  <div class="search-input-wrapper">
+    <i class="bx bx-search search-icon"></i>
+    <input id="search-query" class="search-input" type="text" placeholder="Search..." />
+    <span class="clear-input" id="clearInputBtn">✕</span>
+  </div>
+
+  <button type="submit" class="search-btn">
+    <i class="bx bx-search"></i>
+  </button>
+    </form>
+
+    <div id="search-results"></div>
+    <div id="recent-searches"></div>
+    <iframe id="search-iframe" src="https://www.yojnaportal.com/" style="display: none; height: 600px; width: 100%; border: none;"></iframe>
   </div>
 </div>
     </nav>
@@ -495,38 +543,109 @@ p {
       showSearchHistory();
     }
 
-    function showSearchHistory() {
-      const history = JSON.parse(localStorage.getItem('searchHistory')) || [];
-      const container = document.getElementById('recent-searches');
-      container.innerHTML = '';
+   function showSearchHistory() {
+  const history = JSON.parse(localStorage.getItem('searchHistory')) || [];
+  const container = document.getElementById('recent-searches');
+  container.innerHTML = '';
 
-      if (history.length === 0) return;
+  if (history.length === 0) return;
 
-      const title = document.createElement('h4');
-      title.textContent = 'Recent Searches';
-      title.style.marginBottom = '5px';
-      container.appendChild(title);
+  const title = document.createElement('h4');
+  title.textContent = 'Recent Searches';
+  title.style.marginBottom = '5px';
+  container.appendChild(title);
 
-      history.forEach(query => {
-        const btn = document.createElement('button');
-        btn.textContent = query;
-        btn.style.margin = '3px';
-        btn.style.padding = '5px 10px';
-        btn.style.border = '1px solid #ccc';
-        btn.style.borderRadius = '5px';
-        btn.style.cursor = 'pointer';
-        btn.onclick = () => {
-          searchInput.value = query;
-          handleSearch();
-        };
-        container.appendChild(btn);
-      });
-    }
+  // 🔘 Clear All Button
+  const clearBtn = document.createElement('button');
+  clearBtn.textContent = '🗑️Clear  ';
+  clearBtn.style.marginBottom = '10px';
+  clearBtn.style.padding = '5px 3px';
+  clearBtn.style.backgroundColor = '#e74c3c';
+  clearBtn.style.color = '#fff';
+  clearBtn.style.border = 'none';
+  clearBtn.style.borderRadius = '5px';
+  clearBtn.style.cursor = 'pointer';
+  clearBtn.onclick = () => {
+    localStorage.removeItem('searchHistory');
+    showSearchHistory();
+  };
+  container.appendChild(clearBtn);
+
+  // 🔍 Individual Buttons with Icon + Text + Cut
+  history.forEach(query => {
+    const wrapper = document.createElement('div');
+    wrapper.style.display = 'inline-flex';
+    wrapper.style.alignItems = 'center';
+    wrapper.style.margin = '5px';
+    wrapper.style.border = '1px solid #ccc';
+    wrapper.style.borderRadius = '5px';
+    wrapper.style.overflow = 'hidden';
+    wrapper.style.backgroundColor = '#f9f9f9';
+
+    const iconSpan = document.createElement('span');
+    iconSpan.innerHTML = '<i class="bx bx-search"></i>';
+    iconSpan.style.padding = '2px 3px';
+    iconSpan.style.backgroundColor = '#e0e0e0';
+    iconSpan.style.borderRight = '1px solid #ccc';
+
+    const btn = document.createElement('button');
+    btn.textContent = query;
+    btn.style.padding = '3px 5px';
+    btn.style.border = 'none';
+    btn.style.background = 'none';
+    btn.style.cursor = 'pointer';
+    btn.style.fontSize = '14px';
+    btn.onclick = () => {
+      searchInput.value = query;
+      handleSearch();
+    };
+
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = '✕';
+    closeBtn.style.padding = '3px 5px';
+    closeBtn.style.border = 'none';
+    closeBtn.style.backgroundColor = '#ffe6e6';
+    closeBtn.style.cursor = 'pointer';
+    closeBtn.title = 'Remove';
+
+    closeBtn.onclick = () => {
+      const newHistory = history.filter(item => item !== query);
+      localStorage.setItem('searchHistory', JSON.stringify(newHistory));
+      showSearchHistory(); // refresh UI
+    };
+
+    wrapper.appendChild(iconSpan);
+    wrapper.appendChild(btn);
+    wrapper.appendChild(closeBtn);
+    container.appendChild(wrapper);
+  });
+}
 
     // On page load, show previous search history
     showSearchHistory();
   });
   
+</script>
+<script>
+  const searchInput = document.getElementById('search-query');
+const clearInputBtn = document.getElementById('clearInputBtn');
+
+// Show/hide clear button on input
+searchInput.addEventListener('input', () => {
+  clearInputBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
+});
+
+// Clear input on click
+clearInputBtn.addEventListener('click', () => {
+  searchInput.value = '';
+  clearInputBtn.style.display = 'none';
+  searchInput.focus();
+
+  // Optional: clear search result and iframe too
+  document.getElementById('search-results').innerHTML = '';
+  document.getElementById('search-iframe').style.display = 'none';
+});
+
 </script>
 
   <!-- Hugo Partial (Optional if you're using it) -->
