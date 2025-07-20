@@ -182,9 +182,11 @@ span {
   @media screen and (max-width: 480px) {
     .grid-container {
       grid-template-columns: 1fr;
+       gap: 0px;
+       left:0;
     }
     .card {
-      max-width: 80%;
+      max-width: 95%;
       margin: auto;
     }
   }
