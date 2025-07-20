@@ -94,17 +94,19 @@ a:link  {text-decoration: none;}
   color: #047857;
 }
 /* ========== sticky-anchor========== */
+  div {
+    scroll-margin-top: 6.2rem; /* Sticky bar height + थोड़ा एक्स्ट्रा */
+  }
   .sticky-anchor {
     position: sticky;
-    top: 15px;
+    top: 4rem;
     z-index: 10;
     background: #fff;
-    border-bottom: 1px solid #ddd;
+    box-shadow: 2px 5px 8px black;
     overflow-x: auto;
     white-space: nowrap;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
-
   .sticky-anchor-inner {
     display: flex;
     gap: 8px;
@@ -126,9 +128,7 @@ a:link  {text-decoration: none;}
   .sticky-anchor a:hover {
     background-color: #bae6fd;
   }
-  div {
-    scroll-margin-top: 80px; /* Sticky bar height + थोड़ा एक्स्ट्रा */
-  }
+
   
   /* ========== Sections & Conclusion ========== */
 .section {

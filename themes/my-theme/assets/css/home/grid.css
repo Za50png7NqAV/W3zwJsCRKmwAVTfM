@@ -113,9 +113,12 @@
     content: " →";
   }
    /* ========== sticky-anchor========== */
+   span {
+   scroll-margin-top: 7rem; /* Sticky bar height + थोड़ा एक्स्ट्रा */
+  }
   .sticky-anchor {
     position: sticky;
-    top: 10px;
+    top: 4rem;
     z-index: 10;
     background: #fff;
     border-bottom: 1px solid #ddd;
@@ -147,9 +150,7 @@
   .sticky-anchor a:hover {
     background-color: #bae6fd;
   }
-span {
-   scroll-margin-top: 70px; /* Sticky bar height + थोड़ा एक्स्ट्रा */
-  }
+
   /* Badge for new items */
   .new-badge {
     display: inline-block;

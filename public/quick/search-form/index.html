@@ -49,11 +49,11 @@
       width: 100%;
       background: var(--color-white);
       box-shadow: var(--shadow-medium);
-      z-index: 100;
+      z-index: 99;
     }
 
-    .container {
-      max-width: 1200px;
+    .nav-container {
+      max-width: 1600px;
       margin: auto;
       padding: 0 1rem;
       display: flex;
@@ -147,7 +147,7 @@
       width: 100%;
       height: 100vh;
       background: var(--color-white);
-      z-index: 12;
+      z-index: 99;
       transition: 0.3s ease;
       padding: 1.5rem;
     }
@@ -355,45 +355,45 @@ p {
         display: none;
       }
     }
-    iframe { height: 600px;
-    width: 100%; }
+    
   </style>
 </head>
-<body>
+
 
   <header class="header">
-    <nav class="container">
-     
+    <div class="nav-container">
       <div class="burger" id="burger">
         <div class="burger-line"></div>
         <div class="burger-line"></div>
         <div class="burger-line"></div>
       </div>
-       <a href="#" class="brand">
+       <a href="/" class="brand">
         <img class="logo-img" src="/logo/logo-1080x200.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" />
       </a>
+       
       <div class="menu" id="menu">
         <ul class="menu-inner">
-          <li><a href="#" class="menu-link">Home</a></li>
-          <li><a href="#" class="menu-link">About</a></li>
-          <li><a href="#" class="menu-link">Services</a></li>
-          <li><a href="#" class="menu-link">Projects</a></li>
-          <li><a href="#" class="menu-link">Support</a></li>
+          <li><a href="#" onclick="setPreferredHome()" class="menu-link">Switch</a></li>
+          <li><a href="/" class="menu-link"> Home</a></li>
+          <li> <a href="/pdf-forms/" class="menu-link">Forms</a></li> 
+          <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
+          <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
+          <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
 
 
 <div class="search-block" id="searchBlock">
-
-
-  <div class="search-form-container">
-    <form class="search-form" onsubmit="handleSearch(event)">
-      <i class="bx bx-arrow-back search-cancel" class="back-btn" id="searchCancel"></i>
+ <div class="search-form-container">
+    <form class="search-form" onsubmit="handleSearch(event)" method="post" action="" name="search-form">
+    <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
+    <input type="hidden" name="use-in" class="advnce" value="TopSearch">
+  <i class="bx bx-arrow-back search-cancel" class="back-btn" id="searchCancel"></i>
 
   <div class="search-input-wrapper">
     <i class="bx bx-search search-icon"></i>
-    <input id="search-query" class="search-input" type="text" placeholder="Search..." />
+    <input id="search-query" class="search-input" name="Search" type="text" placeholder="Search..." />
     <span class="clear-input" id="clearInputBtn">✕</span>
   </div>
 
@@ -401,20 +401,17 @@ p {
     <i class="bx bx-search"></i>
   </button>
     </form>
-
     <div id="search-results"></div>
     <div id="recent-searches"></div>
-    <iframe id="search-iframe" src="https://www.yojnaportal.com/" style="display: none; height: 600px; width: 100%; border: none;"></iframe>
+    <iframe id="search-iframe" src="https://www.yojnaportal.com/menu" style="display: none; height: 600px; width: 100%; border: none;"></iframe>
   </div>
 </div>
-    </nav>
+</div>
   </header>
-
+  <button id="installBtn" style="display:none;"  >
+   <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
+</button>
   <div class="overlay" id="overlay"></div>
-
-  <div class="search-block" id="searchBlock">
- <iframe src="https://www.yojnaportal.com/"></iframe>
-  </div>
 
   <script>
     const burger = document.getElementById('burger');
@@ -449,13 +446,6 @@ p {
       searchBlock.classList.remove('is-active');
     });
   </script>
-</body>
-</html>
-
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
 <script>
@@ -637,17 +627,17 @@ p {
   
 </script>
 <script>
-  const searchInput = document.getElementById('search-query');
+  const searchInput2 = document.getElementById('search-query');
 const clearInputBtn = document.getElementById('clearInputBtn');
 
 
-searchInput.addEventListener('input', () => {
-  clearInputBtn.style.display = searchInput.value.length > 0 ? 'block' : 'none';
+searchInput2.addEventListener('input', () => {
+  clearInputBtn.style.display = searchInput2.value.length > 0 ? 'block' : 'none';
 });
 
 
 clearInputBtn.addEventListener('click', () => {
-  searchInput.value = '';
+  searchInput2.value = '';
   clearInputBtn.style.display = 'none';
   searchInput.focus();
 
@@ -657,7 +647,44 @@ clearInputBtn.addEventListener('click', () => {
 });
 
 </script>
-
+<script>
+function setPreferredHome() {
+  const currentPref = localStorage.getItem("preferredHome");
+  if (currentPref === "homepage") {
+    localStorage.removeItem("preferredHome");
+    window.location.href = '/';
+  } else {
+    localStorage.setItem("preferredHome", "homepage");
+    window.location.href = '/homepage/';
+  }
+}
+</script>
+<script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzA_zNbxIRDyx8hjYvfoRm97aM9SM1oKceu8ZYnmFIleTXvO5iULYRaBXn_ecGwN3pJ/exec';
+        const form = document.forms['search-form'];
+        
+        
+        const timestampField = document.getElementById('timestamp-field');
+        const now = new Date();
+        const formattedDate = now.toLocaleString('en-GB', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        }).replace(',', '');
+        timestampField.value = formattedDate;
+      
+        
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(() => alert("Thank you! Your form is submitted successfully."))
+            .then(() => { window.location.reload(); })
+            .catch(error => console.error('Error!', error.message));
+        });
+      </script>
   
   
 
@@ -702,7 +729,6 @@ clearInputBtn.addEventListener('click', () => {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
-</body>
-</html>
+
 
 
