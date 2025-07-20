@@ -27,6 +27,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/document/vahan-rc-card-online/</loc>
+    <lastmod>2025-07-20T08:48:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/mppgcl-various-posts-2025/</loc>
     <lastmod>2025-07-19T18:13:14+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -359,11 +364,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-nda-ii-2025/</loc>
     <lastmod>2025-07-07T18:52:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/vahan-rc-card-online/</loc>
-    <lastmod>2025-07-07T08:48:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1469,11 +1469,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pmmvy-pdf-form-apply/</loc>
     <lastmod>2025-03-01T18:49:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/card/print-parivahan-rc-online/</loc>
-    <lastmod>2025-02-27T20:04:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
