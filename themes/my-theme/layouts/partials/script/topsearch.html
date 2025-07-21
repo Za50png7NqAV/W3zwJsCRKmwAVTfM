@@ -1,0 +1,2 @@
+{{ $TopSearch := resources.Get "js/main/topsearch.js" | minify | fingerprint }}
+<script src="{{ $TopSearch.Permalink }}" integrity="{{ $TopSearch.Data.Integrity }}" defer></script>

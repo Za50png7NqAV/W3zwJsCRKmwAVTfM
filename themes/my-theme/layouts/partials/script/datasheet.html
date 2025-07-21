@@ -1,0 +1,2 @@
+{{ $sheetheader := resources.Get "js/general/datasheet.js" | minify | fingerprint }}
+<script src="{{ $sheetheader.Permalink }}" integrity="{{ $sheetheader.Data.Integrity }}" defer></script>

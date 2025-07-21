@@ -1,5 +1,5 @@
 
-{{ $styles := slice "css/main/yp-main.css" }}
+{{ $styles := slice "css/main/yp-main.css" "css/main/topsearch.css" }}
 {{ range $styles }}
   {{ with resources.Get . | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
