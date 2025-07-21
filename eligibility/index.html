@@ -98,7 +98,7 @@
 
 
   
-    <link rel="stylesheet" href="/css/main/yp-base-main.min.97111d31f4d1150f328898e7b7369550c3d417b730b1b77d83c6c7d1913b5755.css" integrity="sha256-lxEdMfTRFQ8yiJjntzaVUMPUF7cwsbd9g8bH0ZE7V1U=">
+    <link rel="stylesheet" href="/css/main/yp-base-main.min.ac16a90b0b522b14ce3c1f8675786afba78825fe0d7b1a12b906ff0e4361d85a.css" integrity="sha256-rBapCwtSKxTOPB&#43;GdXhq&#43;6eIJf4NexoSuQb/DkNh2Fo=">
   
 
 
@@ -138,48 +138,653 @@
  
     
   <header class="header">
-    
- <div class="header-container">
-      <div class="header-content">
-        
-        <div class="main-logo">
-        <img class="logo-img" src="/logo/logo-100x100.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" /><a href="/" class="logo"><img style="width:150px;" src="/svg/yojnaportal.svg"  alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" ></a>
-      </div>
-       <button onclick="setPreferredHome()">🏠 Switch Home</button>
-          <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Header</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
-         <ul class="nav-menu">
-                
-             <div class="mobile-search"> <div class="click-iframe" data-src="/quick/search/" data-title="Quick Search">
-    <div class="iframe-placeholder" style="max-width:600px;margin:auto;height:60px;display:flex;align-items:center;gap:10px;padding:10px 15px;background:#fff;border:1px solid #ccc;border-radius:8px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.1);font-size:16px;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="gray" width="24" height="24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1116.65 6.65a7.5 7.5 0 010 10.6z" />
-      </svg>
-      <span style="color:#888;">Search Here ...</span>
-    </div>
-  </div></div>
-              <li class="active"><a href="/"> <i class="fa fa -home"></i>Home</a></li>
-              <li><a href="/pdf-forms/">Forms</a></li>
-              <li><a href="/baner-poster-update/">Poster</a></li>
-              <li><a href="/quick/last-date/">LastDate</a></li>
-              <li><a href="/imp-links/">Useful</a></li>
-              <li><a href="/latest-update/">Latest</a></li>
-              <li><a href="/latest-schemes/">Schemes</a></li>
-              <li><a href="/latest-jobs/">Jobs</a></li>
-              <li><a href="/menu/" class="btn-primary">Menu</a></li>
-          </ul>
-          
+    :root {
+      --color-black: hsl(0, 0%, 10%);
+      --color-darks: hsl(0, 0%, 25%);
+      --color-greys: hsl(0, 0%, 60%);
+      --color-light: hsl(0, 0%, 95%);
+      --color-white: hsl(0, 0%, 100%);
+      --color-blue-100: hsl(217, 91%, 65%);
+      --color-blue-200: hsl(221, 83%, 55%);
+      --color-blue-300: hsl(224, 76%, 45%);
+      --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      
+      background-color: var(--color-white);
+      color: var(--color-black);
+    }
+
+   .menu a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header.header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: var(--color-white);
+      box-shadow: var(--shadow-medium);
+      z-index: 99;
+    }
+
+    .nav-container {
+      max-width: 1600px;
+      font-family: 'Rubik', sans-serif;
+      margin: auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4rem;
+    }
+
+    .brand {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--color-blue-200);
+      text-transform: uppercase;
+    }
+
+    .burger {
+      display: block;
+      width: 1.6rem;
+      cursor: pointer;
+    }
+
+    .burger-line {
+      width: 100%;
+      height: 2px;
+      background: var(--color-black);
+      margin: 5px 0;
+      border-radius: 10px;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 80%;
+      height: 100vh;
+      background: var(--color-white);
+      box-shadow: var(--shadow-medium);
+      transition: 0.3s ease;
+      z-index: 11;
+    }
+
+    .menu.is-active {
+      left: 0;
+    }
+
+    .menu-inner {
+      padding: 5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .menu-link {
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: var(--color-black);
+    }
+
+    .menu-link:hover {
+      color: var(--color-blue-200);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 10;
+      transition: 0.3s ease;
+    }
+
+    .overlay.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .search-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .search-block {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      background: var(--color-white);
+      z-index: 99;
+      transition: 0.3s ease;
+      padding: 1.5rem;
+    }
+
+    .search-block.is-active {
+      right: 0;
+    }
+.search-form-container {
+  max-width: 600px;
+  margin: auto;
+  
+}
+    .search-form {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 0.75rem 1.25rem;
+      border: none;
+      border-radius: 5px;
+      background: var(--color-light);
+      font-size: 1rem;
+    }
+
+    .search-cancel {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+.search-block {
+  position: fixed;
+  top: 0;
+  right: -100%;  
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 12;
+  transition: 0.3s ease;
+  padding: 0.8rem;
+}
+
+.search-block.is-active {
+  right: 0;  
+}
+.search-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #007BFF;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  font-size: 18px;
+  color: #aaa;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 36px 10px 36px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 0 2px #007bff33;
+  outline: none;
+}
+
+.clear-input {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+  font-size: 16px;
+  display: none;
+}
+
+.clear-input:hover {
+  color: #ff4d4d;
+}
+
+.search-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+    #search-results {
+      position: relative;
+      margin-top: 2px;
+      font-size: 14px;
+      color: #333;
+      overflow: auto;
+      max-height: 500px;
+    }
+    #search-results div {
+    border: 1px solid #333;
+    padding: 2px;
+  border-bottom: 1px solid #eee;
+}
+  a:link {text-decoration: none;}
+  a:hover { color:#367404}
+    mark {
+        background-color: yellow;
+      color: black;
+      padding: 0 2px;
+      border-radius: 3px;
+    }
+    h3 {
+
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+p {
+    display: block;
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.logo-img {
+  margin-top:5px;
+  width: 200px;}
+
+    @media (min-width: 768px) {
+      .burger {
+        display: none;
+      }
+
+      .menu {
+        position: static;
+        height: auto;
+        width: auto;
+        display: flex;
+        box-shadow: none;
+        background: none;
+        left: auto;
+      }
+
+      .menu-inner {
+        flex-direction: row;
+        padding: 0;
+        gap: 2rem;
+      }
+
+      .overlay {
+        display: none;
+      }
+    }
+    
+  </style>
+</head>
+
+
+  <header class="header">
+    <div class="nav-container">
+      <div class="burger" id="burger">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
       </div>
+       <a href="/" class="brand">
+        <img class="logo-img" src="/logo/logo-1080x200.png" alt="YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily"  loading="lazy" />
+      </a>
+       
+      <div class="menu" id="menu">
+        <ul class="menu-inner">
+          <li><a href="#" onclick="setPreferredHome()" class="menu-link">Switch</a></li>
+          <li><a href="/" class="menu-link"> Home</a></li>
+          <li> <a href="/pdf-forms/" class="menu-link">Forms</a></li> 
+          <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
+          <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
+          <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+        </ul>
+      </div>
+     <i class="bx bx-search search-toggle" id="searchToggle"></i>
+
+
+<div class="search-block" id="searchBlock">
+ <div class="search-form-container">
+    <form class="search-form" onsubmit="handleSearch(event)" method="post" action="" name="search-form">
+    <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
+    <input type="hidden" name="use-in" class="advnce" value="TopSearch">
+  <i class="bx bx-arrow-back search-cancel" class="back-btn" id="searchCancel"></i>
+
+  <div class="search-input-wrapper">
+    <i class="bx bx-search search-icon"></i>
+    <input id="search-query" class="search-input" name="Search" type="text" placeholder="Search..." />
+    <span class="clear-input" id="clearInputBtn">✕</span>
   </div>
-<button id="installBtn" style="display:none;"  >
+
+  <button type="submit" class="search-btn">
+    <i class="bx bx-search"></i>
+  </button>
+    </form>
+    <div id="search-results"></div>
+    <div id="recent-searches"></div>
+    <iframe id="search-iframe" src="/menu" style="display: none; height: 600px; width: 100%; border: none;" name="menu"></iframe>
+  </div>
+</div>
+</div>
+  </header>
+  <button id="installBtn" style="display:none;"  >
    <img width="30px" src="https://www.yojnaportal.com/logo/logo-100x100.png" alt="App Icon"> Yojna Portal App   <span style="color:blue; font-weight:700;">  Install </span>
 </button>
+  <div class="overlay" id="overlay"></div>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    const overlay = document.getElementById('overlay');
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBlock = document.getElementById('searchBlock');
+    const searchCancel = document.getElementById('searchCancel');
+
+    burger.addEventListener('click', () => {
+      menu.classList.add('is-active');
+      overlay.classList.add('is-active');
+    });
+
+    overlay.addEventListener('click', () => {
+      menu.classList.remove('is-active');
+      overlay.classList.remove('is-active');
+    });
+
+    document.querySelectorAll('.menu-link').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('is-active');
+        overlay.classList.remove('is-active');
+      });
+    });
+
+    searchToggle.addEventListener('click', () => {
+      searchBlock.classList.add('is-active');
+    });
+
+    searchCancel.addEventListener('click', () => {
+      searchBlock.classList.remove('is-active');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('search-query');
+    const searchResults = document.getElementById('search-results');
+    const searchIframe = document.getElementById('search-iframe');
+    let index, documents;
+
+    
+    fetch('/index.json')
+      .then(response => response.json())
+      .then(data => {
+        documents = data;
+        index = lunr(function () {
+          this.ref('permalink');
+          this.field('title');
+          this.field('content');
+          data.forEach(doc => this.add(doc));
+        });
+      })
+      .catch(error => console.error('Error loading index:', error));
+
+    
+    searchInput.addEventListener('input', function () {
+      performSearch(this.value);
+    });
+
+    
+    window.handleSearch = function (event) {
+      if (event) event.preventDefault();
+      const query = searchInput.value.trim();
+      if (!query || query.length < 2) return;
+
+      const results = index.search(query);
+      displayResults(results, query);
+      saveSearchToHistory(query);
+
+      
+      const newURL = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+      window.location.hash = newURL;
+    };
+
+    
+    function highlight(text, keyword) {
+      const regex = new RegExp(`(${keyword})`, 'gi');
+      return text.replace(regex, `<mark>$1</mark>`);
+    }
+
+    
+    function displayResults(results, query) {
+      searchResults.innerHTML = '';
+
+      if (results.length === 0) {
+        searchIframe.style.display = 'block'; 
+        return;
+      }
+
+      searchIframe.style.display = 'none'; 
+
+      results.forEach(result => {
+        const doc = documents.find(d => d.permalink === result.ref);
+        const titleHighlighted = highlight(doc.title, query);
+        const contentSnippet = doc.content.substring(0, 80);
+        const contentHighlighted = highlight(contentSnippet, query);
+
+        const resultElement = document.createElement('div');
+        resultElement.innerHTML = `
+          <h3><a href="${doc.permalink}">${titleHighlighted}</a></h3>
+          <p>${contentHighlighted}...</p>`;
+        searchResults.appendChild(resultElement);
+      });
+    }
+
+    
+    function performSearch(query) {
+      if (!index || query.length < 2) {
+        searchResults.innerHTML = '';
+        searchIframe.style.display = 'none';
+        return;
+      }
+
+      const results = index.search(query);
+      displayResults(results, query);
+    }
+
+    
+    function saveSearchToHistory(query) {
+      let history = JSON.parse(localStorage.getItem('searchHistory')) || [];
+      if (!history.includes(query)) {
+        history.unshift(query);
+        if (history.length > 10) history = history.slice(0, 10); 
+        localStorage.setItem('searchHistory', JSON.stringify(history));
+      }
+      showSearchHistory();
+    }
+
+   function showSearchHistory() {
+  const history = JSON.parse(localStorage.getItem('searchHistory')) || [];
+  const container = document.getElementById('recent-searches');
+  container.innerHTML = '';
+
+  if (history.length === 0) return;
+
+  const title = document.createElement('h4');
+  title.textContent = 'Recent Searches';
+  title.style.marginBottom = '5px';
+  container.appendChild(title);
+
+  
+  const clearBtn = document.createElement('button');
+  clearBtn.textContent = '🗑️Clear  ';
+  clearBtn.style.marginBottom = '10px';
+  clearBtn.style.padding = '5px 3px';
+  clearBtn.style.backgroundColor = '#e74c3c';
+  clearBtn.style.color = '#fff';
+  clearBtn.style.border = 'none';
+  clearBtn.style.borderRadius = '5px';
+  clearBtn.style.cursor = 'pointer';
+  clearBtn.onclick = () => {
+    localStorage.removeItem('searchHistory');
+    showSearchHistory();
+  };
+  container.appendChild(clearBtn);
+
+  
+  history.forEach(query => {
+    const wrapper = document.createElement('div');
+    wrapper.style.display = 'inline-flex';
+    wrapper.style.alignItems = 'center';
+    wrapper.style.margin = '5px';
+    wrapper.style.border = '1px solid #ccc';
+    wrapper.style.borderRadius = '5px';
+    wrapper.style.overflow = 'hidden';
+    wrapper.style.backgroundColor = '#f9f9f9';
+
+    const iconSpan = document.createElement('span');
+    iconSpan.innerHTML = '<i class="bx bx-search"></i>';
+    iconSpan.style.padding = '2px 3px';
+    iconSpan.style.backgroundColor = '#e0e0e0';
+    iconSpan.style.borderRight = '1px solid #ccc';
+
+    const btn = document.createElement('button');
+    btn.textContent = query;
+    btn.style.padding = '3px 5px';
+    btn.style.border = 'none';
+    btn.style.background = 'none';
+    btn.style.cursor = 'pointer';
+    btn.style.fontSize = '14px';
+    btn.onclick = () => {
+      searchInput.value = query;
+      handleSearch();
+    };
+
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = '✕';
+    closeBtn.style.padding = '3px 5px';
+    closeBtn.style.border = 'none';
+    closeBtn.style.backgroundColor = '#ffe6e6';
+    closeBtn.style.cursor = 'pointer';
+    closeBtn.title = 'Remove';
+
+    closeBtn.onclick = () => {
+      const newHistory = history.filter(item => item !== query);
+      localStorage.setItem('searchHistory', JSON.stringify(newHistory));
+      showSearchHistory(); 
+    };
+
+    wrapper.appendChild(iconSpan);
+    wrapper.appendChild(btn);
+    wrapper.appendChild(closeBtn);
+    container.appendChild(wrapper);
+  });
+}
+
+    
+    showSearchHistory();
+  });
+  
+</script>
+<script>
+  const searchInput2 = document.getElementById('search-query');
+const clearInputBtn = document.getElementById('clearInputBtn');
 
 
+searchInput2.addEventListener('input', () => {
+  clearInputBtn.style.display = searchInput2.value.length > 0 ? 'block' : 'none';
+});
+
+
+clearInputBtn.addEventListener('click', () => {
+  searchInput2.value = '';
+  clearInputBtn.style.display = 'none';
+  searchInput.focus();
+
+  
+  document.getElementById('search-results').innerHTML = '';
+  document.getElementById('search-iframe').style.display = 'none';
+});
+
+</script>
 <script>
 function setPreferredHome() {
   const currentPref = localStorage.getItem("preferredHome");
@@ -192,11 +797,82 @@ function setPreferredHome() {
   }
 }
 </script>
+<script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzA_zNbxIRDyx8hjYvfoRm97aM9SM1oKceu8ZYnmFIleTXvO5iULYRaBXn_ecGwN3pJ/exec';
+        const form = document.forms['search-form'];
+        
+        
+        const timestampField = document.getElementById('timestamp-field');
+        const now = new Date();
+        const formattedDate = now.toLocaleString('en-GB', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        }).replace(',', '');
+        timestampField.value = formattedDate;
+      
+        
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(() => alert("Thank you! Your form is submitted successfully."))
+            .then(() => { window.location.reload(); })
+            .catch(error => console.error('Error!', error.message));
+        });
+      </script>
+  
+  
+
+<head>
+  <style>
+    table.gsc-search-box td, .gsc-clear-button {display:none;}
+  </style></head>
+
+  <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+  </script>
+  <div id="pse">
+  <div class="gcse-search"></div> </div>
+
+  <script>
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        const queryParam = this.getAttribute('data-search');
+        const newUrl = `?gsc.q=${encodeURIComponent(queryParam)}`;
+         window.history.pushState({}, '', newUrl);
+         document.querySelector("input.gsc-input").value = queryParam;
+         document.querySelector("button.gsc-search-button").click();
+      });
+    });
+    </script>
+      
+<script>
+  function removeGSCtabHash() {
+    
+    if (location.hash.startsWith("#gsc.tab=")) {
+      history.replaceState(null, document.title, window.location.pathname + window.location.search);
+    }
+  }
+
+  
+  window.addEventListener("load", function () {
+    setTimeout(removeGSCtabHash, 100);
+  });
+
+  
+  window.addEventListener("hashchange", function () {
+    setTimeout(removeGSCtabHash, 200); 
+  });
+</script>
+
+
     </header>
     
-   <body>
- 
-    
+  <body>
+   
   <div class="main-container scroll-fade">
    
     <aside class="left-sidebar" id="leftSidebar">
@@ -226,45 +902,18 @@ function setPreferredHome() {
         
         
         
-          <li class="card-item">
-            <a class="card-title" href="/how-to/samagra-adhar-de-link-mp/" >Samagra Adhar De Link 2025, Apply &amp; Delink pdf Form</a>
-            
-          <div class="card-tags">
-        
-        <a href="/pdf-forms/">📄 PDF Form</a>
-      </div>
-
-      <div class="card-date">📅 05 May 2025</div>
-          </li>
-       
-        
     
         
         
           <li class="card-item">
-            <a class="card-title" href="/mp/mpbhuabhilekh-certified-copy/" >MP Bhuabhilekh Khasra / Naksha / B1 / Bhu-Pushtika Certified Copy Download</a>
-            
-          <div class="card-tags">
-        
-        <a href="/pdf-forms/">📄 PDF Form</a>
-      </div>
-
-      <div class="card-date">📅 20 Feb 2025</div>
-          </li>
-       
-        
-    
-        
-        
-          <li class="card-item">
-            <a class="card-title" href="/admitcard/dsssb-various-post-admit-card-2025-released/" >DSSSB Admit Card 2025 Released for Various Post Codes</a>
+            <a class="card-title" href="/jobs/ssc-mts-vacancy-2025/" >SSC Multi Tasking Staff MTS Vacancy 2025 Online Form</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 29 Jun 2025</div>
+      <div class="card-date">📅 27 Jun 2025</div>
           </li>
        
         
@@ -274,17 +923,8 @@ function setPreferredHome() {
     
         
         
-          <li class="card-item">
-            <a class="card-title" href="/jobs/mpesb-primary-teacher-recruitment-2025/" >MPESB Primary School Teacher Selection Test 2025 Online Form</a>
-            
-          <div class="card-tags">
+    
         
-        
-      </div>
-
-      <div class="card-date">📅 19 Jul 2025</div>
-          </li>
-       
         
     
     <hr>
@@ -298,6 +938,78 @@ function setPreferredHome() {
 
 
 <ul class="card-list">
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/profile/mptaas-profile-otr-update/" target="_blank">
+        
+          MPTAAS Profile Registration 2025
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 20 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/document/vahan-rc-card-online/" target="_blank">
+        
+          Vehicle Registration Certificate (RC) –  Download &amp; Details
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 20 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/profile/mp-rojgar-otr-form/" target="_blank">
+        
+          MP Rojgar Panjiyan Online Registration 2025
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 20 Jul 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/education/mp/super-100-examination-form-2025/" target="_blank">
+        
+          Super 100 Examination Form 2025
+        
+        
+      </a>
+
+      <div class="card-tags">
+        <a href="/extended/">📌 Extended</a>
+        
+      </div>
+
+      <div class="card-date">📅 20 Jul 2025</div>
+    </li>
   
     
     <li class="card-item">
@@ -405,78 +1117,6 @@ function setPreferredHome() {
       </div>
 
       <div class="card-date">📅 19 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/mpesb-primary-teacher-recruitment-2025/" target="_blank">
-        
-          MPESB Primary School Teacher Selection Test 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 19 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/psc-veterinary-officer-vacancy-2025/" target="_blank">
-        
-          RPSC Veterinary Officer Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 18 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/rpsc-senior-teacher-grade-iv-vacancy-2025/" target="_blank">
-        
-          RPSC Senior Teacher Grade IV Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 18 Jul 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/rssb-village-development-officer-vdo-2025/" target="_blank">
-        
-          RSSB Village Development Officer VDO 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
-        
-      </div>
-
-      <div class="card-date">📅 18 Jul 2025</div>
     </li>
   
 </ul>
