@@ -168,7 +168,7 @@ margin: 20px auto;}
   color: #6c757d;
   font-size: 0.85rem;
 }
- table.gsc-search-box td, .gsc-clear-button {display:none;}
+table.gsc-search-box td, .gsc-clear-button {display:none;}
         @media (max-width: 600px) {
             .search-container {
                 max-width: 95%;
@@ -220,8 +220,12 @@ margin: 20px auto;}
     {{ partial "manual-update/dynamic-button.html" . }}
 </div>
      <!-- Google CSE Script -->
+
   
-  
+<script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+</script>
+<div id="pse">
+<div class="gcse-search"></div> </div>
 
     <script>
         document.getElementById('search-button').addEventListener('click', function() {
@@ -277,7 +281,37 @@ margin: 20px auto;}
         });
       </script>
      
+  <script>
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        const queryParam = this.getAttribute('data-search');
+        const newUrl = `?gsc.q=${encodeURIComponent(queryParam)}`;
+         window.history.pushState({}, '', newUrl);
+         document.querySelector("input.gsc-input").value = queryParam;
+         document.querySelector("button.gsc-search-button").click();
+      });
+    });
+    </script>
+      
+<script>
+  function removeGSCtabHash() {
+    // अगर hash जुड़ा है तो उसे remove करें
+    if (location.hash.startsWith("#gsc.tab=")) {
+      history.replaceState(null, document.title, window.location.pathname + window.location.search);
+    }
+  }
 
+  // Page load के 500ms बाद चेक करें
+  window.addEventListener("load", function () {
+    setTimeout(removeGSCtabHash, 100);
+  });
+
+  // किसी भी hashchange पर हटाएं (जैसे user search करे)
+  window.addEventListener("hashchange", function () {
+    setTimeout(removeGSCtabHash, 200); // थोड़ी देरी जरूरी है
+  });
+</script>
 </body>
 </html>
 
