@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-selection-post-13th-2025/</loc>
-    <lastmod>2025-07-22T09:11:39+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/mp/dr-ambedakar-kamdhenu-yojna-mp/</loc>
+    <lastmod>2025-07-22T12:19:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-22T12:19:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/update/ugc-net-june-2025/</loc>
+    <lastmod>2025-07-22T10:03:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-selection-post-13th-2025/</loc>
     <lastmod>2025-07-22T09:11:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -139,11 +149,6 @@
   </url><url>
     <loc>http://localhost:1313/admitcard/btsc-staff-nurse-exam-dates/</loc>
     <lastmod>2025-07-17T11:45:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/update/ugc-net-june-2025/</loc>
-    <lastmod>2025-07-17T11:03:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
