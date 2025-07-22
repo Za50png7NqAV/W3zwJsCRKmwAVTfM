@@ -29,37 +29,55 @@
   --border-radius: 10px;
 }
 /* ========== PWA APP========== */
- #installBtn {
-    position: fixed;
-    top: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
+#installBtn {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background-color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    transition: box-shadow 0.3s ease;
-  }
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 8px 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
 
-  #installBtn:hover {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  }
+  /* यह जरूरी है ताकि close बटन absolute काम करे */
+  position: relative;
+}
 
-  #installBtn img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-  }
+#installBtn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+#closeInstallBtn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: rgb(241, 241, 241);
+  color: rgb(243, 3, 3);
+  border: none;
+  border-radius: 50%;
+  font-weight: 900;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 9999;
+
+}
+
 /* ========== Reset ========== */
 * {
   margin: 0;
