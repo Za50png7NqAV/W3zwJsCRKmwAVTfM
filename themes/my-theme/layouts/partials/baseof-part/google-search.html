@@ -5,192 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search - Yojna Portal  </title>
     <meta name="description" content="Search all Latest Schemes, Latest Jobs, Latest Update, Latest Yojana, SchLatest Admitcard, New Admit Card , Latest Exams, New Admitcard, प्रवेश पत्र, परीक्षा तिथि, .">
-    <style>
-        /* General container styling */
-        .search-container {
-            display: flex;
-            align-items: center;
-            background: white;
-            border-radius: 50px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            max-width: 500px;
-            width: 100%;
-            margin: auto;
-            transition: all 0.3s ease;
-        }
+   {{ with .Params.cssStyles }}
+  {{ range . }}
+    {{ $css := resources.Get . | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ end }}
+{{ end }}
+  <script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWSRPE5DVE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GWSRPE5DVE', { 'anonymize_ip': true });
+    </script>
+<script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
+</script>
 
-        .search-container:hover {
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-            transform: translateY(-3px);
-        }
-
-        .search-icon {
-            padding: 0 15px;
-            color: #7e8299;
-            font-size: 18px;
-        }
-
-        #search-input {
-            flex-grow: 1;
-            border: none;
-            padding: 15px 10px 15px 0;
-            font-size: 16px;
-            background: transparent;
-            color: #3f4254;
-            outline: none;
-            transition: all 0.3s ease;
-        }
-
-        #search-input::placeholder {
-            color: #a1a5b7;
-        }
-
-        #search-button {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 0 50px 50px 0;
-            cursor: pointer;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-        }
-
-        #search-button:hover {
-            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
-            transform: scale(1.05);
-        }
-
-.btn-container {max-width:800px;
-margin: 20px auto;}
-
-        .dynamic-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 5px 8px;
-            font-size: 11px;
-            font-weight: bold;
-            color: #ffffff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin: 3px;
-        }
-
-        .dynamic-button i {
-            font-size: 12px;
-        }
-
-        .dynamic-button:hover {
-            background-color: #0056b3;
-        }
-
-        .suggestions-container {
-            margin: auto;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            max-width: 800px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 5px;
-        }
-        
-        .suggestion {
-            padding: 10px;
-            cursor: pointer;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .suggestion:last-child {
-            border-bottom: none;
-        }
-    .highlight {
-    background-color: yellow;
-    font-weight: bold;
-  }
-
-  .no-result {
-    padding: 10px;
-    color: red;rgb(240, 240, 240)rgb(6, 163, 58)rgb(0, 34, 11)
-    font-style: italic;
-  }
-        
-        .suggestion:hover {
-            background-color: #f0f0f0;
-        }
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-
-     .latest-posts {
-  background: #f8f9fa;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  margin: 1rem 0;
-}
-.latest-posts h2 {
-  font-size: 1.25rem;
-  margin-bottom: 0.8rem;
-  color: #343a40;
-  font-weight: 600;
-  border-bottom: 2px solid #ffc107;
-  display: inline-block;
-  padding-bottom: 4px;
-}
-.latest-posts ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.latest-posts li {
-  margin-bottom: 0.6rem;
-}
-.latest-posts a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: 500;
-}
-.latest-posts a:hover {
-  text-decoration: underline;
-  color: #0056b3;
-}
-.latest-posts small {
-  display: block;
-  color: #6c757d;
-  font-size: 0.85rem;
-}
-table.gsc-search-box td, .gsc-clear-button {display:none;}
-        @media (max-width: 600px) {
-            .search-container {
-                max-width: 95%;
-                margin: 0 10px;
-            }
-        }
-    </style>
 </head>
 <body>
 <form method="post" action="" name="search-form">
   <div class="search-container" style="position: relative; display: flex; align-items: center;">
 
     <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
-    <input type="hidden" name="use-in" class="advnce" value="Mobile/Desktop">
+    <input type="hidden" name="use-in" class="advnce" value="SearchPage">
 
     <div class="search-icon" style="margin-right: 5px;">
       <i class="fas fa-search"></i>
     </div>
 
-    <input type="text" name="Search" class="Advance" id="search-input"
-           placeholder="Search for anything..."
-           style="padding-right: 30px;">
+ 
+  <button class="back-button" onclick="history.back()">←</button>
+  <input type="text" name="Search" class="Advance" id="search-input"
+         placeholder="Search for anything...">
+
 
     <!-- Clear (X) button -->
     <button type="button" id="clear-button"  onclick="location.reload();"
@@ -212,106 +61,33 @@ table.gsc-search-box td, .gsc-clear-button {display:none;}
   </div>
 </form>
 
-       
+       <!-- Google CSE Script -->
+<div id="pse">
+<div class="gcse-search"></div> </div>
+
       <!-- Suggestion Posts-->
     {{ partial "manual-update/suggestions.html" . }}
     <!-- Dynamic Buttons -->
 <div class="btn-container">
-    {{ partial "manual-update/dynamic-button.html" . }}
+   {{ $keywords := .Params.keywords }}
+
+<div class="sticky-anchor" >
+    {{ range $keywords }}
+    <a href="#"  class="dynamic-link" class="keyword-tag" data-search="{{ . | urlize }}">🏷️   
+{{ . }} </a>
+    {{ end }}
 </div>
-     <!-- Google CSE Script -->
-
-  
-<script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a">
-</script>
-<div id="pse">
-<div class="gcse-search"></div> </div>
-
-    <script>
-        document.getElementById('search-button').addEventListener('click', function() {
-            const query = document.getElementById('search-input').value;
-            if (query) {
-                updateURL(query);
-                search(query);
-            }
-        });
-
-        function updateURL(query) {
-            const hash = `#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
-            window.location.hash = hash;
-        }
-
-
-        function readQuery() {
-            const hash = window.location.hash;
-            const params = new URLSearchParams(hash.substring(1)); // Remove the '#' character
-            const query = params.get('gsc.q');
-            if (query) {
-                document.getElementById('search-input').value = query;
-                search(query);
-            }
-        }
-
-        window.onload = readQuery;
-    </script>
-    <script type="text/javascript">
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzA_zNbxIRDyx8hjYvfoRm97aM9SM1oKceu8ZYnmFIleTXvO5iULYRaBXn_ecGwN3pJ/exec';
-        const form = document.forms['search-form'];
-        
-        // Set the timestamp automatically
-        const timestampField = document.getElementById('timestamp-field');
-        const now = new Date();
-        const formattedDate = now.toLocaleString('en-GB', {
-          day: '2-digit',
-          month: '2-digit',
-          year: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit',
-          hour12: false
-        }).replace(',', '');
-        timestampField.value = formattedDate;
-      
-        // Handle form submission
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(() => alert("Thank you! Your form is submitted successfully."))
-            .then(() => { window.location.reload(); })
-            .catch(error => console.error('Error!', error.message));
-        });
-      </script>
+</div>
      
-  <script>
-    document.querySelectorAll('.dynamic-link').forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault(); 
-        const queryParam = this.getAttribute('data-search');
-        const newUrl = `?gsc.q=${encodeURIComponent(queryParam)}`;
-         window.history.pushState({}, '', newUrl);
-         document.querySelector("input.gsc-input").value = queryParam;
-         document.querySelector("button.gsc-search-button").click();
-      });
-    });
-    </script>
-      
-<script>
-  function removeGSCtabHash() {
-    // अगर hash जुड़ा है तो उसे remove करें
-    if (location.hash.startsWith("#gsc.tab=")) {
-      history.replaceState(null, document.title, window.location.pathname + window.location.search);
-    }
-  }
+    {{ with .Params.jsFiles }}
+    {{ range . }}
+      {{ $js := resources.Get . | minify | fingerprint }}
+      <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+    {{ end }}
+  {{ else }}
+    <!-- No custom JS files -->
+  {{ end }}
 
-  // Page load के 500ms बाद चेक करें
-  window.addEventListener("load", function () {
-    setTimeout(removeGSCtabHash, 100);
-  });
-
-  // किसी भी hashchange पर हटाएं (जैसे user search करे)
-  window.addEventListener("hashchange", function () {
-    setTimeout(removeGSCtabHash, 200); // थोड़ी देरी जरूरी है
-  });
-</script>
 </body>
 </html>
 

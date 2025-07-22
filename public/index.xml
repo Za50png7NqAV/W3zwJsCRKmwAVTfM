@@ -2404,10 +2404,10 @@
     </item>
     <item>
       <title>Search Anything</title>
-      <link>http://localhost:1313/quick/search/</link>
+      <link>http://localhost:1313/search/</link>
       <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
-      <guid>http://localhost:1313/quick/search/</guid>
-      <description> Search : Yojna Portal </description>
+      <guid>http://localhost:1313/search/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
