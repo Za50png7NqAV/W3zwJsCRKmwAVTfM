@@ -168,7 +168,7 @@ margin: 20px auto;}
   color: #6c757d;
   font-size: 0.85rem;
 }
-
+ table.gsc-search-box td, .gsc-clear-button {display:none;}
         @media (max-width: 600px) {
             .search-container {
                 max-width: 95%;
@@ -220,9 +220,8 @@ margin: 20px auto;}
     {{ partial "manual-update/dynamic-button.html" . }}
 </div>
      <!-- Google CSE Script -->
-    <script async src="https://cse.google.com/cse.js?cx=17c22329bb6c0490a"></script>
   
- {{ partial "baseof-part/dynamic-link.html" . }}
+  
 
     <script>
         document.getElementById('search-button').addEventListener('click', function() {
