@@ -69,6 +69,7 @@
     {{ partial "manual-update/suggestions.html" . }}
     <!-- Dynamic Buttons -->
 <div class="btn-container">
+   {{ partial "adsense" . }}
    {{ $keywords := .Params.keywords }}
 
 <div class="sticky-anchor" >
@@ -77,6 +78,7 @@
 {{ . }} </a>
     {{ end }}
 </div>
+
 </div>
      
     {{ with .Params.jsFiles }}
