@@ -1,0 +1,156 @@
+<h2>{{ .Title }}</h2>
+
+<!-- PDF Forms Section -->
+<section id="pdf-section">
+
+  <!-- Search Bar -->
+  <input type="text" id="pdf-search" placeholder="खोजें..." oninput="searchPDFTable()" />
+
+  <!-- Auto Category Tabs with Horizontal Scroll -->
+  <div class="pdf-tabs-wrapper">
+    <div class="pdf-tabs">
+      <button onclick="filterPDFTable('all', event)" class="active">सभी</button>
+      {{ $allCategories := slice }}
+      {{ range .Params.pdfforms }}
+        {{ range .categories }}
+          {{ if not (in $allCategories .) }}
+            {{ $allCategories = $allCategories | append . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ range $allCategories }}
+        <button onclick="filterPDFTable('{{ . }}', event)">{{ . | title }}</button>
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- PDF Form Table -->
+  <table class="pdf-table">
+    <thead>
+      <tr>
+        <th>शीर्षक</th>
+        <th>श्रेणी</th>
+        <th>डाउनलोड</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Params.pdfforms }}
+        <tr data-category="{{ delimit .categories "," }}">
+          <td>{{ .hindi }}</td>
+          <td>{{ delimit .categories ", " }}</td>
+          <td><a href="{{ .downloadlink }}" target="_blank">डाउनलोड करें</a></td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+</section>
+
+<!-- JavaScript -->
+<script>
+  function filterPDFTable(category, event) {
+    const section = document.getElementById("pdf-section");
+    const rows = section.querySelectorAll("tbody tr");
+    const buttons = section.querySelectorAll(".pdf-tabs button");
+    const searchInput = section.querySelector("#pdf-search");
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+    event.target.classList.add("active");
+
+    const searchTerm = searchInput.value.toLowerCase();
+
+    rows.forEach(row => {
+      const rowCategories = row.getAttribute("data-category").split(',');
+      const textContent = row.textContent.toLowerCase();
+      const matchCategory = category === 'all' || rowCategories.includes(category);
+      const matchSearch = textContent.includes(searchTerm);
+
+      if (matchCategory && matchSearch) {
+        row.classList.remove("hidden");
+      } else {
+        row.classList.add("hidden");
+      }
+    });
+  }
+
+  function searchPDFTable() {
+    const section = document.getElementById("pdf-section");
+    const rows = section.querySelectorAll("tbody tr");
+    const searchInput = section.querySelector("#pdf-search");
+    const activeCategory = section.querySelector(".pdf-tabs button.active").textContent.toLowerCase();
+
+    const searchTerm = searchInput.value.toLowerCase();
+
+    rows.forEach(row => {
+      const rowCategories = row.getAttribute("data-category").split(',');
+      const textContent = row.textContent.toLowerCase();
+      const matchCategory = activeCategory === 'सभी' || rowCategories.includes(activeCategory);
+      const matchSearch = textContent.includes(searchTerm);
+
+      if (matchCategory && matchSearch) {
+        row.classList.remove("hidden");
+      } else {
+        row.classList.add("hidden");
+      }
+    });
+  }
+</script>
+
+<!-- Styling -->
+<style>
+  #pdf-section {
+    max-width: 100%;
+  }
+
+  #pdf-section #pdf-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .pdf-tabs-wrapper {
+    overflow-x: auto;
+    margin-bottom: 10px;
+  }
+
+  #pdf-section .pdf-tabs {
+    display: flex;
+    gap: 10px;
+    padding: 5px 0;
+    width: max-content;
+  }
+
+  #pdf-section .pdf-tabs button {
+    padding: 10px 20px;
+    background: #eee;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  #pdf-section .pdf-tabs button.active {
+    background-color: #007bff;
+    color: white;
+  }
+
+  #pdf-section .pdf-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  #pdf-section th,
+  #pdf-section td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  #pdf-section tr.hidden {
+    display: none;
+  }
+</style>
