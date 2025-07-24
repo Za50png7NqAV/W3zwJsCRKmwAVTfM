@@ -12,6 +12,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/admitcard/btsc-staff-nurse-exam-dates/</loc>
+    <lastmod>2025-07-24T11:45:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/rssb-platoon-commander-jul25/</loc>
     <lastmod>2025-07-24T11:30:41+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -204,11 +209,6 @@
   </url><url>
     <loc>http://localhost:1313/update/territorial-army-officer-admit-card-2025/</loc>
     <lastmod>2025-07-17T16:31:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admitcard/btsc-staff-nurse-exam-dates/</loc>
-    <lastmod>2025-07-17T11:45:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
