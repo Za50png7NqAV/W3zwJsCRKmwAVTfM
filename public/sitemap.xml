@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/force/bsf-constable-sports-quota-jul25/</loc>
-    <lastmod>2025-07-24T10:29:14+05:30</lastmod>
+    <loc>http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/</loc>
+    <lastmod>2025-07-24T11:53:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-24T11:53:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-platoon-commander-jul25/</loc>
+    <lastmod>2025-07-24T11:30:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/bsf-constable-sports-quota-jul25/</loc>
     <lastmod>2025-07-24T10:29:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
