@@ -9,7 +9,7 @@
   <!-- Auto Category Tabs with Horizontal Scroll -->
   <div class="pdf-tabs-wrapper">
     <div class="pdf-tabs">
-      <button onclick="filterPDFTable('all', event)" class="active">सभी</button>
+      <button onclick="filterPDFTable('all', event)" class="active">All Forms</button>
       {{ $allCategories := slice }}
       {{ range .Params.pdfforms }}
         {{ range .categories }}
@@ -28,17 +28,16 @@
   <table class="pdf-table">
     <thead>
       <tr>
-        <th>शीर्षक</th>
-        <th>श्रेणी</th>
-        <th>डाउनलोड</th>
+         <th>Category</th>
+        <th>PDF Forms</th>
       </tr>
     </thead>
     <tbody>
       {{ range .Params.pdfforms }}
         <tr data-category="{{ delimit .categories "," }}">
-          <td>{{ .hindi }}</td>
-          <td>{{ delimit .categories ", " }}</td>
-          <td><a href="{{ .downloadlink }}" target="_blank">डाउनलोड करें</a></td>
+         <td> <span style="color:#020000; font-size:1.2rem;"> {{ delimit .categories ", " }} </span></td>
+          <td><span style="font-size:1.2rem;"><a href="{{ .downloadlink }}" target="_blank">{{ .title }}</a></span>
+            <br><a href="{{ .downloadlink }}" target="_blank"><span style="color:#333; font-size:1rem;"> {{ .hindi }}</span></a></td>
         </tr>
       {{ end }}
     </tbody>
