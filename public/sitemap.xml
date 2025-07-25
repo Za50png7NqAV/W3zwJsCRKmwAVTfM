@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/ib-security-assistant-2025/</loc>
+    <lastmod>2025-07-25T20:14:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-25T20:14:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/education/mp-board-result-2025/</loc>
     <lastmod>2025-07-25T18:22:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-07-25T18:22:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-25T18:22:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -89,11 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sgpgi-nursing-officer-and-non-teaching-post-2025/</loc>
     <lastmod>2025-07-23T16:24:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ib-security-assistant-2025/</loc>
-    <lastmod>2025-07-23T12:14:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
