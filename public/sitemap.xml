@@ -937,6 +937,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/education/mp-board-result-2025/</loc>
+    <lastmod>2025-05-25T08:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/scheme/mp-rahveer-yojana/</loc>
     <lastmod>2025-05-20T18:25:14+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1004,11 +1009,6 @@
   </url><url>
     <loc>http://localhost:1313/education/mp-board-retotaling-form-2025/</loc>
     <lastmod>2025-05-06T19:04:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-board-result-2025/</loc>
-    <lastmod>2025-05-06T08:22:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
