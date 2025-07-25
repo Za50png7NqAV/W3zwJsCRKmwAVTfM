@@ -22,6 +22,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/</loc>
+    <lastmod>2025-07-25T17:43:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/document/apaar-or-abc-id/</loc>
     <lastmod>2025-07-25T13:01:53+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -234,11 +239,6 @@
   </url><url>
     <loc>http://localhost:1313/update/mpesb-animal-husbandry-addet-2025/</loc>
     <lastmod>2025-07-17T18:32:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/</loc>
-    <lastmod>2025-07-17T17:43:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
