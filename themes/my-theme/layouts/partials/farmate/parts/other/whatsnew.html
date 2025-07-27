@@ -1,9 +1,11 @@
 {{ with .Params.WhatsNew }}
-  <div style="margin-top: 1em;">
-    <b style="font-size: 1.1em;">🆕 What's Update</b>
+  <div style="margin-top: 0.1rem;">
+    <b>What's Update :</b>
     <ul style="list-style-type: '🔹 '; padding-left: 1em;">
-      {{ range . }}
-        <li style="color: #d9534f; font-weight: 500;">{{ . }}</li>
+      {{ $colors := slice "#d9534f" "#5bc0de" "#5cb85c" "#f0ad4e" "#9370DB" "#FF69B4" "#FF8C00" }}
+      {{ range $index, $item := . }}
+        {{ $color := index $colors (mod $index 7) }}
+        <li style="color: {{ $color }}; font-weight: 500;">{{ $item }}</li>
       {{ end }}
     </ul>
   </div>
