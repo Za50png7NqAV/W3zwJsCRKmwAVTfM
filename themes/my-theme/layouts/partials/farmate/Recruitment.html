@@ -14,7 +14,7 @@
     </h2>
   
     <p><b>Last Update:</b> {{ .Date | time.Format "02/01/2006 | 03:04 PM" }}</p>
-  
+      {{ partial "farmate/parts/other/whatsnew" . }}
     <p><b>Description:</b> 
       <a href="{{ .Params.OfficialSource }}" target="_blank" style="color:#007BFF;">
         {{ .Params.department }}

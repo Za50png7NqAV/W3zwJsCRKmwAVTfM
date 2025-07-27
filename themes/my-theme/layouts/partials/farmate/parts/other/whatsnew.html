@@ -1,0 +1,10 @@
+{{ with .Params.WhatsNew }}
+  <div style="margin-top: 1em;">
+    <b style="font-size: 1.1em;">🆕 What's Update</b>
+    <ul style="list-style-type: '🔹 '; padding-left: 1em;">
+      {{ range . }}
+        <li style="color: #d9534f; font-weight: 500;">{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}
