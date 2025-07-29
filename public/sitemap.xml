@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
+    <lastmod>2025-07-29T16:40:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-29T16:40:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/mp-board-result-2025/</loc>
+    <lastmod>2025-07-29T16:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2025-07-29T16:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/otr/</loc>
     <lastmod>2025-07-29T09:54:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/otr/uppsc-otr-portal-form/</loc>
-    <lastmod>2025-07-29T09:54:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-29T09:54:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -54,11 +69,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
     <lastmod>2025-07-27T09:24:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-07-26T19:40:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -119,11 +129,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mpesb-anmtst-2025/</loc>
     <lastmod>2025-07-26T03:31:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-board-result-2025/</loc>
-    <lastmod>2025-07-25T18:22:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -674,11 +679,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/hvf-junior-technician-recruitment-2025/</loc>
     <lastmod>2025-06-28T20:47:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
-    <lastmod>2025-06-02T19:40:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
