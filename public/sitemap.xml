@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/sci-court-master-jul25/</loc>
-    <lastmod>2025-07-29T19:51:32+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ssc-mts-vacancy-2025/</loc>
+    <lastmod>2025-07-29T20:33:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-29T20:33:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admitcard/rrb-ntpc-10&#43;2-under-graduate-level-exam-date-2025/</loc>
+    <lastmod>2025-07-29T20:29:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sci-court-master-jul25/</loc>
     <lastmod>2025-07-29T19:51:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -29,6 +39,11 @@
   </url><url>
     <loc>http://localhost:1313/education/</loc>
     <lastmod>2025-07-29T16:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/</loc>
+    <lastmod>2025-07-29T15:53:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -64,11 +79,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-paramedical-vacancy-07-2025/</loc>
     <lastmod>2025-07-22T20:10:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-mts-vacancy-2025/</loc>
-    <lastmod>2025-06-27T08:18:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -184,11 +194,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-deled-counselling-2025/</loc>
     <lastmod>2025-07-24T15:18:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/</loc>
-    <lastmod>2025-07-24T11:53:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -504,11 +509,6 @@
   </url><url>
     <loc>http://localhost:1313/admitcard/rpsc-research-assistant-admit-card-2025/</loc>
     <lastmod>2025-07-08T20:19:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admitcard/rrb-ntpc-10&#43;2-under-graduate-level-exam-date-2025/</loc>
-    <lastmod>2025-07-08T19:46:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
