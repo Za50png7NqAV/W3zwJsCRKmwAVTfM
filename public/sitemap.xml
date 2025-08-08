@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bank/ubi-wealth-manager-vacancy-aug-2025/</loc>
-    <lastmod>2025-08-08T17:21:25+05:30</lastmod>
+    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
+    <lastmod>2025-08-08T20:43:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-08T20:43:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-iti-counseling-2025/</loc>
+    <lastmod>2025-08-08T20:42:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bank/ubi-wealth-manager-vacancy-aug-2025/</loc>
     <lastmod>2025-08-08T17:21:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -119,11 +129,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
     <lastmod>2025-08-02T09:39:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
-    <lastmod>2025-08-02T09:19:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -284,11 +289,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-patwari-bharti-2025/</loc>
     <lastmod>2025-07-26T12:55:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-iti-counseling-2025/</loc>
-    <lastmod>2025-07-26T11:15:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
