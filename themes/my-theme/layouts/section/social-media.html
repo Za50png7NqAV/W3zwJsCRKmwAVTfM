@@ -7,7 +7,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Yojna Portal Whatsapp Group Link</title>
   <meta name="description" content="हमारे WhatsApp Channel में जुड़ें और Telegram, Instagram, Facebook, YouTube और X पर भी फॉलो/सब्सक्राइब करें — ताजा जॉब अलर्ट और अपडेट्स।" />
   <meta name="keywords" content="WhatsApp Channel, Sarkari Job, Telegram Group, Instagram, YouTube, Social Links" />
   <meta property="og:title" content="Join Our WhatsApp Channel & Social Links" />
@@ -15,13 +14,16 @@
   <meta property="og:type" content="website" />
   {{ partial "imp-codes/seo-meta.html" . }}
   {{ partial "imp-codes/schema.html" . }}
-{{ with .Params.cssStyles }}
+
+   {{ with .Params.cssStyles }}
   {{ range . }}
     {{ $css := resources.Get . | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ end }}
 {{ end }}
+  <style>
    
+  </style>
 </head>
 <body>
 
@@ -111,7 +113,7 @@
           <img src="/svg/share.svg">
         </div>
         <h3>Yojna Portal</h3>
-        <a class="btn xbtn" href="https://wa.me/?text=https%3A%2F%2Fwww.yojnaportal.com/social-media" target="_blank" rel="noopener">Visit Now</a>
+        <a class="btn xbtn" href="https://wa.me/?text=https%3A%2F%2Fwww.yojnaportal.com/social-media" target="_blank" rel="noopener">Share</a>
       </div>
     </div>
   </section>

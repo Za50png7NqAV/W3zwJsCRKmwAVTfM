@@ -21,4 +21,19 @@
     .xbtn{background:#111}
     footer{max-width:var(--maxw);margin:1.5rem auto;padding:1rem;text-align:center;color:var(--muted);font-size:.9rem}
     /* responsive spacing */
-    @media (max-width:420px){ header{padding:1.25rem} .icon{width:54px;height:54px} }
+    @media (max-width:420px){ 
+       header{padding:1.25rem}
+  .icon{width:54px;height:54px}
+
+  /* Card content mobile layout */
+  .card{
+    display: flex;
+    align-items: center;
+    text-align: left; /* ताकि text side view में align हो */
+    gap: 0.75rem;
+  }
+  .icon{
+    margin: 0; /* ऊपर वाला margin हटाएं ताकि flex में ठीक बैठे */
+    flex-shrink: 0; /* icon shrink न हो */
+  }
+  }
