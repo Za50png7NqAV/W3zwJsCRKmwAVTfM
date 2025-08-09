@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/</loc>
-    <lastmod>2025-08-09T13:35:23+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/railway/rrb-paramedical-various-posts-2025/</loc>
+    <lastmod>2025-08-09T13:47:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-09T13:47:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/</loc>
     <lastmod>2025-08-09T13:35:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -379,11 +384,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sgpgi-nursing-officer-and-non-teaching-post-2025/</loc>
     <lastmod>2025-07-23T16:24:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/railway/rrb-paramedical-various-posts-2025/</loc>
-    <lastmod>2025-07-23T09:27:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1549,11 +1549,6 @@
   </url><url>
     <loc>http://localhost:1313/imp/self-npci-link-status/</loc>
     <lastmod>2025-03-07T16:02:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/aa-text/</loc>
-    <lastmod>2025-03-06T18:57:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
