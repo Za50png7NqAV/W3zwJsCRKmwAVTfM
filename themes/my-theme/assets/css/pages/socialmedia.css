@@ -23,17 +23,19 @@
     /* responsive spacing */
     @media (max-width:420px){ 
        header{padding:1.25rem}
-  .icon{width:54px;height:54px}
 
-  /* Card content mobile layout */
-  .card{
+ .card{
     display: flex;
     align-items: center;
-    text-align: left; /* ताकि text side view में align हो */
+    text-align: left;
     gap: 0.75rem;
   }
   .icon{
-    margin: 0; /* ऊपर वाला margin हटाएं ताकि flex में ठीक बैठे */
-    flex-shrink: 0; /* icon shrink न हो */
+    margin: 0;
+    flex-shrink: 0;
   }
+  .btn{
+    margin-left: auto; /* बटन को हमेशा सबसे दाईं तरफ रखेगा */
+  }
+
   }
