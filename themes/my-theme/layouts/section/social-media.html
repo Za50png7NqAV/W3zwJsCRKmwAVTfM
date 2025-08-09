@@ -1,0 +1,144 @@
+
+    <!-- Header -->
+ 
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yojna Portal Whatsapp Group Link</title>
+  <meta name="description" content="हमारे WhatsApp Channel में जुड़ें और Telegram, Instagram, Facebook, YouTube और X पर भी फॉलो/सब्सक्राइब करें — ताजा जॉब अलर्ट और अपडेट्स।" />
+  <meta name="keywords" content="WhatsApp Channel, Sarkari Job, Telegram Group, Instagram, YouTube, Social Links" />
+  <meta property="og:title" content="Join Our WhatsApp Channel & Social Links" />
+  <meta property="og:description" content="Get instant job alerts and updates — join our WhatsApp channel and follow us on other platforms." />
+  <meta property="og:type" content="website" />
+  {{ partial "imp-codes/seo-meta.html" . }}
+  {{ partial "imp-codes/schema.html" . }}
+{{ with .Params.cssStyles }}
+  {{ range . }}
+    {{ $css := resources.Get . | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ end }}
+{{ end }}
+   
+</head>
+<body>
+
+<header>
+  <h1>Join Our WhatsApp Channel & Social Links</h1>
+  <p>ताज़ा जॉब अलर्ट और अपडेट — तुरंत पाने के लिए हमारे चैनल/पेज ज्वाइन करें।</p>
+</header>
+
+<main>
+  <section aria-labelledby="social-heading">
+    <h2 id="social-heading" style="font-size:1.1rem;margin:0 0.5rem 0.6rem 0.5rem;color:var(--muted)">Official Social Links</h2>
+
+    <div class="grid">
+
+      <!-- WhatsApp -->
+      <div class="card" role="region" aria-label="WhatsApp Channel">
+        <div class="icon" aria-hidden="true">
+          <!-- simplified WhatsApp SVG -->
+        <img src="/svg/whatsapp.svg">
+        </div>
+        <h3>WhatsApp Channel</h3>
+        <a class="btn whatsapp" href="https://whatsapp.com/channel/0029VaCwEclFy72HhgQzJB0I" target="_blank" rel="noopener">Join Channel</a>
+      </div>
+
+      <!-- Telegram -->
+      <div class="card" role="region" aria-label="Telegram Group">
+        <div class="icon" aria-hidden="true">
+          <!-- Telegram SVG -->
+       <img src="/svg/telegram.svg">
+        </div>
+        <h3>Telegram Group</h3>
+        <a class="btn telegram" href="https://telegram.me/yojnaportal" target="_blank" rel="noopener">Join Group</a>
+      </div>
+
+      <!-- Instagram -->
+      <div class="card" role="region" aria-label="Instagram">
+        <div class="icon" aria-hidden="true">
+          <!-- Instagram gradient-like SVG (simple) -->
+          <img src="/svg/instagram.svg">
+        </div>
+        <h3>Instagram</h3>
+        <a class="btn instagram" href="https://instagram.com/yojnaportalofficial" target="_blank" rel="noopener">Follow</a>
+      </div>
+
+      <!-- Facebook -->
+      <div class="card" role="region" aria-label="Facebook Page">
+        <div class="icon" aria-hidden="true">
+          <!-- Facebook SVG -->
+         <img src="/svg/facebook.svg">
+        </div>
+        <h3>Facebook Page</h3>
+        <a class="btn facebook" href="https://facebook.com/yojnaportal" target="_blank" rel="noopener">Like Page</a>
+      </div>
+
+      <!-- YouTube -->
+      <div class="card" role="region" aria-label="YouTube Channel">
+        <div class="icon" aria-hidden="true">
+          <!-- YouTube SVG -->
+         <img src="/svg/youtube.svg">
+        </div>
+        <h3>YouTube Channel</h3>
+        <a class="btn youtube" href="https://youtube.com/@yojnaportal" target="_blank" rel="noopener">Subscribe</a>
+      </div>
+
+      <!-- X / Twitter -->
+      <div class="card" role="region" aria-label="X / Twitter">
+        <div class="icon" aria-hidden="true">
+          <!-- X black SVG -->
+          <img src="/svg/x.svg">
+        </div>
+        <h3>X / Twitter</h3>
+        <a class="btn xbtn" href="https://twitter.com/yojnaportal" target="_blank" rel="noopener">Follow</a>
+      </div>
+  <!-- Website -->
+      <div class="card" role="region" aria-label="Webisite">
+        <div class="icon" aria-hidden="true">
+          <!-- Website-->
+          <img src="/svg/website.svg">
+        </div>
+        <h3>Yojna Portal</h3>
+        <a class="btn xbtn" href="https://www.yojnaportal.com" target="_blank" rel="noopener">Visit Now</a>
+      </div>
+        <!-- Share -->
+      <div class="card" role="region" aria-label="X / Twitter">
+        <div class="icon" aria-hidden="true">
+          <!-- Website-->
+          <img src="/svg/share.svg">
+        </div>
+        <h3>Yojna Portal</h3>
+        <a class="btn xbtn" href="https://wa.me/?text=https%3A%2F%2Fwww.yojnaportal.com/social-media" target="_blank" rel="noopener">Visit Now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 YojnaPortal — सभी अधिकार सुरक्षित</p>
+</footer>
+
+<!-- JSON-LD Organization (social profiles) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"YourBrand",
+  "url":"https://example.com",
+  "logo":"https://example.com/logo.png",
+  "sameAs":[
+    "https://whatsapp.com/channel/0029VaCwEclFy72HhgQzJB0I",
+    "https://t.me/examplegroup",
+    "https://instagram.com/example",
+    "https://facebook.com/example",
+    "https://youtube.com/@example",
+    "https://twitter.com/example"
+  ]
+}
+</script>
+
+</body>
+</html>
