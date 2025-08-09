@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
-    <lastmod>2025-08-08T20:43:59+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2025-08-09T10:48:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
+    <lastmod>2025-08-09T10:48:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-09T10:48:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
     <lastmod>2025-08-08T20:43:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -212,11 +222,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2025-07-29T16:22:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/</loc>
     <lastmod>2025-07-29T15:53:16+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -354,11 +359,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-platoon-commander-jul25/</loc>
     <lastmod>2025-07-24T11:30:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
-    <lastmod>2025-07-24T08:32:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
