@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/social-media/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Yojna Portal Whatsapp Group Link</title>
+      <link>http://localhost:1313/status/</link>
+      <pubDate>Fri, 08 Nov 2024 19:23:23 +0530</pubDate>
+      <guid>http://localhost:1313/status/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

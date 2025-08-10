@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/cm-kisan-kalyan-nidhi/</loc>
-    <lastmod>2025-08-10T10:09:39+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rajasthan-police-si-posts-jul-2025/</loc>
+    <lastmod>2025-08-10T17:31:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-10T17:31:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-08-10T17:16:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/bank/iob-indian-overseas-bank-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-08-10T17:16:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/join-indian-navy-ssc-officers-vacancy-aug-25/</loc>
+    <lastmod>2025-08-10T17:03:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/cm-kisan-kalyan-nidhi/</loc>
     <lastmod>2025-08-10T10:09:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -169,11 +189,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-crp-clerk-xv-jul25/</loc>
     <lastmod>2025-08-01T09:47:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-07-31T18:40:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -474,11 +489,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-school-lecturer-vacancy-2025/</loc>
     <lastmod>2025-07-18T11:49:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rajasthan-police-si-posts-jul-2025/</loc>
-    <lastmod>2025-07-17T20:14:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -2288,6 +2298,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/social-media/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/status/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
