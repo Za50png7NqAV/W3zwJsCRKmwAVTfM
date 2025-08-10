@@ -1,19 +1,2 @@
 
- <script>
-  // Hugo front matter से quotes लाना (बिना escape किए)
-  const quotes = {{ .Params.quotes | jsonify | safeJS }};
-
-  function getRandomQuote() {
-    const index = Math.floor(Math.random() * quotes.length);
-    return quotes[index].text;
-  }
-
-  window.onload = function() {
-    const quote = getRandomQuote();
-    const shareText = `${quote}\n\nFollow Yojna Portal: https://whatsapp.com/channel/0029VaCwEclFy72HhgQzJB0I`;
-    const encodedText = encodeURIComponent(shareText);
-
-    const whatsappURL = `https://wa.me/status?text=${encodedText}`;
-    window.location.href = whatsappURL;
-  }
-</script>
+<script>const quotes={{ .Params.quotes | jsonify | safeJS }};</script>{{ with .Params.jsFiles }}{{ range . }}{{ $js := resources.Get . | minify | fingerprint }}<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>{{ end }}{{ else }}<!-- No custom JS files -->{{ end }}
