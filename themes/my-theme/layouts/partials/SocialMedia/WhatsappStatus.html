@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }}</title>
-</head>
-<body>
-  <p>Redirecting to WhatsApp...</p>
 
  <script>
   // Hugo front matter से quotes लाना (बिना escape किए)
@@ -22,10 +13,7 @@
     const shareText = `${quote}\n\nFollow Yojna Portal: https://whatsapp.com/channel/0029VaCwEclFy72HhgQzJB0I`;
     const encodedText = encodeURIComponent(shareText);
 
-    const whatsappURL = `https://api.whatsapp.com/status?text=${encodedText}`;
+    const whatsappURL = `https://wa.me/status?text=${encodedText}`;
     window.location.href = whatsappURL;
   }
 </script>
-
-</body>
-</html>
