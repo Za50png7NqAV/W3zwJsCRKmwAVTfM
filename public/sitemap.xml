@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/hpsc-ae-me-sd-vacancy-2025/</loc>
-    <lastmod>2025-08-10T19:20:02+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-08-11T14:08:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/iocl-southern-region-sr-apprentice-2025/</loc>
+    <lastmod>2025-08-11T14:08:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-11T14:08:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/hpsc-ae-me-sd-vacancy-2025/</loc>
     <lastmod>2025-08-10T19:20:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -24,11 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-police-si-posts-jul-2025/</loc>
     <lastmod>2025-08-10T17:31:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-08-10T17:16:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -2108,6 +2113,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/newbase1/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
