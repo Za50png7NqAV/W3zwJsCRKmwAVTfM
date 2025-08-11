@@ -145,7 +145,7 @@
       right: 0;
     }
 .search-form-container {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   
 }
@@ -194,8 +194,8 @@
 .search-form {
   display: flex;
   align-items: center;
-  gap: 10px;
-  max-width: 600px;
+  gap: 1px;
+  max-width: 100%;
   margin: 0 auto;
   font-family: Arial, sans-serif;
 }
