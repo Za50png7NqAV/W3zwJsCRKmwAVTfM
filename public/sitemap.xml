@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-08-11T14:08:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/iocl-southern-region-sr-apprentice-2025/</loc>
-    <lastmod>2025-08-11T14:08:41+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rbi-officers-grade-a-and-b-vacancy-2025/</loc>
+    <lastmod>2025-08-11T19:09:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-11T19:09:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-08-11T18:38:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/indian-navy-tradesman-skilled-apprentice-2025/</loc>
+    <lastmod>2025-08-11T18:38:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/iocl-southern-region-sr-apprentice-2025/</loc>
     <lastmod>2025-08-11T14:08:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -594,11 +604,6 @@
   </url><url>
     <loc>http://localhost:1313/profile/mpesb-candidate-profile-panjiyan/</loc>
     <lastmod>2025-07-11T17:05:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rbi-officers-grade-a-and-b-vacancy-2025/</loc>
-    <lastmod>2025-07-11T13:27:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

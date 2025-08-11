@@ -1,5 +1,5 @@
 
-{{ range first 10 (where  .Site.RegularPages ".Params.admitcard" "yes") }}
+{{ range first 13 (where  .Site.RegularPages ".Params.admitcard" "yes") }}
 <li>
   <a href="{{ .Permalink }}" target="_blank">{{ .Params.admitcardName }}</a>
   {{/* पोस्ट आज की तारीख को डाली गई हो तो NEW */}}
