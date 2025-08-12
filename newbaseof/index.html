@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="robots" content="noindex, follow">
+    <link rel="stylesheet" href="/css/pages/home-search.css">  
+</head>
+<body>
+    <div class="center">
+        <div class="mobile-search-container">
+            <form id="mobileSearchForm" method="post" action="" name="search-form">
+                <input type="hidden" name="TimeStamp" class="Advance" id="timestamp-field">
+                <input type="hidden" name="use-in" class="Advance" value="Home-Search">
+                <div class="mobile-search-input-container">
+                    <input 
+                        type="text" 
+                        name="Search" 
+                        id="mobileQuery" 
+                        onkeyup="filterSuggestions()" 
+                        class="mobile-search-input" 
+                        placeholder="Search Anything..."
+                        required 
+                    >
+                    <span class="reset-btn" onclick="resetSearch()">&times;</span>
+                    <button type="submit" class="mobile-search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            
+    </div>
+
+<div class="find-list" style="display: none;">
+     
+<ul>
+    
+    <li>
+      SBI Clerk (Junior Associate) Vacancy 2025
+    </li>
+  
+    <li>
+      MP D.El.Ed Counselling 2025-26 | 4rd Round -Registration
+    </li>
+  
+    <li>
+      Rajasthan Sub Inspector Vacancy 2025 Apply Online
+    </li>
+  
+    <li>
+      MP Bhulekh (WebGis 2.0) 2025 - Khasra, B1, Naksha Download
+    </li>
+  
+    <li>
+      Ladli Bahna Yojana 2025  27th Kisht-Check Details
+    </li>
+  
+    <li>
+      Haryana HPSC ADO Vacancy 2025 Online Form
+    </li>
+  
+    <li>
+      MP Anganwadi Recruitment 2025 – Provisional Merit List
+    </li>
+  
+    <li>
+      Chandigarh JBT Teacher Vacancy 2025 Online Form
+    </li>
+  
+    <li>
+      CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update
+    </li>
+  
+    <li>
+      HP JBT Teacher Vacancy 2025 Online Form
+    </li>
+  
+    <li>
+      Azim Premji Scholarship Renewal Form, Dates &amp; Documents 
+    </li>
+  
+    <li>
+      RPSC Veterinary Officer Vacancy 2025 Online Form
+    </li>
+  
+    <li>
+      MP ITI Counseling 2025-26: 5th Round Allotmetn Latter
+    </li>
+  
+    <li>
+      RRB Paramedical Various Posts Vacancy 2025
+    </li>
+  
+    <li>
+      MP Guest Teacher (Atithi Shikshak)  Rejoining 2025-26
+    </li>
+  
+    <li>
+      Bihar BSSC Office Attendant / Attendant (Special) Vacancy 2025
+    </li>
+  
+    <li>
+      HPSC AE, Municipal Engineer &amp; Sub Divisional Engineer Vacancy 2025
+    </li>
+  
+    <li>
+      Bihar BSSC 4th Graduate Level Vacancy 2025
+    </li>
+  
+    <li>
+      Daily Sarkari Yojna News on WhatsApp – Join Yojna Portal Today
+    </li>
+  
+    <li>
+      MP ePravesh NCTE/PG/UG Admission 2025-26- CLC Upgrade Round 
+    </li>
+  
+    <li>
+      HPSC Assistant District Attorney ADA Vacancy 2025
+    </li>
+  
+    <li>
+      Bank of Baroda Sales Manager &amp; Agriculture Officer Vacancy 2025
+    </li>
+  
+    <li>
+      Union Bank SO (Wealth Manager) Vacancy 2025
+    </li>
+  
+    <li>
+      IOB Indian Overseas Bank Apprentice Vacancy 2025
+    </li>
+  
+    <li>
+      Indian Navy SSC Officers Vacancy 2025 June 2026 Course
+    </li>
+  
+</ul>
+   
+</div>
+<script>
+    let sentences = []; 
+    let currentSentenceIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingInterval;
+    let isUserTyping = false;
+    function loadSentences() {
+        const listItems = document.querySelectorAll('.find-list li');
+        sentences = Array.from(listItems).map(item => item.textContent);
+    }
+
+    function startAutoTyping() {
+        const input = document.getElementById('mobileQuery');
+
+        typingInterval = setInterval(() => {
+            if (isUserTyping) return; 
+            if (!isDeleting) {
+            if (charIndex < sentences[currentSentenceIndex].length) {
+                    input.value += sentences[currentSentenceIndex][charIndex];
+                    charIndex++;
+                } else {
+                    
+                    isDeleting = true;
+                    clearInterval(typingInterval);
+                    setTimeout(startAutoTyping, 3000); 
+                }
+            } else {
+                
+                if (charIndex > 0) {
+                    input.value = sentences[currentSentenceIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                   
+                    isDeleting = false;
+                    currentSentenceIndex++;
+                    if (currentSentenceIndex >= sentences.length) {
+                        currentSentenceIndex = 0; 
+                    }
+                }
+            }
+        }, 100); 
+    }
+
+    function stopAutoTyping() {
+        clearInterval(typingInterval);
+    }
+
+    function resetSearch() {
+        const input = document.getElementById('mobileQuery');
+        input.value = '';
+        stopAutoTyping();
+        startAutoTyping(); 
+    }
+
+    document.getElementById('mobileQuery').addEventListener('focus', () => {
+        isUserTyping = true;
+        stopAutoTyping();
+    });
+    document.getElementById('mobileQuery').addEventListener('blur', () => {
+        isUserTyping = false;
+        if (!document.getElementById('mobileQuery').value) {
+            startAutoTyping();
+        }
+    });
+
+    window.onload = () => {
+        loadSentences(); 
+        startAutoTyping(); 
+    };
+</script>
+    <script>
+        function filterSuggestions() {
+            const input = document.getElementById("mobileQuery").value.toLowerCase();
+            const suggestions = document.querySelectorAll(".suggestion-item");
+        
+            suggestions.forEach(item => {
+                const title = item.textContent.trim();
+                const href = item.dataset.href; 
+                const matches = title.toLowerCase().includes(input);
+        
+                if (matches) {
+                    item.style.display = "block";
+        
+                    const highlightedText = title.replace(
+                        new RegExp(input, "gi"),
+                        match => `<span style="color: red; font-weight: bold;">${match}</span>`
+                    );
+        
+                    
+                    if (href) {
+                        item.innerHTML = `<a href="${href}" target="_blank" style="font-weight: 500; text-decoration: none; color: inherit;">${highlightedText}</a>`;
+                    } else {
+                        item.innerHTML = highlightedText; 
+                    }
+                } else {
+                    item.style.display = "none"; 
+                }
+            });
+        }
+        
+        
+        function resetSearch() {
+            document.getElementById("mobileQuery").value = "";
+            filterSuggestions();
+        }
+
+        document.getElementById('mobileSearchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = document.getElementById('mobileQuery').value;
+            const url = `https://www.yojnaportal.com/search/#gsc.tab=0&gsc.sort=&gsc.q=${encodeURIComponent(query)}`;
+            window.open(url, '_blank');
+        });
+    </script>
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzA_zNbxIRDyx8hjYvfoRm97aM9SM1oKceu8ZYnmFIleTXvO5iULYRaBXn_ecGwN3pJ/exec';
+        const form = document.forms['search-form'];
+    
+        
+        const timestampField = document.getElementById('timestamp-field');
+        const now = new Date();
+        const formattedDate = now.toLocaleString('en-GB', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        }).replace(',', '');
+        timestampField.value = formattedDate;
+    
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(() => alert("Thank you! Your form is submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+    <script>
+        
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+            
+            loader.style.display = 'none';  
+            content.style.display = 'block';  
+        });
+    </script>
+    <script>
+        
+        document.addEventListener('keydown', function (e) {
+            
+            if (e.key === "F12") {
+                e.preventDefault();
+            }
+    
+            
+            if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+                e.preventDefault();
+            }
+    
+            
+            if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+                e.preventDefault();
+            }
+    
+            
+            if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+                e.preventDefault();
+            }
+        });
+    
+        
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
+    <script>
+        if (window === window.top) {
+          window.location.href = "https://yojnaportal.com/search/";
+        }
+      </script>
+
+  
+</body>
+</html>
