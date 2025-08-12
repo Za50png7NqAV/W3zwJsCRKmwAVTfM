@@ -288,6 +288,7 @@ header {
 .main-container {
   display: flex;
   max-width: 100%;
+   background-color: #efefef;
   margin: auto;
   flex: 1;
   margin-top: 70px;
@@ -296,12 +297,12 @@ header {
 .left-sidebar,
 .right-sidebar {
   width: 250px;
-  background-color: #eee;
+  background-color: #fde1ca;
   padding: 0;
   height: calc(100vh - 70px);
   overflow-y: auto;
   position: sticky;
-  top: 70px;
+  top: 65px;
 }
 
 .left-sidebar ul,
