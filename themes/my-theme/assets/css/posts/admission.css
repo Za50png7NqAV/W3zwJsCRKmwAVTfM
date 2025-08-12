@@ -293,7 +293,7 @@ h1, h2, h3 {
         .impdates {
             background-color: #f4f7fa; /* Light gray background */
             border-radius: 10px; /* Rounded corners */
-            max-width: 400px; /* Limit width */
+            max-width: 95%; /* Limit width */
             margin: 2px auto; /* Center the container */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             font-family: 'Arial', sans-serif; 
@@ -444,7 +444,7 @@ h1, h2, h3 {
         /* Responsive Design */
 @media (max-width: 600px) { 
   .card {
-    padding: 1rem; /* इसे 0rem से 1rem कर दें ताकि content की readability बनी रहे */
+    padding: 0.5rem; /* इसे 0rem से 1rem कर दें ताकि content की readability बनी रहे */
     max-width: 400px; /* मोबाइल में overflow से बचने के लिए */
   }
 
@@ -486,7 +486,7 @@ h1, h2, h3 {
 
 
      .impdates {
-     max-width: 300px; /* Limit width */
+             max-width: 380px; /* Limit width */
        
         }
         /* अंदर का कंटेंट बाहर न जाए */
