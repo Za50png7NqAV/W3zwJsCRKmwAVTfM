@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
+    <lastmod>2025-08-13T20:05:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-13T20:05:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/otr/</loc>
     <lastmod>2025-08-13T19:38:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/otr/ssc-otr-online-form/</loc>
-    <lastmod>2025-08-13T19:38:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-08-13T19:38:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -514,11 +519,6 @@
   </url><url>
     <loc>http://localhost:1313/profile/mp-rojgar-otr-form/</loc>
     <lastmod>2025-07-20T14:03:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
-    <lastmod>2025-07-19T15:24:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
