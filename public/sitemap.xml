@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/bank/bom-generalist-officer-vacancy-2025/</loc>
-    <lastmod>2025-08-13T18:04:36+05:30</lastmod>
+    <loc>http://localhost:1313/otr/</loc>
+    <lastmod>2025-08-13T19:38:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/otr/ssc-otr-online-form/</loc>
+    <lastmod>2025-08-13T19:38:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-13T19:38:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/bank/bom-generalist-officer-vacancy-2025/</loc>
     <lastmod>2025-08-13T18:04:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -264,11 +274,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mpesb-msc-pbbse-2025/</loc>
     <lastmod>2025-07-31T17:57:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/otr/</loc>
-    <lastmod>2025-07-31T17:26:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
