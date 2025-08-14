@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
-    <lastmod>2025-08-13T20:05:27+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rpsc-school-lecturer-vacancy-2025/</loc>
+    <lastmod>2025-08-14T10:08:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-14T10:08:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-08-14T10:05:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/rrc-eastern-railway-form-jul25/</loc>
+    <lastmod>2025-08-14T10:05:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/</loc>
+    <lastmod>2025-08-14T10:01:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
     <lastmod>2025-08-13T20:05:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -49,11 +69,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/up-police-sub-inspector-si-vacancy-2025/</loc>
     <lastmod>2025-08-13T10:50:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-08-13T10:44:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -119,11 +134,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/railway/rrb-paramedical-various-posts-2025/</loc>
     <lastmod>2025-08-09T13:47:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/</loc>
-    <lastmod>2025-08-09T13:35:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -269,11 +279,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-crp-clerk-xv-jul25/</loc>
     <lastmod>2025-08-01T09:47:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/rrc-eastern-railway-form-jul25/</loc>
-    <lastmod>2025-07-31T18:40:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -539,11 +544,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-village-development-officer-vdo-2025/</loc>
     <lastmod>2025-07-18T12:31:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rpsc-school-lecturer-vacancy-2025/</loc>
-    <lastmod>2025-07-18T11:49:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
