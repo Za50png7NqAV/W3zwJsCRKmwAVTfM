@@ -2,23 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
-    <lastmod>2025-08-18T19:35:24+05:30</lastmod>
+    <loc>http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/</loc>
+    <lastmod>2025-08-18T20:55:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-18T20:55:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/bihar/bpsc-otr-one-time-registration-online/</loc>
+    <lastmod>2025-08-18T20:41:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/otr/</loc>
+    <lastmod>2025-08-18T20:41:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/delhi/dsssb-otr-one-time-registration-online/</loc>
+    <lastmod>2025-08-18T20:24:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/aai-junior-executive-je-vacancy-2025/</loc>
+    <lastmod>2025-08-18T19:53:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bssc-4th-graduate-level-vacancy-aug-2025/</loc>
+    <lastmod>2025-08-18T19:50:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
     <lastmod>2025-08-18T19:35:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/dsssb-non-teaching-vacancy-aug-2025/</loc>
     <lastmod>2025-08-18T09:24:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bssc-4th-graduate-level-vacancy-aug-2025/</loc>
-    <lastmod>2025-08-18T09:21:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -114,11 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
     <lastmod>2025-08-13T20:05:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/otr/</loc>
-    <lastmod>2025-08-13T19:38:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -374,11 +394,6 @@
   </url><url>
     <loc>http://localhost:1313/education/mp-board-result-2025/</loc>
     <lastmod>2025-07-29T16:22:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/</loc>
-    <lastmod>2025-07-29T15:53:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
