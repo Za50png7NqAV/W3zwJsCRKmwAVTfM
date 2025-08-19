@@ -63,11 +63,10 @@
 
   <button class="btn btn-copy" onclick="copyLink()"><img src="/svg/copy.svg" > Copy Link</button>
 
-  <a 
-   href="https://wa.me/?text={{ if .Params.seo_title }}📢 {{ .Params.seo_title }}%0A{{ else }}📢 {{ .Title }}%0A{{ end }}{{ with .Params.Eligibility }}🎓Min. Qualification: {{ . }}%0A{{ end }}{{ with .Params.TotalPost }}📊 Total Posts: {{ . }}%0A{{ end }}{{ with .Params.lastdate }}📅 Last Date: {{ . }}%0A{{ end }}{{ with .Params.department }}🏛️ Department: {{ . }}%0A{{ end }}🔗 More Details :{{ if .Params.shorturl }}{{ .Site.BaseURL }}{{ .Params.shorturl }}{{ else }}{{ .Permalink }}{{ end }}"
+<a href="https://wa.me/?text={{ if .Params.seo_title }}📢 *{{ .Params.seo_title }}*%0A{{ else }}📢 {{ .Title }}%0A{{ end }}-------------------- _Short Details_-------------------%0A{{ with .Params.Eligibility }}🎓Min. Qualification: {{ . }}%0A{{ end }}{{ with .Params.TotalPost }}📊 Total Posts: {{ . }}%0A{{ end }}{{ with .Params.lastdate }}📅 Last Date: {{ time . | time.Format "02-01-2006" }}%0A{{ end }}{{ with .Params.department }}🏛️ Department: {{ . }}%0A{{ end }}-------------------- _Yojna Portal_-------------------%0A🔗 More Details: {{ if .Params.shorturl }}{{ .Site.BaseURL }}{{ .Params.shorturl }}{{ else }}{{ .Permalink }}{{ end }}"
    target="_blank">
    <button class="btn btn-share"><img src="/svg/share.svg" > Share on WhatsApp</button>
-  </a>
+</a>
     <a href="/" target="_blank">
     <button class="btn btn-whatsapp"><img src="/svg/home.svg" > Back to Home</button>
   </a>
