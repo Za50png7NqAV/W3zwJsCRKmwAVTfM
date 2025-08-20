@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/force/afcat-02-2025/</loc>
-    <lastmod>2025-08-19T19:58:51+05:30</lastmod>
+    <loc>http://localhost:1313/otr/</loc>
+    <lastmod>2025-08-20T12:13:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rj/rpsc-otr-one-time-registration-online/</loc>
+    <lastmod>2025-08-20T12:13:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-20T12:13:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/</loc>
+    <lastmod>2025-08-20T11:37:05+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/force/afcat-02-2025/</loc>
     <lastmod>2025-08-19T19:58:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -33,11 +48,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/bihar/bpsc-otr-one-time-registration-online/</loc>
-    <lastmod>2025-08-18T20:41:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/otr/</loc>
     <lastmod>2025-08-18T20:41:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
