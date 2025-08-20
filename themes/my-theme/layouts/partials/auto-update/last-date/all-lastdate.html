@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
- </head>
- 
-   
+</head>
 
+<body>
 <h2>🎯 All Lastdate Update Here </h2> <br><hr><br>
 
 <div class="filter-box">
@@ -17,41 +15,48 @@
 </div>
 
 <div class="quick-tags">
-  <button class="reset-btn" onclick="resetFilters()">All</button>
+<!-- Dropdown add करें (जहाँ Quick Tags हैं वहाँ रखें) -->
+<select id="statusFilter" onchange="filterTable(false)">
+  <option value="all">All</option>
+  <option value="active">Active</option>
+  <option value="closed">Closed</option>
+</select>
+
   <button onclick="filterByTag('today')">Today</button>
   <button onclick="filterByTag('yesterday')">Yesterday</button>
   <button onclick="filterByTag('tomorrow')">Tomorrow</button>
   <button onclick="filterByTag('thisWeek')">This Week</button>
   <button onclick="filterByTag('lastWeek')">Last Week</button>
-   <button onclick="filterByTag('nextMonth')">Next Month</button>
-  <button onclick="filterByTag('thisMonth')">This Month</button>
+   <button onclick="filterByTag('thisMonth')">This Month</button>
+  <button onclick="filterByTag('nextMonth')">Next Month</button>
+  <button class="reset-btn" onclick="resetFilters()">Reset</button>
 </div>
-
-
 
 <table id="postTable">
   <thead>
     <tr>
-      <th> <span id="selectedTag" class="active-tag"></span> Last date Posts</th>
+      <th><span id="selectedTag" class="active-tag"></span> Last date Posts</th>
       <th>📅 Last Date</th>
     </tr>
   </thead>
   <tbody>
     {{ partial "auto-update/lastdates/today.html" . }}
     {{ partial "auto-update/lastdates/upcoming-date.html" . }}
-     {{ partial "auto-update/lastdates/lastmonth.html" . }}
+    {{ partial "auto-update/lastdates/lastmonth.html" . }}
   </tbody>
-  <tfoot> <tr> <td colspan="2" style="text-align:center; background: #ffae00;font-weight:bold;"> www.YojnaPortal.com </td></tr></tfoot>
+  <tfoot>
+    <tr>
+      <td colspan="2" style="text-align:center; background: #ffae00;font-weight:bold;"> www.YojnaPortal.com </td>
+    </tr>
+  </tfoot>
 </table>
-<br> <hr>
- <button onclick="shareOnWhatsApp()" class="share-btn">
-📤 WhatsApp Share
+
+<br><hr>
+<button onclick="shareOnWhatsApp()" class="share-btn">
+  📤 WhatsApp Share
 </button>
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script>
- 
-</script>
 
 </body>
 </html>
