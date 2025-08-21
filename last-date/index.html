@@ -101,7 +101,7 @@
 
   
     
-    <link rel="stylesheet" href="https://www.yojnaportal.com/css/pages/lastdates.min.207ddd6da8c6ef6b664129f56672b5a3f8df7985af91af39856ca0325ff5eb2a.css" integrity="sha256-IH3dbajG72tmQSn1ZnK1o/jfeYWvka85hWygMl/16yo=">
+    <link rel="stylesheet" href="https://www.yojnaportal.com/css/pages/lastdates.min.a9fa28b471818d4ff65da3c1f21c7d5cd5ebf7fdf22497d862506e9901040ccc.css" integrity="sha256-qfootHGBjU/2XaPB8hx9XNXr9/3yJJfYYlBumQEEDMw=">
   
 
 
@@ -299,33 +299,18 @@ function setPreferredHome() {
     
         
         
+    
+        
+        
           <li class="card-item">
-            <a class="card-title" href="/student/mp/mptaas-scholarship-profile/" >MPTAAS Scholarship Profile Panjiayan</a>
+            <a class="card-title" href="/result/rskmp-5th-8th-re-exam-results-2025/" >RSKMP 5th &amp; 8th Re-Exam Result Out</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 05 Jan 2025</div>
-          </li>
-       
-        
-    
-        
-        
-    
-        
-        
-          <li class="card-item">
-            <a class="card-title" href="/update/rssb-librarian-gr-iii-2025/" >RSSB Librarian Gr-III Exam City / Admit Card 2025</a>
-            
-          <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 22 Jul 2025</div>
+      <div class="card-date">📅 20 Jun 2025</div>
           </li>
        
         
@@ -333,16 +318,19 @@ function setPreferredHome() {
         
         
           <li class="card-item">
-            <a class="card-title" href="/bank/iob-indian-overseas-bank-apprentice-vacancy-2025/" >IOB Indian Overseas Bank Apprentice Vacancy 2025</a>
+            <a class="card-title" href="/jobs/rpsc-senior-teacher-grade-iv-vacancy-2025/" >RPSC Senior Teacher Grade IV Vacancy 2025 Online Form</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 10 Aug 2025</div>
+      <div class="card-date">📅 19 Aug 2025</div>
           </li>
        
+        
+    
+        
         
     
     <hr>
@@ -356,6 +344,42 @@ function setPreferredHome() {
 
 
 <ul class="card-list">
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/rj/rpsc-otr-one-time-registration-online/" target="_blank">
+        
+          RPSC OTR Registration 2025
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 20 Aug 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/" target="_blank">
+        
+          RPSC Junior Legal Officer (JLO) Vacancy 2025
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 20 Aug 2025</div>
+    </li>
   
     
     <li class="card-item">
@@ -501,42 +525,6 @@ function setPreferredHome() {
       <div class="card-date">📅 18 Aug 2025</div>
     </li>
   
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/bssc-4th-graduate-level-vacancy-aug-2025/" target="_blank">
-        
-          Bihar BSSC 4th Graduate Level Vacancy 2025
-        
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 18 Aug 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/bihar-brlps-jeevika-form-aug25/" target="_blank">
-        
-          BRLPS JEEViKA Vacancy 2025 Online Form
-        
-        
-      </a>
-
-      <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
-        
-      </div>
-
-      <div class="card-date">📅 18 Aug 2025</div>
-    </li>
-  
 </ul>
 
      
@@ -553,12 +541,10 @@ function setPreferredHome() {
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
- </head>
- 
-   
+</head>
 
+<body>
 <h2>🎯 All Lastdate Update Here </h2> <br><hr><br>
 
 <div class="filter-box">
@@ -568,22 +554,27 @@ function setPreferredHome() {
 </div>
 
 <div class="quick-tags">
-  <button class="reset-btn" onclick="resetFilters()">All</button>
+
+<select id="statusFilter" onchange="filterTable(false)">
+  <option value="all">All</option>
+  <option value="active">Active</option>
+  <option value="closed">Closed</option>
+</select>
+
   <button onclick="filterByTag('today')">Today</button>
   <button onclick="filterByTag('yesterday')">Yesterday</button>
   <button onclick="filterByTag('tomorrow')">Tomorrow</button>
   <button onclick="filterByTag('thisWeek')">This Week</button>
   <button onclick="filterByTag('lastWeek')">Last Week</button>
-   <button onclick="filterByTag('nextMonth')">Next Month</button>
-  <button onclick="filterByTag('thisMonth')">This Month</button>
+   <button onclick="filterByTag('thisMonth')">This Month</button>
+  <button onclick="filterByTag('nextMonth')">Next Month</button>
+  <button class="reset-btn" onclick="resetFilters()">Reset</button>
 </div>
-
-
 
 <table id="postTable">
   <thead>
     <tr>
-      <th> <span id="selectedTag" class="active-tag"></span> Last date Posts</th>
+      <th><span id="selectedTag" class="active-tag"></span> Last date Posts</th>
       <th>📅 Last Date</th>
     </tr>
   </thead>
@@ -594,6 +585,20 @@ function setPreferredHome() {
 
 
   
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
     
     
     
@@ -615,11 +620,541 @@ function setPreferredHome() {
     
     
     
-      <tr  data-shorturl="bab674" data-seo-title="D.El.Ed Counselling 2025 5nd Round - Online Apply">
-        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="https://www.yojnaportal.com/admission/mp-deled-counselling-2025/">MP D.El.Ed Counselling 2025-26 | 5rd Round -Registration</a><br>
-          <span>⚠️<a href="#" class="dynamic-link" data-search="DElEd Admission">DElEd Admission</a></span>
+  
+
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr  data-shorturl="7f4bb7" data-seo-title="BRLPS JEEViKA Recruitment 2025 – Apply Online for 2747 Vacancies, Check Eligibility &amp; Last Date">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="https://www.yojnaportal.com/jobs/bihar-brlps-jeevika-form-aug25/">BRLPS JEEViKA Vacancy 2025 Online Form</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="Bihar BRLPS Jobs">Bihar BRLPS Jobs</a></span>
         </td>
-        <td style="color:rgb(172, 97, 0);; font-weight:600;">20/08/2025</td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">21/08/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr  data-shorturl="58558b" data-seo-title="IBPS Clerk Recruitment 2025: Apply Online for 15th CRP Clerk Vacancies">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="https://www.yojnaportal.com/jobs/ibps-crp-clerk-xv-jul25/">IBPS CRP Clerk 15th Vacancy 2025 Online Form</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="Bank Jobs">Bank Jobs</a></span>
+        </td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">21/08/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr  data-shorturl="4e2bb4" data-seo-title="Indian Army SSCW Tech 66 Recruitment 2025 – 31 Posts for Women Engineers">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="https://www.yojnaportal.com/force/indian-army-sscw-tech-non-tech-jul25/">Indian Army SSCW Tech Recruitment 2025</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="Indian Army SSCW">Indian Army SSCW</a></span>
+        </td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">21/08/2025</td>
+      </tr>
+    
+  
+
+  
+
+  
+    
+    
+    
+      <tr  data-shorturl="rjpc25" data-seo-title="Rajasthan RSSB Recruitment 2025: Apply Online for Platoon Commander Post">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="https://www.yojnaportal.com/jobs/rssb-platoon-commander-jul25/">RSSB Platoon Commander Vacancy 2025 Online Form</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="RSSB Platoon Commander">RSSB Platoon Commander</a></span>
+        </td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">21/08/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr  data-shorturl="75389f" data-seo-title="MPPGCL Recruitment 2025: Apply Online for 346 AE, JE, Assistant &amp; Other Posts">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="https://www.yojnaportal.com/jobs/mppgcl-various-posts-2025/">MPPGCL Vacancy 2025 Apply Online Form</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="MPPGCL">MPPGCL</a></span>
+        </td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">21/08/2025</td>
       </tr>
     
   
@@ -649,535 +1184,6 @@ function setPreferredHome() {
   
     
     
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-      <tr  data-shorturl="a1c491" data-seo-title="IOB Apprentice Recruitment 2025 – Apply Online for 750 Vacancies, Eligibility &amp; Exam Date">
-        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="https://www.yojnaportal.com/bank/iob-indian-overseas-bank-apprentice-vacancy-2025/">IOB Indian Overseas Bank Apprentice Vacancy 2025</a><br>
-          <span>⚠️<a href="#" class="dynamic-link" data-search="IOB Bank Jobs">IOB Bank Jobs</a></span>
-        </td>
-        <td style="color:rgb(172, 97, 0);; font-weight:600;">20/08/2025</td>
-      </tr>
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-      <tr  data-shorturl="bsfsq25" data-seo-title="BSF Sports Quota Recruitment 2025: 241 GD Constable Posts, 10th Pass Eligible, Apply Online">
-        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="https://www.yojnaportal.com/force/bsf-constable-sports-quota-jul25/">BSF Constable Sports Quota Vacancy 2025 Online Form</a><br>
-          <span>⚠️<a href="#" class="dynamic-link" data-search="BSF Constable">BSF Constable</a></span>
-        </td>
-        <td style="color:rgb(172, 97, 0);; font-weight:600;">20/08/2025</td>
-      </tr>
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-      <tr  data-shorturl="94612b" data-seo-title="CSBC Bihar Police Constable Driver Recruitment 2025 – 12th Pass Apply Online for 4361 Posts">
-        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="https://www.yojnaportal.com/jobs/csbc-bihar-constable-driver-vacancy-2025/">CSBC Bihar Constable Driver Vacancy 2025 Apply Online</a><br>
-          <span>⚠️<a href="#" class="dynamic-link" data-search="Constable Driver">Constable Driver</a></span>
-        </td>
-        <td style="color:rgb(172, 97, 0);; font-weight:600;">20/08/2025</td>
-      </tr>
     
   
 
@@ -2469,6 +2475,19 @@ function setPreferredHome() {
 
 
       
+          
+          
+          
+          
+          
+          <tr>
+            <td> <span style="color:green;"> • </span> <a href="https://www.yojnaportal.com/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/">RPSC Junior Legal Officer (JLO) Vacancy 2025</a> 
+        <br><span>🎯 <a href="#" class="dynamic-link" data-search="RPSC Jobs"> RPSC Jobs </a></span></td>
+      <td style="color:green; font-weight:600;">25/09/2025</td>
+    </tr>
+          
+          
+          
           
           
           
@@ -2531,13 +2550,6 @@ function setPreferredHome() {
           
           
           
-          
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="https://www.yojnaportal.com/jobs/bihar-brlps-jeevika-form-aug25/">BRLPS JEEViKA Vacancy 2025 Online Form</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="Bihar BRLPS Jobs"> Bihar BRLPS Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">21/08/2025</td>
-    </tr>
           
           
           
@@ -2945,13 +2957,6 @@ function setPreferredHome() {
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="https://www.yojnaportal.com/jobs/ibps-crp-clerk-xv-jul25/">IBPS CRP Clerk 15th Vacancy 2025 Online Form</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="Bank Jobs"> Bank Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">21/08/2025</td>
-    </tr>
-          
-          
           
           
           
@@ -3070,11 +3075,6 @@ function setPreferredHome() {
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="https://www.yojnaportal.com/force/indian-army-sscw-tech-non-tech-jul25/">Indian Army SSCW Tech Recruitment 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="Indian Army SSCW"> Indian Army SSCW </a></span></td>
-      <td style="color:green; font-weight:600;">21/08/2025</td>
-    </tr>
           
           
           
@@ -3083,24 +3083,8 @@ function setPreferredHome() {
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="https://www.yojnaportal.com/jobs/rssb-platoon-commander-jul25/">RSSB Platoon Commander Vacancy 2025 Online Form</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="RSSB Platoon Commander"> RSSB Platoon Commander </a></span></td>
-      <td style="color:green; font-weight:600;">21/08/2025</td>
-    </tr>
           
           
-          
-          
-          
-          
-          
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="https://www.yojnaportal.com/jobs/mppgcl-various-posts-2025/">MPPGCL Vacancy 2025 Apply Online Form</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="MPPGCL"> MPPGCL </a></span></td>
-      <td style="color:green; font-weight:600;">21/08/2025</td>
-    </tr>
           
           
           
@@ -4028,42 +4012,10 @@ function setPreferredHome() {
           
           
           
-     
+    
 
 
 
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
 
   
 
@@ -4095,12 +4047,52 @@ function setPreferredHome() {
     
     
     
-      <tr data-shorturl="8d9ec4" data-seo-title="WBSSC Assistant Teacher Admit Card 2025 – Download Hall Ticket Now">
-        <td> <span style="color:red;"> • </span><a href="https://www.yojnaportal.com/jobs/wbssc-assistant-teacher-vacancy-2025/">WBSSC Assistant Teacher Admit Card 2025 – Download Hall Ticket</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="West Bengal School Teacher">West Bengal School Teacher</a></span>
+      <tr data-shorturl="bab674" data-seo-title="D.El.Ed Counselling 2025 5nd Round - Online Apply">
+        <td> <span style="color:red;"> • </span><a href="https://www.yojnaportal.com/admission/mp-deled-counselling-2025/">MP D.El.Ed Counselling 2025-26 | 5rd Round -Registration</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="DElEd Admission">DElEd Admission</a></span>
         </td>
-        <td style="color:red; font-weight:600;">21/07/2025</td>
+        <td style="color:red; font-weight:600;">20/08/2025</td>
       </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
     
   
 
@@ -4333,6 +4325,13 @@ function setPreferredHome() {
   
     
     
+    
+      <tr data-shorturl="a1c491" data-seo-title="IOB Apprentice Recruitment 2025 – Apply Online for 750 Vacancies, Eligibility &amp; Exam Date">
+        <td> <span style="color:red;"> • </span><a href="https://www.yojnaportal.com/bank/iob-indian-overseas-bank-apprentice-vacancy-2025/">IOB Indian Overseas Bank Apprentice Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="IOB Bank Jobs">IOB Bank Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">20/08/2025</td>
+      </tr>
     
   
 
@@ -4622,6 +4621,13 @@ function setPreferredHome() {
     
     
     
+      <tr data-shorturl="bsfsq25" data-seo-title="BSF Sports Quota Recruitment 2025: 241 GD Constable Posts, 10th Pass Eligible, Apply Online">
+        <td> <span style="color:red;"> • </span><a href="https://www.yojnaportal.com/force/bsf-constable-sports-quota-jul25/">BSF Constable Sports Quota Vacancy 2025 Online Form</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="BSF Constable">BSF Constable</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">20/08/2025</td>
+      </tr>
+    
   
 
   
@@ -4709,6 +4715,13 @@ function setPreferredHome() {
   
     
     
+    
+      <tr data-shorturl="94612b" data-seo-title="CSBC Bihar Police Constable Driver Recruitment 2025 – 12th Pass Apply Online for 4361 Posts">
+        <td> <span style="color:red;"> • </span><a href="https://www.yojnaportal.com/jobs/csbc-bihar-constable-driver-vacancy-2025/">CSBC Bihar Constable Driver Vacancy 2025 Apply Online</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="Constable Driver">Constable Driver</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">20/08/2025</td>
+      </tr>
     
   
 
@@ -5075,13 +5088,6 @@ function setPreferredHome() {
     
     
     
-      <tr data-shorturl="92638c" data-seo-title="JPSC APO Recruitment 2025 – Apply Online for Assistant Prosecution Officer Vacancy">
-        <td> <span style="color:red;"> • </span><a href="https://www.yojnaportal.com/jobs/jh/jpsc-apo-vacancy-2025/">JPSC Assistant Public Prosecutor APO Vacancy 2025 Online Form</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="JPSC Assistant Public Prosecutor APO">JPSC Assistant Public Prosecutor APO</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">21/07/2025</td>
-      </tr>
-    
   
 
   
@@ -5137,13 +5143,6 @@ function setPreferredHome() {
   
     
     
-    
-      <tr data-shorturl="74b088" data-seo-title="SSC JE Vacancy 2025 – Apply Online for Junior Engineer Civil, Electrical, Mechanical Posts">
-        <td> <span style="color:red;"> • </span><a href="https://www.yojnaportal.com/jobs/ssc-junior-engineer-je-vacancy-2025/">SSC Junior Engineer JE Vacancy 2025 Online Form</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="SSC Junior Engineer">SSC Junior Engineer</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">21/07/2025</td>
-      </tr>
     
   
 
@@ -5359,13 +5358,6 @@ function setPreferredHome() {
   
     
     
-    
-      <tr data-shorturl="eb2263" data-seo-title="UPPSC Statistics Officer &amp; Assistant Geologist Recruitment 2025 – Apply Online Now">
-        <td> <span style="color:red;"> • </span><a href="https://www.yojnaportal.com/jobs/uppsc-statistics-officer-assistant-geologist-2025/">UPPSC Statistics Officer, Assistant Geologist 2025 Online Form</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="UPPSC">UPPSC</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">21/07/2025</td>
-      </tr>
     
   
 
@@ -6217,17 +6209,19 @@ function setPreferredHome() {
 
 
   </tbody>
-  <tfoot> <tr> <td colspan="2" style="text-align:center; background: #ffae00;font-weight:bold;"> www.YojnaPortal.com </td></tr></tfoot>
+  <tfoot>
+    <tr>
+      <td colspan="2" style="text-align:center; background: #ffae00;font-weight:bold;"> www.YojnaPortal.com </td>
+    </tr>
+  </tfoot>
 </table>
-<br> <hr>
- <button onclick="shareOnWhatsApp()" class="share-btn">
-📤 WhatsApp Share
+
+<br><hr>
+<button onclick="shareOnWhatsApp()" class="share-btn">
+  📤 WhatsApp Share
 </button>
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script>
- 
-</script>
 
 </body>
 </html>
@@ -6492,7 +6486,7 @@ function setPreferredHome() {
     
     
       
-      <script src="https://www.yojnaportal.com/js/pages/lastdates.min.9cd60c2fe805fa79760e3375a5ee41bfc5f1ef3a746ab42f0d6403b9ad3b0c54.js" integrity="sha256-nNYML&#43;gF&#43;nl2DjN1pe5Bv8Xx7zp0arQvDWQDua07DFQ=" defer></script>
+      <script src="https://www.yojnaportal.com/js/pages/lastdates.min.88fe8ad98b78eb38926b334652a03b57284734be824caa5e35a8cd6ed0d79569.js" integrity="sha256-iP6K2Yt46ziSazNGUqA7VyhHNL6CTKpeNajNbtDXlWk=" defer></script>
     
   
   
