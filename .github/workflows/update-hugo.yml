@@ -1,10 +1,9 @@
-name: Deploy Hugo site to Cloudflare Pages
+name: Deploy site to CF Page at 02 AM
 
 on:
   schedule:
-    - cron: "50 5 * * *"   # रोज़ाना 11:20 AM IST
-    - cron: "*/20 * * * *" # हर 20 मिनट पर deploy
-  workflow_dispatch:       # Manual run option
+    - cron: "30 20 * * *"   # रोज़ाना 2:00 AM IST (20:30 UTC)
+  workflow_dispatch:         # Manual run option
 
 jobs:
   build:
