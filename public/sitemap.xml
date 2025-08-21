@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/neet-pg-2025/</loc>
+    <lastmod>2025-08-21T17:00:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-21T17:00:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/indian-navy-civilian-vacancy-2025/</loc>
+    <lastmod>2025-08-21T16:23:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/otr/</loc>
     <lastmod>2025-08-20T12:13:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/rj/rpsc-otr-one-time-registration-online/</loc>
-    <lastmod>2025-08-20T12:13:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-08-20T12:13:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -134,11 +144,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/cm-kisan-kalyan-nidhi/</loc>
     <lastmod>2025-08-14T17:32:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/force/indian-navy-civilian-vacancy-2025/</loc>
-    <lastmod>2025-08-14T13:15:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1374,11 +1379,6 @@
   </url><url>
     <loc>http://localhost:1313/how-to/check-link-mobile-no-with-aadhar/</loc>
     <lastmod>2025-04-21T09:09:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/neet-pg-2025/</loc>
-    <lastmod>2025-04-18T11:28:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
