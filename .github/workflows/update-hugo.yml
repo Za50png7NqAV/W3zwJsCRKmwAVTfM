@@ -2,9 +2,12 @@ name: Deploy Hugo site to CF Pages every 24 hours
 
 on:
   schedule:
-    - cron: "32 18 * * *" # रोज़ाना 12:02 AM IST
-    - cron: "0 */24 * * *" # हर 24 घंटे पर deploy
+      - cron: "30 3 * * *" # रोज़ाना 9:00 AM IST (03:30 UTC)
   workflow_dispatch:       # Manual run option
+
+concurrency:
+  group: cloudflare-pages
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -22,10 +25,13 @@ jobs:
       - name: Build Hugo
         run: hugo --minify
 
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+      - name: Publish to Cloudflare Pages (with retry)
+        uses: nick-invision/retry@v3
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          projectName: ${{ secrets.CF_PROJECT_NAME }}
-          directory: ./public
+          timeout_minutes: 10
+          max_attempts: 3
+          command: |
+            npx wrangler@2 pages deploy ./public \
+              --project-name ${{ secrets.CF_PROJECT_NAME }} \
+              --account-id ${{ secrets.CF_ACCOUNT_ID }} \
+              --api-token ${{ secrets.CF_API_TOKEN }}
