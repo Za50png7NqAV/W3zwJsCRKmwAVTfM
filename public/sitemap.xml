@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bihar-shs-lab-technician-vacancy-2025/</loc>
-    <lastmod>2025-08-24T15:39:18+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bssc-bihar-office-attendant-vacancy-aug-2025/</loc>
+    <lastmod>2025-08-25T09:18:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-25T09:18:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/bsf-head-constable-ro-rm-vacancy-2025/</loc>
+    <lastmod>2025-08-25T09:16:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-shs-lab-technician-vacancy-2025/</loc>
     <lastmod>2025-08-24T15:39:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -257,11 +267,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/force/bsf-head-constable-ro-rm-vacancy-2025/</loc>
-    <lastmod>2025-08-13T17:42:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rssb-patwari-bharti-2025/</loc>
     <lastmod>2025-08-13T16:47:35+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -379,11 +384,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sbi-clerk-junior-associate-vacancy-aug-2025/</loc>
     <lastmod>2025-08-06T12:08:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bssc-bihar-office-attendant-vacancy-aug-2025/</loc>
-    <lastmod>2025-08-06T10:11:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
