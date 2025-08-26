@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bssc-bihar-office-attendant-vacancy-aug-2025/</loc>
-    <lastmod>2025-08-25T09:18:39+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bssc-4th-graduate-level-vacancy-aug-2025/</loc>
+    <lastmod>2025-08-26T09:11:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-26T09:11:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bssc-bihar-office-attendant-vacancy-aug-2025/</loc>
     <lastmod>2025-08-25T09:18:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -154,11 +159,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/aai-junior-executive-je-vacancy-2025/</loc>
     <lastmod>2025-08-18T19:53:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bssc-4th-graduate-level-vacancy-aug-2025/</loc>
-    <lastmod>2025-08-18T19:50:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
