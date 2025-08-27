@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-<<<<<<< HEAD
     <loc>http://localhost:1313/jobs/oil-india-limited-vacancy-2025/</loc>
     <lastmod>2025-08-27T10:39:44+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -10,14 +9,10 @@
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-08-27T10:39:44+05:30</lastmod>
-=======
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-08-26T18:54:15+05:30</lastmod>
->>>>>>> ca47062c8ce75d2730eaeb6a5191d6ec22ea31c4
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/railway/rrc-sr-apprentices-vacancy-2025/</loc>
+    <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2025-08-26T18:54:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
