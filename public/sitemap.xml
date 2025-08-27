@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/mp-rewashakti-keerti-card-online-apply/</loc>
-    <lastmod>2025-08-26T17:47:59+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-08-26T18:54:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/railway/rrc-sr-apprentices-vacancy-2025/</loc>
+    <lastmod>2025-08-26T18:54:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-26T18:54:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-rewashakti-keerti-card-online-apply/</loc>
     <lastmod>2025-08-26T17:47:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -89,11 +99,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-specialist-officer-so-15th-vacancy-2025/</loc>
     <lastmod>2025-08-22T20:03:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-08-22T19:23:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
