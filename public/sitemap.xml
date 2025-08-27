@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/</loc>
-    <lastmod>2025-08-27T11:18:18+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/pgcil-field-engineer-supervisor-vacancy-2025/</loc>
+    <lastmod>2025-08-27T16:12:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-27T16:12:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
+    <lastmod>2025-08-27T16:05:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-bpsc-aedo-vacancy-2025/</loc>
+    <lastmod>2025-08-27T11:25:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/</loc>
     <lastmod>2025-08-27T11:18:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -84,11 +99,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-prosecutor-lecturer-vacancy-2025/</loc>
     <lastmod>2025-08-24T10:17:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bihar-bpsc-aedo-vacancy-2025/</loc>
-    <lastmod>2025-08-23T13:05:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -274,11 +284,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/</loc>
     <lastmod>2025-08-14T10:01:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
-    <lastmod>2025-08-13T20:05:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -2217,7 +2222,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bank/sbi-po-dec24/</loc>
+    <loc>http://localhost:1313/jobs/bank/2025/05/sbi-po-dec24/</loc>
     <lastmod>2024-12-29T10:09:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
