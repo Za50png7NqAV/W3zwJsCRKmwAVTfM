@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bpsc-atp-vacancy-2025/</loc>
-    <lastmod>2025-08-28T12:14:50+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/nhpc-non-executive-vacancy-2025/</loc>
+    <lastmod>2025-08-28T16:50:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-28T16:50:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-motor-vehicle-inspector-mvi-2025/</loc>
+    <lastmod>2025-08-28T13:19:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-atp-vacancy-2025/</loc>
     <lastmod>2025-08-28T12:14:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -469,11 +479,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
     <lastmod>2025-08-02T09:39:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-motor-vehicle-inspector-mvi-2025/</loc>
-    <lastmod>2025-08-01T17:04:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
