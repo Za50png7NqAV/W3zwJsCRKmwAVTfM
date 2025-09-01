@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/jobs/ibps-rrbs-crp-xiv-vacancy-2025/</loc>
-    <lastmod>2025-09-01T11:15:52+05:30</lastmod>
+    <lastmod>2025-09-01T11:34:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-01T11:15:52+05:30</lastmod>
+    <lastmod>2025-09-01T11:34:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-09-01T11:33:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/ecil-iti-trade-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-09-01T11:33:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-shs-lab-technician-vacancy-2025/</loc>
+    <lastmod>2025-09-01T11:27:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -17,18 +32,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-08-31T16:07:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/naval-dockyard-apprentice-vacancy-2025/</loc>
     <lastmod>2025-08-31T16:07:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/ecil-iti-trade-apprentice-vacancy-2025/</loc>
-    <lastmod>2025-08-30T18:08:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -179,11 +184,6 @@
   </url><url>
     <loc>http://localhost:1313/force/bsf-head-constable-ro-rm-vacancy-2025/</loc>
     <lastmod>2025-08-25T09:16:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bihar-shs-lab-technician-vacancy-2025/</loc>
-    <lastmod>2025-08-24T15:39:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
