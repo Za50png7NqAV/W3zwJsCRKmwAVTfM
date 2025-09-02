@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/join-indian-navy-ssc-officers-vacancy-aug-25/</loc>
-    <lastmod>2025-09-01T19:25:22+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bpsc-hod-department-head-vacancy-2025/</loc>
+    <lastmod>2025-09-02T08:46:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-02T08:46:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-sports-officer-vacancy-2025/</loc>
+    <lastmod>2025-09-02T08:46:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nhpc-non-executive-vacancy-2025/</loc>
+    <lastmod>2025-09-02T08:43:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/</loc>
+    <lastmod>2025-09-02T08:30:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/join-indian-navy-ssc-officers-vacancy-aug-25/</loc>
     <lastmod>2025-09-01T19:25:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -62,16 +82,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-hod-department-head-vacancy-2025/</loc>
-    <lastmod>2025-08-29T20:05:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-sports-officer-vacancy-2025/</loc>
-    <lastmod>2025-08-29T19:23:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/neet-pg-2025/</loc>
     <lastmod>2025-08-29T17:59:24+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -99,11 +109,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/pfrda-assistant-manager-am-vacancy-2025/</loc>
     <lastmod>2025-08-28T17:00:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/nhpc-non-executive-vacancy-2025/</loc>
-    <lastmod>2025-08-28T16:50:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -649,11 +654,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mpesb-anmtst-2025/</loc>
     <lastmod>2025-07-26T03:31:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/</loc>
-    <lastmod>2025-07-25T17:43:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
