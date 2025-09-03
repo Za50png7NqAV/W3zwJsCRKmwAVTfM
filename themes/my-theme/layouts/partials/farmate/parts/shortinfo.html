@@ -2,10 +2,10 @@
  <table class="yp-table">
 
   {{ range . }}
-  {{ $step1 := replace . ":" "//" }}
-  {{ $step2 := replace $step1 "ः" "//" }}
-   {{ $clean := replace $step2 "-" "//" }}
-  {{ $parts := split $clean "//" }}
+  {{ $step1 := replace . ":" "~~" }}
+  {{ $step2 := replace $step1 "***" "~~" }}
+   {{ $clean := replace $step2 "~~~" "~~" }}
+  {{ $parts := split $clean "~~" }}
  <tr>
       {{ if eq (len $parts) 2 }}
         {{ $label := trim (index $parts 0) " " }}
