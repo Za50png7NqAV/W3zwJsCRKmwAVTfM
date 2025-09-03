@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/jnv-class-ix-admission-form-2026/</loc>
+    <lastmod>2025-09-03T12:26:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-03T12:26:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/scholarship/lic-gjf-golden-jubilee-scholarship-2025/</loc>
     <lastmod>2025-09-03T11:03:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scholarship/</loc>
-    <lastmod>2025-09-03T11:03:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-09-03T11:03:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
