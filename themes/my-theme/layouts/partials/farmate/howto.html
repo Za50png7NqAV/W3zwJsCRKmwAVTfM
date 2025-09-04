@@ -20,14 +20,7 @@
 </section>
 {{ end }}
 
-{{ with .Params.how_to }}
-<section class="yp-section">
-  <div class="yp-card">
-<div class="head-card">👨‍💻 How to do: </div> 
-  {{ partial "farmate/parts/other/how_to.html" $ }}
-  </div>
-  </section>
-{{ end }}
+
 
 {{ with .Params.documents }}
 <section class="yp-section">
@@ -39,12 +32,14 @@
 
 {{ .Content }}
 
-{{ with .Params.faqs }}
+
+{{ with .Params.how_to }}
 <section class="yp-section">
   <div class="yp-card">
-<div class="head-card">🙋‍♂️Faqs❓ </div> 
-  {{ partial "farmate/parts/faqs.html" $ }}
-  </div> </section>
+<div class="head-card">👨‍💻 How to do: </div> 
+  {{ partial "farmate/parts/other/how_to.html" $ }}
+  </div>
+  </section>
 {{ end }}
 
 {{ with .Params.links }}
@@ -54,6 +49,14 @@
   {{ partial "farmate/parts/link-table.html" $ }}
   </div> </section>
 {{ end }}
+{{ with .Params.faqs }}
+<section class="yp-section">
+  <div class="yp-card">
+<div class="head-card">🙋‍♂️Faqs❓ </div> 
+  {{ partial "farmate/parts/faqs.html" $ }}
+  </div> </section>
+{{ end }}
+
 </div>
   {{ partial "imp-codes/imageBanner.html" . }}
 

@@ -1,15 +1,15 @@
 {{ with .Params.faqs }}
-    {{ range . }}
-      {{ $parts := split . "///" }}
-      <details>
-        {{ if eq (len $parts) 2 }}
-          <summary  style="color:#02191a"> Q. {{ index $parts 0 }}?</summary>
-          <p style="color:#021600"> {{ index $parts 1 }}</p>
-        {{ else }}
-          {{ . }}
-        {{ end }}
-      </details>  
-    {{ end }}
-
+  {{ range . }}
+    {{ $normalized := replace . "~~~" "///" }} <!-- पहले ~~~ को /// से बदल दो -->
+    {{ $parts := split $normalized "///" }}
+    <details>
+      {{ if eq (len $parts) 2 }}
+        <summary style="color:#02191a"> ❓ {{ index $parts 0 }}?</summary>
+        <p style="color:#021600"> {{ index $parts 1 }}</p>
+      {{ else }}
+        {{ . }}
+      {{ end }}
+    </details>
+  {{ end }}
 {{ end }}
 
