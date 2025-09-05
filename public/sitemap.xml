@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mppsc-nurse-officer-2025/</loc>
-    <lastmod>2025-09-05T11:15:21+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrc-er-sports-quota-vacancy-2025/</loc>
+    <lastmod>2025-09-05T16:52:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-05T16:52:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/hdfc-ecss-scholarship-2025-26/</loc>
+    <lastmod>2025-09-05T11:50:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/</loc>
+    <lastmod>2025-09-05T11:50:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mha-intelligence-bureau-acio-vacancy-2025/</loc>
+    <lastmod>2025-09-05T11:41:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-nurse-officer-2025/</loc>
     <lastmod>2025-09-05T11:15:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -23,11 +43,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scholarship/azim-premji-scholarship-form-2025/</loc>
-    <lastmod>2025-09-04T20:18:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scholarship/</loc>
     <lastmod>2025-09-04T20:18:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -94,11 +109,6 @@
   </url><url>
     <loc>http://localhost:1313/scholarship/lic-gjf-golden-jubilee-scholarship-2025/</loc>
     <lastmod>2025-09-03T11:03:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scholarship/hdfc-ecss-scholarship-2025-26/</loc>
-    <lastmod>2025-09-03T09:43:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -844,11 +854,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/indian-bank-apprentice-2025/</loc>
     <lastmod>2025-07-19T12:36:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mha-intelligence-bureau-acio-vacancy-2025/</loc>
-    <lastmod>2025-07-19T08:13:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
