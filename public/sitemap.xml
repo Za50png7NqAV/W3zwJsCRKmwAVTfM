@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/afms-medical-officer-vacancy-2025/</loc>
-    <lastmod>2025-09-07T16:16:32+05:30</lastmod>
+    <loc>http://localhost:1313/scholarship/reliance-foundation-scholarships-2025-26/</loc>
+    <lastmod>2025-09-07T18:54:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/</loc>
+    <lastmod>2025-09-07T18:54:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-07T18:54:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/afms-medical-officer-vacancy-2025/</loc>
     <lastmod>2025-09-07T16:16:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -58,11 +68,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scholarship/hdfc-ecss-scholarship-2025-26/</loc>
-    <lastmod>2025-09-05T11:50:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scholarship/</loc>
     <lastmod>2025-09-05T11:50:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
