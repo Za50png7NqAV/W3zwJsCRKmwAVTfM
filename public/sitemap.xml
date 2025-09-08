@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mp/ladli-bahna-yojana-update-2025/</loc>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
     <lastmod>2025-09-08T19:55:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -644,11 +644,6 @@
   </url><url>
     <loc>http://localhost:1313/scholarship/azim-premji-scholarship/</loc>
     <lastmod>2025-08-07T20:09:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2025-08-07T18:23:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1649,6 +1644,11 @@
   </url><url>
     <loc>http://localhost:1313/schemes/farmer-id-annadata-card/</loc>
     <lastmod>2025-04-14T10:27:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-bahna-yojana-update-2025/</loc>
+    <lastmod>2025-04-14T07:43:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
