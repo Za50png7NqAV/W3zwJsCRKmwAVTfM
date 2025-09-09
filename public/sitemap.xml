@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2025-09-08T19:55:19+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-09-09T16:16:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/iocl-nr-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-09-09T16:16:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-09T16:16:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
+    <lastmod>2025-09-09T10:42:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
+    <lastmod>2025-09-09T10:34:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
     <lastmod>2025-09-08T19:55:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -167,11 +187,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
-    <lastmod>2025-09-03T17:07:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/jnv-class-ix-admission-form-2026/</loc>
     <lastmod>2025-09-03T12:26:34+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -179,11 +194,6 @@
   </url><url>
     <loc>http://localhost:1313/scholarship/lic-gjf-golden-jubilee-scholarship-2025/</loc>
     <lastmod>2025-09-03T11:03:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-09-02T20:27:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -994,11 +1004,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-food-safety-officer-vacancy-2025/</loc>
     <lastmod>2025-06-11T10:48:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
-    <lastmod>2025-07-11T09:40:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
