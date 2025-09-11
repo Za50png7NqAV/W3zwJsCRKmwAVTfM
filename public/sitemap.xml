@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bom-specialist-officer-vacancy-2025/</loc>
-    <lastmod>2025-09-11T13:26:46+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/up-police-sub-inspector-si-vacancy-2025/</loc>
+    <lastmod>2025-09-11T19:29:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-11T19:29:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
+    <lastmod>2025-09-11T19:25:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
+    <lastmod>2025-09-11T18:57:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bom-specialist-officer-vacancy-2025/</loc>
     <lastmod>2025-09-11T13:26:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -67,18 +82,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/rajasthan-police/constable-bharti-2025/</loc>
-    <lastmod>2025-09-09T10:42:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
     <lastmod>2025-09-09T10:34:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2025-09-08T19:55:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -619,11 +624,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/uppsc-gic-lecturer-vacancy-2025/</loc>
     <lastmod>2025-08-13T14:13:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-police-sub-inspector-si-vacancy-2025/</loc>
-    <lastmod>2025-08-13T10:50:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
