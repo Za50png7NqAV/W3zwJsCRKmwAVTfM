@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/sbi-manager-deputy-manager-vacancy-2025/</loc>
-    <lastmod>2025-09-12T11:28:29+05:30</lastmod>
+    <loc>http://localhost:1313/celebration/</loc>
+    <lastmod>2025-09-12T12:05:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-12T12:05:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/celebration/yojnaportal-Whatsapp-Channel/</loc>
+    <lastmod>2025-09-12T12:05:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-manager-deputy-manager-vacancy-2025/</loc>
     <lastmod>2025-09-12T11:28:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1579,16 +1589,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/csir-nbri-recruitment-2025/</loc>
     <lastmod>2025-05-03T16:46:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/celebration/</loc>
-    <lastmod>2025-05-03T08:47:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/celebration/yojnaportal-Whatsapp-100k/</loc>
-    <lastmod>2025-05-03T08:47:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
