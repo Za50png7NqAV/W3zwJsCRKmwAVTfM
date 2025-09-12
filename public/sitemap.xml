@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/up-police-sub-inspector-si-vacancy-2025/</loc>
-    <lastmod>2025-09-11T19:29:56+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rajasthan-constable-sports-quota-vacancy-2025/</loc>
+    <lastmod>2025-09-12T09:45:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-12T09:45:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-09-12T09:43:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/iocl-nr-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-09-12T09:43:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-police-sub-inspector-si-vacancy-2025/</loc>
     <lastmod>2025-09-11T19:29:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -72,16 +87,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-09-09T16:16:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/iocl-nr-apprentice-vacancy-2025/</loc>
-    <lastmod>2025-09-09T16:16:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
     <lastmod>2025-09-09T10:34:27+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -139,11 +144,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-patwari-bharti-2025/</loc>
     <lastmod>2025-09-05T20:05:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rajasthan-constable-sports-quota-vacancy-2025/</loc>
-    <lastmod>2025-09-05T18:34:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
