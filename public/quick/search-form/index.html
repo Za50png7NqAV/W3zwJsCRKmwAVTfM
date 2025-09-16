@@ -5,6 +5,38 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  .dark-mode {
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode td:first-child {
+    color: black;
+    width: 180px;
+   
+}
+
+.dark-mode .correct { color: #4caf50; }
+.dark-mode .incorrect { color: #f44336; }
+.dark-mode .active { background: #ffff00; color:#000; }
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode button {
+   background: #181717;
+   color:white;
+}
 </head>
 
   <header class="header">
@@ -26,6 +58,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <button onclick="toggleDarkMode()" class="DarkMode" >🌙 Dark Mode</button>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -113,6 +146,30 @@ function setPreferredHome() {
   window.addEventListener("hashchange", function () {
     setTimeout(removeGSCtabHash, 200); 
   });
+</script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light Mode"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌙 Dark Mode"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light Mode";
+  } else {
+    btn.textContent = "🌙 Dark Mode";
+  }
+});
 </script>
  
 

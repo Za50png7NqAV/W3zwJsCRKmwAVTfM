@@ -164,6 +164,38 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  .dark-mode {
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode td:first-child {
+    color: black;
+    width: 180px;
+   
+}
+
+.dark-mode .correct { color: #4caf50; }
+.dark-mode .incorrect { color: #f44336; }
+.dark-mode .active { background: #ffff00; color:#000; }
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode button {
+   background: #181717;
+   color:white;
+}
 </head>
 
   <header class="header">
@@ -185,6 +217,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <button onclick="toggleDarkMode()" class="DarkMode" >🌙 Dark Mode</button>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -273,6 +306,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light Mode"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌙 Dark Mode"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light Mode";
+  } else {
+    btn.textContent = "🌙 Dark Mode";
+  }
+});
+</script>
  
     </header>
     
@@ -307,30 +364,21 @@ function setPreferredHome() {
         
         
         
-          <li class="card-item">
-            <a class="card-title" href="/scholarship/lic-gjf-golden-jubilee-scholarship-2025/" >LIC Golden Jubilee Scholarship 2025</a>
-            
-          <div class="card-tags">
+    
         
-        
-      </div>
-
-      <div class="card-date">📅 03 Sep 2025</div>
-          </li>
-       
         
     
         
         
           <li class="card-item">
-            <a class="card-title" href="/mp/cmkvy-kanya-vivah-nikah-yojna-form/" >Mukhya Mantri Kanya Vivah /Nikah Yojna -(MKVNY)</a>
+            <a class="card-title" href="/education/central-board-result-2025/" >Central Board 10th &amp; 12th CBSE Result 2025</a>
             
           <div class="card-tags">
         
-        <a href="/pdf-forms/">📄 PDF Form</a>
+        
       </div>
 
-      <div class="card-date">📅 15 Apr 2025</div>
+      <div class="card-date">📅 13 May 2025</div>
           </li>
        
         
@@ -341,19 +389,16 @@ function setPreferredHome() {
         
         
           <li class="card-item">
-            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" >CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
+            <a class="card-title" href="/how-to/book-my-hsrp-online/" >Book HSRP Online Apply 2025</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 14 Aug 2025</div>
+      <div class="card-date">📅 18 May 2025</div>
           </li>
        
-        
-    
-        
         
     
     <hr>
@@ -371,28 +416,32 @@ function setPreferredHome() {
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/railway/rrb-paramedical-various-posts-2025/" target="_blank">
+      <a class="card-title" href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank">
         
-          RRB Paramedical Various Posts Vacancy 2025
+          ECIL Technical Officer Vacancy 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
       <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
+        
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/mp/mpesb-excise-constable-feb25/" target="_blank">
+      <a class="card-title" href="/jobs/uppsc-apo-vacancy-2025/" target="_blank">
         
-          MPESB Abkari Constable Admit Card 2025
+          UPPSC APO Recruitment 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -401,16 +450,18 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/scholarship/azim-premji-scholarship-form-2025/" target="_blank">
+      <a class="card-title" href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank">
         
-          Azim Premji Foundation Scholarship 2025 – Online Application Begins
+          NFR Sports Quota Recruitment 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -419,16 +470,18 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/indian-coast-guard-ac-vacancy-2025/" target="_blank">
+      <a class="card-title" href="/jobs/ib-security-assistant-2025/" target="_blank">
         
-          Indian Coast Guard AC Exam City &amp; Exam Date 2025
+          IB Security Assistant/Executive Exam City 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -437,16 +490,18 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/upsc-cds-ii-2025/" target="_blank">
+      <a class="card-title" href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" target="_blank">
         
-          UPSC CDS II Admit Card 2025
+          Indian Airforce Agniveervayu Intake 02/2026 Exam City 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -455,15 +510,15 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/upsc-nda-ii-2025/" target="_blank">
+      <a class="card-title" href="/jobs/mpesb-police-constable-vacancy-2025/" target="_blank">
         
-          UPSC NDA 2 Admit Card 2025
+          MPESB MP Police Constable Vacancy 2025
         
         
       </a>
@@ -473,33 +528,33 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 15 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/upsc/epfo-eo-ao-apfc-posts-jul25/" target="_blank">
+      <a class="card-title" href="/jobs/rajasthan-constable-sports-quota-vacancy-2025/" target="_blank">
         
-          UPSC EPFO Exam Date 2025
+          Rajasthan Police Constable Sports Quota Vacancy 2025
         
         
       </a>
 
       <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
+        
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 15 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/uppsc-assistant-professor-vacancy-2025/" target="_blank">
+      <a class="card-title" href="/railway/rrb-section-controller-vacancy-2025/" target="_blank">
         
-          UPPSC Assistant Professor Vacancy 2025
+          RRB Section Controller Vacancy 2025 Online Form
         
         
       </a>
@@ -509,33 +564,33 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 15 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/force/indian-coast-guard-2025/" target="_blank">
+      <a class="card-title" href="/jobs/dda-recruitment-2025/" target="_blank">
         
-          Indian Coast Guard Navik/Yantrik CGEPT 2026 Exam City
+          Delhi DDA Recruitment 2025
         
         
       </a>
 
       <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
+        
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 14 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/sbi-probationary-officers-po-bharti-2025/" target="_blank">
+      <a class="card-title" href="/profile/mpesb-candidate-profile-panjiyan/" target="_blank">
         
-          SBI Probationary Officers PO Pre Result 2025
+          MPESB Candidate Profiling / Profile Panjiyan Form Online
         
         
       </a>
@@ -545,7 +600,7 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 14 Sep 2025</div>
     </li>
   
 </ul>
@@ -568,6 +623,24 @@ Latest Jobs
 
   <select id="categoryFilter" onchange="populateInputAndSearch()">
     
+    
+      
+      
+        <option value="RPSC">RPSC</option>
+        
+      
+    
+      
+      
+        <option value="SSC CGL">SSC CGL</option>
+        
+      
+    
+      
+      
+        <option value="BPSC">BPSC</option>
+        
+      
     
       
       
@@ -594,15 +667,6 @@ Latest Jobs
       
     
       
-      
-        <option value="SSC CGL">SSC CGL</option>
-        
-      
-    
-      
-      
-        <option value="BPSC">BPSC</option>
-        
       
     
       
@@ -676,12 +740,6 @@ Latest Jobs
     
       
       
-        <option value="RPSC">RPSC</option>
-        
-      
-    
-      
-      
         <option value="SBI CBO">SBI CBO</option>
         
       
@@ -699,9 +757,6 @@ Latest Jobs
       
         <option value="Home Guard">Home Guard</option>
         
-      
-    
-      
       
     
       
@@ -1072,6 +1127,8 @@ Latest Jobs
   
 
   
+    
+  
 
   
     
@@ -1095,6 +1152,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -1118,9 +1177,11 @@ Latest Jobs
   
 
   
-
+    
   
 
+  
+    
   
 
   
@@ -1132,7 +1193,7 @@ Latest Jobs
   
 
   
-    
+
   
 
   
@@ -1145,6 +1206,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -1161,6 +1224,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -1177,10 +1242,12 @@ Latest Jobs
 
   
 
+  
+    
   
 
   
-    
+
   
 
   
@@ -1254,13 +1321,15 @@ Latest Jobs
   
 
   
-    
+
   
 
   
     
   
 
+  
+    
   
 
   
@@ -1291,6 +1360,8 @@ Latest Jobs
     
   
 
+  
+    
   
 
   
@@ -1298,7 +1369,7 @@ Latest Jobs
   
 
   
-    
+
   
 
   
@@ -1336,11 +1407,11 @@ Latest Jobs
   
 
   
-
+    
   
 
   
-
+    
   
 
   
@@ -1363,6 +1434,8 @@ Latest Jobs
     
   
 
+  
+    
   
 
   
@@ -1399,6 +1472,8 @@ Latest Jobs
     
   
 
+  
+    
   
 
   
@@ -1437,6 +1512,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -1448,7 +1525,9 @@ Latest Jobs
   
 
   
-    
+
+  
+
   
 
   
@@ -1458,9 +1537,11 @@ Latest Jobs
   
 
   
-
+    
   
 
+  
+    
   
 
   
@@ -1481,28 +1562,38 @@ Latest Jobs
     
   
 
+  
+    
   
 
   
     
+  
+
   
 
   
     
   
 
+  
+    
   
 
   
     
   
 
+  
+    
   
 
   
 
   
     
+  
+
   
 
   
@@ -1513,10 +1604,16 @@ Latest Jobs
     
   
 
+  
+    
   
 
+  
+    
   
 
+  
+    
   
 
   
@@ -1527,6 +1624,8 @@ Latest Jobs
     
   
 
+  
+    
   
 
   
@@ -1537,6 +1636,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -1555,6 +1656,8 @@ Latest Jobs
     
   
 
+  
+    
   
 
   
@@ -1569,20 +1672,30 @@ Latest Jobs
 
   
 
+  
+    
   
 
   
-    
+
   
 
   
     
   
 
+  
+    
   
 
   
     
+  
+
+  
+
+  
+
   
 
   
@@ -1595,6 +1708,8 @@ Latest Jobs
 
   
 
+  
+    
   
 
   
@@ -1606,11 +1721,17 @@ Latest Jobs
   
 
   
-
+    
   
 
   
     
+  
+
+  
+
+  
+
   
 
   
@@ -1631,6 +1752,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -1646,11 +1769,19 @@ Latest Jobs
   
 
   
-    
+
+  
+
   
 
   
     
+  
+
+  
+
+  
+
   
 
   
@@ -1659,18 +1790,26 @@ Latest Jobs
 
   
     
+  
+
   
 
   
 
+  
+    
   
 
   
     
   
 
+  
+    
   
 
+  
+    
   
 
   
@@ -1695,6 +1834,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -1702,11 +1843,13 @@ Latest Jobs
   
 
   
-
+    
   
 
   
     
+  
+
   
 
   
@@ -1717,8 +1860,16 @@ Latest Jobs
 
   
     
+  
+
+  
+
+  
+
   
 
+  
+    
   
 
   
@@ -1729,6 +1880,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -1983,8 +2136,6 @@ Latest Jobs
 
   
     
-  
-
   
 
   
@@ -2169,8 +2320,6 @@ Latest Jobs
 
   
     
-  
-
   
 
   
@@ -2259,6 +2408,20 @@ Latest Jobs
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2270,6 +2433,18 @@ Latest Jobs
   
 
   
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
 
   
 
@@ -2284,6 +2459,8 @@ Latest Jobs
   
 
   
+
+  
     
   
 
@@ -2293,6 +2470,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -2334,58 +2513,690 @@ Latest Jobs
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank"  >
+        
+          ECIL Technical Officer Vacancy 2025
+           
+
+
+
+
+
+    <a href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+        • <span class="text-blue-600 font-semibold">Starts Today</span>
+    
+
+
 
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="ECIL Jobs"> ECIL Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 16-09-2025 </b>  <br>  </span>End: <b style="color:red"> 22-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/uppsc-apo-vacancy-2025/" target="_blank"  >
+        
+          UPPSC APO Recruitment 2025
+           
+
+
+
+
+
+    <a href="/jobs/uppsc-apo-vacancy-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+        • <span class="text-blue-600 font-semibold">Starts Today</span>
+    
+
+
+
 
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="UPPSC Jobs"> UPPSC Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 16-09-2025 </b>  <br>  </span>End: <b style="color:red"> 16-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank"  >
+        
+          NFR Sports Quota Recruitment 2025
+           
+
+
+
+
+
+    <a href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+        • <span class="text-blue-600 font-semibold">Starts Today</span>
+    
 
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Railway NFR Jobs"> Railway NFR Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 16-09-2025 </b>  <br>  </span>End: <b style="color:red"> 15-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/mpesb-police-constable-vacancy-2025/" target="_blank"  >
+        
+          MPESB MP Police Constable Vacancy 2025
+           
+
+
+
+
+
+
+
+
+    
+
+
+
 
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="MPESB Jobs"> MPESB Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 15-09-2025 </b>  <br>  </span>End: <b style="color:red"> 29-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/rajasthan-constable-sports-quota-vacancy-2025/" target="_blank"  >
+        
+          Rajasthan Police Constable Sports Quota Vacancy 2025
+           
+
+
+
+
+
+
+
+
+    
+
+
+
+
     
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Sports Quota Jobs"> Sports Quota Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 15-09-2025 </b>  <br>  </span>End: <b style="color:red"> 04-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/railway/rrb-section-controller-vacancy-2025/" target="_blank"  >
+        
+          RRB Section Controller Vacancy 2025 Online Form
+           
+
+
 
+
+
+
+
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Railway Jobs"> Railway Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 15-09-2025 </b>  <br>  </span>End: <b style="color:red"> 14-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/dda-recruitment-2025/" target="_blank"  >
+        
+          Delhi DDA Recruitment 2025
+           
+
+
+
+
+
+
+
+
+    
+
+
+
+
     
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="DDA Jobs"> DDA Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 06-10-2025 </b>  <br>  </span>End: <b style="color:red"> 05-11-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/iocl-junior-engineer-vacancy-2025/" target="_blank"  >
+        
+          IOCL Junior Engineer Vacancy 2025
+           
+
+
+
+
+
+
+
 
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="IOCL Jobs"> IOCL Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 12-09-2025 </b>  <br>  </span>End: <b style="color:red"> 28-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/iob-specialist-officers-vacancy-2025/" target="_blank"  >
+        
+          IOB Specialist Officers Vacancy Online Form 2025
+           
+
+
+
+
+
+
+
+
+    
+
+
+
+
     
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Bank Jobs"> Bank Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 12-09-2025 </b>  <br>  </span>End: <b style="color:red"> 03-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/sbi-manager-credit-analyst-vacancy-2025/" target="_blank"  >
+        
+          SBI Manager (Credit Analyst) Vacancy Online Form 2025
+           
+
+
+
+
+
 
+
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Bank Jobs"> Bank Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 11-09-2025 </b>  <br>  </span>End: <b style="color:red"> 02-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/afms-medical-officer-vacancy-2025/" target="_blank"  >
+        
+          Army AFMS Medical Officer Vacancy 2025
+           
 
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Army Jobs"> Army Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 13-09-2025 </b>  <br>  </span>End: <b style="color:red"> 03-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/rrc-sr-sports-quota-vacancy-2025/" target="_blank"  >
+        
+          RRC SR Sports Quota Vacancy 2025
+           
+
+
+
 
+
+
+
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="RRC Jobs"> RRC Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 13-09-2025 </b>  <br>  </span>End: <b style="color:red"> 12-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/sbi-manager-deputy-manager-vacancy-2025/" target="_blank"  >
+        
+          SBI Manager &amp; Deputy Manager Vacancy 2025
+           
+
+
+
+
+
+
 
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Bank Jobs"> Bank Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 11-09-2025 </b>  <br>  </span>End: <b style="color:red"> 02-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/apprentice/iocl-nr-apprentice-vacancy-2025/" target="_blank"  >
+        
+          IOCL NR Apprentice Vacancy 2025
+           
+
+
+
+
+
+
+
+
+    
 
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="IOCL Jobs"> IOCL Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 12-09-2025 </b>  <br>  </span>End: <b style="color:red"> 11-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/bom-specialist-officer-vacancy-2025/" target="_blank"  >
+        
+          BOM Specialist Officer Vacancy 2025
+           
+
+
+
+
+
+
+
+
+    
+
+
+
 
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Bank Jobs"> Bank Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 10-09-2025 </b>  <br>  </span>End: <b style="color:red"> 30-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/dsssb-assistant-teacher-vacancy-2025/" target="_blank"  >
+        
+          DSSSB Assistant Teacher (Primary) Vacancy 2025
+           
+
+
+
+
+
+
+
 
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="DSSSB Jobs"> DSSSB Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 17-09-2025 </b>  <br>  </span>End: <b style="color:red"> 16-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/rrc-er-sports-quota-vacancy-2025/" target="_blank"  >
+        
+          RRC ER Sports Quota Vacancy 2025
+           
+
+
 
+
+
+
+
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="RRB ER Jobs"> RRB ER Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 10-09-2025 </b>  <br>  </span>End: <b style="color:red"> 09-10-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/rbi-officer-grade-b-vacancy-2025/" target="_blank"  >
+        
+          RBI Officer Grade B Vacancy 2025
+           
+
+
+
+
+
 
+
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Bank Jobs"> Bank Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 10-09-2025 </b>  <br>  </span>End: <b style="color:red"> 30-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/rrc-sr-scouts-guides-quota-vacancy-2025/" target="_blank"  >
+        
+          RRC SR Scouts &amp; Guides Quota Vacancy 2025
+           
+
+
+
+
+
+
+
+
+    
+
+
+
 
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Railway RRC Jobs"> Railway RRC Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 30-08-2025 </b>  <br>  </span>End: <b style="color:red"> 29-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/mppeb-group-2-sub-group-3-vacancy-2025/" target="_blank"  >
+        
+          MPPEB Group-2 Sub Group-3 Various Posts Vacancy 2025
+           
+
+
+
+
+
+
+
+
+    
+
+
 
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="MPESB Jobs"> MPESB Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 09-09-2025 </b>  <br>  </span>End: <b style="color:red"> 23-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/bpsc-aps-and-wm-officer-vacancy-2025/" target="_blank"  >
+        
+          BPSC Assistant Public Sanitation &amp; Waste Management Officer Vacancy 2025
+           
+
+
+
+
+
+
 
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="BPSC Jobs"> BPSC Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 05-09-2025 </b>  <br>  </span>End: <b style="color:red"> 30-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/sci-assistant-manager-and-executive-vacancy-2025/" target="_blank"  >
+        
+          SCI Assistant Manager &amp; Executive Vacancy 2025
+           
+
 
+
+
+
+
+
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="SCI Jobs"> SCI Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 06-09-2025 </b>  <br>  </span>End: <b style="color:red"> 27-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/iocl-engineers-officers-vacancy-2025/" target="_blank"  >
+        
+          Indian Oil Engineers/Officers Vacancy 2025
+           
+
+
+
+
 
+
+
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="IOCL Jobs"> IOCL Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 05-09-2025 </b>  <br>  </span>End: <b style="color:red"> 21-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/ib-security-assistant-mt-vacancy-2025/" target="_blank"  >
+        
+          IB Security Assistant Motor Transport Vacancy 2025
+           
+
+
+
+
+
+
+
 
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="MHA IB Jobs"> MHA IB Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 06-09-2025 </b>  <br>  </span>End: <b style="color:red"> 28-09-2025 </b> </td>
+    </tr>
   
+   <tr  >
+      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/mppsc-nurse-officer-2025/" target="_blank"  >
+        
+          MPPSC District Public Health Nurse Officer Vacancy 2025
+           
+
+
 
 
 
 
+
+
+    
+
+
+
+
+    
+ <br>
+      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="MPPSC Jobs"> MPPSC Jobs  </a></span>
+      
+    </td>
+    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 25-09-2025 </b>  <br>  </span>End: <b style="color:red"> 24-10-2025 </b> </td>
+    </tr>
   
    <tr  >
       <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/railway/rrb-paramedical-various-posts-2025/" target="_blank"  >
@@ -2468,32 +3279,6 @@ Latest Jobs
     </tr>
   
    <tr  >
-      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/mppeb-group-2-sub-group-3-vacancy-2025/" target="_blank"  >
-        
-          MPPEB Group-2 Sub Group-3 Various Posts Vacancy 2025
-           
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
- <br>
-      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="MPESB Jobs"> MPESB Jobs  </a></span>
-      
-    </td>
-    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 09-09-2025 </b>  <br>  </span>End: <b style="color:red"> 23-09-2025 </b> </td>
-    </tr>
-  
-   <tr  >
       <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/apprentice/lic-hfl-apprentice-vacancy-2025/" target="_blank"  >
         
           LIC Housing Finance Apprentice Vacancy 2025
@@ -2517,32 +3302,6 @@ Latest Jobs
       
     </td>
     <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 02-09-2025 </b>  <br>  </span>End: <b style="color:red"> 22-09-2025 </b> </td>
-    </tr>
-  
-   <tr  >
-      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/ib-security-assistant-mt-vacancy-2025/" target="_blank"  >
-        
-          IB Security Assistant Motor Transport Vacancy 2025
-           
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
- <br>
-      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="MHA IB Jobs"> MHA IB Jobs  </a></span>
-      
-    </td>
-    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 06-09-2025 </b>  <br>  </span>End: <b style="color:red"> 28-09-2025 </b> </td>
     </tr>
   
    <tr  >
@@ -3092,32 +3851,6 @@ Latest Jobs
     </tr>
   
    <tr  >
-      <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/railway/rrb-section-controller-vacancy-2025/" target="_blank"  >
-        
-          RRB Section Controller Vacancy 2025 Online Form
-           
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
- <br>
-      <span style="font-size: 1rem;">⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link" data-search="Railway Jobs"> Railway Jobs  </a></span>
-      
-    </td>
-    <td style="font-size: 0.8rem;">Start:   <b style="color:green"> 15-09-2025 </b>  <br>  </span>End: <b style="color:red"> 14-10-2025 </b> </td>
-    </tr>
-  
-   <tr  >
       <td >⛓️‍💥 <a style="font-size: 1.2rem;" href="/jobs/patna-hc-steno-vacancy-2025/" target="_blank"  >
         
           Patna High Court Stenographer Vacancy 2025 Online Form
@@ -3239,6 +3972,8 @@ Latest Jobs
   
 
   
+    
+  
 
   
     
@@ -3262,6 +3997,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -3285,10 +4022,12 @@ Latest Jobs
   
 
   
-
+    
   
 
   
+    
+  
 
   
     
@@ -3299,7 +4038,7 @@ Latest Jobs
   
 
   
-    
+
   
 
   
@@ -3312,6 +4051,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -3328,6 +4069,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -3344,10 +4087,12 @@ Latest Jobs
 
   
 
+  
+    
   
 
   
-    
+
   
 
   
@@ -3421,13 +4166,15 @@ Latest Jobs
   
 
   
-    
+
   
 
   
     
   
 
+  
+    
   
 
   
@@ -3459,13 +4206,15 @@ Latest Jobs
   
 
   
+    
+  
 
   
     
   
 
   
-    
+
   
 
   
@@ -3503,11 +4252,11 @@ Latest Jobs
   
 
   
-
+    
   
 
   
-
+    
   
 
   
@@ -3530,6 +4279,8 @@ Latest Jobs
     
   
 
+  
+    
   
 
   
@@ -3567,6 +4318,8 @@ Latest Jobs
   
 
   
+    
+  
 
   
     
@@ -3607,6 +4360,8 @@ Latest Jobs
   
 
   
+
+  
     
   
 
@@ -3615,7 +4370,9 @@ Latest Jobs
   
 
   
-    
+
+  
+
   
 
   
@@ -3625,9 +4382,11 @@ Latest Jobs
   
 
   
-
+    
   
 
+  
+    
   
 
   
@@ -3648,6 +4407,8 @@ Latest Jobs
     
   
 
+  
+    
   
 
   
@@ -3655,21 +4416,29 @@ Latest Jobs
   
 
   
+
+  
     
   
 
   
+    
+  
 
   
     
   
 
+  
+    
   
 
   
 
   
     
+  
+
   
 
   
@@ -3680,10 +4449,16 @@ Latest Jobs
     
   
 
+  
+    
   
 
   
+    
+  
 
+  
+    
   
 
   
@@ -3695,6 +4470,8 @@ Latest Jobs
   
 
   
+    
+  
 
   
     
@@ -3709,13 +4486,19 @@ Latest Jobs
   
 
   
+
+  
     
   
 
   
     
+  
+
   
 
+  
+    
   
 
   
@@ -3724,6 +4507,8 @@ Latest Jobs
 
   
 
+  
+    
   
 
   
@@ -3731,6 +4516,8 @@ Latest Jobs
   
 
   
+
+  
     
   
 
@@ -3747,9 +4534,13 @@ Latest Jobs
   
 
   
+    
+  
 
   
-    
+
+  
+
   
 
   
@@ -3762,6 +4553,8 @@ Latest Jobs
 
   
 
+  
+    
   
 
   
@@ -3773,14 +4566,20 @@ Latest Jobs
   
 
   
-
+    
   
 
   
     
+  
+
   
 
   
+
+  
+
+  
     
   
 
@@ -3801,6 +4600,8 @@ Latest Jobs
   
 
   
+
+  
     
   
 
@@ -3813,11 +4614,19 @@ Latest Jobs
   
 
   
-    
+
+  
+
   
 
   
     
+  
+
+  
+
+  
+
   
 
   
@@ -3826,18 +4635,26 @@ Latest Jobs
 
   
     
+  
+
   
 
   
 
   
+    
+  
 
   
     
   
 
   
+    
+  
 
+  
+    
   
 
   
@@ -3862,6 +4679,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -3869,7 +4688,7 @@ Latest Jobs
   
 
   
-
+    
   
 
   
@@ -3879,13 +4698,23 @@ Latest Jobs
   
 
   
+
+  
     
   
 
   
     
+  
+
   
 
+  
+
+  
+
+  
+    
   
 
   
@@ -3896,6 +4725,8 @@ Latest Jobs
 
   
     
+  
+
   
 
   
@@ -4150,8 +4981,6 @@ Latest Jobs
 
   
     
-  
-
   
 
   
@@ -4343,8 +5172,6 @@ Latest Jobs
   
 
   
-
-  
     
   
 
@@ -4518,6 +5345,18 @@ Latest Jobs
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -4529,31 +5368,435 @@ Latest Jobs
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
 
+
+
   
+   <tr>
+      <td>
+        🔗<a href="/jobs/ib-security-assistant-2025/" target="_blank"
+             style="font-size: 1.2rem;">
+          
+            IB Security Assistant/Executive Exam City 2025
+          
+          
+
+
+
+
+
+    <a href="/jobs/ib-security-assistant-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
 
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="Recruitemnt">
+              Recruitemnt
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">17-08-2025</b>
+        
+      </td>
+    </tr>
   
+   <tr>
+      <td>
+        🔗<a href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" target="_blank"
+             style="font-size: 1.2rem;">
+          
+            Indian Airforce Agniveervayu Intake 02/2026 Exam City 2025
+          
+          
 
+
+
+
+
+    <a href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
+
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="Airforce Agnipath Vayu">
+              Airforce Agnipath Vayu
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">04-08-2025</b>
+        
+      </td>
+    </tr>
   
+   <tr>
+      <td>
+        🔗<a href="/jobs/sbi-clerk-junior-associate-vacancy-aug-2025/" target="_blank"
+             style="font-size: 1.2rem;">
+          
+            SBI Clerk (Junior Associate) Prelims Admit Card 2025 Out
+          
+          
+
+
+
 
+
+
+
+
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
+
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="SBI Bank Jobs">
+              SBI Bank Jobs
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">26-08-2025</b>
+        
+      </td>
+    </tr>
   
+   <tr>
+      <td>
+        🔗<a href="/jobs/up-police-sub-inspector-si-vacancy-2025/" target="_blank"
+             style="font-size: 1.2rem;">
+          
+            UP Police Sub Inspector SI Vacancy 2025
+          
+          
+
+
+
+
+
+
+
 
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
+
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="Police Jobs">
+              Police Jobs
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">11-09-2025</b>
+        
+      </td>
+    </tr>
   
+   <tr>
+      <td>
+        🔗<a href="/jobs/mha-intelligence-bureau-acio-vacancy-2025/" target="_blank"
+             style="font-size: 1.2rem;">
+          
+            MHA Intelligence Bureau ACIO Admit Card 2025
+          
+          
+
+
+
+
+
+
+
+
+    
+
+
 
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
+
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="MHA Intelligence Bureau ACIO">
+              MHA Intelligence Bureau ACIO
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">10-08-2025</b>
+        
+      </td>
+    </tr>
   
+   <tr>
+      <td>
+        🔗<a href="/jobs/bpsc-lower-division-clerk-ldc-vacancy-2025/" target="_blank"
+             style="font-size: 1.2rem;">
+          
+            BPSC Lower Division Clerk LDC Admit Card 2025
+          
+          
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
 
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="BPSC LDC Lower Division Clerk">
+              BPSC LDC Lower Division Clerk
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">29-07-2025</b>
+        
+      </td>
+    </tr>
   
+   <tr>
+      <td>
+        🔗<a href="/rajasthan-police/constable-bharti-2025/" target="_blank"
+             style="font-size: 1.2rem;">
+          
+            Rajasthan Police Constable Admit Card 2025
+          
+          
+    • <a href="/extended/" target="_blank" rel="noopener">Extended</a>
 
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
+
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="RPSC">
+              RPSC
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">25-05-2025</b>
+        
+      </td>
+    </tr>
   
+   <tr>
+      <td>
+        🔗<a href="/jobs/ssc-combined-graduate-level-exam-2025/" target="_blank"
+             style="font-size: 1.2rem; background-color:#fff9c4;">
+          
+            SSC CGL Tier - I Admit Card 2025 – Download Link &amp; Exam Date Notice
+          
+          
+
+
+
 
+
+
+
+
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
+
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="SSC CGL">
+              SSC CGL
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">04-07-2025</b>
+        
+      </td>
+    </tr>
   
+   <tr>
+      <td>
+        🔗<a href="/jobs/bpsc-71th-exam-2025/" target="_blank"
+             style="font-size: 1.2rem;">
+          
+            Bihar PCS 71st Admit Card 2025 Out
+          
+          
+
+
+
+
+
+
+
 
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
+
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="BPSC">
+              BPSC
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">30-06-2025</b>
+        
+      </td>
+    </tr>
   
+   <tr>
+      <td>
+        🔗<a href="/jobs/rssb-patwari-bharti-2025/" target="_blank"
+             style="font-size: 1.2rem; background-color:#fff9c4;">
+          
+            RSSB Patwari Bharti 2025 Answer Key Out
+          
+          
+
 
 
 
 
+
+
+
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
 
+          <br>
+          <span style="font-size: 1rem;">
+            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
+                 data-search="RSSB Patwari">
+              RSSB Patwari
+            </a>
+          </span>
+        </a>
+      </td>
+      <td style="font-size: 1rem;">
+        
+          Lastdate: <br><b style="color:red">29-06-2025</b>
+        
+      </td>
+    </tr>
   
    <tr>
       <td>
@@ -4848,47 +6091,6 @@ Latest Jobs
   
    <tr>
       <td>
-        🔗<a href="/jobs/ssc-combined-graduate-level-exam-2025/" target="_blank"
-             style="font-size: 1.2rem; background-color:#fff9c4;">
-          
-            SSC CGL Tier - I Exam City Details 2025 – Exam Date Notice
-          
-          
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="SSC CGL">
-              SSC CGL
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">04-07-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
         🔗<a href="/jobs/rajasthan-police-si-posts-jul-2025/" target="_blank"
              style="font-size: 1.2rem;">
           
@@ -5008,47 +6210,6 @@ Latest Jobs
       <td style="font-size: 1rem;">
         
           Lastdate: <br><b style="color:red">25-08-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
-        🔗<a href="/jobs/sbi-clerk-junior-associate-vacancy-aug-2025/" target="_blank"
-             style="font-size: 1.2rem;">
-          
-            SBI Clerk (Junior Associate) Admit Card 2025
-          
-          
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="SBI Bank Jobs">
-              SBI Bank Jobs
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">26-08-2025</b>
         
       </td>
     </tr>
@@ -6461,47 +7622,6 @@ Latest Jobs
   
    <tr>
       <td>
-        🔗<a href="/jobs/rssb-patwari-bharti-2025/" target="_blank"
-             style="font-size: 1.2rem; background-color:#fff9c4;">
-          
-            RSSB Patwari Bharti 2025 Exam Date Out
-          
-          
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="RSSB Patwari">
-              RSSB Patwari
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">29-06-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
         🔗<a href="/jobs/uppsc-gic-lecturer-vacancy-2025/" target="_blank"
              style="font-size: 1.2rem;">
           
@@ -6537,47 +7657,6 @@ Latest Jobs
       <td style="font-size: 1rem;">
         
           Lastdate: <br><b style="color:red">12-09-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
-        🔗<a href="/jobs/up-police-sub-inspector-si-vacancy-2025/" target="_blank"
-             style="font-size: 1.2rem;">
-          
-            UP Police Sub Inspector SI Vacancy 2025
-          
-          
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="Police Jobs">
-              Police Jobs
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">11-09-2025</b>
         
       </td>
     </tr>
@@ -7576,47 +8655,6 @@ Latest Jobs
   
    <tr>
       <td>
-        🔗<a href="/jobs/ib-security-assistant-2025/" target="_blank"
-             style="font-size: 1.2rem;">
-          
-            IB Security Assistant/Executive Vacancy 2025
-          
-          
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="Recruitemnt">
-              Recruitemnt
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">17-08-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
         🔗<a href="/force/bsf-constable-sports-quota-jul25/" target="_blank"
              style="font-size: 1.2rem;">
           
@@ -7982,47 +9020,6 @@ Latest Jobs
       <td style="font-size: 1rem;">
         
           Lastdate: <br><b style="color:red">07-08-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
-        🔗<a href="/jobs/mha-intelligence-bureau-acio-vacancy-2025/" target="_blank"
-             style="font-size: 1.2rem;">
-          
-            MHA Intelligence Bureau ACIO Vacancy 2025
-          
-          
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="MHA Intelligence Bureau ACIO">
-              MHA Intelligence Bureau ACIO
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">10-08-2025</b>
         
       </td>
     </tr>
@@ -8400,47 +9397,6 @@ Latest Jobs
   
    <tr>
       <td>
-        🔗<a href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" target="_blank"
-             style="font-size: 1.2rem;">
-          
-            Indian Airforce Agniveervayu Intake 02/2026 Vacancy 2025 Online Form
-          
-          
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="Airforce Agnipath Vayu">
-              Airforce Agnipath Vayu
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">31-07-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
         🔗<a href="/jobs/mppsc-food-safety-officer-vacancy-2025/" target="_blank"
              style="font-size: 1.2rem;">
           
@@ -8476,49 +9432,6 @@ Latest Jobs
       <td style="font-size: 1rem;">
         
           Lastdate: <br><b style="color:red">10-08-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
-        🔗<a href="/rajasthan-police/constable-bharti-2025/" target="_blank"
-             style="font-size: 1.2rem;">
-          
-            Rajasthan Police Constable 2025 New Examdate
-          
-          
-    • <a href="/extended/" target="_blank" rel="noopener">Extended</a>
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="RPSC">
-              RPSC
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">25-05-2025</b>
         
       </td>
     </tr>
@@ -8685,47 +9598,6 @@ Latest Jobs
       <td style="font-size: 1rem;">
         
           Lastdate: <br><b style="color:red">25-04-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
-        🔗<a href="/jobs/bpsc-lower-division-clerk-ldc-vacancy-2025/" target="_blank"
-             style="font-size: 1.2rem;">
-          
-            BPSC Lower Division Clerk LDC Vacancy 2025 Online Form
-          
-          
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="BPSC LDC Lower Division Clerk">
-              BPSC LDC Lower Division Clerk
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">29-07-2025</b>
         
       </td>
     </tr>
@@ -8931,47 +9803,6 @@ Latest Jobs
       <td style="font-size: 1rem;">
         
           Lastdate: <br><b style="color:red">21-07-2025</b>
-        
-      </td>
-    </tr>
-  
-   <tr>
-      <td>
-        🔗<a href="/jobs/bpsc-71th-exam-2025/" target="_blank"
-             style="font-size: 1.2rem;">
-          
-            Bihar PCS 71st Online Form 2025 | Exam date Out
-          
-          
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
-    
-
-          <br>
-          <span style="font-size: 1rem;">
-            ⚡<a href="#" style="font-size: 0.8rem; color: rgb(1, 36, 1);" class="dynamic-link"
-                 data-search="BPSC">
-              BPSC
-            </a>
-          </span>
-        </a>
-      </td>
-      <td style="font-size: 1rem;">
-        
-          Lastdate: <br><b style="color:red">30-06-2025</b>
         
       </td>
     </tr>
@@ -12333,13 +13164,13 @@ Latest Jobs
      
     
         <li class="card-item">
-            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
+            <a class="card-title" href="/mp/ladli-behna-yojna-mp/" target="_blank">Ladli Bahna Yojana 2025 | 28th Kisht-Check Details</a>
             <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 14 Aug 2025</div>
+      <div class="card-date">📅 11 Sep 2025</div>
         </li>
        
     
@@ -12347,13 +13178,27 @@ Latest Jobs
      
     
         <li class="card-item">
-            <a class="card-title" href="/mp/ladli-behna-yojna-mp/" target="_blank">Ladli Bahna Yojana 2025  27th Kisht-Check Details</a>
+            <a class="card-title" href="/bank/dbt-aadhar-linking-with-npci/" target="_blank">NPCT DBT 2025: Benefits, Purpose, and Complete Guide</a>
             <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 07 Aug 2025</div>
+      <div class="card-date">📅 07 Sep 2025</div>
+        </li>
+       
+    
+
+     
+    
+        <li class="card-item">
+            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
+            <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 14 Aug 2025</div>
         </li>
        
     
@@ -12382,20 +13227,6 @@ Latest Jobs
       </div>
 
       <div class="card-date">📅 27 Jul 2025</div>
-        </li>
-       
-    
-
-     
-    
-        <li class="card-item">
-            <a class="card-title" href="/scheme/mp/dr-ambedakar-kamdhenu-yojna-mp/" target="_blank">MP Dr. Ambedkar Kamdhenu Yojana – Benefits, Apply Online, Eligibility</a>
-            <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 22 Jul 2025</div>
         </li>
        
     

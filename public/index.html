@@ -48,8 +48,8 @@
 
 
 
-<meta property="article:published_time" content="2025-09-04T21:06:57&#43;05:30">
-<meta name="lastmod" content="2025-09-04T21:06:57&#43;05:30">
+<meta property="article:published_time" content="2025-09-16T17:25:00&#43;05:30">
+<meta name="lastmod" content="2025-09-16T17:25:00&#43;05:30">
 
 <script type="application/ld+json">
   {
@@ -76,8 +76,8 @@
         "url": "http:\/\/localhost:1313\/logo\/logo-100x100.png"
       }
     },
-    "datePublished": "2025-09-04",
-    "dateModified": "2025-09-04"
+    "datePublished": "2025-09-16",
+    "dateModified": "2025-09-16"
   }
   </script>
   
@@ -157,6 +157,76 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
+   
+}
+
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
+   color:white;
+}
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -178,6 +248,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -266,6 +337,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌒Dark"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light";
+  } else {
+    btn.textContent = "🌒 Dark";
+  }
+});
+</script>
  
     </header>
     
@@ -300,11 +395,47 @@ function setPreferredHome() {
         
         
         
+          <li class="card-item">
+            <a class="card-title" href="/pdf/student-school-college-pdf-form/" >School / College (विद्यार्थी संबंधित फार्म) PDF Forms Download</a>
+            
+          <div class="card-tags">
+        
+        <a href="/pdf-forms/">📄 PDF Form</a>
+      </div>
+
+      <div class="card-date">📅 30 Mar 2025</div>
+          </li>
+       
+        
     
         
         
+          <li class="card-item">
+            <a class="card-title" href="/jobs/bpsc-aes-2025/" >BPSC AES Assistant Environmental Scientist Vacancy 2025</a>
+            
+          <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 28 Aug 2025</div>
+          </li>
+       
+        
     
         
+        
+          <li class="card-item">
+            <a class="card-title" href="/search/" >Search- Yojna Portal</a>
+            
+          <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 08 Nov 2024</div>
+          </li>
+       
         
     
         
@@ -328,28 +459,32 @@ function setPreferredHome() {
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/railway/rrb-paramedical-various-posts-2025/" target="_blank">
+      <a class="card-title" href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank">
         
-          RRB Paramedical Various Posts Vacancy 2025
+          ECIL Technical Officer Vacancy 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
       <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
+        
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/mp/mpesb-excise-constable-feb25/" target="_blank">
+      <a class="card-title" href="/jobs/uppsc-apo-vacancy-2025/" target="_blank">
         
-          MPESB Abkari Constable Admit Card 2025
+          UPPSC APO Recruitment 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -358,16 +493,18 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/scholarship/azim-premji-scholarship-form-2025/" target="_blank">
+      <a class="card-title" href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank">
         
-          Azim Premji Foundation Scholarship 2025 – Online Application Begins
+          NFR Sports Quota Recruitment 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -376,16 +513,18 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/indian-coast-guard-ac-vacancy-2025/" target="_blank">
+      <a class="card-title" href="/jobs/ib-security-assistant-2025/" target="_blank">
         
-          Indian Coast Guard AC Exam City &amp; Exam Date 2025
+          IB Security Assistant/Executive Exam City 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -394,16 +533,18 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/upsc-cds-ii-2025/" target="_blank">
+      <a class="card-title" href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" target="_blank">
         
-          UPSC CDS II Admit Card 2025
+          Indian Airforce Agniveervayu Intake 02/2026 Exam City 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -412,15 +553,15 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/upsc-nda-ii-2025/" target="_blank">
+      <a class="card-title" href="/jobs/mpesb-police-constable-vacancy-2025/" target="_blank">
         
-          UPSC NDA 2 Admit Card 2025
+          MPESB MP Police Constable Vacancy 2025
         
         
       </a>
@@ -430,33 +571,33 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 15 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/upsc/epfo-eo-ao-apfc-posts-jul25/" target="_blank">
+      <a class="card-title" href="/jobs/rajasthan-constable-sports-quota-vacancy-2025/" target="_blank">
         
-          UPSC EPFO Exam Date 2025
+          Rajasthan Police Constable Sports Quota Vacancy 2025
         
         
       </a>
 
       <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
+        
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 15 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/uppsc-assistant-professor-vacancy-2025/" target="_blank">
+      <a class="card-title" href="/railway/rrb-section-controller-vacancy-2025/" target="_blank">
         
-          UPPSC Assistant Professor Vacancy 2025
+          RRB Section Controller Vacancy 2025 Online Form
         
         
       </a>
@@ -466,33 +607,33 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 15 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/force/indian-coast-guard-2025/" target="_blank">
+      <a class="card-title" href="/jobs/dda-recruitment-2025/" target="_blank">
         
-          Indian Coast Guard Navik/Yantrik CGEPT 2026 Exam City
+          Delhi DDA Recruitment 2025
         
         
       </a>
 
       <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
+        
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 14 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/sbi-probationary-officers-po-bharti-2025/" target="_blank">
+      <a class="card-title" href="/profile/mpesb-candidate-profile-panjiyan/" target="_blank">
         
-          SBI Probationary Officers PO Pre Result 2025
+          MPESB Candidate Profiling / Profile Panjiyan Form Online
         
         
       </a>
@@ -502,7 +643,7 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 14 Sep 2025</div>
     </li>
   
 </ul>
@@ -551,8 +692,8 @@ function setPreferredHome() {
 
 
 
-
-                                                                                                                                                                                                                                                                                                                                    
+    
+                                                                                                                                                                                                                                                                                                                                                                                            
 
 
 
@@ -561,132 +702,146 @@ function setPreferredHome() {
   
     
     
-    <a href="http://localhost:1313/jobs/railway/rrb-paramedical-various-posts-2025/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #f8dbb4; padding: 10px; position: relative;">
-        
-        
-           RRB Paramedical Various Posts 2025
-          
-      </div>
-    </a>
-  
-    
-    
-    <a href="http://localhost:1313/jobs/mp/mpesb-excise-constable-feb25/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #e9c3f8; padding: 10px; position: relative;">
-        
-        
-          MPESB Abkari Constable Admit Card 2025 Out
-          
-      </div>
-    </a>
-  
-    
-    
     <a href="http://localhost:1313/scholarship/azim-premji-scholarship-form-2025/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #fbfcc4; padding: 10px; position: relative;">
+      <div class="post" style="background-color: #f8dbb4; padding: 10px; position: relative;">
         
         
            Azim Premji Scholarship Form 2025
-          
+         
+            <span class="pin-icon" >📌</span>
+           
       </div>
     </a>
   
     
     
-    <a href="http://localhost:1313/jobs/indian-coast-guard-ac-vacancy-2025/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #befccc; padding: 10px; position: relative;">
-        
-        
-           Indian Coast Guard AC Exam City &amp; Exam Date 2025
-          
-      </div>
-    </a>
-  
-    
-    
-    <a href="http://localhost:1313/jobs/upsc-cds-ii-2025/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #f8bcb4; padding: 10px; position: relative;">
-        
-        
-           UPSC CDS II Admit Card 2025 Download Now
-          
-      </div>
-    </a>
-  
-    
-    
-    <a href="http://localhost:1313/jobs/upsc-nda-ii-2025/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #bec9fc; padding: 10px; position: relative;">
-        
-        
-           UPSC NDA 2 Admit Card 2025 Download Now
-          
-      </div>
-    </a>
-  
-    
-    
-    <a href="http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #b4f0f8; padding: 10px; position: relative;">
-        
-        
-           UPSC EPFO EO/AO/APFC Exam Date 2025
-          
-      </div>
-    </a>
-  
-    
-    
-    <a href="http://localhost:1313/jobs/uppsc-assistant-professor-vacancy-2025/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #b4f8d3; padding: 10px; position: relative;">
-        
-        
-           UPPSC Assistant Professor Vacancy 2025
-          
-      </div>
-    </a>
-  
-    
-    
-    <a href="http://localhost:1313/force/indian-coast-guard-2025/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #f8b4de; padding: 10px; position: relative;">
-        
-        
-          Join Indian Coast Guard Navik/Yantrik CGEPT 2026 Exam City Out
-          
-      </div>
-    </a>
-  
-    
-    
-    <a href="http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #ffa4ff; padding: 10px; position: relative;">
-        
-        
-          SBI Probationary Officers PO Mains Admit Card 2025 Out
-          
-      </div>
-    </a>
-  
-    
-    
-    <a href="http://localhost:1313/jobs/rpsc-1st-grade-teacher-agriculture-vacancy-2025/" class="post-link" style="position: relative;">
-      <div class="post" style="background-color: #f8dbb4; padding: 10px; position: relative;">
-        
-        
-           Rpsc 1st Grade Teacher Agriculture Vacancy 2025
-          
-      </div>
-    </a>
-  
-    
-    
-    <a href="http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/" class="post-link" style="position: relative;">
+    <a href="http://localhost:1313/scholarship/hdfc-ecss-scholarship-2025-26/" class="post-link" style="position: relative;">
       <div class="post" style="background-color: #e9c3f8; padding: 10px; position: relative;">
         
         
-           SSC CGL Exam City 2025 Out
+           HDFC ECSS Scholarship 2025-26
+         
+            <span class="pin-icon" >📌</span>
+           
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/jobs/ecil-technical-officer-vacancy-2025/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #fbfcc4; padding: 10px; position: relative;">
+        
+          <img src="/gif/new.gif" alt="New" class="new-icon" />
+        
+        
+           ECIL Technical Officer Vacancy 2025
+          
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/jobs/uppsc-apo-vacancy-2025/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #befccc; padding: 10px; position: relative;">
+        
+          <img src="/gif/new.gif" alt="New" class="new-icon" />
+        
+        
+           UPPSC APO Vacancy 2025
+          
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/jobs/nfr-sports-quota-recruitment-2025/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #f8bcb4; padding: 10px; position: relative;">
+        
+          <img src="/gif/new.gif" alt="New" class="new-icon" />
+        
+        
+           NRF Sports Quota Vacancy Online Form 2025
+          
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/jobs/ib-security-assistant-2025/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #bec9fc; padding: 10px; position: relative;">
+        
+          <img src="/gif/new.gif" alt="New" class="new-icon" />
+        
+        
+           IB Security Assistant 2025 - Check Exam City
+          
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #b4f0f8; padding: 10px; position: relative;">
+        
+          <img src="/gif/new.gif" alt="New" class="new-icon" />
+        
+        
+           Indian Airforce Agniveervayu 2025 Exam City Out
+          
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/jobs/mpesb-police-constable-vacancy-2025/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #b4f8d3; padding: 10px; position: relative;">
+        
+        
+           MPESB Police Constable Vacancy 2025
+          
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/jobs/rajasthan-constable-sports-quota-vacancy-2025/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #f8b4de; padding: 10px; position: relative;">
+        
+        
+           Rajasthan Police Constable Sports Quota Vacancy 2025
+          
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/railway/rrb-section-controller-vacancy-2025/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #ffa4ff; padding: 10px; position: relative;">
+        
+        
+           RRB Section Controller Vacancy 2025- Online Form
+          
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/jobs/dda-recruitment-2025/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #f8dbb4; padding: 10px; position: relative;">
+        
+        
+           DDA Recruitment 2025
+          
+      </div>
+    </a>
+  
+    
+    
+    <a href="http://localhost:1313/profile/mpesb-candidate-profile-panjiyan/" class="post-link" style="position: relative;">
+      <div class="post" style="background-color: #e9c3f8; padding: 10px; position: relative;">
+        
+        
+           MPESB Candidate Profiling / OTR Form
           
       </div>
     </a>
@@ -735,6 +890,8 @@ function setPreferredHome() {
   
 
   
+    
+  
 
   
     
@@ -758,6 +915,8 @@ function setPreferredHome() {
 
   
     
+  
+
   
 
   
@@ -781,9 +940,11 @@ function setPreferredHome() {
   
 
   
-
+    
   
 
+  
+    
   
 
   
@@ -795,7 +956,7 @@ function setPreferredHome() {
   
 
   
-    
+
   
 
   
@@ -808,6 +969,8 @@ function setPreferredHome() {
 
   
     
+  
+
   
 
   
@@ -827,6 +990,8 @@ function setPreferredHome() {
   
 
   
+
+  
     
   
 
@@ -840,10 +1005,12 @@ function setPreferredHome() {
 
   
 
+  
+    
   
 
   
-    
+
   
 
   
@@ -917,7 +1084,7 @@ function setPreferredHome() {
   
 
   
-    
+
   
 
   
@@ -925,6 +1092,8 @@ function setPreferredHome() {
   
 
   
+    
+  
 
   
     
@@ -954,6 +1123,8 @@ function setPreferredHome() {
     
   
 
+  
+    
   
 
   
@@ -961,7 +1132,7 @@ function setPreferredHome() {
   
 
   
-    
+
   
 
   
@@ -999,11 +1170,11 @@ function setPreferredHome() {
   
 
   
-
+    
   
 
   
-
+    
   
 
   
@@ -1026,6 +1197,8 @@ function setPreferredHome() {
     
   
 
+  
+    
   
 
   
@@ -1063,6 +1236,8 @@ function setPreferredHome() {
   
 
   
+    
+  
 
   
     
@@ -1100,6 +1275,8 @@ function setPreferredHome() {
 
   
     
+  
+
   
 
   
@@ -1111,7 +1288,9 @@ function setPreferredHome() {
   
 
   
-    
+
+  
+
   
 
   
@@ -1121,9 +1300,11 @@ function setPreferredHome() {
   
 
   
-
+    
   
 
+  
+    
   
 
   
@@ -1145,9 +1326,13 @@ function setPreferredHome() {
   
 
   
+    
+  
 
   
     
+  
+
   
 
   
@@ -1155,11 +1340,15 @@ function setPreferredHome() {
   
 
   
+    
+  
 
   
     
   
 
+  
+    
   
 
   
@@ -1169,6 +1358,8 @@ function setPreferredHome() {
   
 
   
+
+  
     
   
 
@@ -1176,10 +1367,16 @@ function setPreferredHome() {
     
   
 
+  
+    
   
 
   
+    
+  
 
+  
+    
   
 
   
@@ -1191,6 +1388,8 @@ function setPreferredHome() {
   
 
   
+    
+  
 
   
     
@@ -1200,6 +1399,8 @@ function setPreferredHome() {
 
   
     
+  
+
   
 
   
@@ -1219,6 +1420,8 @@ function setPreferredHome() {
   
 
   
+    
+  
 
   
 
@@ -1232,16 +1435,20 @@ function setPreferredHome() {
 
   
 
+  
+    
   
 
   
-    
+
   
 
   
     
   
 
+  
+    
   
 
   
@@ -1249,6 +1456,12 @@ function setPreferredHome() {
   
 
   
+
+  
+
+  
+
+  
     
   
 
@@ -1258,6 +1471,8 @@ function setPreferredHome() {
 
   
 
+  
+    
   
 
   
@@ -1269,11 +1484,17 @@ function setPreferredHome() {
   
 
   
-
+    
   
 
   
     
+  
+
+  
+
+  
+
   
 
   
@@ -1297,6 +1518,8 @@ function setPreferredHome() {
   
 
   
+
+  
     
   
 
@@ -1309,14 +1532,22 @@ function setPreferredHome() {
   
 
   
-    
+
   
 
   
+
+  
     
+  
+
   
 
   
+
+  
+
+  
     
   
 
@@ -1326,6 +1557,10 @@ function setPreferredHome() {
 
   
 
+  
+
+  
+    
   
 
   
@@ -1333,7 +1568,11 @@ function setPreferredHome() {
   
 
   
+    
+  
 
+  
+    
   
 
   
@@ -1361,11 +1600,13 @@ function setPreferredHome() {
   
 
   
+
+  
     
   
 
   
-
+    
   
 
   
@@ -1375,14 +1616,24 @@ function setPreferredHome() {
   
 
   
+
+  
     
   
 
   
     
+  
+
+  
+
+  
+
   
 
   
+    
+  
 
   
     
@@ -1392,6 +1643,8 @@ function setPreferredHome() {
 
   
     
+  
+
   
 
   
@@ -1649,8 +1902,6 @@ function setPreferredHome() {
   
 
   
-
-  
     
   
 
@@ -1832,8 +2083,6 @@ function setPreferredHome() {
 
   
     
-  
-
   
 
   
@@ -2060,9 +2309,13 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
+  
+    
   
 
   
@@ -2076,6 +2329,8 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
@@ -2085,24 +2340,30 @@ function setPreferredHome() {
 
   
   
+  
+    
   
 
   
   
   
-
+    
   
+
   
   
-    
   
 
   
   
   
+    
+  
 
   
   
+  
+    
   
 
   
@@ -2114,15 +2375,23 @@ function setPreferredHome() {
   
   
   
+
+  
+  
+  
     
   
 
   
   
   
+    
+  
 
   
   
+  
+    
   
 
   
@@ -2176,6 +2445,8 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
@@ -2195,20 +2466,30 @@ function setPreferredHome() {
 
   
   
+  
+    
   
 
   
   
   
+    
+  
 
   
   
   
     
+  
+
   
+  
+  
 
   
   
+  
+    
   
 
   
@@ -2232,7 +2513,9 @@ function setPreferredHome() {
   
   
   
-    
+
+  
+  
   
 
   
@@ -2244,7 +2527,9 @@ function setPreferredHome() {
   
   
   
-    
+
+  
+  
   
 
   
@@ -2266,13 +2551,17 @@ function setPreferredHome() {
   
   
   
-    
+
+  
+  
   
 
   
   
   
-    
+
+  
+  
   
 
   
@@ -2284,6 +2573,8 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
@@ -2303,8 +2594,6 @@ function setPreferredHome() {
 
   
   
-  
-    
   
 
   
@@ -2326,8 +2615,6 @@ function setPreferredHome() {
   
   
   
-    
-  
 
   
   
@@ -2335,6 +2622,8 @@ function setPreferredHome() {
 
   
   
+  
+    
   
 
   
@@ -2368,6 +2657,8 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
@@ -2377,6 +2668,8 @@ function setPreferredHome() {
 
   
   
+  
+    
   
 
   
@@ -2386,17 +2679,25 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
+  
+    
   
 
   
   
   
+    
+  
 
   
   
+  
+    
   
 
   
@@ -2406,9 +2707,13 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
+  
+    
   
 
   
@@ -2424,9 +2729,13 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
+  
+    
   
 
   
@@ -2448,6 +2757,8 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
@@ -2463,6 +2774,8 @@ function setPreferredHome() {
 
   
   
+  
+    
   
 
   
@@ -2472,6 +2785,8 @@ function setPreferredHome() {
   
   
   
+    
+  
 
   
   
@@ -2515,6 +2830,8 @@ function setPreferredHome() {
 
   
   
+  
+    
   
 
   
@@ -2997,21 +3314,800 @@ function setPreferredHome() {
   
   
 
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
 
-                                                                                                                                                                     
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
 
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                   
+
+
+
+
+  
+    <li>
+      <a href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank" >
+         
+        
+      
+          ECIL Technical Officer Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+    <a href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+        • <span class="text-blue-600 font-semibold">Starts Today</span>
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/uppsc-apo-vacancy-2025/" target="_blank" >
+         
+        
+      
+          UPPSC APO Recruitment 2025
+        
+      </a>
+      
+
+
+
+
+
+    <a href="/jobs/uppsc-apo-vacancy-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+        • <span class="text-blue-600 font-semibold">Starts Today</span>
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank" >
+         
+        
+      
+          NFR Sports Quota Recruitment 2025
+        
+      </a>
+      
+
+
+
+
+
+    <a href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+        • <span class="text-blue-600 font-semibold">Starts Today</span>
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/mpesb-police-constable-vacancy-2025/" target="_blank" >
+         
+        
+      
+          MPESB MP Police Constable Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/rajasthan-constable-sports-quota-vacancy-2025/" target="_blank" >
+         
+        
+      
+          Rajasthan Police Constable Sports Quota Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/railway/rrb-section-controller-vacancy-2025/" target="_blank" >
+         
+        
+      
+          RRB Section Controller Vacancy 2025 Online Form
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/dda-recruitment-2025/" target="_blank" >
+         
+        
+      
+          Delhi DDA Recruitment 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/up-police-sub-inspector-si-vacancy-2025/" target="_blank" >
+         
+        
+          UP Police Sub Inspector SI Vacancy 2025 Correction / Edit
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        • <span class="text-red-600 font-semibold">✏️</span>
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/iocl-junior-engineer-vacancy-2025/" target="_blank" >
+         
+        
+      
+          IOCL Junior Engineer Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/iob-specialist-officers-vacancy-2025/" target="_blank" >
+         
+        
+      
+          IOB Specialist Officers Vacancy Online Form 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/sbi-manager-credit-analyst-vacancy-2025/" target="_blank" >
+         
+        
+      
+          SBI Manager (Credit Analyst) Vacancy Online Form 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/afms-medical-officer-vacancy-2025/" target="_blank" >
+         
+        
+      
+          Army AFMS Medical Officer Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/rrc-sr-sports-quota-vacancy-2025/" target="_blank" >
+         
+        
+      
+          RRC SR Sports Quota Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/sbi-manager-deputy-manager-vacancy-2025/" target="_blank" >
+         
+        
+      
+          SBI Manager &amp; Deputy Manager Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/apprentice/iocl-nr-apprentice-vacancy-2025/" target="_blank" >
+         
+        
+      
+          IOCL NR Apprentice Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/bom-specialist-officer-vacancy-2025/" target="_blank" >
+         
+        
+      
+          BOM Specialist Officer Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/dsssb-assistant-teacher-vacancy-2025/" target="_blank" >
+         
+        
+      
+          DSSSB Assistant Teacher (Primary) Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/rrc-er-sports-quota-vacancy-2025/" target="_blank" >
+         
+        
+      
+          RRC ER Sports Quota Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/rbi-officer-grade-b-vacancy-2025/" target="_blank" >
+         
+        
+      
+          RBI Officer Grade B Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/rrc-sr-scouts-guides-quota-vacancy-2025/" target="_blank" >
+         
+        
+      
+          RRC SR Scouts &amp; Guides Quota Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/mppeb-group-2-sub-group-3-vacancy-2025/" target="_blank" >
+         
+        
+      
+          MPPEB Group-2 Sub Group-3 Various Posts Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/bpsc-aps-and-wm-officer-vacancy-2025/" target="_blank" >
+         
+        
+      
+          BPSC Assistant Public Sanitation &amp; Waste Management Officer Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/sci-assistant-manager-and-executive-vacancy-2025/" target="_blank" >
+         
+        
+      
+          SCI Assistant Manager &amp; Executive Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/iocl-engineers-officers-vacancy-2025/" target="_blank" >
+         
+        
+      
+          Indian Oil Engineers/Officers Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/ib-security-assistant-mt-vacancy-2025/" target="_blank" >
+         
+        
+      
+          IB Security Assistant Motor Transport Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/mppsc-nurse-officer-2025/" target="_blank" >
+         
+        
+      
+          MPPSC District Public Health Nurse Officer Vacancy 2025
+        
+      </a>
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
 
+    </li>
+    <hr>
   
     <li>
       <a href="/jobs/railway/rrb-paramedical-various-posts-2025/" target="_blank" >
@@ -3097,33 +4193,6 @@ function setPreferredHome() {
     <hr>
   
     <li>
-      <a href="/jobs/mppeb-group-2-sub-group-3-vacancy-2025/" target="_blank" >
-         
-        
-      
-          MPPEB Group-2 Sub Group-3 Various Posts Vacancy 2025
-        
-      </a>
-      
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-    </li>
-    <hr>
-  
-    <li>
       <a href="/apprentice/lic-hfl-apprentice-vacancy-2025/" target="_blank" >
          
         
@@ -3145,62 +4214,6 @@ function setPreferredHome() {
 
 
 
-    
-
-    </li>
-    <hr>
-  
-    <li>
-      <a href="/jobs/ib-security-assistant-mt-vacancy-2025/" target="_blank" >
-         
-        
-      
-          IB Security Assistant Motor Transport Vacancy 2025
-        
-      </a>
-      
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-    </li>
-    <hr>
-  
-    <li>
-      <a href="/jobs/ibps-crp-clerk-xv-jul25/" target="_blank" >
-         
-        
-      
-          IBPS CRP Clerk 15th Vacancy Edit / Correction Form 2025
-        
-      </a>
-      
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-        • <span class="text-red-600 font-semibold">✏️</span>
     
 
     </li>
@@ -3774,33 +4787,6 @@ function setPreferredHome() {
     <hr>
   
     <li>
-      <a href="/railway/rrb-section-controller-vacancy-2025/" target="_blank" >
-         
-        
-      
-          RRB Section Controller Vacancy 2025 Online Form
-        
-      </a>
-      
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-    </li>
-    <hr>
-  
-    <li>
       <a href="/jobs/patna-hc-steno-vacancy-2025/" target="_blank" >
          
         
@@ -3922,6 +4908,64 @@ function setPreferredHome() {
       
 
 <li>
+  <a href="http://localhost:1313/jobs/ib-security-assistant-2025/" target="_blank">IB Security Assistant/Executive Exam City 2025</a>
+  
+
+    <a href="/jobs/ib-security-assistant-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/" target="_blank">Indian Airforce Agniveervayu Intake 02/2026 Exam City 2025</a>
+  
+
+    <a href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/jobs/sbi-clerk-junior-associate-vacancy-aug-2025/" target="_blank">SBI Clerk (Junior Associate) Prelims Admit Card 2025</a>
+  
+
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/jobs/mha-intelligence-bureau-acio-vacancy-2025/" target="_blank">IB ACIO Admit Card 2025 Out</a>
+  
+
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/jobs/bpsc-lower-division-clerk-ldc-vacancy-2025/" target="_blank">BPSC LDC Admit Card 2025 Out</a>
+  
+
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/rajasthan-police/constable-bharti-2025/" target="_blank">Rajasthan Police Constable 2025 Admit Card Out</a>
+  
+
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/" target="_blank">SSC CGL Tier - I Admit Card 2025</a>
+  
+
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/jobs/rrb-group-d-exam-date-2025/" target="_blank">Railway RRB Group D Exam Date 2025 – Out</a>
+  
+
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/jobs/bpsc-71th-exam-2025/" target="_blank">Bihar BPSC 71st Pre Exam Admit Card 2025</a>
+  
+
+</li><hr>
+
+<li>
   <a href="http://localhost:1313/jobs/mp/mpesb-excise-constable-feb25/" target="_blank">MPESB Abkari Constable Admit Card 2025</a>
   
 
@@ -3945,60 +4989,6 @@ function setPreferredHome() {
 
 </li><hr>
 
-<li>
-  <a href="http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/" target="_blank">UPSC EPFO Exam Date 2025</a>
-  
-
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/force/indian-coast-guard-2025/" target="_blank">Indian Coast Guard Navik/Yantrik CGEPT 2026 Exam City</a>
-  
-
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/" target="_blank">SBI Probationary Officers PO Mains Admit Card 2025</a>
-  
-
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/" target="_blank">SSC CGL Tier - I Exam City 2025</a>
-  
-
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/jobs/csbc-bihar-constable-driver-vacancy-2025/" target="_blank">CSBC Bihar Constable Driver Exam Date 2025</a>
-  
-
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/" target="_blank">MPESB Primary School Teacher Selection Test 2025 Exam Date</a>
-  
-
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/jobs/sbi-clerk-junior-associate-vacancy-aug-2025/" target="_blank">SBI Clerk (Junior Associate) Exam Admit Card 2025</a>
-  
-
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/jobs/oicl-assistant-posts-jul25/" target="_blank">OICL Assistant Posts Admit Card 2025</a>
-  
-
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/jobs/sidbi-assistant-manager-grade-a-b-vacancy-2025/" target="_blank">SIDBI Assistant Manager Grade A &amp; B Admit Card 2025 Out</a>
-  
-
-</li><hr>
-
 
     </div>
     <div class="card-footer">
@@ -4011,6 +5001,12 @@ function setPreferredHome() {
     <div class="card-header" >Results</div>
     <div class="card-content">
       
+<li>
+  <a href="http://localhost:1313/jobs/rssb-patwari-bharti-2025/" target="_blank">RSSB Patwari Bharti 2025 Answer Key Out</a>
+ 
+
+</li><hr>
+
 <li>
   <a href="http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/" target="_blank">SBI Probationary Officers PO Pre Result 2025</a>
  
@@ -4077,12 +5073,6 @@ function setPreferredHome() {
 
 </li><hr>
 
-<li>
-  <a href="http://localhost:1313/admission/mpesb-pnst-gnmtst-2025/" target="_blank">MPESB PNST &amp; GNMTST 2025 Result Declared</a>
- 
-
-</li><hr>
-
     </div>
     <div class="card-footer">
       <a href="/results/" class="more-link" title="View all latest exam results">View more results</a>
@@ -4110,8 +5100,8 @@ function setPreferredHome() {
 
 
 
-
-                                                       
+      
+                                                  
 
 
 
@@ -4119,8 +5109,32 @@ function setPreferredHome() {
 
   <li>
     <a href="/scholarship/azim-premji-scholarship-form-2025/" target="_blank">
-          
+           <span>📌</span> 
       Azim Premji Foundation Scholarship 2025 – Online Application Begins
+    </a>
+
+    
+
+    
+  </li>
+  <hr>
+
+  <li>
+    <a href="/scholarship/hdfc-ecss-scholarship-2025-26/" target="_blank">
+           <span>📌</span> 
+      HDFC Scholarship 2025-26
+    </a>
+
+    
+
+    
+  </li>
+  <hr>
+
+  <li>
+    <a href="/scholarship/reliance-foundation-scholarships-2025-26/" target="_blank">
+          
+      Reliance Foundation Scholarships 2025-26
     </a>
 
     
@@ -4145,18 +5159,6 @@ function setPreferredHome() {
     <a href="/scholarship/lic-gjf-golden-jubilee-scholarship-2025/" target="_blank">
           
       LIC Golden Jubilee Scholarship 2025
-    </a>
-
-    
-
-    
-  </li>
-  <hr>
-
-  <li>
-    <a href="/scholarship/hdfc-ecss-scholarship-2025-26/" target="_blank">
-          
-      HDFC Scholarship 2025-26
     </a>
 
     
@@ -4323,25 +5325,10 @@ function setPreferredHome() {
 
   
   
-
-  
-  
     
   
 
   
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
   
 
   
@@ -4392,73 +5379,6 @@ function setPreferredHome() {
   
   
     
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-
-  
-  
-    
-  
-
-  
-  
-
-  
   
 
   
@@ -4524,6 +5444,92 @@ function setPreferredHome() {
     
   
 
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
 
 
 
@@ -4535,16 +5541,17 @@ function setPreferredHome() {
 
 
 
-                                                                                                                                                                                                                                                
+
+                                                                                                                                                                                                                                                     
 
 
 
 
 
   <li>
-    <a href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">
+    <a href="/mp/ladli-behna-yojna-mp/" target="_blank">
          
-      CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update
+      Ladli Bahna Yojana 2025 | 28th Kisht-Check Details
     </a>
 
     
@@ -4567,9 +5574,32 @@ function setPreferredHome() {
   <hr>
 
   <li>
-    <a href="/mp/ladli-behna-yojna-mp/" target="_blank">
+    <a href="/bank/dbt-aadhar-linking-with-npci/" target="_blank">
          
-      Ladli Bahna Yojana 2025  27th Kisht-Check Details
+      NPCT DBT 2025: Benefits, Purpose, and Complete Guide
+    </a>
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+  </li>
+  <hr>
+
+  <li>
+    <a href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">
+         
+      CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update
     </a>
 
     
@@ -4764,33 +5794,6 @@ function setPreferredHome() {
   </li>
   <hr>
 
-  <li>
-    <a href="/mp/ladli-behna-yojna-25th-kist/" target="_blank">
-         
-      MP Ladli Bahna 25th Installment Date 2025: Payment Status, List &amp; Update
-    </a>
-
-    
-
-    
-    • <a href="/extended/" target="_blank" rel="noopener">Extended</a>
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-  </li>
-  <hr>
-
 
     </div>
     <div class="card-footer" >
@@ -4807,6 +5810,195 @@ function setPreferredHome() {
 
 
 
+  
+    <li>
+      <a href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank">
+          
+        ECIL Technical Officer Vacancy 2025
+      
+      </a>
+
+      
+        <a href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank">
+        </a>
+      
+
+      
+
+
+
+
+
+    <a href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+        • <span class="text-blue-600 font-semibold">Starts Today</span>
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/uppsc-apo-vacancy-2025/" target="_blank">
+          
+        UPPSC APO Recruitment 2025
+      
+      </a>
+
+      
+        <a href="/jobs/uppsc-apo-vacancy-2025/" target="_blank">
+        </a>
+      
+
+      
+
+
+
+
+
+    <a href="/jobs/uppsc-apo-vacancy-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+        • <span class="text-blue-600 font-semibold">Starts Today</span>
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank">
+          
+        NFR Sports Quota Recruitment 2025
+      
+      </a>
+
+      
+        <a href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank">
+        </a>
+      
+
+      
+
+
+
+
+
+    <a href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank"><img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" /></a> 
+
+
+
+
+    
+        • <span class="text-blue-600 font-semibold">Starts Today</span>
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/dda-recruitment-2025/" target="_blank">
+          
+        Delhi DDA Recruitment 2025
+      
+      </a>
+
+      
+
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/dsssb-assistant-teacher-vacancy-2025/" target="_blank">
+          
+        DSSSB Assistant Teacher (Primary) Vacancy 2025
+      
+      </a>
+
+      
+
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
+  
+    <li>
+      <a href="/jobs/mppsc-nurse-officer-2025/" target="_blank">
+          
+        MPPSC District Public Health Nurse Officer Vacancy 2025
+      
+      </a>
+
+      
+
+      
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+
+    </li>
+    <hr>
   
     <li>
       <a href="/update/ladli-bahna-yojna-1500-per-month/" target="_blank">
@@ -5166,6 +6358,14 @@ function setPreferredHome() {
   <div class="card-content">
     
 <li>
+  <a href="http://localhost:1313/profile/mpesb-candidate-profile-panjiyan/"  target="_blank">MPESB Candidate Profiling / Profile Panjiyan Form Online</a>
+</li><hr>
+
+<li>
+  <a href="http://localhost:1313/bank/dbt-aadhar-linking-with-npci/"  target="_blank">NPCT DBT 2025: Benefits, Purpose, and Complete Guide</a>
+</li><hr>
+
+<li>
   <a href="http://localhost:1313/scheme/mp-rewashakti-keerti-card-online-apply/"  target="_blank">MP Keerti Card: Special Benefits and Recognition for Daughters</a>
 </li><hr>
 
@@ -5195,14 +6395,6 @@ function setPreferredHome() {
 
 <li>
   <a href="http://localhost:1313/document/msme-udyam-reg-online/"  target="_blank">MSME Udyam Registration 2025- Online Form</a>
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/document/apaar-or-abc-id/"  target="_blank">APAAR ID / ABC ID card Online Apply &amp; Download</a>
-</li><hr>
-
-<li>
-  <a href="http://localhost:1313/document/vahan-rc-card-online/"  target="_blank">Vehicle Registration Certificate (RC) –  Download &amp; Details</a>
 </li><hr>
 
   </div>
@@ -5248,13 +6440,13 @@ function setPreferredHome() {
      
     
         <li class="card-item">
-            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
+            <a class="card-title" href="/mp/ladli-behna-yojna-mp/" target="_blank">Ladli Bahna Yojana 2025 | 28th Kisht-Check Details</a>
             <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 14 Aug 2025</div>
+      <div class="card-date">📅 11 Sep 2025</div>
         </li>
        
     
@@ -5262,13 +6454,27 @@ function setPreferredHome() {
      
     
         <li class="card-item">
-            <a class="card-title" href="/mp/ladli-behna-yojna-mp/" target="_blank">Ladli Bahna Yojana 2025  27th Kisht-Check Details</a>
+            <a class="card-title" href="/bank/dbt-aadhar-linking-with-npci/" target="_blank">NPCT DBT 2025: Benefits, Purpose, and Complete Guide</a>
             <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 07 Aug 2025</div>
+      <div class="card-date">📅 07 Sep 2025</div>
+        </li>
+       
+    
+
+     
+    
+        <li class="card-item">
+            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
+            <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 14 Aug 2025</div>
         </li>
        
     
@@ -5297,20 +6503,6 @@ function setPreferredHome() {
       </div>
 
       <div class="card-date">📅 27 Jul 2025</div>
-        </li>
-       
-    
-
-     
-    
-        <li class="card-item">
-            <a class="card-title" href="/scheme/mp/dr-ambedakar-kamdhenu-yojna-mp/" target="_blank">MP Dr. Ambedkar Kamdhenu Yojana – Benefits, Apply Online, Eligibility</a>
-            <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 22 Jul 2025</div>
         </li>
        
     
@@ -5401,7 +6593,7 @@ function setPreferredHome() {
             
 
            <div id="copyright" style="color:#f0edeb;">   &copy; 2025 YOJNA PORTAL 2025 - Govt Schemes &amp; Sarkari Job Updates Daily. All Rights Reserved.</div>
-      <span style="opacity:0.5; font-size:11px;"> Last Changed : 04-09-2025 21:06 </span>
+      <span style="opacity:0.5; font-size:11px;"> Last Changed : 16-09-2025 17:25 </span>
         </div>
        
 

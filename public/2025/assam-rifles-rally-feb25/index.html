@@ -159,6 +159,38 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  .dark-mode {
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode td:first-child {
+    color: black;
+    width: 180px;
+   
+}
+
+.dark-mode .correct { color: #4caf50; }
+.dark-mode .incorrect { color: #f44336; }
+.dark-mode .active { background: #ffff00; color:#000; }
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode button {
+   background: #181717;
+   color:white;
+}
 </head>
 
   <header class="header">
@@ -180,6 +212,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <button onclick="toggleDarkMode()" class="DarkMode" >🌙 Dark Mode</button>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -268,6 +301,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light Mode"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌙 Dark Mode"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light Mode";
+  } else {
+    btn.textContent = "🌙 Dark Mode";
+  }
+});
+</script>
  
     </header>
     
@@ -305,21 +362,15 @@ function setPreferredHome() {
     
         
         
-    
-        
-        
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/scheme/mp/pension-apply/" >Social Security Pension Apply /Stutus/ Download Pdf Form</a>
+            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" >CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
             
           <div class="card-tags">
         
-        <a href="/pdf-forms/">📄 PDF Form</a>
+        
       </div>
 
-      <div class="card-date">📅 22 Jan 2025</div>
+      <div class="card-date">📅 14 Aug 2025</div>
           </li>
        
         
@@ -327,16 +378,22 @@ function setPreferredHome() {
         
         
           <li class="card-item">
-            <a class="card-title" href="/admitcard/indian-army-agniveer-admitcard/" >Indian Army Agniveer Admit Card Download 2025</a>
+            <a class="card-title" href="/update/territorial-army-officer-admit-card-2025/" >Territorial Army Officer Admit Card 2025</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 18 Jun 2025</div>
+      <div class="card-date">📅 17 Jul 2025</div>
           </li>
        
+        
+    
+        
+        
+    
+        
         
     
     <hr>
@@ -354,28 +411,32 @@ function setPreferredHome() {
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/railway/rrb-paramedical-various-posts-2025/" target="_blank">
+      <a class="card-title" href="/jobs/ecil-technical-officer-vacancy-2025/" target="_blank">
         
-          RRB Paramedical Various Posts Vacancy 2025
+          ECIL Technical Officer Vacancy 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
       <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
+        
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/mp/mpesb-excise-constable-feb25/" target="_blank">
+      <a class="card-title" href="/jobs/uppsc-apo-vacancy-2025/" target="_blank">
         
-          MPESB Abkari Constable Admit Card 2025
+          UPPSC APO Recruitment 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -384,16 +445,18 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/scholarship/azim-premji-scholarship-form-2025/" target="_blank">
+      <a class="card-title" href="/jobs/nfr-sports-quota-recruitment-2025/" target="_blank">
         
-          Azim Premji Foundation Scholarship 2025 – Online Application Begins
+          NFR Sports Quota Recruitment 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -402,16 +465,18 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/indian-coast-guard-ac-vacancy-2025/" target="_blank">
+      <a class="card-title" href="/jobs/ib-security-assistant-2025/" target="_blank">
         
-          Indian Coast Guard AC Exam City &amp; Exam Date 2025
+          IB Security Assistant/Executive Exam City 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -420,16 +485,18 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/upsc-cds-ii-2025/" target="_blank">
+      <a class="card-title" href="/jobs/indian-airforce-agniveervayu-intake-02-2026/" target="_blank">
         
-          UPSC CDS II Admit Card 2025
+          Indian Airforce Agniveervayu Intake 02/2026 Exam City 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -438,15 +505,15 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 16 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/upsc-nda-ii-2025/" target="_blank">
+      <a class="card-title" href="/jobs/mpesb-police-constable-vacancy-2025/" target="_blank">
         
-          UPSC NDA 2 Admit Card 2025
+          MPESB MP Police Constable Vacancy 2025
         
         
       </a>
@@ -456,33 +523,33 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 15 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/upsc/epfo-eo-ao-apfc-posts-jul25/" target="_blank">
+      <a class="card-title" href="/jobs/rajasthan-constable-sports-quota-vacancy-2025/" target="_blank">
         
-          UPSC EPFO Exam Date 2025
+          Rajasthan Police Constable Sports Quota Vacancy 2025
         
         
       </a>
 
       <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
+        
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 15 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/uppsc-assistant-professor-vacancy-2025/" target="_blank">
+      <a class="card-title" href="/railway/rrb-section-controller-vacancy-2025/" target="_blank">
         
-          UPPSC Assistant Professor Vacancy 2025
+          RRB Section Controller Vacancy 2025 Online Form
         
         
       </a>
@@ -492,33 +559,33 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 15 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/force/indian-coast-guard-2025/" target="_blank">
+      <a class="card-title" href="/jobs/dda-recruitment-2025/" target="_blank">
         
-          Indian Coast Guard Navik/Yantrik CGEPT 2026 Exam City
+          Delhi DDA Recruitment 2025
         
         
       </a>
 
       <div class="card-tags">
-        <a href="/extended/">📌 Extended</a>
+        
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 14 Sep 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/sbi-probationary-officers-po-bharti-2025/" target="_blank">
+      <a class="card-title" href="/profile/mpesb-candidate-profile-panjiyan/" target="_blank">
         
-          SBI Probationary Officers PO Pre Result 2025
+          MPESB Candidate Profiling / Profile Panjiyan Form Online
         
         
       </a>
@@ -528,7 +595,7 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 04 Sep 2025</div>
+      <div class="card-date">📅 14 Sep 2025</div>
     </li>
   
 </ul>
@@ -884,52 +951,6 @@ function setPreferredHome() {
     
     
     
-      <li>
-        <a href="/scheme/mp-cm-seed-and-fertilizer-subsidy-scheme/" >MP CM Seed &amp; Fertilizer Subsidy Scheme 2025 – Full Details</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/how-to/check-link-mobile-no-with-aadhar/" >How to Check Linked Mobile Number With Aadhar</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/quick/search-form/" >Google Home Search</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/celebration/yojnaportal-Whatsapp-100k/" >Yojna Portal Whatsapp Channel 100k Follower</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
   
     
     
@@ -937,7 +958,7 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/pdf/all-lokseva-forms/" >Lokseva /eDistrict (लोकसेवा सें संबंधित) PDF Forms Download</a>
+        <a href="/pdf/patwari-forms/" >Patwari &amp; Farmer (पटवारी एवं किसान संबंधित) Forms 2025</a>
         
          • <a href="/pdf-forms/">PDF</a>
       </li>
@@ -947,7 +968,53 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/social-media/" >Yojna Portal Whatsapp Group Link</a>
+        <a href="/otr/up-police-otr-online/" >UP Police One Time Registration 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/jobs/bpsc-hod-department-head-vacancy-2025/" >BPSC Polytechnic Department Head Vacancy 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/webstory/text/" ></a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/scheme/pm-sbm-bls-toilet/" >PM SBM Shouchalaya/Toilet Apply Online</a>
+        
+         • <a href="/pdf-forms/">PDF</a>
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/admitcard/rrb-alp-cbat-exam-admit-card-2025/" >RRB ALP CBAT Exam Admit Card 2025</a>
         
         
       </li>
@@ -996,10 +1063,13 @@ function setPreferredHome() {
     
     
     
+  
+    
+    
       <li>
-        <a href="/mpdage/ekrishi-yantra-anudan/" >MP krishi yantra anudan yojana 2025 online apply</a>
+        <a href="/document/mp-sambal-yojna-apply/" >MP Sambal Card Apply Online 2025 – फॉर्म, पात्रता, लाभ और आवश्यक दस्तावेज</a>
         
-        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
     
@@ -1007,50 +1077,7 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/admitcard/bihar-bsphcl-jca-admit-card-2025/" >Bihar BSPHCL JCA Admit Card 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/admitcard/rrb-alp-cbat-exam-admit-card-2025/" >RRB ALP CBAT Exam Admit Card 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/update/rssb-librarian-gr-iii-2025/" >RSSB Librarian Gr-III Exam City / Admit Card 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/mp/pm-krishak-mitra-surya-yojana/" >PM Krishak Mitra Surya Yojana 2025 – सब्सिडी पर सोलर पंप योजना</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/how-to/book-my-hsrp-online/" >Book HSRP Online Apply 2025</a>
+        <a href="/jobs/nfr-sports-quota-recruitment-2025/" >NFR Sports Quota Recruitment 2025</a>
         
         
       </li>
@@ -1066,7 +1093,40 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/scheme/pmjay-ayushman-card/" >PMJAY Ayushman Bharat Card</a>
+        <a href="/jobs/iocl-engineers-officers-vacancy-2025/" >Indian Oil Engineers/Officers Vacancy 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/result/railway-rrb-alp-stage-ii-result-with-marks-2025/" >Railway RRB ALP CEN 01/2024 Stage II Result with Marks 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/scheme/saksham-bhaiya-bahna-yojna/" >Saksham Bhaiya Bahna Yojna</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/admitcard/jhc-assistant-admit-card-2025/" >JHC Jharkhand High Court Assistant Admit Card 2025</a>
         
         
       </li>
@@ -1231,13 +1291,13 @@ function setPreferredHome() {
      
     
         <li class="card-item">
-            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
+            <a class="card-title" href="/mp/ladli-behna-yojna-mp/" target="_blank">Ladli Bahna Yojana 2025 | 28th Kisht-Check Details</a>
             <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 14 Aug 2025</div>
+      <div class="card-date">📅 11 Sep 2025</div>
         </li>
        
     
@@ -1245,13 +1305,27 @@ function setPreferredHome() {
      
     
         <li class="card-item">
-            <a class="card-title" href="/mp/ladli-behna-yojna-mp/" target="_blank">Ladli Bahna Yojana 2025  27th Kisht-Check Details</a>
+            <a class="card-title" href="/bank/dbt-aadhar-linking-with-npci/" target="_blank">NPCT DBT 2025: Benefits, Purpose, and Complete Guide</a>
             <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 07 Aug 2025</div>
+      <div class="card-date">📅 07 Sep 2025</div>
+        </li>
+       
+    
+
+     
+    
+        <li class="card-item">
+            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
+            <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 14 Aug 2025</div>
         </li>
        
     
@@ -1280,20 +1354,6 @@ function setPreferredHome() {
       </div>
 
       <div class="card-date">📅 27 Jul 2025</div>
-        </li>
-       
-    
-
-     
-    
-        <li class="card-item">
-            <a class="card-title" href="/scheme/mp/dr-ambedakar-kamdhenu-yojna-mp/" target="_blank">MP Dr. Ambedkar Kamdhenu Yojana – Benefits, Apply Online, Eligibility</a>
-            <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 22 Jul 2025</div>
         </li>
        
     
