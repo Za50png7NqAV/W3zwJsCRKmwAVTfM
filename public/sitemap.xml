@@ -2,23 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/nfr-sports-quota-recruitment-2025/</loc>
-    <lastmod>2025-09-16T16:15:16+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ecil-technical-officer-vacancy-2025/</loc>
+    <lastmod>2025-09-16T17:25:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-16T17:25:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-apo-vacancy-2025/</loc>
+    <lastmod>2025-09-16T17:15:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nfr-sports-quota-recruitment-2025/</loc>
     <lastmod>2025-09-16T16:15:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/ib-security-assistant-2025/</loc>
     <lastmod>2025-09-16T11:51:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/uppsc-apo-vacancy-2025/</loc>
-    <lastmod>2025-09-16T11:49:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
