@@ -13,6 +13,7 @@ aliases = [
   "/{{ .File.Path | md5 | truncate 6 "" }}/"
 ]
 shorturl ="{{ .File.Path | md5 | truncate 6 "" }}"
+postdetails = "there are -- vacancies available for male and female candidates"
 RecommendName ="{{ replace .File.ContentBaseName "-" " " | title }}"
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 seo_title = ""
@@ -81,7 +82,7 @@ ageLimit = " " # आयु सीमा
 selection = " " # चयन प्रकिया
 salary = " " # वेतन भुगतान  
 postName = " " # पद का नाम
-postdetails = "there are -- vacancies available for male and female candidates"
+
 +++
 <div class="yp-table-wrapper"> </div>
 <div class="yp-table-wrapper"> </div>

@@ -2,17 +2,282 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-08-26T18:54:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/railway/rrc-sr-apprentices-vacancy-2025/</loc>
-    <lastmod>2025-08-26T18:54:15+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/railway/rrb-paramedical-various-posts-2025/</loc>
+    <lastmod>2025-09-04T21:06:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-04T21:06:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp/mpesb-excise-constable-feb25/</loc>
+    <lastmod>2025-09-04T21:01:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/azim-premji-scholarship-form-2025/</loc>
+    <lastmod>2025-09-04T20:18:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/</loc>
+    <lastmod>2025-09-04T20:18:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-coast-guard-ac-vacancy-2025/</loc>
+    <lastmod>2025-09-04T19:59:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-cds-ii-2025/</loc>
+    <lastmod>2025-09-04T19:53:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-nda-ii-2025/</loc>
+    <lastmod>2025-09-04T19:45:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/</loc>
+    <lastmod>2025-09-04T19:36:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-assistant-professor-vacancy-2025/</loc>
+    <lastmod>2025-09-04T16:28:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/indian-coast-guard-2025/</loc>
+    <lastmod>2025-09-04T15:42:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/</loc>
+    <lastmod>2025-09-04T15:35:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-1st-grade-teacher-agriculture-vacancy-2025/</loc>
+    <lastmod>2025-09-04T09:19:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
+    <lastmod>2025-09-04T08:33:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rajasthan-police-si-posts-jul-2025/</loc>
+    <lastmod>2025-09-03T19:38:05+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
+    <lastmod>2025-09-03T17:07:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/jnv-class-ix-admission-form-2026/</loc>
+    <lastmod>2025-09-03T12:26:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/lic-gjf-golden-jubilee-scholarship-2025/</loc>
+    <lastmod>2025-09-03T11:03:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/hdfc-ecss-scholarship-2025-26/</loc>
+    <lastmod>2025-09-03T09:43:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-09-02T20:27:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/lic-hfl-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-09-02T20:27:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/csbc-bihar-constable-driver-vacancy-2025/</loc>
+    <lastmod>2025-09-02T18:39:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
+    <lastmod>2025-09-02T18:15:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-clerk-junior-associate-vacancy-aug-2025/</loc>
+    <lastmod>2025-09-02T18:03:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ib-security-assistant-mt-vacancy-2025/</loc>
+    <lastmod>2025-09-02T17:44:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-crp-clerk-xv-jul25/</loc>
+    <lastmod>2025-09-02T15:51:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/oicl-assistant-posts-jul25/</loc>
+    <lastmod>2025-09-02T15:27:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/isro-sac-vacancy-2025/</loc>
+    <lastmod>2025-09-02T11:18:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nhpc-non-executive-vacancy-2025/</loc>
+    <lastmod>2025-09-02T10:17:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-hod-department-head-vacancy-2025/</loc>
+    <lastmod>2025-09-02T08:46:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-sports-officer-vacancy-2025/</loc>
+    <lastmod>2025-09-02T08:46:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/join-indian-navy-ssc-officers-vacancy-aug-25/</loc>
+    <lastmod>2025-09-01T19:25:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppgcl-various-posts-2025/</loc>
+    <lastmod>2025-09-01T16:16:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mpesb-pat-2025/</loc>
+    <lastmod>2025-09-01T16:09:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
+    <lastmod>2025-09-01T11:54:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-rrbs-crp-xiv-vacancy-2025/</loc>
+    <lastmod>2025-09-01T11:34:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/ecil-iti-trade-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-09-01T11:33:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-shs-lab-technician-vacancy-2025/</loc>
+    <lastmod>2025-09-01T11:27:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/naval-dockyard-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-08-31T16:07:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sci-court-master-vacancy-2025/</loc>
+    <lastmod>2025-08-30T10:23:05+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/railway/rrc-wcr-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-08-30T09:33:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/neet-pg-2025/</loc>
+    <lastmod>2025-08-29T17:59:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/rcfl-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-08-29T16:59:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/iocl-pipelines-division-apprentice-vacancy-2025/</loc>
+    <lastmod>2025-08-29T16:14:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sidbi-assistant-manager-grade-a-b-vacancy-2025/</loc>
+    <lastmod>2025-08-29T15:28:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/pfrda-assistant-manager-am-vacancy-2025/</loc>
+    <lastmod>2025-08-28T17:00:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-motor-vehicle-inspector-mvi-2025/</loc>
+    <lastmod>2025-08-28T13:19:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-atp-vacancy-2025/</loc>
+    <lastmod>2025-08-28T12:14:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-aes-2025/</loc>
+    <lastmod>2025-08-28T11:08:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/aai-junior-executive-je-vacancy-2025/</loc>
+    <lastmod>2025-08-28T10:13:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/pgcil-field-engineer-supervisor-vacancy-2025/</loc>
+    <lastmod>2025-08-27T16:12:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
+    <lastmod>2025-08-27T16:05:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-bpsc-aedo-vacancy-2025/</loc>
+    <lastmod>2025-08-27T11:25:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/</loc>
+    <lastmod>2025-08-27T11:18:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/oil-india-limited-vacancy-2025/</loc>
+    <lastmod>2025-08-27T10:39:44+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/railway/rrc-sr-apprentices-vacancy-2025/</loc>
     <lastmod>2025-08-26T18:54:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -57,11 +322,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bihar-shs-lab-technician-vacancy-2025/</loc>
-    <lastmod>2025-08-24T15:39:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/education/</loc>
     <lastmod>2025-08-24T10:39:00+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -74,11 +334,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-prosecutor-lecturer-vacancy-2025/</loc>
     <lastmod>2025-08-24T10:17:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bihar-bpsc-aedo-vacancy-2025/</loc>
-    <lastmod>2025-08-23T13:05:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -102,28 +357,13 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/railway/rrc-wcr-apprentice-vacancy-2025/</loc>
-    <lastmod>2025-08-22T19:23:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/patna-hc-steno-vacancy-2025/</loc>
     <lastmod>2025-08-22T16:52:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ibps-crp-clerk-xv-jul25/</loc>
-    <lastmod>2025-08-22T16:47:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/bank/iob-indian-overseas-bank-apprentice-vacancy-2025/</loc>
     <lastmod>2025-08-22T16:35:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/neet-pg-2025/</loc>
-    <lastmod>2025-08-21T17:00:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -139,11 +379,6 @@
   </url><url>
     <loc>http://localhost:1313/rj/rpsc-otr-one-time-registration-online/</loc>
     <lastmod>2025-08-20T12:13:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/</loc>
-    <lastmod>2025-08-20T11:37:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -167,11 +402,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/</loc>
-    <lastmod>2025-08-18T20:55:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/bihar/bpsc-otr-one-time-registration-online/</loc>
     <lastmod>2025-08-18T20:41:15+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -179,11 +409,6 @@
   </url><url>
     <loc>http://localhost:1313/delhi/dsssb-otr-one-time-registration-online/</loc>
     <lastmod>2025-08-18T20:24:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/aai-junior-executive-je-vacancy-2025/</loc>
-    <lastmod>2025-08-18T19:53:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -204,11 +429,6 @@
   </url><url>
     <loc>http://localhost:1313/bihar/bpssc-enforcement-si-2025/</loc>
     <lastmod>2025-08-17T10:44:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-epravesh-admission-form-2025/</loc>
-    <lastmod>2025-08-17T09:31:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -269,11 +489,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/</loc>
     <lastmod>2025-08-14T10:01:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
-    <lastmod>2025-08-13T20:05:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -347,21 +562,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rajasthan-police-si-posts-jul-2025/</loc>
-    <lastmod>2025-08-10T17:31:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/join-indian-navy-ssc-officers-vacancy-aug-25/</loc>
-    <lastmod>2025-08-10T17:03:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/railway/rrb-paramedical-various-posts-2025/</loc>
-    <lastmod>2025-08-09T13:47:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/education/ederp-guest-teacher-mp/</loc>
     <lastmod>2025-08-09T10:48:58+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -402,11 +602,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/sbi-clerk-junior-associate-vacancy-aug-2025/</loc>
-    <lastmod>2025-08-06T12:08:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/psc-veterinary-officer-vacancy-2025/</loc>
     <lastmod>2025-08-05T15:30:59+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -442,21 +637,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/oicl-assistant-posts-jul25/</loc>
-    <lastmod>2025-08-02T09:45:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
-    <lastmod>2025-08-02T09:39:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-motor-vehicle-inspector-mvi-2025/</loc>
-    <lastmod>2025-08-01T17:04:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/mpesb-msc-pbbse-2025/</loc>
     <lastmod>2025-07-31T17:57:46+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -479,11 +659,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sci-court-master-jul25/</loc>
     <lastmod>2025-07-29T19:51:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mpesb-pat-2025/</loc>
-    <lastmod>2025-07-29T18:30:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -567,11 +742,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/</loc>
-    <lastmod>2025-07-25T17:43:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/document/apaar-or-abc-id/</loc>
     <lastmod>2025-07-25T13:01:53+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -622,11 +792,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mppgcl-various-posts-2025/</loc>
-    <lastmod>2025-07-19T18:13:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/sgpgi-nursing-officer-and-non-teaching-post-2025/</loc>
     <lastmod>2025-07-23T16:24:14+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -649,11 +814,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-selection-post-13th-2025/</loc>
     <lastmod>2025-07-22T09:11:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/csbc-bihar-constable-driver-vacancy-2025/</loc>
-    <lastmod>2025-07-22T09:02:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -742,11 +902,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/sidbi-assistant-manager-grade-a-b-vacancy-2025/</loc>
-    <lastmod>2025-07-14T17:42:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/</loc>
     <lastmod>2025-07-11T11:38:56+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -807,11 +962,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
-    <lastmod>2025-07-09T14:48:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/sbi-circle-based-officers-cbo-2025/</loc>
     <lastmod>2025-07-09T12:31:14+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -824,11 +974,6 @@
   </url><url>
     <loc>http://localhost:1313/mp/ladli-behna-yojna-26th-kist/</loc>
     <lastmod>2025-07-09T10:43:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/indian-coast-guard-ac-vacancy-2025/</loc>
-    <lastmod>2025-07-09T10:33:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -859,16 +1004,6 @@
   </url><url>
     <loc>http://localhost:1313/baner-poster-update/</loc>
     <lastmod>2025-07-08T08:32:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-cds-ii-2025/</loc>
-    <lastmod>2025-07-07T18:53:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-nda-ii-2025/</loc>
-    <lastmod>2025-07-07T18:52:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -929,11 +1064,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/uppsc-computer-assistant-vacancy-2025/</loc>
     <lastmod>2025-07-02T21:02:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/pfrda-assistant-manager-am-vacancy-2025/</loc>
-    <lastmod>2025-07-02T14:06:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1037,13 +1167,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc/ssc-gd-constable-2024/</loc>
+    <loc>http://localhost:1313/jobs/ssc/2024/ssc-gd-constable-2024/</loc>
     <lastmod>2025-06-26T17:55:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/force/indian-coast-guard-2025/</loc>
-    <lastmod>2025-06-26T07:56:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1907,11 +2032,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-excise-constable-feb25/</loc>
-    <lastmod>2025-02-14T10:05:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/2023/</loc>
     <lastmod>2025-02-13T09:53:48+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2042,7 +2162,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc/ssc-cgl-2024/</loc>
+    <loc>http://localhost:1313/jobs/ssc/2024/ssc-cgl-2024/</loc>
     <lastmod>2025-01-15T10:28:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -2212,7 +2332,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bank/sbi-po-dec24/</loc>
+    <loc>http://localhost:1313/jobs/bank/2025/05/sbi-po-dec24/</loc>
     <lastmod>2024-12-29T10:09:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
