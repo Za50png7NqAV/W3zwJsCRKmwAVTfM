@@ -17,6 +17,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
+    <lastmod>2025-09-17T14:50:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/bhel-artisan-vacancy-2025/</loc>
     <lastmod>2025-09-17T12:36:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -189,11 +194,6 @@
   </url><url>
     <loc>http://localhost:1313/ads/whatsapp-promotion/</loc>
     <lastmod>2025-09-10T17:48:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
-    <lastmod>2025-09-10T08:04:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
