@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ecil-technical-officer-vacancy-2025/</loc>
-    <lastmod>2025-09-16T17:25:00+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bhel-artisan-vacancy-2025/</loc>
+    <lastmod>2025-09-17T12:36:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-17T12:36:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/indian-coast-guard-2025/</loc>
+    <lastmod>2025-09-17T12:28:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ecil-technical-officer-vacancy-2025/</loc>
     <lastmod>2025-09-16T17:25:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -279,11 +289,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/uppsc-assistant-professor-vacancy-2025/</loc>
     <lastmod>2025-09-04T16:28:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/force/indian-coast-guard-2025/</loc>
-    <lastmod>2025-09-04T15:42:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -714,11 +719,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/hpsc-ae-me-sd-vacancy-2025/</loc>
     <lastmod>2025-08-12T20:44:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bhel-artisan-vacancy-2025/</loc>
-    <lastmod>2025-08-12T09:13:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
