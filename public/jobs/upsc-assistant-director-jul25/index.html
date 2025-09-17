@@ -165,6 +165,76 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
+   
+}
+
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
+   color:white;
+}
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -186,6 +256,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -274,6 +345,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌒Dark"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light";
+  } else {
+    btn.textContent = "🌒 Dark";
+  }
+});
+</script>
  
     </header>
     
@@ -308,48 +403,36 @@ function setPreferredHome() {
         
         
         
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/update/territorial-army-officer-admit-card-2025/" >Territorial Army Officer Admit Card 2025</a>
+            <a class="card-title" href="/card/voter-card-download/" >Voter Card Download/Apply</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 17 Jul 2025</div>
+      <div class="card-date">📅 30 Dec 2024</div>
           </li>
        
         
     
         
         
-          <li class="card-item">
-            <a class="card-title" href="/scheme/mp/cmlly-ladli-laxmi-yojna/" >Ladli Laxmi Yojna Apply Online- Download pdf form</a>
-            
-          <div class="card-tags">
+    
         
-        <a href="/pdf-forms/">📄 PDF Form</a>
-      </div>
-
-      <div class="card-date">📅 14 Jan 2025</div>
-          </li>
-       
         
     
         
         
           <li class="card-item">
-            <a class="card-title" href="/last-date/" >Last Date Reminder</a>
+            <a class="card-title" href="/jobs/rrc-sr-scouts-guides-quota-vacancy-2025/" >RRC SR Scouts &amp; Guides Quota Vacancy 2025</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 08 Nov 2024</div>
+      <div class="card-date">📅 09 Sep 2025</div>
           </li>
        
         
@@ -1273,11 +1356,8 @@ function setPreferredHome() {
     
     
     
-  
-    
-    
       <li>
-        <a href="/quick/search-form/" >Google Home Search</a>
+        <a href="/admitcard/jharkhand-acf-pre-exam-admit-card-2025/" >Jharkhand ACF Pre Exam Admit Card 2025</a>
         
         
       </li>
@@ -1296,7 +1376,17 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/profile/mp-rojgar-otr-form/" >MP Rojgar Panjiyan Online Registration 2025</a>
+        <a href="/scheme/pmkisan-pmksn-yojana/" >PM Kisan Samman Nidhi 20th Installment - 2000/- Transferd</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/jobs/sci-court-master-jul25/" >SCI Court Master Vacancy 2025 Online Form</a>
         
         
       </li>
@@ -1308,11 +1398,8 @@ function setPreferredHome() {
   
     
     
-  
-    
-    
       <li>
-        <a href="/bihar/bpsc-otr-one-time-registration-online/" >BPSC One-Time Registration Guide 2025</a>
+        <a href="/admitcard/rpsc-research-assistant-admit-card-2025/" >RPSC Research Assistant Admit Card 2025</a>
         
         
       </li>
@@ -1322,9 +1409,19 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/mp/domicile-certificate-apply/" >MP Domicile (Niwas) Certificate Download pdf form &amp; Apply Online</a>
+        <a href="/webstory/text/" ></a>
         
-         • <a href="/pdf-forms/">PDF</a>
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/admitcard/dsssb-various-posts-admitcard-2025/" >DSSSB Various Posts Admit Card June 2025</a>
+        
+        
       </li>
    
     

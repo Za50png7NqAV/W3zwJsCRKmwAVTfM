@@ -160,6 +160,76 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
+   
+}
+
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
+   color:white;
+}
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -181,6 +251,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -269,6 +340,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌒Dark"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light";
+  } else {
+    btn.textContent = "🌒 Dark";
+  }
+});
+</script>
  
     </header>
     
@@ -303,6 +398,18 @@ function setPreferredHome() {
         
         
         
+          <li class="card-item">
+            <a class="card-title" href="/jobs/patna-hc-steno-vacancy-2025/" >Patna High Court Stenographer Vacancy 2025 Online Form</a>
+            
+          <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 22 Aug 2025</div>
+          </li>
+       
+        
     
         
         
@@ -310,34 +417,34 @@ function setPreferredHome() {
         
         
           <li class="card-item">
-            <a class="card-title" href="/admitcard/rpsc-various-vacancy-admit-card-2025/" >RPSC Various Vacancy Admit Card 2025</a>
+            <a class="card-title" href="/document/driving-licence-apply-parivahan/" >Driving Licence Apply, Status Check &amp; Download</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 04 Jul 2025</div>
+      <div class="card-date">📅 06 Jul 2025</div>
           </li>
        
+        
+    
+        
         
     
         
         
           <li class="card-item">
-            <a class="card-title" href="/follow/yojna-portal-whatsapp-channel-link/" >Daily Sarkari Yojna News on WhatsApp – Join Yojna Portal Today</a>
+            <a class="card-title" href="/2025/bseb-10th-resuls/" >Bihar Board BSEB 10th Resuls</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 07 Aug 2025</div>
+      <div class="card-date">📅 29 Mar 2025</div>
           </li>
        
-        
-    
-        
         
     
     <hr>
@@ -753,49 +860,13 @@ function setPreferredHome() {
   
     
     
-      <li>
-        <a href="/scheme/char-dham-yatra-regitration/" >Char Dham Yatra Regitration 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
   
     
     
       <li>
-        <a href="/document/voter-card-online-form-details/" >Voter ID Online Apply, Correction, Status &amp; Form List 2025</a>
+        <a href="/scheme/mp/cmlly-ladli-laxmi-yojna/" >Ladli Laxmi Yojna Apply Online- Download pdf form</a>
         
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/document/msme-udyam-reg-online/" >MSME Udyam Registration 2025- Online Form</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/jobs/hp-junior-basic-teacher-vacancy-aug-2025/" >HP JBT Teacher Vacancy 2025 Online Form</a>
-        
-        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
     
@@ -813,11 +884,40 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/jobs/bpsc-aes-2025/" >BPSC AES Assistant Environmental Scientist Vacancy 2025</a>
+        <a href="/mp/domicile-certificate-apply/" >MP Domicile (Niwas) Certificate Download pdf form &amp; Apply Online</a>
+        
+         • <a href="/pdf-forms/">PDF</a>
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/jobs/aai-junior-executive-je-vacancy-2025/" >AAI Junior Executive JE Vacancy 2025 Online Form</a>
         
         
       </li>
    
+    
+  
+    
+    
+      <li>
+        <a href="/scheme/cm-kisan-kalyan-nidhi/" >CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+  
+    
     
   
   <hr>
@@ -863,7 +963,27 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/jobs/dda-recruitment-2025/" >Delhi DDA Recruitment 2025</a>
+        <a href="/document/voter-card-online-form-details/" >Voter ID Online Apply, Correction, Status &amp; Form List 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/" >RPSC Junior Legal Officer (JLO) Vacancy 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/quick/search/" >Search Anything</a>
         
         
       </li>
@@ -876,7 +996,20 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/force/bsf-head-constable-ro-rm-vacancy-2025/" >BSF Head Constable (RO/RM) Vacancy 2025</a>
+        <a href="/otr/up-police-otr-online/" >UP Police One Time Registration 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/document/eshram-card-apply/" >Eshram Card Apply, Update and Download</a>
         
         
       </li>
@@ -886,7 +1019,7 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/2025/bseb-10th-resuls/" >Bihar Board BSEB 10th Resuls</a>
+        <a href="/jobs/bssc-bihar-office-attendant-vacancy-aug-2025/" >Bihar BSSC Office Attendant / Attendant (Special) Vacancy 2025</a>
         
         
       </li>
@@ -896,33 +1029,14 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/card/pan-card-apply/" >New Pan Card, Correction / Update Old Pan, Download 49A pdf Form</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/jobs/bpsc-sports-officer-vacancy-2025/" >BPSC Sports Officer Vacancy 2025</a>
+        <a href="/web-stories/pm-awas-yojana-2025/" >प्रधानमंत्री आवास योजना 2025</a>
         
         
       </li>
    
+    
+  
+    
     
   
   <hr>

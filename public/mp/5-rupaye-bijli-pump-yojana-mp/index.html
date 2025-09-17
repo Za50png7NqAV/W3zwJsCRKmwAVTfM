@@ -180,6 +180,76 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
+   
+}
+
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
+   color:white;
+}
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -201,6 +271,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -289,6 +360,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌒Dark"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light";
+  } else {
+    btn.textContent = "🌒 Dark";
+  }
+});
+</script>
  
     </header>
     
@@ -326,15 +421,18 @@ function setPreferredHome() {
     
         
         
+    
+        
+        
           <li class="card-item">
-            <a class="card-title" href="/jobs/afms-medical-officer-vacancy-2025/" >Army AFMS Medical Officer Vacancy 2025</a>
+            <a class="card-title" href="/scheme/mp/agristack-farmer-registry/" >Agristack Farmer Registry | Farmer Id | Kisan Card | Annadata Card  Download</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 13 Sep 2025</div>
+      <div class="card-date">📅 09 Jan 2025</div>
           </li>
        
         
@@ -343,21 +441,6 @@ function setPreferredHome() {
         
     
         
-        
-    
-        
-        
-          <li class="card-item">
-            <a class="card-title" href="/card/eshram-card-apply/" >E-Shram Card Apply / Update / Download</a>
-            
-          <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 13 Jan 2025</div>
-          </li>
-       
         
     
     <hr>
@@ -801,38 +884,6 @@ function setPreferredHome() {
     
     
     
-      <li>
-        <a href="/jobs/rpsc-1st-grade-teacher-agriculture-vacancy-2025/" >RPSC 1st Grade Teacher Agriculture Vacancy 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/jobs/dsssb-assistant-teacher-vacancy-2025/" >DSSSB Assistant Teacher (Primary) Vacancy 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
   
     
     
@@ -843,11 +894,43 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/jobs/dda-recruitment-2025/" >Delhi DDA Recruitment 2025</a>
+        <a href="/reg/mineral-water-license/" >Mineral Water License Online FSSAI Apply</a>
         
         
       </li>
    
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/mp/ladli-behna-yojna-mp/" >Ladli Bahna Yojana 2025 | 28th Kisht-Check Details</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/document/vahan-rc-card-online/" >Vehicle Registration Certificate (RC) –  Download &amp; Details</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+  
+    
     
   
   <hr>

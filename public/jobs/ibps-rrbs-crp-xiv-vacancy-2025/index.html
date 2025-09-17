@@ -165,6 +165,76 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
+   
+}
+
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
+   color:white;
+}
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -186,6 +256,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -274,6 +345,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌒Dark"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light";
+  } else {
+    btn.textContent = "🌒 Dark";
+  }
+});
+</script>
  
     </header>
     
@@ -309,14 +404,14 @@ function setPreferredHome() {
         
         
           <li class="card-item">
-            <a class="card-title" href="/admitcard/indian-army-agniveer-admitcard/" >Indian Army Agniveer Admit Card Download 2025</a>
+            <a class="card-title" href="/scholarship/azim-premji-scholarship-form-2025/" >Azim Premji Foundation Scholarship 2025 – Online Application Begins</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 18 Jun 2025</div>
+      <div class="card-date">📅 13 Sep 2025</div>
           </li>
        
         
@@ -324,14 +419,14 @@ function setPreferredHome() {
         
         
           <li class="card-item">
-            <a class="card-title" href="/card/samagra-id-print/" >Samagra Id Print, Add new Member , eKYC &amp; Pariwar Vibhajan pdf Form, Adhar D-Link pdf </a>
+            <a class="card-title" href="/student/up-board-10th-12th-Result/" >UP Board Result 2025 – Check 10th &amp; 12th Result</a>
             
           <div class="card-tags">
         
-        <a href="/pdf-forms/">📄 PDF Form</a>
+        
       </div>
 
-      <div class="card-date">📅 22 Feb 2025</div>
+      <div class="card-date">📅 25 Apr 2025</div>
           </li>
        
         
@@ -1343,47 +1438,8 @@ function setPreferredHome() {
     
     
     
-  
-    
-    
       <li>
-        <a href="/admitcard/rpsc-research-assistant-admit-card-2025/" >RPSC Research Assistant Admit Card 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/quick/search-form/" >Google Home Search</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/scholarship/lic-gjf-golden-jubilee-scholarship-2025/" >LIC Golden Jubilee Scholarship 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/apprentice/ecil-iti-trade-apprentice-vacancy-2025/" >ECIL ITI Trade Apprentice Vacancy 2025</a>
+        <a href="/profile/mptaas-profile-otr-update/" >MPTAAS Profile Registration 2025</a>
         
         
       </li>
@@ -1396,7 +1452,33 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/jobs/bihar-bpsc-aedo-vacancy-2025/" >Bihar BPSC AEDO Vacancy 2025</a>
+        <a href="/jobs/mppsc-nurse-officer-2025/" >MPPSC District Public Health Nurse Officer Vacancy 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/scheme/pmkisan-pmksn-yojana/" >PM Kisan Samman Nidhi 20th Installment - 2000/- Transferd</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/webstory/aa-text/" ></a>
         
         
       </li>
@@ -1406,7 +1488,20 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/admitcard/btsc-staff-nurse-exam-dates/" >BTSC Staff Nurse Amitcard Available</a>
+        <a href="/schemes/farmer-id-annadata-card/" >Annadata Card Farmer Id Apply &amp; Download</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/download/pdf/" ></a>
         
         
       </li>

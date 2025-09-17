@@ -184,6 +184,76 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
+   
+}
+
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
+   color:white;
+}
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -205,6 +275,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -293,6 +364,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌒Dark"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light";
+  } else {
+    btn.textContent = "🌒 Dark";
+  }
+});
+</script>
  
     </header>
     
@@ -327,63 +422,51 @@ function setPreferredHome() {
         
         
         
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/result/up-police-radio-head-operator-2022-final-result/" >UP Police Radio Head Operator 2022 Final Result PDF Out</a>
+            <a class="card-title" href="/jobs/sbi-manager-credit-analyst-vacancy-2025/" >SBI Manager (Credit Analyst) Vacancy Online Form 2025</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 28 Jun 2025</div>
+      <div class="card-date">📅 13 Sep 2025</div>
           </li>
        
         
     
         
         
+    
+        
+        
           <li class="card-item">
-            <a class="card-title" href="/reg/mp-citizen-character-verification/" >MP Citizen Character Certificate | Police Verification Apply Online </a>
+            <a class="card-title" href="/quick/search-form/" >Google Home Search</a>
             
           <div class="card-tags">
         
-        <a href="/pdf-forms/">📄 PDF Form</a>
+        
       </div>
 
-      <div class="card-date">📅 03 Mar 2025</div>
+      <div class="card-date">📅 08 Nov 2024</div>
           </li>
        
         
     
         
         
-          <li class="card-item">
-            <a class="card-title" href="/jobs/dsssb-delhi-high-court-various-post-vacancy-2025/" >DSSSB Delhi High Court Various Post Vacancy 2025</a>
-            
-          <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 26 Aug 2025</div>
-          </li>
-       
-        
     
         
         
           <li class="card-item">
-            <a class="card-title" href="/pdf/all-lokseva-forms/" >Lokseva /eDistrict (लोकसेवा सें संबंधित) PDF Forms Download</a>
+            <a class="card-title" href="/imp/epfoindia-online-info/" >ePFO India Claim / Withdrawal ePF, Do eKYC, Find UAN etc.</a>
             
           <div class="card-tags">
         
-        <a href="/pdf-forms/">📄 PDF Form</a>
+        
       </div>
 
-      <div class="card-date">📅 26 Mar 2025</div>
+      <div class="card-date">📅 09 Mar 2025</div>
           </li>
        
         
@@ -764,11 +847,8 @@ Senior Secondary (or its equivalent) with at least 50% marks and passed or appea
     
     
     
-  
-    
-    
       <li>
-        <a href="/admitcard/bihar-vidhan-sabha-security-guard-admit-card-2025/" >Bihar Vidhan Sabha Security Guard Admit Card 2025</a>
+        <a href="/download/loader/" ></a>
         
         
       </li>
@@ -778,7 +858,7 @@ Senior Secondary (or its equivalent) with at least 50% marks and passed or appea
     
     
       <li>
-        <a href="/document/udid-disability-certificate/" >What is UDID Card? Unique Disability ID Benefits and How to Apply</a>
+        <a href="/jobs/rrc-sr-sports-quota-vacancy-2025/" >RRC SR Sports Quota Vacancy 2025</a>
         
         
       </li>
@@ -793,11 +873,8 @@ Senior Secondary (or its equivalent) with at least 50% marks and passed or appea
   
     
     
-  
-    
-    
       <li>
-        <a href="/scholarship/azim-premji-scholarship-form-2025/" >Azim Premji Foundation Scholarship 2025 – Online Application Begins</a>
+        <a href="/download/generate/" ></a>
         
         
       </li>
@@ -807,7 +884,7 @@ Senior Secondary (or its equivalent) with at least 50% marks and passed or appea
     
     
       <li>
-        <a href="/card/driving-learner-licence/" >Driving Licence  / Learning Apply / Status / Download</a>
+        <a href="/reg/mineral-water-license/" >Mineral Water License Online FSSAI Apply</a>
         
         
       </li>
@@ -817,7 +894,7 @@ Senior Secondary (or its equivalent) with at least 50% marks and passed or appea
     
     
       <li>
-        <a href="/jobs/bpsc-atp-vacancy-2025/" >BPSC ATP Assistant Town Planner Vacancy 2025</a>
+        <a href="/jobs/rrb-group-d-exam-date-2025/" >Railway RRB Group D Exam Date 2025</a>
         
         
       </li>
@@ -826,8 +903,21 @@ Senior Secondary (or its equivalent) with at least 50% marks and passed or appea
   
     
     
+  
+    
+    
       <li>
-        <a href="/student/mp/rskmp-class-5th-and-8th-result/" >MP Board Class 5th and 8th Result</a>
+        <a href="/student/mp/gaon-ki-beti-schorlarship/" >Gaon ki Beti form  2024-25 Apply Online / Download PDF</a>
+        
+         • <a href="/pdf-forms/">PDF</a>
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/card/voter-card-download/" >Voter Card Download/Apply</a>
         
         
       </li>
@@ -876,57 +966,11 @@ Senior Secondary (or its equivalent) with at least 50% marks and passed or appea
     
     
     
-      <li>
-        <a href="/jobs/ecil-technical-officer-vacancy-2025/" >ECIL Technical Officer Vacancy 2025</a>
-        
-        
-      </li>
-   
-    
   
     
     
       <li>
-        <a href="/how-to/samagra-adhar-de-link-mp/" >Samagra Adhar De Link 2025, Apply &amp; Delink pdf Form</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/scheme/mp/mp-labour-card/" >MP Shrimik Panjiyan / Labour Card Registration</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/result/patna-hc-translator-final-result-2025/" >Patna HC Translator Final Result 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/admitcard/dfccil-mts-executive-jr-2025/" >DFCCIL MTS, Executive &amp; Jr. Manager Exam Date 2025</a>
+        <a href="/apprentice/iocl-pipelines-division-apprentice-vacancy-2025/" >Indian Oil IOCL Apprentice Vacancy 2025</a>
         
         
       </li>
@@ -939,11 +983,50 @@ Senior Secondary (or its equivalent) with at least 50% marks and passed or appea
     
     
       <li>
-        <a href="/jobs/bssc-4th-graduate-level-vacancy-aug-2025/" >Bihar BSSC 4th Graduate Level Vacancy 2025</a>
+        <a href="/jobs/hp-junior-basic-teacher-vacancy-aug-2025/" >HP JBT Teacher Vacancy 2025 Online Form</a>
         
         
       </li>
    
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/admitcard/rrb-ntpc-10&#43;2-under-graduate-level-exam-date-2025/" >RRB NTPC 10&#43;2 Under Graduate Level Exam City/ Admit Card 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/web-stories/pm-awas-yojana-2025/" >प्रधानमंत्री आवास योजना 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/scheme/mp/agristack-farmer-registry/" >Agristack Farmer Registry | Farmer Id | Kisan Card | Annadata Card  Download</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
     
   
   <hr>

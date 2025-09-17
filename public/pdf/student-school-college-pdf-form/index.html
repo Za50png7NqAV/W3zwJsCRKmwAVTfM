@@ -323,6 +323,76 @@ Action
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
+   
+}
+
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
+   color:white;
+}
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -344,6 +414,7 @@ Action
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -432,6 +503,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌒Dark"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light";
+  } else {
+    btn.textContent = "🌒 Dark";
+  }
+});
+</script>
  
     </header>
     
@@ -466,15 +561,24 @@ function setPreferredHome() {
         
         
         
+    
+        
+        
+    
+        
+        
+    
+        
+        
           <li class="card-item">
-            <a class="card-title" href="/admitcard/dsssb-various-posts-admitcard-2025/" >DSSSB Various Posts Admit Card June 2025</a>
+            <a class="card-title" href="/mp/ladli-bahna-yojna-24th/" >MP Ladli Bahna Yojna May 2025 Payment News – Check 24th Installment Now</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 19 Jun 2025</div>
+      <div class="card-date">📅 14 May 2025</div>
           </li>
        
         
@@ -482,25 +586,16 @@ function setPreferredHome() {
         
         
           <li class="card-item">
-            <a class="card-title" href="/how-to/check-link-mobile-no-with-aadhar/" >How to Check Linked Mobile Number With Aadhar</a>
+            <a class="card-title" href="/reg/mpesb-profile/" >MPESB Profile Registration/ Vyapam Panjiyan</a>
             
           <div class="card-tags">
         
-        
+        <a href="/pdf-forms/">📄 PDF Form</a>
       </div>
 
-      <div class="card-date">📅 21 Apr 2025</div>
+      <div class="card-date">📅 18 Jan 2025</div>
           </li>
        
-        
-    
-        
-        
-    
-        
-        
-    
-        
         
     
     <hr>
@@ -847,7 +942,7 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/student/nsp-otr-scholarship-form/" >NSP One Time Registration (OTR) 2025</a>
+        <a href="/how-to/check-link-mobile-no-with-aadhar/" >How to Check Linked Mobile Number With Aadhar</a>
         
         
       </li>
@@ -856,12 +951,27 @@ function setPreferredHome() {
   
     
     
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
       <li>
-        <a href="/otr/up-police-otr-online/" >UP Police One Time Registration 2025</a>
+        <a href="/apprentice/ecil-iti-trade-apprentice-vacancy-2025/" >ECIL ITI Trade Apprentice Vacancy 2025</a>
         
         
       </li>
    
+    
+  
+    
     
   
     
@@ -876,58 +986,8 @@ function setPreferredHome() {
   
     
     
-      <li>
-        <a href="/student/mp/gaon-ki-beti-schorlarship/" >Gaon ki Beti form  2024-25 Apply Online / Download PDF</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
-      </li>
-   
-    
   
     
-    
-      <li>
-        <a href="/jobs/iocl-junior-engineer-vacancy-2025/" >IOCL Junior Engineer Vacancy 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/how-to/samagra-adhar-de-link-mp/" >Samagra Adhar De Link 2025, Apply &amp; Delink pdf Form</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/admitcard/indian-army-agniveer-admitcard/" >Indian Army Agniveer Admit Card Download 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/mpdage/ekrishi-yantra-anudan/" >MP krishi yantra anudan yojana 2025 online apply</a>
-        
-        
-      </li>
-   
     
   
   <hr>
@@ -972,21 +1032,8 @@ function setPreferredHome() {
     
     
     
-  
-    
-    
       <li>
-        <a href="/document/mp-sambal-yojna-apply/" >MP Sambal Card Apply Online 2025 – फॉर्म, पात्रता, लाभ और आवश्यक दस्तावेज</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/result/railway-rpf-constable-result-2025/" >Railway RPF Constable Result 2025 Declared</a>
+        <a href="/card/abha-health-card/" >Abha Health Card Apply/Download</a>
         
         
       </li>
@@ -995,18 +1042,14 @@ function setPreferredHome() {
   
     
     
-      <li>
-        <a href="/jobs/oil-india-limited-vacancy-2025/" >Oil India Limited Vacancy 2025</a>
-        
-        
-      </li>
-   
+  
+    
     
   
     
     
       <li>
-        <a href="/card/eshram-card-apply/" >E-Shram Card Apply / Update / Download</a>
+        <a href="/jobs/iob-specialist-officers-vacancy-2025/" >IOB Specialist Officers Vacancy Online Form 2025</a>
         
         
       </li>
@@ -1016,7 +1059,7 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/admitcard/rpsc-school-lecturer-admit-card-2025/" >RPSC School Lecturer Admit Card 2025 Released</a>
+        <a href="/jobs/bssc-4th-graduate-level-vacancy-aug-2025/" >Bihar BSSC 4th Graduate Level Vacancy 2025</a>
         
         
       </li>
@@ -1025,28 +1068,17 @@ function setPreferredHome() {
   
     
     
-      <li>
-        <a href="/jobs/rbi-officer-grade-b-vacancy-2025/" >RBI Officer Grade B Vacancy 2025</a>
-        
-        
-      </li>
-   
+  
+    
+    
+  
+    
     
   
     
     
       <li>
-        <a href="/mp/ssapy-cm-unmarried-pension-scheme/" >SSAPY CM Unmarried Pension Scheme  Online form Apply</a>
-        
-         • <a href="/pdf-forms/">PDF</a>
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/document/voter-card-online-form-details/" >Voter ID Online Apply, Correction, Status &amp; Form List 2025</a>
+        <a href="/social-media/" >Yojna Portal Whatsapp Group Link</a>
         
         
       </li>
