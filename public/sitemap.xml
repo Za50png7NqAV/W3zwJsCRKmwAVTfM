@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/isro-assistant-rajbhasha-vacancy-2025/</loc>
-    <lastmod>2025-09-17T15:28:48+05:30</lastmod>
+    <loc>http://localhost:1313/admission/mp-iti-counseling-2025/</loc>
+    <lastmod>2025-09-17T18:56:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-17T18:56:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/isro-assistant-rajbhasha-vacancy-2025/</loc>
     <lastmod>2025-09-17T15:28:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -589,11 +594,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-senior-teacher-grade-iv-vacancy-2025/</loc>
     <lastmod>2025-08-19T19:54:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-iti-counseling-2025/</loc>
-    <lastmod>2025-08-19T09:59:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
