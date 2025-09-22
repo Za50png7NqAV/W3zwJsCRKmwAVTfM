@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/uppsc-assistant-teacher-bharti-2025/</loc>
-    <lastmod>2025-09-20T18:26:05+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bank/ubi-wealth-manager-vacancy-aug-2025/</loc>
+    <lastmod>2025-09-21T18:22:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-21T18:22:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-lab-attendant-vacancy-2025/</loc>
+    <lastmod>2025-09-21T18:13:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-village-development-officer-vdo-2025/</loc>
+    <lastmod>2025-09-21T18:00:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-assistant-teacher-bharti-2025/</loc>
     <lastmod>2025-09-20T18:26:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -787,11 +802,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bank/ubi-wealth-manager-vacancy-aug-2025/</loc>
-    <lastmod>2025-08-08T17:21:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/scholarship/azim-premji-scholarship/</loc>
     <lastmod>2025-08-07T20:09:44+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1037,11 +1047,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rssb-village-development-officer-vdo-2025/</loc>
-    <lastmod>2025-07-18T12:31:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/update/mpesb-animal-husbandry-addet-2025/</loc>
     <lastmod>2025-07-17T18:32:32+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1119,11 +1124,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/railway-blw-apprentices-vacancy-2025/</loc>
     <lastmod>2025-07-10T20:53:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rssb-lab-attendant-vacancy-2025/</loc>
-    <lastmod>2025-07-10T20:14:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
