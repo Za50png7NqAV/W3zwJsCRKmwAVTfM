@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-vacancy-2025/</loc>
-    <lastmod>2025-09-23T12:03:41+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/indian-bank-specialist-officers-vacancy-2025/</loc>
+    <lastmod>2025-09-23T13:58:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-23T13:58:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-vacancy-2025/</loc>
     <lastmod>2025-09-23T12:03:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -354,11 +359,6 @@
   </url><url>
     <loc>http://localhost:1313/scholarship/hdfc-ecss-scholarship-2025-26/</loc>
     <lastmod>2025-09-05T11:50:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-nurse-officer-2025/</loc>
-    <lastmod>2025-09-05T11:15:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
