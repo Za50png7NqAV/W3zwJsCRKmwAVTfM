@@ -165,7 +165,8 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
-  .dark-mode {
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
   background:#222;
   color:#fff;
 }
@@ -178,25 +179,62 @@
   color: white;
   border-color: #444;
 }
-.dark-mode td:first-child {
-    color: black;
-    width: 180px;
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
    
 }
 
-.dark-mode .correct { color: #4caf50; }
-.dark-mode .incorrect { color: #f44336; }
-.dark-mode .active { background: #ffff00; color:#000; }
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
 
-.dark-mode textarea, .dark-mode input, .dark-mode .header
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
  {
   background: #555;
   color: white;
 }
-.dark-mode button {
-   background: #181717;
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
    color:white;
 }
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -218,7 +256,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
-           <button onclick="toggleDarkMode()" class="DarkMode" >🌙 Dark Mode</button>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -314,10 +352,10 @@ function toggleDarkMode(){
   document.body.classList.toggle("dark-mode");
 
   if(document.body.classList.contains("dark-mode")){
-    btn.textContent = "☀️ Light Mode"; 
+    btn.textContent = "☀️ Light"; 
     localStorage.setItem("darkMode", "true");
   } else {
-    btn.textContent = "🌙 Dark Mode"; 
+    btn.textContent = "🌒Dark"; 
     localStorage.setItem("darkMode", "false");
   }
 }
@@ -325,9 +363,9 @@ function toggleDarkMode(){
 window.addEventListener("DOMContentLoaded", ()=>{
   if(localStorage.getItem("darkMode") === "true"){
     document.body.classList.add("dark-mode");
-    btn.textContent = "☀️ Light Mode";
+    btn.textContent = "☀️ Light";
   } else {
-    btn.textContent = "🌙 Dark Mode";
+    btn.textContent = "🌒 Dark";
   }
 });
 </script>
@@ -365,39 +403,39 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
         
         
-    
-        
-        
-    
-        
-        
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/document/apaar-or-abc-id/" >APAAR ID / ABC ID card Online Apply &amp; Download</a>
+            <a class="card-title" href="/scheme/mp/mp-labour-card/" >MP Shrimik Panjiyan / Labour Card Registration</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 25 Jul 2025</div>
+      <div class="card-date">📅 13 Jan 2025</div>
           </li>
        
         
     
         
         
+    
+        
+        
+    
+        
+        
+    
+        
+        
           <li class="card-item">
-            <a class="card-title" href="/update/mpesb-animal-husbandry-addet-2025/" >MPESB Animal Husbandry ADDET 2025 Result Declared</a>
+            <a class="card-title" href="/student/mp/mptaas-scholarship-profile/" >MPTAAS Scholarship Profile Panjiayan</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 17 Jul 2025</div>
+      <div class="card-date">📅 05 Jan 2025</div>
           </li>
        
         
@@ -422,8 +460,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           ECIL Technical Officer Vacancy 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -441,8 +477,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
           UPPSC APO Recruitment 2025
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -462,8 +496,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           NFR Sports Quota Recruitment 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -482,8 +514,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           IB Security Assistant/Executive Exam City 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -501,8 +531,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
           Indian Airforce Agniveervayu Intake 02/2026 Exam City 2025
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -1085,6 +1113,49 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
       <li>
+        <a href="/admitcard/dfccil-mts-executive-jr-2025/" >DFCCIL MTS, Executive &amp; Jr. Manager Exam Date 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/admitcard/dsssb-various-post-admit-card-2025-released/" >DSSSB Admit Card 2025 Released for Various Post Codes</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/jobs/jharkhand-ssc-anm-vacancy-2025/" >Jharkhand SSC ANM Vacancy 2025 Online Form</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/delhi/dsssb-otr-one-time-registration-online/" >DSSSB OTR One-Time Registration 2025</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
         <a href="/reg/mpesb-profile/" >MPESB Profile Registration/ Vyapam Panjiyan</a>
         
          • <a href="/pdf-forms/">PDF</a>
@@ -1094,13 +1165,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
     
     
-      <li>
-        <a href="/result/railway-rrb-alp-stage-ii-result-with-marks-2025/" >Railway RRB ALP CEN 01/2024 Stage II Result with Marks 2025</a>
-        
-        
-      </li>
-   
-    
   
     
     
@@ -1109,42 +1173,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
   
     
-    
-  
-    
-    
-      <li>
-        <a href="/jobs/hp-junior-basic-teacher-vacancy-aug-2025/" >HP JBT Teacher Vacancy 2025 Online Form</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/card/udid-card/" >UDID Card Download / Apply</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-      <li>
-        <a href="/jobs/bpsc-aps-and-wm-officer-vacancy-2025/" >BPSC Assistant Public Sanitation &amp; Waste Management Officer Vacancy 2025</a>
-        
-        
-      </li>
-   
     
   
   <hr>

@@ -344,7 +344,8 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
-  .dark-mode {
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
   background:#222;
   color:#fff;
 }
@@ -357,25 +358,62 @@
   color: white;
   border-color: #444;
 }
-.dark-mode td:first-child {
-    color: black;
-    width: 180px;
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
    
 }
 
-.dark-mode .correct { color: #4caf50; }
-.dark-mode .incorrect { color: #f44336; }
-.dark-mode .active { background: #ffff00; color:#000; }
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
 
-.dark-mode textarea, .dark-mode input, .dark-mode .header
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
  {
   background: #555;
   color: white;
 }
-.dark-mode button {
-   background: #181717;
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
    color:white;
 }
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -397,7 +435,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
-           <button onclick="toggleDarkMode()" class="DarkMode" >🌙 Dark Mode</button>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -493,10 +531,10 @@ function toggleDarkMode(){
   document.body.classList.toggle("dark-mode");
 
   if(document.body.classList.contains("dark-mode")){
-    btn.textContent = "☀️ Light Mode"; 
+    btn.textContent = "☀️ Light"; 
     localStorage.setItem("darkMode", "true");
   } else {
-    btn.textContent = "🌙 Dark Mode"; 
+    btn.textContent = "🌒Dark"; 
     localStorage.setItem("darkMode", "false");
   }
 }
@@ -504,9 +542,9 @@ function toggleDarkMode(){
 window.addEventListener("DOMContentLoaded", ()=>{
   if(localStorage.getItem("darkMode") === "true"){
     document.body.classList.add("dark-mode");
-    btn.textContent = "☀️ Light Mode";
+    btn.textContent = "☀️ Light";
   } else {
-    btn.textContent = "🌙 Dark Mode";
+    btn.textContent = "🌒 Dark";
   }
 });
 </script>
@@ -553,20 +591,20 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
         
         
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/jobs/rbi-officer-grade-b-vacancy-2025/" >RBI Officer Grade B Vacancy 2025</a>
+            <a class="card-title" href="/document/eshram-card-apply/" >Eshram Card Apply, Update and Download</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 11 Sep 2025</div>
+      <div class="card-date">📅 21 Apr 2025</div>
           </li>
        
+        
+    
+        
         
     
     <hr>
@@ -589,8 +627,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           ECIL Technical Officer Vacancy 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -608,8 +644,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
           UPPSC APO Recruitment 2025
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -629,8 +663,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           NFR Sports Quota Recruitment 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -649,8 +681,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           IB Security Assistant/Executive Exam City 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -668,8 +698,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
           Indian Airforce Agniveervayu Intake 02/2026 Exam City 2025
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -935,8 +963,17 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
+  
+    
+    
+  
+    
+    
+  
+    
+    
       <li>
-        <a href="/scheme/mp-cm-seed-and-fertilizer-subsidy-scheme/" >MP CM Seed &amp; Fertilizer Subsidy Scheme 2025 – Full Details</a>
+        <a href="/jobs/sbi-manager-deputy-manager-vacancy-2025/" >SBI Manager &amp; Deputy Manager Vacancy 2025</a>
         
         
       </li>
@@ -948,16 +985,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
     
     
-      <li>
-        <a href="/document/voter-card-online-form-details/" >Voter ID Online Apply, Correction, Status &amp; Form List 2025</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
   
     
     
@@ -965,24 +992,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
       <li>
-        <a href="/update/ladli-bahna-yojna-1500-per-month/" >लाड़ली बहनों को दिवाली से ₹1500 प्रतिमाह मिलेंगे – सीएम मोहन यादव का ऐलान</a>
+        <a href="/document/mp-sambal-yojna-apply/" >MP Sambal Card Apply Online 2025 – फॉर्म, पात्रता, लाभ और आवश्यक दस्तावेज</a>
         
-        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
-    
-  
-    
-    
-      <li>
-        <a href="/railway/rrc-sr-apprentices-vacancy-2025/" >RRC SR Apprentices Vacancy 2025 Online Form</a>
-        
-        
-      </li>
-   
-    
-  
-    
     
   
     
@@ -1033,14 +1047,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-  
-    
-    
-  
-    
-    
-  
-    
+      <li>
+        <a href="/student/nsp-otr-scholarship-form/" >NSP One Time Registration (OTR) 2025</a>
+        
+        
+      </li>
+   
     
   
     
@@ -1058,7 +1070,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
       <li>
-        <a href="/search/" >Search- Yojna Portal</a>
+        <a href="/education/mpsos-ruk-jana-nahi-rjn-aa-laut-chale-alc-dec-2025/" >Ruk Jana Nahi / Aa Laut Chale (ALC) Dec- 2025 Examination Form</a>
         
         
       </li>
@@ -1067,12 +1079,21 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
     
     
+  
+    
+    
       <li>
-        <a href="/jobs/bpsc-aps-and-wm-officer-vacancy-2025/" >BPSC Assistant Public Sanitation &amp; Waste Management Officer Vacancy 2025</a>
+        <a href="/jobs/aai-junior-executive-je-vacancy-2025/" >AAI Junior Executive JE Vacancy 2025 Online Form</a>
         
         
       </li>
    
+    
+  
+    
+    
+  
+    
     
   
   <hr>

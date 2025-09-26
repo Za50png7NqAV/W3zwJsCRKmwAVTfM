@@ -165,7 +165,8 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
-  .dark-mode {
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
   background:#222;
   color:#fff;
 }
@@ -178,25 +179,62 @@
   color: white;
   border-color: #444;
 }
-.dark-mode td:first-child {
-    color: black;
-    width: 180px;
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
    
 }
 
-.dark-mode .correct { color: #4caf50; }
-.dark-mode .incorrect { color: #f44336; }
-.dark-mode .active { background: #ffff00; color:#000; }
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
 
-.dark-mode textarea, .dark-mode input, .dark-mode .header
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
  {
   background: #555;
   color: white;
 }
-.dark-mode button {
-   background: #181717;
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
    color:white;
 }
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -218,7 +256,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
-           <button onclick="toggleDarkMode()" class="DarkMode" >🌙 Dark Mode</button>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -314,10 +352,10 @@ function toggleDarkMode(){
   document.body.classList.toggle("dark-mode");
 
   if(document.body.classList.contains("dark-mode")){
-    btn.textContent = "☀️ Light Mode"; 
+    btn.textContent = "☀️ Light"; 
     localStorage.setItem("darkMode", "true");
   } else {
-    btn.textContent = "🌙 Dark Mode"; 
+    btn.textContent = "🌒Dark"; 
     localStorage.setItem("darkMode", "false");
   }
 }
@@ -325,9 +363,9 @@ function toggleDarkMode(){
 window.addEventListener("DOMContentLoaded", ()=>{
   if(localStorage.getItem("darkMode") === "true"){
     document.body.classList.add("dark-mode");
-    btn.textContent = "☀️ Light Mode";
+    btn.textContent = "☀️ Light";
   } else {
-    btn.textContent = "🌙 Dark Mode";
+    btn.textContent = "🌒 Dark";
   }
 });
 </script>
@@ -365,15 +403,18 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
         
         
+    
+        
+        
           <li class="card-item">
-            <a class="card-title" href="/jobs/nhpc-non-executive-vacancy-2025/" >NHPC Non-Executive Vacancy 2025 Online Form</a>
+            <a class="card-title" href="/pdf/all-lokseva-forms/" >Lokseva /eDistrict (लोकसेवा सें संबंधित) PDF Forms Download</a>
             
           <div class="card-tags">
         
-        
+        <a href="/pdf-forms/">📄 PDF Form</a>
       </div>
 
-      <div class="card-date">📅 02 Sep 2025</div>
+      <div class="card-date">📅 26 Mar 2025</div>
           </li>
        
         
@@ -381,32 +422,14 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
         
           <li class="card-item">
-            <a class="card-title" href="/scheme/mp-cm-seed-and-fertilizer-subsidy-scheme/" >MP CM Seed &amp; Fertilizer Subsidy Scheme 2025 – Full Details</a>
+            <a class="card-title" href="/admitcard/rrb-ntpc-10&#43;2-under-graduate-level-exam-date-2025/" >RRB NTPC 10&#43;2 Under Graduate Level Exam City/ Admit Card 2025</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 25 Jun 2025</div>
-          </li>
-       
-        
-    
-        
-        
-    
-        
-        
-          <li class="card-item">
-            <a class="card-title" href="/jobs/afms-medical-officer-vacancy-2025/" >Army AFMS Medical Officer Vacancy 2025</a>
-            
-          <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 13 Sep 2025</div>
+      <div class="card-date">📅 04 Aug 2025</div>
           </li>
        
         
@@ -414,14 +437,29 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
         
           <li class="card-item">
-            <a class="card-title" href="/update/rssb-librarian-gr-iii-2025/" >RSSB Librarian Gr-III Exam City / Admit Card 2025</a>
+            <a class="card-title" href="/document/webgis2-mpbhulekh-digital-certificate-online/" >MP Bhulekh (WebGis 2.0) 2025 - Khasra, B1, Naksha Download</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 22 Jul 2025</div>
+      <div class="card-date">📅 06 Aug 2025</div>
+          </li>
+       
+        
+    
+        
+        
+          <li class="card-item">
+            <a class="card-title" href="/pdf/patwari-forms/" >Patwari &amp; Farmer (पटवारी एवं किसान संबंधित) Forms 2025</a>
+            
+          <div class="card-tags">
+        
+        <a href="/pdf-forms/">📄 PDF Form</a>
+      </div>
+
+      <div class="card-date">📅 26 Mar 2025</div>
           </li>
        
         
@@ -446,8 +484,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           ECIL Technical Officer Vacancy 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -465,8 +501,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
           UPPSC APO Recruitment 2025
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -486,8 +520,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           NFR Sports Quota Recruitment 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -506,8 +538,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           IB Security Assistant/Executive Exam City 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -525,8 +555,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
           Indian Airforce Agniveervayu Intake 02/2026 Exam City 2025
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -1053,292 +1081,313 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-      <tr  data-shorturl="5cc9df" data-seo-title="DSSSB Non-Teaching Recruitment 2025: Apply Online for 615 Group B &amp; C Posts | Post-wise Eligibility &amp; Vacancy">
-        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="http://localhost:1313/jobs/dsssb-non-teaching-vacancy-aug-2025/">DSSSB Delhi Various Post Vacancy 2025</a><br>
-          <span>⚠️<a href="#" class="dynamic-link" data-search="DSSSB Jobs">DSSSB Jobs</a></span>
+      <tr  data-shorturl="bpsc9025" data-seo-title="BPSC Bihar Sports Officer Recruitment 2025 | Apply Online for 33 District Sports Officer &amp; Assistant Director Posts">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="http://localhost:1313/jobs/bpsc-sports-officer-vacancy-2025/">BPSC Sports Officer Vacancy 2025</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="BPSC Jobs">BPSC Jobs</a></span>
         </td>
-        <td style="color:rgb(172, 97, 0);; font-weight:600;">16/09/2025</td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">26/09/2025</td>
       </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr  data-shorturl="braedo25" data-seo-title="BPSC Assistant Education Development Officer Recruitment 2025 – Apply Online for 935 Vacancies, Eligibility &amp; Fee Details">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="http://localhost:1313/jobs/bihar-bpsc-aedo-vacancy-2025/">Bihar BPSC AEDO Vacancy 2025</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="BPSC Jobs">BPSC Jobs</a></span>
+        </td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">26/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr  data-shorturl="oilltd25" data-seo-title="Oil India Limited Recruitment 2025 – Apply for Engineers, Officers &amp; Secretary Posts">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="http://localhost:1313/jobs/oil-india-limited-vacancy-2025/">Oil India Limited Vacancy 2025</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="Oil India Ltd Jobs">Oil India Ltd Jobs</a></span>
+        </td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">26/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr  data-shorturl="b7b882" data-seo-title="Bihar BSSC 4th Graduate Level Recruitment 2025 – Apply Online for 1481 Vacancies">
+        <td><span style="color:rgb(255, 145, 0);"> • </span><a href="http://localhost:1313/jobs/bssc-4th-graduate-level-vacancy-aug-2025/">Bihar BSSC 4th Graduate Level Vacancy 2025</a><br>
+          <span>⚠️<a href="#" class="dynamic-link" data-search="Bihar BSSC Jobs">Bihar BSSC Jobs</a></span>
+        </td>
+        <td style="color:rgb(172, 97, 0);; font-weight:600;">26/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
     
   
 
@@ -2892,13 +2941,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
       
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/ecil-technical-officer-vacancy-2025/">ECIL Technical Officer Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="ECIL Jobs"> ECIL Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">22/09/2025</td>
-    </tr>
-          
-          
           
           
           
@@ -3128,13 +3170,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/">MPPEB Group-2 Sub Group-3 Various Posts Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="MPESB Jobs"> MPESB Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">23/09/2025</td>
-    </tr>
-          
-          
           
           
           
@@ -3168,13 +3203,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/iocl-engineers-officers-vacancy-2025/">Indian Oil Engineers/Officers Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="IOCL Jobs"> IOCL Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">21/09/2025</td>
-    </tr>
           
           
           
@@ -3211,13 +3239,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/railway/rrb-paramedical-various-posts-2025/">RRB Paramedical Various Posts Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="RRB Paramedical"> RRB Paramedical </a></span></td>
-      <td style="color:green; font-weight:600;">18/09/2025</td>
-    </tr>
           
           
           
@@ -3267,31 +3288,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/admission/jnv-class-ix-admission-form-2026/">JNV Class IX Admission Form 2026-27</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="Admission"> Admission </a></span></td>
-      <td style="color:green; font-weight:600;">23/09/2025</td>
-    </tr>
-          
-          
-          
-          
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/scholarship/lic-gjf-golden-jubilee-scholarship-2025/">LIC Golden Jubilee Scholarship 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="Scholarship"> Scholarship </a></span></td>
-      <td style="color:green; font-weight:600;">22/09/2025</td>
-    </tr>
-          
-          
-          
-          
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/apprentice/lic-hfl-apprentice-vacancy-2025/">LIC Housing Finance Apprentice Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="LIC HFL Jobs"> LIC HFL Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">22/09/2025</td>
-    </tr>
           
           
           
@@ -3309,11 +3305,8 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/isro-sac-vacancy-2025/">ISRO SAC Vacancy 2025 Online Form</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="ISRO SAC Jobs"> ISRO SAC Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">22/09/2025</td>
-    </tr>
+          
+          
           
           
           
@@ -3339,11 +3332,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/bpsc-sports-officer-vacancy-2025/">BPSC Sports Officer Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="BPSC Jobs"> BPSC Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">26/09/2025</td>
-    </tr>
           
           
           
@@ -3360,22 +3348,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/ibps-rrbs-crp-xiv-vacancy-2025/">IBPS RRBs CRP XIV Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="IBPS Jobs"> IBPS Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">21/09/2025</td>
-    </tr>
-          
-          
-          
-          
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/apprentice/ecil-iti-trade-apprentice-vacancy-2025/">ECIL ITI Trade Apprentice Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="ECIL Apprentice Jobs"> ECIL Apprentice Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">22/09/2025</td>
-    </tr>
           
           
           
@@ -3406,11 +3378,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/apprentice/iocl-pipelines-division-apprentice-vacancy-2025/">Indian Oil IOCL Apprentice Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="IOCL Jobs"> IOCL Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">18/09/2025</td>
-    </tr>
           
           
           
@@ -3424,22 +3391,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/bpsc-atp-vacancy-2025/">BPSC ATP Assistant Town Planner Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="BPSC Jobs"> BPSC Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">22/09/2025</td>
-    </tr>
-          
-          
-          
-          
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/bpsc-aes-2025/">BPSC AES Assistant Environmental Scientist Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="BPSC Jobs"> BPSC Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">19/09/2025</td>
-    </tr>
           
           
           
@@ -3455,11 +3406,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/pgcil-field-engineer-supervisor-vacancy-2025/">PowerGrid PGCIL Field Engineer &amp; Supervisor Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="PGCIL Jobs"> PGCIL Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">17/09/2025</td>
-    </tr>
           
           
           
@@ -3468,41 +3414,21 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/bihar-bpsc-aedo-vacancy-2025/">Bihar BPSC AEDO Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="BPSC Jobs"> BPSC Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">26/09/2025</td>
-    </tr>
           
           
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/">RPSC Junior Legal Officer (JLO) Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="RPSC Jobs"> RPSC Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">25/09/2025</td>
-    </tr>
           
           
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/oil-india-limited-vacancy-2025/">Oil India Limited Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="Oil India Ltd Jobs"> Oil India Ltd Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">26/09/2025</td>
-    </tr>
           
           
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/railway/rrc-sr-apprentices-vacancy-2025/">RRC SR Apprentices Vacancy 2025 Online Form</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="Apprentices Jobs"> Apprentices Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">25/09/2025</td>
-    </tr>
           
           
           
@@ -3514,21 +3440,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/dsssb-despatch-rider-jobs-2025/">DSSSB Chauffeur &amp; Process Server Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="DSSSB Jobs"> DSSSB Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">24/09/2025</td>
-    </tr>
           
           
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/dsssb-delhi-high-court-various-post-vacancy-2025/">DSSSB Delhi High Court Various Post Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="DSSSB High Court Jobs"> DSSSB High Court Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">24/09/2025</td>
-    </tr>
           
           
           
@@ -3537,31 +3453,16 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/bssc-bihar-office-attendant-vacancy-aug-2025/">Bihar BSSC Office Attendant / Attendant (Special) Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="BSSC Jobs"> BSSC Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">24/09/2025</td>
-    </tr>
           
           
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/bssc-4th-graduate-level-vacancy-aug-2025/">Bihar BSSC 4th Graduate Level Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="Bihar BSSC Jobs"> Bihar BSSC Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">26/09/2025</td>
-    </tr>
           
           
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/force/bsf-head-constable-ro-rm-vacancy-2025/">BSF Head Constable (RO/RM) Vacancy 2025</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="BSF Constable Jobs"> BSF Constable Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">23/09/2025</td>
-    </tr>
           
           
           
@@ -3582,11 +3483,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/patna-hc-steno-vacancy-2025/">Patna High Court Stenographer Vacancy 2025 Online Form</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="High Court Jobs"> High Court Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">19/09/2025</td>
-    </tr>
           
           
           
@@ -3604,11 +3500,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/rpsc-senior-teacher-grade-iv-vacancy-2025/">RPSC Senior Teacher Grade IV Vacancy 2025 Online Form</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="RPSC Teacher"> RPSC Teacher </a></span></td>
-      <td style="color:green; font-weight:600;">17/09/2025</td>
-    </tr>
           
           
           
@@ -3642,37 +3533,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           
           
           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <tr>
-            <td> <span style="color:green;"> • </span> <a href="http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/">HP JBT Teacher Vacancy 2025 Online Form</a> 
-        <br><span>🎯 <a href="#" class="dynamic-link" data-search="JBT Teachers Jobs"> JBT Teachers Jobs </a></span></td>
-      <td style="color:green; font-weight:600;">17/09/2025</td>
-    </tr>
           
           
           
@@ -4707,29 +4567,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-      <tr data-shorturl="d24113" data-seo-title="IB Security Assistant/Executive Exam City 2025 – Download Exam City Slip">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/ib-security-assistant-2025/">IB Security Assistant/Executive Exam City 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="Recruitemnt">Recruitemnt</a></span>
+      <tr data-shorturl="ecil1725" data-seo-title="ECIL Technical Officer Recruitment 2025 – Apply Online for 160 Vacancies">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/ecil-technical-officer-vacancy-2025/">ECIL Technical Officer Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="ECIL Jobs">ECIL Jobs</a></span>
         </td>
-        <td style="color:red; font-weight:600;">17/08/2025</td>
+        <td style="color:red; font-weight:600;">22/09/2025</td>
       </tr>
     
   
@@ -4765,17 +4607,28 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
 
   
+    
+    
+    
+  
 
   
     
     
     
-      <tr data-shorturl="d9fa6f" data-seo-title="SBI Junior Associate Prelims Admit Card 2025 – Download Now">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/sbi-clerk-junior-associate-vacancy-aug-2025/">SBI Clerk (Junior Associate) Prelims Admit Card 2025 Out</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="SBI Bank Jobs">SBI Bank Jobs</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">26/08/2025</td>
-      </tr>
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+    
+    
     
   
 
@@ -4904,102 +4757,116 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-      <tr data-shorturl="upscepfo25" data-seo-title="UPSC EPFO Exam Date 2025 – EO/AO &amp; APFC Examination Schedule">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/upsc/epfo-eo-ao-apfc-posts-jul25/">UPSC EPFO Exam Date 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="UPSC Jobs">UPSC Jobs</a></span>
+      <tr data-shorturl="13ad44" data-seo-title="MPPEB Group-2 Sub Group-3 Recruitment 2025 – Apply Online for 339 Posts, Eligibility &amp; Notification">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/">MPPEB Group-2 Sub Group-3 Various Posts Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="MPESB Jobs">MPESB Jobs</a></span>
         </td>
-        <td style="color:red; font-weight:600;">22/08/2025</td>
+        <td style="color:red; font-weight:600;">23/09/2025</td>
       </tr>
+    
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="e37189" data-seo-title="IOCL Recruitment 2025 – Apply Online for Engineers/Officers (Grade A) Posts">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/iocl-engineers-officers-vacancy-2025/">Indian Oil Engineers/Officers Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="IOCL Jobs">IOCL Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">21/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="eaf8e0" data-seo-title="RRB Paramedical Recruitment 2025: Apply Online for 434 Vacancies in Nursing, Technician, Pharmacist &amp; More">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/railway/rrb-paramedical-various-posts-2025/">RRB Paramedical Various Posts Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="RRB Paramedical">RRB Paramedical</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">18/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
     
   
 
@@ -5044,29 +4911,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-      <tr data-shorturl="94612b" data-seo-title="CSBC Bihar Police Constable Driver Exam Date 2025 – Check Written Exam Schedule &amp; Details">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/csbc-bihar-constable-driver-vacancy-2025/">CSBC Bihar Constable Driver Exam Date Notice 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="Constable Driver">Constable Driver</a></span>
+      <tr data-shorturl="jnvix25" data-seo-title="Jawahar Navodaya Vidyalaya Class 9 Admission 2026-27 – Apply Online for Vacant Seats, Eligibility, Exam Date &amp; Result">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/admission/jnv-class-ix-admission-form-2026/">JNV Class IX Admission Form 2026-27</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="Admission">Admission</a></span>
         </td>
-        <td style="color:red; font-weight:600;">20/08/2025</td>
+        <td style="color:red; font-weight:600;">23/09/2025</td>
       </tr>
     
   
@@ -5075,12 +4924,37 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-      <tr data-shorturl="1baa9f" data-seo-title="MPESB Primary Teacher Bharti 2025 – Exam Date Released for 13089 Varg 3 Posts">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/">MPESB Primary School Teacher Selection Test 2025 Exam Date</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="MPESB Primary School Teacher">MPESB Primary School Teacher</a></span>
+      <tr data-shorturl="licgjf25" data-seo-title="LIC Golden Jubilee Scholarship 2025 – Apply Online for EWS Students | Up to ₹40,000/Year">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/scholarship/lic-gjf-golden-jubilee-scholarship-2025/">LIC Golden Jubilee Scholarship 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="Scholarship">Scholarship</a></span>
         </td>
-        <td style="color:red; font-weight:600;">25/08/2025</td>
+        <td style="color:red; font-weight:600;">22/09/2025</td>
       </tr>
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="0ef597" data-seo-title="LIC HFL Apprentice Recruitment 2025 – Apply Online for 192 Graduate Apprentice Vacancies">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/apprentice/lic-hfl-apprentice-vacancy-2025/">LIC Housing Finance Apprentice Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="LIC HFL Jobs">LIC HFL Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">22/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
     
   
 
@@ -5101,18 +4975,18 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-      <tr data-shorturl="oiclassis" data-seo-title="Oriental Insurance Assistant Recruitment 2025 – Download Admitcard Now">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/oicl-assistant-posts-jul25/">Oriental Insurance Assistant Vacancy 2025 Admit Card Out</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="Assistant Jobs">Assistant Jobs</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">17/08/2025</td>
-      </tr>
-    
   
 
   
     
     
+    
+      <tr data-shorturl="sac125" data-seo-title="ISRO SAC Recruitment 2025: Apply Online for 13 Project Scientist &amp; Project Associate Posts">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/isro-sac-vacancy-2025/">ISRO SAC Vacancy 2025 Online Form</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="ISRO SAC Jobs">ISRO SAC Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">22/09/2025</td>
+      </tr>
     
   
 
@@ -5183,11 +5057,25 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
+      <tr data-shorturl="ipbsxiv" data-seo-title="IBPS RRB Recruitment 2025-26 | CRP RRBs XIV Notification Out for 13217 Clerk &amp; Officer Vacancies – Apply Online">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/ibps-rrbs-crp-xiv-vacancy-2025/">IBPS RRBs CRP XIV Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="IBPS Jobs">IBPS Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">21/09/2025</td>
+      </tr>
+    
   
 
   
     
     
+    
+      <tr data-shorturl="7e329e" data-seo-title="ECIL ITI Trade Apprentice Recruitment 2025 | Apply Online for 412 Apprentice Vacancies">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/apprentice/ecil-iti-trade-apprentice-vacancy-2025/">ECIL ITI Trade Apprentice Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="ECIL Apprentice Jobs">ECIL Apprentice Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">22/09/2025</td>
+      </tr>
     
   
 
@@ -5259,91 +5147,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-    
-    
-    
-  
-
-  
-
-  
-    
-    
-    
-      <tr data-shorturl="fbao25" data-seo-title="Federal Bank Associate Officer AO (Sales) Recruitment 2025 – Apply Online">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/bank/federal-bank-ao-associate-officer-vacancy-2025/">Federal Bank Associate Officer Vacancy 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="Bank Jobs">Bank Jobs</a></span>
+      <tr data-shorturl="e2214e" data-seo-title="IOCL Pipelines Division Apprentice Recruitment 2025 | Apply Online for 537 Vacancies">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/apprentice/iocl-pipelines-division-apprentice-vacancy-2025/">Indian Oil IOCL Apprentice Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="IOCL Jobs">IOCL Jobs</a></span>
         </td>
-        <td style="color:red; font-weight:600;">03/09/2025</td>
+        <td style="color:red; font-weight:600;">18/09/2025</td>
       </tr>
     
   
@@ -5370,6 +5178,26 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
+      <tr data-shorturl="bratp25" data-seo-title="Bihar BPSC Assistant Town Planner Recruitment 2025: Apply Online for 35 ATP Vacancies, Eligibility &amp; Notification PDF">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/bpsc-atp-vacancy-2025/">BPSC ATP Assistant Town Planner Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="BPSC Jobs">BPSC Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">22/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="braes25" data-seo-title="BPSC Assistant Environmental Scientist Recruitment 2025: Apply Online for 17 AES Vacancies, Notification &amp; Eligibility">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/bpsc-aes-2025/">BPSC AES Assistant Environmental Scientist Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="BPSC Jobs">BPSC Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">19/09/2025</td>
+      </tr>
+    
   
 
   
@@ -5381,6 +5209,136 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
     
     
+    
+      <tr data-shorturl="pgcil325" data-seo-title="PowerGrid PGCIL Recruitment 2025: Apply Online for 1543 Field Engineer &amp; Supervisor Vacancy">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/pgcil-field-engineer-supervisor-vacancy-2025/">PowerGrid PGCIL Field Engineer &amp; Supervisor Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="PGCIL Jobs">PGCIL Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">17/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="rpscjlo25" data-seo-title="RPSC JLO Recruitment 2025: Apply Online for 12 Junior Legal Officer Vacancies, Eligibility &amp; Last Date">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/">RPSC Junior Legal Officer (JLO) Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="RPSC Jobs">RPSC Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">25/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="rrcsra25" data-seo-title="RRC Southern Railway Apprentice Recruitment 2025 – Apply Online for 3518 Posts">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/railway/rrc-sr-apprentices-vacancy-2025/">RRC SR Apprentices Vacancy 2025 Online Form</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="Apprentices Jobs">Apprentices Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">25/09/2025</td>
+      </tr>
+    
+  
+
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="fbao25" data-seo-title="Federal Bank Associate Officer AO (Sales) Recruitment 2025 – Apply Online">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/bank/federal-bank-ao-associate-officer-vacancy-2025/">Federal Bank Associate Officer Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="Bank Jobs">Bank Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">03/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="dsssbcd25" data-seo-title="DSSSB Delhi Recruitment 2025: Apply Online for Chauffeur &amp; Despatch Rider 20 Posts (Advt. 04/2025)">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/dsssb-despatch-rider-jobs-2025/">DSSSB Chauffeur &amp; Process Server Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="DSSSB Jobs">DSSSB Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">24/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="delhc25" data-seo-title="DSSSB Delhi High Court Recruitment 2025: Apply Online for 334 Various Posts">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/dsssb-delhi-high-court-various-post-vacancy-2025/">DSSSB Delhi High Court Various Post Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="DSSSB High Court Jobs">DSSSB High Court Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">24/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="ec4d40" data-seo-title="BSSC Office Attendant Bharti 2025 – बिहार कार्यालय परिचारी भर्ती, 3727 पदों पर आवेदन करें">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/bssc-bihar-office-attendant-vacancy-aug-2025/">Bihar BSSC Office Attendant / Attendant (Special) Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="BSSC Jobs">BSSC Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">24/09/2025</td>
+      </tr>
+    
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="5ae4f0" data-seo-title="BSF Head Constable RO RM Recruitment 2025: Apply Online for 1121 Posts">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/force/bsf-head-constable-ro-rm-vacancy-2025/">BSF Head Constable (RO/RM) Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="BSF Constable Jobs">BSF Constable Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">23/09/2025</td>
+      </tr>
     
   
 
@@ -5428,17 +5386,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-  
-
-  
-    
-    
-    
-      <tr data-shorturl="a1c491" data-seo-title="IOB Apprentice Recruitment 2025 – Apply Online for 750 Vacancies, Eligibility &amp; Exam Date">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/bank/iob-indian-overseas-bank-apprentice-vacancy-2025/">IOB Indian Overseas Bank Apprentice Vacancy 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="IOB Bank Jobs">IOB Bank Jobs</a></span>
+      <tr data-shorturl="patnahc25" data-seo-title="Patna High Court Stenographer Recruitment 2025: Apply Online for 111 Vacancies, Notification, Eligibility &amp; Last Date">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/patna-hc-steno-vacancy-2025/">Patna High Court Stenographer Vacancy 2025 Online Form</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="High Court Jobs">High Court Jobs</a></span>
         </td>
-        <td style="color:red; font-weight:600;">25/08/2025</td>
+        <td style="color:red; font-weight:600;">19/09/2025</td>
       </tr>
     
   
@@ -5450,6 +5402,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
 
   
+    
+    
+    
+  
+
+  
 
   
     
@@ -5461,17 +5419,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-  
-
-  
-    
-    
-    
-      <tr data-shorturl="mpiti2025" data-seo-title="MP ITI Online Form 2025:  CLC Round Choice Filling And Registraion">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/admission/mp-iti-counseling-2025/">MP ITI Counseling 2025-26: CLC Round Choice Filling And Registraion</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="MP ITI">MP ITI</a></span>
+      <tr data-shorturl="7f9212" data-seo-title="RPSC Senior Teacher Recruitment 2025: Apply Online for 6500 Posts in Hindi, English, Maths, Science &amp; More">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/rpsc-senior-teacher-grade-iv-vacancy-2025/">RPSC Senior Teacher Grade IV Vacancy 2025 Online Form</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="RPSC Teacher">RPSC Teacher</a></span>
         </td>
-        <td style="color:red; font-weight:600;">22/08/2025</td>
+        <td style="color:red; font-weight:600;">17/09/2025</td>
       </tr>
     
   
@@ -5480,35 +5432,34 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-      <tr data-shorturl="bab674" data-seo-title="D.El.Ed Counselling 2025 5nd Round - Online Apply">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/admission/mp-deled-counselling-2025/">MP D.El.Ed Counselling 2025-26 | 5rd Round -Registration</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="DElEd Admission">DElEd Admission</a></span>
+  
+
+  
+    
+    
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <tr data-shorturl="5cc9df" data-seo-title="DSSSB Non-Teaching Recruitment 2025: Apply Online for 615 Group B &amp; C Posts | Post-wise Eligibility &amp; Vacancy">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/dsssb-non-teaching-vacancy-aug-2025/">DSSSB Delhi Various Post Vacancy 2025</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="DSSSB Jobs">DSSSB Jobs</a></span>
         </td>
-        <td style="color:red; font-weight:600;">20/08/2025</td>
+        <td style="color:red; font-weight:600;">16/09/2025</td>
       </tr>
-    
-  
-
-  
-
-  
-
-  
-    
-    
-    
-      <tr data-shorturl="7f4bb7" data-seo-title="BRLPS JEEViKA Recruitment 2025 – Apply Online for 2747 Vacancies, Check Eligibility &amp; Last Date">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/">BRLPS JEEViKA Vacancy 2025 Online Form</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="Bihar BRLPS Jobs">Bihar BRLPS Jobs</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">21/08/2025</td>
-      </tr>
-    
-  
-
-  
-    
-    
     
   
 
@@ -5632,6 +5583,13 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
     
     
+    
+      <tr data-shorturl="hpjbt25" data-seo-title="HP JBT Teacher Recruitment 2025 – Apply Online, Eligibility, Age Limit &amp; Last Date">
+        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/">HP JBT Teacher Vacancy 2025 Online Form</a><br>
+          <span>🔕<a href="#" class="dynamic-link" data-search="JBT Teachers Jobs">JBT Teachers Jobs</a></span>
+        </td>
+        <td style="color:red; font-weight:600;">17/09/2025</td>
+      </tr>
     
   
 
@@ -5765,13 +5723,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-      <tr data-shorturl="0e5f59" data-seo-title="Union Bank Wealth Manager Recruitment 2025 – Apply Online for 250 SO Vacancies">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/bank/ubi-wealth-manager-vacancy-aug-2025/">Union Bank SO (Wealth Manager) Vacancy 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="UBI Bank Jobs">UBI Bank Jobs</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">25/08/2025</td>
-      </tr>
-    
   
 
   
@@ -5792,13 +5743,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
     
     
-    
-      <tr data-shorturl="d7f33d" data-seo-title="BOB Bank of Baroda Recruitment 2025: Apply Online for 417 Officer &amp; Manager Posts">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/bob-sales-manager-officer-vacancy-aug-2025/">Bank of Baroda Sales Manager &amp; Agriculture Officer Vacancy 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="BOB Bank Jobs">BOB Bank Jobs</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">26/08/2025</td>
-      </tr>
     
   
 
@@ -5834,13 +5778,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-      <tr data-shorturl="hrado25" data-seo-title="HPSC ADO Recruitment 2025 – Apply Online for 785 Agricultural Development Officer Posts">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/hpsc-ado-posts-aug25/">Haryana HPSC ADO Vacancy 2025 Online Form</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="HPSC Jobs">HPSC Jobs</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">25/08/2025</td>
-      </tr>
-    
   
 
   
@@ -5870,13 +5807,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-      <tr data-shorturl="navyit25" data-seo-title="Navy SSC Executive (IT) Recruitment 2025-26 – Application Starts 2nd August">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/force/indian-navy-ssc-executive-it-jul25/">Indian Navy SSC Executive (IT) Vacancy Jan 2026</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="Indian Navy SSC">Indian Navy SSC</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">17/08/2025</td>
-      </tr>
-    
   
 
   
@@ -5890,13 +5820,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
     
     
-    
-      <tr data-shorturl="bobdmam25" data-seo-title="Bank of Baroda Recruitment 2025: Apply Online for 330 Posts – Assistant Manager, Deputy Manager &amp; AVP Jobs">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/bank/bob-dm-am-avp-posts-jul25/">Bank of Baroda BOB Varios Post Vacancy 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="Bank Jobs">Bank Jobs</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">19/08/2025</td>
-      </tr>
     
   
 
@@ -5931,13 +5854,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-      <tr data-shorturl="cb2f11" data-seo-title="RPSC Assistant Agriculture Engineer Recruitment 2025 – Apply Online for 281 Posts">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/rpsc-assistant-agriculture-engineer-2025/">RPSC Assistant Agriculture Engineer AAE Vacancy 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="RPSC Assistant Agriculture Engineer">RPSC Assistant Agriculture Engineer</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">26/08/2025</td>
-      </tr>
-    
   
 
   
@@ -5992,25 +5908,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-      <tr data-shorturl="bsfsq25" data-seo-title="BSF Sports Quota Recruitment 2025: 241 GD Constable Posts, 10th Pass Eligible, Apply Online">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/force/bsf-constable-sports-quota-jul25/">BSF Constable Sports Quota Vacancy 2025 Online Form</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="BSF Constable">BSF Constable</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">20/08/2025</td>
-      </tr>
-    
   
 
   
     
     
-    
-      <tr data-shorturl="bsf725" data-seo-title="BSF Constable Tradesman Recruitment 2025: Apply Online for 3588 Vacancies">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/force/bsf-constable-tradesman-jul25/">BSF Constable Tradesman Vacancy 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="BSF Constable Tradesman">BSF Constable Tradesman</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">25/08/2025</td>
-      </tr>
     
   
 
@@ -6026,25 +5928,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
-      <tr data-shorturl="sscm66" data-seo-title="Indian Army SSC Tech 66th Men Recruitment 2025 – Apply Online for 350 Engineering Vacancies (April 2026 Course)">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/force/indian-army-ssc-tech-men-66-2025/">Join Indian Army SSC Tech Men (66) April 2026</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="Indian Army SSC Tech">Indian Army SSC Tech</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">22/08/2025</td>
-      </tr>
-    
   
 
   
     
     
-    
-      <tr data-shorturl="4e2bb4" data-seo-title="Indian Army SSCW Tech 66 Recruitment 2025 – 31 Posts for Women Engineers">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/force/indian-army-sscw-tech-non-tech-jul25/">Indian Army SSCW Tech Recruitment 2025</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="Indian Army SSCW">Indian Army SSCW</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">21/08/2025</td>
-      </tr>
     
   
 
@@ -6053,13 +5941,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
     
     
-    
-      <tr data-shorturl="rjpc25" data-seo-title="Rajasthan RSSB Recruitment 2025: Apply Online for Platoon Commander Post">
-        <td> <span style="color:red;"> • </span><a href="http://localhost:1313/jobs/rssb-platoon-commander-jul25/">RSSB Platoon Commander Vacancy 2025 Online Form</a><br>
-          <span>🔕<a href="#" class="dynamic-link" data-search="RSSB Platoon Commander">RSSB Platoon Commander</a></span>
-        </td>
-        <td style="color:red; font-weight:600;">21/08/2025</td>
-      </tr>
     
   
 

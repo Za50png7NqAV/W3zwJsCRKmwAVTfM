@@ -184,7 +184,8 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
-  .dark-mode {
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
   background:#222;
   color:#fff;
 }
@@ -197,25 +198,62 @@
   color: white;
   border-color: #444;
 }
-.dark-mode td:first-child {
-    color: black;
-    width: 180px;
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
    
 }
 
-.dark-mode .correct { color: #4caf50; }
-.dark-mode .incorrect { color: #f44336; }
-.dark-mode .active { background: #ffff00; color:#000; }
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
 
-.dark-mode textarea, .dark-mode input, .dark-mode .header
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
  {
   background: #555;
   color: white;
 }
-.dark-mode button {
-   background: #181717;
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
    color:white;
 }
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -237,7 +275,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
-           <button onclick="toggleDarkMode()" class="DarkMode" >🌙 Dark Mode</button>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -333,10 +371,10 @@ function toggleDarkMode(){
   document.body.classList.toggle("dark-mode");
 
   if(document.body.classList.contains("dark-mode")){
-    btn.textContent = "☀️ Light Mode"; 
+    btn.textContent = "☀️ Light"; 
     localStorage.setItem("darkMode", "true");
   } else {
-    btn.textContent = "🌙 Dark Mode"; 
+    btn.textContent = "🌒Dark"; 
     localStorage.setItem("darkMode", "false");
   }
 }
@@ -344,9 +382,9 @@ function toggleDarkMode(){
 window.addEventListener("DOMContentLoaded", ()=>{
   if(localStorage.getItem("darkMode") === "true"){
     document.body.classList.add("dark-mode");
-    btn.textContent = "☀️ Light Mode";
+    btn.textContent = "☀️ Light";
   } else {
-    btn.textContent = "🌙 Dark Mode";
+    btn.textContent = "🌒 Dark";
   }
 });
 </script>
@@ -384,15 +422,18 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
         
         
+    
+        
+        
           <li class="card-item">
-            <a class="card-title" href="/update/cm-laptop-yojna-mp/" >CM Laptop Yojana 2025-26 , MP</a>
+            <a class="card-title" href="/document/mp-sambal-yojna-apply/" >MP Sambal Card Apply Online 2025 – फॉर्म, पात्रता, लाभ और आवश्यक दस्तावेज</a>
             
           <div class="card-tags">
         
-        
+        <a href="/pdf-forms/">📄 PDF Form</a>
       </div>
 
-      <div class="card-date">📅 27 May 2025</div>
+      <div class="card-date">📅 24 Apr 2025</div>
           </li>
        
         
@@ -402,18 +443,15 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
         
         
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/apprentice/lic-hfl-apprentice-vacancy-2025/" >LIC Housing Finance Apprentice Vacancy 2025</a>
+            <a class="card-title" href="/search/" >Search- Yojna Portal</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 02 Sep 2025</div>
+      <div class="card-date">📅 08 Nov 2024</div>
           </li>
        
         
@@ -421,14 +459,14 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
         
           <li class="card-item">
-            <a class="card-title" href="/jobs/bssc-4th-graduate-level-vacancy-aug-2025/" >Bihar BSSC 4th Graduate Level Vacancy 2025</a>
+            <a class="card-title" href="/scholarship/reliance-foundation-scholarships-2025-26/" >Reliance Foundation Scholarships 2025-26</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 26 Aug 2025</div>
+      <div class="card-date">📅 07 Sep 2025</div>
           </li>
        
         
@@ -453,8 +491,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           ECIL Technical Officer Vacancy 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -472,8 +508,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
           UPPSC APO Recruitment 2025
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -493,8 +527,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           NFR Sports Quota Recruitment 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -513,8 +545,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
           IB Security Assistant/Executive Exam City 2025
         
         
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
       </a>
 
       <div class="card-tags">
@@ -532,8 +562,6 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
           Indian Airforce Agniveervayu Intake 02/2026 Exam City 2025
         
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -839,13 +867,43 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
+      <li>
+        <a href="/result/rskmp-5th-8th-re-exam-results-2025/" >RSKMP 5th &amp; 8th Re-Exam Result Out</a>
+        
+        
+      </li>
+   
+    
   
     
     
       <li>
-        <a href="/apprentice/iocl-pipelines-division-apprentice-vacancy-2025/" >Indian Oil IOCL Apprentice Vacancy 2025</a>
+        <a href="/result/up-police-radio-head-operator-2022-final-result/" >UP Police Radio Head Operator 2022 Final Result PDF Out</a>
         
         
+      </li>
+   
+    
+  
+    
+    
+      <li>
+        <a href="/document/driving-licence-apply-parivahan/" >Driving Licence Apply, Status Check &amp; Download</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/scheme/madhya-pradesh/social-security-pension-apply/" >MP Social Security  Pension Form PDF Download &amp; Application Process</a>
+        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
     
@@ -858,27 +916,18 @@ window.addEventListener("DOMContentLoaded", ()=>{
   
     
     
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
       <li>
-        <a href="/education/central-board-result-2025/" >Central Board 10th &amp; 12th CBSE Result 2025</a>
+        <a href="/pdf/uploaded-pdf-forms/" >Self Uploaded PDF Forms</a>
         
-        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
+    
+  
+    
+    
+  
+    
     
   
   <hr>
@@ -923,8 +972,33 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
     
+  
+    
+    
+  
+    
+    
+  
+    
+    
       <li>
-        <a href="/bihar/bpsc-otr-one-time-registration-online/" >BPSC One-Time Registration Guide 2025</a>
+        <a href="/education/mpsos-ruk-jana-nahi-rjn-aa-laut-chale-alc-dec-2025/" >Ruk Jana Nahi / Aa Laut Chale (ALC) Dec- 2025 Examination Form</a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+      <li>
+        <a href="/mpdage/ekrishi-yantra-anudan/" >MP krishi yantra anudan yojana 2025 online apply</a>
         
         
       </li>
@@ -937,42 +1011,17 @@ window.addEventListener("DOMContentLoaded", ()=>{
     
     
       <li>
-        <a href="/mp/pm-krishak-mitra-surya-yojana/" >PM Krishak Mitra Surya Yojana 2025 – सब्सिडी पर सोलर पंप योजना</a>
+        <a href="/mp/ssapy-cm-unmarried-pension-scheme/" >SSAPY CM Unmarried Pension Scheme  Online form Apply</a>
         
-        
+         • <a href="/pdf-forms/">PDF</a>
       </li>
    
     
   
     
     
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
       <li>
-        <a href="/search/" >Search- Yojna Portal</a>
-        
-        
-      </li>
-   
-    
-  
-    
-    
-  
-    
-    
-      <li>
-        <a href="/otr/up-police-otr-online/" >UP Police One Time Registration 2025</a>
+        <a href="/scheme/mp/rojgar-panjiyan/" >MP Rojgar Panjiyan</a>
         
         
       </li>
