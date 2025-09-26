@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bssc-stenographer-vacancy-2025/</loc>
-    <lastmod>2025-09-26T10:21:24+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
+    <lastmod>2025-09-26T10:48:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-26T10:48:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/lic-ae-aao-specialist-generalist-vacancy-2025/</loc>
+    <lastmod>2025-09-26T10:37:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-crp-clerk-xv-jul25/</loc>
+    <lastmod>2025-09-26T10:30:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bssc-stenographer-vacancy-2025/</loc>
     <lastmod>2025-09-26T10:21:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -24,11 +39,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/pfrda-assistant-manager-am-vacancy-2025/</loc>
     <lastmod>2025-09-24T15:58:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-crp-clerk-xv-jul25/</loc>
-    <lastmod>2025-09-24T15:47:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -734,11 +744,6 @@
   </url><url>
     <loc>http://localhost:1313/bihar/bpssc-enforcement-si-2025/</loc>
     <lastmod>2025-08-17T10:44:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/lic-ae-aao-specialist-generalist-vacancy-2025/</loc>
-    <lastmod>2025-08-16T10:32:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1794,11 +1799,6 @@
   </url><url>
     <loc>http://localhost:1313/mp/ladli-bahna-yojana-update-2025/</loc>
     <lastmod>2025-04-14T07:43:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp/mpesb-ms-ps-tst-2024/</loc>
-    <lastmod>2025-04-13T19:15:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
