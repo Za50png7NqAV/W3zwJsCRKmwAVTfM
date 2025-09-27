@@ -1,0 +1,4 @@
+function previewData(e){e.preventDefault();const t=document.getElementById("name").value,n=document.getElementById("email").value,s=document.getElementById("message").value;document.getElementById("preview-name").textContent=t,document.getElementById("preview-email").textContent=n,document.getElementById("preview-message").textContent=s,document.getElementById("form-container").style.display="none",document.getElementById("preview").style.display="block"}const WHATSAPP_NUMBER="917805009974";document.getElementById("WhatsApp").addEventListener("click",function(){const e=document.getElementById("name").value.trim(),t=document.getElementById("email").value.trim(),n=document.getElementById("message").value.trim(),s=`New contact form message:
+Name: ${e}
+Contact: ${t}
+Message: ${n}`,o=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(s)}`;window.open(o,"_blank")})
