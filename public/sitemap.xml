@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ib-security-assistant-2025/</loc>
-    <lastmod>2025-09-27T14:54:52+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bssc-inter-level-recruitment-2025/</loc>
+    <lastmod>2025-09-27T16:01:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-27T16:01:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sidbi-assistant-manager-grade-a-b-vacancy-2025/</loc>
+    <lastmod>2025-09-27T14:58:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ib-security-assistant-2025/</loc>
     <lastmod>2025-09-27T14:54:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -189,11 +199,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-paramedical-vacancy-07-2025/</loc>
     <lastmod>2025-09-20T10:42:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sidbi-assistant-manager-grade-a-b-vacancy-2025/</loc>
-    <lastmod>2025-09-20T10:33:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
