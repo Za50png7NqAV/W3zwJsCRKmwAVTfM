@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Preview Example</title>
+     <style>
+     
+        .search-container {
+            max-width: 100%;
+            margin: auto;
+            background:#e9f7fe;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #b3d7f5;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+       textarea, input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .submit-button {
+            background-color: #0056b3;
+          
+            color: #fff;
+            padding: 10px 80px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+         #WhatsApp { background:#25d366 ; color: #fff;
+                 padding: 10px 80px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+         }
+        #WhatsApp:hover { background: #1ebd5a; }
+        .submit-button:hover {
+            background-color: #003f8a;
+        }
+        .preview-container {
+            margin:auto;
+             max-width: 400px;
+            margin-top: 20px;
+            padding: 20px;
+            background: #e9f7fe;
+            border: 1px solid #b3d7f5;
+            border-radius: 5px;
+        }
+        .message {
+            margin: auto;
+            text-align: center;
+        }
+        #reload {
+             
+            margin-left: 45%;
+            text-align: center; 
+            background-color: #b3d7f5; 
+            color:#000;
+            padding: 3px 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="search-container" id="form-container">
+        <form method="post" action="" name="search-form" onsubmit="previewData(event)">
+            <input type="hidden" name="TimeStamp" id="timestamp-field">
+            <input type="hidden" name="SiteName" Value="YojnaPortal.Com">
+            <label>Your Name:</label>
+            <input type="text" name="Name" placeholder="Enter Your Name" id="name" required>
+            <label>Your contact:</label>
+            <input type="text" name="email" placeholder="Enter Contact , Email, etc " id="email" >
+            <label>Your Message/Suggestion:</label>
+            <textarea type="text" name="message" rows="3" placeholder="Enter Your Message" id="message" required> </textarea><br>
+            <button type="submit" class="submit-button">Preview & Send to WhatsApp</button>
+        </form>
+    </div>
+
+    <div class="preview-container" id="preview" style="display: none;">
+        <div class="message">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="80" height="80" fill="#0e7c1b" stroke="#0e7c1b">
+                <g id="checkmark">
+                    <path d="M26,2C12.7,2,2,12.7,2,26s10.7,24,24,24s24-10.7,24-24S39.3,2,26,2z M39.4,20L24.1,35.5 
+                        c-0.6,0.6-1.6,0.6-2.2,0L13.5,27c-0.6-0.6-0.6-1.6,0-2.2l2.2-2.2c0.6-0.6,1.6-0.6,2.2,0l4.4,4.5 
+                        c0.4,0.4,1.1,0.4,1.5,0L35,15.5c0.6-0.6,1.6-0.6,2.2,0l2.2,2.2C40.1,18.3,40.1,19.3,39.4,20z">
+                    </path>
+                </g>
+            </svg>
+
+        </div>
+        <h3 class="message">Thank you! <span id="preview-name"></span>  😊</h3>
+        <p> <strong> Your Message: </strong> "<span id="preview-message"></span> " </p>
+         <p><strong>Your Contact:</strong> <span id="preview-email"></span></p>
+       
+       <button id="WhatsApp" type="button">Get WhatsApp Number</button>
+    </div>
+
+    <script>
+        function previewData(event) {
+            // Prevent the form from submitting
+            event.preventDefault();
+
+            // Get form field values
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Display the preview
+            document.getElementById("preview-name").textContent = name;
+            document.getElementById("preview-email").textContent = email;
+            document.getElementById("preview-message").textContent = message;
+
+            // Hide the form container
+            document.getElementById("form-container").style.display = "none";
+
+            // Show the preview container
+            document.getElementById("preview").style.display = "block";
+        }
+    </script>
+    <script type="text/javascript">
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxq41PYKyUmsvwX4ugOw4PWSJO7oteC5Mii1cMi_dsgbP80vGGcKtYrLI88GNfbmB4k/exec';
+  const form = document.forms['search-form'];
+  
+  // Set the timestamp automatically
+  const timestampField = document.getElementById('timestamp-field');
+  const now = new Date();
+  const formattedDate = now.toLocaleString('en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+  }).replace(',', '');
+  timestampField.value = formattedDate;
+
+  // Handle form submission
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(() => alert("Thank you! Your form is submitted successfully."))
+      .then(() => { window.location.reload(); })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+<script>
+  // ✅ Replace with your full WhatsApp number in international format (no +, no spaces)
+  const WHATSAPP_NUMBER = "917805009974"; // e.g., 919876543210
+
+  // Handle "Send on WhatsApp" click
+  document.getElementById("WhatsApp").addEventListener("click", function () {
+    // Read values from the inputs (they still have the user’s data)
+    const name = document.getElementById("name").value.trim();
+    const contact = document.getElementById("email").value.trim();
+    const msg = document.getElementById("message").value.trim();
+
+    // Build a neat message
+    const text =
+`New contact form message:
+Name: ${name}
+Contact: ${contact}
+Message: ${msg}`;
+
+    // Open WhatsApp with pre-filled text
+    const waURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(waURL, "_blank");
+  });
+</script>
+
+
+</body>
+</html>
