@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bssc-inter-level-recruitment-2025/</loc>
-    <lastmod>2025-09-27T16:01:02+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-09-27T16:48:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/ecr-apprentice-recruitment-2025/</loc>
+    <lastmod>2025-09-27T16:48:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-27T16:48:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bssc-inter-level-recruitment-2025/</loc>
     <lastmod>2025-09-27T16:01:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -32,6 +42,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
+    <lastmod>2025-09-27T12:20:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/ibps-probationary-officer-po-15th-vacancy-2025/</loc>
     <lastmod>2025-09-27T09:58:59+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -44,11 +59,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/dda-recruitment-2025/</loc>
     <lastmod>2025-09-27T09:40:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-09-27T09:38:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -394,11 +404,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrc-sr-scouts-guides-quota-vacancy-2025/</loc>
     <lastmod>2025-09-09T19:47:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
-    <lastmod>2025-09-09T10:34:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
