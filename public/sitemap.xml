@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/csbc-bihar-police-recruitment-2025/</loc>
-    <lastmod>2025-09-27T13:05:41+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ib-security-assistant-2025/</loc>
+    <lastmod>2025-09-27T14:54:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-27T14:54:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/csbc-bihar-police-recruitment-2025/</loc>
     <lastmod>2025-09-27T13:05:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -264,11 +269,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nfr-sports-quota-recruitment-2025/</loc>
     <lastmod>2025-09-16T16:15:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ib-security-assistant-2025/</loc>
-    <lastmod>2025-09-16T11:51:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
