@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/document/fssai-food-license-registration-form/</loc>
-    <lastmod>2025-09-28T12:09:09+05:30</lastmod>
+    <loc>http://localhost:1313/admission/jnv-class-ix-admission-form-2026/</loc>
+    <lastmod>2025-09-28T13:05:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-28T13:05:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/fssai-food-license-registration-form/</loc>
     <lastmod>2025-09-28T12:09:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -504,11 +509,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-police-si-posts-jul-2025/</loc>
     <lastmod>2025-09-03T19:38:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/jnv-class-ix-admission-form-2026/</loc>
-    <lastmod>2025-09-03T12:26:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
