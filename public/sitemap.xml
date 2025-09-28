@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-09-27T16:48:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/ecr-apprentice-recruitment-2025/</loc>
-    <lastmod>2025-09-27T16:48:00+05:30</lastmod>
+    <loc>http://localhost:1313/document/fssai-food-license-registration-form/</loc>
+    <lastmod>2025-09-28T12:09:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-28T12:09:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-09-27T18:09:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/drdo-apprentice-recruitment-2025/</loc>
+    <lastmod>2025-09-27T18:09:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/ecr-apprentice-recruitment-2025/</loc>
     <lastmod>2025-09-27T16:48:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -59,11 +69,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/dda-recruitment-2025/</loc>
     <lastmod>2025-09-27T09:40:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/drdo-apprentice-recruitment-2025/</loc>
-    <lastmod>2025-09-27T09:38:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
