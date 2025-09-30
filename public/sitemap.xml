@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-je-recruitment-2025/</loc>
-    <lastmod>2025-09-29T18:01:07+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ssc-delhi-police-hc-ministerial-recruitment-2025/</loc>
+    <lastmod>2025-09-30T11:13:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-30T11:13:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-vacancy-2025/</loc>
+    <lastmod>2025-09-29T18:49:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-je-recruitment-2025/</loc>
     <lastmod>2025-09-29T18:01:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -239,11 +249,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp-police-asi-subedar-vacancy-2025/</loc>
     <lastmod>2025-09-20T12:45:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-police-constable-vacancy-2025/</loc>
-    <lastmod>2025-09-20T12:37:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
