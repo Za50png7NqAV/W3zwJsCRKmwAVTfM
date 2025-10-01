@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/toilet-subsidy-yojana-swachh-bharat/</loc>
-    <lastmod>2025-09-30T15:36:17+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rajasthan-constable-sports-quota-vacancy-2025/</loc>
+    <lastmod>2025-10-01T09:10:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-01T09:10:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
+    <lastmod>2025-10-01T08:50:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/toilet-subsidy-yojana-swachh-bharat/</loc>
     <lastmod>2025-09-30T15:36:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -357,11 +367,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rajasthan-constable-sports-quota-vacancy-2025/</loc>
-    <lastmod>2025-09-15T08:40:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/railway/rrb-section-controller-vacancy-2025/</loc>
     <lastmod>2025-09-15T08:31:49+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -574,11 +579,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/csbc-bihar-constable-driver-vacancy-2025/</loc>
     <lastmod>2025-09-02T18:39:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
-    <lastmod>2025-09-02T18:15:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
