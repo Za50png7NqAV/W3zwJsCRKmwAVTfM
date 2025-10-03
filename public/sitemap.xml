@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
+    <lastmod>2025-10-03T19:20:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-03T19:20:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/2025/ib-jio-junior-intelligence-officer-vacancy-2025/</loc>
+    <lastmod>2025-10-03T19:13:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2025-10-03T11:47:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentice/rrc-nwr-apprentice-recruitment-2025/</loc>
-    <lastmod>2025-10-03T11:47:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-10-03T11:47:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -334,11 +344,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/dsssb-assistant-teacher-vacancy-2025/</loc>
     <lastmod>2025-09-17T14:57:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
-    <lastmod>2025-09-17T14:50:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -754,11 +759,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-prosecutor-lecturer-vacancy-2025/</loc>
     <lastmod>2025-08-24T10:17:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/ib-jio-junior-intelligence-officer-vacancy-2025/</loc>
-    <lastmod>2025-08-23T11:25:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
