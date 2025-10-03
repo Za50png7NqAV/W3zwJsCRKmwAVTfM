@@ -1,0 +1,243 @@
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><div class="yp-table-wrapper"> </div>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>🇮🇳 App Store – Made in India</title>
+<meta name="theme-color" content="#f6f7ff">
+<meta name="description" content="Simple, mobile-friendly Made in India App Store – curated cards with Play Store & website links.">
+<style>
+  :root{
+    --bg:#f6f7ff;
+    --bg2:#eef2ff;
+    --card:#ffffff;
+    --text:#0d0d0d;
+    --muted:#2f7d1f;
+    --ring:#e6e6e6;
+    --shadow:0 6px 30px rgb(0 0 0 / .08);
+    --radius:18px;
+    --gap:18px;
+    --maxw:1100px;
+  }
+
+   
+  html.dark{
+    --bg:#0b0c10;
+    --bg2:#0f1219;
+    --card:#151821;
+    --text:#eef2ff;
+    --ring:#232735;
+    --shadow:0 10px 30px rgb(0 0 0 / .35);
+  }
+   
+  html.light{
+    --bg:#f6f7ff;
+    --bg2:#eef2ff;
+    --card:#ffffff;
+    --text:#0d0d0d;
+    --ring:#e6e6e6;
+    --shadow:0 6px 30px rgb(0 0 0 / .08);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Noto Sans,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,var(--bg) 0 50%, var(--bg2) 50%);
+    color:var(--text);
+  }
+  .page{max-width:var(--maxw); margin:auto; padding:20px}
+  header{
+    position:sticky; top:0; z-index:5;
+    background:linear-gradient(180deg,var(--bg),var(--bg));
+    border-bottom:1px solid var(--ring);
+    backdrop-filter:saturate(140%) blur(6px);
+  }
+  .head-wrap{max-width:var(--maxw);margin:auto;padding:16px 20px;display:grid;gap:10px}
+  .brand{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .brand h1{font-size:clamp(18px,4vw,28px);margin:0}
+  .sub{opacity:.75;font-size:clamp(12px,2.6vw,14px)}
+
+   
+  .controls{display:flex;gap:10px;flex-wrap:wrap}
+  .search{flex:1 1 260px;display:flex;align-items:center;gap:8px;
+    background:var(--card);border:1px solid var(--ring);border-radius:12px;padding:10px 12px;box-shadow:var(--shadow);}
+  .search input{border:none;outline:none;background:transparent;color:var(--text);width:100%;font-size:16px}
+  .toggle{flex:0 0 auto;display:inline-flex;align-items:center;gap:8px;
+    background:var(--card);border:1px solid var(--ring);border-radius:12px;padding:10px 14px;box-shadow:var(--shadow);
+    cursor:pointer;user-select:none;font-weight:700;}
+
+   
+  .apps{display:grid;gap:var(--gap);padding-top:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+
+  .app-card{display:grid;grid-template-columns:88px 1fr;gap:14px;align-items:center;
+    background:var(--card);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);
+    border:1px solid var(--ring);transition:transform .12s ease, box-shadow .2s ease;}
+  .app-card:hover{transform:translateY(-3px)}
+  .logo{width:88px;height:88px;border-radius:16px;overflow:hidden;display:grid;place-items:center;background:#fff;border:2px solid #f2f2f2}
+  .logo img{width:100%;height:100%;object-fit:cover}
+
+  .meta{display:grid;gap:6px}
+  .title{font-weight:800;font-size:clamp(16px,2.2vw,20px);line-height:1.15}
+  .publisher{font-weight:800;color:var(--muted);font-size:14px}
+  .pub-link{color:var(--muted);text-decoration:none}
+  .pub-link:hover{text-decoration:underline}
+  .tagline{opacity:.75;font-size:12px}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+
+   
+  .btn{--padx:16px;--pady:10px;--r:12px;--ring:#dfe6ff;
+    border:none;cursor:pointer;text-decoration:none;font-weight:900;
+    font-size:14px;padding:var(--pady) var(--padx);
+    border-radius:var(--r);box-shadow:inset 0 0 0 2px var(--ring),0 6px 14px rgba(0,0,0,.06);
+    transition:transform .08s ease, box-shadow .2s ease;
+    display:inline-flex;align-items:center;justify-content:center;gap:.45em;color:#111}
+  .btn:hover{transform:translateY(-1px)}
+  .btn:active{transform:translateY(0) scale(.99)}
+  .btn.play{background:linear-gradient(135deg,#ff66ff 0%, #ffd2a8 100%)}
+  .btn.web{background:linear-gradient(135deg,#cdd5ff 0%, #ffd2f2 100%)}
+
+  footer{text-align:center;margin:28px 0 14px;font-size:13px;opacity:.7}
+</style>
+</head>
+<body>
+  <header>
+    <div class="head-wrap">
+      <div class="brand">
+        <div>
+          <h1>🇮🇳 Made in India – App Store</h1>
+          <div class="sub">Mobile-friendly HTML card list</div>
+        </div>
+        <button id="themeToggle" class="toggle" type="button" aria-pressed="false">
+          <span id="themeIcon">🌙</span> <span id="themeText">Dark</span>
+        </button>
+      </div>
+
+      <div class="controls">
+        <label class="search">
+          🔍
+          <input id="q" placeholder="Search apps..." autocomplete="off" />
+          <button id="clearBtn" type="button" style="border:none;background:transparent;font-size:18px;cursor:pointer;opacity:.7">✖</button>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="apps" id="apps">
+      
+      <article class="app-card" data-title="Arattai Messenger" data-publisher="Zoho Corporation">
+        <div class="logo"><img src="https://play-lh.googleusercontent.com/24v05HzQlZKLWKRDsqKTmVvjk5iRZgjH0wZSh9SzNxGQ3fNtwz-R_RPIvs7__-Q3yw=w240-h240-rw" alt=""></div>
+        <div class="meta">
+          <div class="title">Arattai Messenger</div>
+          <div class="publisher"><a class="pub-link" href="https://www.zoho.com/">Zoho Corporation</a></div>
+          <div class="tagline">Fast, secure Indian messenger</div>
+          <div class="actions">
+            <a class="btn play" href="https://play.google.com/store/apps/details?id=com.aratai.chat">Play Store</a>
+            <a class="btn web" href="https://www.arattai.com/">Website</a>
+          </div>
+        </div>
+      </article>
+
+      
+      <article class="app-card" data-title="Zoho Mail – Email and Calendar" data-publisher="Zoho Corporation">
+        <div class="logo"><img src="https://play-lh.googleusercontent.com/9AjFvEP6RP6zRd41Z9cuiyHe_qD47a1AN0QrvW9Ec0OfsmG9x-t09nmTQMAmmZuYrdso=w240-h240-rw" alt=""></div>
+        <div class="meta">
+          <div class="title">Zoho Mail – Email and Calendar</div>
+          <div class="publisher"><a class="pub-link" href="https://www.zoho.com/">Zoho Corporation</a></div>
+          <div class="tagline">Ad-free secure email suite</div>
+          <div class="actions">
+            <a class="btn play" href="https://play.google.com/store/apps/details?id=com.zoho.mail">Play Store</a>
+            <a class="btn web" href="https://www.zoho.com/mail/">Website</a>
+          </div>
+        </div>
+      </article>
+            
+      <article class="app-card" data-title="Ulaa Browser" data-publisher="Zoho Corporation">
+        <div class="logo"><img src="https://play-lh.googleusercontent.com/V4Zy0VPKvhrk1LI2CSWAQPo4BEfEmo1aP2iUls7nDqficoL6H_ly2eKDm9sj0AUsc-g=w480-h960-rw" alt=""></div>
+        <div class="meta">
+          <div class="title">Zoho Translate</div>
+          <div class="publisher"><a class="pub-link" href="https://www.zoho.com/">Zoho Corporation</a></div>
+          <div class="tagline"> Superfast Translate</div>
+          <div class="actions">
+            <a class="btn play" href="https://play.google.com/store/apps/details?id=com.zoho.translate">Play Store</a>
+            <a class="btn web" href="https://translate.zoho.com/app/">Website</a>
+          </div>
+        </div>
+      </article>
+         
+      <article class="app-card" data-title="Ulaa Browser" data-publisher="Zoho Corporation">
+        <div class="logo"><img src="https://play-lh.googleusercontent.com/IiDc2i_IH1w5Dxz9Rk1mb8a0u-S7npCTefEDg-E4k3ZszSWQmEAkUFwat_6AQYsg9Oye=w480-h960-rw" alt=""></div>
+        <div class="meta">
+          <div class="title">Ulaa Browser</div>
+          <div class="publisher"><a class="pub-link" href="https://www.zoho.com/">Zoho Corporation</a></div>
+          <div class="tagline">Private. Secure. Superfast.</div>
+          <div class="actions">
+            <a class="btn play" href="https://play.google.com/store/apps/details?id=com.zoho.primeum.stable">Play Store</a>
+            <a class="btn web" href="https://ulaa.com/">Website</a>
+          </div>
+        </div>
+      </article>
+
+             
+      <article class="app-card" data-title="Ulaa Browser" data-publisher="Zoho Corporation">
+        <div class="logo"><img src="https://play-lh.googleusercontent.com/uUtOoMEuaZQD67hmFTqPebG7xxoLmx56Ix2lpm2nws4cjlz_5KvlKxi2Up-YMhwc8yw=w480-h960-rw" alt=""></div>
+        <div class="meta">
+          <div class="title">Zoho WorkDrive</div>
+          <div class="publisher"><a class="pub-link" href="https://www.zoho.com/">Zoho Corporation</a></div>
+          <div class="tagline"> platform for secure, collaborative work</div>
+          <div class="actions">
+            <a class="btn play" href="https://play.google.com/store/apps/details?id=com.zoho.work.drive">Play Store</a>
+            <a class="btn web" href="https://www.zoho.com/workdrive/">Website</a>
+          </div>
+        </div>
+      </article>
+ </main>
+    
+    <footer>© 2025 • Made in India App Store • Recommend by Yojna Portal</footer>
+ 
+
+<script>
+  const root=document.documentElement;
+  const themeToggle=document.getElementById('themeToggle');
+  const themeIcon=document.getElementById('themeIcon');
+  const themeText=document.getElementById('themeText');
+  const metaTheme=document.querySelector('meta[name="theme-color"]');
+
+  function apply(theme){
+    root.classList.remove('dark','light');
+    root.classList.add(theme);
+    localStorage.setItem('theme',theme);
+    const isDark=theme==='dark';
+    themeToggle.setAttribute('aria-pressed',isDark);
+    themeIcon.textContent=isDark?'☀️':'🌙';
+    themeText.textContent=isDark?'Light':'Dark';
+    metaTheme.setAttribute('content',isDark?'#0b0c10':'#f6f7ff');
+  }
+
+  const saved=localStorage.getItem('theme');
+  if(saved){ apply(saved);}
+  else{ apply(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'); }
+
+  themeToggle.addEventListener('click',()=>{
+    const next=root.classList.contains('dark')?'light':'dark';
+    apply(next);
+  });
+
+  
+  const q=document.getElementById('q');
+  const clearBtn=document.getElementById('clearBtn');
+  const cards=document.querySelectorAll('.app-card');
+  function applyFilter(v){
+    v=v.toLowerCase();
+    cards.forEach(c=>{
+      const t=(c.dataset.title+" "+c.dataset.publisher).toLowerCase();
+      c.style.display=t.includes(v)?'grid':'none';
+    });
+  }
+  q.addEventListener('input',()=>applyFilter(q.value));
+  clearBtn.addEventListener('click',()=>{q.value='';applyFilter('');q.focus();});
+</script>
+</body>
+</html>
