@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/mpesb-paramedical-vacancy-07-2025/</loc>
+    <lastmod>2025-10-02T11:25:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-02T11:25:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-nda-ii-2025/</loc>
+    <lastmod>2025-10-02T11:19:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-probationary-officer-po-15th-vacancy-2025/</loc>
+    <lastmod>2025-10-02T11:12:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-driver-vacancy-2025/</loc>
     <lastmod>2025-10-01T09:10:28+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -28,11 +48,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-recruitment-2025/</loc>
-    <lastmod>2025-10-01T09:10:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-10-01T09:10:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -149,11 +164,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
     <lastmod>2025-09-27T12:20:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-probationary-officer-po-15th-vacancy-2025/</loc>
-    <lastmod>2025-09-27T09:58:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -279,11 +289,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp-police-asi-subedar-vacancy-2025/</loc>
     <lastmod>2025-09-20T12:45:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-paramedical-vacancy-07-2025/</loc>
-    <lastmod>2025-09-20T10:42:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -539,11 +544,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-cds-ii-2025/</loc>
     <lastmod>2025-09-04T19:53:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-nda-ii-2025/</loc>
-    <lastmod>2025-09-04T19:45:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
