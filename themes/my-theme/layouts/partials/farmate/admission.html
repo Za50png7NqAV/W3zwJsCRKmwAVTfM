@@ -94,16 +94,17 @@
    </div>
   {{ end }}
 </div>
-    {{ if .Params.how_to }}
-  <div class="card" tabindex="0">
-        {{ partial "farmate/parts/how_to.html" . }}
-   </div>
-  {{ end }}
+    
   {{ if .Params.content_html }}
   {{ partial "farmate/parts/default/content_html.html" . }}
 {{ end }}
   <div class="content">
     {{ .Content }}
+    {{ if .Params.how_to }}
+  <div class="card" tabindex="0">
+        {{ partial "farmate/parts/how_to.html" . }}
+   </div>
+  {{ end }}
   {{ partial "farmate/parts/link-table.html" . }}
 
 <hr>
