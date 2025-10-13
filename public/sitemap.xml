@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bob-manager-recruitment-2025/</loc>
-    <lastmod>2025-10-11T18:30:25+05:30</lastmod>
+    <loc>http://localhost:1313/2025/ib-jio-junior-intelligence-officer-vacancy-2025/</loc>
+    <lastmod>2025-10-12T17:17:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-12T17:17:44+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
+    <lastmod>2025-10-12T17:07:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bob-manager-recruitment-2025/</loc>
     <lastmod>2025-10-11T18:30:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -134,11 +144,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ib-security-assistant-2025/</loc>
     <lastmod>2025-10-04T15:38:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/ib-jio-junior-intelligence-officer-vacancy-2025/</loc>
-    <lastmod>2025-10-03T19:13:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -539,11 +544,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/iocl-nr-apprentice-vacancy-2025/</loc>
     <lastmod>2025-09-12T09:43:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2025-09-11T18:57:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
