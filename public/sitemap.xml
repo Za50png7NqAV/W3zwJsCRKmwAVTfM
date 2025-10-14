@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/eligibility/nta-aissee-2026/</loc>
+    <lastmod>2025-10-14T15:23:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-14T15:23:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/jnv-class-ix-admission-form-2026/</loc>
+    <lastmod>2025-10-14T11:47:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/scholarship/sbi-asha-scholarship-program/</loc>
     <lastmod>2025-10-14T10:58:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scholarship/</loc>
-    <lastmod>2025-10-14T10:58:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-10-14T10:58:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -269,11 +279,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bssc-stenographer-vacancy-2025/</loc>
     <lastmod>2025-09-28T16:49:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/jnv-class-ix-admission-form-2026/</loc>
-    <lastmod>2025-09-28T13:05:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
