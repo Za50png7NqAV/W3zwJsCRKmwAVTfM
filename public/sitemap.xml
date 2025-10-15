@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/nta-aissee-2026/</loc>
-    <lastmod>2025-10-14T15:23:53+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/pgcil-field-engineer-supervisor-vacancy-2025/</loc>
+    <lastmod>2025-10-14T16:37:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-14T16:37:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/nta-aissee-2026/</loc>
     <lastmod>2025-10-14T15:23:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -779,11 +784,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/aai-junior-executive-je-vacancy-2025/</loc>
     <lastmod>2025-08-28T10:13:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/pgcil-field-engineer-supervisor-vacancy-2025/</loc>
-    <lastmod>2025-08-27T16:12:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
