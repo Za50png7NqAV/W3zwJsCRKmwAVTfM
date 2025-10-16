@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrc-ner-sports-quota-recruitment-2025/</loc>
-    <lastmod>2025-10-15T17:37:31+05:30</lastmod>
+    <loc>http://localhost:1313/eligibility/mp-set-2025/</loc>
+    <lastmod>2025-10-16T11:36:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-16T11:36:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bsf-sports-quota-recruitment-2025/</loc>
+    <lastmod>2025-10-16T09:13:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bssc-inter-level-recruitment-2025/</loc>
+    <lastmod>2025-10-16T09:12:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrc-ner-sports-quota-recruitment-2025/</loc>
     <lastmod>2025-10-15T17:37:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -19,11 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-army-tes-55-july-2026/</loc>
     <lastmod>2025-10-15T11:58:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bssc-inter-level-recruitment-2025/</loc>
-    <lastmod>2025-10-15T09:44:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -59,11 +69,6 @@
   </url><url>
     <loc>http://localhost:1313/scholarship/</loc>
     <lastmod>2025-10-14T10:58:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bsf-sports-quota-recruitment-2025/</loc>
-    <lastmod>2025-10-13T18:37:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
