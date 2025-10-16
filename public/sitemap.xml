@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/mp-set-2025/</loc>
-    <lastmod>2025-10-16T11:36:42+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
+    <lastmod>2025-10-16T12:39:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-16T12:39:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/mp-set-2025/</loc>
     <lastmod>2025-10-16T11:36:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -264,11 +269,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-recruitment-2025/</loc>
     <lastmod>2025-10-01T09:10:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
-    <lastmod>2025-10-01T08:50:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
