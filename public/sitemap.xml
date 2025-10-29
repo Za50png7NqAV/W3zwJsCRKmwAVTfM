@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rpsc-statistical-officer-recruitment-2025/</loc>
-    <lastmod>2025-10-28T18:59:09+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
+    <lastmod>2025-10-29T10:52:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-29T10:52:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-coast-guard-ac-vacancy-2025/</loc>
+    <lastmod>2025-10-29T10:45:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-village-development-officer-vdo-2025/</loc>
+    <lastmod>2025-10-29T10:42:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
+    <lastmod>2025-10-29T10:29:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-statistical-officer-recruitment-2025/</loc>
     <lastmod>2025-10-28T18:59:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -29,11 +49,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
     <lastmod>2025-10-28T09:39:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
-    <lastmod>2025-10-28T09:38:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -124,11 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/isro-sdsc-shar-recruitment-2025/</loc>
     <lastmod>2025-10-18T11:25:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
-    <lastmod>2025-10-18T10:03:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -512,11 +522,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rssb-village-development-officer-vdo-2025/</loc>
-    <lastmod>2025-09-21T18:00:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/uppsc-assistant-teacher-bharti-2025/</loc>
     <lastmod>2025-09-20T18:26:05+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -734,11 +739,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/railway/rrb-paramedical-various-posts-2025/</loc>
     <lastmod>2025-09-04T21:06:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/indian-coast-guard-ac-vacancy-2025/</loc>
-    <lastmod>2025-09-04T19:59:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
