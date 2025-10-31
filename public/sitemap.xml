@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/sebi-assistant-manager-recruitment-oct-2025/</loc>
-    <lastmod>2025-10-31T15:48:28+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mphc-dpa-recruitment-oct-2025/</loc>
+    <lastmod>2025-10-31T16:58:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-31T16:58:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sebi-assistant-manager-recruitment-oct-2025/</loc>
     <lastmod>2025-10-31T15:48:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
