@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mphc-dpa-recruitment-oct-2025/</loc>
-    <lastmod>2025-10-31T16:58:14+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mppsc-programmer-recruitment-2025/</loc>
+    <lastmod>2025-11-01T09:30:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-01T09:30:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-assistant-professor-cs-recruitment-2025/</loc>
+    <lastmod>2025-11-01T09:29:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mphc-dpa-recruitment-oct-2025/</loc>
     <lastmod>2025-10-31T16:58:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -19,16 +29,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-je-recruitment-2025/</loc>
     <lastmod>2025-10-31T14:26:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-assistant-professor-cs-recruitment-2025/</loc>
-    <lastmod>2025-10-31T14:24:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-programmer-recruitment-2025/</loc>
-    <lastmod>2025-10-31T14:24:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
