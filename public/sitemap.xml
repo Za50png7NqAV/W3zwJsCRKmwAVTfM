@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-recruitment-2025/</loc>
+    <lastmod>2025-11-03T11:17:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-03T11:17:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/wbssc-non-teaching-recruitment-2025/</loc>
+    <lastmod>2025-11-03T09:02:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/scholarship/hdfc-ecss-scholarship-2025-26/</loc>
     <lastmod>2025-11-02T09:39:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scholarship/</loc>
-    <lastmod>2025-11-02T09:39:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-02T09:39:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -287,11 +297,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/wbssc-non-teaching-recruitment-2025/</loc>
-    <lastmod>2025-10-11T16:52:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/btsc-works-supervisor-recruitment-2025/</loc>
     <lastmod>2025-10-11T09:38:47+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -428,11 +433,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-constable-sports-quota-vacancy-2025/</loc>
-    <lastmod>2025-10-01T09:10:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-recruitment-2025/</loc>
     <lastmod>2025-10-01T09:10:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
