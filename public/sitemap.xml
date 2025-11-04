@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobsnhai-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-03T12:31:11+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
+    <lastmod>2025-11-04T09:34:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-je-recruitment-2025/</loc>
+    <lastmod>2025-11-04T09:34:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
+    <lastmod>2025-11-04T09:34:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
+    <lastmod>2025-11-04T09:34:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-04T09:34:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-motor-vehicle-inspector-mvi-2025/</loc>
+    <lastmod>2025-11-04T09:29:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nhai-recruitment-oct-2025/</loc>
     <lastmod>2025-11-03T12:31:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -52,11 +77,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-je-recruitment-2025/</loc>
-    <lastmod>2025-10-31T14:26:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/nta-aissee-2026/</loc>
     <lastmod>2025-10-30T17:56:07+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -97,11 +117,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
-    <lastmod>2025-10-29T10:52:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/indian-coast-guard-ac-vacancy-2025/</loc>
     <lastmod>2025-10-29T10:45:14+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -129,11 +144,6 @@
   </url><url>
     <loc>http://localhost:1313/education/mpsos-ruk-jana-nahi-rjn-aa-laut-chale-alc-dec-2025/</loc>
     <lastmod>2025-10-28T17:43:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
-    <lastmod>2025-10-28T09:39:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -179,11 +189,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/chandigarh-jbt-junior-basic-teacher-posts-jul25/</loc>
     <lastmod>2025-10-24T17:43:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
-    <lastmod>2025-10-21T11:34:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -884,11 +889,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/rcfl-apprentice-vacancy-2025/</loc>
     <lastmod>2025-08-29T16:59:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-motor-vehicle-inspector-mvi-2025/</loc>
-    <lastmod>2025-08-28T13:19:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
