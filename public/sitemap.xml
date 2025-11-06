@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/samadhan-yojana-2025-26/</loc>
-    <lastmod>2025-11-06T11:01:18+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/</loc>
+    <lastmod>2025-11-06T11:27:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-06T11:27:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/samadhan-yojana-2025-26/</loc>
     <lastmod>2025-11-06T11:01:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -674,11 +679,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nfr-sports-quota-recruitment-2025/</loc>
     <lastmod>2025-09-16T16:15:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/</loc>
-    <lastmod>2025-09-16T10:42:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
