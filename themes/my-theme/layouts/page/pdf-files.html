@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ .Title }}
+ {{ partial "list-update/pdfForms.html" . }}
+    <div class="content">
+        {{ .Content }}
+    </div>
+{{ end }}
