@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/</loc>
-    <lastmod>2025-11-06T11:27:56+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rssb-primary-teacher-recruitment-nov-2025/</loc>
+    <lastmod>2025-11-07T16:22:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-07T16:22:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
+    <lastmod>2025-11-07T11:05:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/</loc>
     <lastmod>2025-11-06T11:27:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -354,11 +364,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rbi-officer-grade-b-vacancy-2025/</loc>
     <lastmod>2025-10-13T09:28:40+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2025-10-12T17:07:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
