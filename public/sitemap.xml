@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/apprentice/aai-apprentice-recruitment-nov-2025/</loc>
+    <lastmod>2025-11-08T15:39:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-11-08T15:39:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-08T15:39:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/profile/mptaas-profile-otr-update/</loc>
     <lastmod>2025-11-08T13:27:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/otr/</loc>
-    <lastmod>2025-11-08T13:27:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-08T13:27:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -24,11 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-recruitment-2025/</loc>
     <lastmod>2025-11-08T12:48:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-11-08T12:38:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
