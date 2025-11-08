@@ -2,12 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rssb-upper-primary-teacher-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-07T17:02:44+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-nov-2025/</loc>
+    <lastmod>2025-11-08T10:35:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-08T10:35:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nabard-assistant-manager-recruitment-nov-2025/</loc>
+    <lastmod>2025-11-08T10:08:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/otr/</loc>
+    <lastmod>2025-11-08T10:08:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/otr/upprpb-otr-online/</loc>
+    <lastmod>2025-11-08T10:08:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-je-recruitment-2025/</loc>
+    <lastmod>2025-11-08T10:07:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
+    <lastmod>2025-11-08T10:07:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
+    <lastmod>2025-11-08T10:07:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-upper-primary-teacher-recruitment-nov-2025/</loc>
     <lastmod>2025-11-07T17:02:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -67,11 +102,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/nabard-assistant-manager-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-04T17:44:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/dda-recruitment-2025/</loc>
     <lastmod>2025-11-04T12:30:19+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -88,21 +118,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
-    <lastmod>2025-11-04T09:34:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-je-recruitment-2025/</loc>
-    <lastmod>2025-11-04T09:34:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
-    <lastmod>2025-11-04T09:34:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
     <lastmod>2025-11-04T09:34:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -424,11 +439,6 @@
   </url><url>
     <loc>http://localhost:1313/document/samagra-portal/</loc>
     <lastmod>2025-10-09T11:40:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/otr/</loc>
-    <lastmod>2025-10-09T09:16:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1224,11 +1234,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mpesb-msc-pbbse-2025/</loc>
     <lastmod>2025-07-31T17:57:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/otr/up-police-otr-online/</loc>
-    <lastmod>2025-07-31T17:26:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
