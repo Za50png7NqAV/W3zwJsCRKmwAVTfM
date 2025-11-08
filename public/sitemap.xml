@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/profile/mptaas-profile-otr-update/</loc>
+    <lastmod>2025-11-08T13:27:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/otr/</loc>
+    <lastmod>2025-11-08T13:27:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-08T13:27:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-junior-engineer-je-vacancy-2025/</loc>
+    <lastmod>2025-11-08T12:53:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-recruitment-2025/</loc>
+    <lastmod>2025-11-08T12:48:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2025-11-08T12:38:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentice/ongc-apprentice-recruitment-2025/</loc>
-    <lastmod>2025-11-08T12:38:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-08T12:38:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -28,11 +48,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/nabard-assistant-manager-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-08T10:08:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/otr/</loc>
     <lastmod>2025-11-08T10:08:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -144,11 +159,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nhai-recruitment-oct-2025/</loc>
     <lastmod>2025-11-03T12:31:11+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-recruitment-2025/</loc>
-    <lastmod>2025-11-03T11:17:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1397,11 +1407,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/profile/mptaas-profile-otr-update/</loc>
-    <lastmod>2025-07-20T20:17:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/document/vahan-rc-card-online/</loc>
     <lastmod>2025-07-20T15:48:09+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1589,11 +1594,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/uppsc-computer-assistant-vacancy-2025/</loc>
     <lastmod>2025-07-02T21:02:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-junior-engineer-je-vacancy-2025/</loc>
-    <lastmod>2025-07-02T13:56:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
