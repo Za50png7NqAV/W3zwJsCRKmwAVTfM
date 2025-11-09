@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/bssc-sports-trainer-recruitment-2025/</loc>
+    <lastmod>2025-11-09T10:51:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-09T10:51:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/apprentice/aai-apprentice-recruitment-nov-2025/</loc>
     <lastmod>2025-11-08T15:39:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-11-08T15:39:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-08T15:39:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -434,11 +439,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bihar-police-cid-recruitment-2025/</loc>
     <lastmod>2025-10-10T11:54:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bssc-sports-trainer-recruitment-2025/</loc>
-    <lastmod>2025-10-10T11:06:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
