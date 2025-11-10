@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ecgc-po-recruitment-2025-nov/</loc>
-    <lastmod>2025-11-10T16:46:24+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/sci-court-master-admit-card-2025/</loc>
+    <lastmod>2025-11-10T16:52:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-10T16:52:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ecgc-po-recruitment-nov-2025/</loc>
     <lastmod>2025-11-10T16:46:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -944,11 +949,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/naval-dockyard-apprentice-vacancy-2025/</loc>
     <lastmod>2025-08-31T16:07:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sci-court-master-vacancy-2025/</loc>
-    <lastmod>2025-08-30T10:23:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
