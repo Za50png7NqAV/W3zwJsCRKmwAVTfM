@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/ecgc-po-recruitment-2025-nov/</loc>
+    <lastmod>2025-11-10T16:46:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-10T16:46:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/iaf-afcat-01-2026-batch-recruitment-nov-2025/</loc>
+    <lastmod>2025-11-10T16:03:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/bssc-inter-level-recruitment-2025/</loc>
     <lastmod>2025-11-10T09:55:08+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -18,11 +33,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
-    <lastmod>2025-11-10T09:55:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-10T09:55:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -139,11 +149,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sbi-clerk-junior-associate-vacancy-aug-2025/</loc>
     <lastmod>2025-11-05T09:56:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/iaf-afcat-01-2026-batch-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-05T09:31:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
