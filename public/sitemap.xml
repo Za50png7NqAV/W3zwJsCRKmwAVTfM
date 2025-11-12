@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/rbi-officer-grade-b-vacancy-2025/</loc>
+    <lastmod>2025-11-12T10:13:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-12T10:13:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2025-11-11T16:07:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-11T16:07:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-11T16:07:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -424,11 +429,6 @@
   </url><url>
     <loc>http://localhost:1313/scholarship/sbi-asha-scholarship-program/</loc>
     <lastmod>2025-10-14T10:58:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rbi-officer-grade-b-vacancy-2025/</loc>
-    <lastmod>2025-10-13T09:28:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
