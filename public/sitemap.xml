@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2025-11-12T15:13:22+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
+    <lastmod>2025-11-13T11:24:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-13T11:24:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
+    <lastmod>2025-11-13T10:42:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/iob-specialist-officers-admit-card-2025/</loc>
+    <lastmod>2025-11-13T10:36:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-food-safety-officer-vacancy-2025/</loc>
+    <lastmod>2025-11-13T10:31:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
     <lastmod>2025-11-12T15:13:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -184,11 +204,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bssc-stenographer-vacancy-2025/</loc>
     <lastmod>2025-11-04T11:11:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
-    <lastmod>2025-11-04T09:34:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -752,11 +767,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/iob-specialist-officers-vacancy-2025/</loc>
-    <lastmod>2025-09-13T13:13:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/sbi-manager-credit-analyst-vacancy-2025/</loc>
     <lastmod>2025-09-13T11:41:32+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1094,11 +1104,6 @@
   </url><url>
     <loc>http://localhost:1313/delhi/dsssb-otr-one-time-registration-online/</loc>
     <lastmod>2025-08-18T20:24:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
-    <lastmod>2025-08-18T19:35:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1499,11 +1504,6 @@
   </url><url>
     <loc>http://localhost:1313/admitcard/rrb-alp-cbat-exam-city-2025/</loc>
     <lastmod>2025-07-11T13:22:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-food-safety-officer-vacancy-2025/</loc>
-    <lastmod>2025-06-11T10:48:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
