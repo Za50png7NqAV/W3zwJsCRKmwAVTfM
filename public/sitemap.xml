@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
+    <lastmod>2025-11-15T09:56:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-15T09:56:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2025-11-14T15:23:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentice/rites-apprentice-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-14T15:23:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-14T15:23:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1269,11 +1274,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrc-western-railway-sports-quota-posts-aug25/</loc>
     <lastmod>2025-08-03T13:13:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
-    <lastmod>2025-08-02T12:00:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
