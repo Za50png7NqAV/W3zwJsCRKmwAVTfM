@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mp-sachiv-bharti-nov-2026/</loc>
-    <lastmod>2025-11-18T11:06:04+05:30</lastmod>
+    <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
+    <lastmod>2025-11-18T11:34:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-18T11:34:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-sachiv-bharti-nov-2026/</loc>
     <lastmod>2025-11-18T11:06:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1204,11 +1209,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/</loc>
     <lastmod>2025-08-14T10:01:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
-    <lastmod>2025-08-13T14:41:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
