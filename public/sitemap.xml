@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/boi-so-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-17T16:24:58+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mp-sachiv-bharti-nov-2026/</loc>
+    <lastmod>2025-11-18T11:06:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-18T11:06:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/isro-sdsc-shar-recruitment-2025/</loc>
+    <lastmod>2025-11-18T09:39:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/boi-so-recruitment-nov-2025/</loc>
     <lastmod>2025-11-17T16:24:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -414,11 +424,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-jamadar-grade-ii-recruitment-2025/</loc>
     <lastmod>2025-10-19T17:01:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/isro-sdsc-shar-recruitment-2025/</loc>
-    <lastmod>2025-10-18T11:25:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
