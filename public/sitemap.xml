@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
-    <lastmod>2025-11-19T17:44:42+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-paramedical-vacancy-07-2025/</loc>
+    <lastmod>2025-11-21T17:19:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-21T17:19:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/mp-set-2025/</loc>
+    <lastmod>2025-11-21T16:26:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
     <lastmod>2025-11-19T17:44:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -417,11 +427,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/mp-set-2025/</loc>
-    <lastmod>2025-10-25T11:21:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-vacancy-2025/</loc>
     <lastmod>2025-10-24T17:54:09+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -599,11 +604,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/rrc-nwr-apprentice-recruitment-2025/</loc>
     <lastmod>2025-10-03T11:47:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-paramedical-vacancy-07-2025/</loc>
-    <lastmod>2025-10-02T11:25:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
