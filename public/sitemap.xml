@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mpesb-paramedical-vacancy-07-2025/</loc>
-    <lastmod>2025-11-21T17:19:35+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mp-police-asi-subedar-vacancy-2025/</loc>
+    <lastmod>2025-11-21T17:37:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-21T17:37:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-police-si-subedar-recruitment-2025/</loc>
+    <lastmod>2025-11-21T17:31:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
+    <lastmod>2025-11-21T17:27:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-paramedical-vacancy-07-2025/</loc>
     <lastmod>2025-11-21T17:19:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -382,11 +397,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
-    <lastmod>2025-10-29T10:29:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rpsc-statistical-officer-recruitment-2025/</loc>
     <lastmod>2025-10-28T18:59:09+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -409,11 +419,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ib-security-assistant-mt-admit-card-2025/</loc>
     <lastmod>2025-10-27T12:27:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-police-si-subedar-recruitment-2025/</loc>
-    <lastmod>2025-10-27T09:21:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -584,11 +589,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/nlc-india-apprentice-recruitment-2025/</loc>
     <lastmod>2025-10-04T17:22:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-police-asi-subedar-vacancy-2025/</loc>
-    <lastmod>2025-10-04T15:44:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
