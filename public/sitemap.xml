@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/jobs/imd-project-scientist-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-23T15:16:39+05:30</lastmod>
+    <lastmod>2025-11-23T15:49:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-11-23T15:16:39+05:30</lastmod>
+    <lastmod>2025-11-23T15:49:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bssc-4th-graduate-level-vacancy-aug-2025/</loc>
+    <lastmod>2025-11-23T15:39:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bssc-bihar-office-attendant-vacancy-aug-2025/</loc>
+    <lastmod>2025-11-23T15:37:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bssc-stenographer-vacancy-2025/</loc>
+    <lastmod>2025-11-23T15:29:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -312,11 +327,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bssc-stenographer-vacancy-2025/</loc>
-    <lastmod>2025-11-04T11:11:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/bpsc-motor-vehicle-inspector-mvi-2025/</loc>
     <lastmod>2025-11-04T09:29:55+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -499,16 +509,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-army-tes-55-july-2026/</loc>
     <lastmod>2025-10-15T11:58:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bssc-bihar-office-attendant-vacancy-aug-2025/</loc>
-    <lastmod>2025-10-15T09:29:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bssc-4th-graduate-level-vacancy-aug-2025/</loc>
-    <lastmod>2025-10-15T09:27:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
