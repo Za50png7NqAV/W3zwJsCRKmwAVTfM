@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/csir-cdri-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-26T15:12:12+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrb-group-d-admit-card-2025/</loc>
+    <lastmod>2025-11-26T17:49:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-11-26T15:12:12+05:30</lastmod>
+    <lastmod>2025-11-26T17:49:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/csir-cdri-recruitment-nov-2025/</loc>
+    <lastmod>2025-11-26T15:20:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-junior-engineer-je-admit-card-2025/</loc>
+    <lastmod>2025-11-26T15:19:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -239,11 +249,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-admit-card-2025/</loc>
     <lastmod>2025-11-10T17:13:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-junior-engineer-je-admit-card-2025/</loc>
-    <lastmod>2025-11-10T17:03:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -899,11 +904,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrc-sr-scouts-guides-quota-vacancy-2025/</loc>
     <lastmod>2025-09-09T19:47:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-group-d-exam-date-2025/</loc>
-    <lastmod>2025-09-08T18:58:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
