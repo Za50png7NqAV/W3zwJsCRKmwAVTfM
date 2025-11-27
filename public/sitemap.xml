@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-group-d-admit-card-2025/</loc>
-    <lastmod>2025-11-26T17:49:39+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-11-27T11:44:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/rrc-nr-apprentice-recruitment-nov-2025/</loc>
+    <lastmod>2025-11-27T11:44:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-27T11:44:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-admit-card-2025/</loc>
+    <lastmod>2025-11-27T10:44:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ccrh-research-officer-recruitment-nov-2025/</loc>
+    <lastmod>2025-11-27T10:38:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ccrh-mlt-recruitment-nov-2025/</loc>
+    <lastmod>2025-11-27T10:33:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-group-d-admit-card-2025/</loc>
     <lastmod>2025-11-26T17:49:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -182,11 +207,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-11-14T15:23:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/rites-apprentice-recruitment-nov-2025/</loc>
     <lastmod>2025-11-14T15:23:42+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -309,16 +329,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/samadhan-yojana-2025-26/</loc>
     <lastmod>2025-11-06T11:01:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ccrh-mlt-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-05T16:08:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ccrh-research-officer-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-05T15:27:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -469,11 +479,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ib-acio-grade-ii-recruitment-2025/</loc>
     <lastmod>2025-10-25T12:54:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-vacancy-2025/</loc>
-    <lastmod>2025-10-24T17:54:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
