@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/ctet-february-2026/</loc>
-    <lastmod>2025-11-28T09:58:53+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rssb-ayush-officer-recruitment-2025/</loc>
+    <lastmod>2025-11-28T17:06:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-28T17:06:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-delhi-police-head-constable-admit-card-2025/</loc>
+    <lastmod>2025-11-28T16:36:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-delhi-police-hc-ministerial-admit-card-2025/</loc>
+    <lastmod>2025-11-28T16:33:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-admit-card-2025/</loc>
+    <lastmod>2025-11-28T16:29:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-driver-admit-card-2025/</loc>
+    <lastmod>2025-11-28T16:24:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/ctet-february-2026/</loc>
     <lastmod>2025-11-28T09:58:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -347,11 +372,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-delhi-police-hc-ministerial-recruitment-2025/</loc>
-    <lastmod>2025-11-05T12:24:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/sidbi-assistant-manager-grade-a-b-vacancy-2025/</loc>
     <lastmod>2025-11-05T12:18:57+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -492,11 +512,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-vacancy-2025/</loc>
-    <lastmod>2025-10-24T17:48:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/chandigarh-jbt-junior-basic-teacher-posts-jul25/</loc>
     <lastmod>2025-10-24T17:43:33+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -569,11 +584,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/btsc-hostel-manager-recruitment-2025/</loc>
     <lastmod>2025-10-11T09:34:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rssb-ayush-officer-recruitment-2025/</loc>
-    <lastmod>2025-10-10T18:37:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -654,16 +664,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-nda-ii-2025/</loc>
     <lastmod>2025-10-02T11:19:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-driver-vacancy-2025/</loc>
-    <lastmod>2025-10-01T09:10:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-delhi-police-head-constable-vacancy-2025/</loc>
-    <lastmod>2025-10-01T09:10:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
