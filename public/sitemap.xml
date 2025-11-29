@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-admit-card-2025/</loc>
-    <lastmod>2025-11-29T13:58:16+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/up-panchayati-raj-bpm-recruitment-dec25/</loc>
+    <lastmod>2025-11-29T15:51:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-29T15:51:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rbi-officer-grade-b-vacancy-2025/</loc>
+    <lastmod>2025-11-29T14:03:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
+    <lastmod>2025-11-29T14:01:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-admit-card-2025/</loc>
     <lastmod>2025-11-29T13:58:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -282,11 +297,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
-    <lastmod>2025-11-13T11:24:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
     <lastmod>2025-11-13T10:42:35+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -304,11 +314,6 @@
   </url><url>
     <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
     <lastmod>2025-11-12T15:13:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rbi-officer-grade-b-vacancy-2025/</loc>
-    <lastmod>2025-11-12T10:13:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
