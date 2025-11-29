@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/up-panchayati-raj-bpm-recruitment-dec25/</loc>
-    <lastmod>2025-11-29T15:51:14+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mppgcl-assistant-recruitment-dec25/</loc>
+    <lastmod>2025-11-29T16:39:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppgcl-assistant-recruitment-dec25/</loc>
+    <lastmod>2025-11-29T16:39:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-11-29T15:51:14+05:30</lastmod>
+    <lastmod>2025-11-29T16:39:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
