@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rssb-ayush-officer-recruitment-2025/</loc>
-    <lastmod>2025-11-28T17:06:32+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bihar-vidhan-parishad-office-attendant-driver-recruitment-2025/</loc>
+    <lastmod>2025-11-28T17:32:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-28T17:32:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-computer-assistant-admit-card-2025/</loc>
+    <lastmod>2025-11-28T17:29:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-assistant-teacher-admit-card-2025/</loc>
+    <lastmod>2025-11-28T17:20:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-jamadar-grade-ii-admit-card-2025/</loc>
+    <lastmod>2025-11-28T17:10:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-ayush-officer-admit-card-2025/</loc>
     <lastmod>2025-11-28T17:06:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -517,11 +537,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rssb-jamadar-grade-ii-recruitment-2025/</loc>
-    <lastmod>2025-10-19T17:01:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/2025/ib-jio-junior-intelligence-officer-vacancy-2025/</loc>
     <lastmod>2025-10-17T15:51:40+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -672,11 +687,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bihar-vidhan-parishad-office-attendant-driver-recruitment-2025/</loc>
-    <lastmod>2025-09-30T12:11:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsc-ese-recruitment-2026/</loc>
     <lastmod>2025-09-29T12:26:27+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -764,11 +774,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-lab-attendant-vacancy-2025/</loc>
     <lastmod>2025-09-21T18:13:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/uppsc-assistant-teacher-bharti-2025/</loc>
-    <lastmod>2025-09-20T18:26:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1674,11 +1679,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-navy-agniveer-mr-musician-vacancy-2025/</loc>
     <lastmod>2025-07-03T09:37:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/uppsc-computer-assistant-vacancy-2025/</loc>
-    <lastmod>2025-07-02T21:02:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
