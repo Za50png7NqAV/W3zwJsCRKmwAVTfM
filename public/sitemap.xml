@@ -2,28 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-admit-card-2025/</loc>
-    <lastmod>2025-11-29T18:32:57+05:30</lastmod>
+    <loc>http://localhost:1313/cg/cgpsc-sse-recruitment-dec25/</loc>
+    <lastmod>2025-12-01T16:46:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-01T16:46:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-rrbs-crp-xiv-vacancy-2025/</loc>
+    <lastmod>2025-12-01T12:24:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppgcl-assistant-recruitment-dec25/</loc>
+    <lastmod>2025-12-01T12:24:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-panchayati-raj-bpm-recruitment-dec25/</loc>
+    <lastmod>2025-12-01T12:24:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-principal-grade-2-recruitment-nov-2025/</loc>
+    <lastmod>2025-12-01T12:21:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/oicl-ao-recruitment-nov-2025/</loc>
+    <lastmod>2025-12-01T12:18:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-admit-card-2025/</loc>
     <lastmod>2025-11-29T18:32:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/mppkvvcl-line-attendant-recruitment-dec25/</loc>
     <lastmod>2025-11-29T18:15:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppgcl-assistant-recruitment-dec25/</loc>
-    <lastmod>2025-11-29T16:45:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-panchayati-raj-bpm-recruitment-dec25/</loc>
-    <lastmod>2025-11-29T15:51:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -167,11 +187,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/oicl-ao-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-26T12:24:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rrb-je-recruitment-2025/</loc>
     <lastmod>2025-11-25T17:39:49+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -284,11 +299,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppgcl-recruitment-2025-phase-2/</loc>
     <lastmod>2025-11-15T12:08:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-principal-grade-2-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-15T11:56:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -774,11 +784,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ecr-sports-quota-vacancy-2025/</loc>
     <lastmod>2025-09-22T18:06:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-rrbs-crp-xiv-vacancy-2025/</loc>
-    <lastmod>2025-09-22T11:51:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
