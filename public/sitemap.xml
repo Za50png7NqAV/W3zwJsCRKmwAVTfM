@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/cbse/cbse-group-a-b-c-posts-recruitment-dec25/</loc>
-    <lastmod>2025-12-03T15:09:27+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/csbc-bihar-constable-driver-admit-card-2025/</loc>
+    <lastmod>2025-12-03T16:24:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-03T16:24:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-junior-engineer-je-admit-card-2025/</loc>
+    <lastmod>2025-12-03T16:21:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/drdo/drdo-ceptam-11-recruitment-dec25/</loc>
+    <lastmod>2025-12-03T16:05:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-recruitment-dec25/</loc>
     <lastmod>2025-12-03T15:09:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -207,11 +222,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-junior-engineer-je-admit-card-2025/</loc>
-    <lastmod>2025-11-26T15:19:40+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/bssc-inter-level-recruitment-2025/</loc>
     <lastmod>2025-11-26T12:37:03+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -299,11 +309,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
     <lastmod>2025-11-19T10:35:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/csbc-bihar-constable-driver-vacancy-2025/</loc>
-    <lastmod>2025-11-18T17:06:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
