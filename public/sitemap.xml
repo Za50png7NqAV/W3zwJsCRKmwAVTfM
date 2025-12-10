@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bombay-high-court-recruitment-dec25/</loc>
-    <lastmod>2025-12-10T15:00:52+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-12-10T16:28:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/rcf-apprentice-recruitment-dec25/</loc>
+    <lastmod>2025-12-10T16:28:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-10T16:28:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bombay-high-court-recruitment-dec25/</loc>
     <lastmod>2025-12-10T15:00:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -64,11 +74,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
     <lastmod>2025-12-08T14:49:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-12-08T12:58:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
