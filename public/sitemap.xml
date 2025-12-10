@@ -2,18 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-12-10T16:28:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/rcf-apprentice-recruitment-dec25/</loc>
-    <lastmod>2025-12-10T16:28:45+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ibps-specialist-officer-so-15th-vacancy-2025/</loc>
+    <lastmod>2025-12-10T17:05:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-10T16:28:45+05:30</lastmod>
+    <lastmod>2025-12-10T17:05:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-12-10T16:37:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/rcf-apprentice-recruitment-dec25/</loc>
+    <lastmod>2025-12-10T16:37:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -629,11 +634,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/nta-aissee-2026/</loc>
     <lastmod>2025-10-30T17:56:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-specialist-officer-so-15th-vacancy-2025/</loc>
-    <lastmod>2025-10-30T17:44:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
