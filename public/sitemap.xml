@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/bihar/btsc-pump-operator-recruitment-dec25/</loc>
-    <lastmod>2025-12-13T16:30:39+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
+    <lastmod>2025-12-13T16:50:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-group-d-admit-card-2025/</loc>
+    <lastmod>2025-12-13T16:50:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-13T16:30:39+05:30</lastmod>
+    <lastmod>2025-12-13T16:50:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/btsc-pump-operator-recruitment-dec25/</loc>
+    <lastmod>2025-12-13T16:40:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -223,11 +233,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/bssc-inter-level-recruitment-2025/</loc>
-    <lastmod>2025-12-07T10:38:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-group-d-admit-card-2025/</loc>
     <lastmod>2025-12-07T10:38:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -564,11 +569,6 @@
   </url><url>
     <loc>http://localhost:1313/document/voter-sir-survey-2026/</loc>
     <lastmod>2025-11-14T11:35:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-police-constable-admit-card-2025/</loc>
-    <lastmod>2025-11-13T10:42:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
