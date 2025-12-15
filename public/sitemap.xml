@@ -2952,11 +2952,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/pm/pmjay-ayushman-card/</loc>
-    <lastmod>2025-01-09T18:23:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/scheme/mp/agristack-farmer-registry/</loc>
     <lastmod>2025-01-09T16:35:03+05:30</lastmod>
     <changefreq>daily</changefreq>
