@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/scheme/ladli-laxmi-yojana-mp/</loc>
+    <lastmod>2025-12-15T16:56:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-15T12:27:26+05:30</lastmod>
+    <lastmod>2025-12-15T16:56:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/</loc>
+    <lastmod>2025-12-15T12:58:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/cm-kisan-kalyan-nidhi/</loc>
+    <lastmod>2025-12-15T12:49:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1392,11 +1407,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/cm-kisan-kalyan-nidhi/</loc>
-    <lastmod>2025-08-14T17:32:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/railway/rrc-central-railway-apprentice-vacancy-2025/</loc>
     <lastmod>2025-08-14T12:54:43+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2287,11 +2297,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/</loc>
-    <lastmod>2025-04-22T18:03:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/nta-ugc-net-june-2025/</loc>
     <lastmod>2025-04-22T11:52:40+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2324,11 +2329,6 @@
   </url><url>
     <loc>http://localhost:1313/schemes/farmer-id-annadata-card/</loc>
     <lastmod>2025-04-14T10:27:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-bahna-yojana-update-2025/</loc>
-    <lastmod>2025-04-14T07:43:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -2852,11 +2852,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/mp/pension-apply/</loc>
-    <lastmod>2025-01-22T18:58:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/2025/jeemain-session-1/</loc>
     <lastmod>2025-01-19T11:59:55+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2969,11 +2964,6 @@
   </url><url>
     <loc>http://localhost:1313/2024/ctet-december-2024/</loc>
     <lastmod>2025-01-09T12:18:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/mp/rojgar-panjiyan/</loc>
-    <lastmod>2025-01-07T19:21:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
