@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-admit-card-2025/</loc>
+    <lastmod>2025-12-16T10:44:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-16T10:44:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/assam/assam-police-constable-recruitment-dec25/</loc>
     <lastmod>2025-12-16T10:29:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/bombay-high-court-recruitment-dec25/</loc>
-    <lastmod>2025-12-16T10:29:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-16T10:29:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -164,11 +169,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nainital-bank-po-so-recruitment-dec25/</loc>
     <lastmod>2025-12-13T10:11:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-admit-card-2025/</loc>
-    <lastmod>2025-12-13T10:07:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -3212,7 +3212,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/pdf-files/</loc>
+    <loc>http://localhost:1313/pdf-forms/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

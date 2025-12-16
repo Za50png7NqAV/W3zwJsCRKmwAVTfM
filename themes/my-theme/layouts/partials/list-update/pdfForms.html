@@ -4,10 +4,12 @@
 <section id="pdf-section">
 
   <!-- Search Bar -->
-  <input type="text" id="pdf-search" placeholder="खोजें..." oninput="searchPDFTable()" />
+<input type="text" id="pdfSearch" placeholder="Search PDF / Category..."
+       style="width:100%; padding:8px; margin-bottom:10px; font-size:1rem;">
+
 
   <!-- Auto Category Tabs with Horizontal Scroll -->
-  <div class="pdf-tabs-wrapper">
+  <div class="pdf-tabs-wrapper" oninput="searchPDFTable()">
     <div class="pdf-tabs">
       <button onclick="filterPDFTable('all', event)" class="active">All Forms</button>
       {{ $allCategories := slice }}
@@ -23,21 +25,33 @@
       {{ end }}
     </div>
   </div>
+  
 
   <!-- PDF Form Table -->
-  <table class="pdf-table">
+  <table class="pdf-table"  id="pdfTable">
     <thead>
       <tr>
-         <th>Category</th>
+         <th>हिन्दी नाम</th>
         <th>PDF Forms</th>
       </tr>
     </thead>
     <tbody>
       {{ range .Params.pdfforms }}
         <tr data-category="{{ delimit .categories "," }}">
-         <td> <span style="color:#020000; font-size:1.2rem;"> {{ delimit .categories ", " }} </span></td>
+         <td> <a href="{{ .downloadlink }}" target="_blank"><span style="color:#333; font-size:1rem;"> {{ .hindi }}</span></a></td>
           <td><span style="font-size:1.2rem;"><a href="{{ .downloadlink }}" target="_blank">{{ .title }}</a></span>
-            <br><a href="{{ .downloadlink }}" target="_blank"><span style="color:#333; font-size:1rem;"> {{ .hindi }}</span></a></td>
+            <br><span class="pdf-tags" style="font-size:1.2rem;">
+  {{ $total := len .categories }}
+  {{ range $i, $cat := .categories }}
+    <span class="pdf-category"
+          data-category="{{ $cat }}">
+      {{ $cat }}
+    </span>{{ if lt (add $i 1) $total }} {{ end }}
+  {{ end }}
+</span></td>
+
+
+
         </tr>
       {{ end }}
     </tbody>
@@ -45,111 +59,325 @@
 
 </section>
 
-<!-- JavaScript -->
 <script>
-  function filterPDFTable(category, event) {
-    const section = document.getElementById("pdf-section");
-    const rows = section.querySelectorAll("tbody tr");
-    const buttons = section.querySelectorAll(".pdf-tabs button");
-    const searchInput = section.querySelector("#pdf-search");
+const searchInput = document.getElementById("pdfSearch");
+const rows = document.querySelectorAll("#pdfTable tbody tr");
+const buttons = document.querySelectorAll(".pdf-tabs button");
 
+/* URL update */
+function updateURL(search, category) {
+  const params = new URLSearchParams(window.location.search);
+
+  search ? params.set("search", search) : params.delete("search");
+  category && category !== "all" ? params.set("category", category) : params.delete("category");
+
+  const newURL = window.location.pathname + "?" + params.toString();
+  window.history.replaceState({}, "", newURL);
+}
+
+/* Main filter */
+function filterPDFTable(category = "all", event = null) {
+
+  if (event) {
     buttons.forEach(btn => btn.classList.remove("active"));
     event.target.classList.add("active");
 
-    const searchTerm = searchInput.value.toLowerCase();
-
-    rows.forEach(row => {
-      const rowCategories = row.getAttribute("data-category").split(',');
-      const textContent = row.textContent.toLowerCase();
-      const matchCategory = category === 'all' || rowCategories.includes(category);
-      const matchSearch = textContent.includes(searchTerm);
-
-      if (matchCategory && matchSearch) {
-        row.classList.remove("hidden");
-      } else {
-        row.classList.add("hidden");
-      }
-    });
+    if (category !== "all") {
+      searchInput.value = category;
+    }
   }
 
-  function searchPDFTable() {
-    const section = document.getElementById("pdf-section");
-    const rows = section.querySelectorAll("tbody tr");
-    const searchInput = section.querySelector("#pdf-search");
-    const activeCategory = section.querySelector(".pdf-tabs button.active").textContent.toLowerCase();
+  const searchText = searchInput.value.toLowerCase();
 
-    const searchTerm = searchInput.value.toLowerCase();
+  rows.forEach(row => {
+    const categories = row.dataset.category.toLowerCase();
+    const text = row.innerText.toLowerCase();
 
-    rows.forEach(row => {
-      const rowCategories = row.getAttribute("data-category").split(',');
-      const textContent = row.textContent.toLowerCase();
-      const matchCategory = activeCategory === 'सभी' || rowCategories.includes(activeCategory);
-      const matchSearch = textContent.includes(searchTerm);
+    const matchCategory = category === "all" || categories.includes(category.toLowerCase());
+    const matchSearch = text.includes(searchText);
 
-      if (matchCategory && matchSearch) {
-        row.classList.remove("hidden");
-      } else {
-        row.classList.add("hidden");
-      }
-    });
-  }
+    row.style.display = (matchCategory && matchSearch) ? "" : "none";
+  });
+
+  updateURL(searchText, category);
+}
+
+/* Typing search */
+searchInput.addEventListener("keyup", () => {
+  const activeBtn = document.querySelector(".pdf-tabs button.active");
+  const activeCategory = activeBtn ? activeBtn.dataset.category : "all";
+  filterPDFTable(activeCategory);
+});
+
+/* Category text click */
+document.querySelectorAll(".pdf-category").forEach(cat => {
+  cat.addEventListener("click", function () {
+    searchInput.value = this.innerText.trim();
+    filterPDFTable("all");
+  });
+});
+
+/* 🔥 PAGE LOAD → URL SE DATA READ */
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const search = params.get("search") || "";
+  const category = params.get("category") || "all";
+
+  searchInput.value = search;
+
+  buttons.forEach(btn => {
+    if (btn.dataset.category === category) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  filterPDFTable(category);
+});
+</script>
+<script>
+document.querySelectorAll(".pdf-category").forEach(cat => {
+  cat.addEventListener("click", function () {
+
+    const value = this.dataset.category.trim();
+    const searchInput = document.getElementById("pdfSearch");
+
+    searchInput.value = value;
+
+    document.querySelectorAll(".pdf-category")
+      .forEach(el => el.classList.remove("active"));
+    this.classList.add("active");
+
+    filterPDFTable("all");
+  });
+});
 </script>
 
-<!-- Styling -->
 <style>
-  #pdf-section {
-    max-width: 100%;
+/* ===== Root Theme ===== */
+:root{
+  --primary:#2563eb;      /* blue */
+  --primary-soft:#e0ebff;
+  --text:#0f172a;
+  --muted:#64748b;
+  --border:#e5e7eb;
+  --bg:#f8fafc;
+  --radius:14px;
+}
+.pdf-tags {
+  line-height: 1.6;
+}
+
+.pdf-category {
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 2px 3px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  background: #f5f5f5;
+  color: #020000;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.pdf-category:hover {
+  background: #020000;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Active / Selected */
+.pdf-category.active {
+  background: #020000;
+  color: #fff;
+  border-color: #020000;
+}
+/* Section */
+.pdf-section{
+  margin:16px 0;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  color:var(--text);
+}
+
+/* ===== Search Bar ===== */
+.pdf-searchbar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(180deg,#fff 70%,transparent);
+  padding:12px 0 10px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+#pdfSearch{
+  width:100%;
+  padding:14px 16px;
+  font-size:1rem;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  outline:none;
+  background:#fff;
+  transition:0.25s;
+}
+#pdfSearch:focus{
+  border-color:var(--primary);
+  box-shadow:0 0 0 4px rgba(37,99,235,.15);
+}
+
+.pdf-count{
+  font-size:.85rem;
+  color:var(--muted);
+  padding:10px 14px;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  background:#fff;
+}
+
+/* ===== Tabs ===== */
+.pdf-tabs-wrapper{
+  margin:10px 0 14px;
+  overflow-x:auto;
+}
+
+.pdf-tabs{
+  display:flex;
+  gap:10px;
+  padding-bottom:6px;
+}
+
+.pdf-tabs button{
+  border:1px solid var(--border);
+  background:#fff;
+  padding:10px 16px;
+  border-radius:999px;
+  cursor:pointer;
+  font-size:.9rem;
+  color:var(--text);
+  transition:.25s;
+  white-space:nowrap;
+}
+
+.pdf-tabs button:hover{
+  background:var(--primary-soft);
+}
+
+.pdf-tabs button.active{
+  background:var(--primary);
+  color:#fff;
+  border-color:var(--primary);
+}
+
+/* ===== Table Card ===== */
+.pdf-table-wrap{
+  border:1px solid var(--border);
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 8px 20px rgba(0,0,0,.04);
+}
+
+/* Table */
+.pdf-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.pdf-table thead th{
+  text-align:left;
+  font-size:.9rem;
+  padding:16px;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  color:#020617;
+}
+
+.pdf-table tbody td{
+  padding:16px;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;
+}
+
+.pdf-table tbody tr:hover{
+  background:#f9fbff;
+}
+
+/* ===== Links ===== */
+.pdf-mainlink{
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:600;
+}
+.pdf-mainlink:hover{ text-decoration:underline; }
+
+.pdf-title{
+  display:block;
+  font-size:1.05rem;
+  font-weight:700;
+  color:#020617;
+  margin-bottom:8px;
+  text-decoration:none;
+}
+.pdf-title:hover{ text-decoration:underline; }
+
+/* ===== Tags ===== */
+.pdf-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.pdf-tag{
+  padding:6px 12px;
+  font-size:.8rem;
+  border-radius:999px;
+  background:var(--primary-soft);
+  color:var(--primary);
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:.2s;
+}
+.pdf-tag:hover{
+  border-color:var(--primary);
+}
+
+/* Empty */
+.pdf-empty{
+  padding:24px;
+  text-align:center;
+  font-size:1rem;
+  color:var(--muted);
+}
+
+/* ===== Mobile Card View ===== */
+@media (max-width:640px){
+  .pdf-count{display:none;}
+  .pdf-table thead{display:none;}
+
+  .pdf-table,
+  .pdf-table tbody,
+  .pdf-table tr,
+  .pdf-table td{
+    display:block;
+    width:100%;
   }
 
-  #pdf-section #pdf-search {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  .pdf-table tbody tr{
+    padding:14px;
+    border-bottom:1px solid var(--border);
   }
 
-  .pdf-tabs-wrapper {
-    overflow-x: auto;
-    margin-bottom: 10px;
+  .pdf-table tbody td{
+    padding:0;
+    border:0;
   }
 
-  #pdf-section .pdf-tabs {
-    display: flex;
-    gap: 10px;
-    padding: 5px 0;
-    width: max-content;
-  }
-
-  #pdf-section .pdf-tabs button {
-    padding: 10px 20px;
-    background: #eee;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    white-space: nowrap;
-  }
-
-  #pdf-section .pdf-tabs button.active {
-    background-color: #007bff;
-    color: white;
-  }
-
-  #pdf-section .pdf-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-
-  #pdf-section th,
-  #pdf-section td {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-
-  #pdf-section tr.hidden {
-    display: none;
-  }
+  .pdf-td-title{margin-bottom:10px;}
+}
 </style>
+
