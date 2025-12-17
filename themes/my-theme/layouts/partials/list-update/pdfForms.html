@@ -11,7 +11,7 @@
   <!-- Auto Category Tabs with Horizontal Scroll -->
   <div class="pdf-tabs-wrapper" oninput="searchPDFTable()">
     <div class="pdf-tabs">
-      <button onclick="filterPDFTable('all', event)" class="active">All Forms</button>
+      <button onclick="filterPDFTable('all', event)" class="active" >All Forms</button>
       {{ $allCategories := slice }}
       {{ range .Params.pdfforms }}
         {{ range .categories }}
