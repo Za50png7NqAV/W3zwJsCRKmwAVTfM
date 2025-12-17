@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/up/up-police-computer-operator-dec25/</loc>
-    <lastmod>2025-12-17T12:03:52+05:30</lastmod>
+    <loc>http://localhost:1313/mp/mpesb-group-1-sub-group-2-recruitment-dec25/</loc>
+    <lastmod>2025-12-17T13:38:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-17T13:38:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-police-computer-operator-dec25/</loc>
     <lastmod>2025-12-17T12:03:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
