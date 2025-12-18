@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mpesb-police-constable-result-2025/</loc>
-    <lastmod>2025-12-17T19:33:06+05:30</lastmod>
+    <loc>http://localhost:1313/2025/ncert-non-academic-recruitment-dec25/</loc>
+    <lastmod>2025-12-18T12:41:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-18T12:41:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-gd-constable-recruitment-dec25/</loc>
+    <lastmod>2025-12-18T12:02:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-police-assistant-operator-recruitment-dec25/</loc>
+    <lastmod>2025-12-18T12:01:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-nov-2025/</loc>
+    <lastmod>2025-12-18T11:57:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-result-2025/</loc>
     <lastmod>2025-12-17T19:33:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -133,16 +153,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/sbi-bank-so-recruitment-dec25/</loc>
-    <lastmod>2025-12-14T10:06:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-gd-constable-recruitment-dec25/</loc>
-    <lastmod>2025-12-14T10:06:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-nov-2025/</loc>
     <lastmod>2025-12-14T10:06:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -409,11 +419,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-food-safety-officer-admit-card-2025/</loc>
     <lastmod>2025-12-03T18:06:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-police-assistant-operator-recruitment-dec25/</loc>
-    <lastmod>2025-12-03T17:51:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
