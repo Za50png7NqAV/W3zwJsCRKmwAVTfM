@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/bank/boi-credit-officer-recruitment-dec25/</loc>
-    <lastmod>2025-12-18T17:07:00+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/boi-credit-officer-recruitment-dec25/</loc>
+    <lastmod>2025-12-18T17:19:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-18T17:07:00+05:30</lastmod>
+    <lastmod>2025-12-18T17:19:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
+    <lastmod>2025-12-18T17:16:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -849,11 +854,6 @@
   </url><url>
     <loc>http://localhost:1313/2025/ib-jio-junior-intelligence-officer-vacancy-2025/</loc>
     <lastmod>2025-10-17T15:51:40+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
-    <lastmod>2025-10-17T15:48:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
