@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/boi-credit-officer-recruitment-dec25/</loc>
-    <lastmod>2025-12-18T17:19:45+05:30</lastmod>
+    <loc>http://localhost:1313/rj/rpsc-protection-officer-recruitment-dec25/</loc>
+    <lastmod>2025-12-19T11:36:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-19T11:36:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
+    <lastmod>2025-12-19T10:04:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-vidhan-parishad-office-attendant-driver-recruitment-2025/</loc>
+    <lastmod>2025-12-19T09:50:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/bsf-head-constable-ro-rm-admit-card-2025/</loc>
+    <lastmod>2025-12-19T09:44:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-admit-card-2025/</loc>
+    <lastmod>2025-12-19T09:43:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/boi-credit-officer-recruitment-dec25/</loc>
     <lastmod>2025-12-18T17:19:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -267,11 +292,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-admit-card-2025/</loc>
-    <lastmod>2025-12-11T18:10:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/shs-bihar-anm-admitcard-2025/</loc>
     <lastmod>2025-12-11T15:19:48+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -494,16 +514,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rbi-officer-grade-b-vacancy-2025/</loc>
     <lastmod>2025-11-29T14:03:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
-    <lastmod>2025-11-29T14:01:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bihar-vidhan-parishad-office-attendant-driver-recruitment-2025/</loc>
-    <lastmod>2025-11-28T17:32:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1369,11 +1379,6 @@
   </url><url>
     <loc>http://localhost:1313/mp/mpesb-excise-constable-feb25/</loc>
     <lastmod>2025-08-26T10:08:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/force/bsf-head-constable-ro-rm-vacancy-2025/</loc>
-    <lastmod>2025-08-25T09:16:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
