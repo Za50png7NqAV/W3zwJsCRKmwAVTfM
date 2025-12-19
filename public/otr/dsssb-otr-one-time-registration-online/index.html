@@ -1,6 +1,5 @@
 
 
-
    
    
   <!doctype html>
@@ -144,6 +143,18 @@
     window.location.href = "/homepage/";
   }
 </script>
+<script async type="application/javascript"
+        src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
+<script>
+  (self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
+    basicSubscriptions.init({
+      type: "NewsArticle",
+      isPartOfType: ["Product"],
+      isPartOfProductId: "CAow8I_cCw:openaccess",
+      clientOptions: { theme: "light", lang: "en" },
+    });
+  });
+</script>
 </head>
 
  
@@ -153,6 +164,76 @@
 <head>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+  <style>
+  .dark-mode , .dark-mode .main-content, .dark-mode .search-block{
+  background:#222;
+  color:#fff;
+}
+
+.dark-mode #text,
+.dark-mode table,
+.dark-mode .dropdown-content,
+.dark-mode .popup-content {
+  background-color: #333;
+  color: white;
+  border-color: #444;
+}
+.dark-mode th {
+  background:linear-gradient(to right, #886600, #ffff99, #886600);
+    color: rgb(0, 0, 0);
+}
+.dark-mode .yp-table td, .dark-mode .card-list li, .dark-mode .sidebar-list li:hover {
+  background: #110101;
+    color: rgb(236, 232, 232);
+   
+}
+.dark-mode .card-list li:hover, .dark-mode  .impdates li, .dark-mode .sidebar-list li:hover, .dark-mode  .card-item {
+  background:#040011;
+    color: rgb(236, 232, 232);
+   
+}
+
+.dark-mode  a:link { color: #ffff00; }
+.dark-mode a:hover { color: #ffa807; }
+.dark-mode .card-header , .dark-mode .card-footer{
+    background: #080101;
+}
+ .dark-mode .card-content {
+    background: #05001f;
+}
+ .dark-mode .card-content a:link {
+    color: #fcfcfc;
+}
+ .dark-mode .card-content a:hover {
+    color: #ffe70c;
+}
+.dark-mode .sticky-anchor a:hover, .dark-mode .sticky-anchor a, .dark-mode .post-card  {
+    background: #000000;
+}
+
+.dark-mode textarea, .dark-mode input, .dark-mode .header , .dark-mode .main-sidebar, .dark-mode .left-sidebar, .dark-mode .section
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode .yp-job-head, .dark-mode .posthead, .dark-mode .card, .dark-mode ul, .dark-mode .eligibility-card, .dark-mode .step-item
+ {
+  background: #555;
+  color: white;
+}
+.dark-mode details, .dark-mode .faqs  {
+   background: #555;
+   color:white;
+}
+.dark-mode button, .dark-mode .keyword-tag {
+   background: #030016;
+   color:white;
+}
+.dark-mode .conclusion , .dark-mode  .faqs, .dark-mode .faq {   background: #001403;
+   color:white;
+}
+.DarkMode { cursor: pointer;}
+</style>
 </head>
 
   <header class="header">
@@ -174,6 +255,7 @@
           <li><a href="/baner-poster-update/" class="menu-link">Poster</a></li>
           <li><a href="/last-date/" class="menu-link">Lastdate</a></li>
           <li><a href="/latest-jobs/" class="menu-link">Latest Jobs</a></li>
+           <li onclick="toggleDarkMode()" class="DarkMode" >🌙</li>
         </ul>
       </div>
      <i class="bx bx-search search-toggle" id="searchToggle"></i>
@@ -262,6 +344,30 @@ function setPreferredHome() {
     setTimeout(removeGSCtabHash, 200); 
   });
 </script>
+  <script>
+const btn = document.querySelector(".DarkMode"); 
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    btn.textContent = "☀️ Light"; 
+    localStorage.setItem("darkMode", "true");
+  } else {
+    btn.textContent = "🌒Dark"; 
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+window.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem("darkMode") === "true"){
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️ Light";
+  } else {
+    btn.textContent = "🌒 Dark";
+  }
+});
+</script>
  
     </header>
     
@@ -296,39 +402,39 @@ function setPreferredHome() {
         
         
         
+    
+        
+        
+    
+        
+        
+    
+        
+        
           <li class="card-item">
-            <a class="card-title" href="/document/webgis2-mpbhulekh-digital-certificate-online/" >MP Bhulekh (WebGis 2.0) 2025 - Khasra, B1, Naksha Download</a>
+            <a class="card-title" href="/jobs/jharkhand-ssc-anm-vacancy-2025/" >Jharkhand SSC ANM Vacancy 2025 Online Form</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 06 Aug 2025</div>
+      <div class="card-date">📅 11 Jul 2025</div>
           </li>
        
         
     
         
         
-    
-        
-        
-    
-        
-        
-    
-        
-        
           <li class="card-item">
-            <a class="card-title" href="/celebration/yojnaportal-Whatsapp-100k/" >Yojna Portal Whatsapp Channel 100k Follower</a>
+            <a class="card-title" href="/card/eshram-card-apply/" >E-Shram Card Apply / Update / Download</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 03 May 2025</div>
+      <div class="card-date">📅 13 Jan 2025</div>
           </li>
        
         
@@ -348,29 +454,9 @@ function setPreferredHome() {
     
     <li class="card-item">
 
-      <a class="card-title" href="/otr/dsssb-otr-one-time-registration-online/" target="_blank">
+      <a class="card-title" href="/jobs/rpsc-protection-officer-recruitment-dec25/" target="_blank">
         
-          DSSSB OTR One-Time Registration 2025
-        
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 18 Aug 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/aai-junior-executive-je-vacancy-2025/" target="_blank">
-        
-          AAI Junior Executive JE Vacancy 2025 Online Form
+          RPSC Protection Officer Vacancy 2025 
         
         
           <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
@@ -382,27 +468,7 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 18 Aug 2025</div>
-    </li>
-  
-    
-    <li class="card-item">
-
-      <a class="card-title" href="/jobs/bssc-4th-graduate-level-vacancy-aug-2025/" target="_blank">
-        
-          Bihar BSSC 4th Graduate Level Vacancy 2025
-        
-        
-          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
-        
-      </a>
-
-      <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 18 Aug 2025</div>
+      <div class="card-date">📅 19 Dec 2025</div>
     </li>
   
     
@@ -410,7 +476,7 @@ function setPreferredHome() {
 
       <a class="card-title" href="/jobs/bihar-brlps-jeevika-form-aug25/" target="_blank">
         
-          BRLPS JEEViKA Vacancy 2025 Online Form
+          BRLPS JEEViKA Answer Key 2025
         
         
           <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
@@ -422,15 +488,15 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 18 Aug 2025</div>
+      <div class="card-date">📅 19 Dec 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/dsssb-non-teaching-vacancy-aug-2025/" target="_blank">
+      <a class="card-title" href="/jobs/bihar-vidhan-parishad-office-attendant-driver-recruitment-2025/" target="_blank">
         
-          DSSSB Delhi Various Post Vacancy 2025
+          Bihar Vidhan Parishad Office Attendant &amp; Driver Admit Card 2025
         
         
           <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
@@ -442,16 +508,38 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 18 Aug 2025</div>
+      <div class="card-date">📅 19 Dec 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/wbssc-assistant-teacher-vacancy-2025/" target="_blank">
+      <a class="card-title" href="/force/bsf-head-constable-ro-rm-admit-card-2025/" target="_blank">
         
-          WBSSC Assistant Teacher Admit Card 2025
+          BSF Head Constable RO/RM PET / PST Admit Card 2025
         
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 19 Dec 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/emrs-teaching-non-teaching-admit-card-2025/" target="_blank">
+        
+          EMRS Teaching &amp; Non-Teaching Admit Card 2025
+        
+        
+          <img src="/gif/new.gif" alt="New" style="width: 40px; vertical-align: middle;" />
         
       </a>
 
@@ -460,15 +548,15 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 17 Aug 2025</div>
+      <div class="card-date">📅 19 Dec 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/bihar/bpssc-enforcement-si-2025/" target="_blank">
+      <a class="card-title" href="/jobs/boi-credit-officer-recruitment-dec25/" target="_blank">
         
-          Bihar Enforcement Sub Inspector Exam Date 2025 - Out
+          BOI Credit Officer Vacancy 2025
         
         
       </a>
@@ -478,15 +566,15 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 17 Aug 2025</div>
+      <div class="card-date">📅 18 Dec 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/admission/mp-epravesh-admission-form-2025/" target="_blank">
+      <a class="card-title" href="/jobs/ssc-combined-graduate-level-exam-2025/" target="_blank">
         
-          MP ePravesh NCTE/PG/UG Admission 2025-26- CLC Upgrade Round 2 
+          SSC CGL Tier - I Result
         
         
       </a>
@@ -496,15 +584,15 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 17 Aug 2025</div>
+      <div class="card-date">📅 18 Dec 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/jobs/lic-ae-aao-specialist-generalist-vacancy-2025/" target="_blank">
+      <a class="card-title" href="/jobs/mppsc-food-safety-officer-result-2025/" target="_blank">
         
-          LIC AE, AAO Specialist &amp; Generalist Vacancy 2025
+          MPPSC Food Safety Officer Answer Key 2025
         
         
       </a>
@@ -514,15 +602,15 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 16 Aug 2025</div>
+      <div class="card-date">📅 18 Dec 2025</div>
     </li>
   
     
     <li class="card-item">
 
-      <a class="card-title" href="/education/mp/super-100-examination-form-2025/" target="_blank">
+      <a class="card-title" href="/railway/rrb-section-controller-admitcard-2025/" target="_blank">
         
-          Super 100 Exam 2025 -  Download Result List
+          RRB Section Controller Vacancy 2025- Application Status
         
         
       </a>
@@ -532,7 +620,25 @@ function setPreferredHome() {
         
       </div>
 
-      <div class="card-date">📅 16 Aug 2025</div>
+      <div class="card-date">📅 18 Dec 2025</div>
+    </li>
+  
+    
+    <li class="card-item">
+
+      <a class="card-title" href="/jobs/rrb-ministerial-isolated-category-dec25/" target="_blank">
+        
+          RRB Ministerial &amp; Isolated Category Vacancy 2025
+        
+        
+      </a>
+
+      <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 18 Dec 2025</div>
     </li>
   
 </ul>
@@ -585,7 +691,12 @@ function setPreferredHome() {
   
  <tr>
       
-       <td colspan="2">📌 Post Name: One-Time Registration (OARS)</td>
+        
+        
+        
+          <td>📌 Post Name : </td><td> <b style="color: blue;">One-Time Registration (OARS)</b></td>
+           
+
       
      </tr>
     
@@ -672,99 +783,6 @@ function setPreferredHome() {
 </section>
 
 
-
-<section class="yp-section">
-  <div class="yp-card">
-<div class="head-card">👨‍💻 How to do: </div> 
-  
- 
-  <ul class="yp-steps-container">
-    
-  
-  
-  
- 
-        
-            <p class="step-item"><b>Register on OARS:</b> <br>
-              <span>  Visit DSSSB OARS Portal and click “New Registration”</span> </p>
-        
-     
-    
-  
-  
-  
- 
-        
-            <p class="step-item"><b>Fill Personal Details:</b> <br>
-              <span>  Enter Full Name, Date of Birth, Class 10 Roll No., Passing Year, Mobile Number, and Email ID</span> </p>
-        
-     
-    
-  
-  
-  
- 
-        
-            <p class="step-item"><b>Provide ID Proof Details:</b> <br>
-              <span>  Select and enter a valid ID (Aadhaar, PAN, Voter ID, Passport)</span> </p>
-        
-     
-    
-  
-  
-  
- 
-        
-            <p class="step-item"><b>Upload Documents:</b> <br>
-              <span>  Upload Photograph, Signature, Left &amp; Right Thumb Impressions, and Category Certificate (if applicable)</span> </p>
-        
-     
-    
-  
-  
-  
- 
-        
-            <p class="step-item"><b>Create Login Credentials:</b> <br>
-              <span>  Set a password, confirm it, agree to the declaration, and submit</span> </p>
-        
-     
-    
-  
-  
-  
- 
-        
-            <p class="step-item"><b>Receive Registration Details:</b> <br>
-              <span>  Registration Number and Password will be sent on mobile and email</span> </p>
-        
-     
-    
-  
-  
-  
- 
-        
-            <p class="step-item"><b>Login to Apply for Posts:</b> <br>
-              <span>  Use your credentials to log in, select the post, and fill the application form</span> </p>
-        
-     
-    
-  
-  
-  
- 
-        
-            <p class="step-item"><b>Submit Application:</b> <br>
-              <span>  Verify details carefully and submit; take a printout of the confirmation page</span> </p>
-        
-     
-    
-   </ul>
-
-   
-  </div>
-  </section>
 
 
 
@@ -997,64 +1015,99 @@ function setPreferredHome() {
 
 
 
+
 <section class="yp-section">
   <div class="yp-card">
-<div class="head-card">🙋‍♂️Faqs❓ </div> 
+<div class="head-card">👨‍💻 How to do: </div> 
   
+ 
+  <ul class="yp-steps-container">
     
-      
-      <details>
+  
+  
+  
+ 
         
-          <summary  style="color:#02191a"> Q. What is DSSSB One-Time Registration (OARS)??</summary>
-          <p style="color:#021600">  A: It is a system to create a unique login ID and password for applying to multiple DSSSB posts without entering personal and academic details repeatedly.</p>
+            <p class="step-item"><b>Register on OARS:</b> <br>
+              <span>  Visit DSSSB OARS Portal and click “New Registration”</span> </p>
         
-      </details>  
+     
     
-      
-      <details>
+  
+  
+  
+ 
         
-          <summary  style="color:#02191a"> Q. Who can register for DSSSB OARS??</summary>
-          <p style="color:#021600">  A: Any candidate meeting the eligibility criteria of posts under DSSSB can register, provided they have Class 10 certificate and valid ID proof.</p>
+            <p class="step-item"><b>Fill Personal Details:</b> <br>
+              <span>  Enter Full Name, Date of Birth, Class 10 Roll No., Passing Year, Mobile Number, and Email ID</span> </p>
         
-      </details>  
+     
     
-      
-      <details>
+  
+  
+  
+ 
         
-          <summary  style="color:#02191a"> Q. What documents are required for registration??</summary>
-          <p style="color:#021600">  A: Class 10 certificate, valid ID proof (Aadhaar, PAN, Voter ID, Passport), photograph, signature, left &amp; right thumb impressions, and category certificate if applicable.</p>
+            <p class="step-item"><b>Provide ID Proof Details:</b> <br>
+              <span>  Select and enter a valid ID (Aadhaar, PAN, Voter ID, Passport)</span> </p>
         
-      </details>  
+     
     
-      
-      <details>
+  
+  
+  
+ 
         
-          <summary  style="color:#02191a"> Q. Can I edit my details after registration? ?</summary>
-          <p style="color:#021600"> A: No, once submitted, registration details cannot be edited. Verify everything before final submission.</p>
+            <p class="step-item"><b>Upload Documents:</b> <br>
+              <span>  Upload Photograph, Signature, Left &amp; Right Thumb Impressions, and Category Certificate (if applicable)</span> </p>
         
-      </details>  
+     
     
-      
-      <details>
+  
+  
+  
+ 
         
-          <summary  style="color:#02191a"> Q. How do I recover my Registration Number or Password??</summary>
-          <p style="color:#021600">  A: Visit the DSSSB login page, click “Forgot Registration No./Password,” enter your DOB, Class 10 Roll Number, and Passing Year, and follow instructions to reset.</p>
+            <p class="step-item"><b>Create Login Credentials:</b> <br>
+              <span>  Set a password, confirm it, agree to the declaration, and submit</span> </p>
         
-      </details>  
+     
     
-      
-      <details>
+  
+  
+  
+ 
         
-          <summary  style="color:#02191a"> Q. Is there a validity period for the One-Time Registration??</summary>
-          <p style="color:#021600">  A: Registration remains valid until you apply for posts or until DSSSB updates its system.</p>
+            <p class="step-item"><b>Receive Registration Details:</b> <br>
+              <span>  Registration Number and Password will be sent on mobile and email</span> </p>
         
-      </details>  
+     
     
+  
+  
+  
+ 
+        
+            <p class="step-item"><b>Login to Apply for Posts:</b> <br>
+              <span>  Use your credentials to log in, select the post, and fill the application form</span> </p>
+        
+     
+    
+  
+  
+  
+ 
+        
+            <p class="step-item"><b>Submit Application:</b> <br>
+              <span>  Verify details carefully and submit; take a printout of the confirmation page</span> </p>
+        
+     
+    
+   </ul>
 
-
-
-
-  </div> </section>
+   
+  </div>
+  </section>
 
 
 
@@ -1120,6 +1173,72 @@ function setPreferredHome() {
 
   </div> </section>
 
+
+<section class="yp-section">
+  <div class="yp-card">
+<div class="head-card">🙋‍♂️Faqs❓ </div> 
+  
+  
+     
+    
+    <details>
+      
+        <summary style="color:#02191a"> ❓ What is DSSSB One-Time Registration (OARS)??</summary>
+        <p style="color:#021600">  A: It is a system to create a unique login ID and password for applying to multiple DSSSB posts without entering personal and academic details repeatedly.</p>
+      
+    </details>
+  
+     
+    
+    <details>
+      
+        <summary style="color:#02191a"> ❓ Who can register for DSSSB OARS??</summary>
+        <p style="color:#021600">  A: Any candidate meeting the eligibility criteria of posts under DSSSB can register, provided they have Class 10 certificate and valid ID proof.</p>
+      
+    </details>
+  
+     
+    
+    <details>
+      
+        <summary style="color:#02191a"> ❓ What documents are required for registration??</summary>
+        <p style="color:#021600">  A: Class 10 certificate, valid ID proof (Aadhaar, PAN, Voter ID, Passport), photograph, signature, left &amp; right thumb impressions, and category certificate if applicable.</p>
+      
+    </details>
+  
+     
+    
+    <details>
+      
+        <summary style="color:#02191a"> ❓ Can I edit my details after registration? ?</summary>
+        <p style="color:#021600"> A: No, once submitted, registration details cannot be edited. Verify everything before final submission.</p>
+      
+    </details>
+  
+     
+    
+    <details>
+      
+        <summary style="color:#02191a"> ❓ How do I recover my Registration Number or Password??</summary>
+        <p style="color:#021600">  A: Visit the DSSSB login page, click “Forgot Registration No./Password,” enter your DOB, Class 10 Roll Number, and Passing Year, and follow instructions to reset.</p>
+      
+    </details>
+  
+     
+    
+    <details>
+      
+        <summary style="color:#02191a"> ❓ Is there a validity period for the One-Time Registration??</summary>
+        <p style="color:#021600">  A: Registration remains valid until you apply for posts or until DSSSB updates its system.</p>
+      
+    </details>
+  
+
+
+
+  </div> </section>
+
+
 </div>
   
 
@@ -1135,14 +1254,8 @@ function setPreferredHome() {
     
     
     
-  
-    
-    
-  
-    
-    
       <li>
-        <a href="/document/eshram-card-apply/" >Eshram Card Apply, Update and Download</a>
+        <a href="/card/voter-card-download/" >Voter Card Download/Apply</a>
         
         
       </li>
@@ -1160,6 +1273,19 @@ function setPreferredHome() {
   
     
     
+      <li>
+        <a href="/download/pdf/" ></a>
+        
+        
+      </li>
+   
+    
+  
+    
+    
+  
+    
+    
   
     
     
@@ -1167,7 +1293,7 @@ function setPreferredHome() {
     
     
       <li>
-        <a href="/jobs/uppsc-gic-lecturer-vacancy-2025/" >UPPSC GIC Lecturer Vacancy 2025 Online Form</a>
+        <a href="/quick/search/" >Search Anything</a>
         
         
       </li>
@@ -1181,58 +1307,80 @@ function setPreferredHome() {
   <p > <a href="/latest-update/" target="_blank"> <div style="text-align:right;"> More >> </div></a></p>
   </details>
   
-  <style>
-   .button-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-    }
+<style>
+.button-group {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 8px 4px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
 
-    .btn {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      color: #fff;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
+.btn {
+  flex: 0 0 auto;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;  
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  cursor: pointer;
+  border: none;
+}
 
-    .btn:hover {
-      transform: scale(1.05);
-    }
+.btn:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
 
-    .btn-like { background-color: #f0ad4e; }
-    .btn-share { background-color: #5bc0de; }
-    .btn-whatsapp { background-color: #25D366; }
-    .btn-telegram { background-color: #0088cc; }
-    .btn-copy { background-color: #6f42c1; }
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
 
-    .btn:active {
-      transform: scale(0.95);
-    }
-  </style>
-</head>
-<body>
+ 
+.btn-whatsapp { background: linear-gradient(135deg,#25D366,#128C7E); }
+.btn-telegram { background: linear-gradient(135deg,#0088cc,#005f99); }
+.btn-copy { background: linear-gradient(135deg,#6f42c1,#4b1c99); }
+.btn-share { background: linear-gradient(135deg,#5bc0de,#007b9e); }
+.btn-like { background: linear-gradient(135deg,#f0ad4e,#d98200); }
 
-  <div class="button-group">
-    <a href="https://yojnaportal.com/whatsapp" target="_blank" class="btn btn-whatsapp">
-      Join WhatsApp
-    </a>
+ 
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+</style>
 
-    <a href="https://yojnaportal.com/telegram" target="_blank" class="btn btn-telegram">
-      Join Telegram
-    </a>
 
-    <button class="btn btn-copy" onclick="copyLink()">Copy Link</button>
+<div class="button-group">
+  <a href="https://yojnaportal.com/whatsapp" target="_blank">
+    <button class="btn btn-whatsapp"><img src="/svg/whatsapp.svg" > Join WhatsApp</button>
+  </a>
 
-      <a class="btn btn-share" href="https://wa.me/?text=✅DSSSB%20One-Time%20Registration%202025%20%e2%80%93%20Complete%20Step-by-Step%20Guide%20to%20Apply%20Online%0A✅Check%20Details%20👇%0A🔗http%3a%2f%2flocalhost%3a1313%2fdsssbotr" target="_blank">
-        Share on WhatsApp
-      </a>
-      
-  </div>
+  <a href="https://yojnaportal.com/telegram" target="_blank">
+    <button class="btn btn-telegram"><img src="/svg/telegram.svg"> Join Telegram</button>
+  </a>
+
+  <button class="btn btn-copy" onclick="copyLink()"><img src="/svg/copy.svg" > Copy Link</button>
+
+<a href="https://wa.me/?text=📢 *DSSSB%20One-Time%20Registration%202025%20%e2%80%93%20Complete%20Step-by-Step%20Guide%20to%20Apply%20Online*%0A_______________________________%0A🎓 Min. Qualification: %5b10th%20Pass%5d%0A%0A> 🏛️ Delhi%20Subordinate%20Services%20Selection%20Board%20%28DSSSB%29%0A_______________________________%0A🔗 More Details: http%3a%2f%2flocalhost%3a1313%2fdsssbotr"
+   target="_blank">
+   <button class="btn btn-share"><img src="/svg/share.svg" > Share on WhatsApp</button>
+</a>
+    <a href="/" target="_blank">
+    <button class="btn btn-whatsapp"><img src="/svg/home.svg" > Back to Home</button>
+  </a>
+</div>
+
+
 
   <script>
     function copyLink() {
@@ -1357,13 +1505,13 @@ function setPreferredHome() {
      
     
         <li class="card-item">
-            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">CM Kisan Kalyan Nidhi 13th Kisht ₹2000 Update</a>
+            <a class="card-title" href="/scheme/ayushman-bharat-yojana/" target="_blank">Ayushman Bharat Yojana 2025</a>
             <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 14 Aug 2025</div>
+      <div class="card-date">📅 15 Dec 2025</div>
         </li>
        
     
@@ -1371,13 +1519,13 @@ function setPreferredHome() {
      
     
         <li class="card-item">
-            <a class="card-title" href="/mp/ladli-behna-yojna-mp/" target="_blank">Ladli Bahna Yojana 2025  27th Kisht-Check Details</a>
+            <a class="card-title" href="/scheme/ladli-laxmi-yojana-mp/" target="_blank">CM Ladli Laxmi Yojana 2025</a>
             <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 07 Aug 2025</div>
+      <div class="card-date">📅 15 Dec 2025</div>
         </li>
        
     
@@ -1385,27 +1533,13 @@ function setPreferredHome() {
      
     
         <li class="card-item">
-            <a class="card-title" href="/scheme/pmkisan-pmksn-yojana/" target="_blank">PM Kisan Samman Nidhi 20th Installment - 2000/- Transferd</a>
-            <div class="card-tags">
-        
-        
-      </div>
-
-      <div class="card-date">📅 02 Aug 2025</div>
-        </li>
-       
-    
-
-     
-    
-        <li class="card-item">
-            <a class="card-title" href="/scheme/pmmvy-matru-vandana-yojana-form/" target="_blank">प्रधानमंत्री मातृत्व वंदना योजना 2025 (PMMVY) – पूरी जानकारी</a>
+            <a class="card-title" href="/scheme/madhya-pradesh/social-security-pension-apply/" target="_blank">MP Social Security Pension Form  Download PDF &amp; Application Process</a>
             <div class="card-tags">
         
         <a href="/pdf-forms/">📄 PDF Form</a>
       </div>
 
-      <div class="card-date">📅 27 Jul 2025</div>
+      <div class="card-date">📅 15 Dec 2025</div>
         </li>
        
     
@@ -1413,13 +1547,27 @@ function setPreferredHome() {
      
     
         <li class="card-item">
-            <a class="card-title" href="/scheme/mp/dr-ambedakar-kamdhenu-yojna-mp/" target="_blank">MP Dr. Ambedkar Kamdhenu Yojana – Benefits, Apply Online, Eligibility</a>
+            <a class="card-title" href="/scheme/cm-kisan-kalyan-nidhi/" target="_blank">CM Kisan Kalyan Nidhi Yojana 2025</a>
             <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 22 Jul 2025</div>
+      <div class="card-date">📅 15 Dec 2025</div>
+        </li>
+       
+    
+
+     
+    
+        <li class="card-item">
+            <a class="card-title" href="/scheme/pm-awas-yojana/" target="_blank">प्रधानमंत्री आवास योजना (PMAY) 2026 | PM Awas Yojana Apply Online</a>
+            <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 15 Dec 2025</div>
         </li>
        
     
@@ -1442,6 +1590,17 @@ function setPreferredHome() {
     
 
      
+    
+        <li class="card-item">
+            <a class="card-title"  href="/jobs/bpsc-71th-exam-2025/" >Bihar PCS 71st Mains Online Form 2025</a>
+           <div class="card-tags">
+        
+        
+      </div>
+
+      <div class="card-date">📅 04 Dec 2025</div>
+        </li>
+
     
 
      
@@ -1570,7 +1729,10 @@ function setPreferredHome() {
    
 
 </footer>
-
+<a href="https://yojnaportal.com/whatsapp" target="_blank" 
+   style="position:fixed;bottom:20px;right:20px;background:#f6fdf9;color:#fff;padding:8px 10px;border-radius:50px;text-decoration:none;box-shadow:0 2px 5px rgba(0,0,0,0.3);font-family:sans-serif;">
+   <img src="/svg/whatsapp.svg" alt="WhatsApp Channel" width="40px">
+</a>
 </body>
 </html>
   
