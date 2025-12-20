@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/2025/iocl-non-executive-personnel-dec25/</loc>
-    <lastmod>2025-12-20T16:08:23+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mp-police-asi-subedar-answerkey-2025/</loc>
+    <lastmod>2025-12-20T17:24:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-20T16:08:23+05:30</lastmod>
+    <lastmod>2025-12-20T17:24:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/iocl-non-executive-personnel-dec25/</loc>
+    <lastmod>2025-12-20T16:23:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -354,11 +359,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mp-krishi-e-token-registration-portal/</loc>
     <lastmod>2025-12-10T19:10:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-police-asi-subedar-admitcard-2025/</loc>
-    <lastmod>2025-12-10T19:05:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
