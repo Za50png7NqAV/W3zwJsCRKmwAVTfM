@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/force/bsf-constable-sports-quota-dec25/</loc>
-    <lastmod>2025-12-20T12:43:17+05:30</lastmod>
+    <loc>http://localhost:1313/2025/iocl-non-executive-personnel-dec25/</loc>
+    <lastmod>2025-12-20T16:08:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-20T16:08:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/force/bsf-constable-sports-quota-dec25/</loc>
     <lastmod>2025-12-20T12:43:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -829,11 +834,6 @@
   </url><url>
     <loc>http://localhost:1313/document/aadhaar-card-download-and-details/</loc>
     <lastmod>2025-10-30T15:57:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/card/aadhar-card-uidai/</loc>
-    <lastmod>2025-10-29T12:13:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
