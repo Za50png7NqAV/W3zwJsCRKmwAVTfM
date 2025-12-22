@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/nta-ugc-net-december-2025/</loc>
-    <lastmod>2025-12-22T09:08:10+05:30</lastmod>
+    <loc>http://localhost:1313/up/up-police-si-confidential-asi-clerk-accounts-dec25/</loc>
+    <lastmod>2025-12-22T10:08:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-22T10:08:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-gd-constable-recruitment-dec25/</loc>
+    <lastmod>2025-12-22T09:15:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-police-computer-operator-dec25/</loc>
+    <lastmod>2025-12-22T09:15:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-polytechnic-lecturer-recruitment-dec25/</loc>
+    <lastmod>2025-12-22T09:15:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
+    <lastmod>2025-12-22T09:15:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-ugc-net-december-2025/</loc>
     <lastmod>2025-12-22T09:08:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -122,11 +147,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-gd-constable-recruitment-dec25/</loc>
-    <lastmod>2025-12-18T12:02:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/up-police-assistant-operator-recruitment-dec25/</loc>
     <lastmod>2025-12-18T12:01:18+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -167,18 +187,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/up-police-computer-operator-dec25/</loc>
-    <lastmod>2025-12-17T12:03:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/dsssb-mts-recruitment-dec25/</loc>
     <lastmod>2025-12-17T11:19:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
-    <lastmod>2025-12-17T11:15:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -459,11 +469,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-71th-exam-2025/</loc>
     <lastmod>2025-12-04T16:57:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/uppsc-polytechnic-lecturer-recruitment-dec25/</loc>
-    <lastmod>2025-12-04T16:10:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
