@@ -2,18 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-12-24T11:41:08+05:30</lastmod>
+    <loc>http://localhost:1313/calendar/</loc>
+    <lastmod>2025-12-24T15:40:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-dec25/</loc>
-    <lastmod>2025-12-24T11:41:08+05:30</lastmod>
+    <loc>http://localhost:1313/calendar/upsc-exam-calendar-2026/</loc>
+    <lastmod>2025-12-24T15:40:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-24T11:41:08+05:30</lastmod>
+    <lastmod>2025-12-24T15:40:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/mpesb-group-1-sub-group-2-recruitment-dec25/</loc>
+    <lastmod>2025-12-24T12:06:44+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-protection-officer-recruitment-dec25/</loc>
+    <lastmod>2025-12-24T12:06:44+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-12-24T12:01:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-dec25/</loc>
+    <lastmod>2025-12-24T12:01:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -187,11 +207,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rpsc-protection-officer-recruitment-dec25/</loc>
-    <lastmod>2025-12-19T12:00:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
     <lastmod>2025-12-19T10:04:15+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -242,11 +257,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/calendar/</loc>
-    <lastmod>2025-12-17T16:47:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/calendar/mppsc-exam-calendar-2026/</loc>
     <lastmod>2025-12-17T16:47:23+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -254,11 +264,6 @@
   </url><url>
     <loc>http://localhost:1313/calendar/mpesb-exam-calendar-2026/</loc>
     <lastmod>2025-12-17T16:11:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/mpesb-group-1-sub-group-2-recruitment-dec25/</loc>
-    <lastmod>2025-12-17T13:51:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
