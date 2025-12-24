@@ -2,18 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/calendar/</loc>
-    <lastmod>2025-12-24T15:40:30+05:30</lastmod>
+    <loc>http://localhost:1313/scholarship/azim-premji-scholarship-form-2025/</loc>
+    <lastmod>2025-12-24T16:48:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/calendar/upsc-exam-calendar-2026/</loc>
-    <lastmod>2025-12-24T15:40:30+05:30</lastmod>
+    <loc>http://localhost:1313/scholarship/</loc>
+    <lastmod>2025-12-24T16:48:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-24T15:40:30+05:30</lastmod>
+    <lastmod>2025-12-24T16:48:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/calendar/</loc>
+    <lastmod>2025-12-24T15:48:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/calendar/upsc-exam-calendar-2026/</loc>
+    <lastmod>2025-12-24T15:48:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -847,11 +857,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scholarship/</loc>
-    <lastmod>2025-11-02T09:39:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mppsc-programmer-recruitment-2025/</loc>
     <lastmod>2025-11-01T09:30:39+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1214,11 +1219,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-lower-division-clerk-ldc-vacancy-2025/</loc>
     <lastmod>2025-09-13T08:55:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scholarship/azim-premji-scholarship-form-2025/</loc>
-    <lastmod>2025-09-13T08:45:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
