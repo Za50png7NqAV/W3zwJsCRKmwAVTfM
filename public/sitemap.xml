@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mp/mpesb-group-1-sub-group-2-recruitment-dec25/</loc>
-    <lastmod>2025-12-25T09:56:55+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/pnb-lbo-recruitment-nov-2025/</loc>
+    <lastmod>2025-12-25T10:08:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-25T10:08:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2025-12-25T10:04:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-dec25/</loc>
+    <lastmod>2025-12-25T10:04:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-result-2025/</loc>
+    <lastmod>2025-12-25T09:59:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/mpesb-group-1-sub-group-2-recruitment-dec25/</loc>
     <lastmod>2025-12-25T09:56:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -34,16 +54,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-protection-officer-recruitment-dec25/</loc>
     <lastmod>2025-12-24T12:06:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2025-12-24T12:01:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-dec25/</loc>
-    <lastmod>2025-12-24T12:01:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -612,11 +622,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-admit-card-2025/</loc>
-    <lastmod>2025-11-29T18:32:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rbi-officer-grade-b-vacancy-2025/</loc>
     <lastmod>2025-11-29T14:03:19+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -634,11 +639,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rspcb-recruitment-nov-2025/</loc>
     <lastmod>2025-11-27T12:56:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/pnb-lbo-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-27T12:11:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
