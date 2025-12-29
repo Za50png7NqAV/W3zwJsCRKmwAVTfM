@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/shramodaya-admission-test-2026%E2%80%9327/</loc>
+    <lastmod>2025-12-29T11:46:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-29T11:46:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
+    <lastmod>2025-12-29T10:41:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/calendar/</loc>
     <lastmod>2025-12-28T19:08:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/calendar/rpsc-exam-calendar-2026/</loc>
-    <lastmod>2025-12-28T19:08:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-28T19:08:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -88,11 +98,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/up/uppsc-medical-officer-recruitment-dec25/</loc>
-    <lastmod>2025-12-26T14:02:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
     <lastmod>2025-12-26T14:02:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
