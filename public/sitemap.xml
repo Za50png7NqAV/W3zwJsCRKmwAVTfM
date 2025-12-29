@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/shramodaya-admission-test-2026%E2%80%9327/</loc>
-    <lastmod>2025-12-29T11:46:22+05:30</lastmod>
+    <loc>http://localhost:1313/document/voter-card-online-form-details/</loc>
+    <lastmod>2025-12-29T12:34:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-29T12:34:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/shramodaya-admission-test-2026%E2%80%9327/</loc>
     <lastmod>2025-12-29T11:46:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -2017,11 +2022,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/document/voter-card-online-form-details/</loc>
-    <lastmod>2025-06-28T18:52:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/result/patna-hc-translator-final-result-2025/</loc>
     <lastmod>2025-06-28T15:47:49+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -3119,21 +3119,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/ugc-net/</loc>
     <lastmod>2024-12-31T10:26:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/card/</loc>
-    <lastmod>2024-12-30T18:17:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/votar-card/</loc>
-    <lastmod>2024-12-30T18:17:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/card/voter-card-download/</loc>
-    <lastmod>2024-12-30T18:17:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
