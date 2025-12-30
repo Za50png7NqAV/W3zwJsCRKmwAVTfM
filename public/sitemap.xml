@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/pm-ujjwala-yojana/</loc>
-    <lastmod>2025-12-30T12:56:43+05:30</lastmod>
+    <loc>http://localhost:1313/document/bihar-rtps-income-caste-residence-apply-online/</loc>
+    <lastmod>2025-12-30T17:52:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-30T17:52:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/csbc-bihar-constable-driver-result-2025/</loc>
+    <lastmod>2025-12-30T16:01:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-admit-card-2025/</loc>
+    <lastmod>2025-12-30T15:58:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-ujjwala-yojana/</loc>
     <lastmod>2025-12-30T12:56:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -204,11 +219,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sbi-bank-so-recruitment-dec25/</loc>
     <lastmod>2025-12-23T12:01:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-recruitment-dec25/</loc>
-    <lastmod>2025-12-23T11:04:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -639,11 +649,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/oicl-ao-recruitment-nov-2025/</loc>
     <lastmod>2025-12-04T11:12:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/csbc-bihar-constable-driver-admit-card-2025/</loc>
-    <lastmod>2025-12-03T16:24:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
