@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/document/mp-income-domicile-apply-online/</loc>
-    <lastmod>2025-12-30T19:39:44+05:30</lastmod>
+    <lastmod>2025-12-31T11:07:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-30T19:39:44+05:30</lastmod>
+    <lastmod>2025-12-31T11:07:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/mp-set-2025/</loc>
+    <lastmod>2025-12-31T10:54:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -252,11 +257,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/card/pan-card-apply/</loc>
-    <lastmod>2025-12-22T11:07:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/up-police-computer-operator-dec25/</loc>
     <lastmod>2025-12-22T09:15:34+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -274,11 +274,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/iocl-non-executive-personnel-dec25/</loc>
     <lastmod>2025-12-20T16:23:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/mp-set-2025/</loc>
-    <lastmod>2025-12-20T11:20:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -3104,11 +3099,6 @@
   </url><url>
     <loc>http://localhost:1313/student/mp/gaon-ki-beti-schorlarship/</loc>
     <lastmod>2025-01-02T10:05:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/card/driving-learner-licence/</loc>
-    <lastmod>2025-01-01T19:06:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
