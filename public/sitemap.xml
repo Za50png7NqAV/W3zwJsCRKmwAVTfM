@@ -2677,11 +2677,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/mp/domicile-certificate-apply/</loc>
-    <lastmod>2025-03-09T20:06:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/mp/income-certificate-apply/</loc>
     <lastmod>2025-03-09T19:41:02+05:30</lastmod>
     <changefreq>daily</changefreq>
