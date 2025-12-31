@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/drdo-ceptam-11-recruitment-dec25/</loc>
-    <lastmod>2025-12-31T18:16:32+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-driver-result-2025/</loc>
+    <lastmod>2025-12-31T19:18:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-31T19:18:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/drdo-ceptam-11-recruitment-dec25/</loc>
     <lastmod>2025-12-31T18:16:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -449,11 +454,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppgcl-assistant-recruitment-dec25/</loc>
     <lastmod>2025-12-15T11:27:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-delhi-police-constable-driver-admit-card-2025/</loc>
-    <lastmod>2025-12-15T11:16:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
