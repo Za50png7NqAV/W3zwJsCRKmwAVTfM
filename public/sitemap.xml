@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/hr/haryana-police-constable-recruitment-jan26/</loc>
-    <lastmod>2026-01-02T12:17:46+05:30</lastmod>
+    <loc>http://localhost:1313/admission/soe-som-class-9-admission-2026%E2%80%9327/</loc>
+    <lastmod>2026-01-02T13:22:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-02T12:17:46+05:30</lastmod>
+    <lastmod>2026-01-02T13:22:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/msme-udyam-reg-online/</loc>
+    <lastmod>2026-01-02T12:39:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/haryana-police-constable-recruitment-jan26/</loc>
+    <lastmod>2026-01-02T12:30:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1709,11 +1719,6 @@
   </url><url>
     <loc>http://localhost:1313/otr/uppsc-otr-portal-form/</loc>
     <lastmod>2025-07-29T09:54:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/msme-udyam-reg-online/</loc>
-    <lastmod>2025-07-27T20:35:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
