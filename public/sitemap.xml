@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/soe-som-class-9-admission-2026%E2%80%9327/</loc>
-    <lastmod>2026-01-02T13:22:24+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ecgc-po-recruitment-admit-card-2025/</loc>
+    <lastmod>2026-01-02T17:40:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-02T17:40:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nainital-bank-po-so-admit-card-2025/</loc>
+    <lastmod>2026-01-02T17:24:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-bank-so-recruitment-dec25/</loc>
+    <lastmod>2026-01-02T16:43:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/soe-som-class-9-admission-2026%E2%80%9327/</loc>
     <lastmod>2026-01-02T13:22:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -264,11 +279,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/vb-g-ram-g-yojana-2025/</loc>
     <lastmod>2025-12-23T13:17:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-bank-so-recruitment-dec25/</loc>
-    <lastmod>2025-12-23T12:01:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -529,11 +539,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/csir-ncl-technical-recruitment-dec25/</loc>
     <lastmod>2025-12-13T10:13:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/nainital-bank-po-so-recruitment-dec25/</loc>
-    <lastmod>2025-12-13T10:11:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -854,11 +859,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/toilet-subsidy-yojana-swachh-bharat/</loc>
     <lastmod>2025-11-11T11:34:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ecgc-po-recruitment-nov-2025/</loc>
-    <lastmod>2025-11-11T10:24:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
