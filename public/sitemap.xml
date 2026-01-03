@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ecgc-po-recruitment-admit-card-2025/</loc>
-    <lastmod>2026-01-02T17:40:54+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/aadhaar-operator-supervisor-recruitment-dec25/</loc>
+    <lastmod>2026-01-03T13:15:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-03T13:15:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
+    <lastmod>2026-01-02T17:58:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-mts-exam-date-2025/</loc>
+    <lastmod>2026-01-02T17:53:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ecgc-po-recruitment-admit-card-2025/</loc>
     <lastmod>2026-01-02T17:40:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -194,11 +209,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/kvs-nvs-recruitment-nov-2025/</loc>
     <lastmod>2025-12-26T17:32:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-gd-constable-recruitment-dec25/</loc>
-    <lastmod>2025-12-26T14:02:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1677,11 +1687,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-mts-vacancy-2025/</loc>
-    <lastmod>2025-08-04T20:31:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rrc-western-railway-sports-quota-posts-aug25/</loc>
     <lastmod>2025-08-03T13:13:56+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1857,7 +1862,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/aadhaar-supervisor-vacancy-2025/</loc>
+    <loc>http://localhost:1313/jobs/aadhaar-supervisor-vacancy-july-2025/</loc>
     <lastmod>2025-07-16T20:40:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
