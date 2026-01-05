@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/indian-navy-10-2-btech-cadet-entry-recruitment-jan26/</loc>
-    <lastmod>2026-01-03T16:52:28+05:30</lastmod>
+    <loc>http://localhost:1313/mp/mpesb-group-1-sub-group-2-recruitment-dec25/</loc>
+    <lastmod>2026-01-05T10:55:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
+    <lastmod>2026-01-05T10:55:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/up/uppsc-medical-officer-recruitment-dec25/</loc>
+    <lastmod>2026-01-05T10:55:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
+    <lastmod>2026-01-05T10:55:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-05T10:55:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-delhi-police-hc-ministerial-admit-card-2025/</loc>
+    <lastmod>2026-01-05T10:51:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-navy-10-2-btech-cadet-entry-recruitment-jan26/</loc>
     <lastmod>2026-01-03T16:52:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -29,11 +54,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/aadhaar-operator-supervisor-recruitment-dec25/</loc>
     <lastmod>2026-01-03T13:15:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
-    <lastmod>2026-01-02T17:58:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -152,11 +172,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
-    <lastmod>2025-12-29T10:41:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/calendar/</loc>
     <lastmod>2025-12-28T19:08:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -232,11 +247,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/up/uppsc-medical-officer-recruitment-dec25/</loc>
-    <lastmod>2025-12-26T14:02:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/shs-bihar-anm-result-2025/</loc>
     <lastmod>2025-12-26T14:00:29+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -259,11 +269,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-result-2025/</loc>
     <lastmod>2025-12-25T09:59:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/mpesb-group-1-sub-group-2-recruitment-dec25/</loc>
-    <lastmod>2025-12-25T09:56:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -654,11 +659,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-delhi-police-head-constable-admit-card-2025/</loc>
     <lastmod>2025-12-05T11:56:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-delhi-police-hc-ministerial-admit-card-2025/</loc>
-    <lastmod>2025-12-05T11:53:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
