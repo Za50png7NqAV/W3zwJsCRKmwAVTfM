@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-je-recruitment-2025/</loc>
-    <lastmod>2026-01-07T18:58:24+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
+    <lastmod>2026-01-07T19:35:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-07T19:35:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-cds-1-admit-card-2026/</loc>
+    <lastmod>2026-01-07T19:14:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/nta-aissee-2026/</loc>
+    <lastmod>2026-01-07T19:08:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-paramedical-various-posts-admit-card-2025/</loc>
+    <lastmod>2026-01-07T19:04:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-je-admit-card-2025/</loc>
     <lastmod>2026-01-07T18:58:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -607,11 +627,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsc-cds-1-recruitment-2026/</loc>
-    <lastmod>2025-12-11T12:54:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsc-nda-1-recruitment-2026/</loc>
     <lastmod>2025-12-11T11:20:24+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -657,18 +672,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-paramedical-various-posts-2025/</loc>
-    <lastmod>2025-12-08T17:37:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/haryana-health-department-mo-recruitment-dec25/</loc>
     <lastmod>2025-12-08T15:28:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
-    <lastmod>2025-12-08T14:49:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -994,11 +999,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sebi-assistant-manager-recruitment-oct-2025/</loc>
     <lastmod>2025-10-31T15:48:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/nta-aissee-2026/</loc>
-    <lastmod>2025-10-30T17:56:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
