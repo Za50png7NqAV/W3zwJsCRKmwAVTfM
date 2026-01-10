@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
+    <lastmod>2026-01-10T18:52:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-10T18:52:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nainital-bank-po-so-admit-card-2025/</loc>
+    <lastmod>2026-01-10T18:46:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-nda-1-admit-card-2026/</loc>
+    <lastmod>2026-01-10T18:40:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/kvs-nvs-admit-card-2025/</loc>
+    <lastmod>2026-01-10T18:36:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-police-si-subedar-recruitment-2025/</loc>
+    <lastmod>2026-01-10T18:32:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
+    <lastmod>2026-01-10T18:19:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/aadhaar-operator-supervisor-recruitment-dec25/</loc>
     <lastmod>2026-01-10T18:15:23+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -18,11 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
-    <lastmod>2026-01-10T18:15:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-01-10T18:15:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -112,11 +142,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
-    <lastmod>2026-01-05T10:55:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/up/uppsc-medical-officer-recruitment-dec25/</loc>
     <lastmod>2026-01-05T10:55:48+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -149,11 +174,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ecgc-po-recruitment-admit-card-2025/</loc>
     <lastmod>2026-01-02T17:40:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/nainital-bank-po-so-admit-card-2025/</loc>
-    <lastmod>2026-01-02T17:24:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -322,11 +342,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/kvs-nvs-recruitment-nov-2025/</loc>
-    <lastmod>2025-12-26T17:32:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/up-police-si-confidential-asi-clerk-accounts-dec25/</loc>
     <lastmod>2025-12-26T14:02:17+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -454,11 +469,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-village-development-officer-vdo-2025/</loc>
     <lastmod>2025-12-20T10:08:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
-    <lastmod>2025-12-19T19:22:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -644,11 +654,6 @@
   </url><url>
     <loc>http://localhost:1313/bihar/bihar-shs-ophthalmic-assistant-admitcard-2025/</loc>
     <lastmod>2025-12-11T15:14:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-nda-1-recruitment-2026/</loc>
-    <lastmod>2025-12-11T11:20:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -854,11 +859,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/wbbpe-assistant-teacher-recruitment-nov-2025/</loc>
     <lastmod>2025-11-22T12:22:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-police-si-subedar-recruitment-2025/</loc>
-    <lastmod>2025-11-21T17:31:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
