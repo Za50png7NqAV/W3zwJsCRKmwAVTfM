@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
-    <lastmod>2026-01-10T18:52:43+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rssb-upper-primary-teacher-recruitment-nov-2025/</loc>
+    <lastmod>2026-01-10T19:04:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-10T19:04:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-primary-teacher-recruitment-nov-2025/</loc>
+    <lastmod>2026-01-10T18:58:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-combined-graduate-level-exam-2025/</loc>
     <lastmod>2026-01-10T18:52:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -254,16 +264,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bihar-police-si-admit-card-2025/</loc>
     <lastmod>2025-12-30T11:19:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rssb-primary-teacher-recruitment-nov-2025/</loc>
-    <lastmod>2025-12-29T18:52:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rssb-upper-primary-teacher-recruitment-nov-2025/</loc>
-    <lastmod>2025-12-29T18:49:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
