@@ -2,18 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bpsc-project-manager-recruitment-2025/</loc>
-    <lastmod>2026-01-09T17:03:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-09T17:03:44+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/aadhaar-operator-supervisor-recruitment-dec25/</loc>
+    <lastmod>2026-01-10T18:15:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-state-service-exam-2026/</loc>
-    <lastmod>2026-01-09T16:47:27+05:30</lastmod>
+    <lastmod>2026-01-10T18:15:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-police-constable-recruitment-dec25/</loc>
+    <lastmod>2026-01-10T18:15:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
+    <lastmod>2026-01-10T18:15:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-10T18:15:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/azim-premji-scholarship-form-2025/</loc>
+    <lastmod>2026-01-10T18:12:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/</loc>
+    <lastmod>2026-01-10T18:12:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-project-manager-recruitment-2025/</loc>
+    <lastmod>2026-01-09T17:03:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -97,11 +122,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
-    <lastmod>2026-01-05T10:55:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/ssc-delhi-police-hc-ministerial-admit-card-2025/</loc>
     <lastmod>2026-01-05T10:51:58+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -117,18 +137,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/up-police-constable-recruitment-dec25/</loc>
-    <lastmod>2026-01-03T15:02:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
     <lastmod>2026-01-03T15:00:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/aadhaar-operator-supervisor-recruitment-dec25/</loc>
-    <lastmod>2026-01-03T13:15:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -344,16 +354,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-cpo-si-capf-result-2025/</loc>
     <lastmod>2025-12-25T09:59:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scholarship/azim-premji-scholarship-form-2025/</loc>
-    <lastmod>2025-12-24T16:48:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scholarship/</loc>
-    <lastmod>2025-12-24T16:48:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
