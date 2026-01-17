@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/nabard-development-assistant-recruitment-jan26/</loc>
-    <lastmod>2026-01-17T13:02:48+05:30</lastmod>
+    <loc>http://localhost:1313/eligibility/ctet-february-2026/</loc>
+    <lastmod>2026-01-17T14:54:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-17T14:54:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nabard-development-assistant-recruitment-jan26/</loc>
     <lastmod>2026-01-17T13:02:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -419,11 +424,6 @@
   </url><url>
     <loc>http://localhost:1313/document/samagra-portal/</loc>
     <lastmod>2025-12-28T09:45:11+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/ctet-february-2026/</loc>
-    <lastmod>2025-12-27T16:09:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
