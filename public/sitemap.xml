@@ -2,18 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/calendar/</loc>
-    <lastmod>2026-01-17T15:25:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/calendar/ssc-exam-calendar-2026-27/</loc>
-    <lastmod>2026-01-17T15:25:07+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/</loc>
+    <lastmod>2026-01-17T15:50:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-17T15:25:07+05:30</lastmod>
+    <lastmod>2026-01-17T15:50:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/pm-krishak-mitra-surya-yojana/</loc>
+    <lastmod>2026-01-17T15:49:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/ladli-laxmi-yojana-mp/</loc>
+    <lastmod>2026-01-17T15:47:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/samadhan-yojana-2025-26/</loc>
+    <lastmod>2026-01-17T15:45:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-krishi-e-token-registration-portal/</loc>
+    <lastmod>2026-01-17T15:43:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/calendar/</loc>
+    <lastmod>2026-01-17T15:38:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/calendar/ssc-exam-calendar-2026-27/</loc>
+    <lastmod>2026-01-17T15:38:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -657,16 +682,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/ladli-laxmi-yojana-mp/</loc>
-    <lastmod>2025-12-15T16:56:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/</loc>
-    <lastmod>2025-12-15T12:58:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/scheme/cm-kisan-kalyan-nidhi/</loc>
     <lastmod>2025-12-15T12:49:35+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -749,11 +764,6 @@
   </url><url>
     <loc>http://localhost:1313/bihar/bihar-shs-ophthalmic-assistant-admitcard-2025/</loc>
     <lastmod>2025-12-11T15:14:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/mp-krishi-e-token-registration-portal/</loc>
-    <lastmod>2025-12-10T19:10:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1054,11 +1064,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-airforce-agniveervayu-intake-02-2026/</loc>
     <lastmod>2025-11-06T11:27:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/samadhan-yojana-2025-26/</loc>
-    <lastmod>2025-11-06T11:01:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -2604,11 +2609,6 @@
   </url><url>
     <loc>http://localhost:1313/how-to/check-link-mobile-no-with-aadhar/</loc>
     <lastmod>2025-04-21T09:09:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/pm-krishak-mitra-surya-yojana/</loc>
-    <lastmod>2025-04-17T16:44:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
