@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/</loc>
-    <lastmod>2026-01-17T15:50:14+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rssb-agriculture-supervisor-recruitment-jan26/</loc>
+    <lastmod>2026-01-18T11:19:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-18T11:19:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-female-supervisor-recruitment-jan26/</loc>
+    <lastmod>2026-01-18T11:19:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/up/uppsc-medical-officer-recruitment-dec25/</loc>
+    <lastmod>2026-01-18T11:16:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-forest-service-exam-2026/</loc>
+    <lastmod>2026-01-18T11:15:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-state-service-exam-2026/</loc>
+    <lastmod>2026-01-18T11:15:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/</loc>
     <lastmod>2026-01-17T15:50:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -177,16 +202,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-forest-service-exam-2026/</loc>
-    <lastmod>2026-01-15T12:35:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-state-service-exam-2026/</loc>
-    <lastmod>2026-01-15T12:10:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rssb-clerk-grade-ii-jr-assistant-recruitment-jan26/</loc>
     <lastmod>2026-01-15T11:38:50+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -209,11 +224,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bssc-inter-level-recruitment-2025/</loc>
     <lastmod>2026-01-14T11:27:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rssb-agriculture-supervisor-recruitment-jan26/</loc>
-    <lastmod>2026-01-14T11:22:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -322,11 +332,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rssb-female-supervisor-recruitment-jan26/</loc>
-    <lastmod>2026-01-07T13:19:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/bpssc-home-guard-havildar-clerk-jan26/</loc>
     <lastmod>2026-01-06T19:40:55+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -334,11 +339,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-result-2025/</loc>
     <lastmod>2026-01-05T18:16:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/up/uppsc-medical-officer-recruitment-dec25/</loc>
-    <lastmod>2026-01-05T10:55:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
