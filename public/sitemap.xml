@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/cbi-specialist-officer-recruitment-jan26/</loc>
+    <lastmod>2026-01-20T15:23:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-20T12:24:07+05:30</lastmod>
+    <lastmod>2026-01-20T15:23:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
+    <lastmod>2026-01-20T14:35:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -914,11 +924,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/csir-cdri-recruitment-nov-2025/</loc>
     <lastmod>2025-11-26T15:20:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
-    <lastmod>2025-11-25T17:39:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
