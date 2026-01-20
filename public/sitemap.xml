@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
-    <lastmod>2026-01-19T18:00:39+05:30</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-20T12:24:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/scheme/mukhyamantri-kanya-sumangla-yojana-mksy/</loc>
+    <lastmod>2026-01-20T12:24:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/shramodaya-admission-test-2026%E2%80%9327/</loc>
+    <lastmod>2026-01-20T11:16:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
     <lastmod>2026-01-19T18:00:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -429,11 +439,6 @@
   </url><url>
     <loc>http://localhost:1313/document/voter-card-online-form-details/</loc>
     <lastmod>2025-12-29T12:34:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/shramodaya-admission-test-2026%E2%80%9327/</loc>
-    <lastmod>2025-12-29T11:46:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
