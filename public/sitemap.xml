@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/sci-law-clerk-recruitment-jan26/</loc>
-    <lastmod>2026-01-20T18:41:37+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/namaste-yojana/</loc>
+    <lastmod>2026-01-21T17:12:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-20T18:41:37+05:30</lastmod>
+    <lastmod>2026-01-21T17:12:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
+    <lastmod>2026-01-21T13:03:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sci-law-clerk-recruitment-jan26/</loc>
+    <lastmod>2026-01-21T13:01:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -984,11 +994,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp-sachiv-bharti-nov-2026/</loc>
     <lastmod>2025-11-19T10:37:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
-    <lastmod>2025-11-19T10:35:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
