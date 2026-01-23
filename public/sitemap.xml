@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/iaf-agniveervayu-intake-01-2027-batch/</loc>
-    <lastmod>2026-01-23T18:04:41+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/indian-army-ssc-tech-67th-women-recruitment-jan26/</loc>
+    <lastmod>2026-01-23T18:10:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-army-ssc-tech-67th-men-recruitment-jan26/</loc>
+    <lastmod>2026-01-23T18:10:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-23T18:10:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/iaf-agniveervayu-intake-01-2027-batch/</loc>
     <lastmod>2026-01-23T18:04:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -334,16 +344,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-project-manager-recruitment-2025/</loc>
     <lastmod>2026-01-09T17:03:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/indian-army-ssc-tech-67th-women-recruitment-jan26/</loc>
-    <lastmod>2026-01-09T12:22:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/indian-army-ssc-tech-67th-men-recruitment-jan26/</loc>
-    <lastmod>2026-01-09T11:29:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
