@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rssb-lab-assistant-recruitment-jan26/</loc>
-    <lastmod>2026-01-25T11:47:47+05:30</lastmod>
+    <loc>http://localhost:1313/schemes/farmer-id-annadata-card/</loc>
+    <lastmod>2026-01-25T12:33:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-25T12:33:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-lab-assistant-recruitment-jan26/</loc>
     <lastmod>2026-01-25T11:47:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1682,11 +1687,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/mp/mpesb-excise-constable-feb25/</loc>
-    <lastmod>2025-08-26T10:08:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsc-prosecutor-lecturer-vacancy-2025/</loc>
     <lastmod>2025-08-24T10:17:00+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2652,11 +2652,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/schemes/farmer-id-annadata-card/</loc>
-    <lastmod>2025-04-14T10:27:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/mp/5-rupaye-bijli-pump-yojana-mp/</loc>
     <lastmod>2025-04-09T15:03:35+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2982,7 +2977,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/document/other/mp-citizen-character-verification/</loc>
+    <loc>http://localhost:1313/document/mp/mp-citizen-character-verification/</loc>
     <lastmod>2025-03-03T10:21:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -3117,11 +3112,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/mp/farmer-mpdage-ekrishi-yantra/</loc>
-    <lastmod>2025-01-29T16:40:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/student/2025/mpbse-10th-12th-main-exam-2024-25/</loc>
     <lastmod>2025-01-28T20:43:49+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -3239,11 +3229,6 @@
   </url><url>
     <loc>http://localhost:1313/student/mp/sharmodaya-admission-2025/</loc>
     <lastmod>2025-01-09T20:59:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/mp/agristack-farmer-registry/</loc>
-    <lastmod>2025-01-09T16:35:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
