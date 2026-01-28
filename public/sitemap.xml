@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/indian-navy-ssc-officer-st27/</loc>
-    <lastmod>2026-01-28T12:35:47+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-01-28T18:05:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/yantra-india-limited-apprentice-jan26/</loc>
+    <lastmod>2026-01-28T18:05:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-28T18:05:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/btsc-work-inspector-mechanical-recruitment-dec25/</loc>
+    <lastmod>2026-01-28T12:58:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/btsc-pump-operator-recruitment-dec25/</loc>
+    <lastmod>2026-01-28T12:57:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-navy-ssc-officer-st27/</loc>
     <lastmod>2026-01-28T12:35:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -274,11 +294,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-stenographer-recruitment-jan26/</loc>
     <lastmod>2026-01-16T13:16:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-01-16T12:34:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -802,11 +817,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/btsc-pump-operator-recruitment-dec25/</loc>
-    <lastmod>2025-12-13T16:40:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/btsc-dental-hygienist-recruitment-2025/</loc>
     <lastmod>2025-12-13T15:14:28+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -819,11 +829,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/btsc-works-supervisor-recruitment-2025/</loc>
     <lastmod>2025-12-13T15:14:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/btsc-work-inspector-mechanical-recruitment-dec25/</loc>
-    <lastmod>2025-12-13T15:09:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
