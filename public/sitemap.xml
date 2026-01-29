@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/bpsc-research-officer-recruitment-jan26/</loc>
+    <lastmod>2026-01-29T10:49:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-29T10:49:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-computer-assistant-admit-card-2025/</loc>
+    <lastmod>2026-01-28T18:36:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-mts-exam-date-2025/</loc>
+    <lastmod>2026-01-28T18:34:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-admit-card-2025/</loc>
+    <lastmod>2026-01-28T18:32:44+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2026-01-28T18:05:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentice/yantra-india-limited-apprentice-jan26/</loc>
-    <lastmod>2026-01-28T18:05:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-01-28T18:05:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -234,16 +254,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nabard-development-assistant-recruitment-jan26/</loc>
     <lastmod>2026-01-17T13:02:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-admit-card-2025/</loc>
-    <lastmod>2026-01-17T12:11:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-mts-exam-date-2025/</loc>
-    <lastmod>2026-01-17T12:03:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -974,11 +984,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rbi-officer-grade-b-vacancy-2025/</loc>
     <lastmod>2025-11-29T14:03:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/uppsc-computer-assistant-admit-card-2025/</loc>
-    <lastmod>2025-11-28T17:29:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
