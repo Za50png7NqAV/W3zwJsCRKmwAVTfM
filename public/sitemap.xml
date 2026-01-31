@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/pm-shram-yogi-mandhan-yojana-pmsym/</loc>
-    <lastmod>2026-01-30T12:51:55+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
+    <lastmod>2026-01-31T11:00:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-31T11:00:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-mts-exam-date-2025/</loc>
+    <lastmod>2026-01-31T10:52:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
+    <lastmod>2026-01-31T10:49:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
+    <lastmod>2026-01-31T10:44:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-shram-yogi-mandhan-yojana-pmsym/</loc>
     <lastmod>2026-01-30T12:51:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -52,11 +72,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-mts-exam-date-2025/</loc>
-    <lastmod>2026-01-28T18:34:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-admit-card-2025/</loc>
     <lastmod>2026-01-28T18:32:44+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -89,11 +104,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp-iti-training-officer-recruitment-jan26/</loc>
     <lastmod>2026-01-28T11:37:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
-    <lastmod>2026-01-28T11:36:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -149,11 +159,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp-police-si-subedar-recruitment-2025/</loc>
     <lastmod>2026-01-23T18:56:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppeb-group-2-sub-group-3-vacancy-2025/</loc>
-    <lastmod>2026-01-23T18:53:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -214,11 +219,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/shramodaya-admission-test-2026%E2%80%9327/</loc>
     <lastmod>2026-01-20T11:16:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
-    <lastmod>2026-01-19T18:00:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
