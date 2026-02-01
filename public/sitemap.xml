@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/jobs/jpsc-cce-2026/</loc>
-    <lastmod>2026-02-01T11:21:52+05:30</lastmod>
+    <lastmod>2026-02-01T11:29:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-01T11:21:52+05:30</lastmod>
+    <lastmod>2026-02-01T11:29:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-02-01T11:28:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/yantra-india-limited-apprentice-jan26/</loc>
+    <lastmod>2026-02-01T11:28:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -114,16 +124,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-admit-card-2025/</loc>
     <lastmod>2026-01-28T18:32:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-01-28T18:05:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/yantra-india-limited-apprentice-jan26/</loc>
-    <lastmod>2026-01-28T18:05:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
