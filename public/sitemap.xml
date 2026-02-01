@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
-    <lastmod>2026-02-01T18:21:02+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bsnl-set-recruitment-jan26/</loc>
+    <lastmod>2026-02-01T19:41:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-01T19:41:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
     <lastmod>2026-02-01T18:21:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -2813,11 +2818,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/2025/mp-euarjan-ravi-pajiyan-2025/</loc>
-    <lastmod>2025-02-07T19:15:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/mp/mp-euparjan-ravi-pajiyan-2025/</loc>
     <lastmod>2025-02-07T19:15:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
