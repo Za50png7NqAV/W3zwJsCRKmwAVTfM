@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/upsc-civil-services-ias-ifs-form-feb26/</loc>
-    <lastmod>2026-02-04T18:33:21+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-asi-hc-computer-recruitment-feb26/</loc>
+    <lastmod>2026-02-05T09:50:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-05T09:50:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bsnl-set-recruitment-jan26/</loc>
+    <lastmod>2026-02-05T09:49:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-auditor-recruitment-jan26/</loc>
+    <lastmod>2026-02-05T09:49:05+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-civil-services-ias-ifs-form-feb26/</loc>
     <lastmod>2026-02-04T18:33:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -59,11 +74,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-vanpal-recruitment-jan26/</loc>
     <lastmod>2026-02-03T19:25:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-asi-hc-computer-recruitment-feb26/</loc>
-    <lastmod>2026-02-03T19:04:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -119,11 +129,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-mts-admit-card-2025/</loc>
     <lastmod>2026-02-02T11:50:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bsnl-set-recruitment-jan26/</loc>
-    <lastmod>2026-02-01T19:41:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -234,11 +239,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
     <lastmod>2026-01-29T12:07:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-auditor-recruitment-jan26/</loc>
-    <lastmod>2026-01-29T11:36:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
