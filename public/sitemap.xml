@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/hssc-stenographer-recruitment-feb26/</loc>
+    <lastmod>2026-02-07T17:34:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-07T17:34:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/profile/mptaas-profile-otr-update/</loc>
     <lastmod>2026-02-07T13:17:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/otr/</loc>
-    <lastmod>2026-02-07T13:17:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-07T13:17:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -2967,11 +2972,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/student/mp/sharmodaya-admission-2025/</loc>
-    <lastmod>2025-01-09T20:59:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/2024/ctet-december-2024/</loc>
     <lastmod>2025-01-09T12:18:03+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2987,18 +2987,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/student/mp/mptaas-scholarship-profile/</loc>
-    <lastmod>2025-01-05T19:50:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/document/mp/sambal-card-apply-download/</loc>
     <lastmod>2025-01-02T18:59:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/student/mp/gaon-ki-beti-schorlarship/</loc>
-    <lastmod>2025-01-02T10:05:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
