@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/csbc-bihar-police-constable-recruitment-jan26/</loc>
-    <lastmod>2026-02-06T12:19:38+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
+    <lastmod>2026-02-07T11:05:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
+    <lastmod>2026-02-07T11:05:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-07T11:05:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/csbc-bihar-police-constable-recruitment-jan26/</loc>
     <lastmod>2026-02-06T12:19:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -152,11 +162,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
-    <lastmod>2026-02-01T18:21:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/document/mp-character-certificate/</loc>
     <lastmod>2026-02-01T14:57:34+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -209,11 +214,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/btsc-pump-operator-recruitment-dec25/</loc>
     <lastmod>2026-01-31T12:10:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
-    <lastmod>2026-01-31T11:00:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
