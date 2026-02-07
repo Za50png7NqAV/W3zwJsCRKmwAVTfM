@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rbi-non-csg-recruitment-feb26/</loc>
-    <lastmod>2026-02-07T12:01:27+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-02-07T12:33:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/pnb-apprentice-recruitment-feb26/</loc>
+    <lastmod>2026-02-07T12:33:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-07T12:33:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rbi-non-csg-recruitment-feb26/</loc>
     <lastmod>2026-02-07T12:01:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -189,11 +199,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/jpsc-cce-2026/</loc>
     <lastmod>2026-02-01T11:29:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-02-01T11:28:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
