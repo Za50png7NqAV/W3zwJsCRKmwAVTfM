@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/super-100-examination-form-2026/</loc>
-    <lastmod>2026-02-08T10:40:35+05:30</lastmod>
+    <loc>http://localhost:1313/admission/bihar-rte-admission-2026%E2%80%9327/</loc>
+    <lastmod>2026-02-08T12:25:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-08T12:25:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-02-08T11:26:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/pnb-apprentice-recruitment-feb26/</loc>
+    <lastmod>2026-02-08T11:26:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/hpsc-civil-service-exam-2026/</loc>
+    <lastmod>2026-02-08T11:24:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/railway/rrb-section-controller-admitcard-2025/</loc>
+    <lastmod>2026-02-08T11:22:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/super-100-examination-form-2026/</loc>
     <lastmod>2026-02-08T10:40:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -29,16 +54,6 @@
   </url><url>
     <loc>http://localhost:1313/otr/</loc>
     <lastmod>2026-02-07T13:17:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-02-07T12:33:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/pnb-apprentice-recruitment-feb26/</loc>
-    <lastmod>2026-02-07T12:33:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -64,11 +79,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/csbc-bihar-police-constable-recruitment-jan26/</loc>
     <lastmod>2026-02-06T12:19:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/hpsc-civil-service-exam-2026/</loc>
-    <lastmod>2026-02-06T12:18:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -174,11 +184,6 @@
   </url><url>
     <loc>http://localhost:1313/calendar/uppsc-exam-calendar-2026/</loc>
     <lastmod>2026-02-03T15:21:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/railway/rrb-section-controller-admitcard-2025/</loc>
-    <lastmod>2026-02-03T13:25:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
