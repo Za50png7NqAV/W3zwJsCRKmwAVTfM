@@ -1937,11 +1937,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/student/</loc>
-    <lastmod>2025-08-16T09:34:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/education/mp/super-100-examination-form-2025/</loc>
     <lastmod>2025-08-16T09:34:02+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2518,6 +2513,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/student/mp-board/results/2025/</loc>
+    <lastmod>2025-05-06T08:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/student/</loc>
     <lastmod>2025-05-06T08:22:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
