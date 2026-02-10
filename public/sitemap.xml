@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/hssc-cet-group-c-recruitment-feb26/</loc>
-    <lastmod>2026-02-09T12:37:47+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-02-09T14:57:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/pnb-apprentice-recruitment-feb26/</loc>
+    <lastmod>2026-02-09T14:57:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-09T14:57:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/hssc-cet-group-c-recruitment-feb26/</loc>
     <lastmod>2026-02-09T12:37:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -34,16 +44,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/bihar-rte-admission-2026%E2%80%9327/</loc>
     <lastmod>2026-02-08T12:25:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-02-08T11:26:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/pnb-apprentice-recruitment-feb26/</loc>
-    <lastmod>2026-02-08T11:26:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
