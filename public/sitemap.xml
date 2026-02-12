@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mp/mpesb-group-1-sub-group-2-recruitment-dec25/</loc>
-    <lastmod>2026-02-12T12:05:12+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-result-2025/</loc>
+    <lastmod>2026-02-12T12:18:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-12T12:18:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/mpesb-group-1-sub-group-2-recruitment-dec25/</loc>
     <lastmod>2026-02-12T12:05:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -354,11 +359,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/uppsc-computer-assistant-admit-card-2025/</loc>
     <lastmod>2026-01-28T18:36:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-admit-card-2025/</loc>
-    <lastmod>2026-01-28T18:32:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
