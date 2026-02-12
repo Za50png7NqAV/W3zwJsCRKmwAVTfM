@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/how-to/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NPCT DBT 2025: Benefits, Purpose, and Complete Guide</title>
-      <link>http://localhost:1313/bank/dbt-aadhar-linking-with-npci/</link>
+      <link>http://localhost:1313/how/dbt-aadhar-linking-with-npci/</link>
       <pubDate>Sun, 07 Sep 2025 13:04:33 +0530</pubDate>
-      <guid>http://localhost:1313/bank/dbt-aadhar-linking-with-npci/</guid>
+      <guid>http://localhost:1313/how/dbt-aadhar-linking-with-npci/</guid>
       <description>NPCT DBT (National Payments Corporation of India – Direct Benefit Transfer) enables the Indian government to transfer subsidies, pensions, scholarships, and other benefits directly to beneficiaries’ bank accounts. It ensures fast, secure, and transparent payments by linking beneficiaries’ Aadhaar numbers with their bank accounts. Payments can be tracked via bank statements, the DBT Bharat Portal, or the UMANG app. This system covers various schemes such as LPG subsidies, MGNREGA wages, farmer support, pensions, and student scholarships.</description>
     </item>
     <item>
@@ -49,6 +49,13 @@
       <pubDate>Mon, 05 May 2025 18:11:08 +0530</pubDate>
       <guid>http://localhost:1313/how-to/samagra-adhar-de-link-mp/</guid>
       <description>समग्र आधार डी-लिंक प्रक्रिया के माध्यम से समग्र पोर्टल पर आधार कार्ड को सही ढंग से लिंक या डी-लिंक करें। इस पृष्ठ पर आपको समग्र ID से आधार को हटाने की प्रक्रिया, आवश्यक दस्तावेज़, और फॉर्म डाउनलोड करने का तरीका मिलेगा।</description>
+    </item>
+    <item>
+      <title>Ration Card e-KYC Mobile Se Kare </title>
+      <link>http://localhost:1313/howto/ration-card-ekyc/</link>
+      <pubDate>Thu, 01 May 2025 11:10:53 +0530</pubDate>
+      <guid>http://localhost:1313/howto/ration-card-ekyc/</guid>
+      <description>राशन कार्ड eKYC ऑनलाइन</description>
     </item>
     <item>
       <title>How to Check Linked Mobile Number With Aadhar</title>
