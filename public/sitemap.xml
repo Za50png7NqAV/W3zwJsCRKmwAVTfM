@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/indian-army-men-ncc-124th-course-oct-2026/</loc>
-    <lastmod>2026-02-12T17:34:32+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/indian-army-women-ncc-124th-course-oct-2026/</loc>
+    <lastmod>2026-02-12T18:02:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-12T18:02:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-army-men-ncc-124th-course-oct-2026/</loc>
     <lastmod>2026-02-12T17:34:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
