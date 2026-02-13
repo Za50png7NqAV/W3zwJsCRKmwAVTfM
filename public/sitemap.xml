@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/aiims-norcet-10th-nursing-officer-feb26/</loc>
+    <lastmod>2026-02-13T13:18:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-13T13:18:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/upsc-ies-iss-recruitment-feb26/</loc>
     <lastmod>2026-02-13T12:21:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-13T12:21:25+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bpsc-professor-recruitment-jan26/</loc>
+    <lastmod>2026-02-13T11:53:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -349,11 +359,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/yantra-india-limited-apprentice-jan26/</loc>
     <lastmod>2026-02-01T11:28:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-professor-recruitment-jan26/</loc>
-    <lastmod>2026-01-31T15:20:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
