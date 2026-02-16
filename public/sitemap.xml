@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/aiims-norcet-10th-nursing-officer-feb26/</loc>
-    <lastmod>2026-02-13T13:18:30+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/jpsc-cce-2026/</loc>
+    <lastmod>2026-02-14T19:27:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-14T19:27:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-vacancy-2025/</loc>
+    <lastmod>2026-02-14T19:05:05+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
+    <lastmod>2026-02-14T19:01:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/aiims-norcet-10th-nursing-officer-feb26/</loc>
     <lastmod>2026-02-13T13:18:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -352,11 +367,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/jpsc-cce-2026/</loc>
-    <lastmod>2026-02-01T11:29:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/yantra-india-limited-apprentice-jan26/</loc>
     <lastmod>2026-02-01T11:28:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -437,11 +447,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-police-constable-result-2025/</loc>
-    <lastmod>2026-01-25T17:56:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/document/udid-disability-certificate/</loc>
     <lastmod>2026-01-25T13:12:42+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -509,11 +514,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sci-law-clerk-recruitment-jan26/</loc>
     <lastmod>2026-01-21T13:01:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
-    <lastmod>2026-01-20T14:35:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
