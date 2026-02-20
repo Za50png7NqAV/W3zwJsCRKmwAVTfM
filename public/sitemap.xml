@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrc-wr-apprentice-recruitment-feb26/</loc>
-    <lastmod>2026-02-20T17:00:08+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/hpsc-pgt-cs-recruitment-feb26/</loc>
+    <lastmod>2026-02-20T17:40:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-20T17:40:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-atp-recruitment-feb26/</loc>
+    <lastmod>2026-02-20T17:05:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrc-wr-apprentice-recruitment-feb26/</loc>
     <lastmod>2026-02-20T17:00:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -334,11 +344,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-vanpal-recruitment-jan26/</loc>
     <lastmod>2026-02-03T19:25:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-atp-recruitment-feb26/</loc>
-    <lastmod>2026-02-03T18:14:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
