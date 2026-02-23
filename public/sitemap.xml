@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bpsc-33rd-judicial-services-recruitment-feb26/</loc>
-    <lastmod>2026-02-23T16:47:44+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/csbc-constable-operator-recruitment-feb26/</loc>
+    <lastmod>2026-02-23T17:37:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-23T17:37:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-33rd-judicial-services-recruitment-feb26/</loc>
     <lastmod>2026-02-23T16:47:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
