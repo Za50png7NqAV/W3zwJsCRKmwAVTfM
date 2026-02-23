@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/upsc-capf-ac-recruitment-feb26/</loc>
-    <lastmod>2026-02-21T12:47:19+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bpsc-33rd-judicial-services-recruitment-feb26/</loc>
+    <lastmod>2026-02-23T16:47:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-23T16:47:44+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sci-assistant-recruitment-feb26/</loc>
+    <lastmod>2026-02-23T15:23:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
+    <lastmod>2026-02-23T15:16:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-capf-ac-recruitment-feb26/</loc>
     <lastmod>2026-02-21T12:47:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -19,11 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/rrc-wr-apprentice-recruitment-feb26/</loc>
     <lastmod>2026-02-21T11:52:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sci-assistant-recruitment-feb26/</loc>
-    <lastmod>2026-02-21T11:43:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -169,11 +179,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ib-security-assistant-2025/</loc>
     <lastmod>2026-02-10T16:58:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
-    <lastmod>2026-02-10T12:01:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
