@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/sbi-deputy-manager-avp-recruitment-feb26/</loc>
-    <lastmod>2026-02-23T18:36:42+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/sib-junior-officer-recruitment-feb26/</loc>
+    <lastmod>2026-02-24T11:05:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-24T11:05:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/dsssb-01-2026/</loc>
+    <lastmod>2026-02-24T10:42:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-deputy-manager-avp-recruitment-feb26/</loc>
     <lastmod>2026-02-23T18:36:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -64,11 +74,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-atp-recruitment-feb26/</loc>
     <lastmod>2026-02-20T17:05:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/dsssb-01-2026/</loc>
-    <lastmod>2026-02-20T15:29:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
