@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/iaf-agniveervayu-intake-01-2027-batch/</loc>
-    <lastmod>2026-02-25T14:01:26+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bpsc-apo-recruitment-feb26/</loc>
+    <lastmod>2026-02-25T19:54:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-25T19:54:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-vacancy-2025/</loc>
+    <lastmod>2026-02-25T14:43:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/iaf-agniveervayu-intake-01-2027-batch/</loc>
     <lastmod>2026-02-25T14:01:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -454,11 +464,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/csb-scientist-recruitment-jan26/</loc>
     <lastmod>2026-02-01T12:33:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-result-2025/</loc>
-    <lastmod>2026-02-01T12:31:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
