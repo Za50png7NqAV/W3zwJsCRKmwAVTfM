@@ -2907,11 +2907,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/document/card/passport-card-apply/</loc>
-    <lastmod>2025-03-13T16:19:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mp/2025/05/mpesb-constable-june23/</loc>
     <lastmod>2025-03-13T09:13:53+05:30</lastmod>
     <changefreq>daily</changefreq>
