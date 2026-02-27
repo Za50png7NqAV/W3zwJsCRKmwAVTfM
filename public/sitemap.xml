@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2026-02-26T17:09:09+05:30</lastmod>
+    <loc>http://localhost:1313/document/passport-apply-online/</loc>
+    <lastmod>2026-02-27T14:19:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-27T14:19:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-bhulekh-data-entry-operator-deo-vacancy-2026/</loc>
+    <lastmod>2026-02-27T10:45:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-apo-recruitment-feb26/</loc>
+    <lastmod>2026-02-27T10:45:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/dsssb-02-2026/</loc>
+    <lastmod>2026-02-27T10:45:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
     <lastmod>2026-02-26T17:09:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -39,16 +59,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
     <lastmod>2026-02-26T10:41:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/dsssb-02-2026/</loc>
-    <lastmod>2026-02-26T10:20:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-apo-recruitment-feb26/</loc>
-    <lastmod>2026-02-25T19:54:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -99,11 +109,6 @@
   </url><url>
     <loc>http://localhost:1313/document/mp-sambal-card-download-apply/</loc>
     <lastmod>2026-02-24T15:42:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-bhulekh-data-entry-operator-deo-vacancy-2026/</loc>
-    <lastmod>2026-02-24T15:09:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
