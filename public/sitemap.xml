@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/idbi-bank-am-jam-recruitment-mar26/</loc>
-    <lastmod>2026-03-07T15:28:47+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/gaon-ki-beti-scholarship-form-2025-26/</loc>
+    <lastmod>2026-03-07T16:21:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-07T16:21:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/idbi-bank-am-jam-recruitment-mar26/</loc>
     <lastmod>2026-03-07T15:28:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -309,11 +314,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-army-agniveer-rally-recruitment-feb26/</loc>
     <lastmod>2026-02-13T11:35:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/gaon-ki-beti-scholarship-form-2025-26/</loc>
-    <lastmod>2026-02-12T19:07:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
