@@ -2,13 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
-    <lastmod>2026-02-25T13:46:57+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/idbi-bank-am-jam-recruitment-mar26/</loc>
+    <lastmod>2026-03-07T15:28:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-05T09:41:59+05:30</lastmod>
+    <lastmod>2026-03-07T15:28:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rbi-non-csg-recruitment-feb26/</loc>
+    <lastmod>2026-03-07T12:16:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-police-si-admitcard-2025/</loc>
+    <lastmod>2026-03-07T12:12:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/super-100-examination-form-2026/</loc>
+    <lastmod>2026-03-07T12:05:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
+    <lastmod>2026-03-07T12:03:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
+    <lastmod>2026-02-25T13:46:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -139,11 +164,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/dsssb-02-2026/</loc>
     <lastmod>2026-02-27T10:45:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2026-02-26T17:09:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -397,11 +417,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/super-100-examination-form-2026/</loc>
-    <lastmod>2026-02-08T10:40:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/bob-manager-recruitment-feb26/</loc>
     <lastmod>2026-02-07T18:13:28+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -414,11 +429,6 @@
   </url><url>
     <loc>http://localhost:1313/profile/mptaas-profile-otr-update/</loc>
     <lastmod>2026-02-07T13:17:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rbi-non-csg-recruitment-feb26/</loc>
-    <lastmod>2026-02-07T12:01:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1314,11 +1324,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-patwari-bharti-2025/</loc>
     <lastmod>2025-12-04T11:34:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-police-si-admitcard-2025/</loc>
-    <lastmod>2025-12-04T11:28:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
