@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/education/bihar-board-10th-12th-result-2026/</loc>
-    <lastmod>2026-03-10T12:39:49+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-03-10T15:24:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-03-10T12:39:49+05:30</lastmod>
+    <loc>http://localhost:1313/education/up-board-10th-12th-result-2026/</loc>
+    <lastmod>2026-03-10T15:24:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-10T15:24:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/samagra-portal/</loc>
+    <lastmod>2026-03-10T14:49:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/samadhan-yojana-2025-26/</loc>
+    <lastmod>2026-03-10T14:42:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/bihar-board-10th-12th-result-2026/</loc>
     <lastmod>2026-03-10T12:39:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -747,11 +762,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/samadhan-yojana-2025-26/</loc>
-    <lastmod>2026-01-17T15:45:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/calendar/ssc-exam-calendar-2026-27/</loc>
     <lastmod>2026-01-17T15:38:06+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -979,11 +989,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/nta-nchm-jee-2026/</loc>
     <lastmod>2025-12-28T11:20:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/samagra-portal/</loc>
-    <lastmod>2025-12-28T09:45:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
