@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-chsl-2025/</loc>
-    <lastmod>2026-03-09T17:54:58+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-03-10T11:15:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/mp-board-10th-12th-result-2026/</loc>
+    <lastmod>2026-03-10T11:15:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-10T11:15:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
+    <lastmod>2026-03-10T11:00:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-chsl-2025/</loc>
     <lastmod>2026-03-09T17:54:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -372,11 +387,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-02-12T12:23:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/education/mpsos-ruk-jana-nahi-rjn-aa-laut-chale-alc-dec-2025/</loc>
     <lastmod>2026-02-12T12:23:18+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -687,11 +697,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
-    <lastmod>2026-01-21T13:03:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/sci-law-clerk-recruitment-jan26/</loc>
     <lastmod>2026-01-21T13:01:09+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -749,11 +754,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nabard-development-assistant-recruitment-jan26/</loc>
     <lastmod>2026-01-17T13:02:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-board-10th-12th-admit-card-2026/</loc>
-    <lastmod>2026-01-17T11:58:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
