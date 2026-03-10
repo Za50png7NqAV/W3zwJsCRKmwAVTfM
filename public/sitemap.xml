@@ -3,16 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-03-10T15:24:54+05:30</lastmod>
+    <lastmod>2026-03-10T15:27:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/up-board-10th-12th-result-2026/</loc>
-    <lastmod>2026-03-10T15:24:54+05:30</lastmod>
+    <loc>http://localhost:1313/education/mp-board-10th-12th-result-2026/</loc>
+    <lastmod>2026-03-10T15:27:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-10T15:27:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/up-board-10th-12th-result-2026/</loc>
     <lastmod>2026-03-10T15:24:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -29,11 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/education/bihar-board-10th-12th-result-2026/</loc>
     <lastmod>2026-03-10T12:39:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-board-10th-12th-result-2026/</loc>
-    <lastmod>2026-03-10T11:15:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
