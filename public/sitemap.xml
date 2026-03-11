@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/indian-navy-ssr-medical-02-2027/</loc>
-    <lastmod>2026-03-11T11:23:06+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/indian-navy-agniveer-mr-ssr-inet-2026/</loc>
+    <lastmod>2026-03-11T12:42:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-11T12:42:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/samagra-portal/</loc>
+    <lastmod>2026-03-11T12:12:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-navy-ssr-medical-02-2027/</loc>
     <lastmod>2026-03-11T11:23:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -44,11 +54,6 @@
   </url><url>
     <loc>http://localhost:1313/education/up-board-10th-12th-result-2026/</loc>
     <lastmod>2026-03-10T15:24:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/samagra-portal/</loc>
-    <lastmod>2026-03-10T14:49:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
