@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2026-03-10T19:22:42+05:30</lastmod>
+    <loc>http://localhost:1313/admission/shramodaya-admission-test-2026%E2%80%9327/</loc>
+    <lastmod>2026-03-11T10:21:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-11T10:21:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/soe-som-class-9-admission-2026%E2%80%9327/</loc>
+    <lastmod>2026-03-11T10:06:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
     <lastmod>2026-03-10T19:22:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -532,11 +542,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/soe-som-class-9-admission-2026%E2%80%9327/</loc>
-    <lastmod>2026-02-04T12:26:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/delhi-hc-jja-restorer-recruitment-jan26/</loc>
     <lastmod>2026-02-04T10:37:35+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -724,11 +729,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mukhyamantri-kanya-sumangla-yojana-mksy/</loc>
     <lastmod>2026-01-20T12:24:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/shramodaya-admission-test-2026%E2%80%9327/</loc>
-    <lastmod>2026-01-20T11:16:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
