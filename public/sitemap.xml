@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/document/samagra-portal/</loc>
-    <lastmod>2026-03-17T16:03:15+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
+    <lastmod>2026-03-17T18:50:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-17T18:50:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
+    <lastmod>2026-03-17T18:14:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/samagra-portal/</loc>
     <lastmod>2026-03-17T16:03:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1359,11 +1369,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-sports-officer-vacancy-2025/</loc>
     <lastmod>2025-12-05T11:28:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
-    <lastmod>2025-12-05T10:36:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
