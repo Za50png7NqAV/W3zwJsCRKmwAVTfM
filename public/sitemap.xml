@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssb-constable-tradesman-recruitment-mar26/</loc>
-    <lastmod>2026-03-19T16:29:26+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-03-19T19:28:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/secl-apprentice-recruitment-mar26/</loc>
+    <lastmod>2026-03-19T19:28:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-19T19:28:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssb-constable-tradesman-recruitment-mar26/</loc>
     <lastmod>2026-03-19T16:29:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -104,11 +114,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-group-5-recruitment-mar26/</loc>
     <lastmod>2026-03-17T14:43:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-03-15T13:15:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
