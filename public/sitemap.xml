@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/bihar-iti-cat-2026/</loc>
-    <lastmod>2026-03-19T12:12:14+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ssb-si-recruitment-mar26/</loc>
+    <lastmod>2026-03-19T15:43:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-19T15:43:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ncert-non-academic-recruitment-dec25/</loc>
+    <lastmod>2026-03-19T14:25:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-vacancy-2025/</loc>
+    <lastmod>2026-03-19T14:20:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/bihar-iti-cat-2026/</loc>
     <lastmod>2026-03-19T12:12:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -284,11 +299,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-je-admit-card-2025/</loc>
     <lastmod>2026-03-04T17:23:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-vacancy-2025/</loc>
-    <lastmod>2026-03-04T17:09:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -869,11 +879,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-factory-inspector-recruitment-jan26/</loc>
     <lastmod>2026-01-16T16:37:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ncert-non-academic-recruitment-dec25/</loc>
-    <lastmod>2026-01-16T15:46:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
