@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/mp-pat-2026/</loc>
-    <lastmod>2026-03-18T18:55:43+05:30</lastmod>
+    <loc>http://localhost:1313/admission/kvs-class-1-admission-form-2026/</loc>
+    <lastmod>2026-03-19T11:20:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-19T11:20:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
+    <lastmod>2026-03-19T10:19:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
+    <lastmod>2026-03-19T10:09:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-iti-training-officer-recruitment-jan26/</loc>
+    <lastmod>2026-03-19T10:06:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-pat-2026/</loc>
     <lastmod>2026-03-18T18:55:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -29,11 +49,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
     <lastmod>2026-03-17T18:50:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
-    <lastmod>2026-03-17T18:14:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -267,11 +282,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
-    <lastmod>2026-03-04T17:16:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-vacancy-2025/</loc>
     <lastmod>2026-03-04T17:09:51+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -439,11 +449,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/mp-set-2025/</loc>
     <lastmod>2026-02-20T18:12:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-iti-training-officer-recruitment-jan26/</loc>
-    <lastmod>2026-02-20T17:49:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
