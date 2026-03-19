@@ -16,7 +16,7 @@
 {{ range $pinFirst }}  {{ $.Scratch.Add "orderedStudents" (slice .) }} {{ end }}
 {{ range $normal }}    {{ $.Scratch.Add "orderedStudents" (slice .) }} {{ end }}
 {{ range $pinLast }}   {{ $.Scratch.Add "orderedStudents" (slice .) }} {{ end }}
-{{ $ordered := first 15 ($.Scratch.Get "orderedStudents") }}
+{{ $ordered := first 25 ($.Scratch.Get "orderedStudents") }}
 
 {{/* Final Output */}}
 {{ range $ordered }}

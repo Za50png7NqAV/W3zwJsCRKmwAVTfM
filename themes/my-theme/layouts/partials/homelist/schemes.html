@@ -22,7 +22,7 @@
 {{ range $pinFirst }}  {{ $.Scratch.Add "orderedSchemes" (slice .) }} {{ end }}
 {{ range $normal }}    {{ $.Scratch.Add "orderedSchemes" (slice .) }} {{ end }}
 {{ range $pinLast }}   {{ $.Scratch.Add "orderedSchemes" (slice .) }} {{ end }}
-{{ $ordered := first 10 ($.Scratch.Get "orderedSchemes") }}
+{{ $ordered := first 20 ($.Scratch.Get "orderedSchemes") }}
 
 {{/* ✅ Step 4: Render Output */}}
 {{ range $ordered }}
