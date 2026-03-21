@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mppsc-scientific-officer-pcb-mar26/</loc>
-    <lastmod>2026-03-20T15:06:50+05:30</lastmod>
+    <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
+    <lastmod>2026-03-21T13:01:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-21T13:01:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sci-court-master-vacancy-2025/</loc>
+    <lastmod>2026-03-21T10:45:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/drdo-ceptam-11-recruitment-dec25/</loc>
+    <lastmod>2026-03-21T10:40:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
+    <lastmod>2026-03-21T10:33:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-paramedical-various-posts-2025/</loc>
+    <lastmod>2026-03-21T10:26:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-scientific-officer-pcb-mar26/</loc>
     <lastmod>2026-03-20T15:06:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -84,11 +109,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
     <lastmod>2026-03-19T10:19:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-technician-2025/</loc>
-    <lastmod>2026-03-19T10:09:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -254,11 +274,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/up-police-si-admitcard-2025/</loc>
     <lastmod>2026-03-09T17:39:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-paramedical-various-posts-2025/</loc>
-    <lastmod>2026-03-09T17:36:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1057,11 +1072,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/drdo-ceptam-11-recruitment-dec25/</loc>
-    <lastmod>2025-12-31T18:16:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/document/up-income-domicile-caste-certificate-apply-online/</loc>
     <lastmod>2025-12-31T16:56:43+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1589,11 +1599,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/iob-specialist-officers-admit-card-2025/</loc>
     <lastmod>2025-11-13T10:36:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sci-court-master-admit-card-2025/</loc>
-    <lastmod>2025-11-10T16:52:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
