@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
-    <lastmod>2026-03-21T13:01:40+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ssb-paramedical-staff-mar26/</loc>
+    <lastmod>2026-03-21T15:48:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-21T15:48:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssb-si-recruitment-mar26/</loc>
+    <lastmod>2026-03-21T15:12:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssb-head-constable-recruitment-mar26/</loc>
+    <lastmod>2026-03-21T15:10:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssb-constable-tradesman-recruitment-mar26/</loc>
+    <lastmod>2026-03-21T15:07:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
     <lastmod>2026-03-21T13:01:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -67,11 +87,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssb-head-constable-recruitment-mar26/</loc>
-    <lastmod>2026-03-19T19:59:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2026-03-19T19:28:35+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -79,16 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/secl-apprentice-recruitment-mar26/</loc>
     <lastmod>2026-03-19T19:28:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssb-constable-tradesman-recruitment-mar26/</loc>
-    <lastmod>2026-03-19T16:29:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssb-si-recruitment-mar26/</loc>
-    <lastmod>2026-03-19T15:43:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
