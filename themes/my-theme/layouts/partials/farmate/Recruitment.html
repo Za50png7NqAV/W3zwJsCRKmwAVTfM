@@ -101,6 +101,9 @@
   {{ end }}
   {{ partial "farmate/parts/link-table.html" . }}
 
+  {{ if .Params.qualifications }}
+   {{ partial "farmate/parts/other/related_post.html" . }}
+ {{ end }}
 <hr>
 
   <div style="overflow-x:auto;">
@@ -171,6 +174,8 @@
   {{ partial "farmate/parts/faqs.html" . }}
     </div>
     {{ end }} 
+
+     
 </div>
   
   <!-- बाकी के partials जैसे adsense, random-list, keywords -->

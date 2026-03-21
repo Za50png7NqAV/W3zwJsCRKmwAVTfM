@@ -1,0 +1,50 @@
+{{ $today := now.Format "2006-01-02" }}
+
+{{ $currentLevel := .Params.qualification_level }}
+
+{{ $related := where .Site.RegularPages "Params.qualification_level" ">=" $currentLevel }}
+
+{{ if .Params.categories }}
+  {{ $related = where $related "Params.categories" "intersect" .Params.categories }}
+{{ end }}
+
+<h3 class="section-title">🎯 Eligible Jobs For You</h3>
+
+<div class="job-grid">
+
+{{ range $related }}
+
+  {{ if and 
+      .Params.qualification_level 
+      .Params.lastdate 
+      (ne .Permalink $.Permalink) 
+      (ge .Params.lastdate $today) 
+  }}
+
+    <div class="job-card">
+      
+      <h4 class="job-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h4>
+
+      <div class="job-meta">
+        <span class="last-date">📅 Last Date: {{ .Params.lastdate }}</span>
+      </div>
+
+      <div class="badges">
+        {{ range .Params.qualification }}
+          <span class="badge">{{ . }}</span>
+        {{ end }}
+
+        
+      </div>
+
+      
+
+    </div>
+
+  {{ end }}
+
+{{ end }}
+
+</div>
