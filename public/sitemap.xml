@@ -17,6 +17,16 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-03-21T15:12:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/force/</loc>
+    <lastmod>2026-03-21T15:12:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/ssb-si-recruitment-mar26/</loc>
     <lastmod>2026-03-21T15:12:18+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -3019,11 +3029,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pm/2025/char-dham-yatra-regitration/</loc>
     <lastmod>2025-03-21T19:57:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-03-20T19:15:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
