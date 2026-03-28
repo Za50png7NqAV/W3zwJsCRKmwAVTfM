@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/schemepm-internship-yojana-pmis/</loc>
+    <lastmod>2026-03-28T16:16:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-28T16:16:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-shram-yogi-mandhan-yojana-pmsym/</loc>
+    <lastmod>2026-03-28T11:44:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/bank/</loc>
     <lastmod>2026-03-28T11:14:23+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -13,11 +28,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/idbi-specialist-officer-recruitment-mar26/</loc>
-    <lastmod>2026-03-28T11:14:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-28T11:14:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -854,11 +864,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/btsc-pump-operator-recruitment-dec25/</loc>
     <lastmod>2026-01-31T12:10:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm-shram-yogi-mandhan-yojana-pmsym/</loc>
-    <lastmod>2026-01-30T12:51:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -3139,11 +3144,6 @@
   </url><url>
     <loc>http://localhost:1313/how-to/apply/epfoindia-online-info/</loc>
     <lastmod>2025-03-09T14:58:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm/pm-internship-yojna-portal/</loc>
-    <lastmod>2025-03-08T16:10:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
