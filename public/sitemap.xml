@@ -2,17 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-03-31T12:56:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/upsssc/</loc>
+    <lastmod>2026-03-31T12:56:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lower-pcs-recruitment-mar26/</loc>
+    <lastmod>2026-03-31T12:56:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-31T12:56:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/jee-mains-2026-session-2/</loc>
+    <lastmod>2026-03-31T12:17:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/ctet-february-2026/</loc>
+    <lastmod>2026-03-31T12:13:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-army-agniveer-rally-recruitment-feb26/</loc>
+    <lastmod>2026-03-31T12:11:44+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/education/</loc>
     <lastmod>2026-03-31T09:45:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/education/mp-class-9th-and-11th-result-2026/</loc>
-    <lastmod>2026-03-31T09:45:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-31T09:45:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -57,11 +87,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-03-28T11:14:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/idbi-specialist-officer-recruitment-mar26/</loc>
     <lastmod>2026-03-28T11:14:23+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -82,11 +107,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/indian-army-agniveer-rally-recruitment-feb26/</loc>
-    <lastmod>2026-03-26T11:18:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-police-si-posts-jul-2025/</loc>
     <lastmod>2026-03-26T11:12:21+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -99,11 +119,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/up-co-operative-bank-mar26/</loc>
     <lastmod>2026-03-25T15:33:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/upsssc/</loc>
-    <lastmod>2026-03-25T14:45:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -134,11 +149,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/police-jobs/</loc>
     <lastmod>2026-03-22T15:27:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/jee-mains-2026-session-2/</loc>
-    <lastmod>2026-03-22T12:05:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -524,11 +534,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/madhya-pradesh/social-security-pension-apply/</loc>
     <lastmod>2026-02-27T17:06:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/ctet-february-2026/</loc>
-    <lastmod>2026-02-27T15:08:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
