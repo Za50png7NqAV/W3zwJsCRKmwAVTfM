@@ -2,22 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-03-31T18:18:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/force/</loc>
+    <lastmod>2026-03-31T18:18:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-navy-agniveer-mr-musician-02-2026/</loc>
+    <lastmod>2026-03-31T18:18:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-31T18:18:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/bihar/</loc>
     <lastmod>2026-03-31T16:00:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-03-31T16:00:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/phc-technical-assistant-recruitment-2026/</loc>
-    <lastmod>2026-03-31T16:00:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-31T16:00:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -174,11 +184,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-assistant-statistical-officer-aso-mar26/</loc>
     <lastmod>2026-03-21T17:29:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/force/</loc>
-    <lastmod>2026-03-21T15:48:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
