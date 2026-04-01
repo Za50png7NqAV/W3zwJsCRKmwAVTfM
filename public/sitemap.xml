@@ -3,21 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-03-31T18:18:03+05:30</lastmod>
+    <lastmod>2026-04-01T12:55:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/force/</loc>
-    <lastmod>2026-03-31T18:18:03+05:30</lastmod>
+    <lastmod>2026-04-01T12:55:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/indian-navy-agniveer-mr-musician-02-2026/</loc>
-    <lastmod>2026-03-31T18:18:03+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/itbp-constable-barber-washerman-recruitment-2026/</loc>
+    <lastmod>2026-04-01T12:55:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-01T12:55:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/up-ration-card-online-apply-and-download/</loc>
+    <lastmod>2026-04-01T12:24:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-navy-agniveer-mr-musician-02-2026/</loc>
     <lastmod>2026-03-31T18:18:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
