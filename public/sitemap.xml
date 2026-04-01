@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/mp-gram-panchayat-sachiv-bharti-2026/</loc>
+    <lastmod>2026-04-01T17:35:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/upcomings/</loc>
+    <lastmod>2026-04-01T17:35:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-01T17:35:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/bihar/</loc>
     <lastmod>2026-04-01T16:51:32+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -13,11 +28,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/phc-technical-assistant-recruitment-2026/</loc>
-    <lastmod>2026-04-01T16:51:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-01T16:51:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1684,11 +1694,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-paramedical-vacancy-07-2025/</loc>
     <lastmod>2025-11-21T17:19:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-sachiv-bharti-nov-2026/</loc>
-    <lastmod>2025-11-19T10:37:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
