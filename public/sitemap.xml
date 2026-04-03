@@ -2,22 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-04-01T18:33:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/upsssc/</loc>
-    <lastmod>2026-04-01T18:33:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-pharmacist-recruitment-mar26/</loc>
-    <lastmod>2026-04-01T18:33:20+05:30</lastmod>
+    <loc>http://localhost:1313/admission/mp-rte-admission-2026-27/</loc>
+    <lastmod>2026-04-02T09:17:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-02T09:17:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-04-02T09:14:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/mppsc/</loc>
+    <lastmod>2026-04-02T09:14:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-veo-recruitment-2026/</loc>
+    <lastmod>2026-04-02T09:14:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/upsssc/</loc>
+    <lastmod>2026-04-02T09:13:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-pcb-various-post-mar26/</loc>
+    <lastmod>2026-04-02T09:13:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-pharmacist-recruitment-mar26/</loc>
     <lastmod>2026-04-01T18:33:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -257,11 +277,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/mppsc/</loc>
-    <lastmod>2026-03-20T15:06:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mppsc-scientific-officer-pcb-mar26/</loc>
     <lastmod>2026-03-20T15:06:50+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -269,11 +284,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-adpo-recruitment-mar26/</loc>
     <lastmod>2026-03-20T12:48:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-veo-recruitment-mar26/</loc>
-    <lastmod>2026-03-20T11:54:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -397,11 +407,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/mp-rte-admission-2026-27/</loc>
-    <lastmod>2026-03-15T11:54:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mpesb-forest-guard-jail-prahari-recruitment-feb26/</loc>
     <lastmod>2026-03-15T11:54:49+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -414,11 +419,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ahc-private-secretary-grade-i-mar26/</loc>
     <lastmod>2026-03-12T16:04:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-pcb-various-post-mar26/</loc>
-    <lastmod>2026-03-12T14:08:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
