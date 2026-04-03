@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-04-03T12:39:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp-board-10th-result-2026/</loc>
+    <lastmod>2026-04-03T12:39:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-03T12:39:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/mp-board-10th-12th-result-2026/</loc>
+    <lastmod>2026-04-03T11:51:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-04-03T11:26:56+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -13,11 +33,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-nursing-officer-sister-tutor-recruitment-2026/</loc>
-    <lastmod>2026-04-03T11:26:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-03T11:26:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -124,11 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-army-agniveer-rally-recruitment-feb26/</loc>
     <lastmod>2026-03-31T12:11:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-03-31T09:45:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -299,11 +309,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/kvs-class-1-admission-form-2026/</loc>
     <lastmod>2026-03-20T10:06:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-board-10th-12th-result-2026/</loc>
-    <lastmod>2026-03-20T10:05:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
