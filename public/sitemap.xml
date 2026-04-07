@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
+    <lastmod>2026-04-07T10:48:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-07T10:48:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
+    <lastmod>2026-04-07T10:33:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-04-06T19:21:26+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -13,11 +28,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-excise-constable-recruitment-2026/</loc>
-    <lastmod>2026-04-06T19:21:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-06T19:21:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -292,11 +302,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
-    <lastmod>2026-03-27T11:29:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/up-co-operative-bank-mar26/</loc>
     <lastmod>2026-03-25T15:33:02+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -524,11 +529,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/soe-som-class-9-admission-2026%E2%80%9327/</loc>
     <lastmod>2026-03-11T10:06:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2026-03-10T19:22:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
