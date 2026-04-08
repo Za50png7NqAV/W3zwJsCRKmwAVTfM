@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2026-04-07T10:48:49+05:30</lastmod>
+    <loc>http://localhost:1313/admission/ofss-11th-admission-2026/</loc>
+    <lastmod>2026-04-08T11:42:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-08T11:42:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-recruitment-dec25/</loc>
+    <lastmod>2026-04-07T15:59:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
+    <lastmod>2026-04-07T15:56:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
     <lastmod>2026-04-07T10:48:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -807,11 +822,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/cbse-group-a-b-c-posts-result-2025/</loc>
-    <lastmod>2026-02-12T12:18:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/upbed-2026/</loc>
     <lastmod>2026-02-10T17:53:10+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1444,11 +1454,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sbi-probationary-officers-po-bharti-2025/</loc>
     <lastmod>2025-12-19T19:15:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
-    <lastmod>2025-12-19T10:04:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
