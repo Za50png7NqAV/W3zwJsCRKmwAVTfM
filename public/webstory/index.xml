@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webstories on YOJNA PORTAL 2026 - Govt Schemes &amp; Sarkari Job Updates Daily</title>
-    <link>http://localhost:1313/webstory/</link>
+    <link>http://localhost:59437/webstory/</link>
     <description>Recent content in Webstories on YOJNA PORTAL 2026 - Govt Schemes &amp; Sarkari Job Updates Daily</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/webstory/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:59437/webstory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/webstory/aa-text/</link>
+      <link>http://localhost:59437/webstory/aa-text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/webstory/aa-text/</guid>
+      <guid>http://localhost:59437/webstory/aa-text/</guid>
       <description>+++</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/webstory/text/</link>
+      <link>http://localhost:59437/webstory/text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/webstory/text/</guid>
+      <guid>http://localhost:59437/webstory/text/</guid>
       <description></description>
     </item>
   </channel>
