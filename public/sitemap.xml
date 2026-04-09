@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/kvs-class-1-admission-form-2026/</loc>
+    <lastmod>2026-04-08T20:39:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-08T20:39:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-04-08T20:23:30+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -13,11 +23,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/force/</loc>
-    <lastmod>2026-04-08T20:23:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-08T20:23:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -424,11 +429,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-adpo-recruitment-mar26/</loc>
     <lastmod>2026-03-20T12:48:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/kvs-class-1-admission-form-2026/</loc>
-    <lastmod>2026-03-20T10:06:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -3632,6 +3632,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/madhya-pradesh/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/suvichar/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -3698,6 +3703,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/socialmedia/</loc>
+    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/states/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
