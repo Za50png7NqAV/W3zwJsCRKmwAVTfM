@@ -2,12 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/kvs-class-1-admission-form-2026/</loc>
-    <lastmod>2026-04-08T20:39:49+05:30</lastmod>
+    <loc>http://localhost:1313/bihar/</loc>
+    <lastmod>2026-04-10T09:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/chhattisgarh/</loc>
+    <lastmod>2026-04-10T09:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/states/delhi/</loc>
+    <lastmod>2026-04-10T09:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/haryana/</loc>
+    <lastmod>2026-04-10T09:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/rajasthan/</loc>
+    <lastmod>2026-04-10T09:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/states/</loc>
+    <lastmod>2026-04-10T09:45:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-10T09:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/all-india/</loc>
+    <lastmod>2026-04-09T19:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/madhya-pradesh/</loc>
+    <lastmod>2026-04-09T19:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/uttar-pradesh/</loc>
+    <lastmod>2026-04-09T19:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/kvs-class-1-admission-form-2026/</loc>
     <lastmod>2026-04-08T20:39:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -3632,11 +3677,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/madhya-pradesh/</loc>
-    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/suvichar/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -3703,11 +3743,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/socialmedia/</loc>
-    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/states/</loc>
     <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

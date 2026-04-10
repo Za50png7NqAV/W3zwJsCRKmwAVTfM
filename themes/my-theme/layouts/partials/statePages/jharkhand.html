@@ -1,0 +1,53 @@
+
+<div class="card-container">
+<div class="filter-wrapper">
+
+  <!-- State Filter -->
+  <div class="filter-box">
+    <select id="stateSelect" onchange="goToState(this.value)">
+      <option value="">📍 Select State</option>
+      <option value="/all-india/">All India</option>
+      <option value="/bihar/">Bihar</option>
+      <option value="/chhattisgarh/">Chhattisgarh</option>
+      <option value="/delhi/">Delhi</option>
+      <option value="/jharkhand/">Jharkhand</option>  
+      <option value="/madhya-pradesh/">Madhya Pradesh</option>
+      <option value="/rajasthan/">Rajasthan</option>
+      <option value="/uttar-pradesh/">Uttar Pradesh</option>
+    </select>
+  </div>
+
+  <!-- Search Box -->
+  <div class="search-box">
+    <input type="text"  id="searchInput" placeholder="🔍 Search schemes..." onfocus="goToSearch()">
+
+  </div>
+
+</div><br>
+{{ $posts := where .Site.RegularPages "Params.State" "in" (slice "Jharkhand" "All India") }}
+
+{{ range $posts }}
+  <div class="post-card">
+    
+    <span class="badge">{{ .Params.State }}</span>
+<a href="{{ .RelPermalink }}" >
+    <img src="{{ .Params.imageBanner }}" alt=""></a>
+
+    <div class="content">
+      <div class="title">{{ .Title }}</div>
+    <span class="meta">
+  📍 {{ .Params.State }} • ⏱ {{ .Date.Format "02 Jan 2006" }}
+</span>
+
+      <div class="actions">
+        <a href="{{ .RelPermalink }}" class="btn read-btn">View Details</a>
+        <span class="share-btn" onclick="navigator.share({title:'{{ .Title }}',url:'{{ .Permalink }}'})">
+          🔗 Share
+        </span>
+      </div>
+    </div>
+
+  </div>
+{{ end }}
+</div>
+
