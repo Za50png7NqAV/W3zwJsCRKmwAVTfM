@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
+    <lastmod>2026-04-11T10:11:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-11T10:11:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/bihar/</loc>
     <lastmod>2026-04-10T09:45:23+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -33,11 +43,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/states/</loc>
-    <lastmod>2026-04-10T09:45:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-10T09:45:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -109,11 +114,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bihar-brlps-jeevika-form-aug25/</loc>
     <lastmod>2026-04-07T15:56:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2026-04-07T10:48:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
