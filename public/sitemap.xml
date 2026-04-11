@@ -12,12 +12,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/states/delhi/</loc>
+    <loc>http://localhost:1313/delhi/</loc>
     <lastmod>2026-04-10T09:45:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/haryana/</loc>
+    <lastmod>2026-04-10T09:45:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jharkhand/</loc>
     <lastmod>2026-04-10T09:45:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
