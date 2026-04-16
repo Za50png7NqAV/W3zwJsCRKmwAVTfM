@@ -3,16 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-04-15T19:37:24+05:30</lastmod>
+    <lastmod>2026-04-16T11:08:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/mp-board-retotaling-answerbook-form-2026/</loc>
-    <lastmod>2026-04-15T19:37:24+05:30</lastmod>
+    <loc>http://localhost:1313/mp-board-second-exam-form-2026/</loc>
+    <lastmod>2026-04-16T11:08:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-16T11:08:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp-board-retotaling-answerbook-form-2026/</loc>
     <lastmod>2026-04-15T19:37:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -39,11 +44,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
     <lastmod>2026-04-15T18:00:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp-board-second-exam-form-2026/</loc>
-    <lastmod>2026-04-15T16:40:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
