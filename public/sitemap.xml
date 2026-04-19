@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-phase-14-recruitment-2026/</loc>
-    <lastmod>2026-04-18T17:40:57+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-04-19T11:54:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp-board-second-exam-form-2026/</loc>
+    <lastmod>2026-04-19T11:54:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-19T11:54:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/bihar-iti-cat-2026/</loc>
+    <lastmod>2026-04-19T11:50:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-phase-14-recruitment-2026/</loc>
     <lastmod>2026-04-18T17:40:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -29,16 +44,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/gaon-ki-beti-scholarship-form-2025-26/</loc>
     <lastmod>2026-04-16T11:40:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-04-16T11:08:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp-board-second-exam-form-2026/</loc>
-    <lastmod>2026-04-16T11:08:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -604,11 +609,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-vacancy-2025/</loc>
     <lastmod>2026-03-19T14:20:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/bihar-iti-cat-2026/</loc>
-    <lastmod>2026-03-19T12:12:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
