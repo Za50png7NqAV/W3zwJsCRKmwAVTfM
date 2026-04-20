@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/upsssc-havaldar-instructor-recruitment-2026/</loc>
-    <lastmod>2026-04-20T10:31:19+05:30</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-04-20T10:39:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/crpf-constable-tradesman-2026/</loc>
+    <lastmod>2026-04-20T10:39:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/force/</loc>
+    <lastmod>2026-04-20T10:39:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-20T10:39:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
+    <lastmod>2026-04-20T10:36:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-havaldar-instructor-recruitment-2026/</loc>
     <lastmod>2026-04-20T10:31:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -67,11 +87,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-04-15T18:00:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/secl-grade-c-various-post-recruitment-2026/</loc>
     <lastmod>2026-04-15T18:00:42+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -99,11 +114,6 @@
   </url><url>
     <loc>http://localhost:1313/mp-board-12th-result-2026/</loc>
     <lastmod>2026-04-15T10:17:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
-    <lastmod>2026-04-14T18:48:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -154,11 +164,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-group-5-recruitment-mar26/</loc>
     <lastmod>2026-04-11T10:59:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/force/</loc>
-    <lastmod>2026-04-11T10:42:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -234,11 +239,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/kvs-class-1-admission-form-2026/</loc>
     <lastmod>2026-04-08T20:39:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/crpf-constable-tradesman-2026/</loc>
-    <lastmod>2026-04-08T20:23:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
