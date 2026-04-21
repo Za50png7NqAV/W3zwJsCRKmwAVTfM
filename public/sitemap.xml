@@ -2,12 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/btsc-instructor-recruitment-2026/</loc>
-    <lastmod>2026-04-20T15:41:18+05:30</lastmod>
+    <loc>http://localhost:1313/eligibility/jee-mains-2026-session-2/</loc>
+    <lastmod>2026-04-21T11:17:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-21T11:17:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-04-21T11:11:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/force/</loc>
+    <lastmod>2026-04-21T11:11:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssb-paramedical-staff-mar26/</loc>
+    <lastmod>2026-04-21T11:11:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssb-si-recruitment-mar26/</loc>
+    <lastmod>2026-04-21T11:11:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssb-head-constable-recruitment-mar26/</loc>
+    <lastmod>2026-04-21T11:10:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssb-constable-tradesman-recruitment-mar26/</loc>
+    <lastmod>2026-04-21T11:06:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/btsc-instructor-recruitment-2026/</loc>
     <lastmod>2026-04-20T15:41:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -32,17 +67,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-04-20T10:39:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/crpf-constable-tradesman-2026/</loc>
-    <lastmod>2026-04-20T10:39:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/force/</loc>
     <lastmod>2026-04-20T10:39:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -452,11 +477,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/jee-mains-2026-session-2/</loc>
-    <lastmod>2026-03-31T12:17:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/eligibility/ctet-february-2026/</loc>
     <lastmod>2026-03-31T12:13:59+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -564,26 +584,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-assistant-statistical-officer-aso-mar26/</loc>
     <lastmod>2026-03-21T17:29:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssb-paramedical-staff-mar26/</loc>
-    <lastmod>2026-03-21T15:48:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssb-si-recruitment-mar26/</loc>
-    <lastmod>2026-03-21T15:12:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssb-head-constable-recruitment-mar26/</loc>
-    <lastmod>2026-03-21T15:10:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssb-constable-tradesman-recruitment-mar26/</loc>
-    <lastmod>2026-03-21T15:07:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
