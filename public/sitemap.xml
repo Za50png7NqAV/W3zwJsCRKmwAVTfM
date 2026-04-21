@@ -2,23 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/jee-mains-2026-session-2/</loc>
-    <lastmod>2026-04-21T11:17:24+05:30</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-04-21T11:39:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/mppsc/</loc>
+    <lastmod>2026-04-21T11:39:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mppsc-scientific-officer-pcb-mar26/</loc>
+    <lastmod>2026-04-21T11:39:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-21T11:17:24+05:30</lastmod>
+    <lastmod>2026-04-21T11:39:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-04-21T11:11:18+05:30</lastmod>
+    <loc>http://localhost:1313/categories/upsssc/</loc>
+    <lastmod>2026-04-21T11:34:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-assistant-statistical-officer-aso-mar26/</loc>
+    <lastmod>2026-04-21T11:34:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/crpf-constable-tradesman-2026/</loc>
+    <lastmod>2026-04-21T11:32:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/force/</loc>
-    <lastmod>2026-04-21T11:11:18+05:30</lastmod>
+    <lastmod>2026-04-21T11:32:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-police-band-bharti-2026/</loc>
+    <lastmod>2026-04-21T11:32:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-mar26/</loc>
+    <lastmod>2026-04-21T11:32:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/jee-mains-2026-session-2/</loc>
+    <lastmod>2026-04-21T11:17:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -59,16 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/lic-hfl-junior-assistant-recruitment-2026/</loc>
     <lastmod>2026-04-20T11:21:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-police-band-bharti-2026/</loc>
-    <lastmod>2026-04-20T10:54:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/crpf-constable-tradesman-2026/</loc>
-    <lastmod>2026-04-20T10:39:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -138,11 +163,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/secl-grade-c-various-post-recruitment-2026/</loc>
-    <lastmod>2026-04-15T18:00:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/upsssc/</loc>
     <lastmod>2026-04-15T18:00:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -417,11 +437,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/mppsc/</loc>
-    <lastmod>2026-04-02T09:14:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mppsc-veo-recruitment-2026/</loc>
     <lastmod>2026-04-02T09:14:52+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -582,11 +597,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-assistant-statistical-officer-aso-mar26/</loc>
-    <lastmod>2026-03-21T17:29:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/sci-court-master-vacancy-2025/</loc>
     <lastmod>2026-03-21T10:45:08+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -604,11 +614,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-paramedical-various-posts-2025/</loc>
     <lastmod>2026-03-21T10:26:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mppsc-scientific-officer-pcb-mar26/</loc>
-    <lastmod>2026-03-20T15:06:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -659,11 +664,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-33rd-judicial-services-recruitment-feb26/</loc>
     <lastmod>2026-03-18T18:02:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-mar26/</loc>
-    <lastmod>2026-03-17T19:34:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
