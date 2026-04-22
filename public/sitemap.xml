@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/pnb-so-engineer-recruitment-2026/</loc>
-    <lastmod>2026-04-21T15:24:21+05:30</lastmod>
+    <loc>http://localhost:1313/eligibility/jhtet-2026/</loc>
+    <lastmod>2026-04-22T19:14:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-22T19:14:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
+    <lastmod>2026-04-22T16:40:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-04-22T16:32:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/up-board-10th-12th-result-2026/</loc>
+    <lastmod>2026-04-22T16:32:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/pnb-so-engineer-recruitment-2026/</loc>
     <lastmod>2026-04-21T15:24:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -109,16 +129,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-havaldar-instructor-recruitment-2026/</loc>
     <lastmod>2026-04-20T10:31:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-exam-date-2025/</loc>
-    <lastmod>2026-04-19T12:10:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-04-19T11:54:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -734,11 +744,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
     <lastmod>2026-03-10T18:52:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/up-board-10th-12th-result-2026/</loc>
-    <lastmod>2026-03-10T15:24:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
