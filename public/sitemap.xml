@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/pgcil-diploma-trainee-recruitment-2026/</loc>
-    <lastmod>2026-04-23T11:15:28+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-04-23T15:35:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/up-board-10th-12th-result-2026/</loc>
+    <lastmod>2026-04-23T15:35:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-23T15:35:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/mp-board-10th-12th-result-2026/</loc>
+    <lastmod>2026-04-23T15:34:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/mp-class-9th-and-11th-result-2026/</loc>
+    <lastmod>2026-04-23T15:34:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/pgcil-diploma-trainee-recruitment-2026/</loc>
     <lastmod>2026-04-23T11:15:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -34,16 +54,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
     <lastmod>2026-04-22T16:40:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-04-22T16:32:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/up-board-10th-12th-result-2026/</loc>
-    <lastmod>2026-04-22T16:32:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -194,11 +204,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
     <lastmod>2026-04-15T18:00:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-board-10th-12th-result-2026/</loc>
-    <lastmod>2026-04-15T10:17:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -519,11 +524,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-army-agniveer-rally-recruitment-feb26/</loc>
     <lastmod>2026-03-31T12:11:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-class-9th-and-11th-result-2026/</loc>
-    <lastmod>2026-03-31T09:45:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
