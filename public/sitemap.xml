@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
+    <lastmod>2026-04-27T16:33:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-27T16:33:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-neet-ug-2026/</loc>
+    <lastmod>2026-04-27T16:27:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
+    <lastmod>2026-04-27T16:24:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/education/</loc>
     <lastmod>2026-04-23T20:07:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/mp-board-second-exam-form-2026/</loc>
-    <lastmod>2026-04-23T20:07:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-23T20:07:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -152,11 +167,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
-    <lastmod>2026-04-20T10:36:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsssc-havaldar-instructor-recruitment-2026/</loc>
     <lastmod>2026-04-20T10:31:19+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -219,11 +229,6 @@
   </url><url>
     <loc>http://localhost:1313/mp-board-12th-result-2026/</loc>
     <lastmod>2026-04-15T10:17:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/nta-neet-ug-2026/</loc>
-    <lastmod>2026-04-14T18:44:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -574,11 +579,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bank-of-baroda-professional-wms-mar26/</loc>
     <lastmod>2026-03-28T10:44:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
-    <lastmod>2026-03-27T16:42:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
