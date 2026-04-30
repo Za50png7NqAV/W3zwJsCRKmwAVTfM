@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/mpesb-hospital-assistant-recruitment-2026/</loc>
+    <lastmod>2026-04-30T19:07:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-30T19:07:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-04-30T18:15:30+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -13,11 +23,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-nursing-officer-sister-tutor-recruitment-2026/</loc>
-    <lastmod>2026-04-30T18:15:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-04-30T18:15:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
