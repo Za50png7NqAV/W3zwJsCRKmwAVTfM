@@ -1,0 +1,38 @@
+{{ if .Params.Postertools }}
+
+  <div class="post-tools-wrapper">
+
+    {{ range .Params.Postertools }}
+      {{ $parts := split . "=" }}
+      {{ $name := trim (index $parts 0) " " }}
+      {{ $link := trim (index $parts 1) " " }}
+
+      <div class="post-card">
+        <div class="post-left">
+          <div class="post-title">{{ $name }}</div>
+          <div class="post-sub">Download Banner / Print</div>
+        </div>
+        <a href="{{ $link }}" target="_blank" class="apply-btn">Download Now</a>
+      </div>
+
+    {{ end }}
+
+  </div>
+
+{{ else }}
+
+  <!-- 🔥 Fallback Card -->
+  <div class="post-tools-wrapper">
+    <div class="post-card">
+      <div class="post-left">
+        <div class="post-title">All Posters</div>
+        <div class="post-sub">Browse Available Posters</div>
+      </div>
+      <a href="https://poster.yojnaportal.com" target="_blank" class="apply-btn">
+        Check Posters
+      </a>
+    </div>
+  </div>
+
+{{ end }}
+

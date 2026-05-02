@@ -672,3 +672,54 @@ nav ul li a:hover {
 .link-list a:last-child {
   border-bottom: none;
 }
+
+/* =================Poster Tools Link=================== */
+.post-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 18px;
+  border-radius:10px;
+  background: linear-gradient(145deg, #000, #1a1a1a);
+  border:2px solid rgba(255,122,26,0.5);
+  box-shadow:0 0 12px rgba(255,122,26,0.3);
+  transition:0.3s;
+}
+
+.post-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 20px rgba(255,122,26,0.7);
+}
+
+/* left */
+.post-left{
+  display:flex;
+  flex-direction:column;
+}
+
+.post-title{
+  color:#ff7a1a;
+  font-size:18px;
+  font-weight:600;
+}
+
+.post-sub{
+  color:#ccc;
+  font-size:13px;
+}
+
+/* button */
+.apply-btn{
+  background:linear-gradient(90deg,#ff7a1a,#ff9b3d);
+  color:#fff;
+  padding:8px 18px;
+  border-radius:25px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.apply-btn:hover{
+  transform:scale(1.05);
+}
