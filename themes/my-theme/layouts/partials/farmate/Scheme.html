@@ -98,6 +98,7 @@
   <div class="content" id="content">
     {{ .Content }}
 </div>
+  {{ partial "main-part/postertools.html" . }}
 {{ if .Params.links }}
 <div class="yp-table-wrapper" id="links">
    {{ partial "farmate/parts/link-table.html" . }}

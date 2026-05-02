@@ -674,7 +674,7 @@ nav ul li a:hover {
 }
 
 /* =================Poster Tools Link=================== */
-.post-card{
+.banner-card{
   display:flex;
   justify-content:space-between;
   align-items:center;
