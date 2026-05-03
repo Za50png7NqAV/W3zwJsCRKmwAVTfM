@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/bpssc-havildar-instructor-recruitment-2026/</loc>
+    <lastmod>2026-05-03T12:39:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-03T12:39:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
+    <lastmod>2026-05-03T11:49:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/education/</loc>
     <lastmod>2026-05-03T11:39:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/education/mp-guest-teacher-atithi-shikshak-2026/</loc>
-    <lastmod>2026-05-03T11:39:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-05-03T11:39:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -864,11 +874,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-primary-teacher-recruitment-2025/</loc>
     <lastmod>2026-02-27T19:43:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
-    <lastmod>2026-02-27T18:10:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
