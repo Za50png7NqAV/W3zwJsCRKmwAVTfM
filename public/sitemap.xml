@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rssb-teaching-associate-recruitment-2026/</loc>
-    <lastmod>2026-05-03T17:07:40+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
+    <lastmod>2026-05-03T19:53:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-03T19:53:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-teaching-associate-recruitment-2026/</loc>
     <lastmod>2026-05-03T17:07:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1084,11 +1089,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bob-manager-recruitment-feb26/</loc>
     <lastmod>2026-02-07T18:13:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
-    <lastmod>2026-02-07T11:10:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

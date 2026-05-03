@@ -686,7 +686,7 @@ nav ul li a:hover {
   transition:0.3s;
 }
 
-.post-card:hover{
+.banner-card:hover{
   transform:translateY(-3px);
   box-shadow:0 0 20px rgba(255,122,26,0.7);
 }
