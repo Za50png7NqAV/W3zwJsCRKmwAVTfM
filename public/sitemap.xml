@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/indian-navy-ssc-executive-it-2026/</loc>
-    <lastmod>2026-05-09T12:17:11+05:30</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-05-09T15:49:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/upsssc/</loc>
+    <lastmod>2026-05-09T15:49:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-assistant-statistical-officer-aso-mar26/</loc>
+    <lastmod>2026-05-09T15:49:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-09T15:49:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/indian-navy-ssc-executive-it-2026/</loc>
     <lastmod>2026-05-09T12:17:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -122,11 +137,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-04-30T18:15:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/categories/mpesb/</loc>
     <lastmod>2026-04-30T18:15:30+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -197,11 +207,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/upsssc/</loc>
-    <lastmod>2026-04-23T10:45:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsssc-pcb-various-post-mar26/</loc>
     <lastmod>2026-04-23T10:45:37+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -229,11 +234,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-scientific-officer-pcb-mar26/</loc>
     <lastmod>2026-04-21T11:39:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-assistant-statistical-officer-aso-mar26/</loc>
-    <lastmod>2026-04-21T11:34:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
