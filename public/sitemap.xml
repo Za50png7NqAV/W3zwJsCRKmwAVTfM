@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
-    <lastmod>2026-05-08T18:44:36+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bpsc-72nd-pre-exam-2026/</loc>
+    <lastmod>2026-05-09T11:31:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-09T11:31:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-05-09T09:55:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/mp-guest-teacher-atithi-shikshak-2026/</loc>
+    <lastmod>2026-05-09T09:55:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
     <lastmod>2026-05-08T18:44:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -42,11 +57,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-05-04T09:55:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/education/ruk-jana-nahi-yojana-rjny-june-2026/</loc>
     <lastmod>2026-05-04T09:55:55+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -69,11 +79,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
     <lastmod>2026-05-03T11:49:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/mp-guest-teacher-atithi-shikshak-2026/</loc>
-    <lastmod>2026-05-03T11:39:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
