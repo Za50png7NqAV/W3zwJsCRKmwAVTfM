@@ -2,12 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/ctet-september-2026/</loc>
-    <lastmod>2026-05-11T16:08:12+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/mp-social-security-pension-yojana/</loc>
+    <lastmod>2026-05-12T11:32:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-12T11:32:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-05-12T10:41:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/crpf-constable-tradesman-2026/</loc>
+    <lastmod>2026-05-12T10:41:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/force/</loc>
+    <lastmod>2026-05-12T10:41:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-hospital-assistant-recruitment-2026/</loc>
+    <lastmod>2026-05-12T10:41:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-mar26/</loc>
+    <lastmod>2026-05-12T10:41:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-pat-2026/</loc>
+    <lastmod>2026-05-12T10:38:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/ctet-september-2026/</loc>
     <lastmod>2026-05-11T16:08:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -39,11 +74,6 @@
   </url><url>
     <loc>http://localhost:1313/mpesb-candidate-profile-panjiyan/</loc>
     <lastmod>2026-05-09T16:02:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-05-09T15:49:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -79,11 +109,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
     <lastmod>2026-05-08T18:44:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-hospital-assistant-recruitment-2026/</loc>
-    <lastmod>2026-05-08T17:33:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -154,11 +179,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
     <lastmod>2026-05-01T10:28:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-pat-2026/</loc>
-    <lastmod>2026-05-01T10:16:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -254,21 +274,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-scientific-officer-pcb-mar26/</loc>
     <lastmod>2026-04-21T11:39:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/crpf-constable-tradesman-2026/</loc>
-    <lastmod>2026-04-21T11:32:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/force/</loc>
-    <lastmod>2026-04-21T11:32:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-mar26/</loc>
-    <lastmod>2026-04-21T11:32:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
