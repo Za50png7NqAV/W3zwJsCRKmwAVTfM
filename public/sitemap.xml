@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/cm-kisan-kalyan-yojana/</loc>
-    <lastmod>2026-05-12T13:01:21+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/coal-india-mt-recruitment-2026/</loc>
+    <lastmod>2026-05-12T16:31:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-12T16:31:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
+    <lastmod>2026-05-12T15:41:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-neet-ug-2026/</loc>
+    <lastmod>2026-05-12T15:32:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/cm-kisan-kalyan-yojana/</loc>
     <lastmod>2026-05-12T13:01:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -204,11 +219,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
     <lastmod>2026-04-27T16:33:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/nta-neet-ug-2026/</loc>
-    <lastmod>2026-04-27T16:27:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -879,11 +889,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-junior-engineer-je-vacancy-2025/</loc>
     <lastmod>2026-03-09T17:48:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
-    <lastmod>2026-03-09T17:43:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
