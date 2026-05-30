@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/nalco-non-executive-recruitment-may26/</loc>
-    <lastmod>2026-05-28T18:40:42+05:30</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-05-30T10:19:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/upsssc/</loc>
+    <lastmod>2026-05-30T10:19:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lower-pcs-recruitment-mar26/</loc>
+    <lastmod>2026-05-30T10:19:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-05-30T10:19:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nalco-non-executive-recruitment-may26/</loc>
     <lastmod>2026-05-28T18:40:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -207,11 +222,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-05-12T10:41:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/crpf-constable-tradesman-2026/</loc>
     <lastmod>2026-05-12T10:41:33+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -259,11 +269,6 @@
   </url><url>
     <loc>http://localhost:1313/mpesb-candidate-profile-panjiyan/</loc>
     <lastmod>2026-05-09T16:02:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/upsssc/</loc>
-    <lastmod>2026-05-09T15:49:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -769,11 +774,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/punjab-and-sind-bank-lbo-recruitment-2026/</loc>
     <lastmod>2026-03-31T15:07:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-lower-pcs-recruitment-mar26/</loc>
-    <lastmod>2026-03-31T12:56:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
