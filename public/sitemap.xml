@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-02T17:10:40+05:30</lastmod>
+    <lastmod>2026-06-02T17:13:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scheme/pmegp-yojana/</loc>
-    <lastmod>2026-06-02T17:10:40+05:30</lastmod>
+    <lastmod>2026-06-02T17:13:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-internship-yojana-pmis/</loc>
+    <lastmod>2026-06-02T17:13:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -864,11 +869,6 @@
   </url><url>
     <loc>http://localhost:1313/education/bihar-board-10th-12th-result-2026/</loc>
     <lastmod>2026-03-29T10:15:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm-internship-yojana-pmis/</loc>
-    <lastmod>2026-03-28T16:16:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
