@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
+    <lastmod>2026-06-02T19:05:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-02T17:13:57+05:30</lastmod>
+    <lastmod>2026-06-02T19:05:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1169,11 +1174,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sci-assistant-recruitment-feb26/</loc>
     <lastmod>2026-02-23T15:23:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
-    <lastmod>2026-02-23T15:16:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
