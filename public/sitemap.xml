@@ -2,12 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/jhtet-2026/</loc>
-    <lastmod>2026-06-03T11:28:08+05:30</lastmod>
+    <loc>http://localhost:1313/admission/mpesb-addet-admission-form-2026/</loc>
+    <lastmod>2026-06-05T16:13:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-05T16:13:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-06-03T12:18:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-may26/</loc>
+    <lastmod>2026-06-03T12:18:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/sbi-apprentice-recruitment-may26/</loc>
+    <lastmod>2026-06-03T12:18:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-cds-ii-recruitment-2026/</loc>
+    <lastmod>2026-06-03T12:18:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-nda-ii-recruitment-2026/</loc>
+    <lastmod>2026-06-03T12:18:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-gic-lecturer-vacancy-2025/</loc>
+    <lastmod>2026-06-03T12:13:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-stenographer-recruitment-jan26/</loc>
+    <lastmod>2026-06-03T12:10:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/jhtet-2026/</loc>
     <lastmod>2026-06-03T11:28:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -207,33 +247,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsc-cds-ii-recruitment-2026/</loc>
-    <lastmod>2026-05-21T16:17:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-nda-ii-recruitment-2026/</loc>
-    <lastmod>2026-05-21T12:57:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/bpssc-asi-technical-recruitment-2026/</loc>
     <lastmod>2026-05-19T20:06:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-05-19T12:14:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-may26/</loc>
-    <lastmod>2026-05-19T12:14:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/sbi-apprentice-recruitment-may26/</loc>
-    <lastmod>2026-05-19T11:46:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1567,11 +1582,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-stenographer-recruitment-jan26/</loc>
-    <lastmod>2026-01-16T13:16:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-jan26/</loc>
     <lastmod>2026-01-16T12:34:17+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2844,11 +2854,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/hp-junior-basic-teacher-vacancy-aug-2025/</loc>
     <lastmod>2025-08-14T10:01:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/uppsc-gic-lecturer-vacancy-2025/</loc>
-    <lastmod>2025-08-13T14:13:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
