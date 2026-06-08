@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/upsssc-pharmacist-recruitment-mar26/</loc>
-    <lastmod>2026-06-07T17:15:08+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/hindustan-copper-limited-executive-2026/</loc>
+    <lastmod>2026-06-08T12:13:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-08T12:13:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-apo-recruitment-2026/</loc>
+    <lastmod>2026-06-08T11:31:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/cisf-para-medical-staff-recruitment-2026/</loc>
+    <lastmod>2026-06-08T11:28:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-pharmacist-recruitment-mar26/</loc>
     <lastmod>2026-06-07T17:15:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -112,11 +127,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/cisf-para-medical-staff-recruitment-2026/</loc>
-    <lastmod>2026-06-02T13:09:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/ahc-research-associate-recruitment-2026/</loc>
     <lastmod>2026-06-02T10:37:43+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -204,11 +214,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bsnl-jto-recruitment-2026/</loc>
     <lastmod>2026-05-28T12:38:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rpsc-apo-recruitment-2026/</loc>
-    <lastmod>2026-05-28T11:58:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
