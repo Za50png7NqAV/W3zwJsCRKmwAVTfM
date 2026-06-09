@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/india-post-gds-recruitment-jan26/</loc>
-    <lastmod>2026-06-09T08:41:30+05:30</lastmod>
+    <loc>http://localhost:1313/admission/mpesb-pnst-admission-form-2026/</loc>
+    <lastmod>2026-06-09T15:18:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-09T15:18:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-06-09T09:40:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-may26/</loc>
+    <lastmod>2026-06-09T09:40:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/india-post-gds-recruitment-jan26/</loc>
     <lastmod>2026-06-09T08:41:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -62,11 +77,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-06-07T16:04:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/indian-navy-agniveer-apprentice-inet-2026/</loc>
     <lastmod>2026-06-07T16:04:38+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -109,11 +119,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mpesb-addet-admission-form-2026/</loc>
     <lastmod>2026-06-05T16:13:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/bob-apprentice-recruitment-may26/</loc>
-    <lastmod>2026-06-03T12:18:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
