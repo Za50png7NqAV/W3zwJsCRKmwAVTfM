@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-06-08T17:32:18+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/upsssc-vidhan-bhawan-guard-fireman-2026/</loc>
+    <lastmod>2026-06-09T08:23:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-09T08:23:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
+    <lastmod>2026-06-09T08:22:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/samagra-portal/</loc>
+    <lastmod>2026-06-09T08:14:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
     <lastmod>2026-06-08T17:32:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -337,11 +352,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
-    <lastmod>2026-05-15T19:47:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/coal-india-mt-recruitment-2026/</loc>
     <lastmod>2026-05-12T16:31:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -629,16 +639,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mukhyamantri-kanya-vivah-yojana-mkvny/</loc>
     <lastmod>2026-04-11T19:39:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-vidhan-bhawan-guard-fireman-2026/</loc>
-    <lastmod>2026-04-11T17:15:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/uttar-pradesh/</loc>
-    <lastmod>2026-04-11T17:15:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1014,11 +1014,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-33rd-judicial-services-recruitment-feb26/</loc>
     <lastmod>2026-03-18T18:02:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/samagra-portal/</loc>
-    <lastmod>2026-03-17T16:03:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
