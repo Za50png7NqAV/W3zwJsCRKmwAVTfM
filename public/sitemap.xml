@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/mp-nishakt-vivah-protsahan-yojana/</loc>
-    <lastmod>2026-06-08T17:23:04+05:30</lastmod>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
+    <lastmod>2026-06-08T17:32:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-08T17:32:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-nishakt-vivah-protsahan-yojana/</loc>
     <lastmod>2026-06-08T17:23:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -369,11 +374,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/ctet-september-2026/</loc>
     <lastmod>2026-05-11T16:08:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/ladli-behna-yojna-mp/</loc>
-    <lastmod>2026-05-10T09:45:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
