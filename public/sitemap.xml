@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
-    <lastmod>2026-06-09T16:03:44+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
+    <lastmod>2026-06-10T08:05:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-10T08:05:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-nda-ii-recruitment-2026/</loc>
+    <lastmod>2026-06-10T08:03:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-cds-ii-recruitment-2026/</loc>
+    <lastmod>2026-06-10T08:02:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
     <lastmod>2026-06-09T16:03:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -124,16 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mpesb-addet-admission-form-2026/</loc>
     <lastmod>2026-06-05T16:13:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-cds-ii-recruitment-2026/</loc>
-    <lastmod>2026-06-03T12:18:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-nda-ii-recruitment-2026/</loc>
-    <lastmod>2026-06-03T12:18:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -289,11 +294,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-computer-instructor-recruitment-2026/</loc>
     <lastmod>2026-05-25T18:19:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
-    <lastmod>2026-05-23T18:48:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
