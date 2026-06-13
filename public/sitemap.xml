@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-06-12T15:38:30+05:30</lastmod>
+    <lastmod>2026-06-13T08:33:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/mp-board-second-exam-form-2026/</loc>
-    <lastmod>2026-06-12T15:38:30+05:30</lastmod>
+    <lastmod>2026-06-13T08:33:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-12T15:38:30+05:30</lastmod>
+    <lastmod>2026-06-13T08:33:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/dte-mp-polytechnic-admission-2026/</loc>
+    <lastmod>2026-06-13T08:33:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-epravesh-collage-admission-form-2026/</loc>
+    <lastmod>2026-06-13T08:33:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-iti-admission-2026/</loc>
+    <lastmod>2026-06-13T08:33:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/ruk-jana-nahi-yojana-rjny-june-2026/</loc>
+    <lastmod>2026-06-13T08:33:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
+    <lastmod>2026-06-13T08:30:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -39,11 +64,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nalco-non-executive-recruitment-may26/</loc>
     <lastmod>2026-06-12T10:07:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/ruk-jana-nahi-yojana-rjny-june-2026/</loc>
-    <lastmod>2026-06-11T08:16:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -127,11 +147,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-06-08T17:32:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/scheme/mp-nishakt-vivah-protsahan-yojana/</loc>
     <lastmod>2026-06-08T17:23:04+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -169,11 +184,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
     <lastmod>2026-06-07T11:37:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-epravesh-collage-admission-form-2026/</loc>
-    <lastmod>2026-06-07T11:35:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -332,11 +342,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/mp-iti-admission-2026/</loc>
-    <lastmod>2026-05-26T11:06:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rssb-computer-instructor-recruitment-2026/</loc>
     <lastmod>2026-05-25T18:19:05+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -344,11 +349,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-technical-assistant-group-c-2026/</loc>
     <lastmod>2026-05-23T18:08:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/dte-mp-polytechnic-admission-2026/</loc>
-    <lastmod>2026-05-21T16:58:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
