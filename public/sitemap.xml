@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/drdo-ceptam-11-recruitment-dec25/</loc>
-    <lastmod>2026-06-13T10:09:57+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/upsc-ese-recruitment-2026/</loc>
+    <lastmod>2026-06-13T16:20:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-13T16:20:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-ies-iss-recruitment-feb26/</loc>
+    <lastmod>2026-06-13T15:53:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/drdo-ceptam-11-recruitment-dec25/</loc>
     <lastmod>2026-06-13T10:09:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1262,11 +1272,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsc-ies-iss-recruitment-feb26/</loc>
-    <lastmod>2026-02-13T12:21:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/bpsc-professor-recruitment-jan26/</loc>
     <lastmod>2026-02-13T11:53:47+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2439,11 +2444,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-constable-sports-quota-vacancy-2025/</loc>
     <lastmod>2025-10-01T09:10:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-ese-recruitment-2026/</loc>
-    <lastmod>2025-09-29T12:26:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
