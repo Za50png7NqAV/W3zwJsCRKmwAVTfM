@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/mp-krishi-e-token-registration-portal/</loc>
-    <lastmod>2026-06-15T10:12:36+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mp-police-band-bharti-2026/</loc>
+    <lastmod>2026-06-15T17:18:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-15T17:18:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
+    <lastmod>2026-06-15T16:55:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/ctet-september-2026/</loc>
+    <lastmod>2026-06-15T16:53:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-krishi-e-token-registration-portal/</loc>
     <lastmod>2026-06-15T10:12:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -219,11 +234,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/indian-navy-agniveer-apprentice-inet-2026/</loc>
     <lastmod>2026-06-07T16:04:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
-    <lastmod>2026-06-07T11:37:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -462,11 +472,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/ctet-september-2026/</loc>
-    <lastmod>2026-05-11T16:08:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mpesb-asi-hc-computer-recruitment-feb26/</loc>
     <lastmod>2026-05-09T16:25:29+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -564,11 +569,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-cht-recruitment-2026/</loc>
     <lastmod>2026-04-23T19:56:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-police-band-bharti-2026/</loc>
-    <lastmod>2026-04-23T15:46:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
