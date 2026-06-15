@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mp-police-band-bharti-2026/</loc>
-    <lastmod>2026-06-15T17:18:24+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-06-15T18:12:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/ruk-jana-nahi-yojana-rjny-june-2026/</loc>
+    <lastmod>2026-06-15T18:12:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-15T18:12:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-police-band-bharti-2026/</loc>
     <lastmod>2026-06-15T17:18:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -77,11 +87,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-06-13T08:33:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/mp-board-second-exam-form-2026/</loc>
     <lastmod>2026-06-13T08:33:42+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -98,11 +103,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/admission/mp-iti-admission-2026/</loc>
-    <lastmod>2026-06-13T08:33:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/ruk-jana-nahi-yojana-rjny-june-2026/</loc>
     <lastmod>2026-06-13T08:33:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
