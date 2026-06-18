@@ -2,23 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/iaf-agniveer-vayu-intake-02-2027/</loc>
-    <lastmod>2026-06-18T15:58:22+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
+    <lastmod>2026-06-18T16:05:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
+    <lastmod>2026-06-18T16:05:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-18T16:05:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/iaf-agniveer-vayu-intake-02-2027/</loc>
     <lastmod>2026-06-18T15:58:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/iaf-airmen-group-y-medical-assistant-intake-02-2027/</loc>
     <lastmod>2026-06-18T12:38:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
-    <lastmod>2026-06-18T11:56:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -229,11 +234,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-group-5-recruitment-mar26/</loc>
     <lastmod>2026-06-10T08:49:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
-    <lastmod>2026-06-10T08:05:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
