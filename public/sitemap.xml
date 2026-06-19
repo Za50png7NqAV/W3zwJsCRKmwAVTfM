@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/mp-pat-2026/</loc>
+    <lastmod>2026-06-18T17:35:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-18T17:35:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
     <lastmod>2026-06-18T16:05:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
-    <lastmod>2026-06-18T16:05:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-06-18T16:05:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -524,11 +529,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/force/</loc>
     <lastmod>2026-05-12T10:41:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-pat-2026/</loc>
-    <lastmod>2026-05-12T10:38:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
