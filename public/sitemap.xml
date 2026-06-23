@@ -2,13 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/cgpsc-adppo-recruitment-2026/</loc>
-    <lastmod>2026-06-21T10:09:45+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rbi-bank-office-attendant-recruitment-jan26/</loc>
+    <lastmod>2026-06-23T08:57:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-21T10:09:45+05:30</lastmod>
+    <lastmod>2026-06-23T08:57:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-police-constable-exam-date-2025/</loc>
+    <lastmod>2026-06-23T08:54:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
+    <lastmod>2026-06-23T08:53:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-forest-guard-jail-prahari-recruitment-feb26/</loc>
+    <lastmod>2026-06-23T08:49:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-je-admit-card-2025/</loc>
+    <lastmod>2026-06-23T08:42:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
+    <lastmod>2026-06-23T08:38:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/hpsc-civil-service-exam-2026/</loc>
+    <lastmod>2026-06-23T08:29:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-pharmacist-recruitment-mar26/</loc>
+    <lastmod>2026-06-23T08:25:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-pcb-various-post-mar26/</loc>
+    <lastmod>2026-06-23T08:22:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/cgpsc-adppo-recruitment-2026/</loc>
+    <lastmod>2026-06-23T08:19:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -297,11 +342,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/cuet-ug-2026/</loc>
-    <lastmod>2026-06-09T16:03:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/mpesb-pnst-admission-form-2026/</loc>
     <lastmod>2026-06-09T15:18:19+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -334,11 +374,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-apo-recruitment-2026/</loc>
     <lastmod>2026-06-08T11:31:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-pharmacist-recruitment-mar26/</loc>
-    <lastmod>2026-06-07T17:15:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -417,11 +452,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/up-police-constable-exam-date-2025/</loc>
-    <lastmod>2026-06-01T16:47:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/ahc-ro-aro-ca-recruitment-2026/</loc>
     <lastmod>2026-06-01T13:21:11+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -434,11 +464,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-school-lecturer-special-2026/</loc>
     <lastmod>2026-06-01T08:37:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-pcb-various-post-mar26/</loc>
-    <lastmod>2026-06-01T08:32:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -474,11 +499,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rbi-assistant-recruitment-feb26/</loc>
     <lastmod>2026-05-28T09:30:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-forest-guard-jail-prahari-recruitment-feb26/</loc>
-    <lastmod>2026-05-28T09:26:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -634,11 +654,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-stenographer-2026/</loc>
     <lastmod>2026-04-27T17:13:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
-    <lastmod>2026-04-27T16:24:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1222,11 +1237,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-je-admit-card-2025/</loc>
-    <lastmod>2026-03-04T17:23:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/iaf-agniveervayu-intake-01-2027-batch/</loc>
     <lastmod>2026-03-04T17:06:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1412,11 +1422,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/hpsc-civil-service-exam-2026/</loc>
-    <lastmod>2026-02-08T11:24:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/bob-manager-recruitment-feb26/</loc>
     <lastmod>2026-02-07T18:13:28+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1574,11 +1579,6 @@
   </url><url>
     <loc>http://localhost:1313/schemes/farmer-id-annadata-card/</loc>
     <lastmod>2026-01-25T12:33:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rbi-bank-office-attendant-recruitment-jan26/</loc>
-    <lastmod>2026-01-24T11:00:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
