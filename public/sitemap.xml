@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/pnb-lbo-recruitment-nov-2025/</loc>
-    <lastmod>2026-06-23T18:09:37+05:30</lastmod>
+    <loc>http://localhost:1313/howto/dbt-aadhar-linking-with-npci/</loc>
+    <lastmod>2026-06-24T10:55:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-24T10:55:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
+    <lastmod>2026-06-23T18:43:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/pnb-lbo-recruitment-nov-2025/</loc>
     <lastmod>2026-06-23T18:09:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -113,11 +123,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
-    <lastmod>2026-06-21T10:08:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
     <lastmod>2026-06-21T10:08:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1054,11 +1059,6 @@
   </url><url>
     <loc>http://localhost:1313/document/apply-pan-card-and-details/</loc>
     <lastmod>2026-03-29T18:32:40+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/howto/dbt-aadhar-linking-with-npci/</loc>
-    <lastmod>2026-03-29T10:54:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
