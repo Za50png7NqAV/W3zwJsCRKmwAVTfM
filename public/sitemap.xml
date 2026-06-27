@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/uppsc-pre-2026/</loc>
-    <lastmod>2026-06-26T10:08:12+05:30</lastmod>
+    <loc>http://localhost:1313/rojgar-panjiyan/</loc>
+    <lastmod>2026-06-27T07:59:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/otr/</loc>
+    <lastmod>2026-06-27T07:59:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-27T07:59:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-clerk-grade-ii-jr-assistant-recruitment-jan26/</loc>
+    <lastmod>2026-06-27T07:47:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-pre-2026/</loc>
     <lastmod>2026-06-26T10:08:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -298,11 +313,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/nsp-otr/</loc>
-    <lastmod>2026-06-16T12:31:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/otr/</loc>
     <lastmod>2026-06-16T12:31:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -659,11 +669,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-nursing-officer-sister-tutor-recruitment-2026/</loc>
     <lastmod>2026-05-09T16:22:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/rojgar-panjiyan/</loc>
-    <lastmod>2026-05-09T16:05:01+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1744,11 +1749,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/eklavya-model-school-class-6-admission-2026-27/</loc>
     <lastmod>2026-01-15T14:44:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rssb-clerk-grade-ii-jr-assistant-recruitment-jan26/</loc>
-    <lastmod>2026-01-15T11:38:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
