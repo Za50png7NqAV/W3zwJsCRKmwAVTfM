@@ -2,12 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
-    <lastmod>2026-06-28T16:04:07+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/nbems-junior-assistant-and-various-posts-2026/</loc>
+    <lastmod>2026-06-29T19:26:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-29T19:26:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-social-security-pension-yojana/</loc>
+    <lastmod>2026-06-29T19:18:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/samagra-portal/</loc>
+    <lastmod>2026-06-29T19:16:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
+    <lastmod>2026-06-29T19:12:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-je-admit-card-2025/</loc>
+    <lastmod>2026-06-29T19:11:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
+    <lastmod>2026-06-29T18:51:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
     <lastmod>2026-06-28T16:04:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -207,11 +237,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
-    <lastmod>2026-06-23T12:42:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/csir-aso-recruitment-2026/</loc>
     <lastmod>2026-06-23T11:01:19+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -234,11 +259,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-forest-guard-jail-prahari-recruitment-feb26/</loc>
     <lastmod>2026-06-23T08:49:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-je-admit-card-2025/</loc>
-    <lastmod>2026-06-23T08:42:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -269,11 +289,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
     <lastmod>2026-06-21T10:08:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/nbems-junior-assistant-and-various-posts-2026/</loc>
-    <lastmod>2026-06-20T16:05:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -333,11 +348,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/admission/dte-mp-polytechnic-admission-2026/</loc>
-    <lastmod>2026-06-18T08:33:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
     <lastmod>2026-06-18T08:33:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -499,11 +509,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-vidhan-bhawan-guard-fireman-2026/</loc>
     <lastmod>2026-06-09T08:23:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/samagra-portal/</loc>
-    <lastmod>2026-06-09T08:14:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -689,11 +694,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/cm-kisan-kalyan-yojana/</loc>
     <lastmod>2026-05-12T13:01:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/mp-social-security-pension-yojana/</loc>
-    <lastmod>2026-05-12T11:32:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
