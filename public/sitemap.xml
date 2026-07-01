@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mp-anganwadi-bharti-2026/</loc>
+    <loc>http://localhost:1313/mp-anganwadi-bharti-2026/</loc>
     <lastmod>2026-06-30T19:18:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -3004,11 +3004,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/iocl-southern-region-sr-apprentice-2025/</loc>
     <lastmod>2025-08-11T14:08:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-anganwadi-worker-helper-2026/</loc>
-    <lastmod>2025-08-10T17:47:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
