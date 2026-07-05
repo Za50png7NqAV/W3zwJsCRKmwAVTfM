@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/hssc-cet-group-d-2026/</loc>
-    <lastmod>2026-07-04T10:04:03+05:30</lastmod>
+    <loc>http://localhost:1313/admission/mp-epravesh-collage-admission-form-2026/</loc>
+    <lastmod>2026-07-05T08:25:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-05T08:25:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/nsp-otr/</loc>
+    <lastmod>2026-07-05T08:22:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/otr/</loc>
+    <lastmod>2026-07-05T08:22:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apaar-id-or-abc-id/</loc>
+    <lastmod>2026-07-05T08:19:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/hssc-cet-group-d-2026/</loc>
     <lastmod>2026-07-04T10:04:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -104,11 +124,6 @@
   </url><url>
     <loc>http://localhost:1313/aadhaar-card/</loc>
     <lastmod>2026-07-02T18:20:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-epravesh-collage-admission-form-2026/</loc>
-    <lastmod>2026-07-02T16:51:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -268,11 +283,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/rojgar-panjiyan/</loc>
-    <lastmod>2026-06-27T07:59:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/otr/</loc>
     <lastmod>2026-06-27T07:59:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -489,16 +499,6 @@
   </url><url>
     <loc>http://localhost:1313/mp-board-second-exam-result-2026/</loc>
     <lastmod>2026-06-16T15:34:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apaar-id-or-abc-id/</loc>
-    <lastmod>2026-06-16T15:28:24+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/nsp-otr/</loc>
-    <lastmod>2026-06-16T12:31:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
