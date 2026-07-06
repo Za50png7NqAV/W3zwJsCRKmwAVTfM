@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
-    <lastmod>2026-07-05T09:45:24+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/mp-kisan-beej-anudan-yojana/</loc>
+    <lastmod>2026-07-05T18:22:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-05T18:22:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
     <lastmod>2026-07-05T09:45:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -3347,11 +3352,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/mp-cm-seed-and-fertilizer-subsidy-scheme/</loc>
-    <lastmod>2025-06-25T20:14:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/epravesh-ug-pg-bed-admission-2025-mp/</loc>
     <lastmod>2025-06-25T07:45:36+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -4024,21 +4024,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp/2025/05/mpesb-iti-training-officer-aug24/</loc>
     <lastmod>2024-12-28T19:49:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/mp/cm-kisan-reg-for-schemes/</loc>
-    <lastmod>2024-12-25T19:20:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/schemes/</loc>
-    <lastmod>2024-12-25T19:20:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/yojna/</loc>
-    <lastmod>2024-12-25T19:20:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

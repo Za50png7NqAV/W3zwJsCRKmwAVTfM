@@ -106,19 +106,5 @@
       <guid>http://localhost:1313/categories/ugc-net/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Schemes</title>
-      <link>http://localhost:1313/categories/schemes/</link>
-      <pubDate>Wed, 25 Dec 2024 19:20:54 +0530</pubDate>
-      <guid>http://localhost:1313/categories/schemes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Yojna</title>
-      <link>http://localhost:1313/categories/yojna/</link>
-      <pubDate>Wed, 25 Dec 2024 19:20:54 +0530</pubDate>
-      <guid>http://localhost:1313/categories/yojna/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
