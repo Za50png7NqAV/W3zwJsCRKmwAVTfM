@@ -2,12 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/iaf-airmen-group-y-medical-assistant-intake-02-2027/</loc>
-    <lastmod>2026-07-06T08:11:20+05:30</lastmod>
+    <loc>http://localhost:1313/admission/jnvst-class-6-admission-2027/</loc>
+    <lastmod>2026-07-07T16:47:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-07T16:47:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-07-07T08:43:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/mp-board-5th-8th-result-2026/</loc>
+    <lastmod>2026-07-07T08:43:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
+    <lastmod>2026-07-07T08:43:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpssc-radio-asi-recruitment-feb26/</loc>
+    <lastmod>2026-07-07T08:42:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
+    <lastmod>2026-07-07T08:38:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-apo-recruitment-feb26/</loc>
+    <lastmod>2026-07-07T08:37:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
+    <lastmod>2026-07-07T08:35:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-cane-supervisor-recruitment-2026/</loc>
+    <lastmod>2026-07-07T08:31:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/iaf-airmen-group-y-medical-assistant-intake-02-2027/</loc>
     <lastmod>2026-07-06T08:11:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -72,11 +117,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
-    <lastmod>2026-07-04T09:15:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/mpesb-pnst-admission-form-2026/</loc>
     <lastmod>2026-07-04T09:11:56+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -99,11 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-1-krashi-vistar-adhikari-2026/</loc>
     <lastmod>2026-07-03T16:00:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-apo-recruitment-feb26/</loc>
-    <lastmod>2026-07-03T15:56:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -197,11 +232,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-recruitment-2025/</loc>
-    <lastmod>2026-07-01T09:51:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/eligibility/htet-2025/</loc>
     <lastmod>2026-07-01T09:49:25+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -252,11 +282,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/mp-deled-counselling-2026/</loc>
-    <lastmod>2026-06-29T19:12:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rrb-je-admit-card-2025/</loc>
     <lastmod>2026-06-29T19:11:21+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -292,11 +317,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-06-27T08:20:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/education/ruk-jana-nahi-yojana-rjny-june-2026/</loc>
     <lastmod>2026-06-27T08:20:16+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -324,11 +344,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/pgcil-diploma-trainee-recruitment-2026/</loc>
     <lastmod>2026-06-26T08:51:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpssc-radio-asi-recruitment-feb26/</loc>
-    <lastmod>2026-06-26T08:45:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -754,11 +769,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nfl-management-trainee-recruitment-2026/</loc>
     <lastmod>2026-05-18T17:05:29+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-cane-supervisor-recruitment-2026/</loc>
-    <lastmod>2026-05-18T16:06:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1232,11 +1242,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/education/mp-board-5th-8th-result-2026/</loc>
-    <lastmod>2026-03-25T10:29:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/super-100-examination-form-2026/</loc>
     <lastmod>2026-03-22T18:30:07+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1289,11 +1294,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/emrs-teaching-non-teaching-vacancy-2025/</loc>
     <lastmod>2026-03-19T14:20:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/jnv-navodaya-admission-6th-2026/</loc>
-    <lastmod>2026-03-19T10:19:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
