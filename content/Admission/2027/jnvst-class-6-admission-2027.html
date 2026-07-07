@@ -118,7 +118,7 @@ cssStyles = [
 
 InnerPost = "आवदेन । तिथिया | आवश्यकता । महत्तपूर्ण लिंक"
 
-imageBanner = "#"
+imageBanner = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn4fk_fAWmouBwPUOGhFMu0ikjF-PZOK9daBYxJEz2elviKNiF9cZHUG1P4UENKWkmnj_mb1H8TjHtNAvMerl8C2ZA5lTBncEw7qyj9fMmm9huhSxj-OdSUlf_0Rr4wGWqI2ThZPmvnVyv3hab1EjA9cVyA3bIuMjyznQ4lEx9Tge3sOl_IrEKd-hqQw/s1600/JNVST%202027.jpg"
 
 [[links.item]]
 title = "Apply Online"
@@ -137,6 +137,13 @@ title = "Find Registraion Number"
 actions = [
   { name = "Find Your Registration", url = "https://cbseitms.rcil.gov.in/nvs/ChildernPrint/findRegistrationno" },
 ]
+
+[[links.item]]
+title = "Download Study Certificate"
+actions = [
+  { name = "View Certificate", url = "https://drive.google.com/file/d/1hLsXwZWewIXjws7wzSG_eE4aatYeGS8-/view" },
+]
+
 
 [[links.item]]
 title = "Download Notification"
@@ -165,6 +172,53 @@ actions = [
 
 
 +++
+
+
+<style>
+
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-top:15px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+#result{
+    margin-top:5px;
+    padding:18px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.success{
+    background:#e8f8ec;
+    color:#008a28;
+}
+
+.error{
+    background:#ffe9e9;
+    color:#d10000;
+}
+
+.small{
+    margin-top:10px;
+    font-size:16px;
+    font-weight:normal;
+}
+</style>
+
 <div class="yp-table-wrapper"> 
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%; text-align:left;" class="yp-table">
     <caption style="caption-side:top; font-weight:bold; font-size:18px; padding:10px;">
@@ -191,3 +245,92 @@ actions = [
 </table>
 </div>
 <div class="yp-table-wrapper"> </div>
+
+
+
+
+
+<div class="box">
+
+<h2 align="center">Enter Date of Birth to Check Eligibility</h2>
+
+
+<input type="date" id="from" value="2015-05-01" hidden>
+<input type="date" id="to" value="2017-07-31" hidden>
+<input type="date" id="dob">
+
+<script>
+check(); 
+</script>
+
+<div id="result"><span style="font-size:11px;"> Candidate must be born between 01-05-2015 and 31-07-2017 (both dates inclusive).</span></div>
+
+</div>
+
+<script>
+
+const from=document.getElementById("from");
+const to=document.getElementById("to");
+const dob=document.getElementById("dob");
+
+[from,to,dob].forEach(x=>{
+    x.addEventListener("input",check);
+});
+
+function diffText(ms){
+
+    let days=Math.floor(ms/(1000*60*60*24));
+
+    let years=Math.floor(days/365.25);
+    days-=Math.floor(years*365.25);
+
+    let months=Math.floor(days/30.44);
+    days-=Math.floor(months*30.44);
+
+    return years+" वर्ष "+months+" माह "+days+" दिन";
+}
+
+function check(){
+
+    let result=document.getElementById("result");
+
+    if(!dob.value){
+        result.className="";
+        result.innerHTML="📅 अपनी जन्मतिथि चुनें।";
+        return;
+    }
+
+    let f=new Date(from.value);
+    let t=new Date(to.value);
+    let d=new Date(dob.value);
+
+    if(d>=f && d<=t){
+
+        result.className="success";
+        result.innerHTML="✅ आप जन्मतिथि के अनुसार पात्र (Eligible) हैं।";
+
+    }
+    else if(d<f){
+
+        let diff=f-d;
+
+        result.className="error";
+        result.innerHTML=
+        "❌ आप निर्धारित आयु सीमा से अधिक उम्र के हैं।"+
+        "<div class='small'>आप लगभग <b>"+diffText(diff)+"</b> अधिक हैं।</div>";
+
+    }
+    else{
+
+        let diff=d-t;
+
+        result.className="error";
+        result.innerHTML=
+        "❌ आप निर्धारित आयु सीमा से कम उम्र के हैं।"+
+        "<div class='small'>आप लगभग <b>"+diffText(diff)+"</b> कम हैं।</div>";
+
+    }
+
+}
+
+</script>
