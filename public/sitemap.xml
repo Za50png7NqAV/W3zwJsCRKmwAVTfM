@@ -2,12 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/samagra-portal-2-0/</loc>
-    <lastmod>2026-07-08T16:14:14+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bpssc-police-si-recruitment-2026/</loc>
+    <lastmod>2026-07-09T09:28:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-09T09:28:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
+    <lastmod>2026-07-09T09:23:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
+    <lastmod>2026-07-09T09:18:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-assistant-teacher-jtc-mar26/</loc>
+    <lastmod>2026-07-09T09:16:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
+    <lastmod>2026-07-09T09:15:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
+    <lastmod>2026-07-09T09:05:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/samagra-portal-2-0/</loc>
     <lastmod>2026-07-08T16:14:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -137,11 +167,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bpssc-police-si-recruitment-2026/</loc>
-    <lastmod>2026-07-04T10:00:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rssb-cet-graduate-level-2026/</loc>
     <lastmod>2026-07-04T09:20:01+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -154,11 +179,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mpesb-addet-admission-form-2026/</loc>
     <lastmod>2026-07-04T09:06:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
-    <lastmod>2026-07-03T18:05:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -184,16 +204,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-ras-recruitment-2026/</loc>
     <lastmod>2026-07-03T15:30:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
-    <lastmod>2026-07-03T15:28:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-assistant-teacher-jtc-mar26/</loc>
-    <lastmod>2026-07-03T15:25:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -274,11 +284,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
     <lastmod>2026-06-30T09:12:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
-    <lastmod>2026-06-30T09:12:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -734,11 +739,6 @@
   </url><url>
     <loc>http://localhost:1313/document/sambal-card/</loc>
     <lastmod>2026-05-30T18:34:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
-    <lastmod>2026-05-28T18:07:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
