@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mp-police-si-subedar-recruitment-2025/</loc>
-    <lastmod>2026-07-08T09:06:45+05:30</lastmod>
+    <loc>http://localhost:1313/samagra-portal-2-0/</loc>
+    <lastmod>2026-07-08T16:14:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-08T16:14:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
+    <lastmod>2026-07-08T16:12:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-police-si-subedar-recruitment-2025/</loc>
     <lastmod>2026-07-08T09:06:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -234,11 +244,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-po-mt-xvi-2026/</loc>
     <lastmod>2026-07-02T08:49:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/samagra-portal-2-0/</loc>
-    <lastmod>2026-07-02T08:03:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -569,11 +574,6 @@
   </url><url>
     <loc>http://localhost:1313/myaadhaar-beta-portal/</loc>
     <lastmod>2026-06-14T19:38:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-06-14T15:23:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
