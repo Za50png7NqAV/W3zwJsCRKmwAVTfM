@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/mp-epravesh-collage-admission-form-2026/</loc>
-    <lastmod>2026-07-09T17:58:48+05:30</lastmod>
+    <loc>http://localhost:1313/aadhaar-operator-supervisor-bharti/</loc>
+    <lastmod>2026-07-10T09:19:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-10T09:19:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-epravesh-collage-admission-form-2026/</loc>
     <lastmod>2026-07-09T17:58:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1864,11 +1869,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-primary-teacher-recruitment-nov-2025/</loc>
     <lastmod>2026-01-10T18:58:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/aadhaar-operator-supervisor-recruitment-dec25/</loc>
-    <lastmod>2026-01-10T18:15:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
