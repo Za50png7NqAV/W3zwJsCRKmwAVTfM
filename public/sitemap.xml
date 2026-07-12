@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/pmfby-pradhan-mantri-fasal-bima-yojana/</loc>
-    <lastmod>2026-07-11T17:44:12+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/mukhyamantri-udyam-kranti-yojana/</loc>
+    <lastmod>2026-07-12T11:33:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-12T11:33:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
+    <lastmod>2026-07-12T11:32:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pmfby-pradhan-mantri-fasal-bima-yojana/</loc>
     <lastmod>2026-07-11T17:44:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -59,11 +69,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-hospital-assistant-recruitment-2026/</loc>
     <lastmod>2026-07-10T16:12:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-07-10T12:57:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -4009,11 +4014,6 @@
   </url><url>
     <loc>http://localhost:1313/2024/aiims-group-b-c-cre/</loc>
     <lastmod>2025-01-10T18:43:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm/pmfby-pm-fasal-bima-yojna/</loc>
-    <lastmod>2025-01-09T22:04:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
