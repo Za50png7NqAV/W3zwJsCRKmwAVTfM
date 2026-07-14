@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
-    <lastmod>2026-07-13T18:37:44+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/idbi-bank-so-july-2026/</loc>
+    <lastmod>2026-07-14T11:50:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-auditor-assistant-accountant-2026/</loc>
+    <lastmod>2026-07-14T11:50:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-14T11:50:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
     <lastmod>2026-07-13T18:37:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -54,11 +64,6 @@
   </url><url>
     <loc>http://localhost:1313/scholarship/</loc>
     <lastmod>2026-07-11T15:22:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/idbi-bank-so-july-2026/</loc>
-    <lastmod>2026-07-11T12:51:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -734,11 +739,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/indian-navy-agniveer-apprentice-inet-2026/</loc>
     <lastmod>2026-06-07T16:04:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-auditor-assistant-accountant-2026/</loc>
-    <lastmod>2026-06-07T11:29:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
