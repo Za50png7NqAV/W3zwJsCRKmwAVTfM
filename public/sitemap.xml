@@ -2,17 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
+    <lastmod>2026-07-14T17:10:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-14T17:10:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-neet-ug-2026/</loc>
+    <lastmod>2026-07-14T17:09:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpssc-havildar-instructor-recruitment-2026/</loc>
+    <lastmod>2026-07-14T16:58:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-civil-services-ias-ifs-form-feb26/</loc>
+    <lastmod>2026-07-14T16:53:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
+    <lastmod>2026-07-14T16:49:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/idbi-bank-so-july-2026/</loc>
     <lastmod>2026-07-14T11:50:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-auditor-assistant-accountant-2026/</loc>
-    <lastmod>2026-07-14T11:50:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-07-14T11:50:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -137,11 +162,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
-    <lastmod>2026-07-09T09:15:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/eligibility/uptet-2026/</loc>
     <lastmod>2026-07-09T09:05:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -149,11 +169,6 @@
   </url><url>
     <loc>http://localhost:1313/samagra-portal-2-0/</loc>
     <lastmod>2026-07-08T16:14:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpssc-havildar-instructor-recruitment-2026/</loc>
-    <lastmod>2026-07-08T09:46:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -437,11 +452,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/nta-neet-ug-2026/</loc>
-    <lastmod>2026-06-26T09:08:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/bihar/bpssc-havildar-clerk-recruitment-jan26/</loc>
     <lastmod>2026-06-26T09:05:05+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -512,11 +522,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
-    <lastmod>2026-06-23T12:42:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/csir-aso-recruitment-2026/</loc>
     <lastmod>2026-06-23T11:01:19+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -559,11 +564,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
     <lastmod>2026-06-21T10:08:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-civil-services-ias-ifs-form-feb26/</loc>
-    <lastmod>2026-06-20T12:18:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
