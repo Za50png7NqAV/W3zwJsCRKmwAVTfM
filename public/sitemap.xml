@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
-    <lastmod>2026-07-13T18:04:48+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
+    <lastmod>2026-07-13T18:37:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-13T18:37:44+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-auditor-recruitment-jan26/</loc>
+    <lastmod>2026-07-13T18:29:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
     <lastmod>2026-07-13T18:04:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -99,11 +109,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-iti-admission-2026/</loc>
     <lastmod>2026-07-09T17:53:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
-    <lastmod>2026-07-09T17:02:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -389,11 +394,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nael-operator-junior-assistant-2026/</loc>
     <lastmod>2026-06-28T11:35:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-auditor-recruitment-jan26/</loc>
-    <lastmod>2026-06-28T11:00:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
