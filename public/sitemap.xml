@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/ladli-laxmi-yojana-mp/</loc>
-    <lastmod>2026-07-14T18:16:50+05:30</lastmod>
+    <loc>http://localhost:1313/admission/mp-epravesh-collage-admission-form-2026/</loc>
+    <lastmod>2026-07-15T08:36:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-15T08:36:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/phc-computer-operator-cum-typist-2026/</loc>
+    <lastmod>2026-07-15T08:33:10+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpssc-asi-technical-recruitment-2026/</loc>
+    <lastmod>2026-07-15T08:26:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mpesb-pnst-admission-form-2026/</loc>
+    <lastmod>2026-07-15T08:24:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
+    <lastmod>2026-07-15T08:20:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/ladli-laxmi-yojana-mp/</loc>
     <lastmod>2026-07-14T18:16:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -29,11 +54,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-civil-services-ias-ifs-form-feb26/</loc>
     <lastmod>2026-07-14T16:53:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
-    <lastmod>2026-07-14T16:49:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -134,11 +154,6 @@
   </url><url>
     <loc>http://localhost:1313/aadhaar-operator-supervisor-bharti/</loc>
     <lastmod>2026-07-10T09:19:40+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-epravesh-collage-admission-form-2026/</loc>
-    <lastmod>2026-07-09T17:58:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -284,11 +299,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-cet-graduate-level-2026/</loc>
     <lastmod>2026-07-04T09:20:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mpesb-pnst-admission-form-2026/</loc>
-    <lastmod>2026-07-04T09:11:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -832,11 +842,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bpssc-asi-technical-recruitment-2026/</loc>
-    <lastmod>2026-05-19T20:06:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/indian-army-tes-56-recruitment-2026/</loc>
     <lastmod>2026-05-18T19:00:31+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -999,11 +1004,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/btsc-instructor-recruitment-2026/</loc>
     <lastmod>2026-04-20T15:41:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/phc-computer-operator-cum-typist-2026/</loc>
-    <lastmod>2026-04-20T12:49:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
