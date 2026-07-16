@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-07-16T12:49:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/nfr-apprentice-2026/</loc>
+    <lastmod>2026-07-16T12:49:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-16T12:49:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
+    <lastmod>2026-07-16T12:38:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/nalco-non-executive-recruitment-may26/</loc>
+    <lastmod>2026-07-16T12:32:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/otr/</loc>
     <lastmod>2026-07-16T09:34:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/otr/upsssc-otr-registration-2026/</loc>
-    <lastmod>2026-07-16T09:34:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-07-16T09:34:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -89,11 +109,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-auditor-assistant-accountant-2026/</loc>
     <lastmod>2026-07-14T11:50:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
-    <lastmod>2026-07-13T18:37:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -219,11 +234,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/nbems-junior-assistant-and-various-posts-2026/</loc>
     <lastmod>2026-07-08T08:58:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-07-07T19:02:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -699,11 +709,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/coal-india-mt-recruitment-2026/</loc>
     <lastmod>2026-06-12T10:13:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/nalco-non-executive-recruitment-may26/</loc>
-    <lastmod>2026-06-12T10:07:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
