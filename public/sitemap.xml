@@ -2,8 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/iaf-agniveervayu-musician-intake-01-2027/</loc>
+    <lastmod>2026-07-18T09:54:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-17T12:05:11+05:30</lastmod>
+    <lastmod>2026-07-18T09:54:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-female-supervisor-recruitment-jan26/</loc>
+    <lastmod>2026-07-18T09:44:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
+    <lastmod>2026-07-18T09:42:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-assistant-statistical-officer-aso-mar26/</loc>
+    <lastmod>2026-07-18T09:39:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
+    <lastmod>2026-07-18T09:37:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -39,11 +64,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/nfr-apprentice-2026/</loc>
     <lastmod>2026-07-16T12:49:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
-    <lastmod>2026-07-16T12:38:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -342,11 +362,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-assistant-statistical-officer-aso-mar26/</loc>
-    <lastmod>2026-07-03T17:10:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-1-krashi-vistar-adhikari-2026/</loc>
     <lastmod>2026-07-03T16:00:18+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -613,11 +628,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/dsssb-03-2026/</loc>
-    <lastmod>2026-06-21T10:08:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
     <lastmod>2026-06-21T10:08:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1684,11 +1694,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/delhi-hc-jja-restorer-recruitment-jan26/</loc>
     <lastmod>2026-02-04T10:37:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rssb-female-supervisor-recruitment-jan26/</loc>
-    <lastmod>2026-02-03T19:31:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
