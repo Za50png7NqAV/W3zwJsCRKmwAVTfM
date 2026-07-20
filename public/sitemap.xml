@@ -2,27 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/wcl-mining-sirdar-assistant-foreman-2026/</loc>
+    <lastmod>2026-07-20T17:42:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-20T17:42:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-07-20T16:27:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/nfr-apprentice-2026/</loc>
+    <lastmod>2026-07-20T16:27:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-technical-assistant-group-c-2026/</loc>
+    <lastmod>2026-07-20T16:20:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lower-pcs-recruitment-mar26/</loc>
+    <lastmod>2026-07-20T16:09:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/</loc>
+    <lastmod>2026-07-20T16:04:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-72nd-pre-exam-2026/</loc>
+    <lastmod>2026-07-20T16:02:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/union-bank-so-recruitment-2026/</loc>
     <lastmod>2026-07-20T11:34:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-20T11:34:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-07-20T09:14:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/iaf-agniveervayu-musician-intake-01-2027/</loc>
-    <lastmod>2026-07-20T09:14:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/nfr-apprentice-2026/</loc>
     <lastmod>2026-07-20T09:14:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -64,11 +89,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/rajasthan-set-2026/</loc>
     <lastmod>2026-07-17T10:19:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-lower-pcs-recruitment-mar26/</loc>
-    <lastmod>2026-07-17T10:17:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -219,11 +239,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-capf-ac-recruitment-feb26/</loc>
     <lastmod>2026-07-11T08:53:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-72nd-pre-exam-2026/</loc>
-    <lastmod>2026-07-11T08:49:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -394,11 +409,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-ras-recruitment-2026/</loc>
     <lastmod>2026-07-03T15:30:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-technical-assistant-group-c-2026/</loc>
-    <lastmod>2026-07-03T15:21:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -2974,11 +2984,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bank/bob-lbo-vacancy-2025/</loc>
     <lastmod>2025-08-27T16:05:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/</loc>
-    <lastmod>2025-08-27T11:18:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
