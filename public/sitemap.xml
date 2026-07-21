@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/pnb-lbo-recruitment-2026/</loc>
-    <lastmod>2026-07-20T18:35:41+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/union-bank-so-recruitment-2026/</loc>
+    <lastmod>2026-07-21T08:40:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-21T08:40:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-po-mt-xvi-2026/</loc>
+    <lastmod>2026-07-21T08:37:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-so-xvi-2026/</loc>
+    <lastmod>2026-07-21T08:37:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/pnb-lbo-recruitment-2026/</loc>
     <lastmod>2026-07-20T18:35:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -44,11 +59,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-72nd-pre-exam-2026/</loc>
     <lastmod>2026-07-20T16:02:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/union-bank-so-recruitment-2026/</loc>
-    <lastmod>2026-07-20T11:34:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -449,16 +459,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-clerk-grade-ii-jr-assistant-recruitment-jan26/</loc>
     <lastmod>2026-07-02T13:01:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-so-xvi-2026/</loc>
-    <lastmod>2026-07-02T09:40:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-po-mt-xvi-2026/</loc>
-    <lastmod>2026-07-02T08:49:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
