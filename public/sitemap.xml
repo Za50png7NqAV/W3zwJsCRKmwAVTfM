@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
+    <lastmod>2026-07-22T18:09:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-22T18:09:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2026-07-22T18:05:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentice/igcar-trade-apprentice-2026/</loc>
-    <lastmod>2026-07-22T18:05:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-07-22T18:05:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -149,11 +154,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-female-supervisor-recruitment-jan26/</loc>
     <lastmod>2026-07-18T09:44:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
-    <lastmod>2026-07-18T09:42:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
