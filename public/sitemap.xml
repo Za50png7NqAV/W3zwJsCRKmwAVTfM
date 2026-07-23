@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/aai-manager-junior-executive-2026/</loc>
-    <lastmod>2026-07-23T08:45:12+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/icert-scientist-b-recruitment-2026/</loc>
+    <lastmod>2026-07-23T09:40:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-23T09:40:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-physiotherapist-2026/</loc>
+    <lastmod>2026-07-23T08:49:30+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/aai-manager-junior-executive-2026/</loc>
     <lastmod>2026-07-23T08:45:12+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -29,11 +39,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/igcar-trade-apprentice-2026/</loc>
     <lastmod>2026-07-22T18:05:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rpsc-physiotherapist-2026/</loc>
-    <lastmod>2026-07-22T16:54:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
