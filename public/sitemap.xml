@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
-    <lastmod>2026-07-24T13:01:16+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
+    <lastmod>2026-07-24T16:31:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-24T16:31:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
     <lastmod>2026-07-24T13:01:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -19,11 +24,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
     <lastmod>2026-07-24T11:28:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
-    <lastmod>2026-07-24T10:19:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -162,11 +162,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/apprentice/nfr-apprentice-2026/</loc>
-    <lastmod>2026-07-20T16:27:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsssc-technical-assistant-group-c-2026/</loc>
     <lastmod>2026-07-20T16:20:22+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -188,6 +183,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/iaf-agniveervayu-musician-intake-01-2027/</loc>
+    <lastmod>2026-07-20T09:14:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/nfr-apprentice-2026/</loc>
     <lastmod>2026-07-20T09:14:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -342,13 +342,13 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsc-capf-ac-recruitment-feb26/</loc>
-    <lastmod>2026-07-11T08:53:30+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrb-ministerial-isolated-category-dec25/</loc>
+    <lastmod>2026-07-11T08:54:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ministerial-isolated-category-dec25/</loc>
-    <lastmod>2026-07-11T08:47:06+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/upsc-capf-ac-recruitment-feb26/</loc>
+    <lastmod>2026-07-11T08:53:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
