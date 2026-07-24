@@ -2,12 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/army-jag-entry-scheme-125th-2026/</loc>
-    <lastmod>2026-07-23T11:34:56+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/pnb-lbo-recruitment-2026/</loc>
+    <lastmod>2026-07-24T10:09:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/union-bank-so-recruitment-2026/</loc>
+    <lastmod>2026-07-24T10:09:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-24T10:09:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpssc-asi-technical-recruitment-2026/</loc>
+    <lastmod>2026-07-24T10:07:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
+    <lastmod>2026-07-24T10:07:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
+    <lastmod>2026-07-24T10:07:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
+    <lastmod>2026-07-24T10:07:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
+    <lastmod>2026-07-24T10:07:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/army-jag-entry-scheme-125th-2026/</loc>
     <lastmod>2026-07-23T11:34:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -102,11 +137,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
-    <lastmod>2026-07-21T16:24:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/iob-apprentice-2026/</loc>
     <lastmod>2026-07-21T12:11:02+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -119,16 +149,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-iti-admission-2026/</loc>
     <lastmod>2026-07-21T08:46:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/union-bank-so-recruitment-2026/</loc>
-    <lastmod>2026-07-21T08:40:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/pnb-lbo-recruitment-2026/</loc>
-    <lastmod>2026-07-20T18:35:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -242,18 +262,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bpssc-asi-technical-recruitment-2026/</loc>
-    <lastmod>2026-07-15T08:26:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/mpesb-pnst-admission-form-2026/</loc>
     <lastmod>2026-07-15T08:24:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
-    <lastmod>2026-07-15T08:20:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -324,11 +334,6 @@
   </url><url>
     <loc>http://localhost:1313/scholarship/</loc>
     <lastmod>2026-07-11T15:22:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
-    <lastmod>2026-07-11T08:57:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -539,11 +544,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-forest-guard-wildlife-guard-2026/</loc>
     <lastmod>2026-06-30T16:13:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
-    <lastmod>2026-06-30T09:12:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
