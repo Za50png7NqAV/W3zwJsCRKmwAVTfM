@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
-    <lastmod>2026-07-25T10:53:04+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-07-25T12:15:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/union-bank-of-india-apprentice-2026/</loc>
+    <lastmod>2026-07-25T12:15:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-25T12:15:54+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/aiims-norcet-11th-nursing-officer-2026/</loc>
+    <lastmod>2026-07-25T12:14:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-principal-recruitment-2026/</loc>
+    <lastmod>2026-07-25T11:11:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-e-uparjan-portal/</loc>
     <lastmod>2026-07-25T10:53:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -122,11 +142,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-07-22T18:05:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/igcar-trade-apprentice-2026/</loc>
     <lastmod>2026-07-22T18:05:06+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -169,11 +184,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/isro-assistant-jpa-2026/</loc>
     <lastmod>2026-07-21T19:31:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-principal-recruitment-2026/</loc>
-    <lastmod>2026-07-21T18:00:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1054,11 +1064,6 @@
   </url><url>
     <loc>http://localhost:1313/document/mp-gumasta-license/</loc>
     <lastmod>2026-05-04T17:02:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/union-bank-of-india-apprentice-2026/</loc>
-    <lastmod>2026-05-04T11:58:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
