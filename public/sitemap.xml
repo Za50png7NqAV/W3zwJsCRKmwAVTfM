@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/voter-id-card-online/</loc>
+    <lastmod>2026-07-27T11:52:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-27T11:52:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-krishi-e-token-registration-portal/</loc>
+    <lastmod>2026-07-27T11:38:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mp-kisan-beej-anudan-yojana/</loc>
+    <lastmod>2026-07-27T11:38:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/isro-assistant-jpa-2026/</loc>
     <lastmod>2026-07-27T10:22:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-fsl-recruitment-2026/</loc>
-    <lastmod>2026-07-27T10:22:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-07-27T10:22:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -497,11 +512,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/mp-kisan-beej-anudan-yojana/</loc>
-    <lastmod>2026-07-05T18:22:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/sbi-cbo-recruitment-jan26/</loc>
     <lastmod>2026-07-05T08:34:24+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -824,11 +834,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/ctet-september-2026/</loc>
     <lastmod>2026-06-15T16:53:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/mp-krishi-e-token-registration-portal/</loc>
-    <lastmod>2026-06-15T10:12:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -2109,11 +2114,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bihar-police-si-admit-card-2025/</loc>
     <lastmod>2025-12-30T11:19:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/voter-card-online-form-details/</loc>
-    <lastmod>2025-12-29T12:34:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -4077,7 +4077,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/document/other/nrega-jobs-card-muster-roll/</loc>
+    <loc>http://localhost:1313/document/india/nrega-jobs-card-muster-roll/</loc>
     <lastmod>2025-01-27T11:29:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
