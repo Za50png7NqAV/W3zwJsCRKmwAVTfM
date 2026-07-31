@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/pm-internship-yojana-pmis/</loc>
-    <lastmod>2026-07-31T15:37:13+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/phc-ex-cadre-assistant-2026/</loc>
+    <lastmod>2026-07-31T17:53:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-31T17:53:39+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-technical-assistant-group-c-2026/</loc>
+    <lastmod>2026-07-31T16:43:37+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rvunl-je-junior-assistant-2026/</loc>
+    <lastmod>2026-07-31T16:37:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-internship-yojana-pmis/</loc>
     <lastmod>2026-07-31T15:37:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -289,11 +304,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/wcl-mining-sirdar-assistant-foreman-2026/</loc>
     <lastmod>2026-07-20T17:42:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-technical-assistant-group-c-2026/</loc>
-    <lastmod>2026-07-20T16:20:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -734,11 +744,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-pharmacist-recruitment-mar26/</loc>
     <lastmod>2026-06-26T08:41:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rvunl-je-junior-assistant-2026/</loc>
-    <lastmod>2026-06-25T15:51:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
