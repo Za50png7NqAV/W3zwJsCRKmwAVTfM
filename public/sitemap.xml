@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bsnl-jto-recruitment-2026/</loc>
-    <lastmod>2026-08-01T11:52:36+05:30</lastmod>
+    <loc>http://localhost:1313/eligibility/upsssc-pet-2026/</loc>
+    <lastmod>2026-08-01T16:48:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-01T16:48:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bsnl-jto-recruitment-2026/</loc>
     <lastmod>2026-08-01T11:52:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -3757,11 +3762,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/bank/bob-peon-2025/</loc>
-    <lastmod>2025-05-03T19:44:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/csir-nbri-recruitment-2025/</loc>
     <lastmod>2025-05-03T16:46:48+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -3827,11 +3827,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/bank/aic-management-trainee-jan25/</loc>
-    <lastmod>2025-04-04T19:40:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/document/licence/mineral-water-license/</loc>
     <lastmod>2025-04-03T10:25:36+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -3854,21 +3849,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp/2025/05/mppsc-food-safety-officer-mar25/</loc>
     <lastmod>2025-03-29T17:06:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/bseb-10th-resuls/</loc>
-    <lastmod>2025-03-29T12:29:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/uppsc-pre-2025/</loc>
-    <lastmod>2025-03-29T11:45:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/ncrtc-various-post-mar25/</loc>
-    <lastmod>2025-03-29T09:24:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -3902,11 +3882,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2025/bhu-jr-clerk-advt-07-2025/</loc>
-    <lastmod>2025-03-23T18:38:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/scheme/pm/2025/char-dham-yatra-regitration/</loc>
     <lastmod>2025-03-21T19:57:31+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -3932,31 +3907,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2025/uppsc-mains-2024/</loc>
-    <lastmod>2025-03-17T09:59:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/ncl-cil-apprentices-mar25/</loc>
-    <lastmod>2025-03-15T20:09:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/admission/</loc>
-    <lastmod>2025-03-14T16:38:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/nta-aissee-2025/</loc>
-    <lastmod>2025-03-14T16:38:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/student/</loc>
-    <lastmod>2025-03-14T16:38:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mp/2025/05/mpesb-constable-june23/</loc>
     <lastmod>2025-03-13T09:13:53+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -3978,11 +3928,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/admission/</loc>
-    <lastmod>2025-03-06T18:51:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/bank/</loc>
     <lastmod>2025-03-06T18:51:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -4022,23 +3967,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/bank/boi-apprentices-mar25/</loc>
-    <lastmod>2025-03-06T16:56:11+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/2025/kvs-class-1/</loc>
     <lastmod>2025-03-06T11:57:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/assam-rifles-rally-feb25/</loc>
-    <lastmod>2025-03-03T15:56:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/bank/union-bank-apprentices-feb25/</loc>
-    <lastmod>2025-02-27T17:57:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -4047,18 +3977,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2025/csir-iitr-lucknow-jsa-feb25/</loc>
-    <lastmod>2025-02-26T19:13:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/ads/sponsor-disclaimer/</loc>
     <lastmod>2025-02-25T18:48:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/mp/samagra-id-print/</loc>
-    <lastmod>2025-02-22T19:14:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -4067,38 +3987,13 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2025/dfccil-various-01-2025/</loc>
-    <lastmod>2025-02-17T19:27:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/scheme/mp/ssapy-cm-unmarried-pension-scheme/</loc>
     <lastmod>2025-02-17T09:56:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2023/</loc>
-    <lastmod>2025-02-13T09:53:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2023/uppsc-staff-nurse-unani/</loc>
-    <lastmod>2025-02-13T09:53:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/2025/05/csir-cdri-jsa-steno-feb25/</loc>
     <lastmod>2025-02-11T18:19:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/mp-euarjan-ravi-pajiyan-2025/</loc>
-    <lastmod>2025-02-07T19:15:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/uppsc-exam-calender/</loc>
-    <lastmod>2025-01-30T10:35:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -4119,11 +4014,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bihar/2025/05/bpsc-school-teacher-tre3-feb24/</loc>
     <lastmod>2025-01-25T17:30:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/jeemain-session-1/</loc>
-    <lastmod>2025-01-19T11:59:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -4157,21 +4047,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2024/</loc>
-    <lastmod>2025-01-10T18:43:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2024/aiims-group-b-c-cre/</loc>
-    <lastmod>2025-01-10T18:43:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2024/ctet-december-2024/</loc>
-    <lastmod>2025-01-09T12:18:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/2025/05/cbse-jr-assistant-jan25/</loc>
     <lastmod>2025-01-06T10:56:28+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -4187,16 +4062,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2024/nta-csir-ugc-dec24/</loc>
-    <lastmod>2024-12-31T10:26:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/ugc-net/</loc>
-    <lastmod>2024-12-31T10:26:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mp/2025/05/mppsc-pre-2023/</loc>
     <lastmod>2024-12-30T15:12:41+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -4209,11 +4074,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp/2025/05/mpesb-iti-training-officer-aug24/</loc>
     <lastmod>2024-12-28T19:49:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/2025/</loc>
-    <lastmod>2024-11-08T19:23:23+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>

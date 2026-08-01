@@ -78,26 +78,5 @@
       <guid>http://localhost:1313/categories/recruitment/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Admission</title>
-      <link>http://localhost:1313/categories/admission/</link>
-      <pubDate>Fri, 14 Mar 2025 16:38:54 +0530</pubDate>
-      <guid>http://localhost:1313/categories/admission/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Student</title>
-      <link>http://localhost:1313/categories/student/</link>
-      <pubDate>Fri, 14 Mar 2025 16:38:54 +0530</pubDate>
-      <guid>http://localhost:1313/categories/student/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>UGC-NET</title>
-      <link>http://localhost:1313/categories/ugc-net/</link>
-      <pubDate>Tue, 31 Dec 2024 10:26:15 +0530</pubDate>
-      <guid>http://localhost:1313/categories/ugc-net/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
