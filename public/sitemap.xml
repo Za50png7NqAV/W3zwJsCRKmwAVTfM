@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-4-patwari-2026/</loc>
-    <lastmod>2026-08-04T17:38:43+05:30</lastmod>
+    <loc>http://localhost:1313/rojgar-panjiyan/</loc>
+    <lastmod>2026-08-05T09:02:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mpesb-candidate-profile-panjiyan/</loc>
+    <lastmod>2026-08-05T09:02:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/otr/</loc>
+    <lastmod>2026-08-05T09:02:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-05T09:02:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-ies-iss-recruitment-feb26/</loc>
+    <lastmod>2026-08-05T08:47:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rvunl-je-junior-assistant-2026/</loc>
+    <lastmod>2026-08-05T08:36:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-4-patwari-2026/</loc>
     <lastmod>2026-08-04T17:38:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -89,11 +114,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-technical-assistant-group-c-2026/</loc>
     <lastmod>2026-07-31T16:43:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rvunl-je-junior-assistant-2026/</loc>
-    <lastmod>2026-07-31T16:37:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -427,11 +447,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/otr/</loc>
-    <lastmod>2026-07-16T09:34:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/otr/upsssc-otr-registration-2026/</loc>
     <lastmod>2026-07-16T09:34:26+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -757,11 +772,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/rojgar-panjiyan/</loc>
-    <lastmod>2026-06-27T07:59:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/bihar/bpssc-havildar-clerk-recruitment-jan26/</loc>
     <lastmod>2026-06-26T09:05:05+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -929,11 +939,6 @@
   </url><url>
     <loc>http://localhost:1313/myaadhaar-beta-portal/</loc>
     <lastmod>2026-06-14T19:38:09+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-ies-iss-recruitment-feb26/</loc>
-    <lastmod>2026-06-13T15:53:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1114,11 +1119,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-nursing-officer-sister-tutor-recruitment-2026/</loc>
     <lastmod>2026-05-09T16:22:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mpesb-candidate-profile-panjiyan/</loc>
-    <lastmod>2026-05-09T16:02:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
