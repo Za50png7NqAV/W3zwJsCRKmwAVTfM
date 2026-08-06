@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/jobs/bob-so-recruitment-2026/</loc>
-    <lastmod>2026-08-06T12:26:34+05:30</lastmod>
+    <lastmod>2026-08-06T12:31:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-clerk-recruitment-2026/</loc>
+    <lastmod>2026-08-06T12:31:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-08-06T12:26:34+05:30</lastmod>
+    <lastmod>2026-08-06T12:31:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/aadhaar-operator-supervisor-bharti/</loc>
+    <lastmod>2026-08-06T12:31:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -92,11 +102,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ibps-clerk-recruitment-2026/</loc>
-    <lastmod>2026-08-01T08:58:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/admission/jnvst-class-6-admission-2027/</loc>
     <lastmod>2026-08-01T08:58:19+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -174,11 +179,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-safai-karamchari-bharti-2026/</loc>
     <lastmod>2026-07-29T19:23:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/aadhaar-operator-supervisor-bharti/</loc>
-    <lastmod>2026-07-29T12:03:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
