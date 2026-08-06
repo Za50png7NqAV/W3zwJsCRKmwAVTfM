@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-recruitment-2026/</loc>
+    <lastmod>2026-08-06T17:14:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-06T17:14:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/calendar/</loc>
+    <lastmod>2026-08-06T15:43:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/calendar/mpesb-exam-calendar-2026/</loc>
+    <lastmod>2026-08-06T15:43:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/samagra-portal/</loc>
+    <lastmod>2026-08-06T15:39:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/bob-so-recruitment-2026/</loc>
     <lastmod>2026-08-06T12:31:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-clerk-recruitment-2026/</loc>
-    <lastmod>2026-08-06T12:31:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-08-06T12:31:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -734,11 +754,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mp-social-security-pension-yojana/</loc>
     <lastmod>2026-06-29T19:18:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/samagra-portal/</loc>
-    <lastmod>2026-06-29T19:16:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1862,11 +1877,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/calendar/</loc>
-    <lastmod>2026-02-03T15:21:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/calendar/uppsc-exam-calendar-2026/</loc>
     <lastmod>2026-02-03T15:21:25+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -2324,11 +2334,6 @@
   </url><url>
     <loc>http://localhost:1313/calendar/mppsc-exam-calendar-2026/</loc>
     <lastmod>2025-12-17T16:47:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/calendar/mpesb-exam-calendar-2026/</loc>
-    <lastmod>2025-12-17T16:11:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
