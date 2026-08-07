@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/scheme/pm-krishak-mitra-surya-yojana/</loc>
+    <lastmod>2026-08-07T11:02:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-07T11:02:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/azim-premji-scholarship-form-2026/</loc>
     <lastmod>2026-08-06T19:04:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scholarship/</loc>
-    <lastmod>2026-08-06T19:04:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-08-06T19:04:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -2029,11 +2034,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mppsc-state-service-exam-2026/</loc>
     <lastmod>2026-01-18T11:15:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/pm-krishak-mitra-surya-yojana-2025/</loc>
-    <lastmod>2026-01-17T15:49:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
