@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/ladli-laxmi-yojana-mp/</loc>
-    <lastmod>2026-08-07T19:17:32+05:30</lastmod>
+    <loc>http://localhost:1313/admission/mpesb-addet-admission-form-2026/</loc>
+    <lastmod>2026-08-07T19:23:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-07T19:23:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mpesb-pnst-admission-form-2026/</loc>
+    <lastmod>2026-08-07T19:21:44+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/ladli-laxmi-yojana-mp/</loc>
     <lastmod>2026-08-07T19:17:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -532,11 +542,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/mpesb-pnst-admission-form-2026/</loc>
-    <lastmod>2026-07-15T08:24:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
     <lastmod>2026-07-14T17:10:13+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -569,11 +574,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-army-agniveer-rally-recruitment-feb26/</loc>
     <lastmod>2026-07-13T17:55:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mpesb-addet-admission-form-2026/</loc>
-    <lastmod>2026-07-13T17:53:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
