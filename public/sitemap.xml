@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/pm-krishak-mitra-surya-yojana/</loc>
-    <lastmod>2026-08-07T11:02:26+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/ladli-laxmi-yojana-mp/</loc>
+    <lastmod>2026-08-07T19:17:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-07T19:17:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
+    <lastmod>2026-08-07T19:08:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/pm-kisan-samman-nidhi-yojana/</loc>
+    <lastmod>2026-08-07T19:08:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-krishak-mitra-surya-yojana/</loc>
     <lastmod>2026-08-07T11:02:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -522,11 +537,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/ladli-laxmi-yojana-mp/</loc>
-    <lastmod>2026-07-14T18:16:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsssc-assistant-boring-technician-mar26/</loc>
     <lastmod>2026-07-14T17:10:13+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -569,11 +579,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mukhyamantri-udyam-kranti-yojana/</loc>
     <lastmod>2026-07-12T11:33:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-07-12T11:32:21+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -894,11 +899,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/dsssb-03-2026/</loc>
     <lastmod>2026-06-21T10:08:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pmkisan-pmksn-yojana/</loc>
-    <lastmod>2026-06-20T08:22:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
