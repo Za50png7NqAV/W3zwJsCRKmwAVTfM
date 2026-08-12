@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mp-panchayat-sachiv-rojgar-sahayak-bharti-2026/</loc>
-    <lastmod>2026-08-12T10:27:08+05:30</lastmod>
+    <loc>http://localhost:1313/cpct-exam-2026/</loc>
+    <lastmod>2026-08-12T11:20:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-12T11:20:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-panchayat-sachiv-rojgar-sahayak-bharti-2026/</loc>
     <lastmod>2026-08-12T10:27:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1854,11 +1859,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/upbed-2026/</loc>
     <lastmod>2026-02-10T17:53:10+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/cpct-exam-march-2026/</loc>
-    <lastmod>2026-02-10T17:02:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
