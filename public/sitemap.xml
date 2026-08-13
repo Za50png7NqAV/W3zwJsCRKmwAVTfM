@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/cpct-exam-2026/</loc>
-    <lastmod>2026-08-12T11:20:29+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bsnl-jto-recruitment-2026/</loc>
+    <lastmod>2026-08-12T15:45:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-12T15:45:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-iti-admission-2026/</loc>
+    <lastmod>2026-08-12T15:38:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/cpct-exam-2026/</loc>
     <lastmod>2026-08-12T11:20:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -267,11 +277,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bsnl-jto-recruitment-2026/</loc>
-    <lastmod>2026-08-01T11:52:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/scheme/pmfby-pradhan-mantri-fasal-bima-yojana/</loc>
     <lastmod>2026-08-01T10:53:40+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -519,11 +524,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/iob-apprentice-2026/</loc>
     <lastmod>2026-07-21T12:11:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/mp-iti-admission-2026/</loc>
-    <lastmod>2026-07-21T08:46:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
