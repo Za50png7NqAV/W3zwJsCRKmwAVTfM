@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/mukhyamantri-sikho-kamao-yojana-mmsky/</loc>
-    <lastmod>2026-08-13T11:45:30+05:30</lastmod>
+    <loc>http://localhost:1313/education/</loc>
+    <lastmod>2026-08-14T11:06:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/education/mp-board-time-table-2027/</loc>
+    <lastmod>2026-08-14T11:06:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-14T11:06:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
+    <lastmod>2026-08-14T09:10:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/mukhyamantri-sikho-kamao-yojana-mmsky/</loc>
     <lastmod>2026-08-13T11:45:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -184,11 +199,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/cgpsc-adppo-recruitment-2026/</loc>
     <lastmod>2026-08-08T10:03:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/education/</loc>
-    <lastmod>2026-08-08T08:15:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -464,11 +474,6 @@
   </url><url>
     <loc>http://localhost:1313/samagra-portal-2-0/</loc>
     <lastmod>2026-07-24T19:07:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
-    <lastmod>2026-07-24T11:28:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
