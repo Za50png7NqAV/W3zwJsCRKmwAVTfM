@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/azim-premji-scholarship-form-2026/</loc>
+    <lastmod>2026-08-14T11:17:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scholarship/</loc>
+    <lastmod>2026-08-14T11:17:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-14T11:17:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/education/</loc>
     <lastmod>2026-08-14T11:06:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/education/mp-board-time-table-2027/</loc>
-    <lastmod>2026-08-14T11:06:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-08-14T11:06:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -144,16 +154,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/tar-fencing-yojana-mp/</loc>
     <lastmod>2026-08-10T09:50:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/azim-premji-scholarship-form-2026/</loc>
-    <lastmod>2026-08-10T08:42:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scholarship/</loc>
-    <lastmod>2026-08-10T08:42:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
