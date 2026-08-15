@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/india/har-ghar-tiranga/</loc>
-    <lastmod>2026-08-14T19:46:14+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mphc-assistant-grade-3-2026/</loc>
+    <lastmod>2026-08-15T11:55:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-15T11:55:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-forest-guard-jail-prahari-recruitment-feb26/</loc>
+    <lastmod>2026-08-15T10:31:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-72nd-pre-exam-2026/</loc>
+    <lastmod>2026-08-15T10:28:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rajasthan-safai-karamchari-bharti-2026/</loc>
+    <lastmod>2026-08-15T10:25:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-po-mt-xvi-2026/</loc>
+    <lastmod>2026-08-15T10:23:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/india/har-ghar-tiranga/</loc>
     <lastmod>2026-08-14T19:46:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -159,11 +184,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-leo-recruitment-2026/</loc>
     <lastmod>2026-08-10T19:20:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-po-mt-xvi-2026/</loc>
-    <lastmod>2026-08-10T18:37:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -392,11 +412,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rajasthan-safai-karamchari-bharti-2026/</loc>
-    <lastmod>2026-07-29T19:23:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/uppsc-pre-2026/</loc>
     <lastmod>2026-07-29T12:03:52+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -584,11 +599,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/</loc>
     <lastmod>2026-07-20T16:04:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-72nd-pre-exam-2026/</loc>
-    <lastmod>2026-07-20T16:02:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -969,11 +979,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rbi-bank-office-attendant-recruitment-jan26/</loc>
     <lastmod>2026-06-23T08:57:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-forest-guard-jail-prahari-recruitment-feb26/</loc>
-    <lastmod>2026-06-23T08:49:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
