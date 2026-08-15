@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/india/har-ghar-tiranga/</loc>
-    <lastmod>2026-08-14T19:15:15+05:30</lastmod>
+    <lastmod>2026-08-14T19:46:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-08-14T19:15:15+05:30</lastmod>
+    <lastmod>2026-08-14T19:46:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-civil-services-ias-ifs-form-feb26/</loc>
+    <lastmod>2026-08-14T19:41:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lower-pcs-recruitment-mar26/</loc>
+    <lastmod>2026-08-14T19:38:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ahc-research-associate-recruitment-2026/</loc>
+    <lastmod>2026-08-14T19:24:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -567,11 +582,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-lower-pcs-recruitment-mar26/</loc>
-    <lastmod>2026-07-20T16:09:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rpsc-jlo-junior-legal-officer-vacancy-2025/</loc>
     <lastmod>2026-07-20T16:04:58+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -659,11 +669,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpssc-havildar-instructor-recruitment-2026/</loc>
     <lastmod>2026-07-14T16:58:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-civil-services-ias-ifs-form-feb26/</loc>
-    <lastmod>2026-07-14T16:53:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1129,11 +1134,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pmegp-yojana/</loc>
     <lastmod>2026-06-02T17:13:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ahc-research-associate-recruitment-2026/</loc>
-    <lastmod>2026-06-02T10:37:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
