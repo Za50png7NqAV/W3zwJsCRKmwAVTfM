@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rssb-junior-engineer-2026/</loc>
-    <lastmod>2026-08-16T11:48:55+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/pm-kusum-yojana/</loc>
+    <lastmod>2026-08-16T19:09:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-16T19:09:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
+    <lastmod>2026-08-16T11:52:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-ugc-net-june-2026/</loc>
+    <lastmod>2026-08-16T11:52:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rssb-junior-engineer-2026/</loc>
     <lastmod>2026-08-16T11:48:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -717,11 +732,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
-    <lastmod>2026-07-13T18:04:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/indian-army-agniveer-rally-recruitment-feb26/</loc>
     <lastmod>2026-07-13T17:55:50+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1079,11 +1089,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/ctet-september-2026/</loc>
     <lastmod>2026-06-15T16:53:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/nta-ugc-net-june-2026/</loc>
-    <lastmod>2026-06-14T19:46:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
