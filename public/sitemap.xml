@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/pm-surya-ghar-muft-bijli-yojana/</loc>
-    <lastmod>2026-08-17T12:21:24+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/pm-internship-yojana-pmis/</loc>
+    <lastmod>2026-08-17T12:33:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
+    <lastmod>2026-08-17T12:33:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-17T12:33:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-surya-ghar-muft-bijli-yojana/</loc>
     <lastmod>2026-08-17T12:21:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -432,11 +442,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/pm-internship-yojana-pmis/</loc>
-    <lastmod>2026-07-31T15:37:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/up-police-constable-recruitment-dec25/</loc>
     <lastmod>2026-07-31T15:27:31+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -549,11 +554,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp-iti-training-officer-recruitment-jan26/</loc>
     <lastmod>2026-07-25T09:21:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
-    <lastmod>2026-07-24T19:07:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
