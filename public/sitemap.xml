@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mpesb-group-3-sub-engineer-2026/</loc>
-    <lastmod>2026-08-17T20:52:49+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-4-patwari-2026/</loc>
+    <lastmod>2026-08-18T19:45:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-18T19:45:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-group-3-sub-engineer-2026/</loc>
     <lastmod>2026-08-17T20:52:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -233,11 +238,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-clerk-recruitment-2026/</loc>
-    <lastmod>2026-08-12T08:45:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-4-patwari-2026/</loc>
     <lastmod>2026-08-12T08:45:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
