@@ -27,6 +27,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/jobs/rssb-computer-instructor-recruitment-2026/</loc>
+    <lastmod>2026-08-19T14:58:18+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/bpsc-school-teacher-tre-4.0-2026/</loc>
     <lastmod>2026-08-19T12:34:24+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1234,11 +1239,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rbi-assistant-recruitment-feb26/</loc>
     <lastmod>2026-05-28T09:30:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rssb-computer-instructor-recruitment-2026/</loc>
-    <lastmod>2026-05-25T18:19:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
