@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/mpesb-mspstet-2026/</loc>
-    <lastmod>2026-08-21T09:08:52+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/upsc-epfo-apfc-2026/</loc>
+    <lastmod>2026-08-21T15:52:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-21T15:52:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
+    <lastmod>2026-08-21T10:41:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
+    <lastmod>2026-08-21T10:38:01+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/mpesb-mspstet-2026/</loc>
     <lastmod>2026-08-21T09:08:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -249,16 +264,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/mukhyamantri-sikho-kamao-yojana-mmsky/</loc>
     <lastmod>2026-08-13T11:45:30+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
-    <lastmod>2026-08-13T09:45:39+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
-    <lastmod>2026-08-13T09:39:00+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
