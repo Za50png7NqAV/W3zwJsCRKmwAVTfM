@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/ibps-clerk-recruitment-2026/</loc>
+    <lastmod>2026-08-22T09:15:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/upsc-epfo-apfc-2026/</loc>
-    <lastmod>2026-08-21T15:52:32+05:30</lastmod>
+    <lastmod>2026-08-22T09:15:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-08-21T15:52:32+05:30</lastmod>
+    <lastmod>2026-08-22T09:15:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
+    <lastmod>2026-08-22T09:11:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-phase-14-recruitment-2026/</loc>
+    <lastmod>2026-08-22T09:06:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -64,11 +79,6 @@
   </url><url>
     <loc>http://localhost:1313/education/ruk-jana-nahi-yojana-rjny-june-2026/</loc>
     <lastmod>2026-08-20T15:18:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-clerk-recruitment-2026/</loc>
-    <lastmod>2026-08-20T11:15:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1117,11 +1127,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
-    <lastmod>2026-06-17T19:38:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/mp-board-second-exam-result-2026/</loc>
     <lastmod>2026-06-16T15:34:57+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -1399,11 +1404,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/bihar-iti-cat-2026/</loc>
     <lastmod>2026-04-19T11:50:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-phase-14-recruitment-2026/</loc>
-    <lastmod>2026-04-18T17:40:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
