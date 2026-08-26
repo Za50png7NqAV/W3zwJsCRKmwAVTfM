@@ -2,12 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/document/vahan-rc-card-online/</loc>
-    <lastmod>2026-08-25T16:11:17+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/iob-security-guard-recruitment-2026/</loc>
+    <lastmod>2026-08-26T10:15:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-26T10:15:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/mp-iti-admission-2026/</loc>
+    <lastmod>2026-08-26T08:57:46+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/neet-pg-2026/</loc>
+    <lastmod>2026-08-26T08:54:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-capf-ac-recruitment-feb26/</loc>
+    <lastmod>2026-08-26T08:51:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/card/abha-health-card/</loc>
+    <lastmod>2026-08-26T08:44:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rvunl-je-junior-assistant-2026/</loc>
+    <lastmod>2026-08-26T08:42:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/document/vahan-rc-card-online/</loc>
     <lastmod>2026-08-25T16:11:17+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -332,11 +362,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/admission/mp-iti-admission-2026/</loc>
-    <lastmod>2026-08-12T15:38:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/cpct-exam-2026/</loc>
     <lastmod>2026-08-12T11:20:29+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -344,11 +369,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp-panchayat-sachiv-rojgar-sahayak-bharti-2026/</loc>
     <lastmod>2026-08-12T10:27:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/neet-pg-2026/</loc>
-    <lastmod>2026-08-12T08:51:10+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -479,11 +499,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-ies-iss-recruitment-feb26/</loc>
     <lastmod>2026-08-05T08:47:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rvunl-je-junior-assistant-2026/</loc>
-    <lastmod>2026-08-05T08:36:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -839,11 +854,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-ministerial-isolated-category-dec25/</loc>
     <lastmod>2026-07-11T08:54:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-capf-ac-recruitment-feb26/</loc>
-    <lastmod>2026-07-11T08:53:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -4219,11 +4229,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mp/2025/05/mppsc-pre-2025/</loc>
     <lastmod>2025-01-06T10:11:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/card/abha-health-card/</loc>
-    <lastmod>2024-12-31T11:16:30+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
