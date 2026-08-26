@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/iob-security-guard-recruitment-2026/</loc>
-    <lastmod>2026-08-26T10:15:25+05:30</lastmod>
+    <loc>http://localhost:1313/mp-laptop-yojana/</loc>
+    <lastmod>2026-08-26T11:52:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-26T11:52:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rpsc-apo-recruitment-2026/</loc>
+    <lastmod>2026-08-26T10:26:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/iob-security-guard-recruitment-2026/</loc>
     <lastmod>2026-08-26T10:15:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -954,11 +964,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-cet-graduate-level-2026/</loc>
     <lastmod>2026-07-04T09:20:01+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rpsc-apo-recruitment-2026/</loc>
-    <lastmod>2026-07-03T15:51:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
