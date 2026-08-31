@@ -7,7 +7,7 @@
     {
       "id": {{ $post.File.UniqueID | jsonify }},
       "title": {{ $post.Title | jsonify }},
-      "url": {{ $post.Permalink | jsonify }},
+      "url": {{ printf "https://www.yojnaportal.com%s" $post.RelPermalink | jsonify }}
       "published_at": {{ $post.Date.Format "2006-01-02T15:04:05-07:00" | jsonify }}
     }
     {{- end -}}
