@@ -1,0 +1,32 @@
+<script>
+(function () {
+
+    const API =
+        "https://post-feed-api.yojnaportal-com.workers.dev";
+
+    const SITE =
+        "yojnaportal";
+
+    const url =
+        window.location.href;
+
+    fetch(API + "/api/view", {
+        method: "POST",
+
+        headers: {
+            "Content-Type":
+                "application/json"
+        },
+
+        body: JSON.stringify({
+            site: SITE,
+            url: url
+        })
+
+    }).catch(function () {
+        // View tracking failure
+        // should never break the page
+    });
+
+})();
+</script>

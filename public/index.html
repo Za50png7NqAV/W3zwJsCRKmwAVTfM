@@ -407,14 +407,14 @@ window.addEventListener("DOMContentLoaded", ()=>{
         
         
           <li class="card-item">
-            <a class="card-title" href="/jobs/jssc-jilcce-inter-level-2026/" >JSSC JILCCE Inter Level Vacancy 2026</a>
+            <a class="card-title" href="/pm-shouchalay-yojana/" >PM Gramin Shauchalay Yojana 2026: Apply Online for ₹12,000 Toilet Subsidy</a>
             
           <div class="card-tags">
         
         
       </div>
 
-      <div class="card-date">📅 01 Aug 2026</div>
+      <div class="card-date">📅 27 Jun 2026</div>
           </li>
        
         
@@ -10011,6 +10011,38 @@ transition:all 0.3s ease;">
    style="position:fixed;bottom:20px;right:20px;background:#f6fdf9;color:#fff;padding:8px 10px;border-radius:50px;text-decoration:none;box-shadow:0 2px 5px rgba(0,0,0,0.3);font-family:sans-serif;">
    <img src="/svg/whatsapp.svg" alt="WhatsApp Channel" width="40px">
 </a>
+<script>
+(function () {
+
+    const API =
+        "https://post-feed-api.yojnaportal-com.workers.dev";
+
+    const SITE =
+        "yojnaportal";
+
+    const url =
+        window.location.href;
+
+    fetch(API + "/api/view", {
+        method: "POST",
+
+        headers: {
+            "Content-Type":
+                "application/json"
+        },
+
+        body: JSON.stringify({
+            site: SITE,
+            url: url
+        })
+
+    }).catch(function () {
+        
+        
+    });
+
+})();
+</script>
 </body>
 </html>
   

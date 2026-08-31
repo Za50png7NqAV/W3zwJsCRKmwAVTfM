@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bank-of-india-so-recruitment-2026/</loc>
-    <lastmod>2026-08-31T16:59:08+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/pm-internship-yojana-pmis/</loc>
+    <lastmod>2026-08-31T17:06:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
+    <lastmod>2026-08-31T17:06:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-31T17:06:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bank-of-india-so-recruitment-2026/</loc>
     <lastmod>2026-08-31T16:59:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -314,16 +324,6 @@
   </url><url>
     <loc>http://localhost:1313/mp-anganwadi-bharti-2026-phase-1/</loc>
     <lastmod>2026-08-17T15:47:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm-internship-yojana-pmis/</loc>
-    <lastmod>2026-08-17T12:33:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
-    <lastmod>2026-08-17T12:33:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
