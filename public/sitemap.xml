@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/gaon-ki-beti-yojana-2026-27/</loc>
-    <lastmod>2026-09-01T15:53:54+05:30</lastmod>
+    <loc>http://localhost:1313/pratibha-kiran-yojana-2026-27/</loc>
+    <lastmod>2026-09-01T17:09:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-01T17:09:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/gaon-ki-beti-yojana-2026-27/</loc>
     <lastmod>2026-09-01T15:53:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
