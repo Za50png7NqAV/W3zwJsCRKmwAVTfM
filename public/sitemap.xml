@@ -2,12 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/nta-ugc-net-june-2026/</loc>
-    <lastmod>2026-09-01T18:07:41+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
+    <lastmod>2026-09-02T12:56:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-02T12:56:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
+    <lastmod>2026-09-02T10:07:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
+    <lastmod>2026-09-02T10:03:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
+    <lastmod>2026-09-02T09:57:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-combined-medical-services-cms-mar26/</loc>
+    <lastmod>2026-09-02T09:54:17+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-school-teacher-tre-4.0-2026/</loc>
+    <lastmod>2026-09-02T09:42:05+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-ugc-net-june-2026/</loc>
     <lastmod>2026-09-01T18:07:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -139,11 +169,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-fsl-recruitment-2026/</loc>
     <lastmod>2026-08-30T09:59:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
-    <lastmod>2026-08-30T09:53:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -327,11 +352,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-08-19T15:43:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
     <lastmod>2026-08-19T15:43:56+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -349,11 +369,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rssb-computer-instructor-recruitment-2026/</loc>
     <lastmod>2026-08-19T14:58:18+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpsc-school-teacher-tre-4.0-2026/</loc>
-    <lastmod>2026-08-19T12:34:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -732,11 +747,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsc-combined-medical-services-cms-mar26/</loc>
-    <lastmod>2026-07-25T09:38:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/indian-navy-ssc-officer-jun-2027-batch/</loc>
     <lastmod>2026-07-25T09:35:18+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -989,11 +999,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-apo-recruitment-feb26/</loc>
     <lastmod>2026-07-07T08:37:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
-    <lastmod>2026-07-07T08:35:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
