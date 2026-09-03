@@ -2,12 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/admission/nvs-class-11th-admission-2027/</loc>
-    <lastmod>2026-09-03T10:56:11+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/upsc-geo-scientist-2027/</loc>
+    <lastmod>2026-09-03T19:25:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-03T19:25:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-rrb-15th-recruitment-2026/</loc>
+    <lastmod>2026-09-03T17:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/india-post-gds-july-2026/</loc>
+    <lastmod>2026-09-03T17:23:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/aiims-norcet-11th-nursing-officer-2026/</loc>
+    <lastmod>2026-09-03T17:21:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
+    <lastmod>2026-09-03T17:15:14+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/dhc-higher-judicial-service-hjs-2026/</loc>
+    <lastmod>2026-09-03T17:11:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/nvs-class-11th-admission-2027/</loc>
     <lastmod>2026-09-03T10:56:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -34,11 +64,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
     <lastmod>2026-09-02T10:03:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-po-recruitment-2026/</loc>
-    <lastmod>2026-09-02T09:57:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -69,11 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/gaon-ki-beti-yojana-2026-27/</loc>
     <lastmod>2026-09-01T15:53:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-rrb-15th-recruitment-2026/</loc>
-    <lastmod>2026-09-01T10:51:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -139,11 +159,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bank-of-india-so-recruitment-2026/</loc>
     <lastmod>2026-08-31T16:59:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/india-post-gds-july-2026/</loc>
-    <lastmod>2026-08-31T12:34:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -742,11 +757,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/aiims-norcet-11th-nursing-officer-2026/</loc>
-    <lastmod>2026-07-25T12:24:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/union-bank-of-india-apprentice-2026/</loc>
     <lastmod>2026-07-25T12:15:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -814,11 +824,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/igcar-trade-apprentice-2026/</loc>
     <lastmod>2026-07-22T18:05:06+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/dhc-higher-judicial-service-hjs-2026/</loc>
-    <lastmod>2026-07-22T15:18:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
