@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bob-wealth-executive-2026/</loc>
-    <lastmod>2026-09-04T12:48:59+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/pfrda-assistant-manager-2026/</loc>
+    <lastmod>2026-09-05T15:31:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-05T15:31:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-ugc-net-june-2026/</loc>
+    <lastmod>2026-09-05T12:16:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
+    <lastmod>2026-09-05T12:07:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
+    <lastmod>2026-09-05T12:05:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/mpesb-mspstet-2026/</loc>
+    <lastmod>2026-09-05T12:02:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bob-wealth-executive-2026/</loc>
     <lastmod>2026-09-04T12:48:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -102,11 +127,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/nta-ugc-net-june-2026/</loc>
-    <lastmod>2026-09-01T18:07:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/eligibility/upsssc-pet-2026/</loc>
     <lastmod>2026-09-01T17:56:13+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -119,16 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/gaon-ki-beti-yojana-2026-27/</loc>
     <lastmod>2026-09-01T15:53:54+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
-    <lastmod>2026-09-01T10:47:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
-    <lastmod>2026-09-01T10:47:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -339,11 +349,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-phase-14-recruitment-2026/</loc>
     <lastmod>2026-08-22T09:06:14+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/mpesb-mspstet-2026/</loc>
-    <lastmod>2026-08-21T09:08:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
