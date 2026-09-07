@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/up-special-tet-2026/</loc>
-    <lastmod>2026-09-05T18:03:11+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/vb-g-ram-g-yojana/</loc>
+    <lastmod>2026-09-06T14:47:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-06T14:47:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/up-special-tet-2026/</loc>
     <lastmod>2026-09-05T18:03:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -2497,11 +2502,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/scheme/vb-g-ram-g-yojana-2025/</loc>
-    <lastmod>2025-12-23T13:17:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/ibps-rrbs-crp-xiv-vacancy-2025/</loc>
     <lastmod>2025-12-22T15:59:35+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -4269,11 +4269,6 @@
   </url><url>
     <loc>http://localhost:1313/student/2025/mpbse-10th-12th-main-exam-2024-25/</loc>
     <lastmod>2025-01-28T20:43:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/document/india/nrega-jobs-card-muster-roll/</loc>
-    <lastmod>2025-01-27T11:29:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
