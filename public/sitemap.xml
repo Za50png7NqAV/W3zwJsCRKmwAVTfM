@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/scheme/vb-g-ram-g-yojana/</loc>
-    <lastmod>2026-09-06T14:47:57+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/upsssc-computer-cadre-2026/</loc>
+    <lastmod>2026-09-07T18:39:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-07T18:39:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/rajasthan-set-2026/</loc>
+    <lastmod>2026-09-07T18:39:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
+    <lastmod>2026-09-07T18:36:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/vb-g-ram-g-yojana/</loc>
     <lastmod>2026-09-06T14:47:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -49,11 +64,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bob-wealth-executive-2026/</loc>
     <lastmod>2026-09-04T12:48:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-computer-cadre-2026/</loc>
-    <lastmod>2026-09-04T11:51:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -422,11 +432,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-group-d-recruitment-dec25/</loc>
-    <lastmod>2026-08-19T15:43:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsssc-lower-pcs-recruitment-mar26/</loc>
     <lastmod>2026-08-19T15:40:51+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -699,11 +704,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pmfby-pradhan-mantri-fasal-bima-yojana/</loc>
     <lastmod>2026-08-01T10:53:40+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/rajasthan-set-2026/</loc>
-    <lastmod>2026-08-01T09:34:46+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
