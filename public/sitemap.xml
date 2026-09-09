@@ -2,12 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-paramedical-2026/</loc>
-    <lastmod>2026-09-08T13:04:19+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/upessc-assistant-professor-2026/</loc>
+    <lastmod>2026-09-09T16:46:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-09T16:46:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
+    <lastmod>2026-09-09T09:45:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-leo-recruitment-2026/</loc>
+    <lastmod>2026-09-09T09:45:16+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/aiims-norcet-11th-nursing-officer-2026/</loc>
+    <lastmod>2026-09-09T09:44:15+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-fsl-recruitment-2026/</loc>
+    <lastmod>2026-09-09T09:39:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-forest-guard-wildlife-guard-2026/</loc>
+    <lastmod>2026-09-09T09:31:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/phc-ex-cadre-assistant-2026/</loc>
+    <lastmod>2026-09-09T09:19:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-phase-14-recruitment-2026/</loc>
+    <lastmod>2026-09-09T09:14:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-paramedical-2026/</loc>
     <lastmod>2026-09-08T13:04:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -33,11 +73,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/india-post-gds-july-2026/</loc>
-    <lastmod>2026-09-08T08:46:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
     <lastmod>2026-09-08T08:46:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -134,11 +169,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsc-nda-ii-recruitment-2026/</loc>
     <lastmod>2026-09-03T19:33:46+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/aiims-norcet-11th-nursing-officer-2026/</loc>
-    <lastmod>2026-09-03T17:21:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -287,16 +317,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-forest-guard-wildlife-guard-2026/</loc>
-    <lastmod>2026-08-30T10:03:58+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-fsl-recruitment-2026/</loc>
-    <lastmod>2026-08-30T09:59:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
     <lastmod>2026-08-30T09:43:55+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -394,11 +414,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
     <lastmod>2026-08-22T09:11:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-phase-14-recruitment-2026/</loc>
-    <lastmod>2026-08-22T09:06:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -592,11 +607,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-leo-recruitment-2026/</loc>
-    <lastmod>2026-08-10T19:20:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/rcf-kapurthala-apprentice-2026/</loc>
     <lastmod>2026-08-10T17:46:14+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -734,11 +744,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/jssc-jilcce-inter-level-2026/</loc>
     <lastmod>2026-08-01T08:50:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/phc-ex-cadre-assistant-2026/</loc>
-    <lastmod>2026-07-31T17:53:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
