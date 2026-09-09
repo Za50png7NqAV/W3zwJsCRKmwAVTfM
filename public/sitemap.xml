@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/upessc-assistant-professor-2026/</loc>
-    <lastmod>2026-09-09T16:46:28+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-asi-hc-computer-recruitment-feb26/</loc>
+    <lastmod>2026-09-09T16:59:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-09T16:59:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upessc-assistant-professor-2026/</loc>
     <lastmod>2026-09-09T16:46:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1464,11 +1469,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/force/</loc>
     <lastmod>2026-05-12T10:41:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-asi-hc-computer-recruitment-feb26/</loc>
-    <lastmod>2026-05-09T16:25:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
