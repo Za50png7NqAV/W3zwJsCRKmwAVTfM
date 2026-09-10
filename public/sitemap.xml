@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ssc-cpo-capf-si-2026/</loc>
-    <lastmod>2026-09-10T17:17:22+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-1-krashi-vistar-adhikari-2026/</loc>
+    <lastmod>2026-09-10T19:05:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
+    <lastmod>2026-09-10T19:05:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-10T19:05:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/isro-assistant-jpa-2026/</loc>
+    <lastmod>2026-09-10T19:02:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cpo-capf-si-2026/</loc>
     <lastmod>2026-09-10T17:17:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -747,11 +762,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-1-krashi-vistar-adhikari-2026/</loc>
-    <lastmod>2026-08-01T08:55:38+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/jssc-jilcce-inter-level-2026/</loc>
     <lastmod>2026-08-01T08:50:35+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -817,11 +827,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/isro-assistant-jpa-2026/</loc>
-    <lastmod>2026-07-27T10:22:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/union-bank-of-india-apprentice-2026/</loc>
     <lastmod>2026-07-25T12:15:54+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -859,11 +864,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
     <lastmod>2026-07-24T11:28:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
-    <lastmod>2026-07-24T10:07:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
