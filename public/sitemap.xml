@@ -2,12 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mpesb-police-constable-recruitment-2026/</loc>
-    <lastmod>2026-09-09T17:23:59+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ssc-cpo-capf-si-2026/</loc>
+    <lastmod>2026-09-10T17:17:22+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-10T17:17:22+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bank-of-india-so-recruitment-2026/</loc>
+    <lastmod>2026-09-10T09:39:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpssc-hg-company-commander-2026/</loc>
+    <lastmod>2026-09-10T09:39:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
+    <lastmod>2026-09-10T09:37:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
+    <lastmod>2026-09-10T09:32:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/upsssc-pet-2026/</loc>
+    <lastmod>2026-09-10T09:27:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-clerk-backlog-2026/</loc>
+    <lastmod>2026-09-10T09:25:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-recruitment-2026/</loc>
     <lastmod>2026-09-09T17:23:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -59,11 +94,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-paramedical-2026/</loc>
     <lastmod>2026-09-08T13:04:19+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bpssc-hg-company-commander-2026/</loc>
-    <lastmod>2026-09-08T11:24:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -142,16 +172,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
-    <lastmod>2026-09-05T12:07:04+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-anganwadi-worker-bharti/</loc>
-    <lastmod>2026-09-05T12:05:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/eligibility/mpesb-mspstet-2026/</loc>
     <lastmod>2026-09-05T12:02:33+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -227,11 +247,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/upsssc-pet-2026/</loc>
-    <lastmod>2026-09-01T17:56:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/pratibha-kiran-yojana-2026-27/</loc>
     <lastmod>2026-09-01T17:09:34+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -289,11 +304,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
     <lastmod>2026-08-31T17:06:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bank-of-india-so-recruitment-2026/</loc>
-    <lastmod>2026-08-31T16:59:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -634,11 +644,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/jnvst-class-6-admission-2027/</loc>
     <lastmod>2026-08-08T11:12:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-clerk-backlog-2026/</loc>
-    <lastmod>2026-08-08T10:39:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
