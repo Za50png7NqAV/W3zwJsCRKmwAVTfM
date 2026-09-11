@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/upsssc-senior-instructor-2026/</loc>
+    <lastmod>2026-09-11T15:38:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-11T15:38:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
+    <lastmod>2026-09-10T19:17:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/mp-evikas-token/</loc>
+    <lastmod>2026-09-10T19:17:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-1-krashi-vistar-adhikari-2026/</loc>
     <lastmod>2026-09-10T19:05:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
-    <lastmod>2026-09-10T19:05:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-09-10T19:05:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -242,11 +257,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-09-02T10:07:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
     <lastmod>2026-09-02T10:03:26+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -339,11 +349,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/uco-bank-so-recruitment-2026/</loc>
     <lastmod>2026-08-30T11:45:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp-evikas-token/</loc>
-    <lastmod>2026-08-30T10:58:58+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
