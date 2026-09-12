@@ -2,12 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/upsssc-senior-instructor-2026/</loc>
-    <lastmod>2026-09-11T16:07:15+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-nayab-tehsildar-2026/</loc>
+    <lastmod>2026-09-12T10:17:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-12T10:17:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/aadhaar-operator-supervisor-bharti/</loc>
+    <lastmod>2026-09-12T09:13:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsc-epfo-apfc-2026/</loc>
+    <lastmod>2026-09-12T09:11:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rcfl-management-trainee-2026/</loc>
+    <lastmod>2026-09-12T09:10:24+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-excise-constable-recruitment-2026/</loc>
+    <lastmod>2026-09-12T08:55:05+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
+    <lastmod>2026-09-12T08:49:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-senior-instructor-2026/</loc>
     <lastmod>2026-09-11T16:07:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -427,11 +457,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-excise-constable-recruitment-2026/</loc>
-    <lastmod>2026-08-25T16:08:17+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2026-08-25T16:02:36+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -447,22 +472,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rcfl-management-trainee-2026/</loc>
-    <lastmod>2026-08-25T11:17:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/aadhaar-operator-supervisor-bharti/</loc>
-    <lastmod>2026-08-23T17:16:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/ibps-clerk-recruitment-2026/</loc>
-    <lastmod>2026-08-22T09:15:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsc-epfo-apfc-2026/</loc>
     <lastmod>2026-08-22T09:15:56+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1464,11 +1474,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/indian-navy-ssc-executive-it-2026/</loc>
     <lastmod>2026-05-18T11:44:47+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-lekhpal-recruitment-dec25/</loc>
-    <lastmod>2026-05-18T11:40:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
