@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-09-12T18:51:24+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
+    <lastmod>2026-09-13T10:04:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-police-constable-recruitment-2026/</loc>
+    <lastmod>2026-09-13T10:04:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-13T10:04:57+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
+    <lastmod>2026-09-13T10:02:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
+    <lastmod>2026-09-13T09:59:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
     <lastmod>2026-09-12T18:51:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -142,11 +162,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-police-constable-recruitment-2026/</loc>
-    <lastmod>2026-09-09T17:23:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mpesb-asi-hc-computer-recruitment-feb26/</loc>
     <lastmod>2026-09-09T16:59:22+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -154,11 +169,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upessc-assistant-professor-2026/</loc>
     <lastmod>2026-09-09T16:46:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
-    <lastmod>2026-09-09T09:45:16+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -309,11 +319,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-je-2026/</loc>
     <lastmod>2026-09-02T18:56:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
-    <lastmod>2026-09-02T10:03:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1239,11 +1244,6 @@
   </url><url>
     <loc>http://localhost:1313/aadhaar-npci-mapping-online/</loc>
     <lastmod>2026-06-24T10:55:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
-    <lastmod>2026-06-23T18:43:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
