@@ -1,1 +1,131 @@
-google.com, pub-4855323063398382, DIRECT, f08c47fec0942fa0
+vdo.ai, 5966, Direct
+atlas5.co, 5966, DIRECT
+google.com, pub-7094677798399606, RESELLER, f08c47fec0942fa0
+google.com, pub-2403018226404213, RESELLER, f08c47fec0942fa0
+adagio.io, 1442, RESELLER
+amxrtb.com, 105199329, RESELLER
+adform.com, 1942, RESELLER
+adipolo.com, 23050223808, direct
+adipolosolutions.com, 23050223808, direct
+google.com, pub-2930805104418204, reseller, f08c47fec0942fa0
+google.com, pub-4903453974745530, reseller, f08c47fec0942fa0
+google.com, pub-4836542095728076, reseller, f08c47fec0942fa0
+adnimation.com, 20260015, direct
+google.com, pub-8573325940152694, reseller, f08c47fec0942fa0
+google.com, pub-7528949385909099, reseller, f08c47fec0942fa0
+adsolut.in, 1798, DIRECT
+playstream.media, 2578, DIRECT
+google.com, pub-4586415728471297, DIRECT, f08c47fec0942fa0
+google.com, pub-8584156348842922, DIRECT, f08c47fec0942fa0
+vidgyor.com, 10033, RESELLER
+google.com, pub-8863191426564274, RESELLER, f08c47fec0942fa0
+aps.amazon.com,b3d50ad3-eca1-4091-be72-de4a8bc67a3d,DIRECT
+aniview.com, 68caaf49b07702ddc30e5038, reseller, 78b21b97965ec3f8
+google.com, pub-5717092533913515, reseller, f08c47fec0942fa0
+gannett.com, 22652678936, RESELLER, dd61c0c3f57b6942
+playstream.media, 911, RESELLER
+google.com, pub-4586415728471297, RESELLER, f08c47fec0942fa0
+google.com, pub-8584156348842922, RESELLER, f08c47fec0942fa0
+google.com, pub-3565385483761681, RESELLER, f08c47fec0942fa0
+didna.io, 22652678936, RESELLER
+adipolosolutions.com, 22652678936, RESELLER
+pubmatic.com, 166672, RESELLER, 5d62403b186f2ace
+pubmatic.com, 160993, RESELLER, 5d62403b186f2ace
+richaudience.com, 1ru8dKmJJV, RESELLER
+rubiconproject.com, 13510, RESELLER, 0bfd66d529a55807
+pubmatic.com, 81564, RESELLER, 5d62403b186f2ace
+inmobi.com, 155796dfff86494e9b375346a748e8eb, RESELLER, 83e75a7ae333ca9d
+lijit.com, 376385, RESELLER, fafdf38b16bf6b2b
+onetag.com, 57e618150c70d90, RESELLER
+media.net, 8CU322PTV, RESELLER, 818f58666cabc936
+rubiconproject.com, 13918, RESELLER, 0bfd66d529a55807
+auxoads.com, 3e576b4d76df7b39fb0dcdee4810c2a0, DIRECT
+google.com , pub-5413329544040947, RESELLER, f08c47fec0942fa0
+AWG.LA, 23330009029, DIRECT
+google.com, pub-9130183266015225, RESELLER, f08c47fec0942fa0
+thebrave.io, 1234586, RESELLER, c25b2154543746ac
+copper6.com, 766168, direct
+datawrkz.com, 2218, direct
+datawrkz.com, 2394, direct
+google.com, pub-8856559311549217, reseller, f08c47fec0942fa0
+google.com, pub-2676898002317977, reseller, f08c47fec0942fa0
+conversantmedia.com, 100789, reseller, 03113cd04947736d
+pubmatic.com, 158100, reseller, 5d62403b186f2ace
+rubiconproject.com, 23644, reseller, 0bfd66d529a55807
+smartadserver.com, 4539, RESELLER, 060d053dcf45cbf3
+eskimi.com, 2020000801, reseller
+richaudience.com, 1fsNorHWpU, RESELLER
+thegermanemedia.com, 771, DIRECT
+google.com, pub-6716225838534735, RESELLER, f08c47fec0942fa0
+triplelift.com, 14714, DIRECT, 6c33edb13117fd86
+triplelift.com, 14714-EB, DIRECT, 6c33edb13117fd86
+firstimpression.io, 8377, RESELLER
+aps.amazon.com,4cd01fd0-0780-4b33-a4da-c39467660185, DIRECT
+improvedigital.com, 2918, direct
+incrementx.com, 50003, DIRECT, 8728b7e97e589da4
+google.com, pub-3977122154505186, RESELLER, f08c47fec0942fa0
+insticator.com,57f5ae93-5c8b-43c3-9d8a-bdb38c64850f,,direct,b3511ffcafb23a32
+oko.uk,57f5ae93-5c8b-43c3-9d8a-bdb38c64850f,direct,b3511ffcafb23a32
+google.com,pub-2697679518515886,reseller,f08c47fec0942fa0
+kueez.com, 204794845b2574bb9d18fb5f94c9ec85, RESELLER
+lunamedia.io, 6381f48c-46a9-43f7-8264-202a651be2a9, DIRECT, 524ecb396915caaf
+rubiconproject.com, 27408, DIRECT, 0bfd66d529a55807
+pixelpluses.com, 244007, DIRECT
+missena.com, SID-972616, DIRECT
+rubiconproject.com,24548,RESELLER,0bfd66d529a55807
+appnexus.com,14655,RESELLER,f5ab79cb980f11d1
+themediagrid.com,IPB3NX,RESELLER,35d5010d7789b49d
+smartadserver.com,3927,RESELLER,060d053dcf45cbf3
+pubmatic.com,162770,RESELLER,5d62403b186f2ace
+adyoulike.com,0fbdac222a23692c19a21e4298e468d9,RESELLER
+improvedigital.com,2157,RESELLER
+smilewanted.com,3924,RESELLER
+richaudience.com,HLWr9WfM73,RESELLER
+amxrtb.com,105199912,RESELLER
+onetag.com,941359b203449a0,RESELLER
+sharethrough.com,3927,RESELLER,d53b998a7bd4ecd2
+triplelift.com, 14830, RESELLER, 6c33edb13117fd86
+nextmillennium.io, 16119, DIRECT, 65bd090fa4a1e3d6
+admagnetix.io, 201119, DIRECT
+33across.com, 0010b00002e4MRRAA2, DIRECT, bbea06d9c4d2853c
+33across.com, 001Pg000007PnplIAC, DIRECT, bbea06d9c4d2853c
+yieldmo.com, 2230523609997805235, DIRECT
+nobid.io, 22486896825, DIRECT
+152media.info, 152M166, RESELLER
+appnexus.com, 11924, RESELLER, f5ab79cb980f11d1
+Pubmatic.com, 161026, RESELLER, 5d62403b186f2ace
+lijit.com, 305268, RESELLER, fafdf38b16bf6b2b
+openx.com, 538959099, RESELLER, 6a698e2ec38604c6
+onetag.com, 62e564782c44a66, direct
+onetag.com, 62e564782c44a66-ob, direct
+openx.com, 559680764, RESELLER
+pixfuture.com, 10390, DIRECT
+publiffy.com, pub010008, DIRECT
+google.com, pub-7279729872265667, reseller, f08c47fec0942fa0
+revecho.com, 173647, direct
+google.com, pub-2475528731431313, direct, f08c47fec0942fa0
+risecodes.com, 670135d2e64cee0001b3f010, DIRECT
+rtbdemand.com, 23110629672, direct
+google.com, pub-3872674820285626, reseller, f08c47fec0942fa0
+rubiconproject.com, 19116, RESELLER, 0bfd66d529a55807
+seedtag.com, 6a7490cd516b100007f423f2, DIRECT
+sharethrough.com, 3050, RESELLER, d53b998a7bd4ecd2
+xandr.com, 4009, DIRECT, f5ab79cb980f11d1
+smartadserver.com, 3050, DIRECT
+rubiconproject.com, 17280, DIRECT, 0bfd66d529a55807
+pubmatic.com, 157743, DIRECT, 5d62403b186f2ace
+vidgyor.com, 22447, direct
+flashb.id, 22a897ca-8cd1-59a3-b4d5-a3cd7a23486b, direct
+tapmind.com, tmp10227, direct
+streamlyn.com, bsrvptr20360, direct
+google.com, pub-1714061154748628, reseller, f08c47fec0942fa0
+google.com, pub-8686615022940025, reseller, f08c47fec0942fa0
+target-video.com, 330, direct
+google.com, pub-7114971906786170, reseller, f08c47fec0942fa0
+themediagrid.com, FALINO, DIRECT, 9fac4a4a87c2a44f
+biddo.net, bdc-6502, direct
+google.com, pub-3328898302928686, reseller, f08c47fec0942fa0
+google.com, pub-8699255262206653, reseller, f08c47fec0942fa0
+genieesspv.jp, 38713, RESELLER
+triplelift.com, 8743, RESELLER, 6c33edb13117fd86
+sharethrough.com, 3389, RESELLER, d53b998a7bd4ecd2
