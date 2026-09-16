@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-paramedical-2026/</loc>
-    <lastmod>2026-09-14T17:09:25+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mphc-assistant-grade-3-2026/</loc>
+    <lastmod>2026-09-16T11:53:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-16T11:53:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/bihar-stet-2026/</loc>
+    <lastmod>2026-09-16T11:52:21+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/delhi-hc-spa-pa-2026/</loc>
+    <lastmod>2026-09-16T11:51:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-paramedical-2026/</loc>
     <lastmod>2026-09-14T17:09:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -267,11 +282,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/delhi-hc-spa-pa-2026/</loc>
-    <lastmod>2026-09-05T16:52:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/pfrda-assistant-manager-2026/</loc>
     <lastmod>2026-09-05T15:31:22+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -379,11 +389,6 @@
   </url><url>
     <loc>http://localhost:1313/mp-laptop-yojana/</loc>
     <lastmod>2026-09-01T09:43:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/bihar-stet-2026/</loc>
-    <lastmod>2026-09-01T09:42:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -584,11 +589,6 @@
   </url><url>
     <loc>http://localhost:1313/swayam-portal/</loc>
     <lastmod>2026-08-17T10:22:16+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mphc-assistant-grade-3-2026/</loc>
-    <lastmod>2026-08-17T09:07:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
