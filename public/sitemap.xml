@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
-    <lastmod>2026-09-16T18:21:19+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-asi-subedar-steno-2026/</loc>
+    <lastmod>2026-09-19T16:13:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-19T16:13:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-nayab-tehsildar-2026/</loc>
+    <lastmod>2026-09-17T15:48:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-je-agriculture-2026/</loc>
+    <lastmod>2026-09-17T15:45:29+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
     <lastmod>2026-09-16T18:21:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -144,11 +159,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/phc-ex-cadre-assistant-2026/</loc>
     <lastmod>2026-09-12T18:04:26+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mp/mpesb-nayab-tehsildar-2026/</loc>
-    <lastmod>2026-09-12T10:17:08+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -624,11 +634,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-safai-karamchari-bharti-2026/</loc>
     <lastmod>2026-08-16T08:59:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-je-agriculture-2026/</loc>
-    <lastmod>2026-08-15T13:54:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
