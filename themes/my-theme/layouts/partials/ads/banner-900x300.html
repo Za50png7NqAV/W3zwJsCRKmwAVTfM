@@ -1,12 +1,15 @@
 {{/*
     ============================================================
     YOJNA PORTAL - 900x300 Advertisement Partial
+    ============================================================
 
     Data:
     data/ads/900x300.toml
 
     Usage:
     {{ partial "ads/banner-900x300.html" . }}
+
+    Compatible with Hugo 0.134.2+
     ============================================================
 */}}
 
@@ -18,111 +21,126 @@
   {{ $activeAds := slice }}
   {{ $randomAds := slice }}
 
-  {{/* Filter expired / invalid ads and bucket random candidates */}}
+  {{/* =========================================================
+       FILTER ACTIVE ADS
+       ========================================================= */}}
+
   {{ range . }}
+
     {{ $image := .imageBanner }}
     {{ $expire := .expire }}
     {{ $isValid := false }}
 
     {{ if $image }}
+
       {{ if $expire }}
-        {{ if (time $expire).After $now }}
+
+        {{ $expireTime := time $expire }}
+
+        {{ if $expireTime.After $now }}
           {{ $isValid = true }}
         {{ end }}
+
       {{ else }}
+
         {{ $isValid = true }}
+
       {{ end }}
+
     {{ end }}
 
     {{ if $isValid }}
+
       {{ $activeAds = $activeAds | append . }}
+
       {{ if eq (lower (default "" .random)) "yes" }}
         {{ $randomAds = $randomAds | append . }}
       {{ end }}
+
     {{ end }}
+
   {{ end }}
 
-  {{/* Render banner if active ads exist */}}
+
+  {{/* =========================================================
+       SELECT AD
+       ========================================================= */}}
+
   {{ if gt (len $activeAds) 0 }}
 
-    {{/* Default to the first active ad; pick random build-time candidate if available */}}
     {{ $selectedAd := index $activeAds 0 }}
+
     {{ if gt (len $randomAds) 0 }}
       {{ $selectedAd = index (shuffle $randomAds) 0 }}
     {{ end }}
 
+
     {{ $rawImage := $selectedAd.imageBanner }}
-    {{ $website := $selectedAd.website }}
+    {{ $website := default "" $selectedAd.website }}
     {{ $altText := default "Advertisement" $selectedAd.alt }}
 
-    {{/* ---------------- Image Processing Logic ---------------- */}}
-    {{ $img := false }}
-    {{ $isRemote := or (hasPrefix $rawImage "http://") (hasPrefix $rawImage "https://") }}
 
-    {{ if $isRemote }}
-      {{/* Remote URL download attempt */}}
-      {{ $remoteRes := try (resources.GetRemote $rawImage) }}
-      {{ with $remoteRes.Err }}
-        {{ warnf "Ad image download failed (%s): %s" $rawImage . }}
-      {{ else }}
-        {{ $img = $remoteRes.Value }}
-      {{ end }}
-    {{ else }}
-      {{/* Local assets/ path check */}}
-      {{ $img = resources.Get $rawImage }}
-    {{ end }}
+    {{/* =======================================================
+         AD CONTAINER
+         ======================================================= */}}
 
     <div class="yp-ad-900x300">
+
       {{ if $website }}
+
         <a
           href="{{ $website | safeURL }}"
           target="_blank"
           rel="noopener noreferrer sponsored"
           aria-label="{{ $altText }}"
         >
+
       {{ end }}
 
-      {{/* Check if image resource is valid and not SVG */}}
-      {{ if and $img (ne $img.MediaType.SubType "svg") }}
-        {{/* 900x300 aspect ratio ke hisaab se crop/resize aur webp */}}
-        {{ $webp := $img.Process "resize 900x300 webp q85" }}
-        <img
-          src="{{ $webp.RelPermalink }}"
-          width="{{ $webp.Width }}"
-          height="{{ $webp.Height }}"
-          loading="lazy"
-          decoding="async"
-          referrerpolicy="no-referrer"
-          alt="{{ $altText }}"
-          class="yp-ad-900x300-image"
-          style="display: block; margin: 0 auto; max-width: 100%; height: auto;"
-        >
-      {{ else }}
-        {{/* Fallback: Static folder, SVG ya direct URL */}}
-        <img
-          src="{{ $rawImage | safeURL }}"
-          width="900"
-          height="300"
-          loading="lazy"
-          decoding="async"
-          referrerpolicy="no-referrer"
-          alt="{{ $altText }}"
-          class="yp-ad-900x300-image"
-          style="display: block; margin: 0 auto; max-width: 100%; height: auto;"
-        >
-      {{ end }}
+
+      {{/* =====================================================
+           IMAGE
+
+           External/remote image:
+           Direct URL
+
+           Local image:
+           Direct URL
+
+           This avoids resources.GetRemote + try,
+           so it works with Hugo 0.134.2.
+           ===================================================== */}}
+
+      <img
+        src="{{ $rawImage | safeURL }}"
+        width="900"
+        height="300"
+        loading="lazy"
+        decoding="async"
+        referrerpolicy="no-referrer"
+        alt="{{ $altText }}"
+        class="yp-ad-900x300-image"
+      >
+
 
       {{ if $website }}
+
         </a>
+
       {{ end }}
+
     </div>
 
   {{ end }}
 
 {{ end }}
+
+
 <style>
-    /* ==========================================================
-   YOJNA PORTAL - 900x300 Advertisement
+
+/* ==========================================================
+   YOJNA PORTAL
+   900x300 Advertisement
    ========================================================== */
 
 .yp-ad-900x300 {
@@ -152,7 +170,9 @@
 }
 
 
-/* Mobile */
+/* ==========================================================
+   MOBILE
+   ========================================================== */
 
 @media (max-width: 600px) {
 
@@ -167,4 +187,5 @@
     }
 
 }
+
 </style>
