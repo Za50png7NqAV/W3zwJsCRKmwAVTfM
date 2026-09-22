@@ -2,12 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-2026/</loc>
-    <lastmod>2026-09-21T12:50:43+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-2026/</loc>
+    <lastmod>2026-09-22T12:00:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-22T12:00:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-rrb-15th-recruitment-2026/</loc>
+    <lastmod>2026-09-22T09:03:43+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-tfo-recruitment-2026/</loc>
+    <lastmod>2026-09-22T09:03:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cht-recruitment-2026/</loc>
+    <lastmod>2026-09-22T09:01:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-1-krashi-vistar-adhikari-2026/</loc>
+    <lastmod>2026-09-22T08:58:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
+    <lastmod>2026-09-22T08:31:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-junior-associate-clerk-2026/</loc>
+    <lastmod>2026-09-22T08:31:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
+    <lastmod>2026-09-22T08:31:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-2026/</loc>
     <lastmod>2026-09-21T12:50:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -44,11 +84,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/iob-local-bank-officer-2026/</loc>
     <lastmod>2026-09-19T16:45:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-junior-associate-clerk-2026/</loc>
-    <lastmod>2026-09-19T16:41:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -177,11 +212,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
-    <lastmod>2026-09-13T10:02:12+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
     <lastmod>2026-09-13T09:59:09+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -244,11 +274,6 @@
   </url><url>
     <loc>http://localhost:1313/mp-evikas-token/</loc>
     <lastmod>2026-09-10T19:17:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-group-2-sub-group-1-krashi-vistar-adhikari-2026/</loc>
-    <lastmod>2026-09-10T19:05:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -324,11 +349,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/uiic-ao-recruitment-2026/</loc>
     <lastmod>2026-09-08T08:47:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-rrb-15th-recruitment-2026/</loc>
-    <lastmod>2026-09-08T08:46:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -442,11 +462,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cht-recruitment-2026/</loc>
-    <lastmod>2026-09-01T10:25:43+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/mp-laptop-yojana/</loc>
     <lastmod>2026-09-01T09:43:44+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -474,11 +489,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/isro-icrb-scientist-engineer-sc-2026/</loc>
     <lastmod>2026-08-30T15:20:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-tfo-recruitment-2026/</loc>
-    <lastmod>2026-08-30T12:41:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -549,11 +559,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-clerk-recruitment-2026/</loc>
     <lastmod>2026-08-22T09:15:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
-    <lastmod>2026-08-22T09:11:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
