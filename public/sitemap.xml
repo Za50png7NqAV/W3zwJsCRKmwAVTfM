@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/ibps-hindi-officer-ho-2026/</loc>
-    <lastmod>2026-09-24T12:28:05+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/pm-mudra-yojana/</loc>
+    <lastmod>2026-09-24T15:27:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
+    <lastmod>2026-09-24T15:27:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pm-vishwakarma-yojana/</loc>
+    <lastmod>2026-09-24T15:27:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-24T15:27:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pmegp-yojana/</loc>
+    <lastmod>2026-09-24T15:27:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/scheme/pmmvy-matru-vandana-yojana-form/</loc>
+    <lastmod>2026-09-24T15:26:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-hindi-officer-ho-2026/</loc>
     <lastmod>2026-09-24T12:28:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -493,11 +518,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scheme/pm-internship-yojana-pmis/</loc>
-    <lastmod>2026-08-31T17:06:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm-svanidhi-yojana/</loc>
     <lastmod>2026-08-31T17:06:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -1449,21 +1469,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bpsc-stenographer-recruitment-jan26/</loc>
     <lastmod>2026-06-03T12:10:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pmegp-yojana/</loc>
-    <lastmod>2026-06-02T17:13:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm-mudra-yojana/</loc>
-    <lastmod>2026-06-01T18:34:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pm-vishwakarma-yojana/</loc>
-    <lastmod>2026-06-01T17:43:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -3674,11 +3679,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rpsc-assistant-agriculture-engineer-2025/</loc>
     <lastmod>2025-07-19T11:14:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/pmmvy-matru-vandana-yojana-form/</loc>
-    <lastmod>2025-07-27T17:31:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
