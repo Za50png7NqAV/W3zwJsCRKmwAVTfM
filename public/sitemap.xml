@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/admission/neet-pg-2026/</loc>
+    <lastmod>2026-09-24T15:31:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-24T15:31:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/scheme/pm-mudra-yojana/</loc>
     <lastmod>2026-09-24T15:27:41+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -13,11 +23,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/scheme/pm-vishwakarma-yojana/</loc>
-    <lastmod>2026-09-24T15:27:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-09-24T15:27:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -559,11 +564,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/iob-security-guard-recruitment-2026/</loc>
     <lastmod>2026-08-26T10:15:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/neet-pg-2026/</loc>
-    <lastmod>2026-08-26T08:54:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
