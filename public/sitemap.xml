@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/jobs/bpsc-school-teacher-tre-4.0-2026/</loc>
-    <lastmod>2026-09-25T08:18:38+05:30</lastmod>
+    <lastmod>2026-09-25T08:56:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-09-25T08:18:38+05:30</lastmod>
+    <lastmod>2026-09-25T08:56:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
+    <lastmod>2026-09-25T08:54:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ibps-po-mt-xvi-2026/</loc>
+    <lastmod>2026-09-25T08:51:56+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-ugc-net-june-2026/</loc>
+    <lastmod>2026-09-25T08:38:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/up-police-constable-recruitment-dec25/</loc>
+    <lastmod>2026-09-25T08:38:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rbi-assistant-recruitment-feb26/</loc>
+    <lastmod>2026-09-25T08:36:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -74,11 +99,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/phc-ex-cadre-assistant-2026/</loc>
     <lastmod>2026-09-24T11:20:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ibps-po-mt-xvi-2026/</loc>
-    <lastmod>2026-09-24T11:14:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -272,11 +292,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-recruitment-2025/</loc>
-    <lastmod>2026-09-14T09:15:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
     <lastmod>2026-09-13T10:04:57+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -329,11 +344,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
     <lastmod>2026-09-11T15:49:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/nta-ugc-net-june-2026/</loc>
-    <lastmod>2026-09-11T15:47:15+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -869,11 +879,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-technical-assistant-group-c-2026/</loc>
     <lastmod>2026-07-31T16:43:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/up-police-constable-recruitment-dec25/</loc>
-    <lastmod>2026-07-31T15:27:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1489,11 +1494,6 @@
   </url><url>
     <loc>http://localhost:1313/document/sambal-card/</loc>
     <lastmod>2026-05-30T18:34:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rbi-assistant-recruitment-feb26/</loc>
-    <lastmod>2026-05-28T09:30:05+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
