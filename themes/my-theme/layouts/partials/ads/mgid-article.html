@@ -1,0 +1,10 @@
+<div id="mgid-random-widget"></div>
+
+<script>
+(function(){
+  var ids=["2087222","2086932"];
+  var id=ids[Math.floor(Math.random()*ids.length)];
+  document.getElementById("mgid-random-widget").innerHTML=
+    '<div data-type="_mgwidget" data-widget-id="'+id+'"></div>';
+})();
+</script>
