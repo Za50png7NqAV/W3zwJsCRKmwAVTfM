@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/bpsc-school-teacher-tre-4.0-2026/</loc>
-    <lastmod>2026-09-25T08:56:55+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/bob-wealth-executive-2026/</loc>
+    <lastmod>2026-09-26T15:31:40+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-26T15:31:40+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bank-of-india-so-recruitment-2026/</loc>
+    <lastmod>2026-09-26T15:28:58+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
+    <lastmod>2026-09-26T15:25:51+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/upsssc-pet-2026/</loc>
+    <lastmod>2026-09-26T15:14:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bpsc-school-teacher-tre-4.0-2026/</loc>
     <lastmod>2026-09-25T08:56:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -342,11 +362,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-june-2026/</loc>
-    <lastmod>2026-09-11T15:49:41+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/mp-evikas-token/</loc>
     <lastmod>2026-09-10T19:17:36+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -367,11 +382,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/bank-of-india-so-recruitment-2026/</loc>
-    <lastmod>2026-09-10T09:39:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/bpssc-hg-company-commander-2026/</loc>
     <lastmod>2026-09-10T09:39:59+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -384,11 +394,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
     <lastmod>2026-09-10T09:32:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/upsssc-pet-2026/</loc>
-    <lastmod>2026-09-10T09:27:38+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -459,11 +464,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/pfrda-assistant-manager-2026/</loc>
     <lastmod>2026-09-05T15:31:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bob-wealth-executive-2026/</loc>
-    <lastmod>2026-09-04T12:48:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
