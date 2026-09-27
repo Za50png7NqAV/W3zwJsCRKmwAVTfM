@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/btsc-fisheries-extension-officer-2026/</loc>
-    <lastmod>2026-09-27T15:35:32+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/btsc-food-safety-officer-2026/</loc>
+    <lastmod>2026-09-27T16:40:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-27T16:40:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upessc-principal-recruitment-2026/</loc>
+    <lastmod>2026-09-27T16:04:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
+    <lastmod>2026-09-27T16:01:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bob-lbo-recruitment-2026/</loc>
+    <lastmod>2026-09-27T15:56:38+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/btsc-fisheries-extension-officer-2026/</loc>
     <lastmod>2026-09-27T15:35:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -104,11 +124,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-asi-subedar-steno-2026/</loc>
     <lastmod>2026-09-24T11:34:45+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bob-lbo-recruitment-2026/</loc>
-    <lastmod>2026-09-24T11:32:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -267,11 +282,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upessc-principal-recruitment-2026/</loc>
-    <lastmod>2026-09-16T12:39:55+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/eligibility/ctet-september-2026/</loc>
     <lastmod>2026-09-16T12:15:47+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -374,11 +384,6 @@
   </url><url>
     <loc>http://localhost:1313/mp-evikas-token/</loc>
     <lastmod>2026-09-10T19:17:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
-    <lastmod>2026-09-10T19:05:13+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
