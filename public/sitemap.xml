@@ -2,12 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/itbp-hc-motor-mechanic-2026/</loc>
-    <lastmod>2026-09-29T09:27:24+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
+    <lastmod>2026-09-29T09:53:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-29T09:53:33+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rajasthan-safai-karamchari-bharti-2026/</loc>
+    <lastmod>2026-09-29T09:42:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uiic-ao-recruitment-2026/</loc>
+    <lastmod>2026-09-29T09:42:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/itbp-hc-motor-mechanic-2026/</loc>
     <lastmod>2026-09-29T09:27:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -198,11 +213,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/sbi-junior-associate-clerk-2026/</loc>
-    <lastmod>2026-09-22T08:31:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
     <lastmod>2026-09-22T08:31:27+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -439,11 +449,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-chsl-2026/</loc>
     <lastmod>2026-09-08T10:39:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/uiic-ao-recruitment-2026/</loc>
-    <lastmod>2026-09-08T08:47:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -709,11 +714,6 @@
   </url><url>
     <loc>http://localhost:1313/document/ration-card-apply-online-and-download/</loc>
     <lastmod>2026-08-16T09:15:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rajasthan-safai-karamchari-bharti-2026/</loc>
-    <lastmod>2026-08-16T08:59:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
