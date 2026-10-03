@@ -133,12 +133,7 @@
       <td >{{ . | safeHTML }}</td>
     </tr>
     {{ end }}
-    {{ with .Params.Eligibility }}
-    <tr>
-      <td ><strong> 🎓Qualification </strong> </td>
-       <td>  {{ . | safeHTML }}</td>
-    </tr>
-    {{ end }}
+
  {{ with .Params.candidates}}
     <tr>
       <td><strong>👥Candidates </strong> </td>
