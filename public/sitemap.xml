@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/mpesb-mspstet-2026/</loc>
-    <lastmod>2026-10-06T17:21:55+05:30</lastmod>
+    <loc>http://localhost:1313/eligibility/rajasthan-set-2026/</loc>
+    <lastmod>2026-10-06T17:27:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-06T17:27:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-nayab-tehsildar-2026/</loc>
+    <lastmod>2026-10-06T17:24:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/mpesb-mspstet-2026/</loc>
     <lastmod>2026-10-06T17:21:55+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -347,11 +357,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-nayab-tehsildar-2026/</loc>
-    <lastmod>2026-09-17T15:48:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsssc-je-agriculture-2026/</loc>
     <lastmod>2026-09-17T15:45:29+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -534,11 +539,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-computer-cadre-2026/</loc>
     <lastmod>2026-09-07T18:39:49+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/rajasthan-set-2026/</loc>
-    <lastmod>2026-09-07T18:39:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
