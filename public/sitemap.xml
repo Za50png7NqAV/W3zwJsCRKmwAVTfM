@@ -2,12 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mpseb-police-constable-driver-2026/</loc>
-    <lastmod>2026-10-09T11:30:51+05:30</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-10-14T09:53:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/up/</loc>
+    <lastmod>2026-10-14T09:53:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-sports-directorate-2026/</loc>
+    <lastmod>2026-10-14T09:53:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-14T09:53:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/india-post-gds-july-2026/</loc>
+    <lastmod>2026-10-14T09:51:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-gd-constable-recruitment-dec25/</loc>
+    <lastmod>2026-10-14T09:42:13+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-group-3-sub-engineer-2026/</loc>
+    <lastmod>2026-10-14T09:40:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
+    <lastmod>2026-10-12T12:05:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpseb-police-constable-driver-2026/</loc>
     <lastmod>2026-10-09T11:30:51+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -49,21 +84,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-regional-youth-welfare-officer-2026/</loc>
     <lastmod>2026-10-06T17:08:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-05T16:14:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/up/</loc>
-    <lastmod>2026-10-05T16:14:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-sports-directorate-2026/</loc>
-    <lastmod>2026-10-05T16:14:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -119,11 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-technician-recruitment-2026/</loc>
     <lastmod>2026-10-03T09:34:37+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-group-3-sub-engineer-2026/</loc>
-    <lastmod>2026-10-02T09:23:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -432,11 +447,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-09-14T09:17:35+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsssc-senior-instructor-2026/</loc>
     <lastmod>2026-09-14T09:16:59+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -454,11 +464,6 @@
   </url><url>
     <loc>http://localhost:1313/admission/mp-epravesh-collage-admission-form-2026/</loc>
     <lastmod>2026-09-12T18:06:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/india-post-gds-july-2026/</loc>
-    <lastmod>2026-09-12T18:06:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1459,11 +1464,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/csbc-constable-operator-recruitment-feb26/</loc>
     <lastmod>2026-06-16T09:38:22+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-gd-constable-admit-card-2026/</loc>
-    <lastmod>2026-06-15T18:19:29+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
