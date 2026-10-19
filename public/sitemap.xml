@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
-    <lastmod>2026-10-16T17:26:32+05:30</lastmod>
+    <loc>http://localhost:1313/up/upsssc-10-2-inter-level-2026/</loc>
+    <lastmod>2026-10-19T11:51:06+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-19T11:51:06+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sbi-clerk-backlog-2026/</loc>
+    <lastmod>2026-10-19T10:19:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/bihar-stet-2026/</loc>
+    <lastmod>2026-10-19T10:14:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
+    <lastmod>2026-10-19T10:08:41+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-section-controller-recruitment-2026/</loc>
     <lastmod>2026-10-16T17:26:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -189,11 +209,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/graduation/</loc>
     <lastmod>2026-10-03T11:20:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
-    <lastmod>2026-10-03T09:35:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -442,11 +457,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/eligibility/bihar-stet-2026/</loc>
-    <lastmod>2026-09-16T11:52:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/delhi-hc-spa-pa-2026/</loc>
     <lastmod>2026-09-16T11:51:32+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -534,11 +544,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/up-anganwadi-helper-bharti/</loc>
     <lastmod>2026-09-10T09:32:51+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sbi-clerk-backlog-2026/</loc>
-    <lastmod>2026-09-10T09:25:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
