@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-december-2026/</loc>
-    <lastmod>2026-10-19T16:40:33+05:30</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-10-20T10:36:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/court/</loc>
+    <lastmod>2026-10-20T10:36:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/graduation/</loc>
+    <lastmod>2026-10-20T10:36:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/high-court/</loc>
+    <lastmod>2026-10-20T10:36:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sci-court-master-recruitment-2026/</loc>
+    <lastmod>2026-10-20T10:36:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-20T10:36:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-december-2026/</loc>
     <lastmod>2026-10-19T16:40:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -122,11 +147,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-14T09:53:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/categories/up/</loc>
     <lastmod>2026-10-14T09:53:52+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -223,11 +243,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentice/canara-bank-apprentice-2026/</loc>
-    <lastmod>2026-10-03T11:20:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/graduation/</loc>
     <lastmod>2026-10-03T11:20:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
