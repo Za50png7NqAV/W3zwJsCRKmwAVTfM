@@ -3,26 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-21T16:45:20+05:30</lastmod>
+    <lastmod>2026-10-21T18:29:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/graduation/</loc>
-    <lastmod>2026-10-21T16:45:20+05:30</lastmod>
+    <lastmod>2026-10-21T18:29:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/railway/</loc>
-    <lastmod>2026-10-21T16:45:20+05:30</lastmod>
+    <lastmod>2026-10-21T18:29:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-station-master-2026/</loc>
-    <lastmod>2026-10-21T16:45:20+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrb-isolated-categories-2026/</loc>
+    <lastmod>2026-10-21T18:29:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-21T18:29:03+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-station-master-2026/</loc>
     <lastmod>2026-10-21T16:45:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
