@@ -2,12 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pm-kisan-samman-nidhi-yojana/</loc>
-    <lastmod>2026-10-23T14:52:14+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
+    <lastmod>2026-10-25T10:04:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-25T10:04:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-10-25T09:51:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/court/</loc>
+    <lastmod>2026-10-25T09:51:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/graduation/</loc>
+    <lastmod>2026-10-25T09:51:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/high-court/</loc>
+    <lastmod>2026-10-25T09:51:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/sci-court-master-recruitment-2026/</loc>
+    <lastmod>2026-10-25T09:51:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/bob-so-recruitment-2026/</loc>
+    <lastmod>2026-10-25T09:48:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
+    <lastmod>2026-10-25T09:46:20+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-je-2026/</loc>
+    <lastmod>2026-10-25T09:38:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/isro-assistant-jpa-2026/</loc>
+    <lastmod>2026-10-25T09:25:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-gd-constable-recruitment-dec25/</loc>
+    <lastmod>2026-10-25T09:22:07+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/pm-kisan-samman-nidhi-yojana/</loc>
     <lastmod>2026-10-23T14:52:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -42,18 +97,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-21T19:23:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/categories/iti/</loc>
     <lastmod>2026-10-21T19:23:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/graduation/</loc>
-    <lastmod>2026-10-21T18:29:03+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -69,21 +114,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-station-master-2026/</loc>
     <lastmod>2026-10-21T16:45:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/court/</loc>
-    <lastmod>2026-10-20T10:36:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/high-court/</loc>
-    <lastmod>2026-10-20T10:36:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/sci-court-master-recruitment-2026/</loc>
-    <lastmod>2026-10-20T10:36:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -114,11 +144,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/bihar-stet-2026/</loc>
     <lastmod>2026-10-19T10:14:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
-    <lastmod>2026-10-19T10:08:41+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -202,11 +227,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/ssc-gd-constable-recruitment-dec25/</loc>
-    <lastmod>2026-10-14T09:42:13+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/mpesb-group-3-sub-engineer-2026/</loc>
     <lastmod>2026-10-14T09:40:53+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -284,11 +304,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-clerk-recruitment-2026/</loc>
     <lastmod>2026-10-02T09:19:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-je-2026/</loc>
-    <lastmod>2026-10-02T09:11:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -467,11 +482,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
-    <lastmod>2026-09-22T08:31:27+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/sbi-junior-associate-clerk-2026/</loc>
     <lastmod>2026-09-22T08:31:27+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -594,11 +604,6 @@
   </url><url>
     <loc>http://localhost:1313/mp-evikas-token/</loc>
     <lastmod>2026-09-10T19:17:36+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/isro-assistant-jpa-2026/</loc>
-    <lastmod>2026-09-10T19:02:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -979,11 +984,6 @@
   </url><url>
     <loc>http://localhost:1313/calendar/mpesb-exam-calendar-2026/</loc>
     <lastmod>2026-08-06T15:43:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/bob-so-recruitment-2026/</loc>
-    <lastmod>2026-08-06T12:31:49+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
