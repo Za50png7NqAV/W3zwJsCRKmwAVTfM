@@ -2,18 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
-    <lastmod>2026-10-25T10:04:48+05:30</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-10-25T11:49:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/teacher/</loc>
+    <lastmod>2026-10-25T11:49:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/up/</loc>
+    <lastmod>2026-10-25T11:49:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upessc-up-tgt-2026/</loc>
+    <lastmod>2026-10-25T11:49:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-10-25T10:04:48+05:30</lastmod>
+    <lastmod>2026-10-25T11:49:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-25T09:51:48+05:30</lastmod>
+    <loc>http://localhost:1313/scheme/mp-kisan-beej-anudan-yojana/</loc>
+    <lastmod>2026-10-25T10:37:27+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
+    <lastmod>2026-10-25T10:04:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -209,11 +229,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rajasthan-safai-karamchari-bharti-2026/</loc>
     <lastmod>2026-10-14T11:15:56+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/up/</loc>
-    <lastmod>2026-10-14T09:53:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1079,11 +1094,6 @@
   </url><url>
     <loc>http://localhost:1313/voter-id-card-online/</loc>
     <lastmod>2026-07-27T11:52:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/scheme/mp-kisan-beej-anudan-yojana/</loc>
-    <lastmod>2026-07-27T11:38:39+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
