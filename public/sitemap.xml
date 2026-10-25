@@ -3,26 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-25T11:49:25+05:30</lastmod>
+    <lastmod>2026-10-25T12:38:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/teacher/</loc>
-    <lastmod>2026-10-25T11:49:25+05:30</lastmod>
+    <lastmod>2026-10-25T12:38:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/up/</loc>
-    <lastmod>2026-10-25T11:49:25+05:30</lastmod>
+    <lastmod>2026-10-25T12:38:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upessc-up-tgt-2026/</loc>
-    <lastmod>2026-10-25T11:49:25+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/upessc-up-headmaster-recruitment-2026/</loc>
+    <lastmod>2026-10-25T12:38:31+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-25T12:38:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upessc-up-tgt-2026/</loc>
     <lastmod>2026-10-25T11:49:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
