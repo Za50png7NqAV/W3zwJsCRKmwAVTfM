@@ -2,8 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
+    <lastmod>2026-10-29T12:35:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-29T12:35:11+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-25T16:13:59+05:30</lastmod>
+    <lastmod>2026-10-29T12:09:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/graduation/</loc>
+    <lastmod>2026-10-29T12:09:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/railway/</loc>
+    <lastmod>2026-10-29T12:09:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-station-master-2026/</loc>
+    <lastmod>2026-10-29T12:09:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upessc-prt-assistant-teacher-2026/</loc>
+    <lastmod>2026-10-29T11:59:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/admission/jnvst-class-6-admission-2027/</loc>
+    <lastmod>2026-10-29T10:55:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -18,11 +53,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/upessc-up-principal-inter-level-2026/</loc>
-    <lastmod>2026-10-25T16:13:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-10-25T16:13:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -48,11 +78,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/court/</loc>
-    <lastmod>2026-10-25T09:51:48+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/graduation/</loc>
     <lastmod>2026-10-25T09:51:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -132,18 +157,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/railway/</loc>
-    <lastmod>2026-10-21T18:29:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rrb-isolated-categories-2026/</loc>
     <lastmod>2026-10-21T18:29:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-station-master-2026/</loc>
-    <lastmod>2026-10-21T16:45:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -219,11 +234,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/upsssc-pet-2026/</loc>
     <lastmod>2026-10-16T16:25:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upessc-prt-assistant-teacher-2026/</loc>
-    <lastmod>2026-10-16T16:18:24+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -584,11 +594,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-veterinary-pharmacist-2026/</loc>
     <lastmod>2026-09-14T09:16:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
-    <lastmod>2026-09-13T10:04:57+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -959,11 +964,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/tar-fencing-yojana-mp/</loc>
     <lastmod>2026-08-10T09:50:23+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/admission/jnvst-class-6-admission-2027/</loc>
-    <lastmod>2026-08-08T11:12:37+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
