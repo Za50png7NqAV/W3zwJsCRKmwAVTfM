@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rvunl-je-junior-assistant-2026/</loc>
-    <lastmod>2026-10-30T11:28:20+05:30</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-10-30T12:20:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/graduation/</loc>
+    <lastmod>2026-10-30T12:20:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/up/</loc>
+    <lastmod>2026-10-30T12:20:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uppsc-ro-aro-2026/</loc>
+    <lastmod>2026-10-30T12:20:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-30T12:20:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rvunl-je-junior-assistant-2026/</loc>
     <lastmod>2026-10-30T11:28:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -24,16 +44,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
     <lastmod>2026-10-29T12:35:11+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-29T12:09:34+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/graduation/</loc>
-    <lastmod>2026-10-29T12:09:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -58,11 +68,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/teacher/</loc>
-    <lastmod>2026-10-25T16:13:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/up/</loc>
     <lastmod>2026-10-25T16:13:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
