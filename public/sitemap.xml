@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/pm-kisan-samman-nidhi-yojana/</loc>
+    <lastmod>2026-10-30T13:13:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-30T13:13:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-10-30T12:20:28+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -18,11 +28,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/uppsc-ro-aro-2026/</loc>
-    <lastmod>2026-10-30T12:20:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-10-30T12:20:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -134,11 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ssc-gd-constable-recruitment-dec25/</loc>
     <lastmod>2026-10-25T09:22:07+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/pm-kisan-samman-nidhi-yojana/</loc>
-    <lastmod>2026-10-23T14:52:14+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
