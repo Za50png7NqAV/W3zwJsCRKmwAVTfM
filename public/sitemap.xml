@@ -2,22 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/apprentice/</loc>
-    <lastmod>2026-11-01T14:51:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-11-01T14:51:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-11-01T14:51:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/iti/</loc>
     <lastmod>2026-11-01T14:51:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -74,6 +59,11 @@
   </url><url>
     <loc>http://localhost:1313/pm-kisan-samman-nidhi-yojana/</loc>
     <lastmod>2026-10-30T13:13:49+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-10-30T12:20:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -218,6 +208,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/bhel-artisan-2026/</loc>
+    <lastmod>2026-10-21T19:23:52+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/iti/</loc>
     <lastmod>2026-10-21T19:23:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -369,6 +364,11 @@
   </url><url>
     <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
     <lastmod>2026-10-04T08:46:08+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/apprentice/</loc>
+    <lastmod>2026-10-03T11:20:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
