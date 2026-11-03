@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/upsssc-combined-je-mechanical-2026/</loc>
+    <lastmod>2026-11-03T15:30:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-03T15:30:31+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/upsssc-pet-2026/</loc>
+    <lastmod>2026-11-03T15:24:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/apprentice/</loc>
     <lastmod>2026-11-01T14:51:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/apprentic/nwr-rrc-jaipur-apprentice-2026/</loc>
-    <lastmod>2026-11-01T14:51:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-11-01T14:51:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -232,11 +242,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-combined-je-mechanical-2026/</loc>
-    <lastmod>2026-10-19T12:50:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/upsssc-10-2-inter-level-2026/</loc>
     <lastmod>2026-10-19T11:59:33+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -284,11 +289,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-regional-youth-welfare-officer-2026/</loc>
     <lastmod>2026-10-16T16:28:00+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/upsssc-pet-2026/</loc>
-    <lastmod>2026-10-16T16:25:53+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
