@@ -2,12 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mp-asha-karyakarta-bharti-2026/</loc>
-    <lastmod>2026-11-04T16:35:09+05:30</lastmod>
+    <loc>http://localhost:1313/eligibility/up-special-tet-2026/</loc>
+    <lastmod>2026-11-06T11:51:04+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-06T11:51:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
+    <lastmod>2026-11-06T11:47:50+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-december-2026/</loc>
+    <lastmod>2026-11-06T11:45:53+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-11-06T11:38:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/graduation/</loc>
+    <lastmod>2026-11-06T11:38:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/railway/</loc>
+    <lastmod>2026-11-06T11:38:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-isolated-categories-2026/</loc>
+    <lastmod>2026-11-06T11:38:32+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upsssc-combined-je-electrical-2026/</loc>
+    <lastmod>2026-11-06T11:37:36+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-asha-karyakarta-bharti-2026/</loc>
     <lastmod>2026-11-04T16:35:09+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -87,16 +127,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-30T12:20:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/graduation/</loc>
-    <lastmod>2026-10-30T12:20:28+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/categories/up/</loc>
     <lastmod>2026-10-30T12:20:28+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -124,11 +154,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
     <lastmod>2026-10-29T12:35:11+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/railway/</loc>
-    <lastmod>2026-10-29T12:09:34+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -239,21 +264,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/iti/</loc>
     <lastmod>2026-10-21T19:23:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-isolated-categories-2026/</loc>
-    <lastmod>2026-10-21T18:29:03+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-december-2026/</loc>
-    <lastmod>2026-10-19T16:40:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/upsssc-combined-je-electrical-2026/</loc>
-    <lastmod>2026-10-19T14:40:36+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -429,11 +439,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-forest-guard-wildlife-guard-2026/</loc>
     <lastmod>2026-09-29T15:47:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/ssc-cgl-recruitment-2026/</loc>
-    <lastmod>2026-09-29T09:53:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -744,11 +749,6 @@
   </url><url>
     <loc>http://localhost:1313/scheme/vb-g-ram-g-yojana/</loc>
     <lastmod>2026-09-06T14:47:57+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/up-special-tet-2026/</loc>
-    <lastmod>2026-09-05T18:03:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
