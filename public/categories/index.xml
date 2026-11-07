@@ -6,12 +6,19 @@
     <description>Recent content in Categories on YOJNA PORTAL 2026 - Govt Schemes &amp; Sarkari Job Updates Daily</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 11:38:32 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 11:37:33 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apprentice</title>
+      <link>http://localhost:1313/categories/apprentice/</link>
+      <pubDate>Sat, 07 Nov 2026 11:37:33 +0530</pubDate>
+      <guid>http://localhost:1313/categories/apprentice/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Graduation</title>
       <link>http://localhost:1313/categories/graduation/</link>
-      <pubDate>Fri, 06 Nov 2026 11:38:32 +0530</pubDate>
+      <pubDate>Sat, 07 Nov 2026 11:37:33 +0530</pubDate>
       <guid>http://localhost:1313/categories/graduation/</guid>
       <description></description>
     </item>
@@ -55,13 +62,6 @@
       <link>http://localhost:1313/categories/iti/</link>
       <pubDate>Wed, 21 Oct 2026 19:23:52 +0530</pubDate>
       <guid>http://localhost:1313/categories/iti/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Apprentice</title>
-      <link>http://localhost:1313/categories/apprentice/</link>
-      <pubDate>Sat, 03 Oct 2026 11:20:25 +0530</pubDate>
-      <guid>http://localhost:1313/categories/apprentice/</guid>
       <description></description>
     </item>
     <item>
