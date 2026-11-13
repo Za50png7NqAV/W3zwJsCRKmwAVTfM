@@ -2,12 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
-    <lastmod>2026-11-12T17:22:44+05:30</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-11-13T15:23:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/force/</loc>
+    <lastmod>2026-11-13T15:23:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/graduation/</loc>
+    <lastmod>2026-11-13T15:23:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/air-force-afcat-01-2027/</loc>
+    <lastmod>2026-11-13T15:23:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-13T15:23:28+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
+    <lastmod>2026-11-13T14:49:23+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-alp-recruitment-2026/</loc>
     <lastmod>2026-11-12T17:22:44+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -114,16 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-december-2026/</loc>
     <lastmod>2026-11-06T11:45:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-11-06T11:38:32+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/graduation/</loc>
-    <lastmod>2026-11-06T11:38:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -404,11 +419,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/mpesb-group-3-sub-engineer-2026/</loc>
     <lastmod>2026-10-14T09:40:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/ladli-behna-yojna/</loc>
-    <lastmod>2026-10-12T12:05:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -1743,11 +1753,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/crpf-constable-tradesman-2026/</loc>
-    <lastmod>2026-05-12T10:41:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/force/</loc>
     <lastmod>2026-05-12T10:41:33+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
