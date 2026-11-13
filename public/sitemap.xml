@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/air-force-afcat-01-2027/</loc>
-    <lastmod>2026-11-13T15:23:28+05:30</lastmod>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-11-13T17:18:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-11-13T17:18:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/iti/</loc>
+    <lastmod>2026-11-13T17:18:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/rrc-nr-apprentice-2026/</loc>
+    <lastmod>2026-11-13T17:18:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-13T17:18:47+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/air-force-afcat-01-2027/</loc>
     <lastmod>2026-11-13T15:23:28+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -87,11 +107,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-11-07T15:19:21+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/apprentice/indian-bank-apprentice-2026/</loc>
     <lastmod>2026-11-07T15:19:21+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -124,11 +139,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/nta-csir-ugc-net-december-2026/</loc>
     <lastmod>2026-11-06T11:45:53+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-11-06T11:38:32+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -333,11 +343,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/bhel-artisan-2026/</loc>
-    <lastmod>2026-10-21T19:23:52+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/iti/</loc>
     <lastmod>2026-10-21T19:23:52+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
