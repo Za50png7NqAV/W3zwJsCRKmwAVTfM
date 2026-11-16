@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/rrb-paramedical-2026/</loc>
-    <lastmod>2026-11-14T12:41:43+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/mpesb-asi-subedar-steno-2026/</loc>
+    <lastmod>2026-11-15T12:03:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-15T12:03:26+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
+    <lastmod>2026-11-15T12:01:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-paramedical-2026/</loc>
     <lastmod>2026-11-14T12:41:43+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -264,11 +274,6 @@
   </url><url>
     <loc>http://localhost:1313/eligibility/nta-ugc-net-december-2026/</loc>
     <lastmod>2026-10-29T12:48:59+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-si-subedar-bharti-2026/</loc>
-    <lastmod>2026-10-29T12:35:11+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -599,11 +604,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/ibps-hindi-officer-ho-2026/</loc>
     <lastmod>2026-09-24T12:28:05+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mpesb-asi-subedar-steno-2026/</loc>
-    <lastmod>2026-09-24T11:34:45+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
