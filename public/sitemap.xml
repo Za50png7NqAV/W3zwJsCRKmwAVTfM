@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jobs/mpesb-asi-subedar-steno-2026/</loc>
-    <lastmod>2026-11-15T12:03:26+05:30</lastmod>
+    <loc>http://localhost:1313/jobs/assam-rifles-technical-tradesman-2026/</loc>
+    <lastmod>2026-11-16T12:19:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-16T12:19:02+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/upessc-assistant-professor-2026/</loc>
+    <lastmod>2026-11-16T11:29:12+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mp-asha-karyakarta-bharti-2026/</loc>
+    <lastmod>2026-11-16T11:26:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-2026/</loc>
+    <lastmod>2026-11-16T11:26:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/mpesb-asi-subedar-steno-2026/</loc>
     <lastmod>2026-11-15T12:03:26+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -54,11 +74,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-station-master-2026/</loc>
     <lastmod>2026-11-14T09:55:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-inter-level-2026/</loc>
-    <lastmod>2026-11-14T09:52:54+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -117,11 +132,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/jobs/upessc-assistant-professor-2026/</loc>
-    <lastmod>2026-11-11T10:05:31+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/rrb-junior-engineer-recruitment-2026/</loc>
     <lastmod>2026-11-11T09:19:37+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -139,11 +149,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bihar-vidhan-sabha-jsa-office-attendant-2026/</loc>
     <lastmod>2026-11-09T11:26:25+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/mp-asha-karyakarta-bharti-2026/</loc>
-    <lastmod>2026-11-08T12:05:07+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
