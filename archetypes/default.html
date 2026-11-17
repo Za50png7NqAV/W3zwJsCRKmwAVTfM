@@ -8,11 +8,7 @@ WhatsNew = [
 ""
 ]
 url = "/{{ .Dir }}{{ .File.ContentBaseName | lower }}/" # ✅ Main SEO Friendly URL
-aliases = [
-    "/{{ .File.ContentBaseName | lower }}/" ,
-  "/{{ .File.Path | md5 | truncate 6 "" }}/"
-]
-shorturl ="{{ .File.Path | md5 | truncate 6 "" }}"
+
 Postertools = [
   "Search Posters = https://poster.yojnaportal.com/baner-update/"
 ]
