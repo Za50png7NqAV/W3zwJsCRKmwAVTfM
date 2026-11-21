@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/jobs/nlc-india-executive-2026/</loc>
+    <lastmod>2026-11-18T11:18:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-18T11:18:59+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/jobs/bhel-artisan-2026/</loc>
     <lastmod>2026-11-17T09:44:20+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -18,11 +28,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/jobs/pgcil-engineer-trainee-2026/</loc>
-    <lastmod>2026-11-17T09:44:20+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-11-17T09:44:20+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -4891,10 +4896,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/download/pdf/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/2026/11/nlc-india-executive-2026/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
