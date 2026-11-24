@@ -6,8 +6,22 @@
     <description>Recent content in Categories on YOJNA PORTAL 2026 - Govt Schemes &amp; Sarkari Job Updates Daily</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 09:26:42 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 11:58:53 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Company</title>
+      <link>http://localhost:1313/categories/company/</link>
+      <pubDate>Tue, 24 Nov 2026 11:58:53 +0530</pubDate>
+      <guid>http://localhost:1313/categories/company/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graduation</title>
+      <link>http://localhost:1313/categories/graduation/</link>
+      <pubDate>Tue, 24 Nov 2026 11:58:53 +0530</pubDate>
+      <guid>http://localhost:1313/categories/graduation/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Teacher</title>
       <link>http://localhost:1313/categories/teacher/</link>
@@ -27,13 +41,6 @@
       <link>http://localhost:1313/categories/iti/</link>
       <pubDate>Tue, 17 Nov 2026 09:44:20 +0530</pubDate>
       <guid>http://localhost:1313/categories/iti/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Graduation</title>
-      <link>http://localhost:1313/categories/graduation/</link>
-      <pubDate>Sat, 14 Nov 2026 09:55:02 +0530</pubDate>
-      <guid>http://localhost:1313/categories/graduation/</guid>
       <description></description>
     </item>
     <item>
