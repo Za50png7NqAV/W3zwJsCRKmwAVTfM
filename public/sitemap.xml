@@ -2,33 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/calendar/</loc>
-    <lastmod>2026-11-24T15:41:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/calendar/</loc>
-    <lastmod>2026-11-24T15:41:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-11-24T15:41:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/mp/</loc>
-    <lastmod>2026-11-24T15:41:15+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/mppsc-exam-calendar-2027/</loc>
-    <lastmod>2026-11-24T15:41:15+05:30</lastmod>
+    <loc>http://localhost:1313/eligibility/uptet-exam-2027-february/</loc>
+    <lastmod>2026-11-25T10:13:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-11-24T15:41:15+05:30</lastmod>
+    <lastmod>2026-11-25T10:13:19+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/calendar/</loc>
+    <lastmod>2026-11-24T16:02:48+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/calendar/mppsc-exam-calendar-2027/</loc>
+    <lastmod>2026-11-24T16:02:48+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -84,6 +74,11 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-computer-cadre-2026/</loc>
     <lastmod>2026-11-23T09:29:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-11-23T09:26:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
