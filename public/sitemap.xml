@@ -2,12 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/eligibility/uptet-exam-2027-february/</loc>
-    <lastmod>2026-11-25T10:13:19+05:30</lastmod>
+    <loc>http://localhost:1313/categories/apprentice/</loc>
+    <lastmod>2026-11-26T16:54:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/</loc>
+    <lastmod>2026-11-26T16:54:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-11-26T16:54:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/diploma/</loc>
+    <lastmod>2026-11-26T16:54:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/apprentice/ecil-apprentice-2026/</loc>
+    <lastmod>2026-11-26T16:54:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/graduation/</loc>
+    <lastmod>2026-11-26T16:54:35+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-26T16:54:35+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/uksssc-constable-and-other-posts-2026/</loc>
+    <lastmod>2026-11-26T14:46:04+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-2026/</loc>
+    <lastmod>2026-11-26T14:37:34+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/nta-ugc-net-december-2026/</loc>
+    <lastmod>2026-11-26T14:36:42+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/eligibility/uptet-exam-2027-february/</loc>
     <lastmod>2026-11-25T10:13:19+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -77,11 +122,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-11-23T09:26:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/categories/teacher/</loc>
     <lastmod>2026-11-23T09:26:42+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -94,11 +134,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upessc-up-tgt-2026/</loc>
     <lastmod>2026-11-23T09:26:42+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/uksssc-constable-and-other-posts-2026/</loc>
-    <lastmod>2026-11-21T15:51:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -129,11 +164,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/bank-of-india-so-recruitment-2026/</loc>
     <lastmod>2026-11-21T11:22:44+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/eligibility/nta-ugc-net-december-2026/</loc>
-    <lastmod>2026-11-21T11:16:59+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -217,11 +247,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/graduation/</loc>
-    <lastmod>2026-11-14T09:55:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/categories/railway/</loc>
     <lastmod>2026-11-14T09:55:02+05:30</lastmod>
     <changefreq>daily</changefreq>
@@ -229,11 +254,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/rrb-station-master-2026/</loc>
     <lastmod>2026-11-14T09:55:02+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/apprentice/</loc>
-    <lastmod>2026-11-13T17:18:47+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -304,11 +324,6 @@
   </url><url>
     <loc>http://localhost:1313/apprentice/nicl-graduate-apprentice-2026/</loc>
     <lastmod>2026-11-07T11:37:33+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/jobs/rrb-ntpc-graduate-level-2026/</loc>
-    <lastmod>2026-11-07T10:09:18+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -564,11 +579,6 @@
   </url><url>
     <loc>http://localhost:1313/jobs/up-home-guard-recruitment-2025/</loc>
     <lastmod>2026-10-04T08:46:08+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/apprentice/</loc>
-    <lastmod>2026-10-03T11:20:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
