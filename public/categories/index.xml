@@ -6,20 +6,27 @@
     <description>Recent content in Categories on YOJNA PORTAL 2026 - Govt Schemes &amp; Sarkari Job Updates Daily</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 11:45:12 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:38:50 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bihar</title>
-      <link>http://localhost:1313/categories/bihar/</link>
-      <pubDate>Fri, 27 Nov 2026 11:45:12 +0530</pubDate>
-      <guid>http://localhost:1313/categories/bihar/</guid>
+      <title>Bank</title>
+      <link>http://localhost:1313/categories/bank/</link>
+      <pubDate>Fri, 27 Nov 2026 12:38:50 +0530</pubDate>
+      <guid>http://localhost:1313/categories/bank/</guid>
       <description></description>
     </item>
     <item>
       <title>Graduation</title>
       <link>http://localhost:1313/categories/graduation/</link>
-      <pubDate>Fri, 27 Nov 2026 11:45:12 +0530</pubDate>
+      <pubDate>Fri, 27 Nov 2026 12:38:50 +0530</pubDate>
       <guid>http://localhost:1313/categories/graduation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PG</title>
+      <link>http://localhost:1313/categories/pg/</link>
+      <pubDate>Fri, 27 Nov 2026 12:38:50 +0530</pubDate>
+      <guid>http://localhost:1313/categories/pg/</guid>
       <description></description>
     </item>
     <item>
@@ -72,13 +79,6 @@
       <description></description>
     </item>
     <item>
-      <title>Bank</title>
-      <link>http://localhost:1313/categories/bank/</link>
-      <pubDate>Sat, 03 Oct 2026 11:20:25 +0530</pubDate>
-      <guid>http://localhost:1313/categories/bank/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>MPESB</title>
       <link>http://localhost:1313/categories/mpesb/</link>
       <pubDate>Wed, 10 Jun 2026 08:49:50 +0530</pubDate>
@@ -104,6 +104,13 @@
       <link>http://localhost:1313/categories/2026/</link>
       <pubDate>Wed, 15 Apr 2026 18:00:42 +0530</pubDate>
       <guid>http://localhost:1313/categories/2026/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bihar</title>
+      <link>http://localhost:1313/categories/bihar/</link>
+      <pubDate>Sat, 11 Apr 2026 15:36:33 +0530</pubDate>
+      <guid>http://localhost:1313/categories/bihar/</guid>
       <description></description>
     </item>
     <item>
