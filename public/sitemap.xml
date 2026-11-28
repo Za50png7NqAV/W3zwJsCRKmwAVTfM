@@ -2,27 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/bank/</loc>
-    <lastmod>2026-11-27T12:38:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-11-27T12:38:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/jobs/exim-bank-mt-manager-2026/</loc>
-    <lastmod>2026-11-27T12:38:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/graduation/</loc>
-    <lastmod>2026-11-27T12:38:50+05:30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/pg/</loc>
     <lastmod>2026-11-27T12:38:50+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -129,6 +109,11 @@
   </url><url>
     <loc>http://localhost:1313/jobs/upsssc-computer-cadre-2026/</loc>
     <lastmod>2026-11-23T09:29:09+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-11-23T09:26:42+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -254,6 +239,11 @@
   </url><url>
     <loc>http://localhost:1313/education/mp-board-time-table-2027/</loc>
     <lastmod>2026-11-14T09:55:55+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/graduation/</loc>
+    <lastmod>2026-11-14T09:55:02+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -593,6 +583,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/apprentice/</loc>
+    <lastmod>2026-10-03T11:20:25+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/bank/</loc>
     <lastmod>2026-10-03T11:20:25+05:30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
